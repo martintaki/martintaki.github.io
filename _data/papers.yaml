@@ -549,10 +549,11 @@
   authors: "Savelii Chezhegov, Sergey Skorik, Nikolas Khachaturov, Danil Shalagin,\
     \ Aram Avetisyan, Aleksandr Beznosikov, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Yaroslav Kholodov, Alexander Gasnikov"
+  journal: Russian Mathematical Surveys
   link: https://arxiv.org/abs/2406.00846
   pdf: https://arxiv.org/pdf/2406.00846
   title: Local Methods with Adaptivity via Scaling
-  type: tpaper
+  type: jpaper
   year: '2024'
 - abstract: "\nStochastic Gradient Descent (SGD) is one of the many iterative optimization\
     \ methods that are widely used in solving machine learning problems. These methods\
