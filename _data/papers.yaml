@@ -1,3 +1,58 @@
+- abstract: "In recent years, machine learning has profoundly reshaped the field of\
+    \ chemistry, facilitating significant advancements across various applications,\
+    \ including the prediction of molecular properties and the generation of molecular\
+    \ structures. Language models and graph-based models are extensively utilized\
+    \ within this domain, consistently achieving state-of-the-art results across an\
+    \ array of tasks. However, the prevailing practice of representing chemical compounds\
+    \ in the SMILES format -- used by most datasets and many language models -- presents\
+    \ notable limitations as a training data format. In contrast, chemical fingerprints\
+    \ offer a more physically informed representation of compounds, thereby enhancing\
+    \ their suitability for model training. This study aims to develop a language\
+    \ model that is specifically trained on fingerprints. Furthermore, we introduce\
+    \ a bimodal architecture that integrates this language model with a graph model.\
+    \ Our proposed methodology synthesizes these approaches, utilizing RoBERTa as\
+    \ the language model and employing Graph Isomorphism Networks (GIN), Graph Convolutional\
+    \ Networks (GCN) and Graphormer as graph models. This integration results in a\
+    \ significant improvement in predictive performance compared to conventional strategies\
+    \ for tasks such as Quantitative Structure-Activity Relationship (QSAR) and the\
+    \ prediction of nuclear magnetic resonance (NMR) spectra, among others.\n\t\t"
+  authors: "Nikolai Rekut, Alexey Orlov, Klea Ziu, Elizaveta Starykh, <strong>Martin\
+    \ Tak\xE1\u010D</strong>, Aleksandr Beznosikov"
+  link: https://arxiv.org/abs/2502.17986
+  pdf: https://arxiv.org/pdf/2502.17986
+  title: 'Broadening Discovery through Structural Models: Multimodal Combination of
+    Local and Structural Properties for Predicting Chemical Features'
+  type: tpaper
+  year: '2025'
+- abstract: "Pruning offers a promising solution to mitigate the associated costs\
+    \ and environmental impact of deploying large deep neural networks (DNNs). Traditional\
+    \ approaches rely on computationally expensive trained models or time-consuming\
+    \ iterative prune-retrain cycles, undermining their utility in resource-constrained\
+    \ settings. To address this issue, we build upon the established principles of\
+    \ saliency (LeCun et al., 1989) and connection sensitivity (Lee et al., 2018)\
+    \ to tackle the challenging problem of one-shot pruning neural networks (NNs)\
+    \ before training (PBT) at initialization. We introduce Fisher-Taylor Sensitivity\
+    \ (FTS), a computationally cheap and efficient pruning criterion based on the\
+    \ empirical Fisher Information Matrix (FIM) diagonal, offering a viable alternative\
+    \ for integrating first- and second-order information to identify a model's structurally\
+    \ important parameters. Although the FIM-Hessian equivalency only holds for convergent\
+    \ models that maximize the likelihood, recent studies (Karakida et al., 2019)\
+    \ suggest that, even at initialization, the FIM captures essential geometric information\
+    \ of parameters in overparameterized NNs, providing the basis for our method.\
+    \ Finally, we demonstrate empirically that layer collapse, a critical limitation\
+    \ of data-dependent pruning methodologies, is easily overcome by pruning within\
+    \ a single training epoch after initialization. We perform experiments on ResNet18\
+    \ and VGG19 with CIFAR-10 and CIFAR-100, widely used benchmarks in pruning research.\
+    \ Our method achieves competitive performance against state-of-the-art techniques\
+    \ for one-shot PBT, even under extreme sparsity conditions. Our code is made available\
+    \ to the public.\n\n\t\t"
+  authors: "Ivo Gollini Navarrete, Nicolas Mauricio Cuadrado, Jose Renato Restom,\
+    \ <strong>Martin Tak\xE1\u010D</strong>, Samuel Horv\xE1th"
+  link: https://arxiv.org/abs/2502.11450
+  pdf: https://arxiv.org/pdf/2502.11450
+  title: Fishing For Cheap And Efficient Pruners At Initialization
+  type: tpaper
+  year: '2025'
 - abstract: "\nSecond-order methods for convex optimization outperform first-order\
     \ methods in terms of theoretical iteration convergence, achieving rates up to\
     \ O(k\u22125) for highly-smooth functions. However, their practical performance\
