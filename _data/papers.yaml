@@ -1,3 +1,25 @@
+- abstract: "\nWe present a machine-learning-driven framework for discovering high-performancerare-earth-free\
+    \ hard magnetic materials integrating machine learning, a uni-versal graph deep-learning\
+    \ interatomic potential, and density functional the-ory validation. Key contributions\
+    \ include the identification of FeCo-basedternary alloys with remarkable magnetic\
+    \ properties, such as uniaxial anisotropyconstant, K1, Curie temperature, TC,\
+    \ and saturation magnetization, MS.Notable examples include Fe6CoB2 and FeCo5B,\
+    \ which exhibit K1 values of1.76 MJ/m3 and 1.00 MJ/m3, respectively, with MS above\
+    \ 1.3 T, and TCexceeding 600 K. These properties align with the needs of high-temperatureand\
+    \ high-performance applications. The universal graph deep-learning in-teratomic\
+    \ potential M3GNet accelerates the structural relaxation process,enabling the\
+    \ efficient screening of 48,000 candidate structures, while densityfunctional\
+    \ theory validates the top performers with energy product (BH)maxreaching up to\
+    \ 600 kJ/m3. Our study highlights a scalable, efficient pipelinefor advancing\
+    \ the discovery of permanent magnets, reducing reliance on rare-earth elements.\n\
+    \t\t"
+  authors: "Anita Halder, Durga Paudyal, Stefano Sanvito, <strong>Martin Tak\xE1\u010D\
+    </strong>, Huseyin Ucar"
+  link: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5165130
+  title: Machine Learning-Driven Discovery of Hard Magnetic Materials Using High-Throughput
+    Computation and Screening
+  type: jpaper
+  year: '2025'
 - abstract: "\nDeep learning (DL) has achieved remarkable progress in the field of\
     \ medical imaging. However, adapting DL models to medical tasks remains a significant\
     \ challenge, primarily due to two key factors: (1) architecture selection, as\
