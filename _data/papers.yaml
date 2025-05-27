@@ -1,3 +1,57 @@
+- abstract: "\nWith the increase in the number of parameters in large language models,\
+    \ the process of pre-training and fine-tuning increasingly demands larger volumes\
+    \ of GPU memory. A significant portion of this memory is typically consumed by\
+    \ the optimizer state. To overcome this challenge, recent approaches such as low-rank\
+    \ adaptation (LoRA (Hu et al., 2021)), low-rank gradient projection (GaLore (Zhao\
+    \ et al., 2024)), and blockwise optimization (BAdam (Luo et al., 2024)) have been\
+    \ proposed. However, in all these algorithms, the effective rank of the weight\
+    \ updates remains low-rank, which can lead to a substantial loss of information\
+    \ from the gradient. This loss can be critically important, especially during\
+    \ the pre-training stage. In this paper, we introduce \U0001D675\U0001D681\U0001D684\
+    \U0001D676\U0001D670\U0001D67B (Full-Rank Updates with GrAdient spLitting), a\
+    \ new memory-efficient optimization framework. \U0001D675\U0001D681\U0001D684\U0001D676\
+    \U0001D670\U0001D67B leverages gradient splitting to perform low-dimensional updates\
+    \ using advanced algorithms (such as Adam), while updates along the remaining\
+    \ directions are executed via state-free methods like SGD or signSGD (Bernstein\
+    \ et al., 2018). Our framework can be integrated with various low-rank update\
+    \ selection techniques, including GaLore and BAdam. We provide theoretical convergence\
+    \ guarantees for our framework when using SGDM for low-dimensional updates and\
+    \ SGD for state-free updates. Additionally, our method consistently outperforms\
+    \ concurrent approaches across various fixed memory budgets, achieving state-of-the-art\
+    \ results in pre-training and fine-tuning tasks while balancing memory efficiency\
+    \ and performance metrics.\n\t\t"
+  authors: "Philip Zmushko, Aleksandr Beznosikov, <strong>Martin Tak\xE1\u010D</strong>,\
+    \ Samuel Horv\xE1th"
+  journal: ICML
+  link: https://arxiv.org/abs/2411.07837
+  pdf: https://arxiv.org/pdf/2411.07837
+  title: 'FRUGAL: Memory-Efficient Optimization by Reducing State Overhead for Scalable
+    Training'
+  type: cpaper
+  year: '2025'
+- abstract: "\nMethods with adaptive stepsizes, such as AdaGrad and Adam, are essential\
+    \ for training modern Deep Learning models, especially Large Language Models.\
+    \ Typically, the noise in the stochastic gradients is heavy-tailed for the later\
+    \ ones. Gradient clipping provably helps to achieve good high-probability convergence\
+    \ for such noises. However, despite the similarity between AdaGrad/Adam and Clip-SGD,\
+    \ the high-probability convergence of AdaGrad/Adam has not been studied in this\
+    \ case. In this work, we prove that AdaGrad (and its delayed version) can have\
+    \ provably bad high-probability convergence if the noise is heavy-tailed. To fix\
+    \ this issue, we propose a new version of AdaGrad called Clip-RAdaGradD (Clipped\
+    \ Reweighted AdaGrad with Delay) and prove its high-probability convergence bounds\
+    \ with polylogarithmic dependence on the confidence level for smooth convex/non-convex\
+    \ stochastic optimization with heavy-tailed noise. Our empirical evaluations,\
+    \ including NLP model fine-tuning, highlight the superiority of clipped versions\
+    \ of AdaGrad/Adam in handling the heavy-tailed noise.\n\t\t"
+  authors: "Savelii Chezhegov, Yaroslav Klyukin, Andrei Semenov, Aleksandr Beznosikov,\
+    \ Alexander Gasnikov, Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D</strong>,\
+    \ Eduard Gorbunov"
+  journal: ICML
+  link: https://arxiv.org/abs/2406.04443
+  pdf: https://arxiv.org/pdf/2406.04443
+  title: Gradient Clipping Improves AdaGrad when the Noise Is Heavy-Tailed
+  type: cpaper
+  year: '2025'
 - abstract: "\nWe introduce the concept of the self-referencing causal cycle (abbreviated\
     \ RECALL) - a mechanism that enables large language models (LLMs) to bypass the\
     \ limitations of unidirectional causality, which underlies a phenomenon known\
@@ -424,36 +478,6 @@
   title: Enhance Hyperbolic Representation Learning via Second-order Pooling
   type: tpaper
   year: '2024'
-- abstract: "\nWith the increase in the number of parameters in large language models,\
-    \ the process of pre-training and fine-tuning increasingly demands larger volumes\
-    \ of GPU memory. A significant portion of this memory is typically consumed by\
-    \ the optimizer state. To overcome this challenge, recent approaches such as low-rank\
-    \ adaptation (LoRA (Hu et al., 2021)), low-rank gradient projection (GaLore (Zhao\
-    \ et al., 2024)), and blockwise optimization (BAdam (Luo et al., 2024)) have been\
-    \ proposed. However, in all these algorithms, the effective rank of the weight\
-    \ updates remains low-rank, which can lead to a substantial loss of information\
-    \ from the gradient. This loss can be critically important, especially during\
-    \ the pre-training stage. In this paper, we introduce \U0001D675\U0001D681\U0001D684\
-    \U0001D676\U0001D670\U0001D67B (Full-Rank Updates with GrAdient spLitting), a\
-    \ new memory-efficient optimization framework. \U0001D675\U0001D681\U0001D684\U0001D676\
-    \U0001D670\U0001D67B leverages gradient splitting to perform low-dimensional updates\
-    \ using advanced algorithms (such as Adam), while updates along the remaining\
-    \ directions are executed via state-free methods like SGD or signSGD (Bernstein\
-    \ et al., 2018). Our framework can be integrated with various low-rank update\
-    \ selection techniques, including GaLore and BAdam. We provide theoretical convergence\
-    \ guarantees for our framework when using SGDM for low-dimensional updates and\
-    \ SGD for state-free updates. Additionally, our method consistently outperforms\
-    \ concurrent approaches across various fixed memory budgets, achieving state-of-the-art\
-    \ results in pre-training and fine-tuning tasks while balancing memory efficiency\
-    \ and performance metrics.\n\t\t"
-  authors: "Philip Zmushko, Aleksandr Beznosikov, <strong>Martin Tak\xE1\u010D</strong>,\
-    \ Samuel Horv\xE1th"
-  link: https://arxiv.org/abs/2411.07837
-  pdf: https://arxiv.org/pdf/2411.07837
-  title: 'FRUGAL: Memory-Efficient Optimization by Reducing State Overhead for Scalable
-    Training'
-  type: tpaper
-  year: '2024'
 - abstract: "\nLearning the structure of Directed Acyclic Graphs (DAGs) presents a\
     \ significant challenge due to the vast combinatorial search space of possible\
     \ graphs, which scales exponentially with the number of nodes. Recent advancements\
@@ -611,28 +635,6 @@
   link: https://arxiv.org/abs/2406.09250
   pdf: https://arxiv.org/pdf/2406.09250
   title: 'MirrorCheck: Efficient Adversarial Defense for Vision-Language Models'
-  type: tpaper
-  year: '2024'
-- abstract: "\nMethods with adaptive stepsizes, such as AdaGrad and Adam, are essential\
-    \ for training modern Deep Learning models, especially Large Language Models.\
-    \ Typically, the noise in the stochastic gradients is heavy-tailed for the later\
-    \ ones. Gradient clipping provably helps to achieve good high-probability convergence\
-    \ for such noises. However, despite the similarity between AdaGrad/Adam and Clip-SGD,\
-    \ the high-probability convergence of AdaGrad/Adam has not been studied in this\
-    \ case. In this work, we prove that AdaGrad (and its delayed version) can have\
-    \ provably bad high-probability convergence if the noise is heavy-tailed. To fix\
-    \ this issue, we propose a new version of AdaGrad called Clip-RAdaGradD (Clipped\
-    \ Reweighted AdaGrad with Delay) and prove its high-probability convergence bounds\
-    \ with polylogarithmic dependence on the confidence level for smooth convex/non-convex\
-    \ stochastic optimization with heavy-tailed noise. Our empirical evaluations,\
-    \ including NLP model fine-tuning, highlight the superiority of clipped versions\
-    \ of AdaGrad/Adam in handling the heavy-tailed noise.\n\t\t"
-  authors: "Savelii Chezhegov, Yaroslav Klyukin, Andrei Semenov, Aleksandr Beznosikov,\
-    \ Alexander Gasnikov, Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D</strong>,\
-    \ Eduard Gorbunov"
-  link: https://arxiv.org/abs/2406.04443
-  pdf: https://arxiv.org/pdf/2406.04443
-  title: Gradient Clipping Improves AdaGrad when the Noise Is Heavy-Tailed
   type: tpaper
   year: '2024'
 - abstract: "\nThe rapid development of machine learning and deep learning has introduced\
