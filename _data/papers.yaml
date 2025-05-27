@@ -22,7 +22,7 @@
     \ and performance metrics.\n\t\t"
   authors: "Philip Zmushko, Aleksandr Beznosikov, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Samuel Horv\xE1th"
-  journal: ICML
+  journal: ICML 2025 (International Conference on Machine Learning)
   link: https://arxiv.org/abs/2411.07837
   pdf: https://arxiv.org/pdf/2411.07837
   title: 'FRUGAL: Memory-Efficient Optimization by Reducing State Overhead for Scalable
@@ -46,7 +46,7 @@
   authors: "Savelii Chezhegov, Yaroslav Klyukin, Andrei Semenov, Aleksandr Beznosikov,\
     \ Alexander Gasnikov, Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Eduard Gorbunov"
-  journal: ICML
+  journal: ICML 2025 (International Conference on Machine Learning)
   link: https://arxiv.org/abs/2406.04443
   pdf: https://arxiv.org/pdf/2406.04443
   title: Gradient Clipping Improves AdaGrad when the Noise Is Heavy-Tailed
