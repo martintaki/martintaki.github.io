@@ -1,3 +1,23 @@
+- abstract: "\nRobust routing under uncertainty is central to real-world logistics,\
+    \ yet most benchmarks assume static, idealized settings. We present SVRPBench,\
+    \ the first open benchmark to capture high-fidelity stochastic dynamics in vehicle\
+    \ routing at urban scale. Spanning more than 500 instances with up to 1000 customers,\
+    \ it simulates realistic delivery conditions: time-dependent congestion, log-normal\
+    \ delays, probabilistic accidents, and empirically grounded time windows for residential\
+    \ and commercial clients. Our pipeline generates diverse, constraint-rich scenarios,\
+    \ including multi-depot and multi-vehicle setups. Benchmarking reveals that state-of-the-art\
+    \ RL solvers like POMO and AM degrade by over 20% under distributional shift,\
+    \ while classical and metaheuristic methods remain robust. To enable reproducible\
+    \ research, we release the dataset and evaluation suite. SVRPBench challenges\
+    \ the community to design solvers that generalize beyond synthetic assumptions\
+    \ and adapt to real-world uncertainty.\n\t\t"
+  authors: "Ahmed Heakl, Yahia Salaheldin Shaaban, <strong>Martin Tak\xE1\u010D</strong>,\
+    \ Salem Lahlou, Zangir Iklassov"
+  link: https://arxiv.org/abs/2505.21887
+  pdf: https://arxiv.org/pdf/2505.21887
+  title: 'SVRPBench: A Realistic Benchmark for Stochastic Vehicle Routing Problem'
+  type: tpaper
+  year: '2025'
 - abstract: "\nLarge pre-trained models are commonly adapted to downstream tasks using\
     \ parameter-efficient fine-tuning methods such as Low-Rank Adaptation (LoRA),\
     \ which injects small trainable low-rank matrices instead of updating all weights.\
