@@ -1,3 +1,56 @@
+- abstract: "\nAssessing the capacity of Large Language Models (LLMs) to plan and\
+    \ reason within the constraints of interactive environments is crucial for developing\
+    \ capable AI agents. We introduce $\\textbf{LLM-BabyBench}$, a new benchmark suite\
+    \ designed specifically for this purpose. Built upon a textual adaptation of the\
+    \ procedurally generated BabyAI grid world, this suite evaluates LLMs on three\
+    \ fundamental aspects of grounded intelligence: (1) predicting the consequences\
+    \ of actions on the environment state ($\\textbf{Predict}$ task), (2) generating\
+    \ sequences of low-level actions to achieve specified objectives ($\\textbf{Plan}$\
+    \ task), and (3) decomposing high-level instructions into coherent subgoal sequences\
+    \ ($\\textbf{Decompose}$ task). We detail the methodology for generating the three\
+    \ corresponding datasets ($\\texttt{LLM-BabyBench-Predict}$, $\\texttt{-Plan}$,\
+    \ $\\texttt{-Decompose}$) by extracting structured information from an expert\
+    \ agent operating within the text-based environment. Furthermore, we provide a\
+    \ standardized evaluation harness and metrics, including environment interaction\
+    \ for validating generated plans, to facilitate reproducible assessment of diverse\
+    \ LLMs. Initial baseline results highlight the challenges posed by these grounded\
+    \ reasoning tasks. The benchmark suite, datasets, data generation code, and evaluation\
+    \ code are made publicly available ($\\href{https://github.com/choukrani/llm-babybench}{\\\
+    text{GitHub}}$, $\\href{https://huggingface.co/datasets/salem-mbzuai/LLM-BabyBench}{\\\
+    text{HuggingFace}}$).\n\t\t"
+  authors: "Omar Choukrani, Idriss Malek, Daniil Orel, Zhuohan Xie, Zangir Iklassov,\
+    \ <strong>Martin Tak\xE1\u010D</strong>, Salem Lahlou"
+  link: https://arxiv.org/abs/2505.12135
+  pdf: https://arxiv.org/pdf/2505.12135
+  title: 'LLM-BABYBENCH: Understanding and Evaluating Grounded Planning and Reasoning
+    in LLMs'
+  type: tpaper
+  year: '2025'
+- abstract: "\nRecent advancements in machine learning have improved performance while\
+    \ also increasing computational demands. While federated and distributed setups\
+    \ address these issues, their structure is vulnerable to malicious influences.\
+    \ In this paper, we address a specific threat, Byzantine attacks, where compromised\
+    \ clients inject adversarial updates to derail global convergence. We combine\
+    \ the trust scores concept with trial function methodology to dynamically filter\
+    \ outliers. Our methods address the critical limitations of previous approaches,\
+    \ allowing functionality even when Byzantine nodes are in the majority. Moreover,\
+    \ our algorithms adapt to widely used scaled methods like Adam and RMSProp, as\
+    \ well as practical scenarios, including local training and partial participation.\
+    \ We validate the robustness of our methods by conducting extensive experiments\
+    \ on both synthetic and real ECG data collected from medical institutions. Furthermore,\
+    \ we provide a broad theoretical analysis of our algorithms and their extensions\
+    \ to aforementioned practical setups. The convergence guarantees of our methods\
+    \ are comparable to those of classical algorithms developed without Byzantine\
+    \ interference.\n\t\t"
+  authors: "Gleb Molodtsov, Daniil Medyakov, Sergey Skorik, Nikolas Khachaturov, Shahane\
+    \ Tigranyan, Vladimir Aletov, Aram Avetisyan, <strong>Martin Tak\xE1\u010D</strong>,\
+    \ Aleksandr Beznosikov"
+  link: https://arxiv.org/abs/2505.07614?
+  pdf: https://arxiv.org/pdf/2505.07614?
+  title: 'Trial and Trust: Addressing Byzantine Attacks with Comprehensive Defense
+    Strategy'
+  type: tpaper
+  year: '2025'
 - abstract: "\nRobust routing under uncertainty is central to real-world logistics,\
     \ yet most benchmarks assume static, idealized settings. We present SVRPBench,\
     \ the first open benchmark to capture high-fidelity stochastic dynamics in vehicle\
@@ -173,30 +226,27 @@
   title: 'MedNNS: Supernet-based Medical Task-Adaptive Neural Network Search'
   type: tpaper
   year: '2025'
-- abstract: "In recent years, machine learning has profoundly reshaped the field of\
-    \ chemistry, facilitating significant advancements across various applications,\
-    \ including the prediction of molecular properties and the generation of molecular\
-    \ structures. Language models and graph-based models are extensively utilized\
+- abstract: "\n\t\t\tRepresenting molecular structures effectively in chemistry remains\
+    \ a challenging task. Language models and graph-based models are extensively utilized\
     \ within this domain, consistently achieving state-of-the-art results across an\
     \ array of tasks. However, the prevailing practice of representing chemical compounds\
-    \ in the SMILES format -- used by most datasets and many language models -- presents\
-    \ notable limitations as a training data format. In contrast, chemical fingerprints\
-    \ offer a more physically informed representation of compounds, thereby enhancing\
-    \ their suitability for model training. This study aims to develop a language\
-    \ model that is specifically trained on fingerprints. Furthermore, we introduce\
-    \ a bimodal architecture that integrates this language model with a graph model.\
-    \ Our proposed methodology synthesizes these approaches, utilizing RoBERTa as\
-    \ the language model and employing Graph Isomorphism Networks (GIN), Graph Convolutional\
-    \ Networks (GCN) and Graphormer as graph models. This integration results in a\
-    \ significant improvement in predictive performance compared to conventional strategies\
-    \ for tasks such as Quantitative Structure-Activity Relationship (QSAR) and the\
-    \ prediction of nuclear magnetic resonance (NMR) spectra, among others.\n\t\t"
+    \ in the SMILES format - used by most data sets and many language models - presents\
+    \ notable limitations as a training data format. In this study, we present a novel\
+    \ approach that decomposes molecules into substructures and computes descriptor-based\
+    \ representations for these fragments, providing more detailed and chemically\
+    \ relevant input for model training. We use this substructure and descriptor data\
+    \ as input for language model and also propose a bimodal architecture that integrates\
+    \ this language model with graph-based models. As LM we use RoBERTa, Graph Isomorphism\
+    \ Networks (GIN), Graph Convolutional Networks (GCN) and Graphormer as graph ones.\
+    \ Our framework shows notable improvements over traditional methods in various\
+    \ tasks such as Quantitative Structure-Activity Relationship (QSAR) prediction.\n\
+    \t\t"
   authors: "Nikolai Rekut, Alexey Orlov, Klea Ziu, Elizaveta Starykh, <strong>Martin\
     \ Tak\xE1\u010D</strong>, Aleksandr Beznosikov"
   link: https://arxiv.org/abs/2502.17986
   pdf: https://arxiv.org/pdf/2502.17986
-  title: 'Broadening Discovery through Structural Models: Multimodal Combination of
-    Local and Structural Properties for Predicting Chemical Features'
+  title: 'Thinking like a CHEMIST: Combined Heterogeneous Embedding Model Integrating
+    Structure and Tokens'
   type: tpaper
   year: '2025'
 - abstract: "Pruning offers a promising solution to mitigate the associated costs\
