@@ -1,3 +1,23 @@
+- abstract: "\nPredicting in vivo transcription factor (TF) binding remains challenging\
+    \ due to interactions with cofactors and dynamic chromatin remodeling that modulate\
+    \ site accessibility. In this regard, accurate characterization of TF binding\
+    \ loci is essential for predictive performance. We introduce EpiBinder, a multimodal\
+    \ deep neural network that augments base-resolution DNA sequence models with single-nucleotide\
+    \ epigenetic information\u2014cytosine methylation levels from whole-genome bisulfite\
+    \ sequencing and DNase I hypersensitivity\u2014to improve in vivo TF binding predictions.\
+    \ Trained on human cell-lines, EpiBinder demonstrates that integrating epigenetic\
+    \ information in a cell-type\u2013specific manner reduces the epistatic uncertainty\
+    \ that current sequence-only DNA models suffer. Our model achieves up to a 15-point\
+    \ gain in area under the precision\u2013recall curve compared the state-of-the-art.\
+    \ \n\t\t"
+  authors: "Ruben Solozabal, Albert Baichorov, Tamir Avioz, Le Song, <strong>Martin\
+    \ Tak\xE1\u010D</strong>, Ariel Afek"
+  journal: ICML 2025 Generative AI and Biology (GenBio) Workshop
+  link: https://genbio-workshop.github.io/2025/
+  title: 'EpiBinder: a multimodal deep learning model at base-resolution to analyze
+    in vivo Transcription Factor-DNA Binding'
+  type: cpaper
+  year: '2025'
 - abstract: "\nAssessing the capacity of Large Language Models (LLMs) to plan and\
     \ reason within the constraints of interactive environments is crucial for developing\
     \ capable AI agents. We introduce $\\textbf{LLM-BabyBench}$, a new benchmark suite\
