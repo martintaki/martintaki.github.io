@@ -1,3 +1,26 @@
+- abstract: "\nThis work studies the challenge of optimal energy management in building-based\
+    \ microgrids through a collaborative and privacy-preserving framework. \nWe evaluated\
+    \ two common RL algorithms (PPO and TRPO) in different collaborative setups to\
+    \ manage distributed energy resources\n (DERs) efficiently. Using a customized\
+    \ version of the CityLearn environment and synthetically generated data,\n  we\
+    \ simulate and design net-zero energy scenarios for microgrids composed of multiple\
+    \ buildings. \n  Our approach emphasizes reducing energy costs and carbon emissions\
+    \ while ensuring privacy. \n  Experimental results demonstrate that Federated\
+    \ TRPO is comparable with state-of-the-art federated RL methodologies without\
+    \ \n  hyperparameter tuning. The proposed framework highlights the feasibility\
+    \ of collaborative learning for achieving optimal control\n   policies in energy\
+    \ systems, advancing the goals of sustainable and efficient smart grids. Our code\
+    \ is accessible\n    https://github.com/Optimization-and-Machine-Learning-Lab/energy_fed_trpo.git.\n\
+    \t\t"
+  authors: "Nicolas Mauricio Cuadrado, Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D\
+    </strong>"
+  journal: ICML 2025 CO-BUILD Workshop on Computational Optimization of Buildings
+  link: https://openreview.net/forum?id=lJOFxEYW0I
+  pdf: https://openreview.net/pdf?id=lJOFxEYW0I
+  title: Generalising Battery Control in Net-Zero Buildings via Personalised Federated
+    RL
+  type: cpaper
+  year: '2025'
 - abstract: "\nPredicting in vivo transcription factor (TF) binding remains challenging\
     \ due to interactions with cofactors and dynamic chromatin remodeling that modulate\
     \ site accessibility. In this regard, accurate characterization of TF binding\
@@ -108,10 +131,12 @@
     \ LoRA-style methods, all without increasing inference cost.\n\t\t"
   authors: "Nurbek Tastan, Stefanos Laskaridis, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Karthik Nandakumar, Samuel Horv\xE1th"
+  journal: 'Tiny Titans: The next wave of On-Device Learning for Foundational Models
+    (TTODLer-FM) @ ICML 2025'
   link: https://arxiv.org/abs/2505.21289
   pdf: https://arxiv.org/pdf/2505.21289
   title: 'LoFT: Low-Rank Adaptation That Behaves Like Full Fine-Tuning'
-  type: tpaper
+  type: cpaper
   year: '2025'
 - abstract: "\nWith the increase in the number of parameters in large language models,\
     \ the process of pre-training and fine-tuning increasingly demands larger volumes\
@@ -137,7 +162,9 @@
     \ and performance metrics.\n\t\t"
   authors: "Philip Zmushko, Aleksandr Beznosikov, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Samuel Horv\xE1th"
-  journal: ICML 2025 (International Conference on Machine Learning)
+  journal: 'ICML 2025 (International Conference on Machine Learning) and Tiny Titans:
+    The next wave of On-Device Learning for Foundational Models (TTODLer-FM) @ ICML
+    2025'
   link: https://arxiv.org/abs/2411.07837
   pdf: https://arxiv.org/pdf/2411.07837
   title: 'FRUGAL: Memory-Efficient Optimization by Reducing State Overhead for Scalable
