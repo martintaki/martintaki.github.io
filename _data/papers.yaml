@@ -1,3 +1,24 @@
+- abstract: "\n\nQuasi-Newton methods are widely used for solving convex optimization\
+    \ problems due to their ease of implementation, practical efficiency, and strong\
+    \ local convergence guarantees. However, their global convergence is typically\
+    \ established only under specific line search strategies and the assumption of\
+    \ strong convexity. In this work, we extend the theoretical understanding of Quasi-Newton\
+    \ methods by introducing a simple stepsize schedule that guarantees a global convergence\
+    \ rate of $\\mathcal{ O}(1/k)$ for the convex functions. Furthermore, we show\
+    \ that when the inexactness of the Hessian approximation is controlled within\
+    \ a prescribed relative accuracy, the method attains an accelerated convergence\
+    \ rate of $\\mathcal{ O}(1/k^2)$  -- matching the best-known rates of both Nesterov\u2019\
+    s accelerated gradient method and cubically regularized Newton methods. We validate\
+    \ our theoretical findings through empirical comparisons, demonstrating clear\
+    \ improvements over standard Quasi-Newton baselines. To further enhance robustness,\
+    \ we develop an adaptive variant that adjusts to the function's curvature while\
+    \ retaining the global convergence guarantees of the non-adaptive algorithm.\n\
+    \t\t"
+  authors: "Artem Agafonov, Vladislav Ryspayev, Samuel Horv\xE1th, Alexander Gasnikov,\
+    \ <strong>Martin Tak\xE1\u010D</strong>, Slavomir Hanzely"
+  title: Simple Stepsize for Quasi-Newton Methods with Global Convergence Guarantees
+  type: tpaper
+  year: '2025'
 - abstract: "\nThe Polyak stepsize for Gradient Descent is known for its fast convergence\
     \ but requires prior knowledge of the optimal functional value, which is often\
     \ unavailable in practice. In this paper, we propose a parameter-free approach\
