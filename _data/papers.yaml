@@ -1,3 +1,22 @@
+- abstract: "\nThe Polyak stepsize for Gradient Descent is known for its fast convergence\
+    \ but requires prior knowledge of the optimal functional value, which is often\
+    \ unavailable in practice. In this paper, we propose a parameter-free approach\
+    \ that estimates this unknown value during the algorithm's execution, enabling\
+    \ a parameter-free stepsize schedule. Our method maintains two sequences of iterates:\
+    \ one with a higher functional value is updated using the Polyak stepsize, and\
+    \ the other one with a lower functional value is used as an estimate of the optimal\
+    \ functional value. We provide a theoretical analysis of the approach and validate\
+    \ its performance through numerical experiments. The results demonstrate that\
+    \ our method achieves competitive performance without relying on prior function-dependent\
+    \ information.\n\t\t"
+  authors: "Farshed Abdukhakimov, Cuong Anh Pham, Samuel Horv\xE1th, <strong>Martin\
+    \ Tak\xE1\u010D</strong>, Slavom\u0131r Hanzely"
+  link: https://arxiv.org/abs/2508.17288
+  pdf: https://arxiv.org/pdf/2508.17288
+  title: 'Polyak Stepsize: Estimating Optimal Functional Values Without Parameters
+    or Prior Knowledge'
+  type: tpaper
+  year: '2025'
 - abstract: "\nImagine decision-makers uploading data and, within minutes, receiving\
     \ clear, actionable insights delivered straight to their fingertips. That is the\
     \ promise of the AI Data Scientist, an autonomous Agent powered by large language\
