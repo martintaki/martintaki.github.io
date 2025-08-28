@@ -16,6 +16,8 @@
     \t\t"
   authors: "Artem Agafonov, Vladislav Ryspayev, Samuel Horv\xE1th, Alexander Gasnikov,\
     \ <strong>Martin Tak\xE1\u010D</strong>, Slavomir Hanzely"
+  link: https://arxiv.org/abs/2508.19712
+  pdf: https://arxiv.org/pdf/2508.19712
   title: Simple Stepsize for Quasi-Newton Methods with Global Convergence Guarantees
   type: tpaper
   year: '2025'
