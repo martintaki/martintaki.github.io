@@ -33,6 +33,7 @@ title: Home
                                 <option class="filter" value="jpaper">Jounal Papers</option>
                                 <option class="filter" value="cpaper">Conference Papers</option>
                                 <option class="filter" value="tpaper">arXiv Preprints</option>
+                                <option class="filter" value="patent">Patents</option>
                                 <option class="filter" value="opaper">Other</option>
                                 <!-- <option class="filter" value="bookchapter">Book Chapters</option>
                                  <option class="filter" value="book">Books</option>
@@ -116,6 +117,10 @@ title: Home
     {% if paper.type == 'jpaper' %}
         <span class="label label-success">Journal Paper</span>
     {% endif %}
+    {% if paper.type == 'patent' %}
+        <span class="label label-success">Patent</span>
+    {% endif %}
+    
     {% if paper.type == 'opaper' %}
        <span class="label label-danger">{{paper.ltype}}</span>
     {% endif %}
