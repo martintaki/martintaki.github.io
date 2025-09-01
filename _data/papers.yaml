@@ -3649,6 +3649,19 @@
     Optimization?
   type: cpaper
   year: '2015'
+- abstract: "\nAn unsupervised method of discovering image categories in a set of\
+    \ images comprises generating, for each image, a histogram vector containing counts\
+    \ of visual words from a dictionary of visual words. An occurrence matrix is generated\
+    \ in which respective rows are histogram vectors for respective images. Sparse\
+    \ principal components of the occurrence matrix are determined, each sparse principal\
+    \ component associated with an image category.\n\t\t"
+  authors: "Ngai-Man Cheungselin, Damla Ahipasaoglu, Peter Richtarik, <strong>Martin\
+    \ Tak\xE1\u010D</strong>"
+  journal: WO2015011470A1
+  link: https://patents.google.com/patent/WO2015011470A1
+  title: Method and system for classifying images
+  type: patent
+  year: '2015'
 - abstract: In this paper we develop dual free SDCA with adaptive probabilities for
     regularized empirical risk minimization. This extends recent work of Shai Shalev-Shwartz
     [SDCA without Duality, arXiv:1502.06177] to allow non-uniform selection of \"dual\"
