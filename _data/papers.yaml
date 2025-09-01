@@ -1,3 +1,39 @@
+- abstract: "\n\t\t\tA multi-agent reinforcement learning framework for managing energy\
+    \ transactions in microgrids that includes three layers of agents, each pursuing\
+    \ different objectives. The first layer, including prosumers and consumers, minimizes\
+    \ the total energy cost. The other two layers control the energy price to decrease\
+    \ the carbon emission impact while balancing the consumption and production of\
+    \ both renewable and conventional energy. The framework takes into account fluctuations\
+    \ in energy demand and supply due to household supplied energy from renewable\
+    \ energy sources and energy storage levels in household energy storage devices.\n\
+    \t\t"
+  authors: "<strong>Martin Tak\xE1\u010D</strong>, Nicolas Mauricio Cuadrado, Roberto\
+    \ Alejandro Gutierrez Guillen, Samuel Horv\xE1th"
+  journal: US 2025/0272621 A1
+  title: System And Method For A Hierarchical Multi-agent Framework For Transactive
+    Microgrids
+  type: patent
+  year: '2025'
+- abstract: "\nA federated learning framework including household agents configured\
+    \ to continuously learn model parameters for managing charging periods and discharging\
+    \ periods of household batteries, and microgrid agents to maximize use of local\
+    \ energy based on a pricing policy, including accessing power from other microgrids\
+    \ when there is insufficient local energy to cover local demand. and selling surplus\
+    \ energy to the other microgrids when power generation by the microgrid surpasses\
+    \ the local demand. Each household machine learning agent is configured to control\
+    \ household energy demand from and supply to a microgrid which they are connected\
+    \ in order to minimize household energy cost while adapting to changes in the\
+    \ energy price that is determined based on the pricing policy of the microgrid\
+    \ agent that encourages reduction of carbon emission. A federated learning engine\
+    \ combines the model parameters from the household machine learning agents to\
+    \ update a global household machine learning agent.\n\t\t"
+  authors: "<strong>Martin Tak\xE1\u010D</strong>, Nicolas Mauricio Cuadrado, Roberto\
+    \ Alejandro Gutierrez Guillen, Samuel Horv\xE1th"
+  journal: US 2025/0272723 A1
+  title: Federated Reinforcement Learning-based System And Method For Cooperative
+    Energy Optimization
+  type: patent
+  year: '2025'
 - abstract: "\nCurrent methods for initializing state space models (SSMs) parameters\
     \ mainly rely on the \\textit{HiPPO framework}, which is based on an online approximation\
     \ of orthogonal polynomials. Recently, diagonal alternatives have shown to reach\
