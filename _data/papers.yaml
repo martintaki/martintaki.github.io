@@ -419,10 +419,11 @@
     \ is available at https://github.com/BioMedIA-MBZUAI/MedNNS.\n\t\t"
   authors: "Lotfi Abdelkrim Mecharbat, Ibrahim Almakky, <strong>Martin Tak\xE1\u010D\
     </strong>, Mohammad Yaqub"
+  journal: MICCAI 2025
   link: https://arxiv.org/abs/2504.15865
   pdf: https://arxiv.org/pdf/2504.15865
   title: 'MedNNS: Supernet-based Medical Task-Adaptive Neural Network Search'
-  type: tpaper
+  type: cpaper
   year: '2025'
 - abstract: "\n\t\t\tRepresenting molecular structures effectively in chemistry remains\
     \ a challenging task. Language models and graph-based models are extensively utilized\
