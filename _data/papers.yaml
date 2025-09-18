@@ -1,3 +1,25 @@
+- abstract: "\nCurrent methods for initializing state space models (SSMs) parameters\
+    \ mainly rely on the \\textit{HiPPO framework}, which is based on an online approximation\
+    \ of orthogonal polynomials. Recently, diagonal alternatives have shown to reach\
+    \ a similar level of performance while being significantly more efficient due\
+    \ to the simplification in the kernel computation. However, the \\textit{HiPPO\
+    \ framework} does not explicitly study the role of its diagonal variants. In this\
+    \ paper, we take a further step to investigate the role of diagonal SSM initialization\
+    \ schemes from the frequency perspective. Our work seeks to systematically understand\
+    \ how to parameterize these models and uncover the learning biases inherent in\
+    \ such diagonal state-space models. Based on our observations, we propose a diagonal\
+    \ initialization on the discrete Fourier domain \\textit{S4D-DFouT}. The insights\
+    \ in the role of pole placing in the initialization enable us to further scale\
+    \ them and achieve state-of-the-art results on the Long Range Arena benchmark,\
+    \ allowing us to train from scratch on very large datasets as PathX-256.\n\t\t"
+  authors: "Ruben Solozabal, Velibor Bojkovic, Hilal AlQuabeh, Kentaro Inui, <strong>Martin\
+    \ Tak\xE1\u010D</strong>"
+  journal: NeurIPS 2025
+  link: https://arxiv.org/abs/2508.20441
+  pdf: https://arxiv.org/pdf/2508.20441
+  title: Uncovering the Spectral Bias in Diagonal State Space Models
+  type: cpaper
+  year: '2025'
 - abstract: "\n\t\t\tA multi-agent reinforcement learning framework for managing energy\
     \ transactions in microgrids that includes three layers of agents, each pursuing\
     \ different objectives. The first layer, including prosumers and consumers, minimizes\
@@ -35,27 +57,6 @@
   title: Federated Reinforcement Learning-based System And Method For Cooperative
     Energy Optimization
   type: patent
-  year: '2025'
-- abstract: "\nCurrent methods for initializing state space models (SSMs) parameters\
-    \ mainly rely on the \\textit{HiPPO framework}, which is based on an online approximation\
-    \ of orthogonal polynomials. Recently, diagonal alternatives have shown to reach\
-    \ a similar level of performance while being significantly more efficient due\
-    \ to the simplification in the kernel computation. However, the \\textit{HiPPO\
-    \ framework} does not explicitly study the role of its diagonal variants. In this\
-    \ paper, we take a further step to investigate the role of diagonal SSM initialization\
-    \ schemes from the frequency perspective. Our work seeks to systematically understand\
-    \ how to parameterize these models and uncover the learning biases inherent in\
-    \ such diagonal state-space models. Based on our observations, we propose a diagonal\
-    \ initialization on the discrete Fourier domain \\textit{S4D-DFouT}. The insights\
-    \ in the role of pole placing in the initialization enable us to further scale\
-    \ them and achieve state-of-the-art results on the Long Range Arena benchmark,\
-    \ allowing us to train from scratch on very large datasets as PathX-256.\n\t\t"
-  authors: "Ruben Solozabal, Velibor Bojkovic, Hilal AlQuabeh, Kentaro Inui, <strong>Martin\
-    \ Tak\xE1\u010D</strong>"
-  link: https://arxiv.org/abs/2508.20441
-  pdf: https://arxiv.org/pdf/2508.20441
-  title: Uncovering the Spectral Bias in Diagonal State Space Models
-  type: tpaper
   year: '2025'
 - abstract: "\n\nQuasi-Newton methods are widely used for solving convex optimization\
     \ problems due to their ease of implementation, practical efficiency, and strong\
