@@ -1,3 +1,18 @@
+- abstract: "\nFederated learning (FL) usually shares model weights or gradients,\
+    \ which is costly for large models. Logit-based FL reduces this cost by sharing\
+    \ only logits computed on a public proxy dataset. However, aggregating information\
+    \ from heterogeneous clients is still challenging. This paper studies this problem,\
+    \ introduces and compares three logit aggregation methods: simple averaging, uncertainty-weighted\
+    \ averaging, and a learned meta-aggregator. Evaluated on MNIST and CIFAR-10, these\
+    \ methods reduce communication overhead, improve robustness under non-IID data,\
+    \ and achieve accuracy competitive with centralized training.\n\t\t"
+  authors: "Viktor Kovalchuk, Nikita Kotelevskii, Maxim Panov, Samuel Horv\xE1th,\
+    \ <strong>Martin Tak\xE1\u010D</strong>, , "
+  link: https://arxiv.org/abs/2509.15147
+  pdf: https://arxiv.org/pdf/2509.15147
+  title: Who to Trust? Aggregating Client Knowledge in Logit-Based Federated Learning
+  type: tpaper
+  year: '2025'
 - abstract: "\nCurrent methods for initializing state space models (SSMs) parameters\
     \ mainly rely on the \\textit{HiPPO framework}, which is based on an online approximation\
     \ of orthogonal polynomials. Recently, diagonal alternatives have shown to reach\
@@ -39,6 +54,35 @@
   link: https://arxiv.org/abs/2505.21887
   pdf: https://arxiv.org/pdf/2505.21887
   title: 'SVRPBench: A Realistic Benchmark for Stochastic Vehicle Routing Problem'
+  type: cpaper
+  year: '2025'
+- abstract: "\nDeep learning (DL) has achieved remarkable progress in the field of\
+    \ medical imaging. However, adapting DL models to medical tasks remains a significant\
+    \ challenge, primarily due to two key factors: (1) architecture selection, as\
+    \ different tasks necessitate specialized model designs, and (2) weight initialization,\
+    \ which directly impacts the convergence speed and final performance of the models.\
+    \ Although transfer learning from ImageNet is a widely adopted strategy, its effectiveness\
+    \ is constrained by the substantial differences between natural and medical images.\
+    \ To address these challenges, we introduce Medical Neural Network Search (MedNNS),\
+    \ the first Neural Network Search framework for medical imaging applications.\
+    \ MedNNS jointly optimizes architecture selection and weight initialization by\
+    \ constructing a meta-space that encodes datasets and models based on how well\
+    \ they perform together. We build this space using a Supernetwork-based approach,\
+    \ expanding the model zoo size by 51x times over previous state-of-the-art (SOTA)\
+    \ methods. Moreover, we introduce rank loss and Fr\xE9chet Inception Distance\
+    \ (FID) loss into the construction of the space to capture inter-model and inter-dataset\
+    \ relationships, thereby achieving more accurate alignment in the meta-space.\
+    \ Experimental results across multiple datasets demonstrate that MedNNS significantly\
+    \ outperforms both ImageNet pre-trained DL models and SOTA Neural Architecture\
+    \ Search (NAS) methods, achieving an average accuracy improvement of 1.7% across\
+    \ datasets while converging substantially faster. The code and the processed meta-space\
+    \ is available at https://github.com/BioMedIA-MBZUAI/MedNNS.\n\t\t"
+  authors: "Lotfi Abdelkrim Mecharbat, Ibrahim Almakky, <strong>Martin Tak\xE1\u010D\
+    </strong>, Mohammad Yaqub"
+  journal: MICCAI 2025
+  link: https://arxiv.org/abs/2504.15865
+  pdf: https://arxiv.org/pdf/2504.15865
+  title: 'MedNNS: Supernet-based Medical Task-Adaptive Neural Network Search'
   type: cpaper
   year: '2025'
 - abstract: "\n\t\t\tA multi-agent reinforcement learning framework for managing energy\
@@ -397,35 +441,6 @@
   title: Machine Learning-Driven Discovery of Hard Magnetic Materials Using High-Throughput
     Computation and Screening
   type: jpaper
-  year: '2025'
-- abstract: "\nDeep learning (DL) has achieved remarkable progress in the field of\
-    \ medical imaging. However, adapting DL models to medical tasks remains a significant\
-    \ challenge, primarily due to two key factors: (1) architecture selection, as\
-    \ different tasks necessitate specialized model designs, and (2) weight initialization,\
-    \ which directly impacts the convergence speed and final performance of the models.\
-    \ Although transfer learning from ImageNet is a widely adopted strategy, its effectiveness\
-    \ is constrained by the substantial differences between natural and medical images.\
-    \ To address these challenges, we introduce Medical Neural Network Search (MedNNS),\
-    \ the first Neural Network Search framework for medical imaging applications.\
-    \ MedNNS jointly optimizes architecture selection and weight initialization by\
-    \ constructing a meta-space that encodes datasets and models based on how well\
-    \ they perform together. We build this space using a Supernetwork-based approach,\
-    \ expanding the model zoo size by 51x times over previous state-of-the-art (SOTA)\
-    \ methods. Moreover, we introduce rank loss and Fr\xE9chet Inception Distance\
-    \ (FID) loss into the construction of the space to capture inter-model and inter-dataset\
-    \ relationships, thereby achieving more accurate alignment in the meta-space.\
-    \ Experimental results across multiple datasets demonstrate that MedNNS significantly\
-    \ outperforms both ImageNet pre-trained DL models and SOTA Neural Architecture\
-    \ Search (NAS) methods, achieving an average accuracy improvement of 1.7% across\
-    \ datasets while converging substantially faster. The code and the processed meta-space\
-    \ is available at https://github.com/BioMedIA-MBZUAI/MedNNS.\n\t\t"
-  authors: "Lotfi Abdelkrim Mecharbat, Ibrahim Almakky, <strong>Martin Tak\xE1\u010D\
-    </strong>, Mohammad Yaqub"
-  journal: MICCAI 2025
-  link: https://arxiv.org/abs/2504.15865
-  pdf: https://arxiv.org/pdf/2504.15865
-  title: 'MedNNS: Supernet-based Medical Task-Adaptive Neural Network Search'
-  type: cpaper
   year: '2025'
 - abstract: "\n\t\t\tRepresenting molecular structures effectively in chemistry remains\
     \ a challenging task. Language models and graph-based models are extensively utilized\
