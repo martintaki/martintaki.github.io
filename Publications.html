@@ -38,7 +38,7 @@ title: Home
                                                       class="cd-select">
                                 <option class="filter" value="all" selected>All types ({{total_publications}})</option>
                                 <option class="filter" value="jpaper">Journal Papers ({{count_journal}})</option>
-                                <option class="filter" value="cpaper">Conference Papers ({{count_conference}})</option>
+                                <option class="filter" value="cpaper">Conference/Workshop Papers ({{count_conference}})</option>
                                 <option class="filter" value="tpaper">arXiv Preprints ({{count_preprint}})</option>
                                 <option class="filter" value="patent">Patents ({{count_patent}})</option>
                                 <option class="filter" value="opaper">Other ({{count_other}})</option>
@@ -119,7 +119,7 @@ title: Home
         <span class="label label-info">arXiv Preprint</span>
     {% endif %}
     {% if paper.type == 'cpaper' %}
-        <span class="label label-warning">Conference Paper</span>
+        <span class="label label-warning">Conference/Workshop Paper</span>
     {% endif %}
     {% if paper.type == 'jpaper' %}
         <span class="label label-success">Journal Paper</span>
