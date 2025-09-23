@@ -1,3 +1,25 @@
+- abstract: "\nLow-Rank Adaptation (LoRA) fine-tunes large models by learning low-rank\
+    \ updates on top of frozen weights, dramatically reducing trainable parameters\
+    \ and memory. However, there is still a gap between full training with low-rank\
+    \ projections (\\svdlora) and LoRA fine-tuning, indicating that LoRA steps can\
+    \ be further improved. In this study, we propose OPLoRA, a memory-efficient optimizer\
+    \ that closes this gap by casting LoRA optimization as an interpretable sub-problem\
+    \ and solving it efficiently with alternating least squares updates, where 1-2\
+    \ alternating steps are empirically found to be sufficient to closely match truncated\
+    \ SVD without ever forming the full matrix. We also retrieve the recently proposed\
+    \ preconditioning methods for LoRA as a special case. OPLoRA supports momentum\
+    \ by maintaining a low-rank estimate using the same subroutine (LoRSum) for computing\
+    \ the step, with a memory budget of 3 times the number of LoRA parameters (i.e.,\
+    \ same as Adam). We also propose an experimental scaled variant that uses the\
+    \ K-FAC metric, which could be of interest. Across a linear task, MNIST, CIFAR-100,\
+    \ and RoBERTa-base (MNLI), OPLoRA consistently approaches SVDLoRA's performance\
+    \ using significantly less memory.\n\t\t"
+  authors: "Abdulla Jasem Almansoori, Maria Ivanova, Andrey Veprikov, Aleksandr Beznosikov,\
+    \ Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D</strong>"
+  journal: 'OPT 2025: Optimization for Machine Learning @ NeurIPS 2025'
+  title: 'Faster Than SVD, Smarter Than SGD: The OPLoRA Alternating Update'
+  type: cpaper
+  year: '2025'
 - abstract: "\nFederated learning (FL) usually shares model weights or gradients,\
     \ which is costly for large models. Logit-based FL reduces this cost by sharing\
     \ only logits computed on a public proxy dataset. However, aggregating information\
@@ -8,10 +30,54 @@
     \ and achieve accuracy competitive with centralized training.\n\t\t"
   authors: "Viktor Kovalchuk, Nikita Kotelevskii, Maxim Panov, Samuel Horv\xE1th,\
     \ <strong>Martin Tak\xE1\u010D</strong>, , "
+  journal: 'OPT 2025: Optimization for Machine Learning @ NeurIPS 2025'
   link: https://arxiv.org/abs/2509.15147
   pdf: https://arxiv.org/pdf/2509.15147
   title: Who to Trust? Aggregating Client Knowledge in Logit-Based Federated Learning
-  type: tpaper
+  type: cpaper
+  year: '2025'
+- abstract: "\nGenomic deep learning has rapidly advanced the prediction of transcription\
+    \ factor (TF) binding and other genomic profiles directly from DNA sequence, yet\
+    \ the biological mechanisms captured by these models remain largely unexplored.\
+    \ In this work, we investigate how state-of-the-art genomic models encode the\
+    \ regulatory logic underlying TF binding. We first systematically analyze the\
+    \ model-derived patterns for each TF, revealing that models frequently rely on\
+    \ broad contextual co-associations of motifs to predict a TF to bind. To quantify\
+    \ the dispersity of this association, we introduce the \\textit{Jaccard Overlap\
+    \ Score (JOS)}, which distinguishes concentrated recognition of canonical motifs\
+    \ from more distributed binding signatures. Next, we investigate TF--TF cooperativity\
+    \ through \\textit{in silico} knockout experiments, revealing pronounced self-dependence\
+    \ of key regulators and cell-type--specific cooperative grammars. Together, our\
+    \ results provide a mechanistic interpretation of genomic deep learning models,\
+    \ demonstrating both their ability to capture biologically meaningful combinatorial\
+    \ regulation and their reliance on contextual sequence features. Our code is publicly\
+    \ available at \\href{https://anonymous.4open.science/r/EpiBinder-C7CD/README.md}{\\\
+    textit{Anonymous-GitHub}}\n\t\t"
+  authors: "Ruben Solozabal, Albert Baichorov, Tamir Avioz, Le Song, Ariel Afek, <strong>Martin\
+    \ Tak\xE1\u010D</strong>"
+  journal: 2nd Workshop on Multi-modal Foundation Models and Large Language Models
+    for Life Sciences @ NeurIPS 2025
+  title: Learning In-Silico Maps of Transcription Factor Binding and Cooperativity
+    interactions
+  type: cpaper
+  year: '2025'
+- abstract: "\nIn the paper, we propose new Quasi-Newton methods for federated learning\
+    \ by combining them with the error feedback framework, \nparticularly focusing\
+    \ on the EF21 mechanism which offers a deeper theoretical understanding and superior\
+    \ practical performance, \novercoming previous deficiencies such as reliance on\
+    \ strong assumptions and increased communication costs. \nQuasi-Newton methods\
+    \ are well-known for their practical performance. Leveraging the efficiency of\
+    \ Quasi-Newton methods,\n particularly the Limited-memory Broyden-Fletcher-Goldfarb-Shanno\
+    \ (L-BFGS) algorithm, our proposed EF21+LBFGS method achieves \n O(1/T) convergence\
+    \ rate in nonconvex regime and gets a speedup of linear convergence rate under\
+    \ \n  Polyak-Lojasiewicz  condition. Through theoretical analysis and empirical\
+    \ evaluations, we showcase the effectiveness of\n   our approach, achieving fast\
+    \ convergence rates and improved model performance compared with existing methods.\
+    \ \n\t\t"
+  authors: "Yanlin Wu, Dmitry Kamzolov, <strong>Martin Tak\xE1\u010D</strong>"
+  journal: 'OPT 2025: Optimization for Machine Learning @ NeurIPS 2025'
+  title: Quasi-Newton Methods for Federated Learning with Error Feedback
+  type: cpaper
   year: '2025'
 - abstract: "\nCurrent methods for initializing state space models (SSMs) parameters\
     \ mainly rely on the \\textit{HiPPO framework}, which is based on an online approximation\
@@ -362,7 +428,7 @@
   journal: 'ICML 2025 (International Conference on Machine Learning) and Tiny Titans:
     The next wave of On-Device Learning for Foundational Models (TTODLer-FM) @ ICML
     2025'
-  link: https://arxiv.org/abs/2411.07837
+  link: https://icml.cc/virtual/2025/poster/46134
   pdf: https://arxiv.org/pdf/2411.07837
   title: 'FRUGAL: Memory-Efficient Optimization by Reducing State Overhead for Scalable
     Training'
@@ -1095,23 +1161,6 @@
   pdf: https://openreview.net/pdf?id=vsez76EAV8
   title: 'PaDPaF: Partial Disentanglement with Partially-Federated GANs'
   type: jpaper
-  year: '2024'
-- abstract: "\nIn the paper, we propose new Quasi-Newton methods for federated learning\
-    \ by combining them with the error feedback framework, \nparticularly focusing\
-    \ on the EF21 mechanism which offers a deeper theoretical understanding and superior\
-    \ practical performance, \novercoming previous deficiencies such as reliance on\
-    \ strong assumptions and increased communication costs. \nQuasi-Newton methods\
-    \ are well-known for their practical performance. Leveraging the efficiency of\
-    \ Quasi-Newton methods,\n particularly the Limited-memory Broyden-Fletcher-Goldfarb-Shanno\
-    \ (L-BFGS) algorithm, our proposed EF21+LBFGS method achieves \n O(1/T) convergence\
-    \ rate in nonconvex regime and gets a speedup of linear convergence rate under\
-    \ \n  Polyak-Lojasiewicz  condition. Through theoretical analysis and empirical\
-    \ evaluations, we showcase the effectiveness of\n   our approach, achieving fast\
-    \ convergence rates and improved model performance compared with existing methods.\
-    \ \n\t\t"
-  authors: "Yanlin Wu, Dmitry Kamzolov, <strong>Martin Tak\xE1\u010D</strong>"
-  title: Quasi-Newton Methods for Federated Learning with Error Feedback
-  type: tpaper
   year: '2024'
 - abstract: 'This work considers non-convex finite sum minimization. There are a number
     of algorithms for such problems, but existing methods often work poorly when the
