@@ -24,17 +24,24 @@ title: Home
                 <div class="section-container">
                     <div class="row">
 
+                        {% assign total_publications = site.data.papers | size %}
+                        {% assign count_journal = site.data.papers | where: "type", "jpaper" | size %}
+                        {% assign count_conference = site.data.papers | where: "type", "cpaper" | size %}
+                        {% assign count_preprint = site.data.papers | where: "type", "tpaper" | size %}
+                        {% assign count_patent = site.data.papers | where: "type", "patent" | size %}
+                        {% assign count_other = site.data.papers | where: "type", "opaper" | size %}
+
                         <div class="col-md-3">
                             <h3>Filter by type:</h3>
                         </div>
                         <div class="col-md-6"><select id="cd-dropdown" name="cd-dropdown"
                                                       class="cd-select">
-                                <option class="filter" value="all" selected>All types</option>
-                                <option class="filter" value="jpaper">Jounal Papers</option>
-                                <option class="filter" value="cpaper">Conference Papers</option>
-                                <option class="filter" value="tpaper">arXiv Preprints</option>
-                                <option class="filter" value="patent">Patents</option>
-                                <option class="filter" value="opaper">Other</option>
+                                <option class="filter" value="all" selected>All types ({{total_publications}})</option>
+                                <option class="filter" value="jpaper">Journal Papers ({{count_journal}})</option>
+                                <option class="filter" value="cpaper">Conference Papers ({{count_conference}})</option>
+                                <option class="filter" value="tpaper">arXiv Preprints ({{count_preprint}})</option>
+                                <option class="filter" value="patent">Patents ({{count_patent}})</option>
+                                <option class="filter" value="opaper">Other ({{count_other}})</option>
                                 <!-- <option class="filter" value="bookchapter">Book Chapters</option>
                                  <option class="filter" value="book">Books</option>
                                 -->
@@ -118,7 +125,7 @@ title: Home
         <span class="label label-success">Journal Paper</span>
     {% endif %}
     {% if paper.type == 'patent' %}
-        <span class="label label-success">Patent</span>
+        <span class="label label-patent">Patent</span>
     {% endif %}
     
     {% if paper.type == 'opaper' %}
