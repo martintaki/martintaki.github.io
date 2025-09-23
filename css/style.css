@@ -905,9 +905,8 @@ ul.timeline li .data .text {
 	margin-right: 10px;
 }
 
-.pitems .pubmain .label-patent {
+.label-patent {
 	background-color: #f8bbd0;
-	color: #7a1b4b;
 }
 
 .pitems .pubmain .pubassets {
