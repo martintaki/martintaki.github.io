@@ -1,3 +1,24 @@
+- abstract: "\n\t\tIn this paper, we propose Cubic Regularized Quasi-Newton Methods\
+    \ for (strongly) star-convex and Accelerated Cubic Regularized Quasi-Newton for\
+    \ convex optimization. The proposed class of algorithms combines the global convergence\
+    \ of the Cubic Newton with the affordability of constructing the Hessian approximation\
+    \ via a Quasi-Newton update. To construct these methods we introduce two novel\
+    \ concepts of Hessian inexactness and propose the Adaptive Inexact Cubic Regularized\
+    \ Newton algorithm and its accelerated version, which adjust to the approximation\
+    \ error. We show that different Quasi-Newton updates satisfy these approximation\
+    \ conditions and provide a complexity-efficient way to solve the cubic subproblem.\
+    \ We provide global convergence rates with explicit dependence on Hessian approximation\
+    \ error. By combining cubic regularization, acceleration technique, and adaptivity,\
+    \ our algorithms show good practical performance, especially from the points where\
+    \ classical Newton diverges.\n\t\t"
+  authors: "Dmitry Kamzolov, Klea Ziu, Artem Agafonov, <strong>Martin Tak\xE1\u010D\
+    </strong>"
+  journal: Journal of Optimization Theory and Applications (accepted)
+  link: http://arxiv.org/abs/2302.04987
+  pdf: https://arxiv.org/pdf/2302.04987.pdf
+  title: Accelerated Adaptive Cubic Regularized Quasi-Newton Methods
+  type: jpaper
+  year: '2025'
 - abstract: "\nLow-Rank Adaptation (LoRA) fine-tunes large models by learning low-rank\
     \ updates on top of frozen weights, dramatically reducing trainable parameters\
     \ and memory. However, there is still a gap between full training with low-rank\
@@ -1758,26 +1779,6 @@
   pdf: https://arxiv.org/pdf/2304.01547.pdf
   title: Regularization of the policy updates for stabilizing Mean Field Games
   type: cpaper
-  year: '2023'
-- abstract: "\n\t\tIn this paper, we propose Cubic Regularized Quasi-Newton Methods\
-    \ for (strongly) star-convex and Accelerated Cubic Regularized Quasi-Newton for\
-    \ convex optimization. The proposed class of algorithms combines the global convergence\
-    \ of the Cubic Newton with the affordability of constructing the Hessian approximation\
-    \ via a Quasi-Newton update. To construct these methods we introduce two novel\
-    \ concepts of Hessian inexactness and propose the Adaptive Inexact Cubic Regularized\
-    \ Newton algorithm and its accelerated version, which adjust to the approximation\
-    \ error. We show that different Quasi-Newton updates satisfy these approximation\
-    \ conditions and provide a complexity-efficient way to solve the cubic subproblem.\
-    \ We provide global convergence rates with explicit dependence on Hessian approximation\
-    \ error. By combining cubic regularization, acceleration technique, and adaptivity,\
-    \ our algorithms show good practical performance, especially from the points where\
-    \ classical Newton diverges.\n\t\t"
-  authors: "Dmitry Kamzolov, Klea Ziu, Artem Agafonov, <strong>Martin Tak\xE1\u010D\
-    </strong>"
-  link: http://arxiv.org/abs/2302.04987
-  pdf: https://arxiv.org/pdf/2302.04987.pdf
-  title: Accelerated Adaptive Cubic Regularized Quasi-Newton Methods
-  type: tpaper
   year: '2023'
 - abstract: "Recently the SP (Stochastic Polyak step size) method has emerged as a\
     \ competitive adaptive method for setting the step sizes of SGD.  SP can be interpreted\
