@@ -13,12 +13,12 @@
     \ classical Newton diverges.\n\t\t"
   authors: "Dmitry Kamzolov, Klea Ziu, Artem Agafonov, <strong>Martin Tak\xE1\u010D\
     </strong>"
-  journal: Journal of Optimization Theory and Applications (accepted)
-  link: http://arxiv.org/abs/2302.04987
+  journal: Journal of Optimization Theory and Applications
+  link: https://link.springer.com/article/10.1007/s10957-025-02804-3
   pdf: https://arxiv.org/pdf/2302.04987.pdf
   title: Accelerated Adaptive Cubic Regularized Quasi-Newton Methods
   type: jpaper
-  year: '2025'
+  year: '2026'
 - abstract: "\nLow-Rank Adaptation (LoRA) fine-tunes large models by learning low-rank\
     \ updates on top of frozen weights, dramatically reducing trainable parameters\
     \ and memory. However, there is still a gap between full training with low-rank\
