@@ -1,3 +1,20 @@
+- abstract: "\nThe Newton method is a powerful optimization algorithm, valued for\
+    \ its rapid local convergence and elegant geometric properties. However, its theoretical\
+    \ guarantees are usually limited to convex problems. In this work, we ask whether\
+    \ convexity is truly necessary. We introduce the concept of loss-transformation\
+    \ invariance, showing that damped Newton methods are unaffected by monotone transformations\
+    \ of the loss - apart from a simple rescaling of the step size. This insight allows\
+    \ difficult losses to be replaced with easier transformed versions, enabling convexification\
+    \ of many nonconvex problems while preserving the same sequence of iterates. Our\
+    \ analysis also explains the effectiveness of unconventional stepsizes in Newton's\
+    \ method, including values greater than one and even negative steps.\n\t\t"
+  authors: "Alexander Shestakov, Sushil Bohara, Samuel Horv\xE1th, <strong>Martin\
+    \ Tak\xE1\u010D</strong>, Slavom\xEDr Hanzely"
+  link: https://arxiv.org/abs/2509.25782
+  pdf: https://arxiv.org/pdf/2509.25782
+  title: Loss-Transformation Invariance in the Damped Newton Method
+  type: tpaper
+  year: '2025'
 - abstract: "\n\t\tIn this paper, we propose Cubic Regularized Quasi-Newton Methods\
     \ for (strongly) star-convex and Accelerated Cubic Regularized Quasi-Newton for\
     \ convex optimization. The proposed class of algorithms combines the global convergence\
