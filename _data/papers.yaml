@@ -55,6 +55,8 @@
   authors: "Abdulla Jasem Almansoori, Maria Ivanova, Andrey Veprikov, Aleksandr Beznosikov,\
     \ Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D</strong>"
   journal: 'OPT 2025: Optimization for Machine Learning @ NeurIPS 2025'
+  link: https://arxiv.org/abs/2509.19977
+  pdf: https://arxiv.org/pdf/2509.19977
   title: 'Faster Than SVD, Smarter Than SGD: The OPLoRA Alternating Update'
   type: cpaper
   year: '2025'
