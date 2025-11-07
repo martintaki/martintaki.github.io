@@ -1,3 +1,21 @@
+- abstract: "\nModern continuous-time generative models often induce V-shaped transport:\
+    \ each sample travels independently along nearly straight trajectories from prior\
+    \ to data, overlooking shared structure. We introduce Y-shaped generative flows,\
+    \ which move probability mass together along shared pathways before branching\
+    \ to target-specific endpoints. Our formulation is based on novel velocity-powered\
+    \ objective with a sublinear exponent (between zero and one). this concave dependence\
+    \ rewards joint and fast mass movement. Practically, we instantiate the idea in\
+    \ a scalable neural ODE training objective. On synthetic, image, and biology datasets,\
+    \ Y-flows recover hierarchy-aware structure, improve distributional metrics over\
+    \ strong flow-based baselines, and reach targets with fewer integration steps.\n\
+    \t\t"
+  authors: "Arip Asadulaev, Semyon Semenov, Abduragim Shtanchaev, Eric Moulines, Fakhri\
+    \ Karray, <strong>Martin Tak\xE1\u010D</strong>"
+  link: https://arxiv.org/abs/2510.11955
+  pdf: https://arxiv.org/pdf/2510.11955
+  title: Y-shaped Generative Flows
+  type: tpaper
+  year: '2025'
 - abstract: "\n\t\t\tRepresenting molecular structures effectively in chemistry remains\
     \ a challenging task. Language models and graph-based models are extensively utilized\
     \ within this domain, consistently achieving state-of-the-art results across an\
