@@ -1433,7 +1433,7 @@
     \t\t"
   authors: "Aleksandr Beznosikov, Georgiy Kormakov, Alexander Grigorievskiy, Mikhail\
     \ Rudakov, Ruslan Nazykov, Alexander Rogozin, Anton Vakhrushev, Andrey Savchenko,\
-    \ , <strong>Martin Tak\xE1\u010D</strong>, Alexander Gasnikov"
+    \ <strong>Martin Tak\xE1\u010D</strong>, Alexander Gasnikov"
   title: 'Exploring New Frontiers in Vertical Federated Learning: the Role of Saddle
     Point Reformulation'
   type: tpaper
