@@ -413,15 +413,6 @@
     Control Applications
   type: patent
   year: '2025'
-- abstract: "\nFiling date: June 10, 2024. Assignee (Owner): MBZUAI.\n\t\t"
-  authors: "<strong>Martin Tak\xE1\u010D</strong>, Samuel Horv\xE1th, Maxim Panov,\
-    \ Nikita Kotelevskii"
-  journal: Submitted - USPTO Application 18738622 (Filed June 10, 2024, MBZUAI Ref.
-    2023-006)
-  ltype: Submitted
-  title: Method and System for Determining Uncertainty in Personalized Federated Learning
-  type: patent
-  year: '2024'
 - abstract: "\n\nQuasi-Newton methods are widely used for solving convex optimization\
     \ problems due to their ease of implementation, practical efficiency, and strong\
     \ local convergence guarantees. However, their global convergence is typically\
@@ -1274,6 +1265,15 @@
   pdf: https://arxiv.org/pdf/2405.18926
   title: Damped Newton Method with Near-Optimal Global $O(1/k^3)$ Convergence Rate
   type: tpaper
+  year: '2024'
+- abstract: "\nFiling date: June 10, 2024. Assignee (Owner): MBZUAI.\n\t\t"
+  authors: "<strong>Martin Tak\xE1\u010D</strong>, Samuel Horv\xE1th, Maxim Panov,\
+    \ Nikita Kotelevskii"
+  journal: Submitted - USPTO Application 18738622 (Filed June 10, 2024, MBZUAI Ref.
+    2023-006)
+  ltype: Submitted
+  title: Method and System for Determining Uncertainty in Personalized Federated Learning
+  type: patent
   year: '2024'
 - abstract: "Training very large machine learning models requires a distributed computing\
     \ approach, with communication of the model updates often being the bottleneck.\
