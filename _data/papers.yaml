@@ -1,3 +1,48 @@
+- abstract: "\nPretrained diffusion models serve as effective priors for tackling\
+    \ Bayesian inverse problems across domains\u2014from image editing to voice separation\
+    \ and beyond. Current zero-shot methods work by sampling through a chain of posterior\
+    \ distributions, avoiding the need for task-specific retraining. These approaches\
+    \ depend on surrogate likelihoods that demand vector-Jacobian products at each\
+    \ denoising step, creating a substantial computational burden. We introduce a\
+    \ likelihood surrogate that sidesteps this bottleneck entirely. Our method views\
+    \ the guidance process as an optimization procedure that is both simple and efficient\
+    \ to compute, eliminating the need for gradients through the denoiser network.\
+    \ This enables us to handle diverse inverse problems without backpropagation overhead.\
+    \ Experiments confirm that our approach delivers strong consistency with observations\
+    \ and high-quality results across multiple tasks while significantly reducing\
+    \ inference costs \u2014 making it the fastest method among competitors.\n\t\t"
+  authors: "Abduragim Shtanchaev, Albina Ilina, Yazid Janati, Badr Mofad, <strong>Martin\
+    \ Tak\xE1\u010D</strong>, Eric Moulines"
+  title: Guess and Guide Zero-Shot Diffusion Guidance
+  type: tpaper
+  year: '2025'
+- abstract: "\nAdapting vision foundation models (VFMs) to downstream tasks requires\
+    \ balancing three factors: (i) target accuracy, (ii) number of trainable parameters,\
+    \ and (iii) the optimization steps needed to converge. While parameter-efficient\
+    \ fine-tuning (PEFT) methods substantially reduce the number of trainable parameters,\
+    \ they leave the step budget (iterations required for convergence) as the dominant\
+    \ computational cost. Moreover, PEFT performance is sensitive to adapter placement\
+    \ and capacity, leading to dataset-specific design choices that must be re-tuned\
+    \ for each new task. To address this, we propose ATAN (Adapt to All Needs), a\
+    \ meta-learning framework that predicts a high-performing, task-specific PEFT\
+    \ configuration and initialization for new, unseen datasets without per-task search.\
+    \ ATAN amortizes the cost of PEFT design by learning a meta-space that captures\
+    \ relationships between dataset properties and optimal adaptation configurations.\
+    \ This meta-space is efficiently built using a supernet-based model zoo spanning\
+    \ 90+ datasets and an extremely large configuration space (10^30 choices). Evaluated\
+    \ against a broad suite of PEFT baselines and conventional fine-tuning, ATAN attains\
+    \ the highest average accuracy, ranking top-1 or top-2 on nearly all 17 datasets,\
+    \ while other methods are inconsistent, strong on some datasets but weak on others,\
+    \ reflecting sensitivity to configuration and initialization. Under a fixed epoch\
+    \ budget, and driven by its meta-learned initialization, ATAN converges 2\u2013\
+    3\xD7 faster, with the largest gains on challenging cross-domain transfers (e.g.,\
+    \ medical, satellite), demonstrating robust generalization.\n\t\t"
+  authors: "Lotfi Abdelkrim Mecharbat, Ibrahim Almakky, Abdelrahman Elsayed, Hazem\
+    \ Lashen, Alya Almsouti, <strong>Martin Tak\xE1\u010D</strong>, Mohammad Yaqub"
+  title: 'Adapt to All Needs (ATAN): Meta-learned Efficient Adaptation of Vision Foundation
+    Models'
+  type: tpaper
+  year: '2025'
 - abstract: "\nRecent advancements in machine learning have improved performance while\
     \ also increasing computational demands. While federated and distributed setups\
     \ address these issues, their structure is vulnerable to malicious influences.\
@@ -23,6 +68,31 @@
   title: 'Bant: Byzantine Antidote via Trial Function and Trust Scores'
   type: cpaper
   year: '2026'
+- abstract: "\nOptimization lies at the core of modern deep learning, yet existing\
+    \ methods often\nface a fundamental trade-off between adapting to problem geometry\
+    \ and leveraging\ncurvature utilization. Steepest descent algorithms adapt to\
+    \ different geometries\nthrough norm choices but remain strictly first-order,\
+    \ whereas quasi-Newton and\nadaptive optimizers incorporate curvature information\
+    \ but are restricted to Frobenius geometry, limiting their applicability across\
+    \ diverse architectures. In this\nwork, we propose a unified framework generalizing\
+    \ steepest descent, quasi-Newton\nmethods, and adaptive methods through the novel\
+    \ notion of preconditioned matrix norms. This abstraction reveals that widely\
+    \ used optimizers such as SGD\nand Adam, as well as more advanced approaches like\
+    \ Muon and KL-Shampoo,\nand recent hybrids including SOAP and SPlus, all emerge\
+    \ as special cases of\nthe same principle. Within this framework, we provide the\
+    \ first systematic treatment of affine and scale invariance in the matrix-parameterized\
+    \ setting, establishing necessary and sufficient conditions under generalized\
+    \ norms. Building on\nthis foundation, we introduce two new methods, MuAdam and\
+    \ MuAdam-SANIA,\nwhich combine the spectral geometry of Muon with Adam-style preconditioning.\n\
+    Our experiments demonstrate that these optimizers are competitive with, and in\n\
+    some cases outperform, existing state-of-the-art methods. Our code is available\
+    \ athttps://anonymous.4open.science/r/LIB-2D05\n\t\t"
+  authors: "Andrey Veprikov, Arman Bolatov, Samuel Horv\xE1th, Aleksandr Beznosikov,\
+    \ <strong>Martin Tak\xE1\u010D</strong>, Slavomir Hanzely"
+  title: 'Preconditioned Norms: A Unified Framework for Steepest Descent, Quasi-Newton
+    and Adaptive Methods'
+  type: tpaper
+  year: '2025'
 - abstract: "\nModern continuous-time generative models often induce V-shaped transport:\
     \ each sample travels independently along nearly straight trajectories from prior\
     \ to data, overlooking shared structure. We introduce Y-shaped generative flows,\
