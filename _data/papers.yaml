@@ -387,6 +387,41 @@
     Energy Optimization
   type: patent
   year: '2025'
+- abstract: "\nFiling date: 06 Feb 2025. Assignee (Owner): Pending.\n\t\t"
+  authors: "<strong>Martin Tak\xE1\u010D</strong>, Zangir Iklassov, Farkhad Akimov"
+  journal: Provisional - USPTO Application 63/754,814 (Filed 06 Feb 2025)
+  ltype: Provisional
+  title: Automated Machine Learning Pipeline Utilizing Large Language Model Agents
+    for Data Scientist Workflow
+  type: patent
+  year: '2025'
+- abstract: "\nFiling date: Mar 24, 2025. Assignee (Owner): MBZUAI.\n\t\t"
+  authors: "<strong>Martin Tak\xE1\u010D</strong>, Artem Agafonov"
+  journal: Provisional - USPTO Application 63/776,665 (Filed Mar 24, 2025, MBZUAI
+    Ref. 2025-007)
+  ltype: Provisional
+  title: AI Driven Conversational Shopping Assistant for Seamless and Personalized
+    E-Commerce Experiences
+  type: patent
+  year: '2025'
+- abstract: "\nFiling date: April 15, 2025. Assignee (Owner): MBZUAI.\n\t\t"
+  authors: "<strong>Martin Tak\xE1\u010D</strong>, Mohannad Takrouri, Nicolas Avila"
+  journal: Submitted - USPTO Application 19179677 (Filed April 15, 2025, MBZUAI Ref.
+    2024-005)
+  ltype: Submitted
+  title: Method for Grid Load Balancing and Enhanced Renewable Energy Use in Climate
+    Control Applications
+  type: patent
+  year: '2025'
+- abstract: "\nFiling date: June 10, 2024. Assignee (Owner): MBZUAI.\n\t\t"
+  authors: "<strong>Martin Tak\xE1\u010D</strong>, Samuel Horv\xE1th, Maxim Panov,\
+    \ Nikita Kotelevskii"
+  journal: Submitted - USPTO Application 18738622 (Filed June 10, 2024, MBZUAI Ref.
+    2023-006)
+  ltype: Submitted
+  title: Method and System for Determining Uncertainty in Personalized Federated Learning
+  type: patent
+  year: '2024'
 - abstract: "\n\nQuasi-Newton methods are widely used for solving convex optimization\
     \ problems due to their ease of implementation, practical efficiency, and strong\
     \ local convergence guarantees. However, their global convergence is typically\
@@ -4094,51 +4129,3 @@
     Asian options
   type: jpaper
   year: '2011'
-- authors: "<strong>Martin Tak\xE1\u010D</strong>"
-  journal: Provisional | Filed 06 Feb 2025 | USPTO Application 63/754,814
-  ltype: Provisional
-  title: Automated Machine Learning Pipeline Utilizing Large Language Model Agents
-    for Data Scientist Workflow
-  type: patent
-  year: '2025'
-- authors: "<strong>Martin Tak\xE1\u010D</strong>"
-  journal: 'Submitted | Filed June 10, 2024 | USPTO Application 18738622 | MBZUAI
-    Ref. 2023-006 | Assignee: MBZUAI'
-  ltype: Submitted
-  title: Method and System for Determining Uncertainty in Personalized Federated Learning
-  type: patent
-  year: '2024'
-- authors: "<strong>Martin Tak\xE1\u010D</strong>, Artem Agafonov"
-  journal: 'Provisional | Filed Mar 24, 2025 | USPTO Application 63/776,665 | MBZUAI
-    Ref. 2025-007 | Assignee: MBZUAI'
-  ltype: Provisional
-  title: AI Driven Conversational Shopping Assistant for Seamless and Personalized
-    E-Commerce Experiences
-  type: patent
-  year: '2025'
-- authors: "<strong>Martin Tak\xE1\u010D</strong>, Nicolas Mauricio Cuadrado, Roberto\
-    \ Alejandro Gutierrez Guillen, Samuel Horv\xE1th"
-  journal: 'Submitted | Filed Feb 26, 2023 | USPTO Application 18/587,182 | MBZUAI
-    Ref. 2024-004 | Assignee: MBZUAI'
-  ltype: Submitted
-  title: A System and Method for a Hierarchical Multi-Agent Framework for Transactive
-    Microgrids
-  type: patent
-  year: '2023'
-- authors: "<strong>Martin Tak\xE1\u010D</strong>, Nicolas Mauricio Cuadrado, Roberto\
-    \ Alejandro Gutierrez Guillen, Samuel Horv\xE1th"
-  journal: 'Submitted | Filed Feb 26, 2023 | USPTO Application 18/587,261 | MBZUAI
-    Ref. 2024-010 | Assignee: MBZUAI'
-  ltype: Submitted
-  title: A Federated Reinforcement Learning-Based System and Method for Cooperative
-    Energy Optimization
-  type: patent
-  year: '2023'
-- authors: "<strong>Martin Tak\xE1\u010D</strong>, Mohannad Takrouri, Nicolas Avila"
-  journal: 'Submitted | Filed April 15, 2025 | USPTO Application 19179677 | MBZUAI
-    Ref. 2024-005 | Assignee: MBZUAI'
-  ltype: Submitted
-  title: Method for Grid Load Balancing and Enhanced Renewable Energy Use in Climate
-    Control Applications
-  type: patent
-  year: '2025'
