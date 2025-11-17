@@ -388,7 +388,7 @@
   type: patent
   year: '2025'
 - abstract: "\nFiling date: 06 Feb 2025. Assignee (Owner): Pending.\n\t\t"
-  authors: "<strong>Martin Tak\xE1\u010D</strong>, Zangir Iklassov, Farkhad Akimov"
+  authors: "Zangir Iklassov, Farkhad Akimov, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Provisional - USPTO Application 63/754,814 (Filed 06 Feb 2025)
   ltype: Provisional
   title: Automated Machine Learning Pipeline Utilizing Large Language Model Agents
