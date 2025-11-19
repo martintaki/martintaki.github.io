@@ -1,5 +1,25 @@
 - items:
   - col: {}
+    from: 2025
+    image: missing.jpg
+    name: Vladmir Solodkin
+    to: 2025
+  - col: {}
+    from: 2025
+    image: missing.jpg
+    name: Andrii Semenov
+    to: 2025
+  - col: {}
+    from: 2025
+    image: AndreyVeprikov.jpeg
+    name: Andrey Veprikov
+    to: 2025
+  - col: {}
+    from: 2025
+    image: missing.jpg
+    name: Maksim Bobrin
+    to: 2025
+  - col: {}
     from: 2024/11
     image: AleksandrLobanov.jpg
     name: Aleksandr Lobanov
@@ -131,7 +151,7 @@
     name: Arip Asadulaev
     to: present
   - col: {}
-    from: 2024
+    from: 2023
     image: Slavomir_Hanzely.jpg
     name: "Slavom\xEDr Hanzely"
     to: present
@@ -168,11 +188,6 @@
   label: Postdoc [MBZUAI]
 - items:
   - col: {}
-    from: 2022/10
-    image: NazariiTupista.jpeg
-    name: Nazarii Tupista
-    to: present
-  - col: {}
     from: 2025
     image: KirillDubovikov.jpeg
     name: Kirill Dubovikov
@@ -186,6 +201,16 @@
     from: 2025
     image: AyaElMir.jpeg
     name: Aya El Mir
+    to: present
+  - col: {}
+    from: 2025
+    image: AlexanderYukhimchuk.jpeg
+    name: Alexander Yukhimchuk
+    to: 2025
+  - col: {}
+    from: 2022/10
+    image: NazariiTupista.jpeg
+    name: Nazarii Tupista
     to: present
   label: Research Scientist [MBZUAI]
 - items:
