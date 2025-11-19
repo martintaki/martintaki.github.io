@@ -58,7 +58,7 @@
     from: 2022/01
     image: Slavomir_Hanzely.jpg
     name: "Slavom\xEDr Hanzely"
-    to: present
+    to: 2022
   label: Visiting Researchers / Students [MBZUAI]
 - items:
   - col: {}
@@ -107,6 +107,11 @@
 - items:
   - col: {}
     from: 2025/09
+    image: sayantan.png
+    name: Sayantan Choudhury
+    to: present
+  - col: {}
+    from: 2025/09
     image: YandaLi.png
     name: Yanda Li
     to: present
@@ -119,6 +124,11 @@
     from: 2025
     image: AripAsadulaev.jpeg
     name: Arip Asadulaev
+    to: present
+  - col: {}
+    from: 2024
+    image: Slavomir_Hanzely.jpg
+    name: "Slavom\xEDr Hanzely"
     to: present
   - col: {}
     from: 2021/09
