@@ -249,17 +249,17 @@
     from: 2021
     image: Abdulla_Almansoori.jpg
     name: Abdulla Almansoori
-    to: 2025 (expected)
-  - col: {}
-    from: 2021
-    image: Zangir_Iklassov.jpg
-    name: Zangir Iklassov
-    to: 2024
+    to: 2026 (expected)
   - col: {}
     from: 2022
     image: Artem_Agafonov.jpg
     name: Artem Agafonov
     to: 2025/12
+  - col: {}
+    from: 2021
+    image: Zangir_Iklassov.jpg
+    name: Zangir Iklassov
+    to: 2024
   label: PhD Students [MBZUAI]
 - items:
   - col: {}
