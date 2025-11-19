@@ -107,6 +107,21 @@
 - items:
   - col: {}
     from: 2025/09
+    image: YandaLi.png
+    name: Yanda Li
+    to: present
+  - col: {}
+    from: 2025/09
+    image: HachemMadmoun.jpeg
+    name: Hachem Madmoun
+    to: present
+  - col: {}
+    from: 2025
+    image: AripAsadulaev.jpeg
+    name: Arip Asadulaev
+    to: present
+  - col: {}
+    from: 2025/09
     image: Ruben_Solozabal.jpg
     name: Ruben Solozabal
     to: present
@@ -140,17 +155,27 @@
     image: velibor.jpeg
     name: Velibor Bojkovic
     to: 2025
-  - col: {}
-    from: 2025
-    image: AripAsadulaev.jpeg
-    name: Arip Asadulaev
-    to: present
   label: Postdoc [MBZUAI]
 - items:
   - col: {}
     from: 2022/10
     image: NazariiTupista.jpeg
     name: Nazarii Tupista
+    to: present
+  - col: {}
+    from: 2025
+    image: KirillDubovikov.jpeg
+    name: Kirill Dubovikov
+    to: present
+  - col: {}
+    from: 2025
+    image: missing.jpg
+    name: Omar El Mansouri
+    to: present
+  - col: {}
+    from: 2025
+    image: AyaElMir.jpeg
+    name: Aya El Mir
     to: present
   label: Research Scientist [MBZUAI]
 - items:
