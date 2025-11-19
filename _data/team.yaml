@@ -299,6 +299,11 @@
     to: present
   - col: {}
     from: 2024/09
+    image: missing.jpg
+    name: Albert Baichorov
+    to: present
+  - col: {}
+    from: 2024/09
     image: Semyon_Semenov.jpg
     name: Semyon Semenov
     to: present
