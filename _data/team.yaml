@@ -1,7 +1,7 @@
 - items:
   - col: {}
     from: 2024/11
-    image: null
+    image: AleksandrLobanov.jpg
     name: Aleksandr Lobanov
     to: 2024/12
   - col: {}
@@ -105,6 +105,11 @@
     type: PhD student
   label: Visiting Researchers / PhD students [Lehigh]
 - items:
+  - col: {}
+    from: 2025/09
+    image: Ruben_Solozabal.jpg
+    name: Ruben Solozabal
+    to: present
   - col: {}
     from: 2021/09
     image: Ruben_Solozabal.jpg
