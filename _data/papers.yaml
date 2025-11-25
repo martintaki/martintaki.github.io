@@ -153,6 +153,8 @@
     \ traditional scenario-based models.\n\t\t"
   authors: "Nicolas Mauricio Cuadrado, Mohannad Takrouri, Ji\u0159\xED N\u011Bme\u010D\
     ek, <strong>Martin Tak\xE1\u010D</strong>, Jakub Mare\u010Dek"
+  link: https://arxiv.org/abs/2511.13888
+  pdf: https://arxiv.org/pdf/2511.13888
   title: Tractable Probabilistic Models for Investment Planning
   type: tpaper
   year: '2025'
