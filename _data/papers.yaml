@@ -1,3 +1,90 @@
+- abstract: "\n\n\t\t"
+  authors: "Dmitry Pasechnyuk-Vilensky, Dmitry Kamzolov, <strong>Martin Tak\xE1\u010D\
+    </strong>"
+  link: https://arxiv.org/abs/2510.08714
+  pdf: https://arxiv.org/pdf/2510.08714
+  title: 'Re3MCN: Cubic Newton + Variance Reduction + Momentum + Quadratic Regularization
+    for Finite-sum Non-convex Problems'
+  type: tpaper
+  year: '2025'
+- abstract: "\nOffline reinforcement learning (RL) learns exclusively from static\
+    \ datasets, without further interaction with the environment. In practice, such\
+    \ datasets vary widely in quality, often mixing expert, suboptimal, and even random\
+    \ trajectories. The choice of algorithm therefore depends on dataset fidelity.\
+    \ Behavior cloning can suffice on high-quality data, whereas mixed- or low-quality\
+    \ data typically benefits from offline RL methods that stitch useful behavior\
+    \ across trajectories. Yet in the wild it is difficult to assess dataset quality\
+    \ a priori because the data's provenance and skill composition are unknown. We\
+    \ address the problem of estimating offline dataset quality without training an\
+    \ agent. We study a spectrum of proxies from simple cumulative rewards to learned\
+    \ value based estimators, and introduce the Bellman Wasserstein distance (BWD),\
+    \ a value aware optimal transport score that measures how dissimilar a dataset's\
+    \ behavioral policy is from a random reference policy. BWD is computed from a\
+    \ behavioral critic and a state conditional OT formulation, requiring no environment\
+    \ interaction or full policy optimization. Across D4RL MuJoCo tasks, BWD strongly\
+    \ correlates with an oracle performance score that aggregates multiple offline\
+    \ RL algorithms, enabling efficient prediction of how well standard agents will\
+    \ perform on a given dataset. Beyond prediction, integrating BWD as a regularizer\
+    \ during policy optimization explicitly pushes the learned policy away from random\
+    \ behavior and improves returns. These results indicate that value aware, distributional\
+    \ signals such as BWD are practical tools for triaging offline RL datasets and\
+    \ policy optimization.\n\t\t"
+  authors: "Arip Asadulaev, Fakhri Karray, <strong>Martin Tak\xE1\u010D</strong>"
+  link: https://arxiv.org/abs/2510.12638
+  pdf: https://arxiv.org/pdf/2510.12638
+  title: Expert or not? assessing data quality in offline reinforcement learning
+  type: tpaper
+  year: '2025'
+- abstract: "\nRecently, it was shown that small, looped architectures, such as Tiny\
+    \ Recursive Models (TRMs), can outperform Large Language Models (LLMs) on complex\
+    \ reasoning tasks, including the Abstraction and Reasoning Corpus (ARC). In this\
+    \ work, we investigate a core question: how can we further improve the efficiency\
+    \ of these methods with minimal changes? To address this, we frame the latent\
+    \ reasoning of TRMs as a form of classifier-free guidance and implicit policy\
+    \ improvement algorithm. Building on these insights, we propose a novel training\
+    \ scheme that provides a target for each loop during training. We demonstrate\
+    \ that our approach significantly enhances training efficiency. Our method reduces\
+    \ the total number of forward passes by 18x and eliminates halting mechanisms,\
+    \ while maintaining quality comparable to standard TRMs. Notably, we achieve 24%\
+    \ accuracy on ARC-1 with only 0.8M parameters, outperforming most LLMs.\n\t\t"
+  authors: "Arip Asadulaev, Rayan Banerjee, Fakhri Karray, <strong>Martin Tak\xE1\u010D\
+    </strong>"
+  link: https://arxiv.org/abs/2511.16886
+  pdf: https://arxiv.org/pdf/2511.16886
+  title: Deep Improvement Supervision
+  type: tpaper
+  year: '2025'
+- abstract: "\nLarge Language Models (LLMs) are commonly evaluated on general-domain\
+    \ datasets such as MMLU or GSM8K. However, assessing their performance in specific\
+    \ domains requires creating a test set with domain-specific context. This work\
+    \ provides a comprehensive analysis of state-of-the-art LLM's capabilities with\
+    \ respect to oil and gas knowledge that has been conducted in the context of the\
+    \ EnergyAI project within ADNOC.\n\nOur assessment is performed using two custom\
+    \ domain evaluation datasets. First, we measure the ability of the model to handle\
+    \ Multiple-Choice Questions (MCQ), which consists of questions that require a\
+    \ solid understanding and reasoning across upstream, midstream and downstream\
+    \ oil and gas operations. Second, we assess their ability to answer open-ended\
+    \ questions in the same domain, analyzing and quantifying the quality of the responses\
+    \ in relevance, accuracy and completeness. In addition to these evaluations, we\
+    \ examine other factors such as model size, throughput, response latency, and\
+    \ overall capabilities.\n\nWe have observed that the Llama3.1 405B model delivers\
+    \ a domain-specific performance comparable to proprietary models like GPT4o. Furthermore,\
+    \ models at a smaller scale - such as Llama 3.1 70B and Llama 3.2 90B - deliver\
+    \ excellent results relative to their size and offer an attractive performance-to-cost\
+    \ tradeoff. Nevertheless, all current LLM, including the most advanced open-source\
+    \ and proprietary models, exhibit notable limitations in their knowledge and reasoning\
+    \ capabilities within the oil and gas domain. These shortcomings highlight the\
+    \ need for targeted domain adaptation, deeper integration of technical knowledge,\
+    \ and rigorous evaluation tailored to the complexities of the industry.\n\t\t"
+  authors: "F. Castanedo, W. Bhattacharya, S. Ghosh, <strong>Martin Tak\xE1\u010D\
+    </strong>, Salem Lahlou, Zangir Iklassov, M. Schaffrath, N. Reddicharla, R. Mohan,\
+    \ M. Yaslam, M. Lee"
+  journal: Abu Dhabi International Petroleum Exhibition and Conference
+  link: https://onepetro.org/SPEADIP/proceedings-abstract/25ADIP/25ADIP/793038
+  title: Assessing the Capabilities of Large Language Models for Oil and Gas Industry
+    Applications
+  type: jpaper
+  year: '2025'
 - abstract: "\nPretrained diffusion models serve as effective priors for tackling\
     \ Bayesian inverse problems across domains\u2014from image editing to voice separation\
     \ and beyond. Current zero-shot methods work by sampling through a chain of posterior\
