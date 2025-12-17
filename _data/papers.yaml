@@ -1,3 +1,35 @@
+- abstract: "\nCytosine methylation is a key epigenetic modification that regulates\
+    \ transcription factor (TF) binding and gene expression. While most current understanding\
+    \ of methylation-sensitive TF binding derives from studies focused exclusively\
+    \ on fully methylated CpG sites, alternative forms\u2014such as non-CpG and hemimethylation\u2014\
+    are increasingly recognized as widespread and functionally important, particularly\
+    \ in embryonic stem cells and neurons. However, the direct impact of these alternative\
+    \ methylation contexts on TF\u2013DNA interactions remains poorly defined, largely\
+    \ because current binding assays introduce methylation enzymatically, which precludes\
+    \ strand-specific and position-resolved measurements. Here, we systematically\
+    \ profile the methylation sensitivity of 18 human TFs spanning 11 structural families\
+    \ using chemically synthesized DNA libraries containing position-specific 5-methylcytosines\
+    \ (5mC) in CpG, non-CpG, and hemimethylated contexts, measured via high-throughput\
+    \ protein-binding microarrays. Our results reveal extensive TF sensitivity to\
+    \ methylation state, position, and strand orientation, including strong binding\
+    \ of several TFs to non-CpG and hemimethylated sites. The presence of 5mC can\
+    \ dramatically alter TF\u2013DNA interactions: transforming low-affinity sites\
+    \ into high-affinity ones by enabling new contacts or silencing otherwise favorable\
+    \ motifs through steric hindrance. Genomic analyses further show that the methylation-sensitive\
+    \ sequences identified in vitro are represented within enhancers and regulatory\
+    \ elements, exhibiting distinct methylation patterns across cell types. Together,\
+    \ our findings uncover a previously hidden layer of methylation-dependent TF\u2013\
+    DNA recognition, broadening the understanding of epigenetics in transcriptional\
+    \ regulation.\n\t\t"
+  authors: "Irina Miodownik, Ruben Solozabal, Michael P. O\u2019Hagan, Shira Albeck,\
+    \ Yoav Peleg, <strong>Martin Tak\xE1\u010D</strong>, Ariel Afek"
+  journal: Proceedings of the National Academy of Sciences (PNAS)
+  link: https://www.pnas.org/doi/10.1073/pnas.2520814122
+  pdf: https://www.pnas.org/doi/epdf/10.1073/pnas.2520814122
+  title: DNA methylation shapes transcription factor binding beyond canonical CpG
+    contexts
+  type: jpaper
+  year: '2025'
 - abstract: "\n\n\t\t"
   authors: "Dmitry Pasechnyuk-Vilensky, Dmitry Kamzolov, <strong>Martin Tak\xE1\u010D\
     </strong>"
