@@ -38,8 +38,8 @@
     \ to enhancing the robustness and reliability of federated learning models in\
     \ real-world applications, effectively addressing the challenges that arise due\
     \ to the heterogeneity and diverse nature of data distributions.\n\t\t"
-  authors: "<strong>Martin Tak\xE1\u010D</strong>, Samuel Horv\xE1th, Maxim Panov,\
-    \ Nikita Kotelevskii"
+  authors: "Maxim Panov, Nikita Kotelevskii, <strong>Martin Tak\xE1\u010D</strong>,\
+    \ Samuel Horv\xE1th"
   journal: US20250378350A1
   link: https://patents.google.com/patent/US20250378350A1/en
   title: Method and system for determining uncertainty in personalized federated learning
