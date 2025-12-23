@@ -30,6 +30,21 @@
     contexts
   type: jpaper
   year: '2025'
+- abstract: "\nA method and system for uncertainty quantification approach for federated\
+    \ learning that enables the distinction between aleatoric and epistemic uncertainties,\
+    \ as well as between local and global in-and out-of-distribution data. The method\
+    \ and system offer permit selecting the appropriate model to predict on a given\
+    \ input based on these uncertainty estimations. This comprehensive framework contributes\
+    \ to enhancing the robustness and reliability of federated learning models in\
+    \ real-world applications, effectively addressing the challenges that arise due\
+    \ to the heterogeneity and diverse nature of data distributions.\n\t\t"
+  authors: "<strong>Martin Tak\xE1\u010D</strong>, Samuel Horv\xE1th, Maxim Panov,\
+    \ Nikita Kotelevskii"
+  journal: US20250378350A1
+  link: https://patents.google.com/patent/US20250378350A1/en
+  title: Method and system for determining uncertainty in personalized federated learning
+  type: patent
+  year: '2025'
 - abstract: "\n\n\t\t"
   authors: "Dmitry Pasechnyuk-Vilensky, Dmitry Kamzolov, <strong>Martin Tak\xE1\u010D\
     </strong>"
@@ -1386,15 +1401,6 @@
   pdf: https://arxiv.org/pdf/2405.18926
   title: Damped Newton Method with Near-Optimal Global $O(1/k^3)$ Convergence Rate
   type: tpaper
-  year: '2024'
-- abstract: "\nFiling date: June 10, 2024. Assignee (Owner): MBZUAI.\n\t\t"
-  authors: "<strong>Martin Tak\xE1\u010D</strong>, Samuel Horv\xE1th, Maxim Panov,\
-    \ Nikita Kotelevskii"
-  journal: Submitted - USPTO Application 18738622 (Filed June 10, 2024, MBZUAI Ref.
-    2023-006)
-  ltype: Submitted
-  title: Method and System for Determining Uncertainty in Personalized Federated Learning
-  type: patent
   year: '2024'
 - abstract: "Training very large machine learning models requires a distributed computing\
     \ approach, with communication of the model updates often being the bottleneck.\
