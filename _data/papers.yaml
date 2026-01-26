@@ -13,7 +13,7 @@
   pdf: https://openreview.net/pdf?id=0eM74HjPQA
   title: 'Newton Method Revisited: Global Convergence Rates up to $O(1/k^3)$ for Stepsize
     Schedules and Linesearch Procedures'
-  type: tpaper
+  type: cpaper
   year: '2026'
 - abstract: "\nLarge pre-trained models are commonly adapted to downstream tasks using\
     \ parameter-efficient fine-tuning methods such as Low-Rank Adaptation (LoRA),\
