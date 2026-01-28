@@ -1,3 +1,75 @@
+- abstract: "\nFederated Learning (FL) revolutionizes machine learning by enabling\
+    \ model training across decentralized data sources without aggregating sensitive\
+    \ client data. However, the inherent heterogeneity of client data presents unique\
+    \ challenges, as not all client contributions positively impact model performance.\
+    \ In this work, we propose a novel algorithm, Merit-Based Federated Averaging\
+    \ (\\Algn), which dynamically assigns aggregation weights to clients based on\
+    \ their data distribution's relevance to a target objective. By leveraging stochastic\
+    \ gradients and solving an auxiliary optimization problem, our method adaptively\
+    \ identifies beneficial collaborators, ensuring efficient and robust learning.\
+    \ We establish theoretical convergence guarantees under mild assumptions and demonstrate\
+    \ that \\Algn achieves superior convergence by harnessing the advantages of diverse\
+    \ yet complementary datasets. Empirical evaluations highlight its ability to mitigate\
+    \ the adverse effects of outlier and adversarial clients, paving the way for more\
+    \ effective and resilient FL in heterogeneous environments.\t\t"
+  authors: "Nazarii Tupitsa, Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D</strong>,\
+    \ Eduard Gorbunov"
+  journal: Third Conference on Parsimony and Learning (CPAL'26)
+  link: https://arxiv.org/abs/2402.05050
+  pdf: https://arxiv.org/pdf/2402.05050.pdf
+  title: Selective Collaboration for Robust Federated Learning
+  type: cpaper
+  year: '2026'
+- abstract: "\n We consider distributed optimization under Byzantine attacks in the\
+    \ presence of $(L_0,L_1)$-smoothness, a generalization of standard $L$-smoothness\
+    \ that captures functions with state-dependent gradient Lipschitz constants. We\
+    \ propose $\\texttt{Byz-NSGDM}$, a normalized stochastic gradient descent method\
+    \ with momentum that achieves robustness against Byzantine workers while maintaining\
+    \ convergence guarantees. Our algorithm combines momentum normalization with Byzantine-robust\
+    \ aggregation enhanced by Nearest Neighbor Mixing (NNM) to handle both the challenges\
+    \ posed by $(L_0,L_1)$-smoothness and Byzantine adversaries. We prove that $\\\
+    texttt{Byz-NSGDM}$ achieves a convergence rate of $O(K^{-1/4})$ up to a Byzantine\
+    \ bias floor proportional to the robustness coefficient and gradient heterogeneity.\
+    \ Experimental validation on heterogeneous MNIST classification and synthetic\
+    \ $(L_0,L_1)$-smooth optimization problems demonstrates the effectiveness of our\
+    \ approach against various Byzantine attack strategies.\n\t\t"
+  authors: "Arman Bolatov, Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D</strong>,\
+    \ Eduard Gorbunov"
+  journal: Third Conference on Parsimony and Learning (CPAL'26)
+  pdf: https://openreview.net/attachment?id=IhErR5K3EL
+  title: Byzantine-Robust Optimization under $(L_0, L_1)$-Smoothness
+  type: cpaper
+  year: '2026'
+- abstract: "\nPruning remains an effective strategy for reducing both the costs and\
+    \ environmental impact associated with deploying large neural networks (NNs) while\
+    \ maintaining performance. Classical methods, such as OBD \\cite{lecun1989optimal}\
+    \ and OBS \\cite{hassibi1992second}, demonstrate that utilizing curvature information\
+    \ can significantly enhance the balance between network complexity and performance.\
+    \ However, the computation and storage of the Hessian matrix make it impractical\
+    \ for modern NNs, motivating the use of approximations.\nRecent research \\cite{gur2018gradient,\
+    \ karakida2019universal} suggests that the top eigenvalues guide optimization\
+    \ in a small subspace, are identifiable early, and remain consistent during training.\
+    \ Motivated by these findings, we revisit pruning at initialization (PaI) to evaluate\
+    \ scalable, unbiased second-order approximations, such as the Empirical Fisher\
+    \ and Hutchinson diagonals. Our experiments show that these methods effectively\
+    \ capture important curvature information, enhancing the identification of critical\
+    \ parameters compared to first-order baselines, while maintaining linear computational\
+    \ complexity.\nAdditionally, we empirically demonstrate that updating batch normalization\
+    \ statistics as a warmup phase improves the performance of data-dependent criteria\
+    \ and mitigates the issue of layer collapse. Notably, Hutchinson-based criteria\
+    \ consistently outperformed or matched existing PaI algorithms across various\
+    \ models (including VGG, ResNet, and ViT) and datasets (such as CIFAR-10/100,\
+    \ TinyImageNet, and ImageNet).\nOur findings suggest that scalable second-order\
+    \ approximations strike an effective balance between computational efficiency\
+    \ and accuracy, making them a valuable addition to the pruning toolkit.\n\t\t"
+  authors: "Ivo Gollini Navarrete, Nicolas Mauricio Cuadrado, <strong>Martin Tak\xE1\
+    \u010D</strong>, Samuel Horv\xE1th"
+  journal: Third Conference on Parsimony and Learning (CPAL'26)
+  link: https://arxiv.org/abs/2502.11450
+  pdf: https://arxiv.org/pdf/2502.11450
+  title: What Scalable Second-Order Information Knows for Pruning at Initialization
+  type: cpaper
+  year: '2026'
 - abstract: "\nThis paper investigates the global convergence of stepsized Newton\
     \ methods for convex functions with H\xF6lder continuous Hessians or third derivatives.\
     \ \nWe propose several simple stepsize schedules with fast global convergence\
@@ -39,7 +111,7 @@
   pdf: https://openreview.net/pdf?id=86P3sb1dpr
   title: 'LoFT: Low-Rank Adaptation That Behaves Like Full Fine-Tuning'
   type: cpaper
-  year: '2025'
+  year: '2026'
 - abstract: "\nCytosine methylation is a key epigenetic modification that regulates\
     \ transcription factor (TF) binding and gene expression. While most current understanding\
     \ of methylation-sensitive TF binding derives from studies focused exclusively\
@@ -861,35 +933,6 @@
     Computation and Screening
   type: jpaper
   year: '2025'
-- abstract: "Pruning offers a promising solution to mitigate the associated costs\
-    \ and environmental impact of deploying large deep neural networks (DNNs). Traditional\
-    \ approaches rely on computationally expensive trained models or time-consuming\
-    \ iterative prune-retrain cycles, undermining their utility in resource-constrained\
-    \ settings. To address this issue, we build upon the established principles of\
-    \ saliency (LeCun et al., 1989) and connection sensitivity (Lee et al., 2018)\
-    \ to tackle the challenging problem of one-shot pruning neural networks (NNs)\
-    \ before training (PBT) at initialization. We introduce Fisher-Taylor Sensitivity\
-    \ (FTS), a computationally cheap and efficient pruning criterion based on the\
-    \ empirical Fisher Information Matrix (FIM) diagonal, offering a viable alternative\
-    \ for integrating first- and second-order information to identify a model's structurally\
-    \ important parameters. Although the FIM-Hessian equivalency only holds for convergent\
-    \ models that maximize the likelihood, recent studies (Karakida et al., 2019)\
-    \ suggest that, even at initialization, the FIM captures essential geometric information\
-    \ of parameters in overparameterized NNs, providing the basis for our method.\
-    \ Finally, we demonstrate empirically that layer collapse, a critical limitation\
-    \ of data-dependent pruning methodologies, is easily overcome by pruning within\
-    \ a single training epoch after initialization. We perform experiments on ResNet18\
-    \ and VGG19 with CIFAR-10 and CIFAR-100, widely used benchmarks in pruning research.\
-    \ Our method achieves competitive performance against state-of-the-art techniques\
-    \ for one-shot PBT, even under extreme sparsity conditions. Our code is made available\
-    \ to the public.\n\n\t\t"
-  authors: "Ivo Gollini Navarrete, Nicolas Mauricio Cuadrado, Jose Renato Restom,\
-    \ <strong>Martin Tak\xE1\u010D</strong>, Samuel Horv\xE1th"
-  link: https://arxiv.org/abs/2502.11450
-  pdf: https://arxiv.org/pdf/2502.11450
-  title: Fishing For Cheap And Efficient Pruners At Initialization
-  type: tpaper
-  year: '2025'
 - abstract: "\nSecond-order methods for convex optimization outperform first-order\
     \ methods in terms of theoretical iteration convergence, achieving rates up to\
     \ O(k\u22125) for highly-smooth functions. However, their practical performance\
@@ -1616,26 +1659,6 @@
     \ <strong>Martin Tak\xE1\u010D</strong>, Alexander Gasnikov"
   title: 'Exploring New Frontiers in Vertical Federated Learning: the Role of Saddle
     Point Reformulation'
-  type: tpaper
-  year: '2024'
-- abstract: "\nIn Federated Learning (FL), the distributed nature and heterogeneity\
-    \ of client data present both opportunities and challenges. While collaboration\
-    \ among clients can significantly enhance the learning process, not all collaborations\
-    \ are beneficial; some may even be detrimental. In this study, we introduce a\
-    \ novel algorithm that assigns adaptive aggregation weights to clients participating\
-    \ in FL training, identifying those with data distributions most conducive to\
-    \ a specific learning objective. We demonstrate that our aggregation method converges\
-    \ no worse than the method that aggregates only the updates received from clients\
-    \ with the same data distribution. Furthermore, empirical evaluations consistently\
-    \ reveal that collaborations guided by our algorithm outperform traditional FL\
-    \ approaches. This underscores the critical role of judicious client selection\
-    \ and lays the foundation for more streamlined and effective FL implementations\
-    \ in the coming years.\n\t\t"
-  authors: "Nazarii Tupitsa, Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D</strong>,\
-    \ Eduard Gorbunov"
-  link: https://arxiv.org/abs/2402.05050
-  pdf: https://arxiv.org/pdf/2402.05050.pdf
-  title: Federated Learning Can Find Friends That Are Advantageous
   type: tpaper
   year: '2024'
 - abstract: "\nConformal prediction stands out as a robust framework for uncertainty\
