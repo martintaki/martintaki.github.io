@@ -1,3 +1,28 @@
+- abstract: "\n\t\t\tRepresenting molecular structures effectively in chemistry remains\
+    \ a challenging task. Language models and graph-based models are extensively utilized\
+    \ within this domain, consistently achieving state-of-the-art results across an\
+    \ array of tasks. However, the prevailing practice of representing chemical compounds\
+    \ in the SMILES format - used by most data sets and many language models - presents\
+    \ notable limitations as a training data format. In this study, we present a novel\
+    \ approach that decomposes molecules into substructures and computes descriptor-based\
+    \ representations for these fragments, providing more detailed and chemically\
+    \ relevant input for model training. We use this substructure and descriptor data\
+    \ as input for language model and also propose a bimodal architecture that integrates\
+    \ this language model with graph-based models. As LM we use RoBERTa, Graph Isomorphism\
+    \ Networks (GIN), Graph Convolutional Networks (GCN) and Graphormer as graph ones.\
+    \ Our framework shows notable improvements over traditional methods in various\
+    \ tasks such as Quantitative Structure-Activity Relationship (QSAR) prediction.\n\
+    \t\t"
+  authors: "Nikolai Rekut, Alexey Orlov, Klea Ziu, Elizaveta Starykh, <strong>Martin\
+    \ Tak\xE1\u010D</strong>, Aleksandr Beznosikov"
+  journal: IEEE Access; the shorter version was accepted in AI4Science Workshop @
+    NeurIPS 2025
+  link: https://arxiv.org/abs/2502.17986
+  pdf: https://arxiv.org/pdf/2502.17986
+  title: 'Thinking like a CHEMIST: Combined Heterogeneous Embedding Model Integrating
+    Structure and Tokens'
+  type: jpaper
+  year: '2026'
 - abstract: "\nLow-Rank Adaptation (LoRA) fine-tunes large models by learning low-rank\
     \ updates on top of frozen weights, dramatically reducing trainable parameters\
     \ and memory. In this work, we address the gap between training with full steps\
@@ -406,30 +431,6 @@
   pdf: https://arxiv.org/pdf/2510.11955
   title: Y-shaped Generative Flows
   type: tpaper
-  year: '2025'
-- abstract: "\n\t\t\tRepresenting molecular structures effectively in chemistry remains\
-    \ a challenging task. Language models and graph-based models are extensively utilized\
-    \ within this domain, consistently achieving state-of-the-art results across an\
-    \ array of tasks. However, the prevailing practice of representing chemical compounds\
-    \ in the SMILES format - used by most data sets and many language models - presents\
-    \ notable limitations as a training data format. In this study, we present a novel\
-    \ approach that decomposes molecules into substructures and computes descriptor-based\
-    \ representations for these fragments, providing more detailed and chemically\
-    \ relevant input for model training. We use this substructure and descriptor data\
-    \ as input for language model and also propose a bimodal architecture that integrates\
-    \ this language model with graph-based models. As LM we use RoBERTa, Graph Isomorphism\
-    \ Networks (GIN), Graph Convolutional Networks (GCN) and Graphormer as graph ones.\
-    \ Our framework shows notable improvements over traditional methods in various\
-    \ tasks such as Quantitative Structure-Activity Relationship (QSAR) prediction.\n\
-    \t\t"
-  authors: "Nikolai Rekut, Alexey Orlov, Klea Ziu, Elizaveta Starykh, <strong>Martin\
-    \ Tak\xE1\u010D</strong>, Aleksandr Beznosikov"
-  journal: AI4Science Workshop @ NeurIPS 2025
-  link: https://arxiv.org/abs/2502.17986
-  pdf: https://arxiv.org/pdf/2502.17986
-  title: 'Thinking like a CHEMIST: Combined Heterogeneous Embedding Model Integrating
-    Structure and Tokens'
-  type: cpaper
   year: '2025'
 - abstract: "\n\nInvestment planning in power utilities, such as generation and transmission\
     \ expansion, requires decade-long forecasts under profound uncertainty. Forecasting\
