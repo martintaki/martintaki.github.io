@@ -1,3 +1,23 @@
+- abstract: "\nState-space models (SSMs) have emerged as a powerful foundation for\
+    \ long-range sequence modeling, with the HiPPO framework showing that continuous-time\
+    \ projection operators can be used to derive stable, memory-efficient dynamical\
+    \ systems that encode the past history of the input signal. However, existing\
+    \ projection-based SSMs often rely on polynomial bases with global temporal support,\
+    \ whose inductive biases are poorly matched to signals exhibiting localized or\
+    \ transient structure. In this work, we introduce \\emph{WaveSSM}, a collection\
+    \ of SSMs constructed over wavelet frames. Our key observation is that wavelet\
+    \ frames yield a localized support on the temporal dimension, useful for tasks\
+    \ requiring precise localization. Empirically, we show that on equal conditions,\
+    \ \\textit{WaveSSM} outperforms orthogonal counterparts as S4 on real-world datasets\
+    \ with transient dynamics, including physiological signals on the PTB-XL dataset\
+    \ and raw audio on Speech Commands.\n\t\t"
+  authors: "Ruben Solozabal, Velibor Bojkovic, Hilal Alquabeh, Klea Ziu, Kentaro Inui,\
+    \ <strong>Martin Tak\xE1\u010D</strong>"
+  link: https://arxiv.org/abs/2602.22266
+  pdf: https://arxiv.org/pdf/2602.22266
+  title: 'WaveSSM: Multiscale State-Space Models for Non-stationary Signal Attention'
+  type: tpaper
+  year: '2026'
 - abstract: "\n\t\t\tRepresenting molecular structures effectively in chemistry remains\
     \ a challenging task. Language models and graph-based models are extensively utilized\
     \ within this domain, consistently achieving state-of-the-art results across an\
