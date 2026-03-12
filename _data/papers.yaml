@@ -1,3 +1,28 @@
+- abstract: "\nDistributed learning problems have gained significant popularity due\
+    \ to the increasing need for cluster training and the emergence of novel paradigms\
+    \ like Federated Learning (FL). One variant of FL, called Vertical Federated Learning\
+    \ (VFL), partitions data based on features across devices. The objective is to\
+    \ collectively train a model using the information available on each user's device.\
+    \ This paper focuses on solving the VFL problem using deterministic methods and\
+    \ the classical Lagrangian function without augmentation. It also explores various\
+    \ modifications to adapt to practical scenarios, such as employing compression\
+    \ techniques for efficient information transmission, enabling partial participation\
+    \ for asynchronous communication, introducing additive noise or homomorphic encryption\
+    \ for privacy-preserving purposes, and utilizing coordinate selection for faster\
+    \ local computation. Convergence estimates are provided for each algorithm, demonstrating\
+    \ their effectiveness in addressing the VFL problem. Additionally, alternative\
+    \ reformulations of the VFL problem are investigated, and numerical experiments\
+    \ are conducted to validate the proposed methods' performance and effectiveness.\n\
+    \t\t"
+  authors: "Aleksandr Beznosikov, Georgiy Kormakov, Alexander Grigorievskiy, Mikhail\
+    \ Rudakov, Ruslan Nazykov, Alexander Rogozin, Anton Vakhrushev, Andrey Savchenko,\
+    \ <strong>Martin Tak\xE1\u010D</strong>, Alexander Gasnikov"
+  link: https://arxiv.org/abs/2602.15996
+  pdf: https://arxiv.org/pdf/2602.15996
+  title: 'Exploring New Frontiers in Vertical Federated Learning: the Role of Saddle
+    Point Reformulation'
+  type: tpaper
+  year: '2026'
 - abstract: "\nState-space models (SSMs) have emerged as a powerful foundation for\
     \ long-range sequence modeling, with the HiPPO framework showing that continuous-time\
     \ projection operators can be used to derive stable, memory-efficient dynamical\
@@ -1691,29 +1716,6 @@
   pdf: https://arxiv.org/pdf/2402.09765.pdf
   title: Reinforcement Learning for Solving Stochastic Vehicle Routing Problem with
     Time Windows
-  type: tpaper
-  year: '2024'
-- abstract: "\nDistributed learning problems have gained significant popularity due\
-    \ to the increasing need for cluster training and the emergence of novel paradigms\
-    \ like Federated Learning (FL). One variant of FL, called Vertical Federated Learning\
-    \ (VFL), partitions data based on features across devices. The objective is to\
-    \ collectively train a model using the information available on each user's device.\
-    \ This paper focuses on solving the VFL problem using deterministic methods and\
-    \ the classical Lagrangian function without augmentation. It also explores various\
-    \ modifications to adapt to practical scenarios, such as employing compression\
-    \ techniques for efficient information transmission, enabling partial participation\
-    \ for asynchronous communication, introducing additive noise or homomorphic encryption\
-    \ for privacy-preserving purposes, and utilizing coordinate selection for faster\
-    \ local computation. Convergence estimates are provided for each algorithm, demonstrating\
-    \ their effectiveness in addressing the VFL problem. Additionally, alternative\
-    \ reformulations of the VFL problem are investigated, and numerical experiments\
-    \ are conducted to validate the proposed methods' performance and effectiveness.\n\
-    \t\t"
-  authors: "Aleksandr Beznosikov, Georgiy Kormakov, Alexander Grigorievskiy, Mikhail\
-    \ Rudakov, Ruslan Nazykov, Alexander Rogozin, Anton Vakhrushev, Andrey Savchenko,\
-    \ <strong>Martin Tak\xE1\u010D</strong>, Alexander Gasnikov"
-  title: 'Exploring New Frontiers in Vertical Federated Learning: the Role of Saddle
-    Point Reformulation'
   type: tpaper
   year: '2024'
 - abstract: "\nConformal prediction stands out as a robust framework for uncertainty\
