@@ -1,3 +1,27 @@
+- abstract: "\nLarge audio-language models (LALMs) generalize across speech, sound,\
+    \ and music, but unified decoders can exhibit a temporal smoothing bias: transient\
+    \ acoustic cues may be underutilized in favor of temporally smooth context that\
+    \ is better supported by language priors, leading to less specific audio-grounded\
+    \ outputs. We propose Temporal Contrastive Decoding (TCD), a training-free decoding\
+    \ method for unified LALMs that mitigates this effect at inference time. TCD constructs\
+    \ a temporally blurred slow-path view by smoothing the input waveform and re-encoding\
+    \ it, then contrasts next-token logits from the original and slow-path views.\
+    \ The contrastive signal is applied as a token-level logit update restricted to\
+    \ a small candidate set. A self-normalized stability score sets the blur window\
+    \ and update scale, and a step-wise gate based on uncertainty and audio reliance\
+    \ activates the update only when needed. Experiments on MMAU and AIR-Bench show\
+    \ consistent improvements on strong unified LALMs. We further conduct ablations\
+    \ and an architectural applicability study to analyze the contributions of key\
+    \ components and how TCD behaves across large audio-language model designs. The\
+    \ anonymized link to the open-source implementation is provided in the appendix.\n\
+    \t\t"
+  authors: "Yanda Li, Yuhan Liu, Zirui Song, Yunchao Wei, <strong>Martin Tak\xE1\u010D\
+    </strong>, Salem Lahlou "
+  journal: ACL'2026 Findings
+  title: 'Temporal Contrastive Decoding: A Training-Free Method for Large Audio-Language
+    Models'
+  type: cpaper
+  year: '2026'
 - abstract: "\nDistributed learning problems have gained significant popularity due\
     \ to the increasing need for cluster training and the emergence of novel paradigms\
     \ like Federated Learning (FL). One variant of FL, called Vertical Federated Learning\
