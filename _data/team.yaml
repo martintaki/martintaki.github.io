@@ -159,7 +159,7 @@
     from: 2023
     image: Slavomir_Hanzely.jpg
     name: "Slavom\xEDr Hanzely"
-    to: present
+    to: 2026
   - col: {}
     from: 2021/09
     image: Ruben_Solozabal.jpg
@@ -279,7 +279,7 @@
     from: 2021
     image: Abdulla_Almansoori.jpg
     name: Abdulla Almansoori
-    to: 2026 (expected)
+    to: 2026/05
   - col: {}
     from: 2022
     image: Artem_Agafonov.jpg
@@ -306,22 +306,22 @@
     from: 2024/09
     image: missing.jpg
     name: Albert Baichorov
-    to: present
+    to: 2026/05
   - col: {}
     from: 2024/09
     image: Semyon_Semenov.jpg
     name: Semyon Semenov
-    to: present
+    to: 2026/05
   - col: {}
     from: 2024/09
     image: VladislavRyspayev.JPG
     name: Vladislav Ryspayev
-    to: present
+    to: 2026/05
   - col: {}
     from: 2024/09
     image: Hazem_photo.jpg
     name: Hazem  Lashen
-    to: present
+    to: 2026/05
   - col: {}
     from: 2024/09
     image: ArmanBolatov.jpeg
