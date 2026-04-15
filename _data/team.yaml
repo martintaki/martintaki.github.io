@@ -127,6 +127,11 @@
 - items:
   - col: {}
     from: 2026
+    image: DeepakKumar.jpg
+    name: Deepak Kumar
+    to: '---'
+  - col: {}
+    from: 2026
     image: Artem_Agafonov.jpg
     name: Artem Agafonov
     to: '---'
