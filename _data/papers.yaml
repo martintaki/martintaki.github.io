@@ -1,3 +1,103 @@
+- abstract: "\nOff-policy learning methods seek to derive an optimal policy directly\
+    \ from a fixed dataset of prior interactions. This objective presents significant\
+    \ challenges, primarily due to the inherent distributional shift and value function\
+    \ overestimation bias. These issues become even more noticeable in zero-shot reinforcement\
+    \ learning, where an agent trained on reward-free data must adapt to new tasks\
+    \ at test time without additional training. In this work, we address the off-policy\
+    \ problem in a zero-shot setting by discovering a theoretical connection of successor\
+    \ measures to stationary density ratios. Using this insight, our algorithm can\
+    \ infer optimal importance sampling ratios, effectively performing a stationary\
+    \ distribution correction with an optimal policy for any task on the fly. We benchmark\
+    \ our method in motion tracking tasks on SMPL Humanoid, continuous control on\
+    \ ExoRL, and for the long-horizon OGBench tasks. Our technique seamlessly integrates\
+    \ into forward-backward representation frameworks and enables fast-adaptation\
+    \ to new tasks in a training-free regime. More broadly, this work bridges off-policy\
+    \ learning and zero-shot adaptation, offering benefits to both research areas.\n\
+    \t\t"
+  authors: "Arip Asadulaev, Maksim Bobrin, Salem Lahlou, Dmitry Dylov, Fakhri Karray,\
+    \ <strong>Martin Tak\xE1\u010D</strong>"
+  journal: Forty-third International Conference on Machine Learning (ICML 2026)
+  link: https://arxiv.org/abs/2602.01962
+  pdf: https://arxiv.org/pdf/2602.01962
+  title: Zero-Shot Off-Policy Learning
+  type: cpaper
+  year: '2026'
+- abstract: "\nState-space models (SSMs) have emerged as a powerful foundation for\
+    \ long-range sequence modeling, with the HiPPO framework showing that continuous-time\
+    \ projection operators can be used to derive stable, memory-efficient dynamical\
+    \ systems that encode the past history of the input signal. However, existing\
+    \ projection-based SSMs often rely on polynomial bases with global temporal support,\
+    \ whose inductive biases are poorly matched to signals exhibiting localized or\
+    \ transient structure. In this work, we introduce \\emph{WaveSSM}, a collection\
+    \ of SSMs constructed over wavelet frames. Our key observation is that wavelet\
+    \ frames yield a localized support on the temporal dimension, useful for tasks\
+    \ requiring precise localization. Empirically, we show that on equal conditions,\
+    \ \\textit{WaveSSM} outperforms orthogonal counterparts as S4 on real-world datasets\
+    \ with transient dynamics, including physiological signals on the PTB-XL dataset\
+    \ and raw audio on Speech Commands.\n\t\t"
+  authors: "Ruben Solozabal, Velibor Bojkovic, Hilal Alquabeh, Klea Ziu, Kentaro Inui,\
+    \ <strong>Martin Tak\xE1\u010D</strong>"
+  journal: Forty-third International Conference on Machine Learning (ICML 2026)
+  link: https://arxiv.org/abs/2602.22266
+  pdf: https://arxiv.org/pdf/2602.22266
+  title: 'WaveSSM: Multiscale State-Space Models for Non-stationary Signal Attention'
+  type: cpaper
+  year: '2026'
+- abstract: "\n\n\t\t"
+  authors: "Aleksandr Shestakov, <strong>Martin Tak\xE1\u010D</strong>, Eduard Gorbunov"
+  journal: Forty-third International Conference on Machine Learning (ICML 2026)
+  title: 'From Optimization to Generalization under Heavy-Tailed Data: The Role of
+    Gradient Clipping'
+  type: cpaper
+  year: '2026'
+- abstract: "\nRecently, small models with latent recursion have obtained promising\
+    \ results on complex reasoning tasks. These results are typically explained by\
+    \ the theory that such recursion increases a network\u2019s depth, allowing it\
+    \ to compactly emulate the capacity of larger models. However, the performance\
+    \ of recursively added layers remains behind the capabilities of one\u2011pass\
+    \ models with the same feed-forward depth. This means that in the looped version,\
+    \ not every recursive step effectively contributes to depth. This raises the question:\
+    \ when and why does latent reasoning improve performance, and when does it result\
+    \ in dead compute? In our work, we analyze the algorithms that latent reasoning\
+    \ provides answer to this question. We show that latent reasoning can be formalized\
+    \ as a classifier\u2011free guidance and policy improvement algorithm. Building\
+    \ on these insights, we propose to use a training schemes from RL and diffusion\
+    \ methods for latent reasoning modles. Using the Tiny Recursive Model as our testbed,\
+    \ we show that with our modifications we can avoid dead compute steps and reduce\
+    \ the total number of forward passes by 18\xD7 while maintaining performance.\
+    \ Broadly speaking, we show how a policy improvement perspective on recursive\
+    \ steps can explain model behavior and provide insights for further improvements.\n\
+    \t\t"
+  authors: "Arip Asadulaev, Rayan Banerjee, Fakhri Karray, <strong>Martin Tak\xE1\u010D\
+    </strong>"
+  journal: Forty-third International Conference on Machine Learning (ICML 2026)
+  title: Your Latent Reasoning is Secretly Policy Improvement Operator
+  type: cpaper
+  year: '2026'
+- abstract: "\nLarge language models exhibit complementary reasoning errors: on the\
+    \ same instance, one model may succeed with a particular decomposition while another\
+    \ fails. We propose Collaborative Reasoning (CORE), a training-time collaboration\
+    \ framework that converts peer success into a learning signal via a cross-teaching\
+    \ protocol. Each problem is solved in two stages: a cold round of independent\
+    \ sampling, followed by a contexted rescue round in which models that failed receive\
+    \ hint extracted from a successful peer. CORE optimizes a combined reward that\
+    \ balances (i) correctness, (ii) a lightweight DPP-inspired diversity term to\
+    \ reduce error overlap, and (iii) an explicit rescue bonus for successful recovery.\
+    \ We evaluate CORE across four standard reasoning datasets GSM8K, MATH, AIME,\
+    \ and GPQA. With only 1,000 training examples, a pair of small open source models\
+    \ (3B+4B) reaches Pass@2 of 99.54% on GSM8K and 92.08% on MATH, compared to 82.50%\
+    \ and 74.82% for single-model training. On harder datasets, the 3B+4B pair reaches\
+    \ Pass@2 of 77.34% on GPQA (trained on 348 examples) and 79.65% on AIME (trained\
+    \ on 792 examples), using a training-time budget of at most 1536 context tokens\
+    \ and 3072 generated tokens. Overall, these results show that training-time collaboration\
+    \ can reliably convert model complementarity into large gains without scaling\
+    \ model size.\n\t\t"
+  authors: "Kshitij Mishra, Mirat Aubakirov, <strong>Martin Tak\xE1\u010D</strong>,\
+    \ Nils Lukas, Salem Lahlou"
+  journal: Forty-third International Conference on Machine Learning (ICML 2026)
+  title: 'CoRe: Collaborative Reasoning via Cross Teaching'
+  type: cpaper
+  year: '2026'
 - abstract: "\nMulti-agent LLM systems increasingly rely on communication protocols\
     \ for coordination, yet their robustness under adversarial and structural constraints\
     \ remains poorly understood. Building on prior work showing that cheap-talk channels\
@@ -71,26 +171,6 @@
     Point Reformulation'
   type: tpaper
   year: '2026'
-- abstract: "\nState-space models (SSMs) have emerged as a powerful foundation for\
-    \ long-range sequence modeling, with the HiPPO framework showing that continuous-time\
-    \ projection operators can be used to derive stable, memory-efficient dynamical\
-    \ systems that encode the past history of the input signal. However, existing\
-    \ projection-based SSMs often rely on polynomial bases with global temporal support,\
-    \ whose inductive biases are poorly matched to signals exhibiting localized or\
-    \ transient structure. In this work, we introduce \\emph{WaveSSM}, a collection\
-    \ of SSMs constructed over wavelet frames. Our key observation is that wavelet\
-    \ frames yield a localized support on the temporal dimension, useful for tasks\
-    \ requiring precise localization. Empirically, we show that on equal conditions,\
-    \ \\textit{WaveSSM} outperforms orthogonal counterparts as S4 on real-world datasets\
-    \ with transient dynamics, including physiological signals on the PTB-XL dataset\
-    \ and raw audio on Speech Commands.\n\t\t"
-  authors: "Ruben Solozabal, Velibor Bojkovic, Hilal Alquabeh, Klea Ziu, Kentaro Inui,\
-    \ <strong>Martin Tak\xE1\u010D</strong>"
-  link: https://arxiv.org/abs/2602.22266
-  pdf: https://arxiv.org/pdf/2602.22266
-  title: 'WaveSSM: Multiscale State-Space Models for Non-stationary Signal Attention'
-  type: tpaper
-  year: '2026'
 - abstract: "\n\t\t\tRepresenting molecular structures effectively in chemistry remains\
     \ a challenging task. Language models and graph-based models are extensively utilized\
     \ within this domain, consistently achieving state-of-the-art results across an\
@@ -139,29 +219,6 @@
   pdf: https://arxiv.org/pdf/2602.16456
   title: 'Beyond SGD, Without SVD: Proximal Subspace Iteration LoRA with Diagonal
     Fractional K-FAC'
-  type: tpaper
-  year: '2026'
-- abstract: "\nOff-policy learning methods seek to derive an optimal policy directly\
-    \ from a fixed dataset of prior interactions. This objective presents significant\
-    \ challenges, primarily due to the inherent distributional shift and value function\
-    \ overestimation bias. These issues become even more noticeable in zero-shot reinforcement\
-    \ learning, where an agent trained on reward-free data must adapt to new tasks\
-    \ at test time without additional training. In this work, we address the off-policy\
-    \ problem in a zero-shot setting by discovering a theoretical connection of successor\
-    \ measures to stationary density ratios. Using this insight, our algorithm can\
-    \ infer optimal importance sampling ratios, effectively performing a stationary\
-    \ distribution correction with an optimal policy for any task on the fly. We benchmark\
-    \ our method in motion tracking tasks on SMPL Humanoid, continuous control on\
-    \ ExoRL, and for the long-horizon OGBench tasks. Our technique seamlessly integrates\
-    \ into forward-backward representation frameworks and enables fast-adaptation\
-    \ to new tasks in a training-free regime. More broadly, this work bridges off-policy\
-    \ learning and zero-shot adaptation, offering benefits to both research areas.\n\
-    \t\t"
-  authors: "Arip Asadulaev, Maksim Bobrin, Salem Lahlou, Dmitry Dylov, Fakhri Karray,\
-    \ <strong>Martin Tak\xE1\u010D</strong>"
-  link: https://arxiv.org/abs/2602.01962
-  pdf: https://arxiv.org/pdf/2602.01962
-  title: Zero-Shot Off-Policy Learning
   type: tpaper
   year: '2026'
 - abstract: "\nFederated Learning (FL) revolutionizes machine learning by enabling\
