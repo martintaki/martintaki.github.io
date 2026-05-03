@@ -95,6 +95,7 @@
   authors: "Kshitij Mishra, Mirat Aubakirov, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Nils Lukas, Salem Lahlou"
   journal: Forty-third International Conference on Machine Learning (ICML 2026)
+  pdf: https://arxiv.org/pdf/2601.21600
   title: 'CoRe: Collaborative Reasoning via Cross Teaching'
   type: cpaper
   year: '2026'
