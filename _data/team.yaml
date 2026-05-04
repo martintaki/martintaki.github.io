@@ -1,5 +1,10 @@
 - items:
   - col: {}
+    from: 2026/01
+    image: Yusei_Ito.jpeg
+    name: Yusei Ito
+    to: 2026/03
+  - col: {}
     from: 2025
     image: missing.jpg
     name: Vladmir Solodkin
