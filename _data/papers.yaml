@@ -1,3 +1,12 @@
+- abstract: "\n\n\t\t"
+  authors: "Sayantan Choudhury, Xiaoran Cheng, <strong>Martin Tak\xE1\u010D</strong>,\
+    \ Sen Na, Mladen Kolar"
+  link: https://arxiv.org/abs/2605.06884
+  pdf: https://arxiv.org/pdf/2605.06884
+  title: 'Muon with Nesterov Momentum: Heavy-Tailed Noise and (Randomized) Inexact
+    Polar Decomposition'
+  type: tpaper
+  year: '2026'
 - abstract: "\nOff-policy learning methods seek to derive an optimal policy directly\
     \ from a fixed dataset of prior interactions. This objective presents significant\
     \ challenges, primarily due to the inherent distributional shift and value function\
