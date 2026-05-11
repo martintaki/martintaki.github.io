@@ -1,4 +1,24 @@
-- abstract: "\n\n\t\t"
+- abstract: "\nMost first-order optimizers treat matrix-valued parameters as vectors,\
+    \ ignoring the intrinsic geometry of hidden-layer weights in neural networks.\
+    \ Muon addresses this mismatch by updating along the polar factor of a momentum\
+    \ matrix, but its theoretical understanding has lagged behind practice. In particular,\
+    \ practical implementations incorporate Nesterov momentum, compute the polar factor\
+    \ only approximately, and operate with stochastic gradients that may be heavy-tailed.\
+    \ We close this gap by developing a convergence theory for Muon with Nesterov\
+    \ momentum and inexact polar decomposition in non-convex matrix optimization under\
+    \ heavy-tailed noise. Our analysis builds on a unified framework for inexact polar\
+    \ decomposition that captures practical iterative approximations such as Newton-Schulz\
+    \ and quantifies how their errors propagate through the optimization dynamics.\
+    \ Under this framework, we establish an optimal iteration and sample complexity\
+    \ of \U0001D4AA\u200B(\u03B5\u2212(3\u200B\u03B1\u22122)/(\u03B1\u22121)){\\mathcal{O}}(\\\
+    varepsilon^{\\nicefrac{{-(3\\alpha-2)}}{{(\\alpha-1)}}}) for finding an \u03B5\
+    \\varepsilon-stationary point, where \u03B1\u2208(1,2]\\alpha\\in(1,2]denotes\
+    \ the heavy-tail index. For the inexact-polar setting with \u03C31=0\\sigma_{1}=0,\
+    \ we also provide guarantees that do not require prior knowledge of \u03B1\\alpha.\
+    \ We analyze a randomized low-rank polar decomposition that is substantially more\
+    \ efficient than full-space methods while remaining compatible with our theory.\
+    \ Numerical experiments further demonstrate the effectiveness of the proposed\
+    \ inexact and randomized variants.\n\t\t"
   authors: "Sayantan Choudhury, Xiaoran Cheng, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Sen Na, Mladen Kolar"
   link: https://arxiv.org/abs/2605.06884
