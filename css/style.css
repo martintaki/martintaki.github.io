@@ -1298,6 +1298,11 @@ ul.timeline li .data .text {
 	padding: 42px 0 34px 0;
 }
 
+.news-page,
+.news-page * {
+	box-sizing: border-box;
+}
+
 .news-page .headercontent .title {
 	font-size: 40px;
 	line-height: 1.15;
@@ -1573,6 +1578,11 @@ ul.timeline li .data .text {
 	padding: 48px 0 38px 0;
 }
 
+.about-page,
+.about-page * {
+	box-sizing: border-box;
+}
+
 .about-page .headercontent .title {
 	font-size: 44px;
 	line-height: 1.12;
@@ -1598,6 +1608,7 @@ ul.timeline li .data .text {
 
 .about-profile-card,
 .about-bio-card,
+.about-talk-bio-card,
 .about-highlight-card,
 .about-list-panel {
 	background: #fff;
@@ -1613,23 +1624,26 @@ ul.timeline li .data .text {
 	text-align: center;
 }
 
-.about-profile-card img {
-	border: 3px solid var(--mbz-gold);
-	border-radius: 50%;
-	box-shadow: 0 12px 28px rgba(6,26,51,0.16);
-	display: block;
-	height: 158px;
-	margin: 0 auto 18px auto;
-	object-fit: cover;
-	width: 158px;
-}
-
 .about-profile-card h2 {
 	color: var(--mbz-ink);
-	font-size: 25px;
+	font-size: 23px;
 	font-weight: 900;
 	line-height: 1.15;
 	margin: 0 0 8px 0;
+}
+
+.about-profile-icon {
+	align-items: center;
+	background: var(--mbz-sand-light);
+	border: 1px solid var(--mbz-line);
+	border-radius: 50%;
+	color: var(--mbz-blue);
+	display: flex;
+	font-size: 24px;
+	height: 56px;
+	justify-content: center;
+	margin: 0 auto 16px auto;
+	width: 56px;
 }
 
 .about-profile-card p {
@@ -1637,6 +1651,7 @@ ul.timeline li .data .text {
 	font-size: 14px;
 	line-height: 1.45;
 	margin: 0 0 18px 0;
+	overflow-wrap: anywhere;
 }
 
 .about-profile-links {
@@ -1656,6 +1671,7 @@ ul.timeline li .data .text {
 	font-weight: 900;
 	gap: 8px;
 	line-height: 1;
+	overflow-wrap: anywhere;
 	padding: 10px 11px;
 	text-transform: uppercase;
 }
@@ -1679,10 +1695,57 @@ ul.timeline li .data .text {
 	font-size: 16px;
 	line-height: 1.62;
 	margin: 0 0 18px 0;
+	overflow-wrap: anywhere;
 }
 
 .about-bio-card p:last-child {
 	margin-bottom: 0;
+}
+
+.about-talk-bio-card {
+	border-left: 4px solid var(--mbz-teal);
+	margin-top: 22px;
+	padding: 24px 28px;
+}
+
+.about-talk-bio-header {
+	align-items: flex-end;
+	display: flex;
+	gap: 18px;
+	justify-content: space-between;
+	margin-bottom: 12px;
+}
+
+.about-talk-bio-header .research-kicker {
+	margin-bottom: 6px;
+}
+
+.about-talk-bio-header h2 {
+	color: var(--mbz-ink);
+	font-size: 23px;
+	font-weight: 900;
+	line-height: 1.2;
+	margin: 0;
+}
+
+.about-talk-bio-header span {
+	background: var(--mbz-sand-light);
+	border: 1px solid var(--mbz-line);
+	color: var(--mbz-blue-deep);
+	font-size: 12px;
+	font-weight: 900;
+	line-height: 1;
+	padding: 9px 10px;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+.about-talk-bio-card p {
+	color: #374151;
+	font-size: 16px;
+	line-height: 1.65;
+	margin: 0;
+	overflow-wrap: anywhere;
 }
 
 .about-highlight-grid {
@@ -2627,6 +2690,16 @@ ul.timeline li .data .text {
 	}
 	.about-page .headercontent .title {
 		font-size: 32px;
+		max-width: calc(100vw - 36px);
+		overflow-wrap: anywhere;
+	}
+	.about-page .headercontent .lead {
+		max-width: calc(100vw - 36px);
+		overflow-wrap: anywhere;
+	}
+	.about-page .research-pill-row {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, max-content));
 	}
 	.about-page .section-container {
 		padding-left: 18px;
@@ -2662,9 +2735,18 @@ ul.timeline li .data .text {
 	.news-side-panel,
 	.about-profile-card,
 	.about-bio-card,
+	.about-talk-bio-card,
 	.about-highlight-card,
 	.about-list-panel {
 		padding: 20px;
+	}
+	.about-talk-bio-header {
+		align-items: flex-start;
+		flex-direction: column;
+		gap: 8px;
+	}
+	.about-talk-bio-header span {
+		white-space: normal;
 	}
 	.news-body img {
 		width: 100%;

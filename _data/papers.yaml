@@ -8150,3 +8150,102 @@
     Asian options
   type: jpaper
   year: '2011'
+- abstract: 'Reinforcement learning substantially improves pretrained language models,
+    but it remains understudied why critic-free methods such as PPO and GRPO work
+    as well as they do, and when they should provide the largest gains. We develop
+    a value-gradient perspective of critic-free RL for LLM post-training. First, under
+    a differentiable rollout and additive-noise parameterization, we show that the
+    actor update is value-gradient-like in expectation: the backward pass propagates
+    costates whose conditional expectation equals the value gradient. Second, for
+    discrete transformer policies, we show that autodifferentiation through attention
+    produces empirical costates that approximate this value signal, with an error
+    controlled by the sampling gap and policy entropy. These results motivate a decomposition
+    of RL impact into value gradient signal and reachable reward headroom, yielding
+    a criterion for when RL should be most effective along a pretraining trajectory.'
+  authors: "Arip Asadulaev, Daniil Ognev, Karim Salta, <strong>Martin Tak\xE1\u010D\
+    </strong>"
+  journal: arXiv
+  keywords: []
+  link: https://arxiv.org/abs/2605.21654
+  ltype: arXiv
+  pdf: https://arxiv.org/pdf/2605.21654v1
+  tags: []
+  title: Value-Gradient Hypothesis of RL for LLMs
+  type: tpaper
+  year: '2026'
+- abstract: 'Compositional energy-based models can generalize to larger combinatorial
+    reasoning problems by reusing a learned factor energy across many local constraints.
+    In our paper, we show that a key bottleneck in compositional reasoning is not
+    composition itself, but the non-convex geometry of the learned energy landscape.
+    To solve this problem, we introduce Convex Compositional Energy Minimization (CCEM),
+    a framework that parameterizes each factor with an input-convex neural network
+    and optimizes the composed energy over a tight convex relaxation of the feasible
+    set. Because convexity is preserved under summation, the global relaxed objective
+    remains convex, enabling deterministic projected first-order optimization. CCEM
+    is trained in two stages: factor-level contrastive learning to shape local energy
+    basins, followed by end-to-end refinement through an unrolled projected solver.
+    Our experiments show that our models trained on small subproblems or a single
+    problem size transfer to larger instances without retraining.'
+  authors: "Meir Roketlishvili, Semyon Semenov, Maksim Bobrin, Viktor Kovalchuk, Albert\
+    \ Baichorov, Abduragim Shtanchaev, Fakhri Karray, Dmitry V. Dylov, <strong>Martin\
+    \ Tak\xE1\u010D</strong>, Arip Asadulaev"
+  journal: arXiv
+  keywords: []
+  link: https://arxiv.org/abs/2605.23395
+  ltype: arXiv
+  pdf: https://arxiv.org/pdf/2605.23395v2
+  tags: []
+  title: Convex Compositional Reasoning Models
+  type: tpaper
+  year: '2026'
+- abstract: 'Pretrained diffusion models are effective priors for Bayesian inverse
+    problems, but posterior sampling with these priors is often costly because data-consistency
+    guidance is applied throughout the full reverse trajectory. Existing methods have
+    shown that vector-Jacobian products through the denoiser can sometimes be avoided,
+    yet they typically still rely on dense guidance through the full trajectory or
+    expensive inner solves. We introduce Sparse Scheduled Diffusion Guidance for Inverse
+    Problems (Spin), a solver that avoids starting posterior sampling from pure noise.
+    Spin first samples from a posterior time-marginal at an intermediate timestep
+    $t_*$, and then uses that state as a warm start for a guided reverse diffusion
+    process. At guidance time, instead of enforcing the measurement constraint at
+    every denoising step, Spin applies lightweight corrections only at scheduled timesteps
+    where the denoiser can still clean up artifacts. The resulting procedure decouples
+    prior refinement from data consistency: the prior supplies denoising, while lightweight
+    pixel-space optimization enforces the measurement constraint without backpropagation
+    through the denoiser or decoder. Across linear and nonlinear inverse problems
+    on FFHQ and ImageNet, Spin achieves competitive reconstruction quality with a
+    substantially better runtime--memory profile, running 2x faster on pixel-space
+    models and up to 50x faster on latent diffusion models, with lower memory costs.'
+  authors: "Abduragim Shtanchaev, Albina Ilina, Yazid Janati, Arip Asadulaev, <strong>Martin\
+    \ Tak\xE1\u010D</strong>, Eric Moulines"
+  journal: arXiv
+  keywords: []
+  link: https://arxiv.org/abs/2603.07860
+  ltype: arXiv
+  pdf: https://arxiv.org/pdf/2603.07860v3
+  tags: []
+  title: Sparse Scheduled Diffusion Guidance for Inverse Problems
+  type: tpaper
+  year: '2026'
+- abstract: 'We study adaptive aggregation for heterogeneous local SGD in convex finite-sum
+    optimization, allowing heterogeneous local horizons, minibatch sizes, gradient
+    noise, and participation. We introduce HEW-Local SGD, a corrected local-SGD method
+    that chooses nodewise server weights by minimizing an explicit one-round upper
+    bound on the next objective value. This yields an exact local-control formulation
+    with a threshold simplex update, separable amplitude updates, and a one-step guarantee
+    under arbitrary predictable participation. We also introduce two post-local variants:
+    a corrected heterogeneous method and a simpler homogeneous specialization. We
+    establish one-step guarantees and global benchmark-style convergence results.
+    In the regimes where comparison is appropriate, the theory matches the qualitative
+    communication-efficient picture of recent LocalSGD/SCAFFOLD analyses, while also
+    giving explicit guarantees for unequal local horizons.'
+  authors: "Dmitry Pasechnyuk-Vilensky, <strong>Martin Tak\xE1\u010D</strong>"
+  journal: arXiv
+  keywords: []
+  link: https://arxiv.org/abs/2604.24463
+  ltype: arXiv
+  pdf: https://arxiv.org/pdf/2604.24463v2
+  tags: []
+  title: Heterogeneous-Horizon Exact-Weight Local SGD
+  type: tpaper
+  year: '2026'
