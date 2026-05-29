@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">Collaborative reasoning cross teaching diagram</title>
+  <desc id="desc">Two reasoning models attempt a problem, share successful hints, and rescue failed attempts while preserving diverse solutions.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#0752b8"/>
+    </marker>
+    <style>
+      .bg{fill:#fbf6ec}.panel{fill:#fff;stroke:#d8c39a;stroke-width:2}.flow{stroke:#0752b8;stroke-width:4;fill:none;marker-end:url(#arrow)}.cross{stroke:#c9a15b;stroke-width:4;fill:none;marker-end:url(#arrow)}.model{fill:#fff;stroke:#0752b8;stroke-width:4}.model2{stroke:#0f8f8a}.ok{fill:#0f8f8a}.bad{fill:#c9a15b}.reward{fill:#0752b8}.label{fill:#18263a;font-family:Arial,Helvetica,sans-serif;font-size:21px;font-weight:800}.small{font-size:15px;font-weight:700}.muted{fill:#5b6778}
+    </style>
+  </defs>
+  <rect class="bg" width="720" height="360"/>
+  <rect x="50" y="78" width="134" height="88" rx="16" class="panel"/>
+  <text x="82" y="113" class="label small">problem</text>
+  <text x="84" y="138" class="small muted">reasoning task</text>
+  <path d="M190 120 C235 94 267 90 306 94" class="flow"/>
+  <path d="M190 124 C235 162 267 226 306 244" class="flow"/>
+  <rect x="314" y="54" width="122" height="92" rx="18" class="model"/>
+  <text x="343" y="92" class="label small">model A</text>
+  <circle cx="374" cy="122" r="12" class="ok"/>
+  <rect x="314" y="214" width="122" height="92" rx="18" class="model model2"/>
+  <text x="343" y="252" class="label small">model B</text>
+  <circle cx="374" cy="282" r="12" class="bad"/>
+  <path d="M410 148 C441 180 440 210 410 214" class="cross"/>
+  <text x="448" y="184" class="small muted">cross teaching</text>
+  <path d="M442 100 C500 104 533 125 568 158" class="flow"/>
+  <path d="M442 260 C500 238 533 211 568 182" class="flow"/>
+  <rect x="576" y="108" width="104" height="144" rx="18" class="reward"/>
+  <text x="604" y="145" fill="#fff" class="small">reward</text>
+  <text x="594" y="171" fill="#fff" class="small">correct</text>
+  <text x="594" y="197" fill="#fff" class="small">diverse</text>
+  <text x="602" y="223" fill="#fff" class="small">rescue</text>
+</svg>

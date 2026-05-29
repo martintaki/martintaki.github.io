@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">DNA methylation transcription factor binding diagram</title>
+  <desc id="desc">Methylation marks outside canonical CpG contexts reshape where transcription factors bind on DNA.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#0752b8"/>
+    </marker>
+    <style>
+      .bg{fill:#fbf6ec}.panel{fill:#fff;stroke:#d8c39a;stroke-width:2}.dna1{fill:none;stroke:#0752b8;stroke-width:5}.dna2{fill:none;stroke:#0f8f8a;stroke-width:5}.rung{stroke:#5d7597;stroke-width:3}.methyl{fill:#c9a15b}.tf{fill:#fff;stroke:#0752b8;stroke-width:4}.tf2{stroke:#c9a15b}.flow{stroke:#0752b8;stroke-width:4;fill:none;marker-end:url(#arrow)}.label{fill:#18263a;font-family:Arial,Helvetica,sans-serif;font-size:21px;font-weight:800}.small{font-size:15px;font-weight:700}.muted{fill:#5b6778}
+    </style>
+  </defs>
+  <rect class="bg" width="720" height="360"/>
+  <rect x="40" y="58" width="282" height="244" rx="16" class="panel"/>
+  <text x="72" y="94" class="label small">methylated DNA library</text>
+  <path d="M86 130 C132 96 178 96 224 130 C266 162 267 206 224 236 C178 270 132 270 86 236" class="dna1"/>
+  <path d="M224 130 C178 164 132 164 86 130 C44 98 44 54 86 24" transform="translate(0 106)" class="dna2"/>
+  <line x1="112" y1="121" x2="199" y2="248" class="rung"/>
+  <line x1="151" y1="107" x2="234" y2="224" class="rung"/>
+  <line x1="207" y1="122" x2="99" y2="237" class="rung"/>
+  <circle cx="136" cy="134" r="9" class="methyl"/>
+  <circle cx="218" cy="204" r="9" class="methyl"/>
+  <circle cx="116" cy="228" r="9" class="methyl"/>
+  <text x="260" y="140" class="small muted">mC</text>
+  <path d="M330 180 C365 180 371 180 406 180" class="flow"/>
+  <rect x="414" y="72" width="248" height="216" rx="16" class="panel"/>
+  <text x="444" y="108" class="label small">binding shifts</text>
+  <rect x="458" y="146" width="72" height="50" rx="24" class="tf"/>
+  <rect x="552" y="198" width="72" height="50" rx="24" class="tf tf2"/>
+  <text x="478" y="177" class="small muted">TF</text>
+  <text x="572" y="229" class="small muted">TF</text>
+  <path d="M495 198 C515 223 532 229 552 224" class="flow"/>
+  <circle cx="510" cy="206" r="7" class="methyl"/>
+  <circle cx="535" cy="219" r="7" class="methyl"/>
+  <text x="452" y="268" class="small muted">beyond canonical CpG context</text>
+</svg>

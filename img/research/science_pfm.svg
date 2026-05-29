@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">Physics constrained PFM fitting diagram</title>
+  <desc id="desc">A band-excitation microscopy signal is fitted by a neural network constrained by a physics equation.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#0752b8"/>
+    </marker>
+    <style>
+      .bg{fill:#fbf6ec}.panel{fill:#fff;stroke:#d8c39a;stroke-width:2}.axis{stroke:#25344a;stroke-width:3}.signal{fill:none;stroke:#0752b8;stroke-width:5}.fit{fill:none;stroke:#c9a15b;stroke-width:4;stroke-dasharray:9 6}.flow{stroke:#0752b8;stroke-width:4;fill:none;marker-end:url(#arrow)}.nn{fill:#fff;stroke:#0f8f8a;stroke-width:4}.eq{fill:#0752b8}.label{fill:#18263a;font-family:Arial,Helvetica,sans-serif;font-size:21px;font-weight:800}.small{font-size:15px;font-weight:700}.muted{fill:#5b6778}
+    </style>
+  </defs>
+  <rect class="bg" width="720" height="360"/>
+  <rect x="34" y="58" width="276" height="234" rx="16" class="panel"/>
+  <text x="62" y="94" class="label small">PFM spectrum</text>
+  <line x1="72" y1="246" x2="274" y2="246" class="axis"/>
+  <line x1="72" y1="246" x2="72" y2="126" class="axis"/>
+  <path d="M78 232 C112 226 122 196 142 178 C162 160 179 128 200 130 C225 132 236 188 270 221" class="signal"/>
+  <path d="M78 235 C112 225 125 201 144 181 C164 160 180 139 199 139 C222 139 239 191 270 222" class="fit"/>
+  <text x="113" y="276" class="small muted">frequency sweep</text>
+  <path d="M316 176 C349 176 357 176 390 176" class="flow"/>
+  <rect x="400" y="62" width="126" height="228" rx="16" class="panel"/>
+  <text x="433" y="96" class="label small">NN</text>
+  <circle cx="435" cy="140" r="12" class="nn"/>
+  <circle cx="435" cy="180" r="12" class="nn"/>
+  <circle cx="435" cy="220" r="12" class="nn"/>
+  <circle cx="490" cy="160" r="12" class="nn"/>
+  <circle cx="490" cy="205" r="12" class="nn"/>
+  <line x1="447" y1="140" x2="478" y2="160" stroke="#5d7597" stroke-width="2"/>
+  <line x1="447" y1="180" x2="478" y2="160" stroke="#5d7597" stroke-width="2"/>
+  <line x1="447" y1="180" x2="478" y2="205" stroke="#5d7597" stroke-width="2"/>
+  <line x1="447" y1="220" x2="478" y2="205" stroke="#5d7597" stroke-width="2"/>
+  <path d="M532 176 C555 176 558 176 582 176" class="flow"/>
+  <rect x="590" y="96" width="96" height="160" rx="16" class="eq"/>
+  <text x="613" y="134" fill="#fff" class="small">physics</text>
+  <text x="611" y="158" fill="#fff" class="small">loss</text>
+  <text x="618" y="199" fill="#fff" class="label">f(x)</text>
+</svg>

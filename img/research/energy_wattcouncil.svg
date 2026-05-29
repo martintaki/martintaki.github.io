@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">WattCouncil governed LLM agents diagram</title>
+  <desc id="desc">Generator, auditor, and validator agents collaborate under constraints to produce household energy scenarios.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#0752b8"/>
+    </marker>
+    <style>
+      .bg{fill:#fbf6ec}.panel{fill:#fff;stroke:#d8c39a;stroke-width:2}.flow{stroke:#0752b8;stroke-width:4;fill:none;marker-end:url(#arrow)}.audit{stroke:#c9a15b;stroke-width:3;fill:none;marker-end:url(#arrow);stroke-dasharray:8 7}.agent{fill:#fff;stroke:#0752b8;stroke-width:4}.agent2{stroke:#0f8f8a}.agent3{stroke:#c9a15b}.rule{fill:#0752b8}.label{fill:#18263a;font-family:Arial,Helvetica,sans-serif;font-size:21px;font-weight:800}.small{font-size:15px;font-weight:700}.muted{fill:#5b6778}
+    </style>
+  </defs>
+  <rect class="bg" width="720" height="360"/>
+  <rect x="42" y="128" width="132" height="92" rx="18" class="agent"/>
+  <text x="71" y="166" class="label small">generate</text>
+  <text x="74" y="191" class="small muted">scenarios</text>
+  <rect x="294" y="54" width="132" height="92" rx="18" class="agent agent2"/>
+  <text x="328" y="92" class="label small">audit</text>
+  <text x="321" y="117" class="small muted">constraints</text>
+  <rect x="294" y="214" width="132" height="92" rx="18" class="agent agent3"/>
+  <text x="318" y="252" class="label small">validate</text>
+  <text x="314" y="277" class="small muted">realism</text>
+  <path d="M176 174 C222 150 248 118 292 104" class="flow"/>
+  <path d="M176 178 C222 204 248 238 292 256" class="flow"/>
+  <path d="M360 148 C386 176 386 232 360 214" class="audit"/>
+  <path d="M428 104 C500 112 540 140 574 172" class="flow"/>
+  <path d="M428 256 C502 244 542 218 574 188" class="flow"/>
+  <rect x="582" y="104" width="100" height="152" rx="16" class="panel"/>
+  <text x="604" y="139" class="label small">energy</text>
+  <text x="600" y="162" class="label small">scenario</text>
+  <path d="M604 220 L604 183 L624 199 L644 173 L666 214" fill="none" stroke="#0f8f8a" stroke-width="5"/>
+  <rect x="244" y="152" width="232" height="44" rx="22" class="rule"/>
+  <text x="273" y="181" fill="#fff" class="small">governance rules + context</text>
+</svg>

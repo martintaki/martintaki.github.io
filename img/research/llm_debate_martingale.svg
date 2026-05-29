@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">Multi-agent debate asymmetric cognitive energy diagram</title>
+  <desc id="desc">Debate agents avoid majority-driven collapse and create positive drift toward truth with asymmetric cognitive potential energy.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#0752b8"/>
+    </marker>
+    <style>
+      .bg{fill:#fbf6ec}.panel{fill:#fff;stroke:#d8c39a;stroke-width:2}.link{stroke:#5d7597;stroke-width:3}.flow{stroke:#0752b8;stroke-width:4;fill:none;marker-end:url(#arrow)}.agent{fill:#fff;stroke:#0752b8;stroke-width:4}.agent2{stroke:#0f8f8a}.bad{stroke:#c9a15b}.truth{fill:#0f8f8a}.wrong{fill:#c9a15b}.slash{stroke:#c93030;stroke-width:7}.energy{fill:none;stroke:#0752b8;stroke-width:6}.label{fill:#18263a;font-family:Arial,Helvetica,sans-serif;font-size:21px;font-weight:800}.small{font-size:15px;font-weight:700}.muted{fill:#5b6778}
+    </style>
+  </defs>
+  <rect class="bg" width="720" height="360"/>
+  <rect x="42" y="58" width="266" height="244" rx="16" class="panel"/>
+  <text x="74" y="94" class="label small">debate graph</text>
+  <line x1="122" y1="142" x2="206" y2="124" class="link"/>
+  <line x1="206" y1="124" x2="244" y2="204" class="link"/>
+  <line x1="244" y1="204" x2="148" y2="236" class="link"/>
+  <line x1="148" y1="236" x2="122" y2="142" class="link"/>
+  <circle cx="122" cy="142" r="24" class="agent"/>
+  <circle cx="206" cy="124" r="24" class="agent agent2"/>
+  <circle cx="244" cy="204" r="24" class="agent bad"/>
+  <circle cx="148" cy="236" r="24" class="agent"/>
+  <rect x="88" y="262" width="178" height="30" rx="15" fill="#fff" stroke="#c9a15b" stroke-width="2"/>
+  <text x="111" y="283" class="small muted">majority trap</text>
+  <line x1="96" y1="292" x2="258" y2="262" class="slash"/>
+  <path d="M318 180 C351 180 357 180 390 180" class="flow"/>
+  <rect x="398" y="58" width="280" height="244" rx="16" class="panel"/>
+  <text x="430" y="94" class="label small">asymmetric energy</text>
+  <path d="M438 246 C488 248 507 178 542 172 C588 164 599 112 642 110" class="energy"/>
+  <circle cx="456" cy="242" r="13" class="wrong"/>
+  <circle cx="542" cy="172" r="13" class="truth"/>
+  <circle cx="642" cy="110" r="13" class="truth"/>
+  <path d="M456 242 C488 214 510 188 542 172" class="flow"/>
+  <path d="M542 172 C580 151 604 124 642 110" class="flow"/>
+  <text x="444" y="276" class="small muted">positive drift toward truth</text>
+</svg>

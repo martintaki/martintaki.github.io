@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">Personalized federated reinforcement learning for building batteries</title>
+  <desc id="desc">Net-zero buildings train local battery controllers and share privacy-preserving updates with a federated learner.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#0752b8"/>
+    </marker>
+    <style>
+      .bg{fill:#fbf6ec}.panel{fill:#fff;stroke:#d8c39a;stroke-width:2}.flow{stroke:#0752b8;stroke-width:4;fill:none;marker-end:url(#arrow)}.return{stroke:#0f8f8a;stroke-width:3;fill:none;marker-end:url(#arrow);stroke-dasharray:8 7}.house{fill:#fff;stroke:#0752b8;stroke-width:4}.roof{fill:#c9a15b}.battery{fill:#0f8f8a}.hub{fill:#0752b8}.shield{fill:#fff;stroke:#c9a15b;stroke-width:4}.label{fill:#18263a;font-family:Arial,Helvetica,sans-serif;font-size:21px;font-weight:800}.small{font-size:15px;font-weight:700}.muted{fill:#5b6778}
+    </style>
+  </defs>
+  <rect class="bg" width="720" height="360"/>
+  <g transform="translate(50 76)">
+    <polygon points="24,44 66,8 108,44" class="roof"/>
+    <rect x="34" y="44" width="64" height="72" rx="8" class="house"/>
+    <rect x="52" y="78" width="28" height="28" rx="4" class="battery"/>
+  </g>
+  <g transform="translate(72 210)">
+    <polygon points="24,44 66,8 108,44" class="roof"/>
+    <rect x="34" y="44" width="64" height="72" rx="8" class="house"/>
+    <rect x="52" y="78" width="28" height="28" rx="4" class="battery"/>
+  </g>
+  <g transform="translate(540 86)">
+    <polygon points="24,44 66,8 108,44" class="roof"/>
+    <rect x="34" y="44" width="64" height="72" rx="8" class="house"/>
+    <rect x="52" y="78" width="28" height="28" rx="4" class="battery"/>
+  </g>
+  <g transform="translate(520 220)">
+    <polygon points="24,44 66,8 108,44" class="roof"/>
+    <rect x="34" y="44" width="64" height="72" rx="8" class="house"/>
+    <rect x="52" y="78" width="28" height="28" rx="4" class="battery"/>
+  </g>
+  <circle cx="360" cy="180" r="62" class="hub"/>
+  <text x="323" y="170" fill="#fff" class="label small">federated</text>
+  <text x="340" y="194" fill="#fff" class="label small">RL</text>
+  <path d="M154 140 C226 142 267 160 298 174" class="flow"/>
+  <path d="M174 270 C236 252 272 221 306 199" class="flow"/>
+  <path d="M566 174 C492 160 455 164 421 176" class="flow"/>
+  <path d="M550 296 C492 262 453 224 415 201" class="flow"/>
+  <path d="M312 148 C242 130 201 124 154 124" class="return"/>
+  <path d="M421 148 C482 128 526 124 566 138" class="return"/>
+  <path d="M410 216 C469 252 505 283 550 282" class="return"/>
+  <path d="M302 214 C247 246 218 276 174 284" class="return"/>
+  <path d="M360 252 L390 274 L420 252 L420 306 C420 328 360 338 360 338 C360 338 300 328 300 306 L300 252 Z" class="shield"/>
+  <text x="318" y="292" class="small muted">privacy</text>
+</svg>

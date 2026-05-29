@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">LLM knowledge distillation for household energy diagram</title>
+  <desc id="desc">A large language model creates household routines and weather scenarios that are distilled into energy load profiles.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#0752b8"/>
+    </marker>
+    <style>
+      .bg{fill:#fbf6ec}.panel{fill:#fff;stroke:#d8c39a;stroke-width:2}.flow{stroke:#0752b8;stroke-width:4;fill:none;marker-end:url(#arrow)}.brain{fill:#0752b8}.chip{fill:#0f8f8a}.gold{fill:#c9a15b}.line{fill:none;stroke:#0752b8;stroke-width:5}.dash{fill:none;stroke:#c9a15b;stroke-width:4;stroke-dasharray:8 6}.label{fill:#18263a;font-family:Arial,Helvetica,sans-serif;font-size:21px;font-weight:800}.small{font-size:15px;font-weight:700}.muted{fill:#5b6778}
+    </style>
+  </defs>
+  <rect class="bg" width="720" height="360"/>
+  <rect x="44" y="78" width="148" height="204" rx="20" class="brain"/>
+  <text x="80" y="126" fill="#fff" class="label">LLM</text>
+  <text x="68" y="156" fill="#fff" class="small">scenario</text>
+  <text x="70" y="180" fill="#fff" class="small">teacher</text>
+  <circle cx="92" cy="218" r="10" fill="#fff"/>
+  <circle cx="124" cy="218" r="10" fill="#fff"/>
+  <circle cx="156" cy="218" r="10" fill="#fff"/>
+  <path d="M200 180 C235 180 241 180 276 180" class="flow"/>
+  <rect x="286" y="54" width="172" height="252" rx="16" class="panel"/>
+  <text x="320" y="92" class="label small">household context</text>
+  <rect x="322" y="124" width="36" height="46" rx="6" class="chip"/>
+  <polygon points="316,124 340,102 364,124" class="gold"/>
+  <rect x="388" y="128" width="34" height="42" rx="6" class="chip"/>
+  <polygon points="384,128 405,109 426,128" class="gold"/>
+  <circle cx="342" cy="210" r="15" fill="#0752b8"/>
+  <circle cx="405" cy="210" r="15" fill="#0752b8"/>
+  <text x="316" y="250" class="small muted">routines, weather, HVAC</text>
+  <path d="M466 180 C500 180 505 180 540 180" class="flow"/>
+  <rect x="550" y="80" width="128" height="200" rx="16" class="panel"/>
+  <text x="586" y="115" class="label small">load</text>
+  <text x="572" y="137" class="label small">profile</text>
+  <path d="M572 232 L572 166 L596 194 L620 142 L644 210 L666 158" class="line"/>
+  <path d="M572 244 C600 234 625 238 666 220" class="dash"/>
+</svg>

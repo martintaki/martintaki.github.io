@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">MagBERT Curie temperature extraction diagram</title>
+  <desc id="desc">Scientific papers and a magnetic-materials knowledge graph feed a language model that extracts Curie temperature answers.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#0752b8"/>
+    </marker>
+    <style>
+      .bg{fill:#fbf6ec}.paper{fill:#fff;stroke:#d8c39a;stroke-width:2}.line{stroke:#5b6778;stroke-width:4}.flow{stroke:#0752b8;stroke-width:4;fill:none;marker-end:url(#arrow)}.kg{fill:#fff;stroke:#0f8f8a;stroke-width:4}.model{fill:#0752b8}.answer{fill:#fff;stroke:#c9a15b;stroke-width:3}.label{fill:#18263a;font-family:Arial,Helvetica,sans-serif;font-size:21px;font-weight:800}.small{font-size:15px;font-weight:700}.muted{fill:#5b6778}.gold{fill:#c9a15b}
+    </style>
+  </defs>
+  <rect class="bg" width="720" height="360"/>
+  <g transform="translate(48 76)">
+    <rect width="142" height="184" rx="12" class="paper"/>
+    <text x="26" y="34" class="label small">papers</text>
+    <line x1="24" y1="62" x2="118" y2="62" class="line"/>
+    <line x1="24" y1="88" x2="104" y2="88" class="line"/>
+    <line x1="24" y1="114" x2="118" y2="114" class="line"/>
+    <line x1="24" y1="140" x2="88" y2="140" class="line"/>
+  </g>
+  <g transform="translate(232 76)">
+    <circle cx="58" cy="46" r="20" class="kg"/>
+    <circle cx="106" cy="106" r="20" class="kg"/>
+    <circle cx="42" cy="150" r="20" class="kg"/>
+    <line x1="70" y1="62" x2="94" y2="90" stroke="#0f8f8a" stroke-width="4"/>
+    <line x1="88" y1="118" x2="58" y2="140" stroke="#0f8f8a" stroke-width="4"/>
+    <line x1="50" y1="130" x2="58" y2="66" stroke="#0f8f8a" stroke-width="4"/>
+    <text x="14" y="205" class="small muted">magnetics knowledge</text>
+  </g>
+  <path d="M196 170 C230 170 233 170 268 170" class="flow"/>
+  <path d="M362 170 C397 170 398 170 430 170" class="flow"/>
+  <rect x="438" y="92" width="116" height="156" rx="18" class="model"/>
+  <text x="461" y="144" fill="#fff" class="label">Mag</text>
+  <text x="459" y="178" fill="#fff" class="label">BERT</text>
+  <text x="461" y="207" fill="#fff" class="small">QA model</text>
+  <path d="M560 170 C590 170 596 170 626 170" class="flow"/>
+  <rect x="632" y="112" width="66" height="116" rx="14" class="answer"/>
+  <text x="647" y="151" class="small muted">Curie</text>
+  <text x="647" y="176" class="small muted">temp.</text>
+  <text x="647" y="203" class="small gold">Tc</text>
+</svg>

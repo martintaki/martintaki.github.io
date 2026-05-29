@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">Newton method global convergence rates diagram</title>
+  <desc id="desc">Two Newton variants descend along a loss curve toward a fast global rate marked as O(1/k^3).</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#0752b8"/>
+    </marker>
+    <style>
+      .bg{fill:#fbf6ec}.axis{stroke:#25344a;stroke-width:4}.grid{stroke:#d8c39a;stroke-width:1.5}.curve1{fill:none;stroke:#0752b8;stroke-width:7}.curve2{fill:none;stroke:#0f8f8a;stroke-width:6;stroke-dasharray:12 8}.step{fill:none;stroke:#c9a15b;stroke-width:3;marker-end:url(#arrow)}.label{fill:#18263a;font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:800}.small{font-size:16px;font-weight:700}.badge{fill:#0752b8}.gold{fill:#c9a15b}.muted{fill:#5b6778}
+    </style>
+  </defs>
+  <rect class="bg" width="720" height="360"/>
+  <line x1="78" y1="294" x2="650" y2="294" class="axis"/>
+  <line x1="78" y1="294" x2="78" y2="54" class="axis"/>
+  <g>
+    <line x1="78" y1="234" x2="650" y2="234" class="grid"/>
+    <line x1="78" y1="174" x2="650" y2="174" class="grid"/>
+    <line x1="78" y1="114" x2="650" y2="114" class="grid"/>
+  </g>
+  <path d="M106 78 C150 116 175 170 214 201 C267 245 332 264 448 274 C520 281 589 285 638 287" class="curve1"/>
+  <path d="M106 92 C177 142 202 209 272 235 C352 266 471 278 638 283" class="curve2"/>
+  <path d="M126 82 L184 160 L255 224 L354 259 L500 278" class="step"/>
+  <circle cx="126" cy="82" r="9" fill="#c9a15b"/>
+  <circle cx="184" cy="160" r="9" fill="#c9a15b"/>
+  <circle cx="255" cy="224" r="9" fill="#c9a15b"/>
+  <circle cx="354" cy="259" r="9" fill="#c9a15b"/>
+  <rect x="420" y="62" width="206" height="78" rx="16" class="badge"/>
+  <text x="450" y="97" fill="#fff" class="label">global rate</text>
+  <text x="474" y="124" fill="#fff" class="label small">up to O(1/k^3)</text>
+  <rect x="168" y="48" width="178" height="43" rx="20" fill="#fff" stroke="#d8c39a" stroke-width="2"/>
+  <text x="190" y="76" class="small muted">stepsize schedule</text>
+  <rect x="170" y="296" width="158" height="36" rx="18" fill="#fff" stroke="#d8c39a" stroke-width="2"/>
+  <text x="196" y="320" class="small muted">linesearch</text>
+  <text x="590" y="329" class="small muted">iterations</text>
+  <text x="22" y="67" class="small muted" transform="rotate(-90 22 67)">objective gap</text>
+</svg>

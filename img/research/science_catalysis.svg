@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">Oxidative coupling of methane neural catalyst diagram</title>
+  <desc id="desc">High-throughput catalytic experiments train a neural network to predict yield and selectivity for methane chemistry.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#0752b8"/>
+    </marker>
+    <style>
+      .bg{fill:#fbf6ec}.panel{fill:#fff;stroke:#d8c39a;stroke-width:2}.flow{stroke:#0752b8;stroke-width:4;fill:none;marker-end:url(#arrow)}.atom{fill:#fff;stroke:#0752b8;stroke-width:4}.o{stroke:#c9a15b}.cat{fill:#0f8f8a}.site{fill:#c9a15b}.nn{fill:#fff;stroke:#0752b8;stroke-width:4}.label{fill:#18263a;font-family:Arial,Helvetica,sans-serif;font-size:21px;font-weight:800}.small{font-size:15px;font-weight:700}.muted{fill:#5b6778}
+    </style>
+  </defs>
+  <rect class="bg" width="720" height="360"/>
+  <rect x="34" y="54" width="212" height="252" rx="16" class="panel"/>
+  <text x="66" y="90" class="label small">OCM reactor</text>
+  <rect x="66" y="202" width="146" height="30" rx="8" class="cat"/>
+  <circle cx="92" cy="200" r="8" class="site"/>
+  <circle cx="134" cy="200" r="8" class="site"/>
+  <circle cx="176" cy="200" r="8" class="site"/>
+  <circle cx="106" cy="136" r="18" class="atom"/>
+  <circle cx="82" cy="112" r="9" class="atom"/>
+  <circle cx="128" cy="111" r="9" class="atom"/>
+  <circle cx="82" cy="160" r="9" class="atom"/>
+  <circle cx="130" cy="160" r="9" class="atom"/>
+  <circle cx="180" cy="136" r="16" class="atom o"/>
+  <text x="100" y="143" class="small muted">C</text>
+  <text x="174" y="142" class="small muted">O</text>
+  <text x="83" y="264" class="small muted">high-throughput runs</text>
+  <path d="M256 180 C292 180 298 180 334 180" class="flow"/>
+  <rect x="344" y="70" width="142" height="220" rx="16" class="panel"/>
+  <text x="376" y="103" class="label small">DNN</text>
+  <circle cx="382" cy="144" r="12" class="nn"/>
+  <circle cx="382" cy="184" r="12" class="nn"/>
+  <circle cx="382" cy="224" r="12" class="nn"/>
+  <circle cx="430" cy="162" r="12" class="nn"/>
+  <circle cx="430" cy="205" r="12" class="nn"/>
+  <circle cx="462" cy="184" r="12" class="nn"/>
+  <line x1="394" y1="144" x2="418" y2="162" stroke="#5d7597" stroke-width="2"/>
+  <line x1="394" y1="184" x2="418" y2="162" stroke="#5d7597" stroke-width="2"/>
+  <line x1="394" y1="184" x2="418" y2="205" stroke="#5d7597" stroke-width="2"/>
+  <line x1="394" y1="224" x2="418" y2="205" stroke="#5d7597" stroke-width="2"/>
+  <line x1="442" y1="162" x2="450" y2="184" stroke="#5d7597" stroke-width="2"/>
+  <line x1="442" y1="205" x2="450" y2="184" stroke="#5d7597" stroke-width="2"/>
+  <path d="M496 180 C530 180 538 180 572 180" class="flow"/>
+  <rect x="582" y="100" width="104" height="160" rx="16" class="panel"/>
+  <text x="608" y="138" class="label small">yield</text>
+  <rect x="608" y="154" width="20" height="66" rx="6" fill="#0752b8"/>
+  <rect x="640" y="180" width="20" height="40" rx="6" fill="#c9a15b"/>
+  <text x="592" y="244" class="small muted">selectivity</text>
+</svg>

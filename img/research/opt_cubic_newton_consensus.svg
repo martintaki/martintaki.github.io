@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">Decentralized cubic Newton consensus diagram</title>
+  <desc id="desc">Agents exchange local gradients and Hessians with neighbors, reach consensus, and form a global cubic Newton step.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#0752b8"/>
+    </marker>
+    <style>
+      .bg{fill:#fbf6ec}.panel{fill:#fff;stroke:#d8c39a;stroke-width:2}.link{stroke:#5d7597;stroke-width:3}.flow{stroke:#0752b8;stroke-width:4;fill:none;marker-end:url(#arrow)}.dash{stroke:#0f8f8a;stroke-width:3;stroke-dasharray:7 7}.node{fill:#fff;stroke:#0752b8;stroke-width:5}.node2{stroke:#0f8f8a}.node3{stroke:#c9a15b}.label{fill:#18263a;font-family:Arial,Helvetica,sans-serif;font-size:20px;font-weight:800}.small{font-size:15px;font-weight:700}.tiny{font-size:13px;font-weight:700}.blue{fill:#0752b8}.teal{fill:#0f8f8a}.gold{fill:#c9a15b}.muted{fill:#5b6778}
+    </style>
+  </defs>
+  <rect class="bg" width="720" height="360"/>
+  <rect x="34" y="34" width="285" height="292" rx="18" class="panel"/>
+  <text x="58" y="68" class="label">neighbor graph</text>
+  <line x1="112" y1="120" x2="205" y2="88" class="link"/>
+  <line x1="205" y1="88" x2="260" y2="168" class="link"/>
+  <line x1="260" y1="168" x2="178" y2="238" class="link"/>
+  <line x1="178" y1="238" x2="88" y2="210" class="link"/>
+  <line x1="88" y1="210" x2="112" y2="120" class="link"/>
+  <line x1="112" y1="120" x2="178" y2="238" class="dash"/>
+  <circle cx="112" cy="120" r="27" class="node"/>
+  <circle cx="205" cy="88" r="27" class="node node2"/>
+  <circle cx="260" cy="168" r="27" class="node"/>
+  <circle cx="178" cy="238" r="27" class="node node3"/>
+  <circle cx="88" cy="210" r="27" class="node node2"/>
+  <text x="103" y="126" class="tiny blue">H1</text>
+  <text x="196" y="94" class="tiny teal">H2</text>
+  <text x="251" y="174" class="tiny blue">g3</text>
+  <text x="169" y="244" class="tiny gold">H4</text>
+  <text x="79" y="216" class="tiny teal">g5</text>
+  <path d="M330 180 C370 180 375 180 410 180" class="flow"/>
+  <rect x="420" y="54" width="246" height="96" rx="14" class="panel"/>
+  <text x="445" y="90" class="label">consensus loop</text>
+  <text x="445" y="119" class="small muted">align local iterates,</text>
+  <text x="445" y="140" class="small muted">gradients, Hessians</text>
+  <path d="M474 205 C504 170 594 170 624 205" class="dash" fill="none"/>
+  <path d="M624 205 C594 244 504 244 474 205" class="dash" fill="none"/>
+  <circle cx="474" cy="205" r="18" class="node"/>
+  <circle cx="624" cy="205" r="18" class="node node2"/>
+  <rect x="438" y="250" width="210" height="56" rx="12" fill="#0752b8"/>
+  <text x="471" y="285" fill="#fff" class="label small">cubic Newton step</text>
+</svg>
