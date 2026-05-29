@@ -1325,6 +1325,7 @@ ul.timeline li .data .text {
 	background: #fff;
 	border: 1px solid rgba(6,26,51,0.08);
 	box-shadow: 0 14px 34px rgba(6,26,51,0.08);
+	min-width: 0;
 }
 
 .news-feature-card {
@@ -1360,6 +1361,7 @@ ul.timeline li .data .text {
 	font-weight: 900;
 	line-height: 1.2;
 	margin: 0;
+	overflow-wrap: anywhere;
 }
 
 .news-feature-card h2 {
@@ -1533,6 +1535,7 @@ ul.timeline li .data .text {
 	color: #4b5565;
 	font-size: 15px;
 	line-height: 1.58;
+	min-width: 0;
 	overflow-wrap: anywhere;
 }
 
@@ -2398,7 +2401,12 @@ ul.timeline li .data .text {
 		padding: 20px;
 	}
 	.news-page .headercontent .title {
-		font-size: 30px;
+		font-size: 28px;
+		overflow-wrap: anywhere;
+	}
+	.news-page .section-container {
+		padding-left: 18px;
+		padding-right: 18px;
 	}
 	.news-section-header {
 		align-items: flex-start;
@@ -2425,6 +2433,9 @@ ul.timeline li .data .text {
 	.news-feature-card,
 	.news-side-panel {
 		padding: 20px;
+	}
+	.news-body img {
+		width: 100%;
 	}
 }
 
