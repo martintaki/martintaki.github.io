@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">Sampled quasi-Newton for machine learning diagram</title>
+  <desc id="desc">Fresh local samples around the current iterate build sampled L-BFGS and sampled LSR1 curvature approximations.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#0752b8"/>
+    </marker>
+    <style>
+      .bg{fill:#fbf6ec}.panel{fill:#fff;stroke:#d8c39a;stroke-width:2}.flow{stroke:#0752b8;stroke-width:4;fill:none;marker-end:url(#arrow)}.sample{fill:#fff;stroke:#0f8f8a;stroke-width:4}.center{fill:#0752b8}.curv{fill:#c9a15b}.label{fill:#18263a;font-family:Arial,Helvetica,sans-serif;font-size:21px;font-weight:800}.small{font-size:15px;font-weight:700}.muted{fill:#5b6778}
+    </style>
+  </defs>
+  <rect class="bg" width="720" height="360"/>
+  <rect x="48" y="62" width="220" height="236" rx="18" class="panel"/>
+  <text x="88" y="100" class="label small">fresh local samples</text>
+  <circle cx="158" cy="178" r="18" class="center"/>
+  <circle cx="104" cy="144" r="13" class="sample"/>
+  <circle cx="196" cy="132" r="13" class="sample"/>
+  <circle cx="216" cy="210" r="13" class="sample"/>
+  <circle cx="112" cy="226" r="13" class="sample"/>
+  <circle cx="164" cy="246" r="13" class="sample"/>
+  <path d="M158 178 L104 144 M158 178 L196 132 M158 178 L216 210 M158 178 L112 226 M158 178 L164 246" stroke="#5d7597" stroke-width="3"/>
+  <path d="M276 180 C310 180 318 180 352 180" class="flow"/>
+  <rect x="362" y="78" width="132" height="204" rx="18" fill="#0752b8"/>
+  <text x="394" y="119" class="small" fill="#fff">sampled</text>
+  <text x="392" y="143" class="small" fill="#fff">L-BFGS</text>
+  <text x="398" y="190" class="small" fill="#fff">sampled</text>
+  <text x="402" y="214" class="small" fill="#fff">LSR1</text>
+  <path d="M504 180 C536 180 544 180 576 180" class="flow"/>
+  <rect x="586" y="104" width="86" height="152" rx="18" class="panel"/>
+  <rect x="612" y="132" width="18" height="80" rx="6" class="curv"/>
+  <rect x="640" y="154" width="18" height="58" rx="6" fill="#0f8f8a"/>
+  <text x="598" y="240" class="small muted">curvature</text>
+</svg>

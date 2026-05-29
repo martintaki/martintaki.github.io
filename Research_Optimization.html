@@ -11,11 +11,13 @@ title: Research - Optimization
                 <h1 class="title">Optimization for Machine Learning</h1>
                 <p class="lead">
                     Second-order and higher-order optimization methods for scalable learning systems,
-                    with emphasis on curvature, quasi-Newton structure, distributed training, and theory.
+                    with emphasis on curvature, quasi-Newton structure, variance reduction, distributed training, and theory.
                 </p>
                 <div class="research-pill-row">
                     <span>Second-order methods</span>
                     <span>Quasi-Newton methods</span>
+                    <span>SARAH</span>
+                    <span>Variance reduction</span>
                     <span>Cubic regularization</span>
                     <span>Distributed training</span>
                     <span>Large-scale ML</span>
@@ -33,14 +35,15 @@ title: Research - Optimization
                         <p>
                             This direction studies curvature-aware algorithms that make modern machine learning
                             more efficient, reliable, and theoretically grounded. The work spans Newton and
-                            quasi-Newton methods, cubic regularization, higher-order methods, Hessian sketches,
-                            and communication-efficient second-order algorithms.
+                            quasi-Newton methods, cubic regularization, variance-reduced stochastic methods,
+                            higher-order methods, Hessian sketches, and communication-efficient second-order algorithms.
                         </p>
 
                         <h2>Typical Questions</h2>
                         <ul class="research-list">
                             <li>When does curvature information give real gains over first-order training?</li>
                             <li>How can Newton, cubic Newton, and quasi-Newton methods scale to large models?</li>
+                            <li>How can stochastic recursive gradients reduce variance without expensive full gradients?</li>
                             <li>How should second-order information be compressed, sketched, or distributed?</li>
                             <li>Can we obtain clean global rates while preserving practical implementability?</li>
                         </ul>
@@ -52,6 +55,8 @@ title: Research - Optimization
                             <span>Newton-type methods</span>
                             <span>Cubic regularization</span>
                             <span>Quasi-Newton methods</span>
+                            <span>SARAH and AI-SARAH</span>
+                            <span>Variance reduction</span>
                             <span>High-order methods</span>
                             <span>Sketching and compression</span>
                         </div>
@@ -116,6 +121,146 @@ title: Research - Optimization
                         <div class="paper-actions">
                             <a href="https://link.springer.com/article/10.1007/s10957-025-02804-3" target="_blank" rel="noopener">Paper</a>
                             <a href="https://arxiv.org/pdf/2302.04987.pdf" target="_blank" rel="noopener">PDF</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="team-group-header research-subgroup-header">
+                    <div>
+                        <div class="research-kicker">Variance reduction</div>
+                        <h2>SARAH and AI-SARAH Line</h2>
+                    </div>
+                    <span class="team-count">4 papers</span>
+                </div>
+
+                <div class="featured-paper-grid">
+                    <article class="featured-paper-card">
+                        <img class="paper-figure" src="/img/research/opt_ai_sarah.svg" alt="AI-SARAH recursive gradient estimate using local geometry to choose an implicit adaptive stepsize">
+                        <div class="paper-meta">2023 · TMLR / Variance Reduction</div>
+                        <h3>AI-SARAH: Adaptive and Implicit Stochastic Recursive Gradient Methods</h3>
+                        <ul>
+                            <li>Extends SARAH with an adaptive, implicit approach to stepsize selection.</li>
+                            <li>Uses local geometry and smoothness estimates to reduce hyperparameter tuning.</li>
+                            <li>Shows faster convergence when the local geometry permits larger progress.</li>
+                        </ul>
+                        <div class="paper-actions">
+                            <a href="https://openreview.net/forum?id=WoXJFsJ6Zw" target="_blank" rel="noopener">Paper</a>
+                            <a href="https://openreview.net/pdf?id=WoXJFsJ6Zw" target="_blank" rel="noopener">PDF</a>
+                        </div>
+                    </article>
+
+                    <article class="featured-paper-card">
+                        <img class="paper-figure" src="/img/research/opt_sarah_recursive.svg" alt="SARAH stochastic recursive gradient update using fresh samples and the previous gradient estimator">
+                        <div class="paper-meta">2017 · ICML / SARAH</div>
+                        <h3>SARAH: A Novel Method for Machine Learning Problems Using Stochastic Recursive Gradient</h3>
+                        <ul>
+                            <li>Introduces the stochastic recursive gradient estimator for finite-sum optimization.</li>
+                            <li>Avoids storing past gradients while retaining variance-reduction benefits.</li>
+                            <li>Establishes linear convergence in the strongly convex setting.</li>
+                        </ul>
+                        <div class="paper-actions">
+                            <a href="http://arxiv.org/abs/1703.00102" target="_blank" rel="noopener">Paper</a>
+                            <a href="https://arxiv.org/pdf/1703.00102.pdf" target="_blank" rel="noopener">PDF</a>
+                        </div>
+                    </article>
+
+                    <article class="featured-paper-card">
+                        <img class="paper-figure" src="/img/research/opt_inexact_sarah.svg" alt="Inexact SARAH replacing exact full gradients with mini-batch stochastic estimates">
+                        <div class="paper-meta">2020 · Optimization Methods and Software</div>
+                        <h3>Inexact SARAH Algorithm for Stochastic Optimization</h3>
+                        <ul>
+                            <li>Removes the need for an exact outer-loop gradient in SARAH.</li>
+                            <li>Uses mini-batch estimates with variance-reduced recursive updates.</li>
+                            <li>Extends the method beyond finite sums to general stochastic expectation problems.</li>
+                        </ul>
+                        <div class="paper-actions">
+                            <a href="https://www.tandfonline.com/doi/full/10.1080/10556788.2020.1818081" target="_blank" rel="noopener">Paper</a>
+                            <a href="https://arxiv.org/pdf/1811.10105.pdf" target="_blank" rel="noopener">PDF</a>
+                        </div>
+                    </article>
+
+                    <article class="featured-paper-card">
+                        <img class="paper-figure" src="/img/research/opt_rr_sarah.svg" alt="Random reshuffling across an epoch aggregating stochastic gradients instead of computing a full gradient">
+                        <div class="paper-meta">2023 · Optimization Letters</div>
+                        <h3>Random-reshuffled SARAH does not need a full gradient computations</h3>
+                        <ul>
+                            <li>Uses random reshuffling and epoch aggregation to estimate the full gradient.</li>
+                            <li>Reduces the expensive full-gradient step in SARAH-style variance reduction.</li>
+                            <li>Provides theory and experiments for the reshuffled stochastic estimator.</li>
+                        </ul>
+                        <div class="paper-actions">
+                            <a href="https://link.springer.com/article/10.1007/s11590-023-02081-x" target="_blank" rel="noopener">Paper</a>
+                            <a href="https://arxiv.org/pdf/2111.13322" target="_blank" rel="noopener">PDF</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="team-group-header research-subgroup-header">
+                    <div>
+                        <div class="research-kicker">Quasi-Newton methods</div>
+                        <h2>Scalable Curvature Approximations</h2>
+                    </div>
+                    <span class="team-count">4 papers</span>
+                </div>
+
+                <div class="featured-paper-grid">
+                    <article class="featured-paper-card">
+                        <img class="paper-figure" src="/img/research/opt_qn_error_feedback.svg" alt="Federated clients sending compressed quasi-Newton updates with error feedback corrections">
+                        <div class="paper-meta">2025 · OPT @ NeurIPS / Federated Learning</div>
+                        <h3>Quasi-Newton Methods for Federated Learning with Error Feedback</h3>
+                        <ul>
+                            <li>Combines L-BFGS style curvature with the EF21 error-feedback mechanism.</li>
+                            <li>Targets communication-efficient federated learning under biased compression.</li>
+                            <li>Obtains O(1/T) nonconvex convergence and linear rates under PL structure.</li>
+                        </ul>
+                        <div class="paper-actions">
+                            <a href="https://openreview.net/forum?id=uSlZjkiygU" target="_blank" rel="noopener">Paper</a>
+                            <a href="https://www.opt-ml.org/papers/2025/paper148.pdf" target="_blank" rel="noopener">PDF</a>
+                        </div>
+                    </article>
+
+                    <article class="featured-paper-card">
+                        <img class="paper-figure" src="/img/research/opt_qn_stepsize.svg" alt="A quasi-Newton approximation paired with a simple stepsize schedule and global convergence curves">
+                        <div class="paper-meta">2025 · Quasi-Newton Theory</div>
+                        <h3>Simple Stepsize for Quasi-Newton Methods with Global Convergence Guarantees</h3>
+                        <ul>
+                            <li>Introduces a simple stepsize schedule for globally convergent quasi-Newton methods.</li>
+                            <li>Gives O(1/k) rates for convex objectives and accelerated O(1/k^2) rates under controlled approximation error.</li>
+                            <li>Adds an adaptive variant that adjusts to curvature while retaining global guarantees.</li>
+                        </ul>
+                        <div class="paper-actions">
+                            <a href="https://arxiv.org/abs/2508.19712" target="_blank" rel="noopener">Paper</a>
+                            <a href="https://arxiv.org/pdf/2508.19712" target="_blank" rel="noopener">PDF</a>
+                        </div>
+                    </article>
+
+                    <article class="featured-paper-card">
+                        <img class="paper-figure" src="/img/research/opt_sampled_qn.svg" alt="Fresh local samples around an iterate forming sampled L-BFGS and sampled LSR1 curvature approximations">
+                        <div class="paper-meta">2021 · Optimization Methods and Software</div>
+                        <h3>Quasi-Newton Methods for Machine Learning: Forget the Past, Just Sample</h3>
+                        <ul>
+                            <li>Develops sampled L-BFGS and sampled LSR1 methods for deep learning.</li>
+                            <li>Builds curvature approximations from fresh local samples instead of stale iterate history.</li>
+                            <li>Designed for parallel and distributed training environments.</li>
+                        </ul>
+                        <div class="paper-actions">
+                            <a href="https://www.tandfonline.com/doi/full/10.1080/10556788.2021.1977806" target="_blank" rel="noopener">Paper</a>
+                            <a href="https://arxiv.org/pdf/1901.09997.pdf" target="_blank" rel="noopener">PDF</a>
+                        </div>
+                    </article>
+
+                    <article class="featured-paper-card">
+                        <img class="paper-figure" src="/img/research/opt_distributed_sr1.svg" alt="Distributed workers sending compact sampled SR1 curvature sketches to a matrix-free optimizer">
+                        <div class="paper-meta">2020 · Distributed Quasi-Newton</div>
+                        <h3>Scaling Up Quasi-Newton Algorithms: Communication Efficient Distributed SR1</h3>
+                        <ul>
+                            <li>Scales sampled LSR1 through a communication-efficient distributed implementation.</li>
+                            <li>Reduces communication rounds and keeps the method matrix-free and inverse-free.</li>
+                            <li>Targets neural-network training tasks with better workload balance across nodes.</li>
+                        </ul>
+                        <div class="paper-actions">
+                            <a href="http://arxiv.org/abs/1905.13096" target="_blank" rel="noopener">Paper</a>
+                            <a href="http://arxiv.org/pdf/1905.13096.pdf" target="_blank" rel="noopener">PDF</a>
                         </div>
                     </article>
                 </div>

@@ -1521,11 +1521,11 @@ ul.timeline li .data .text {
 	padding: 22px;
 }
 
-.featured-paper-card:nth-child(2) {
+.featured-paper-card:nth-child(3n+2) {
 	border-top-color: var(--mbz-teal);
 }
 
-.featured-paper-card:nth-child(3) {
+.featured-paper-card:nth-child(3n) {
 	border-top-color: var(--mbz-gold);
 }
 
@@ -1592,6 +1592,10 @@ ul.timeline li .data .text {
 	margin: 0;
 	object-fit: contain;
 	width: 100%;
+}
+
+.research-subgroup-header {
+	margin-top: 34px;
 }
 
 .research-crosscut-section h2,

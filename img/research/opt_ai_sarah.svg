@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">AI-SARAH adaptive implicit recursive gradient diagram</title>
+  <desc id="desc">A stochastic recursive gradient estimate uses local geometry to choose an implicit adaptive stepsize.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#0752b8"/>
+    </marker>
+    <style>
+      .bg{fill:#fbf6ec}.panel{fill:#fff;stroke:#d8c39a;stroke-width:2}.flow{stroke:#0752b8;stroke-width:4;fill:none;marker-end:url(#arrow)}.loop{stroke:#0f8f8a;stroke-width:4;fill:none;stroke-dasharray:9 7}.node{fill:#fff;stroke:#0752b8;stroke-width:4}.geo{fill:#0f8f8a}.step{fill:#c9a15b}.label{fill:#18263a;font-family:Arial,Helvetica,sans-serif;font-size:21px;font-weight:800}.small{font-size:15px;font-weight:700}.muted{fill:#5b6778}
+    </style>
+  </defs>
+  <rect class="bg" width="720" height="360"/>
+  <rect x="42" y="70" width="164" height="220" rx="18" class="panel"/>
+  <text x="76" y="107" class="label small">SARAH</text>
+  <text x="70" y="130" class="small muted">recursive</text>
+  <text x="72" y="152" class="small muted">gradient</text>
+  <circle cx="96" cy="204" r="18" class="node"/>
+  <circle cx="142" cy="204" r="18" class="node"/>
+  <path d="M114 204 L124 204" class="flow"/>
+  <path d="M214 180 C250 180 258 180 294 180" class="flow"/>
+  <rect x="304" y="54" width="174" height="252" rx="18" class="panel"/>
+  <text x="348" y="92" class="label small">implicit</text>
+  <text x="342" y="115" class="small muted">stepsize rule</text>
+  <path d="M344 224 C372 150 414 128 446 156" class="loop"/>
+  <circle cx="346" cy="224" r="15" class="geo"/>
+  <circle cx="446" cy="156" r="15" class="geo"/>
+  <rect x="344" y="244" width="88" height="30" rx="15" class="step"/>
+  <text x="365" y="265" class="small" fill="#fff">alpha</text>
+  <path d="M488 180 C523 180 530 180 566 180" class="flow"/>
+  <rect x="576" y="92" width="106" height="176" rx="18" fill="#0752b8"/>
+  <text x="602" y="133" class="small" fill="#fff">local</text>
+  <text x="584" y="157" class="small" fill="#fff">geometry</text>
+  <text x="592" y="198" class="small" fill="#fff">adaptive</text>
+  <text x="610" y="222" class="small" fill="#fff">rate</text>
+</svg>

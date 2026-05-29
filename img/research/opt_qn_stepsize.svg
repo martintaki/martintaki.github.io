@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">Simple stepsize for quasi-Newton methods diagram</title>
+  <desc id="desc">A quasi-Newton Hessian approximation is paired with a simple stepsize schedule that gives global convergence rates.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#0752b8"/>
+    </marker>
+    <style>
+      .bg{fill:#fbf6ec}.panel{fill:#fff;stroke:#d8c39a;stroke-width:2}.flow{stroke:#0752b8;stroke-width:4;fill:none;marker-end:url(#arrow)}.mat{fill:#0752b8}.mat2{fill:#0f8f8a}.mat3{fill:#c9a15b}.curve{fill:none;stroke:#0752b8;stroke-width:6}.curve2{fill:none;stroke:#c9a15b;stroke-width:4;stroke-dasharray:9 6}.label{fill:#18263a;font-family:Arial,Helvetica,sans-serif;font-size:21px;font-weight:800}.small{font-size:15px;font-weight:700}.muted{fill:#5b6778}
+    </style>
+  </defs>
+  <rect class="bg" width="720" height="360"/>
+  <rect x="46" y="66" width="160" height="228" rx="18" class="panel"/>
+  <text x="76" y="103" class="label small">BFGS</text>
+  <g transform="translate(82 132)">
+    <rect x="0" y="0" width="24" height="24" class="mat"/>
+    <rect x="30" y="0" width="24" height="24" class="mat2"/>
+    <rect x="60" y="0" width="24" height="24" class="mat"/>
+    <rect x="0" y="30" width="24" height="24" class="mat2"/>
+    <rect x="30" y="30" width="24" height="24" class="mat3"/>
+    <rect x="60" y="30" width="24" height="24" class="mat2"/>
+    <rect x="0" y="60" width="24" height="24" class="mat"/>
+    <rect x="30" y="60" width="24" height="24" class="mat2"/>
+    <rect x="60" y="60" width="24" height="24" class="mat"/>
+  </g>
+  <path d="M214 180 C250 180 256 180 292 180" class="flow"/>
+  <rect x="302" y="88" width="134" height="184" rx="18" fill="#0752b8"/>
+  <text x="334" y="128" class="small" fill="#fff">simple</text>
+  <text x="326" y="152" class="small" fill="#fff">stepsize</text>
+  <text x="346" y="198" class="label" fill="#fff">a_k</text>
+  <path d="M446 180 C480 180 488 180 522 180" class="flow"/>
+  <rect x="532" y="76" width="142" height="208" rx="18" class="panel"/>
+  <path d="M558 236 C584 196 616 174 650 122" class="curve"/>
+  <path d="M558 246 C594 238 626 216 650 182" class="curve2"/>
+  <text x="550" y="106" class="small muted">global rates</text>
+  <text x="560" y="268" class="small muted">O(1/k), O(1/k^2)</text>
+</svg>

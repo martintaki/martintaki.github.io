@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">Random reshuffled SARAH diagram</title>
+  <desc id="desc">Randomly reshuffled mini-batches are aggregated across an epoch to avoid a full gradient computation in SARAH.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#0752b8"/>
+    </marker>
+    <style>
+      .bg{fill:#fbf6ec}.panel{fill:#fff;stroke:#d8c39a;stroke-width:2}.flow{stroke:#0752b8;stroke-width:4;fill:none;marker-end:url(#arrow)}.batch{fill:#fff;stroke:#0752b8;stroke-width:3}.batch2{stroke:#0f8f8a}.batch3{stroke:#c9a15b}.sum{fill:#0f8f8a}.cross{stroke:#c93030;stroke-width:6}.label{fill:#18263a;font-family:Arial,Helvetica,sans-serif;font-size:21px;font-weight:800}.small{font-size:15px;font-weight:700}.muted{fill:#5b6778}
+    </style>
+  </defs>
+  <rect class="bg" width="720" height="360"/>
+  <rect x="42" y="60" width="226" height="240" rx="18" class="panel"/>
+  <text x="76" y="98" class="label small">reshuffled epoch</text>
+  <rect x="74" y="132" width="38" height="34" rx="8" class="batch"/>
+  <rect x="124" y="132" width="38" height="34" rx="8" class="batch2"/>
+  <rect x="174" y="132" width="38" height="34" rx="8" class="batch3"/>
+  <rect x="92" y="188" width="38" height="34" rx="8" class="batch3"/>
+  <rect x="142" y="188" width="38" height="34" rx="8" class="batch"/>
+  <text x="86" y="260" class="small muted">random order each pass</text>
+  <path d="M276 180 C312 180 318 180 354 180" class="flow"/>
+  <circle cx="386" cy="180" r="54" class="sum"/>
+  <text x="362" y="171" class="small" fill="#fff">epoch</text>
+  <text x="354" y="195" class="small" fill="#fff">aggregate</text>
+  <path d="M446 180 C482 180 489 180 524 180" class="flow"/>
+  <rect x="532" y="94" width="132" height="172" rx="18" class="panel"/>
+  <text x="560" y="130" class="small muted">no full</text>
+  <text x="556" y="154" class="small muted">gradient</text>
+  <line x1="558" y1="208" x2="632" y2="136" class="cross"/>
+  <line x1="632" y1="208" x2="558" y2="136" class="cross"/>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">Quasi-Newton federated learning with error feedback diagram</title>
+  <desc id="desc">Federated clients send compressed L-BFGS updates while error feedback returns residual information for the next round.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#0752b8"/>
+    </marker>
+    <style>
+      .bg{fill:#fbf6ec}.flow{stroke:#0752b8;stroke-width:4;fill:none;marker-end:url(#arrow)}.feedback{stroke:#c9a15b;stroke-width:3;fill:none;stroke-dasharray:8 7;marker-end:url(#arrow)}.client{fill:#fff;stroke:#0752b8;stroke-width:4}.client2{stroke:#0f8f8a}.hub{fill:#0752b8}.err{fill:#c9a15b}.label{fill:#18263a;font-family:Arial,Helvetica,sans-serif;font-size:21px;font-weight:800}.small{font-size:15px;font-weight:700}.muted{fill:#5b6778}
+    </style>
+  </defs>
+  <rect class="bg" width="720" height="360"/>
+  <circle cx="120" cy="96" r="32" class="client"/>
+  <circle cx="104" cy="250" r="32" class="client client2"/>
+  <circle cx="276" cy="280" r="32" class="client"/>
+  <circle cx="286" cy="86" r="32" class="client client2"/>
+  <circle cx="420" cy="180" r="64" class="hub"/>
+  <text x="386" y="168" class="small" fill="#fff">EF21</text>
+  <text x="385" y="193" class="small" fill="#fff">+ L-BFGS</text>
+  <path d="M148 112 C238 126 303 150 356 170" class="flow"/>
+  <path d="M135 240 C222 218 292 197 354 184" class="flow"/>
+  <path d="M302 262 C338 235 356 216 377 205" class="flow"/>
+  <path d="M308 100 C344 124 366 146 386 160" class="flow"/>
+  <path d="M376 126 C296 88 220 72 134 82" class="feedback"/>
+  <path d="M376 230 C286 268 210 276 116 266" class="feedback"/>
+  <rect x="536" y="94" width="130" height="172" rx="18" fill="#fff" stroke="#d8c39a" stroke-width="2"/>
+  <text x="570" y="131" class="label small">server</text>
+  <rect x="570" y="160" width="22" height="76" rx="6" fill="#0f8f8a"/>
+  <rect x="604" y="184" width="22" height="52" rx="6" class="err"/>
+  <path d="M486 180 C506 180 512 180 532 180" class="flow"/>
+  <text x="544" y="255" class="small muted">compressed updates</text>
+</svg>

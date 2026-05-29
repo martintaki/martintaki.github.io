@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">Distributed sampled LSR1 communication-efficient diagram</title>
+  <desc id="desc">Workers compute local sampled SR1 curvature sketches and communicate compact updates to a central model.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#0752b8"/>
+    </marker>
+    <style>
+      .bg{fill:#fbf6ec}.flow{stroke:#0752b8;stroke-width:4;fill:none;marker-end:url(#arrow)}.return{stroke:#0f8f8a;stroke-width:3;fill:none;stroke-dasharray:8 7;marker-end:url(#arrow)}.worker{fill:#fff;stroke:#0752b8;stroke-width:4}.worker2{stroke:#0f8f8a}.sketch{fill:#c9a15b}.hub{fill:#0752b8}.label{fill:#18263a;font-family:Arial,Helvetica,sans-serif;font-size:21px;font-weight:800}.small{font-size:15px;font-weight:700}.muted{fill:#5b6778}
+    </style>
+  </defs>
+  <rect class="bg" width="720" height="360"/>
+  <rect x="58" y="74" width="112" height="76" rx="16" class="worker"/>
+  <rect x="64" y="98" width="22" height="28" rx="5" class="sketch"/>
+  <text x="96" y="119" class="small muted">worker</text>
+  <rect x="58" y="210" width="112" height="76" rx="16" class="worker worker2"/>
+  <rect x="64" y="234" width="22" height="28" rx="5" class="sketch"/>
+  <text x="96" y="255" class="small muted">worker</text>
+  <rect x="254" y="142" width="128" height="76" rx="18" fill="#fff" stroke="#d8c39a" stroke-width="2"/>
+  <text x="286" y="172" class="label small">compact</text>
+  <text x="285" y="196" class="small muted">SR1 sketches</text>
+  <circle cx="520" cy="180" r="62" class="hub"/>
+  <text x="489" y="170" class="small" fill="#fff">matrix-free</text>
+  <text x="492" y="195" class="small" fill="#fff">DS-LSR1</text>
+  <path d="M174 112 C212 126 226 145 254 164" class="flow"/>
+  <path d="M174 248 C212 230 226 207 254 188" class="flow"/>
+  <path d="M386 180 C420 180 426 180 458 180" class="flow"/>
+  <path d="M500 118 C414 76 304 76 148 96" class="return"/>
+  <path d="M500 242 C414 286 304 286 148 264" class="return"/>
+</svg>

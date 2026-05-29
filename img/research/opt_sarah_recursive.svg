@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">SARAH stochastic recursive gradient diagram</title>
+  <desc id="desc">SARAH updates a recursive stochastic gradient estimate for finite-sum machine learning problems without storing past gradients.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#0752b8"/>
+    </marker>
+    <style>
+      .bg{fill:#fbf6ec}.panel{fill:#fff;stroke:#d8c39a;stroke-width:2}.flow{stroke:#0752b8;stroke-width:4;fill:none;marker-end:url(#arrow)}.sample{fill:#fff;stroke:#0f8f8a;stroke-width:4}.vec{fill:#0752b8}.old{fill:#c9a15b}.label{fill:#18263a;font-family:Arial,Helvetica,sans-serif;font-size:21px;font-weight:800}.small{font-size:15px;font-weight:700}.muted{fill:#5b6778}
+    </style>
+  </defs>
+  <rect class="bg" width="720" height="360"/>
+  <rect x="42" y="62" width="178" height="236" rx="18" class="panel"/>
+  <text x="78" y="100" class="label small">sample i_k</text>
+  <circle cx="92" cy="154" r="18" class="sample"/>
+  <circle cx="132" cy="194" r="18" class="sample"/>
+  <circle cx="172" cy="154" r="18" class="sample"/>
+  <text x="80" y="248" class="small muted">fresh component</text>
+  <path d="M228 180 C260 180 266 180 298 180" class="flow"/>
+  <rect x="308" y="72" width="168" height="216" rx="18" class="panel"/>
+  <text x="350" y="109" class="label small">update</text>
+  <rect x="348" y="142" width="36" height="88" rx="8" class="vec"/>
+  <rect x="400" y="176" width="36" height="54" rx="8" class="old"/>
+  <text x="344" y="258" class="small muted">v_k = delta + v_{k-1}</text>
+  <path d="M486 180 C520 180 526 180 562 180" class="flow"/>
+  <rect x="572" y="82" width="106" height="196" rx="18" fill="#0752b8"/>
+  <text x="594" y="128" class="small" fill="#fff">low</text>
+  <text x="588" y="152" class="small" fill="#fff">storage</text>
+  <text x="596" y="195" class="small" fill="#fff">linear</text>
+  <text x="594" y="219" class="small" fill="#fff">rate</text>
+</svg>
