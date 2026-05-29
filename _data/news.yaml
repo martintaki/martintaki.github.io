@@ -1,12 +1,23 @@
 - body: '<img src="/img/news/2026-03-31-abdulla-jasem-almansoori-defends-phd-thesis.png"
-    align="middle" width="600"><br/> On March 31, 2026, my PhD student Abdulla Jasem
-    Almansoori defended his thesis, Adapters for Collaborative Learning: Personalization
-    and Structure-Aware Optimization.<br/><br/>His dissertation studies parameter-efficient
-    adaptation for collaborative learning, focusing on federated learning under heterogeneous
+    align="middle" width="600"><br/> My PhD student Abdulla Jasem Almansoori defended
+    his thesis, Adapters for Collaborative Learning: Personalization and Structure-Aware
+    Optimization.<br/><br/>His dissertation studies parameter-efficient adaptation
+    for collaborative learning, focusing on federated learning under heterogeneous
     client data and structure-aware optimization of lightweight adapters. The committee
     included Samuel Horvath, Praneeth Vepakomma, Martin Jaggi, and me.'
   date: '2026-03-31'
   title: Abdulla Jasem Almansoori Defends PhD Thesis
+- body: <img src="/img/news/2026-02-26-byzantine-robust-federated-learning.jpg" align="middle"
+    width="600"><br/> MBZUAI featured our work on Bant, a Byzantine-robust approach
+    to federated learning. The method combines a trusted trial function with trust
+    scores to filter corrupted updates, with variants evaluated on image classification,
+    ECG abnormality detection, and recommender system benchmarks.<br/><br/>The study
+    was presented orally at the 40th Annual AAAI Conference on Artificial Intelligence
+    in Singapore, with co-authors from MBZUAI and other institutions, including me.
+    --- <a href="https://mbzuai.ac.ae/news/the-search-for-an-antidote-to-byzantine-attacks/">check
+    the full article here</a>.
+  date: '2026-02-26'
+  title: Byzantine-Robust Federated Learning
 - body: '--- <a href="https://mbzuai.ac.ae/news/the-search-for-an-antidote-to-byzantine-attacks/">check
     the full article here</a>.'
   date: '2026-02-26'
