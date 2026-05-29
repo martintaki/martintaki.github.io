@@ -1,3 +1,29 @@
+- body: "I am pleased to share that five papers have been accepted to ICML 2026 in\
+    \ Seoul, together with four papers at ICML 2026 workshops. I am grateful to my\
+    \ students and collaborators for their work on these projects.<br/><br/>Accepted\
+    \ papers: 1. Zero-Shot Off-Policy Learning, with Arip Asadulaev, Maksim Bobrin,\
+    \ Salem Lahlou, Dmitry Dylov, Fakhri Karray, and Martin Tak\xE1\u010D. 2. WaveSSM:\
+    \ Multiscale State-Space Models for Non-stationary Signal Attention, with Ruben\
+    \ Solozabal, Velibor Bojkovic, Hilal Alquabeh, Klea Ziu, Kentaro Inui, and Martin\
+    \ Tak\xE1\u010D. 3. From Optimization to Generalization under Heavy-Tailed Data:\
+    \ The Role of Gradient Clipping, with Aleksandr Shestakov, Martin Tak\xE1\u010D\
+    , and Eduard Gorbunov. 4. Your Latent Reasoning is Secretly Policy Improvement\
+    \ Operator, with Arip Asadulaev, Rayan Banerjee, Fakhri Karray, and Martin Tak\xE1\
+    \u010D. 5. CoRe: Collaborative Reasoning via Cross Teaching, with Kshitij Mishra,\
+    \ Mirat Aubakirov, Martin Tak\xE1\u010D, Nils Lukas, and Salem Lahlou. Workshop\
+    \ papers: 6. \u03C8DAG: Projected Stochastic Approximation Iteration for DAG Structure\
+    \ Learning, with Klea Ziu, Slavom\xEDr Hanzely, Loka Li, Kun Zhang, Martin Tak\xE1\
+    \u010D, and Dmitry Kamzolov. 7. Breaking the Martingale Curse: Multi-Agent Debate\
+    \ via Asymmetric Cognitive Potential Energy, with Yuhan Liu, Juntian Zhang, Yichen\
+    \ Wu, Martin Tak\xE1\u010D, Salem Lahlou, Xiuying Chen, and Nils Lukas. 8. Decision-Making\
+    \ from Offline Datasets to Online Adaptation: Black-Box Optimization to Reinforcement\
+    \ Learning, with Alexey Zemtsov, Maksim Bobrin, Alexander Nikulin, Dmitry V. Dylov,\
+    \ Fakhri Karray, Vladislav Kurenkov, Martin Tak\xE1\u010D, and Arip Asadulaev.\
+    \ 9. Revisiting the Form of Attention with Positional Encoding for Molecular Structures,\
+    \ with Yusei Ito, Aidar Alimbayev, Klea Ziu, Deepak Kumar, Kanta Ono, and Martin\
+    \ Tak\xE1\u010D."
+  date: '2026-05-01'
+  title: ICML 2026 Accepted Papers
 - body: '<img src="/img/news/2026-03-31-abdulla-jasem-almansoori-defends-phd-thesis.png"
     align="middle" width="600"><br/> My PhD student Abdulla Jasem Almansoori defended
     his thesis, Adapters for Collaborative Learning: Personalization and Structure-Aware
