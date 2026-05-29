@@ -848,17 +848,16 @@
     NeurIPS 2025
   keywords:
   - molecular representation learning
-  - substructure descriptors
-  - chemical language models
-  - graph neural networks
-  - roberta
+  - smiles limitations
+  - substructure decomposition
+  - descriptor-based fragments
+  - bimodal molecular architecture
+  - roberta molecular encoder
   - graph isomorphism networks
   - graph convolutional networks
   - graphormer
-  - smiles limitations
-  - bimodal architecture
   - qsar prediction
-  - molecular property prediction
+  - chemical compound embeddings
   link: https://ieeexplore.ieee.org/document/11456953
   pdf: https://arxiv.org/pdf/2502.17986
   tags:
@@ -866,6 +865,7 @@
   - Graph Learning
   - Chemistry
   - Representation Learning
+  - Molecular Modeling
   title: 'Thinking like a CHEMIST: Combined Heterogeneous Embedding Model Integrating
     Structure and Tokens'
   type: jpaper
@@ -3171,15 +3171,15 @@
     \ Stefano Sanvito, Huseyin Ucar"
   journal: The Journal of Physical Chemistry C
   keywords:
-  - magbert
-  - magmatbert
   - magnetic materials
+  - domain-specific bert
   - curie temperature extraction
-  - bert pretraining
   - chemical named entity recognition
   - question answering pipeline
-  - materials text mining
-  - magnetics corpus
+  - materials literature mining
+  - magbert
+  - magmatbert
+  - magnetics corpus pretraining
   - random forest validation
   link: https://pubs.acs.org/doi/full/10.1021/acs.jpcc.4c01974
   pdf: https://pubs.acs.org/doi/epdf/10.1021/acs.jpcc.4c01974
@@ -3187,8 +3187,7 @@
   - LLM
   - Materials Science
   - Information Extraction
-  - Natural Language Processing
-  - Machine Learning
+  - Question Answering
   title: 'MagBERT: Magnetics Knowledge Aware Language Model Coupled with a Question
     Answering Pipeline for Curie Temperature Extraction Task'
   type: jpaper
@@ -4533,23 +4532,22 @@
   journal: 'Journal of Physics: Energy'
   keywords:
   - oxidative coupling of methane
-  - deep neural network
+  - deep neural network rate model
   - high-throughput catalysis data
-  - reaction rate modeling
   - plug flow reactor design equation
-  - catalyst screening
-  - sequential catalyst beds
-  - c2 product yield
-  - methane conversion
-  - ethylene to ethane ratio
   - mn-na2wo4/sio2 catalyst
+  - c2 yield and selectivity
+  - sequential catalyst beds
+  - catalyst combination screening
+  - methane conversion profiles
+  - ethylene to ethane ratio
   link: https://iopscience.iop.org/article/10.1088/2515-7655/aca797
   pdf: https://iopscience.iop.org/article/10.1088/2515-7655/aca797/pdf
   tags:
-  - Machine Learning
-  - Catalysis
   - Materials Science
   - Energy Systems
+  - Catalysis
+  - Machine Learning
   - Chemical Engineering
   title: A deep neural network for oxidative coupling of methane trained on high throughput
     experimental data
@@ -5954,16 +5952,16 @@
   authors: "Nur Sila Gulgec, <strong>Martin Tak\xE1\u010D</strong>, Shamim N. Pakzad"
   journal: Computer-Aided Civil and Infrastructure Engineering
   keywords:
+  - structural sensing
   - strain estimation
   - acceleration data
   - fatigue assessment
-  - structural sensing
   - long short-term memory
   - deep neural networks
   - acceleration sensors
-  - strain responses
+  - civil structures
+  - full-field strain assessment
   - horizontally curved girder
-  - memory-efficient training
   link: https://onlinelibrary.wiley.com/doi/full/10.1111/mice.12565
   ltype: Computer-Aided Civil and Infrastructure Engineering
   tags:
