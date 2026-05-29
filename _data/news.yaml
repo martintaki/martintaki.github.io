@@ -38,6 +38,15 @@
     the full article here</a>.
   date: '2025-09-29'
   title: MedNNS for Medical Imaging Model Selection
+- body: <img src="/img/news/2025-07-28-recall-and-the-reversal-curse-in-llms.jpg"
+    align="middle" width="600"><br/> I co-authored a study on ReCall, a two-step prompting
+    strategy that uses self-referencing causal cycles in text to help autoregressive
+    language models retrieve information across sequence order.<br/><br/>The work
+    examines the reversal curse in LLMs and will be presented at the 63rd Annual Meeting
+    of the Association for Computational Linguistics in Vienna. --- <a href="https://mbzuai.ac.ae/news/overcoming-the-reversal-curse-in-llms-with-recall/">check
+    the full article here</a>.
+  date: '2025-07-28'
+  title: ReCall and the reversal curse in LLMs
 - body: '--- <a href="https://mbzuai.ac.ae/news/overcoming-the-reversal-curse-in-llms-with-recall/">check
     the full article here</a>.'
   date: '2025-07-28'
