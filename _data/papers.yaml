@@ -2715,84 +2715,139 @@
   title: Learning Confident Classifiers in the Presence of Label Noise
   type: cpaper
   year: '2025'
-- abstract: "\nThis work addresses the challenge of optimal energy management in microgrids\
-    \ through a collaborative and privacy-preserving framework. We propose the FedTRPO\
-    \ methodology, which integrates Federated Learning (FL) and Trust Region Policy\
-    \ Optimization (TRPO) to manage distributed energy resources (DERs) efficiently.\
-    \ Using a customized version of the CityLearn environment and synthetically generated\
-    \ data, we simulate designed net-zero energy scenarios for microgrids composed\
-    \ of multiple buildings. Our approach emphasizes reducing energy costs and carbon\
-    \ emissions while ensuring privacy. Experimental results demonstrate that FedTRPO\
-    \ is comparable with state-of-the-art federated RL methodologies without hyperparameter\
-    \ tunning. The proposed framework highlights the feasibility of collaborative\
-    \ learning for achieving optimal control policies in energy systems, advancing\
-    \ the goals of sustainable and efficient smart grids.\n\t\t"
+- abstract: This work addresses the challenge of optimal energy management in microgrids
+    through a collaborative and privacy-preserving framework. We propose the FedTRPO
+    methodology, which integrates Federated Learning (FL) and Trust Region Policy
+    Optimization (TRPO) to manage distributed energy resources (DERs) efficiently.
+    Using a customized version of the CityLearn environment and synthetically generated
+    data, we simulate designed net-zero energy scenarios for microgrids composed of
+    multiple buildings. Our approach emphasizes reducing energy costs and carbon emissions
+    while ensuring privacy. Experimental results demonstrate that FedTRPO is comparable
+    with state-of-the-art federated RL methodologies without hyperparameter tunning.
+    The proposed framework highlights the feasibility of collaborative learning for
+    achieving optimal control policies in energy systems, advancing the goals of sustainable
+    and efficient smart grids.
   authors: "Nicolas M Cuadrado Avila, Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D\
     </strong>"
-  keywords: []
+  keywords:
+  - net-zero microgrids
+  - federated reinforcement learning
+  - trust region policy optimization
+  - proximal policy optimization
+  - distributed energy resources
+  - microgrid energy management
+  - privacy-preserving control
+  - carbon emissions reduction
+  - citylearn environment
+  - synthetic building data
   link: https://arxiv.org/abs/2412.20946
   pdf: https://arxiv.org/pdf/2412.20946
-  tags: []
+  tags:
+  - Federated Learning
+  - Reinforcement Learning
+  - Energy Systems
+  - Optimization
+  - Distributed Optimization
   title: 'Generalizing in Net-Zero Microgrids: A Study with Federated PPO and TRPO'
   type: tpaper
   year: '2024'
 - authors: "Aleksandr Lobanov, Alexander Gasnikov, Eduard Gorbunov, <strong>Martin\
     \ Tak\xE1\u010D</strong>"
-  keywords: []
+  keywords:
+  - gradient descent
+  - linear convergence
+  - convex optimization
+  - (l0,l1)-smoothness
+  - first-order methods
+  - smoothness assumptions
+  - convergence analysis
+  - descent method variants
   link: https://arxiv.org/abs/2412.17050
   pdf: https://arxiv.org/pdf/2412.17050
-  tags: []
+  tags:
+  - Optimization
+  - Convex Optimization
+  - First-Order Methods
   title: Linear Convergence Rate in Convex Setup is Possible! Gradient Descent Method
     Variants under (L0,L1)-Smoothness
   type: tpaper
   year: '2024'
-- abstract: "\nHyperbolic representation learning is well known for its ability to\
-    \ capture hierarchical information. However, the distance between samples from\
-    \ different levels of hierarchical classes can be required large. We reveal that\
-    \ the hyperbolic discriminant objective forces the backbone to capture this hierarchical\
-    \ information, which may inevitably increase the Lipschitz constant of the backbone.\
-    \ This can hinder the full utilization of the backbone's generalization ability.\
-    \ To address this issue, we introduce second-order pooling into hyperbolic representation\
-    \ learning, as it naturally increases the distance between samples without compromising\
-    \ the generalization ability of the input features. In this way, the Lipschitz\
-    \ constant of the backbone does not necessarily need to be large. However, current\
-    \ off-the-shelf low-dimensional bilinear pooling methods cannot be directly employed\
-    \ in hyperbolic representation learning because they inevitably reduce the distance\
-    \ expansion capability. To solve this problem, we propose a kernel approximation\
-    \ regularization, which enables the low-dimensional bilinear features to approximate\
-    \ the kernel function well in low-dimensional space. Finally, we conduct extensive\
-    \ experiments on graph-structured datasets to demonstrate the effectiveness of\
-    \ the proposed method.\n\n\t\t"
+- abstract: Hyperbolic representation learning is well known for its ability to capture
+    hierarchical information. However, the distance between samples from different
+    levels of hierarchical classes can be required large. We reveal that the hyperbolic
+    discriminant objective forces the backbone to capture this hierarchical information,
+    which may inevitably increase the Lipschitz constant of the backbone. This can
+    hinder the full utilization of the backbone's generalization ability. To address
+    this issue, we introduce second-order pooling into hyperbolic representation learning,
+    as it naturally increases the distance between samples without compromising the
+    generalization ability of the input features. In this way, the Lipschitz constant
+    of the backbone does not necessarily need to be large. However, current off-the-shelf
+    low-dimensional bilinear pooling methods cannot be directly employed in hyperbolic
+    representation learning because they inevitably reduce the distance expansion
+    capability. To solve this problem, we propose a kernel approximation regularization,
+    which enables the low-dimensional bilinear features to approximate the kernel
+    function well in low-dimensional space. Finally, we conduct extensive experiments
+    on graph-structured datasets to demonstrate the effectiveness of the proposed
+    method.
   authors: "Kun Song, Ruben Solozabal, Lu Ren, Moloud Abdar, Qing Li, Fakhri Karray,\
     \ <strong>Martin Tak\xE1\u010D</strong>"
-  keywords: []
+  keywords:
+  - hyperbolic representation learning
+  - second-order pooling
+  - bilinear pooling
+  - kernel approximation regularization
+  - lipschitz constant
+  - hierarchical information
+  - graph-structured datasets
+  - distance expansion
+  - low-dimensional bilinear features
+  - hyperbolic discriminant objective
   link: https://arxiv.org/abs/2410.22026
   pdf: https://arxiv.org/pdf/2410.22026
-  tags: []
+  tags:
+  - Representation Learning
+  - Graph Learning
+  - Kernel Methods
+  - Hyperbolic Learning
   title: Enhance Hyperbolic Representation Learning via Second-order Pooling
   type: tpaper
   year: '2024'
-- abstract: "\nVariational inequalities represent a broad class of problems, including\
-    \ minimization and min-max problems, commonly found in machine learning. Existing\
-    \ second-order and high-order methods for variational inequalities require precise\
-    \ computation of derivatives, often resulting in prohibitively high iteration\
-    \ costs. In this work, we study the impact of Jacobian inaccuracy on second-order\
-    \ methods. For the smooth and monotone case, we establish a lower bound with explicit\
-    \ dependence on the level of Jacobian inaccuracy and propose an optimal algorithm\
-    \ for this key setting. When derivatives are exact, our method converges at the\
-    \ same rate as exact optimal second-order methods. To reduce the cost of solving\
-    \ the auxiliary problem, which arises in all high-order methods with global convergence,\
-    \ we introduce several Quasi-Newton approximations. Our method with Quasi-Newton\
-    \ updates achieves a global sublinear convergence rate. We extend our approach\
-    \ with a tensor generalization for inexact high-order derivatives and support\
-    \ the theory with experiments.\n\t\t"
+- abstract: Variational inequalities represent a broad class of problems, including
+    minimization and min-max problems, commonly found in machine learning. Existing
+    second-order and high-order methods for variational inequalities require precise
+    computation of derivatives, often resulting in prohibitively high iteration costs.
+    In this work, we study the impact of Jacobian inaccuracy on second-order methods.
+    For the smooth and monotone case, we establish a lower bound with explicit dependence
+    on the level of Jacobian inaccuracy and propose an optimal algorithm for this
+    key setting. When derivatives are exact, our method converges at the same rate
+    as exact optimal second-order methods. To reduce the cost of solving the auxiliary
+    problem, which arises in all high-order methods with global convergence, we introduce
+    several Quasi-Newton approximations. Our method with Quasi-Newton updates achieves
+    a global sublinear convergence rate. We extend our approach with a tensor generalization
+    for inexact high-order derivatives and support the theory with experiments.
   authors: "Artem Agafonov, Petr Ostroukhov, Konstantin Yakovlev, Eduard Gorbunov,\
     \ <strong>Martin Tak\xE1\u010D</strong>, Alexander Gasnikov, Dmitry Kamzolov"
   journal: NeurIPS 2024
-  keywords: []
+  keywords:
+  - variational inequalities
+  - jacobian inexactness
+  - second-order methods
+  - smooth monotone problems
+  - lower bounds
+  - optimal algorithms
+  - quasi-newton approximations
+  - high-order derivatives
+  - auxiliary subproblem
+  - global sublinear convergence
+  - min-max problems
   link: https://arxiv.org/abs/2405.15990
   pdf: https://arxiv.org/pdf/2405.15990
-  tags: []
+  tags:
+  - Optimization
+  - Second-Order Methods
+  - Variational Inequalities
+  - Quasi-Newton Methods
+  - Machine Learning
   title: 'Exploring Jacobian Inexactness in Second-Order Methods for Variational Inequalities:
     Lower Bounds, Optimal Algorithms and Quasi-Newton Approximations'
   type: cpaper
@@ -2852,16 +2907,30 @@
     the well-known Adam and RmsProp scaling and the newer AdaHessian and OASIS based
     on Hutchison approximation. We use the Extra Gradient and its improved version
     with negative momentum as the basic method. Experimental studies on GANs show
-    good applicability not only for Adam, but also for other less popular methods.
-
-    '
+    good applicability not only for Adam, but also for other less popular methods.'
   authors: "Aleksandr Beznosikov, Aibek Alanov, Dmitry Kovalev, <strong>Martin Tak\xE1\
     \u010D</strong>, Alexander Gasnikov"
   journal: ICOMP 2024
-  keywords: []
+  keywords:
+  - saddle point problems
+  - adaptive scaling
+  - extra gradient method
+  - negative momentum
+  - adam scaling
+  - rmsprop scaling
+  - adahessian
+  - oasis
+  - hutchinson approximation
+  - gan training
+  - adversarial machine learning
   link: https://arxiv.org/abs/2206.08303
   pdf: https://arxiv.org/pdf/2206.08303
-  tags: []
+  tags:
+  - Optimization
+  - Machine Learning
+  - Adversarial Learning
+  - Second-Order Methods
+  - Generative Modeling
   title: On Scaled Methods for Saddle Point Problems
   type: cpaper
   year: '2024'
@@ -2892,56 +2961,83 @@
     Answering Pipeline for Curie Temperature Extraction Task'
   type: jpaper
   year: '2024'
-- abstract: "\nVision-Language Models (VLMs) are becoming increasingly vulnerable\
-    \ to adversarial attacks as various novel attack strategies are being proposed\
-    \ against these models. While existing defenses excel in unimodal contexts, they\
-    \ currently fall short in safeguarding VLMs against adversarial threats. To mitigate\
-    \ this vulnerability, we propose a novel, yet elegantly simple approach for detecting\
-    \ adversarial samples in VLMs. Our method leverages Text-to-Image (T2I) models\
-    \ to generate images based on captions produced by target VLMs. Subsequently,\
-    \ we calculate the similarities of the embeddings of both input and generated\
-    \ images in the feature space to identify adversarial samples. Empirical evaluations\
-    \ conducted on different datasets validate the efficacy of our approach, outperforming\
-    \ baseline methods adapted from image classification domains. Furthermore, we\
-    \ extend our methodology to classification tasks, showcasing its adaptability\
-    \ and model-agnostic nature. Theoretical analyses and empirical findings also\
-    \ show the resilience of our approach against adaptive attacks, positioning it\
-    \ as an excellent defense mechanism for real-world deployment against adversarial\
-    \ threats.\n\t\t"
+- abstract: Vision-Language Models (VLMs) are becoming increasingly vulnerable to
+    adversarial attacks as various novel attack strategies are being proposed against
+    these models. While existing defenses excel in unimodal contexts, they currently
+    fall short in safeguarding VLMs against adversarial threats. To mitigate this
+    vulnerability, we propose a novel, yet elegantly simple approach for detecting
+    adversarial samples in VLMs. Our method leverages Text-to-Image (T2I) models to
+    generate images based on captions produced by target VLMs. Subsequently, we calculate
+    the similarities of the embeddings of both input and generated images in the feature
+    space to identify adversarial samples. Empirical evaluations conducted on different
+    datasets validate the efficacy of our approach, outperforming baseline methods
+    adapted from image classification domains. Furthermore, we extend our methodology
+    to classification tasks, showcasing its adaptability and model-agnostic nature.
+    Theoretical analyses and empirical findings also show the resilience of our approach
+    against adaptive attacks, positioning it as an excellent defense mechanism for
+    real-world deployment against adversarial threats.
   authors: "Samar Fares, Klea Ziu, Toluwani Aremu, Nikita Durasov, <strong>Martin\
     \ Tak\xE1\u010D</strong>, Pascal Fua, Karthik Nandakumar, Ivan Laptev"
-  keywords: []
+  keywords:
+  - vision-language models
+  - adversarial defense
+  - adversarial sample detection
+  - text-to-image generation
+  - caption-based image synthesis
+  - embedding similarity
+  - feature space comparison
+  - adaptive attacks
+  - model-agnostic defense
+  - classification tasks
   link: https://arxiv.org/abs/2406.09250
   pdf: https://arxiv.org/pdf/2406.09250
-  tags: []
+  tags:
+  - Computer Vision
+  - Robustness
+  - LLM
+  - Multimodal Learning
   title: 'MirrorCheck: Efficient Adversarial Defense for Vision-Language Models'
   type: tpaper
   year: '2024'
-- abstract: "\nThe rapid development of machine learning and deep learning has introduced\
-    \ increasingly complex optimization challenges that must be addressed. Indeed,\
-    \ training modern, advanced models has become difficult to implement without leveraging\
-    \ multiple computing nodes in a distributed environment. Distributed optimization\
-    \ is also fundamental to emerging fields such as federated learning. Specifically,\
-    \ there is a need to organize the training process to minimize the time lost due\
-    \ to communication. A widely used and extensively researched technique to mitigate\
-    \ the communication bottleneck involves performing local training before communication.\
-    \ This approach is the focus of our paper. Concurrently, adaptive methods that\
-    \ incorporate scaling, notably led by Adam, have gained significant popularity\
-    \ in recent years. Therefore, this paper aims to merge the local training technique\
-    \ with the adaptive approach to develop efficient distributed learning methods.\
-    \ We consider the classical Local SGD method and enhance it with a scaling feature.\
-    \ A crucial aspect is that the scaling is described generically, allowing us to\
-    \ analyze various approaches, including Adam, RMSProp, and OASIS, in a unified\
-    \ manner. In addition to theoretical analysis, we validate the performance of\
-    \ our methods in practice by training a neural network.\n\t\t"
+- abstract: The rapid development of machine learning and deep learning has introduced
+    increasingly complex optimization challenges that must be addressed. Indeed, training
+    modern, advanced models has become difficult to implement without leveraging multiple
+    computing nodes in a distributed environment. Distributed optimization is also
+    fundamental to emerging fields such as federated learning. Specifically, there
+    is a need to organize the training process to minimize the time lost due to communication.
+    A widely used and extensively researched technique to mitigate the communication
+    bottleneck involves performing local training before communication. This approach
+    is the focus of our paper. Concurrently, adaptive methods that incorporate scaling,
+    notably led by Adam, have gained significant popularity in recent years. Therefore,
+    this paper aims to merge the local training technique with the adaptive approach
+    to develop efficient distributed learning methods. We consider the classical Local
+    SGD method and enhance it with a scaling feature. A crucial aspect is that the
+    scaling is described generically, allowing us to analyze various approaches, including
+    Adam, RMSProp, and OASIS, in a unified manner. In addition to theoretical analysis,
+    we validate the performance of our methods in practice by training a neural network.
   authors: "Savelii Chezhegov, Sergey Skorik, Nikolas Khachaturov, Danil Shalagin,\
     \ Aram Avetisyan, Aleksandr Beznosikov, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Yaroslav Kholodov, Alexander Gasnikov"
   journal: Russian Mathematical Surveys
-  keywords: []
+  keywords:
+  - local sgd
+  - adaptive scaling
+  - distributed learning
+  - local training
+  - communication bottleneck
+  - adam optimizer
+  - rmsprop
+  - oasis
+  - neural network training
+  - theoretical analysis
   link: https://arxiv.org/abs/2406.00846
   pdf: https://arxiv.org/pdf/2406.00846
-  tags: []
+  tags:
+  - Optimization
+  - Distributed Optimization
+  - Federated Learning
+  - Machine Learning
+  - Deep Learning
   title: Local Methods with Adaptivity via Scaling
   type: jpaper
   year: '2024'
@@ -3020,10 +3116,26 @@
   authors: "Konstantin Mishchenko, Eduard Gorbunov, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Peter Richt\xE1rik"
   journal: Optimization Methods and Software (GOMS)
-  keywords: []
+  keywords:
+  - compressed gradient differences
+  - diana algorithm
+  - distributed learning
+  - communication-efficient optimization
+  - gradient compression
+  - sparsification
+  - quantization
+  - block quantization
+  - strongly convex optimization
+  - nonconvex optimization
+  - nonsmooth regularizers
+  - terngrad convergence rate
   link: http://arxiv.org/abs/1901.09269
   pdf: https://arxiv.org/pdf/1901.09269.pdf
-  tags: []
+  tags:
+  - Distributed Optimization
+  - Optimization
+  - Machine Learning
+  - Communication Compression
   title: Distributed Learning with Compressed Gradient Differences
   type: jpaper
   year: '2024'
@@ -3066,30 +3178,45 @@
     with Improved Posterior Networks
   type: cpaper
   year: '2024'
-- abstract: "\nFederated learning has become a popular machine learning paradigm with\
-    \ many potential real-life applications, including recommendation systems, the\
-    \ Internet of Things (IoT), healthcare, and self-driving cars. Though most current\
-    \ applications focus on classification-based tasks, learning personalized generative\
-    \ models remains largely unexplored, and their benefits in the heterogeneous setting\
-    \ still need to be better understood.  This work proposes a novel architecture\
-    \ combining global client-agnostic and local client-specific generative models.\
-    \ We show that using standard techniques for training federated models, our proposed\
-    \ model achieves privacy and personalization by implicitly disentangling the globally-consistent\
-    \ representation (i.e. content) from the client-dependent variations (i.e. style).\
-    \ Using such decomposition, personalized models can generate locally unseen labels\
-    \ while preserving the given style of the client and can predict the labels for\
-    \ all clients with high accuracy by training a simple linear classifier on the\
-    \ global content features. Furthermore, disentanglement enables other essential\
-    \ applications, such as data anonymization, by sharing only the content. Extensive\
-    \ experimental evaluation corroborates our findings, and we also discuss a theoretical\
-    \ motivation for the proposed approach.\n\t\t"
+- abstract: Federated learning has become a popular machine learning paradigm with
+    many potential real-life applications, including recommendation systems, the Internet
+    of Things (IoT), healthcare, and self-driving cars. Though most current applications
+    focus on classification-based tasks, learning personalized generative models remains
+    largely unexplored, and their benefits in the heterogeneous setting still need
+    to be better understood.  This work proposes a novel architecture combining global
+    client-agnostic and local client-specific generative models. We show that using
+    standard techniques for training federated models, our proposed model achieves
+    privacy and personalization by implicitly disentangling the globally-consistent
+    representation (i.e. content) from the client-dependent variations (i.e. style).
+    Using such decomposition, personalized models can generate locally unseen labels
+    while preserving the given style of the client and can predict the labels for
+    all clients with high accuracy by training a simple linear classifier on the global
+    content features. Furthermore, disentanglement enables other essential applications,
+    such as data anonymization, by sharing only the content. Extensive experimental
+    evaluation corroborates our findings, and we also discuss a theoretical motivation
+    for the proposed approach.
   authors: "Abdulla Jasem Almansoori, Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D\
     </strong>"
   journal: Transactions on Machine Learning Research
-  keywords: []
+  keywords:
+  - partially federated gans
+  - personalized generative models
+  - partial disentanglement
+  - client specific style
+  - global content representation
+  - heterogeneous clients
+  - privacy preserving generation
+  - data anonymization
+  - federated training
+  - label generalization
   link: https://openreview.net/forum?id=vsez76EAV8
   pdf: https://openreview.net/pdf?id=vsez76EAV8
-  tags: []
+  tags:
+  - Federated Learning
+  - Generative Modeling
+  - Representation Learning
+  - Privacy
+  - Personalization
   title: 'PaDPaF: Partial Disentanglement with Partially-Federated GANs'
   type: jpaper
   year: '2024'
@@ -3116,46 +3243,73 @@
   title: Stochastic Gradient Methods with Preconditioned Updates
   type: jpaper
   year: '2024'
-- abstract: "\n\t\tPolicy gradient is a widely utilized and foundational algorithm\
-    \ in the field of reinforcement learning (RL). Renowned for its convergence guarantees\
-    \ and stability compared to other RL algorithms, its practical application is\
-    \ often hindered by sensitivity to hyper-parameters, particularly the step-size.\
-    \ In this paper, we introduce the integration of the Polyak step-size in RL, which\
-    \ automatically adjusts the step-size without prior knowledge. To adapt this method\
-    \ to RL settings, we address several issues, including unknown f* in the Polyak\
-    \ step-size. Additionally, we showcase the performance of the Polyak step-size\
-    \ in RL through experiments, demonstrating faster convergence and the attainment\
-    \ of more stable policies.\n\t\t"
+- abstract: Policy gradient is a widely utilized and foundational algorithm in the
+    field of reinforcement learning (RL). Renowned for its convergence guarantees
+    and stability compared to other RL algorithms, its practical application is often
+    hindered by sensitivity to hyper-parameters, particularly the step-size. In this
+    paper, we introduce the integration of the Polyak step-size in RL, which automatically
+    adjusts the step-size without prior knowledge. To adapt this method to RL settings,
+    we address several issues, including unknown f* in the Polyak step-size. Additionally,
+    we showcase the performance of the Polyak step-size in RL through experiments,
+    demonstrating faster convergence and the attainment of more stable policies.
   authors: "Yunxiang LI, Rui Yuan, Chen Fan, Mark Schmidt, Samuel Horv\xE1th, Robert\
     \ M. Gower, <strong>Martin Tak\xE1\u010D</strong>"
-  keywords: []
+  keywords:
+  - policy gradient
+  - polyak step-size
+  - adaptive step-size
+  - reinforcement learning
+  - hyperparameter sensitivity
+  - automatic step-size adjustment
+  - unknown optimal value
+  - faster convergence
+  - stable policies
   link: https://arxiv.org/abs/2404.07525
   pdf: https://arxiv.org/pdf/2404.07525.pdf
-  tags: []
+  tags:
+  - Reinforcement Learning
+  - Optimization
+  - Policy Gradient
+  - Adaptive Methods
   title: Enhancing Policy Gradient with the Polyak Step-Size Adaption
   type: tpaper
   year: '2024'
-- abstract: "\n\t\tThe smart grid domain requires bolstering the capabilities of existing\
-    \ energy management systems; Federated Learning (FL) aligns with this goal as\
-    \ it demonstrates a remarkable ability to train models on heterogeneous datasets\
-    \ while maintaining data privacy, making it suitable for smart grid applications,\
-    \ which often involve disparate data distributions and interdependencies among\
-    \ features that hinder the suitability of linear models. This paper introduces\
-    \ a framework that combines FL with a Trust Region Policy Optimization (FL TRPO)\
-    \ aiming to reduce energy-associated emissions and costs. Our approach reveals\
-    \ latent interconnections and employs personalized encoding methods to capture\
-    \ unique insights, understanding the relationships between features and optimal\
-    \ strategies, allowing our model to generalize to previously unseen data. Experimental\
-    \ results validate the robustness of our approach, affirming its proficiency in\
-    \ effectively learning policy models for smart grid challenges.\n\t\t"
+- abstract: The smart grid domain requires bolstering the capabilities of existing
+    energy management systems; Federated Learning (FL) aligns with this goal as it
+    demonstrates a remarkable ability to train models on heterogeneous datasets while
+    maintaining data privacy, making it suitable for smart grid applications, which
+    often involve disparate data distributions and interdependencies among features
+    that hinder the suitability of linear models. This paper introduces a framework
+    that combines FL with a Trust Region Policy Optimization (FL TRPO) aiming to reduce
+    energy-associated emissions and costs. Our approach reveals latent interconnections
+    and employs personalized encoding methods to capture unique insights, understanding
+    the relationships between features and optimal strategies, allowing our model
+    to generalize to previously unseen data. Experimental results validate the robustness
+    of our approach, affirming its proficiency in effectively learning policy models
+    for smart grid challenges.
   authors: "Nicolas Cuadrado, Yunxiang Li, Samuel Horv\xE1th, <strong>Martin Tak\xE1\
     \u010D</strong>"
   journal: Tackling Climate Change with Machine Learning at ICLR 2024
-  keywords: []
+  keywords:
+  - smart grids
+  - trust region policy optimization
+  - federated reinforcement learning
+  - energy management systems
+  - heterogeneous datasets
+  - data privacy
+  - personalized encoding
+  - energy emissions reduction
+  - cost reduction
+  - policy generalization
   link: https://arxiv.org/abs/2403.18439
   ltype: Tackling Climate Change with Machine Learning at ICLR 2024
   pdf: https://arxiv.org/pdf/2403.18439.pdf
-  tags: []
+  tags:
+  - Federated Learning
+  - Reinforcement Learning
+  - Energy Systems
+  - Optimization
+  - Robustness
   title: 'Generalized Policy Learning for Smart Grids: FL TRPO Approach'
   type: cpaper
   year: '2024'
@@ -3221,27 +3375,43 @@
     Time Windows
   type: tpaper
   year: '2024'
-- abstract: "\nConformal prediction stands out as a robust framework for uncertainty\
-    \ quantification that is crucial for ensuring the reliability of predictions.\
-    \ However, the commonly used Conformal Prediction approaches rely on the exchangeability\
-    \ of the data, which is often violated in practice. Existing approaches for tackling\
-    \ non-exchangeability lead to methods that are not computable beyond the simplest\
-    \ examples. In this work, we introduce a new efficient approach to Conformal Prediction\
-    \ that allows for fairly general non-exchangeable data distributions and produces\
-    \ provably valid confidence sets.\n\nWe illustrate the general theory with application\
-    \ to the challenging setting of federated learning under data heterogeneity between\
-    \ agents. Our method allows constructing provably valid personalized prediction\
-    \ sets for agents in a fully federated way. The effectiveness of the proposed\
-    \ method is demonstrated in a series of experiments on real-world datasets.\n\t\
-    \t"
+- abstract: 'Conformal prediction stands out as a robust framework for uncertainty
+    quantification that is crucial for ensuring the reliability of predictions. However,
+    the commonly used Conformal Prediction approaches rely on the exchangeability
+    of the data, which is often violated in practice. Existing approaches for tackling
+    non-exchangeability lead to methods that are not computable beyond the simplest
+    examples. In this work, we introduce a new efficient approach to Conformal Prediction
+    that allows for fairly general non-exchangeable data distributions and produces
+    provably valid confidence sets.
+
+
+    We illustrate the general theory with application to the challenging setting of
+    federated learning under data heterogeneity between agents. Our method allows
+    constructing provably valid personalized prediction sets for agents in a fully
+    federated way. The effectiveness of the proposed method is demonstrated in a series
+    of experiments on real-world datasets.'
   authors: "Vincent Plassier, Nikita Kotelevskii, Aleksandr Rubashevskii, Fedor Noskov,\
     \ Maksim Velikanov, Alexander Fishkov, Samuel Horvath, <strong>Martin Tak\xE1\u010D\
     </strong>, Eric Moulines, Maxim Panov"
   journal: AISTATS 2024
-  keywords: []
+  keywords:
+  - conformal prediction
+  - non-exchangeable data
+  - data heterogeneity
+  - uncertainty quantification
+  - provably valid confidence sets
+  - personalized prediction sets
+  - federated learning
+  - fully federated methods
+  - heterogeneous agents
+  - real-world datasets
   link: https://arxiv.org/abs/2312.15799
   pdf: https://arxiv.org/pdf/2312.15799
-  tags: []
+  tags:
+  - Conformal Prediction
+  - Federated Learning
+  - Uncertainty Quantification
+  - Robustness
   title: Efficient Conformal Prediction under Data Heterogeneity
   type: cpaper
   year: '2024'
@@ -3279,30 +3449,52 @@
     with optimal adaptation to inexactness'
   type: cpaper
   year: '2024'
-- abstract: "\n\t\t"
-  authors: "Fatima A. AlKhoori, Latif U. Khan, Mohsen Guizani, <strong>Martin Tak\xE1\
+- authors: "Fatima A. AlKhoori, Latif U. Khan, Mohsen Guizani, <strong>Martin Tak\xE1\
     \u010D</strong>"
   journal: Simulation Modelling Practice and Theory
-  keywords: []
+  keywords:
+  - latency-aware placement
+  - vehicular metaverses
+  - virtual network functions
+  - vnf placement
+  - network function virtualization
+  - vehicular network services
   link: https://www.sciencedirect.com/science/article/pii/S1569190X24000133
-  tags: []
+  tags:
+  - Optimization
+  - Networking
+  - Vehicular Systems
+  - Metaverse
   title: Latency-Aware Placement of Vehicular Metaverses using Virtual Network Functions
   type: jpaper
   year: '2024'
-- abstract: "\nMethods with preconditioned updates show up well in badly scaled and/or\
+- abstract: "Methods with preconditioned updates show up well in badly scaled and/or\
     \ ill-conditioned convex optimization problems. However, theoretical analysis\
     \ of these methods in distributed setting is not yet provided. We close this issue\
     \ by studying preconditioned version of the Error Feedback (EF) method, a popular\
     \ convergence stabilization mechanism for distributed learning with biased compression.\
     \ We combine EF and EF21 algorithms with preconditioner based on Hutchinson\u2019\
     s approximation to the diagonal of the Hessian. An experimental comparison of\
-    \ the algorithms with the ResNet computer vision model is provided.\n\t\t"
+    \ the algorithms with the ResNet computer vision model is provided."
   authors: "Vitali Pirau, Aleksandr Beznosikov, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Vladislav Matyukhin, Alexander Gasnikov"
   journal: Computational Management Science
-  keywords: []
+  keywords:
+  - preconditioned updates
+  - biased compression
+  - error feedback
+  - ef21 algorithm
+  - distributed learning
+  - convex optimization
+  - hutchinson hessian diagonal approximation
+  - ill-conditioned optimization
+  - resnet experiments
   link: https://link.springer.com/article/10.1007/s10287-023-00496-6
-  tags: []
+  tags:
+  - Optimization
+  - Distributed Optimization
+  - Second-Order Methods
+  - Computer Vision
   title: Preconditioning meets biased compression for efficient distributed optimization
   type: jpaper
   year: '2024'
