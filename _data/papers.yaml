@@ -1,3 +1,80 @@
+- abstract: "\nLearning the structure of Directed Acyclic Graphs (DAGs) presents a\
+    \ significant challenge due to the vast combinatorial search space of possible\
+    \ graphs, which scales exponentially with the number of nodes. Recent advancements\
+    \ have redefined this problem as a continuous optimization task by incorporating\
+    \ differentiable acyclicity constraints. These methods commonly rely on algebraic\
+    \ characterizations of DAGs, such as matrix exponentials, to enable the use of\
+    \ gradient-based optimization techniques. Despite these innovations, existing\
+    \ methods often face optimization difficulties due to the highly non-convex nature\
+    \ of DAG constraints and the per-iteration computational complexity. In this work,\
+    \ we present a novel framework for learning DAGs, employing a Stochastic Approximation\
+    \ approach integrated with Stochastic Gradient Descent (SGD)-based optimization\
+    \ techniques. Our framework introduces new projection methods tailored to efficiently\
+    \ enforce DAG constraints, ensuring that the algorithm converges to a feasible\
+    \ local minimum. With its low iteration complexity, the proposed method is well-suited\
+    \ for handling large-scale problems with improved computational efficiency. We\
+    \ demonstrate the effectiveness and scalability of our framework through comprehensive\
+    \ experimental evaluations, which confirm its superior performance across various\
+    \ settings.\n\t\t"
+  authors: "Klea Ziu, Slavom\xEDr Hanzely, Loka Li, Kun Zhang, <strong>Martin Tak\xE1\
+    \u010D</strong>, Dmitry Kamzolov"
+  journal: ICML 2026 Workshop on Structured Probabilistic Inference and Generative
+    Modeling
+  link: https://arxiv.org/abs/2410.23862
+  pdf: https://arxiv.org/pdf/2410.23862
+  title: '$\psi$DAG: Projected Stochastic Approximation Iteration for DAG Structure
+    Learning'
+  type: cpaper
+  year: '2026'
+- abstract: "\nMulti-Agent Debate(MAD) has emerged as a promising paradigm for enhancing\
+    \ large language model reasoning. However, recent work reveals a limitation: standard\
+    \ MAD cannot improve belief correctness beyond majority voting; we refer to this\
+    \ as the Martingale Curse. This curse arises because correlated errors cause agents\
+    \ to converge toward erroneous consensus, where debate merely reinforces collective\
+    \ mistakes rather than filtering noise. We propose AceMAD, a framework that breaks\
+    \ the Martingale Curse by harnessing asymmetric cognitive potential energy to\
+    \ transform MAD from a random walk into a directed convergence process with positive\
+    \ drift. Through a peer-prediction mechanism, agents forecast their peers' belief\
+    \ distributions, revealing asymmetric cognitive potential: truth-holders not only\
+    \ know the correct answer but also anticipate the crowd's misconceptions, while\
+    \ the hallucinating majority remains blind to their collective error. This asymmetry\
+    \ creates a potential energy gap that we quantify via strictly proper scoring\
+    \ rules. We prove this cognitive potential manifests as information-theoretic\
+    \ superiority and, under nonlinear aggregation, converts into submartingale drift\
+    \ toward truth, directly breaking the Martingale Curse. Experiments on challenging\
+    \ subsets across six benchmarks show AceMAD recovers sparse truth signals even\
+    \ when initial majorities are incorrect, substantially outperforming baseline\
+    \ methods.\n\t\t"
+  authors: "Yuhan Liu, Juntian Zhang, Yichen Wu, <strong>Martin Tak\xE1\u010D</strong>,\
+    \ Salem Lahlou, Xiuying Chen, Nils Lukas"
+  journal: 'ICML 2026 Workshop: Statistical Frameworks for Uncertainty in Agentic
+    Systems'
+  title: 'Breaking the Martingale Curse: Multi-Agent Debate via Asymmetric Cognitive
+    Potential Energy'
+  type: cpaper
+  year: '2026'
+- abstract: "\nOffline goal-conditioned reinforcement learning requires both long-horizon\
+    \ reachability estimates and local action comparisons. Dual goal representations\
+    \ provide value fields that capture global goal reachability, but they do not\
+    \ directly specify which action should be preferred at a given state. We propose\
+    \ Dual Advantage Fields, a policy-extraction method that turns a bilinear dual\
+    \ value model into a local advantage signal. Under bilinear dual parameterization,\
+    \ the goal embedding is the gradient of the value field with respect to the state\
+    \ representation. DAF learns an action-effect model that predicts the discounted\
+    \ feature displacement induced by an action and scores actions by the alignment\
+    \ between this displacement and the goal direction. In the realizable case, this\
+    \ score equals the goal-conditioned Bellman advantage, yielding a standard local\
+    \ policy-improvement guarantee. On OGBench locomotion, manipulation, and puzzle\
+    \ tasks, DAF improves aggregate RLiable metrics and performs strongly in settings\
+    \ where locally correct actions differ from direct movement toward the final goal.\n\
+    \t\t"
+  authors: "Alexey Zemtsov, Maksim Bobrin, Alexander Nikulin, Dmitry V. Dylov, Fakhri\
+    \ Karray, Vladislav Kurenkov, <strong>Martin Tak\xE1\u010D</strong>, Arip Asadulaev"
+  journal: 'ICML 2026 Workshop: DEMO'
+  title: 'Decision-Making from Offline Datasets to Online Adaptation: Black-Box Optimization
+    to Reinforcement Learning'
+  type: cpaper
+  year: '2026'
 - abstract: "\nMolecular property prediction is a core task in machine learning for\
     \ physics, with applications to interatomic potential learning and materials discovery.\
     \ Recent transformer-based models achieve strong performance, but their gains\
@@ -1558,32 +1635,6 @@
   link: https://arxiv.org/abs/2410.22026
   pdf: https://arxiv.org/pdf/2410.22026
   title: Enhance Hyperbolic Representation Learning via Second-order Pooling
-  type: tpaper
-  year: '2024'
-- abstract: "\nLearning the structure of Directed Acyclic Graphs (DAGs) presents a\
-    \ significant challenge due to the vast combinatorial search space of possible\
-    \ graphs, which scales exponentially with the number of nodes. Recent advancements\
-    \ have redefined this problem as a continuous optimization task by incorporating\
-    \ differentiable acyclicity constraints. These methods commonly rely on algebraic\
-    \ characterizations of DAGs, such as matrix exponentials, to enable the use of\
-    \ gradient-based optimization techniques. Despite these innovations, existing\
-    \ methods often face optimization difficulties due to the highly non-convex nature\
-    \ of DAG constraints and the per-iteration computational complexity. In this work,\
-    \ we present a novel framework for learning DAGs, employing a Stochastic Approximation\
-    \ approach integrated with Stochastic Gradient Descent (SGD)-based optimization\
-    \ techniques. Our framework introduces new projection methods tailored to efficiently\
-    \ enforce DAG constraints, ensuring that the algorithm converges to a feasible\
-    \ local minimum. With its low iteration complexity, the proposed method is well-suited\
-    \ for handling large-scale problems with improved computational efficiency. We\
-    \ demonstrate the effectiveness and scalability of our framework through comprehensive\
-    \ experimental evaluations, which confirm its superior performance across various\
-    \ settings.\n\t\t"
-  authors: "Klea Ziu, Slavom\xEDr Hanzely, Loka Li, Kun Zhang, <strong>Martin Tak\xE1\
-    \u010D</strong>, Dmitry Kamzolov"
-  link: https://arxiv.org/abs/2410.23862
-  pdf: https://arxiv.org/pdf/2410.23862
-  title: '$\psi$DAG: Projected Stochastic Approximation Iteration for DAG Structure
-    Learning'
   type: tpaper
   year: '2024'
 - abstract: "\nVariational inequalities represent a broad class of problems, including\
