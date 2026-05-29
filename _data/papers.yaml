@@ -8026,11 +8026,26 @@
     experiments were performed on instances with up to 30 million potential bars.'
   authors: "Peter Richt\xE1rik, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Operations Research Proceedings 2011, pp. 27-32, Springer-Verlag 2012
-  keywords: []
+  keywords:
+  - coordinate descent
+  - truss topology design
+  - topology optimization
+  - randomized coordinate selection
+  - greedy coordinate selection
+  - cuda gpu acceleration
+  - parallel implementation
+  - iteration complexity
+  - large-scale structural optimization
+  - potential bars
   link: http://link.springer.com/chapter/10.1007%2F978-3-642-29210-1_5
   ltype: Conference Paper
   pdf: http://www.optimization-online.org/DB_FILE/2011/08/3118.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Topology Optimization
+  - Parallel Computing
+  - GPU Computing
+  - Structural Design
   title: Efficient serial and parallel coordinate descent methods for huge-scale truss
     topology design
   type: cpaper
@@ -8040,23 +8055,40 @@
     function and prove that it obtains an $\epsilon$-accurate solution with probability
     at least $1- ho$ in at most \$O( frac{n}{\epsilon} \log frac{1}{ ho})$ iterations,
     where \$n\$ is the number of blocks. For strongly convex functions the method
-    converges linearly. This extends recent results of Nesterov , which cover the
-    smooth case, to composite minimization, while at the same time improving the complexity
-    by the factor of 4 and removing $\epsilon$ from the logarithmic term. More importantly,
-    in contrast with the aforementioned work in which the author achieves the results
-    by applying the method to a regularized version of the objective function with
-    an unknown scaling factor, we show that this is not necessary, thus achieving
-    true iteration complexity bounds. In the smooth case we also allow for arbitrary
-    probability vectors and non-Euclidean norms. Finally, we demonstrate numerically
-    that the algorithm is able to solve huge-scale $\ell_1$-regularized least squares
-    and support vector machine problems with a billion variables.
+    converges linearly. This extends recent results of Nesterov [Efficiency of coordinate
+    descent methods on huge-scale optimization problems, CORE Discussion Paper \#2010/2],
+    which cover the smooth case, to composite minimization, while at the same time
+    improving the complexity by the factor of 4 and removing $\epsilon$ from the logarithmic
+    term. More importantly, in contrast with the aforementioned work in which the
+    author achieves the results by applying the method to a regularized version of
+    the objective function with an unknown scaling factor, we show that this is not
+    necessary, thus achieving true iteration complexity bounds. In the smooth case
+    we also allow for arbitrary probability vectors and non-Euclidean norms. Finally,
+    we demonstrate numerically that the algorithm is able to solve huge-scale $\ell_1$-regularized
+    least squares and support vector machine problems with a billion variables.
   authors: "Peter Richt\xE1rik, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Mathematical Programming, Series A, 38 pages, 2012
-  keywords: []
+  keywords:
+  - randomized block-coordinate descent
+  - composite convex minimization
+  - nonsmooth block-separable regularization
+  - iteration complexity bounds
+  - strong convexity
+  - linear convergence
+  - arbitrary probability sampling
+  - non-euclidean norms
+  - l1-regularized least squares
+  - support vector machines
+  - huge-scale optimization
   link: http://link.springer.com/article/10.1007/s10107-012-0614-z#
   ltype: Journal Paper
   pdf: http://www.optimization-online.org/DB_FILE/2011/07/3089.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Convex Optimization
+  - Coordinate Descent
+  - Randomized Algorithms
+  - Large-Scale Optimization
   title: Iteration complexity of randomized block-coordinate descent methods for minimizing
     a composite function
   type: jpaper
@@ -8064,10 +8096,21 @@
 - authors: "Peter Richt\xE1rik, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Proceedings of SPARS11 (4th Workshop on Signal Processing with Adaptive
     Sparse Structured Representations), June 27-30, 2011
-  keywords: []
+  keywords:
+  - randomized coordinate descent
+  - coordinate descent methods
+  - composite objective functions
+  - minimization problems
+  - randomized optimization
+  - coordinate updates
+  - sparse structured representations
   ltype: Conference Paper
   pdf: http://ecos.maths.ed.ac.uk/SPARS11/spars11.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Randomized Algorithms
+  - Coordinate Descent
+  - Signal Processing
   title: Efficiency of randomized coordinate descent methods on minimization problems
     with a composite objective function
   type: cpaper
@@ -8085,11 +8128,27 @@
   authors: "Daniel \u0160evcovi\u010D, <strong>Martin Tak\xE1\u010D</strong>"
   journal: International Journal of Numerical Analysis and Modeling, Ser. B, 2(2-3),
     2011 231-247
-  keywords: []
+  keywords:
+  - american asian options
+  - floating strike options
+  - early exercise boundary
+  - option pricing
+  - path dependent derivatives
+  - parabolic partial differential equations
+  - fixed domain transformation
+  - nonlocal parabolic pde
+  - finite difference approximation
+  - operator splitting
+  - averaging methods
+  - sensitivity analysis
   link: http://arxiv.org/abs/1101.3071
   ltype: Journal Paper
   pdf: http://arxiv.org/pdf/1101.3071v1.pdf
-  tags: []
+  tags:
+  - Computational Finance
+  - Numerical Analysis
+  - Partial Differential Equations
+  - Free Boundary Problems
   title: Sensitivity analysis of the early exercise boundary for American style of
     Asian options
   type: jpaper
