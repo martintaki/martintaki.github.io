@@ -242,11 +242,6 @@
     to: present
   - col: {}
     from: 2024/08
-    image: AbdelmajidEssofi.jpeg
-    name: Abdelmajid Essofi
-    to: present
-  - col: {}
-    from: 2024/08
     image: Farshed_Abdukhakimov.png
     name: Farshed Abdukhakimov
     to: present
@@ -331,7 +326,7 @@
     from: 2024/09
     image: ArmanBolatov.jpeg
     name: Arman Bolatov
-    to: present
+    to: 2026/05
   - col: {}
     from: 2023/09
     image: Farkhad_Akimov.jpeg
@@ -361,17 +356,17 @@
     from: 2022/07
     image: Yanlin_Wu.jpg
     name: Yanlin Wu
-    to: present
+    to: 2024/05
   - col: {}
     from: 2022/06
     image: Chulu_Xiang.jpeg
     name: Chulu Xiang
-    to: present
+    to: 2024/05
   - col: {}
     from: 2022/07
     image: Li_Yunxiang.jpg
     name: Li Yunxiang
-    to: present
+    to: 2024/05
   - col: {}
     from: 2021/01
     image: Dmitrii Medvedev.jpeg
