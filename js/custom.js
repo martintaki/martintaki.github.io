@@ -11,6 +11,20 @@ $(document).ready(function(){
 	++++++++++++++++++++++++++++++++++++++*/
 	$(".tooltips").tooltip();
 
+	function normalizeNavPath(path) {
+		path = path || "/";
+		path = path.replace(/\.html$/, "").replace(/\/+$/, "");
+		return path || "/";
+	}
+
+	var currentPath = normalizeNavPath(window.location.pathname);
+	$("#navigation a").each(function(){
+		var linkPath = normalizeNavPath(this.pathname);
+		if (linkPath === currentPath) {
+			$(this).closest("li").addClass("currentmenu");
+		}
+	});
+
 
 	/*++++++++++++++++++++++++++++++++++++
 		slidepage

@@ -687,25 +687,24 @@
     NeurIPS 2025
   keywords:
   - molecular representation learning
-  - substructure descriptors
-  - smiles limitations
-  - roberta molecular language model
+  - substructure decomposition
+  - descriptor-based fragment representations
+  - smiles format limitations
+  - roberta chemistry model
+  - bimodal language and graph architecture
   - graph neural networks
   - graph isomorphism networks
   - graph convolutional networks
   - graphormer
-  - bimodal architecture
   - qsar prediction
-  - molecular property prediction
-  - descriptor-based fragment representations
   link: https://ieeexplore.ieee.org/document/11456953
   pdf: https://arxiv.org/pdf/2502.17986
   tags:
   - LLM
   - Graph Learning
   - Chemistry
-  - Molecular Modeling
-  - Multimodal Learning
+  - Representation Learning
+  - Biology
   title: 'Thinking like a CHEMIST: Combined Heterogeneous Embedding Model Integrating
     Structure and Tokens'
   type: jpaper
@@ -3011,24 +3010,23 @@
     \ Stefano Sanvito, Huseyin Ucar"
   journal: The Journal of Physical Chemistry C
   keywords:
-  - magnetic materials
-  - domain-adapted bert
   - magbert
   - magmatbert
+  - magnetic materials
+  - domain-specific bert pretraining
   - chemical named entity recognition
-  - question answering
+  - question answering pipeline
   - curie temperature extraction
-  - materials literature mining
-  - magnetics corpus pretraining
-  - random forest validation
+  - magnetics corpus
+  - materials data extraction
+  - random forest evaluation
   link: https://pubs.acs.org/doi/full/10.1021/acs.jpcc.4c01974
   pdf: https://pubs.acs.org/doi/epdf/10.1021/acs.jpcc.4c01974
   tags:
   - LLM
   - Materials Science
-  - Natural Language Processing
   - Information Extraction
-  - Machine Learning
+  - Natural Language Processing
   title: 'MagBERT: Magnetics Knowledge Aware Language Model Coupled with a Question
     Answering Pipeline for Curie Temperature Extraction Task'
   type: jpaper
@@ -4372,24 +4370,23 @@
     \u010D</strong>"
   journal: 'Journal of Physics: Energy'
   keywords:
+  - deep neural network rate model
   - oxidative coupling of methane
   - high-throughput catalysis data
-  - deep neural network rate model
   - plug flow reactor equation
-  - catalyst screening
-  - c2 product yield
-  - sequential catalyst beds
+  - catalyst bed composition profiles
   - methane conversion
-  - ethylene to ethane ratio
-  - mn-na2wo4/sio2 catalyst
+  - c2 yield and selectivity
+  - sequential catalyst beds
+  - catalyst combination screening
+  - mn-na2wo4/sio2 reference catalyst
   link: https://iopscience.iop.org/article/10.1088/2515-7655/aca797
   pdf: https://iopscience.iop.org/article/10.1088/2515-7655/aca797/pdf
   tags:
   - Machine Learning
-  - Catalysis
-  - Energy Systems
   - Materials Science
-  - Chemical Engineering
+  - Energy Systems
+  - Catalysis
   title: A deep neural network for oxidative coupling of methane trained on high throughput
     experimental data
   type: jpaper
@@ -5795,14 +5792,14 @@
   keywords:
   - strain estimation
   - acceleration data
+  - structural sensing
   - fatigue assessment
-  - structural vibrations
-  - long short-term memory networks
-  - multistage neural networks
-  - full-field strain assessment
+  - long short-term memory
+  - deep neural networks
   - acceleration sensors
-  - curved girder testing
-  - civil structure monitoring
+  - strain response estimation
+  - memory-efficient sequence training
+  - horizontally curved girder
   link: https://onlinelibrary.wiley.com/doi/full/10.1111/mice.12565
   ltype: Computer-Aided Civil and Infrastructure Engineering
   tags:
@@ -5810,7 +5807,7 @@
   - Structural Health Monitoring
   - Civil Infrastructure
   - Time Series
-  - Sensing
+  - Fatigue Assessment
   title: 'Structural sensing with deep learning: Strain estimation from acceleration
     data for fatigue assessment'
   type: jpaper
@@ -7452,11 +7449,25 @@
     \ practice, than the strategy of updating all coordinates at every iteration."
   authors: "Peter Richt\xE1rik, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Optimization Letters, 10(6), 1233-1243
-  keywords: []
+  keywords:
+  - stochastic coordinate descent
+  - parallel coordinate descent
+  - nonuniform sampling
+  - arbitrary probability law
+  - optimal probabilities
+  - strong convexity
+  - iteration complexity
+  - expected separable overapproximation
+  - random subset updates
+  - nonsynchronous coordinate descent
   link: http://link.springer.com/article/10.1007/s11590-015-0916-1
   ltype: Journal Paper
   pdf: http://link.springer.com/content/pdf/10.1007%2Fs11590-015-0916-1.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Distributed Optimization
+  - First-Order Methods
+  - Randomized Algorithms
   title: 'On optimal probabilities in stochastic coordinate descent methods (code:
     `NSync)'
   type: jpaper
@@ -7505,11 +7516,27 @@
   authors: "Zheng Qu, Peter Richt\xE1rik, <strong>Martin Tak\xE1\u010D</strong>, Olivier\
     \ Fercoq"
   journal: ICML 2016 (33rd International Conference on Machine Learning)
-  keywords: []
+  keywords:
+  - stochastic dual newton ascent
+  - empirical risk minimization
+  - regularized empirical loss
+  - dual coordinate ascent
+  - curvature information
+  - hessian submatrix
+  - proximal subproblem
+  - l2 regularization
+  - concave quadratic maximization
+  - iterative hessian sketch
+  - duality gap
+  - minibatch updates
   link: http://arxiv.org/abs/1502.02268
   ltype: Conference Paper
   pdf: http://arxiv.org/pdf/1502.02268v1.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Second-Order Methods
+  - Stochastic Optimization
+  - Machine Learning
   title: 'SDNA: Stochastic Dual Newton Ascent for Empirical Risk Minimization'
   type: cpaper
   year: '2016'
@@ -7524,11 +7551,27 @@
   authors: "Celestine Dunner, Simone Forte, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Martin Jaggi"
   journal: ICML 2016 (33rd International Conference on Machine Learning)
-  keywords: []
+  keywords:
+  - primal-dual certificates
+  - duality gaps
+  - convergence rates
+  - algorithm-independent optimization framework
+  - norm-regularized generalized linear models
+  - lasso regularization
+  - elastic-net regularization
+  - group lasso regularization
+  - convex empirical risk minimization
+  - lipschitzing trick
+  - spectral norm data dependency
   link: http://arxiv.org/abs/1602.05205
   ltype: Conference Paper
   pdf: http://arxiv.org/pdf/1602.05205v1.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Machine Learning
+  - Convex Optimization
+  - Primal-Dual Methods
+  - Sparse Learning
   title: Primal-Dual Rates and Certificates
   type: cpaper
   year: '2016'
@@ -7654,11 +7697,25 @@
     experiments which shows efficiency of proposed algorithms.
   authors: "Xi He, <strong>Martin Tak\xE1\u010D</strong>"
   journal: OptML@NeurIPS 2015
-  keywords: []
+  keywords:
+  - dual free sdca
+  - empirical risk minimization
+  - adaptive probabilities
+  - stochastic dual coordinate ascent
+  - non-uniform coordinate sampling
+  - importance sampling
+  - regularized erm
+  - coordinate selection
+  - convergence analysis
+  - reduced variance sgd
   link: http://arxiv.org/abs/1510.06684
   ltype: Workshop Paper
   pdf: http://arxiv.org/pdf/1510.06684.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Machine Learning
+  - Stochastic Optimization
+  - Coordinate Descent
   title: Dual Free SDCA for Empirical Risk Minimization with Adaptive Probabilities
   type: cpaper
   year: '2015'
@@ -7677,11 +7734,25 @@
   authors: "Chenxin Ma, Virginia Smith, Martin Jaggi, Michael I. Jordan, Peter Richt\xE1\
     rik, <strong>Martin Tak\xE1\u010D</strong>"
   journal: ICML 2015 (32nd International Conference on Machine Learning)
-  keywords: []
+  keywords:
+  - distributed primal-dual optimization
+  - cocoa+ framework
+  - communication-efficient optimization
+  - coordinate ascent
+  - additive update aggregation
+  - convex loss functions
+  - non-smooth optimization
+  - primal-dual convergence rates
+  - large-scale machine learning
+  - strong scaling
   link: http://arxiv.org/abs/1502.03508
   ltype: Conference Paper
   pdf: http://arxiv.org/pdf/1502.03508v1.pdf
-  tags: []
+  tags:
+  - Distributed Optimization
+  - Optimization
+  - Machine Learning
+  - Convex Optimization
   title: Adding vs. Averaging in Distributed Primal-Dual Optimization
   type: cpaper
   year: '2015'
