@@ -14,6 +14,9 @@ $(document).ready(function(){
 	function normalizeNavPath(path) {
 		path = path || "/";
 		path = path.replace(/\.html$/, "").replace(/\/+$/, "");
+		if (path === "/index") {
+			path = "/";
+		}
 		return path || "/";
 	}
 
