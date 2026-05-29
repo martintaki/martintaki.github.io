@@ -687,24 +687,24 @@
     NeurIPS 2025
   keywords:
   - molecular representation learning
-  - substructure decomposition
+  - substructure descriptors
+  - molecule substructure decomposition
   - descriptor-based fragment representations
-  - smiles format limitations
-  - roberta chemistry model
-  - bimodal language and graph architecture
+  - roberta molecular encoder
   - graph neural networks
   - graph isomorphism networks
   - graph convolutional networks
   - graphormer
+  - bimodal molecular architecture
   - qsar prediction
+  - smiles representation limitations
   link: https://ieeexplore.ieee.org/document/11456953
   pdf: https://arxiv.org/pdf/2502.17986
   tags:
-  - LLM
-  - Graph Learning
   - Chemistry
+  - Graph Learning
+  - Machine Learning
   - Representation Learning
-  - Biology
   title: 'Thinking like a CHEMIST: Combined Heterogeneous Embedding Model Integrating
     Structure and Tokens'
   type: jpaper
