@@ -686,25 +686,24 @@
   journal: IEEE Access; the shorter version was accepted in AI4Science Workshop @
     NeurIPS 2025
   keywords:
-  - molecular representation learning
-  - substructure descriptors
-  - descriptor-based molecular fragments
+  - molecular representation
   - smiles limitations
-  - roberta molecular language model
+  - substructure descriptors
+  - fragment embeddings
+  - bimodal architecture
+  - roberta language model
   - graph neural networks
   - graph isomorphism networks
   - graph convolutional networks
   - graphormer
-  - bimodal architecture
   - qsar prediction
-  - molecular property prediction
   link: https://ieeexplore.ieee.org/document/11456953
   pdf: https://arxiv.org/pdf/2502.17986
   tags:
   - Chemistry
   - Graph Learning
-  - Representation Learning
   - LLM
+  - Representation Learning
   title: 'Thinking like a CHEMIST: Combined Heterogeneous Embedding Model Integrating
     Structure and Tokens'
   type: jpaper
@@ -958,30 +957,54 @@
     contexts
   type: jpaper
   year: '2025'
-- abstract: "\nA method and system for uncertainty quantification approach for federated\
-    \ learning that enables the distinction between aleatoric and epistemic uncertainties,\
-    \ as well as between local and global in-and out-of-distribution data. The method\
-    \ and system offer permit selecting the appropriate model to predict on a given\
-    \ input based on these uncertainty estimations. This comprehensive framework contributes\
-    \ to enhancing the robustness and reliability of federated learning models in\
-    \ real-world applications, effectively addressing the challenges that arise due\
-    \ to the heterogeneity and diverse nature of data distributions.\n\t\t"
+- abstract: A method and system for uncertainty quantification approach for federated
+    learning that enables the distinction between aleatoric and epistemic uncertainties,
+    as well as between local and global in-and out-of-distribution data. The method
+    and system offer permit selecting the appropriate model to predict on a given
+    input based on these uncertainty estimations. This comprehensive framework contributes
+    to enhancing the robustness and reliability of federated learning models in real-world
+    applications, effectively addressing the challenges that arise due to the heterogeneity
+    and diverse nature of data distributions.
   authors: "Maxim Panov, Nikita Kotelevskii, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Samuel Horv\xE1th"
   journal: US20250378350A1
-  keywords: []
+  keywords:
+  - personalized federated learning
+  - uncertainty quantification
+  - aleatoric uncertainty
+  - epistemic uncertainty
+  - local out-of-distribution data
+  - global out-of-distribution data
+  - data heterogeneity
+  - model selection
+  - robust federated models
   link: https://patents.google.com/patent/US20250378350A1/en
-  tags: []
+  tags:
+  - Federated Learning
+  - Robustness
+  - Uncertainty Quantification
+  - Distributed Learning
   title: Method and system for determining uncertainty in personalized federated learning
   type: patent
   year: '2025'
-- abstract: "\n\n\t\t"
-  authors: "Dmitry Pasechnyuk-Vilensky, Dmitry Kamzolov, <strong>Martin Tak\xE1\u010D\
+- authors: "Dmitry Pasechnyuk-Vilensky, Dmitry Kamzolov, <strong>Martin Tak\xE1\u010D\
     </strong>"
-  keywords: []
+  keywords:
+  - cubic newton method
+  - variance reduction
+  - momentum
+  - quadratic regularization
+  - finite-sum optimization
+  - non-convex optimization
+  - second-order methods
+  - regularized newton methods
   link: https://arxiv.org/abs/2510.08714
   pdf: https://arxiv.org/pdf/2510.08714
-  tags: []
+  tags:
+  - Optimization
+  - Second-Order Methods
+  - Stochastic Optimization
+  - Nonconvex Optimization
   title: 'Re3MCN: Cubic Newton + Variance Reduction + Momentum + Quadratic Regularization
     for Finite-sum Non-convex Problems'
   type: tpaper
@@ -1118,8 +1141,8 @@
     Applications
   type: jpaper
   year: '2025'
-- abstract: "\nPretrained diffusion models serve as effective priors for tackling\
-    \ Bayesian inverse problems across domains\u2014from image editing to voice separation\
+- abstract: "Pretrained diffusion models serve as effective priors for tackling Bayesian\
+    \ inverse problems across domains\u2014from image editing to voice separation\
     \ and beyond. Current zero-shot methods work by sampling through a chain of posterior\
     \ distributions, avoiding the need for task-specific retraining. These approaches\
     \ depend on surrogate likelihoods that demand vector-Jacobian products at each\
@@ -1130,11 +1153,26 @@
     \ This enables us to handle diverse inverse problems without backpropagation overhead.\
     \ Experiments confirm that our approach delivers strong consistency with observations\
     \ and high-quality results across multiple tasks while significantly reducing\
-    \ inference costs \u2014 making it the fastest method among competitors.\n\t\t"
+    \ inference costs \u2014 making it the fastest method among competitors."
   authors: "Abduragim Shtanchaev, Albina Ilina, Yazid Janati, Badr Mofad, <strong>Martin\
     \ Tak\xE1\u010D</strong>, Eric Moulines"
-  keywords: []
-  tags: []
+  keywords:
+  - zero-shot diffusion guidance
+  - bayesian inverse problems
+  - pretrained diffusion priors
+  - posterior sampling chains
+  - likelihood surrogate
+  - optimization-based guidance
+  - gradient-free denoiser guidance
+  - vector-jacobian product avoidance
+  - observation consistency
+  - inference cost reduction
+  tags:
+  - Diffusion Models
+  - Inverse Problems
+  - Optimization
+  - Bayesian Inference
+  - Generative Models
   title: Guess and Guide Zero-Shot Diffusion Guidance
   type: tpaper
   year: '2025'
@@ -1224,94 +1262,166 @@
   title: 'Bant: Byzantine Antidote via Trial Function and Trust Scores'
   type: cpaper
   year: '2026'
-- abstract: "\nOptimization lies at the core of modern deep learning, yet existing\
-    \ methods often\nface a fundamental trade-off between adapting to problem geometry\
-    \ and leveraging\ncurvature utilization. Steepest descent algorithms adapt to\
-    \ different geometries\nthrough norm choices but remain strictly first-order,\
-    \ whereas quasi-Newton and\nadaptive optimizers incorporate curvature information\
-    \ but are restricted to Frobenius geometry, limiting their applicability across\
-    \ diverse architectures. In this\nwork, we propose a unified framework generalizing\
-    \ steepest descent, quasi-Newton\nmethods, and adaptive methods through the novel\
-    \ notion of preconditioned matrix norms. This abstraction reveals that widely\
-    \ used optimizers such as SGD\nand Adam, as well as more advanced approaches like\
-    \ Muon and KL-Shampoo,\nand recent hybrids including SOAP and SPlus, all emerge\
-    \ as special cases of\nthe same principle. Within this framework, we provide the\
-    \ first systematic treatment of affine and scale invariance in the matrix-parameterized\
-    \ setting, establishing necessary and sufficient conditions under generalized\
-    \ norms. Building on\nthis foundation, we introduce two new methods, MuAdam and\
-    \ MuAdam-SANIA,\nwhich combine the spectral geometry of Muon with Adam-style preconditioning.\n\
-    Our experiments demonstrate that these optimizers are competitive with, and in\n\
-    some cases outperform, existing state-of-the-art methods. Our code is available\
-    \ athttps://anonymous.4open.science/r/LIB-2D05\n\t\t"
+- abstract: 'Optimization lies at the core of modern deep learning, yet existing methods
+    often
+
+    face a fundamental trade-off between adapting to problem geometry and leveraging
+
+    curvature utilization. Steepest descent algorithms adapt to different geometries
+
+    through norm choices but remain strictly first-order, whereas quasi-Newton and
+
+    adaptive optimizers incorporate curvature information but are restricted to Frobenius
+    geometry, limiting their applicability across diverse architectures. In this
+
+    work, we propose a unified framework generalizing steepest descent, quasi-Newton
+
+    methods, and adaptive methods through the novel notion of preconditioned matrix
+    norms. This abstraction reveals that widely used optimizers such as SGD
+
+    and Adam, as well as more advanced approaches like Muon and KL-Shampoo,
+
+    and recent hybrids including SOAP and SPlus, all emerge as special cases of
+
+    the same principle. Within this framework, we provide the first systematic treatment
+    of affine and scale invariance in the matrix-parameterized setting, establishing
+    necessary and sufficient conditions under generalized norms. Building on
+
+    this foundation, we introduce two new methods, MuAdam and MuAdam-SANIA,
+
+    which combine the spectral geometry of Muon with Adam-style preconditioning.
+
+    Our experiments demonstrate that these optimizers are competitive with, and in
+
+    some cases outperform, existing state-of-the-art methods. Our code is available
+    athttps://anonymous.4open.science/r/LIB-2D05'
   authors: "Andrey Veprikov, Arman Bolatov, Samuel Horv\xE1th, Aleksandr Beznosikov,\
     \ <strong>Martin Tak\xE1\u010D</strong>, Slavomir Hanzely"
-  keywords: []
-  tags: []
+  keywords:
+  - preconditioned matrix norms
+  - steepest descent
+  - quasi-newton methods
+  - adaptive optimizers
+  - curvature utilization
+  - affine invariance
+  - scale invariance
+  - matrix-parameterized optimization
+  - adam-style preconditioning
+  - spectral geometry
+  tags:
+  - Optimization
+  - Second-Order Methods
+  - Deep Learning
+  - Adaptive Methods
   title: 'Preconditioned Norms: A Unified Framework for Steepest Descent, Quasi-Newton
     and Adaptive Methods'
   type: tpaper
   year: '2025'
-- abstract: "\nModern continuous-time generative models often induce V-shaped transport:\
-    \ each sample travels independently along nearly straight trajectories from prior\
-    \ to data, overlooking shared structure. We introduce Y-shaped generative flows,\
-    \ which move probability mass together along shared pathways before branching\
-    \ to target-specific endpoints. Our formulation is based on novel velocity-powered\
-    \ objective with a sublinear exponent (between zero and one). this concave dependence\
-    \ rewards joint and fast mass movement. Practically, we instantiate the idea in\
-    \ a scalable neural ODE training objective. On synthetic, image, and biology datasets,\
-    \ Y-flows recover hierarchy-aware structure, improve distributional metrics over\
-    \ strong flow-based baselines, and reach targets with fewer integration steps.\n\
-    \t\t"
+- abstract: 'Modern continuous-time generative models often induce V-shaped transport:
+    each sample travels independently along nearly straight trajectories from prior
+    to data, overlooking shared structure. We introduce Y-shaped generative flows,
+    which move probability mass together along shared pathways before branching to
+    target-specific endpoints. Our formulation is based on novel velocity-powered
+    objective with a sublinear exponent (between zero and one). this concave dependence
+    rewards joint and fast mass movement. Practically, we instantiate the idea in
+    a scalable neural ODE training objective. On synthetic, image, and biology datasets,
+    Y-flows recover hierarchy-aware structure, improve distributional metrics over
+    strong flow-based baselines, and reach targets with fewer integration steps.'
   authors: "Arip Asadulaev, Semyon Semenov, Abduragim Shtanchaev, Eric Moulines, Fakhri\
     \ Karray, <strong>Martin Tak\xE1\u010D</strong>"
-  keywords: []
+  keywords:
+  - y-shaped generative flows
+  - continuous-time generative models
+  - v-shaped transport
+  - shared mass pathways
+  - velocity-powered objective
+  - sublinear velocity exponent
+  - concave mass movement reward
+  - neural ode training
+  - hierarchy-aware structure
+  - flow-based baselines
+  - fewer integration steps
   link: https://arxiv.org/abs/2510.11955
   pdf: https://arxiv.org/pdf/2510.11955
-  tags: []
+  tags:
+  - Generative Modeling
+  - Flow Models
+  - Neural ODEs
+  - Computer Vision
+  - Biology
   title: Y-shaped Generative Flows
   type: tpaper
   year: '2025'
-- abstract: "\n\nInvestment planning in power utilities, such as generation and transmission\
-    \ expansion, requires decade-long forecasts under profound uncertainty. Forecasting\
-    \ of energy mix and energy use decades ahead is nontrivial. Classical approaches\
-    \ focus on generating a finite number of scenarios (modeled as a mixture of Diracs\
-    \ in statistical theory terms), which limits insight into scenario-specific volatility\
-    \ and hinders robust decision-making. We propose an alternative using tractable\
-    \ probabilistic models (TPMs), particularly sum-product networks (SPNs). These\
-    \ models enable exact, scalable inference of key quantities such as scenario likelihoods,\
-    \ marginals, and conditional probabilities, supporting robust scenario expansion\
-    \ and risk assessment.\n\nThis framework enables direct embedding of chance-constrained\
-    \ optimization into investment planning, enforcing safety or reliability with\
-    \ prescribed confidence levels. TPMs allow both scenario analysis and volatility\
-    \ quantification by compactly representing high-dimensional uncertainties. We\
-    \ demonstrate the approach's effectiveness through a representative power system\
-    \ planning case study, illustrating computational and reliability advantages over\
-    \ traditional scenario-based models.\n\t\t"
+- abstract: 'Investment planning in power utilities, such as generation and transmission
+    expansion, requires decade-long forecasts under profound uncertainty. Forecasting
+    of energy mix and energy use decades ahead is nontrivial. Classical approaches
+    focus on generating a finite number of scenarios (modeled as a mixture of Diracs
+    in statistical theory terms), which limits insight into scenario-specific volatility
+    and hinders robust decision-making. We propose an alternative using tractable
+    probabilistic models (TPMs), particularly sum-product networks (SPNs). These models
+    enable exact, scalable inference of key quantities such as scenario likelihoods,
+    marginals, and conditional probabilities, supporting robust scenario expansion
+    and risk assessment.
+
+
+    This framework enables direct embedding of chance-constrained optimization into
+    investment planning, enforcing safety or reliability with prescribed confidence
+    levels. TPMs allow both scenario analysis and volatility quantification by compactly
+    representing high-dimensional uncertainties. We demonstrate the approach''s effectiveness
+    through a representative power system planning case study, illustrating computational
+    and reliability advantages over traditional scenario-based models.'
   authors: "Nicolas Mauricio Cuadrado, Mohannad Takrouri, Ji\u0159\xED N\u011Bme\u010D\
     ek, <strong>Martin Tak\xE1\u010D</strong>, Jakub Mare\u010Dek"
-  keywords: []
+  keywords:
+  - investment planning
+  - power utilities
+  - generation expansion
+  - transmission expansion
+  - tractable probabilistic models
+  - sum-product networks
+  - chance-constrained optimization
+  - scenario likelihoods
+  - uncertainty quantification
+  - risk assessment
+  - robust scenario expansion
+  - power system planning
   link: https://arxiv.org/abs/2511.13888
   pdf: https://arxiv.org/pdf/2511.13888
-  tags: []
+  tags:
+  - Energy Systems
+  - Optimization
+  - Probabilistic Modeling
+  - Robustness
   title: Tractable Probabilistic Models for Investment Planning
   type: tpaper
   year: '2025'
-- abstract: "\nThe Newton method is a powerful optimization algorithm, valued for\
-    \ its rapid local convergence and elegant geometric properties. However, its theoretical\
-    \ guarantees are usually limited to convex problems. In this work, we ask whether\
-    \ convexity is truly necessary. We introduce the concept of loss-transformation\
-    \ invariance, showing that damped Newton methods are unaffected by monotone transformations\
-    \ of the loss - apart from a simple rescaling of the step size. This insight allows\
-    \ difficult losses to be replaced with easier transformed versions, enabling convexification\
-    \ of many nonconvex problems while preserving the same sequence of iterates. Our\
-    \ analysis also explains the effectiveness of unconventional stepsizes in Newton's\
-    \ method, including values greater than one and even negative steps.\n\t\t"
+- abstract: The Newton method is a powerful optimization algorithm, valued for its
+    rapid local convergence and elegant geometric properties. However, its theoretical
+    guarantees are usually limited to convex problems. In this work, we ask whether
+    convexity is truly necessary. We introduce the concept of loss-transformation
+    invariance, showing that damped Newton methods are unaffected by monotone transformations
+    of the loss - apart from a simple rescaling of the step size. This insight allows
+    difficult losses to be replaced with easier transformed versions, enabling convexification
+    of many nonconvex problems while preserving the same sequence of iterates. Our
+    analysis also explains the effectiveness of unconventional stepsizes in Newton's
+    method, including values greater than one and even negative steps.
   authors: "Alexander Shestakov, Sushil Bohara, Samuel Horv\xE1th, <strong>Martin\
     \ Tak\xE1\u010D</strong>, Slavom\xEDr Hanzely"
-  keywords: []
+  keywords:
+  - damped newton method
+  - loss-transformation invariance
+  - monotone loss transformations
+  - stepsize rescaling
+  - convexification
+  - nonconvex objectives
+  - negative stepsizes
+  - newton method convergence
   link: https://arxiv.org/abs/2509.25782
   pdf: https://arxiv.org/pdf/2509.25782
-  tags: []
+  tags:
+  - Optimization
+  - Second-Order Methods
+  - Nonconvex Optimization
   title: Loss-Transformation Invariance in the Damped Newton Method
   type: tpaper
   year: '2025'
@@ -1393,52 +1503,82 @@
   title: 'Faster Than SVD, Smarter Than SGD: The OPLoRA Alternating Update'
   type: cpaper
   year: '2025'
-- abstract: "\nFederated learning (FL) usually shares model weights or gradients,\
-    \ which is costly for large models. Logit-based FL reduces this cost by sharing\
-    \ only logits computed on a public proxy dataset. However, aggregating information\
-    \ from heterogeneous clients is still challenging. This paper studies this problem,\
-    \ introduces and compares three logit aggregation methods: simple averaging, uncertainty-weighted\
-    \ averaging, and a learned meta-aggregator. Evaluated on MNIST and CIFAR-10, these\
-    \ methods reduce communication overhead, improve robustness under non-IID data,\
-    \ and achieve accuracy competitive with centralized training.\n\t\t"
+- abstract: 'Federated learning (FL) usually shares model weights or gradients, which
+    is costly for large models. Logit-based FL reduces this cost by sharing only logits
+    computed on a public proxy dataset. However, aggregating information from heterogeneous
+    clients is still challenging. This paper studies this problem, introduces and
+    compares three logit aggregation methods: simple averaging, uncertainty-weighted
+    averaging, and a learned meta-aggregator. Evaluated on MNIST and CIFAR-10, these
+    methods reduce communication overhead, improve robustness under non-IID data,
+    and achieve accuracy competitive with centralized training.'
   authors: "Viktor Kovalchuk, Nikita Kotelevskii, Maxim Panov, Samuel Horv\xE1th,\
-    \ <strong>Martin Tak\xE1\u010D</strong>, , "
+    \ <strong>Martin Tak\xE1\u010D</strong>"
   journal: 'OPT 2025: Optimization for Machine Learning @ NeurIPS 2025'
-  keywords: []
+  keywords:
+  - logit-based federated learning
+  - client knowledge aggregation
+  - public proxy dataset
+  - logit aggregation
+  - uncertainty-weighted averaging
+  - learned meta-aggregator
+  - heterogeneous clients
+  - non-iid data
+  - communication-efficient learning
+  - mnist
+  - cifar-10
   link: https://arxiv.org/abs/2509.15147
   pdf: https://arxiv.org/pdf/2509.15147
-  tags: []
+  tags:
+  - Federated Learning
+  - Distributed Optimization
+  - Optimization
+  - Robustness
+  - Machine Learning
   title: Who to Trust? Aggregating Client Knowledge in Logit-Based Federated Learning
   type: cpaper
   year: '2025'
-- abstract: "\nGenomic deep learning has rapidly advanced the prediction of transcription\
-    \ factor (TF) binding and other genomic profiles directly from DNA sequence, yet\
-    \ the biological mechanisms captured by these models remain largely unexplored.\
-    \ In this work, we investigate how state-of-the-art genomic models encode the\
-    \ regulatory logic underlying TF binding. We first systematically analyze the\
-    \ model-derived patterns for each TF, revealing that models frequently rely on\
-    \ broad contextual co-associations of motifs to predict a TF to bind. To quantify\
-    \ the dispersity of this association, we introduce the \\textit{Jaccard Overlap\
-    \ Score (JOS)}, which distinguishes concentrated recognition of canonical motifs\
-    \ from more distributed binding signatures. Next, we investigate TF--TF cooperativity\
-    \ through \\textit{in silico} knockout experiments, revealing pronounced self-dependence\
-    \ of key regulators and cell-type--specific cooperative grammars. Together, our\
-    \ results provide a mechanistic interpretation of genomic deep learning models,\
-    \ demonstrating both their ability to capture biologically meaningful combinatorial\
-    \ regulation and their reliance on contextual sequence features. Our code is publicly\
-    \ available at \\href{https://anonymous.4open.science/r/EpiBinder-C7CD/README.md}{\\\
-    textit{Anonymous-GitHub}}\n\t\t"
+- abstract: Genomic deep learning has rapidly advanced the prediction of transcription
+    factor (TF) binding and other genomic profiles directly from DNA sequence, yet
+    the biological mechanisms captured by these models remain largely unexplored.
+    In this work, we investigate how state-of-the-art genomic models encode the regulatory
+    logic underlying TF binding. We first systematically analyze the model-derived
+    patterns for each TF, revealing that models frequently rely on broad contextual
+    co-associations of motifs to predict a TF to bind. To quantify the dispersity
+    of this association, we introduce the \textit{Jaccard Overlap Score (JOS)}, which
+    distinguishes concentrated recognition of canonical motifs from more distributed
+    binding signatures. Next, we investigate TF--TF cooperativity through \textit{in
+    silico} knockout experiments, revealing pronounced self-dependence of key regulators
+    and cell-type--specific cooperative grammars. Together, our results provide a
+    mechanistic interpretation of genomic deep learning models, demonstrating both
+    their ability to capture biologically meaningful combinatorial regulation and
+    their reliance on contextual sequence features. Our code is publicly available
+    at \href{https://anonymous.4open.science/r/EpiBinder-C7CD/README.md}{\textit{Anonymous-GitHub}}
   authors: "Ruben Solozabal, Albert Baichorov, Tamir Avioz, Le Song, Ariel Afek, <strong>Martin\
     \ Tak\xE1\u010D</strong>"
   journal: 2nd Workshop on Multi-modal Foundation Models and Large Language Models
     for Life Sciences @ NeurIPS 2025
-  keywords: []
-  tags: []
+  keywords:
+  - transcription factor binding
+  - tf cooperativity
+  - genomic deep learning
+  - dna sequence models
+  - motif co-association
+  - jaccard overlap score
+  - in silico knockouts
+  - cell-type-specific regulation
+  - combinatorial regulation
+  - contextual sequence features
+  tags:
+  - Biology
+  - Genomics
+  - Deep Learning
+  - Model Interpretability
+  - Regulatory Genomics
   title: Learning In-Silico Maps of Transcription Factor Binding and Cooperativity
     interactions
   type: cpaper
   year: '2025'
-- abstract: "\nIn the paper, we propose new Quasi-Newton methods for federated learning\
+- abstract: "In the paper, we propose new Quasi-Newton methods for federated learning\
     \ by combining them with the error feedback framework, \nparticularly focusing\
     \ on the EF21 mechanism which offers a deeper theoretical understanding and superior\
     \ practical performance, \novercoming previous deficiencies such as reliance on\
@@ -1449,64 +1589,107 @@
     \ rate in nonconvex regime and gets a speedup of linear convergence rate under\
     \ \n  Polyak-Lojasiewicz  condition. Through theoretical analysis and empirical\
     \ evaluations, we showcase the effectiveness of\n   our approach, achieving fast\
-    \ convergence rates and improved model performance compared with existing methods.\
-    \ \n\t\t"
+    \ convergence rates and improved model performance compared with existing methods."
   authors: "Yanlin Wu, Dmitry Kamzolov, <strong>Martin Tak\xE1\u010D</strong>"
   journal: 'OPT 2025: Optimization for Machine Learning @ NeurIPS 2025'
-  keywords: []
-  tags: []
+  keywords:
+  - quasi-newton methods
+  - error feedback
+  - ef21 mechanism
+  - l-bfgs
+  - nonconvex optimization
+  - polyak-lojasiewicz condition
+  - communication costs
+  - convergence rates
+  - linear convergence
+  tags:
+  - Optimization
+  - Federated Learning
+  - Distributed Optimization
+  - Second-Order Methods
   title: Quasi-Newton Methods for Federated Learning with Error Feedback
   type: cpaper
   year: '2025'
-- abstract: "\nCurrent methods for initializing state space models (SSMs) parameters\
-    \ mainly rely on the \\textit{HiPPO framework}, which is based on an online approximation\
-    \ of orthogonal polynomials. Recently, diagonal alternatives have shown to reach\
-    \ a similar level of performance while being significantly more efficient due\
-    \ to the simplification in the kernel computation. However, the \\textit{HiPPO\
-    \ framework} does not explicitly study the role of its diagonal variants. In this\
-    \ paper, we take a further step to investigate the role of diagonal SSM initialization\
-    \ schemes from the frequency perspective. Our work seeks to systematically understand\
-    \ how to parameterize these models and uncover the learning biases inherent in\
-    \ such diagonal state-space models. Based on our observations, we propose a diagonal\
-    \ initialization on the discrete Fourier domain \\textit{S4D-DFouT}. The insights\
-    \ in the role of pole placing in the initialization enable us to further scale\
-    \ them and achieve state-of-the-art results on the Long Range Arena benchmark,\
-    \ allowing us to train from scratch on very large datasets as PathX-256.\n\t\t"
+- abstract: Current methods for initializing state space models (SSMs) parameters
+    mainly rely on the \textit{HiPPO framework}, which is based on an online approximation
+    of orthogonal polynomials. Recently, diagonal alternatives have shown to reach
+    a similar level of performance while being significantly more efficient due to
+    the simplification in the kernel computation. However, the \textit{HiPPO framework}
+    does not explicitly study the role of its diagonal variants. In this paper, we
+    take a further step to investigate the role of diagonal SSM initialization schemes
+    from the frequency perspective. Our work seeks to systematically understand how
+    to parameterize these models and uncover the learning biases inherent in such
+    diagonal state-space models. Based on our observations, we propose a diagonal
+    initialization on the discrete Fourier domain \textit{S4D-DFouT}. The insights
+    in the role of pole placing in the initialization enable us to further scale them
+    and achieve state-of-the-art results on the Long Range Arena benchmark, allowing
+    us to train from scratch on very large datasets as PathX-256.
   authors: "Ruben Solozabal, Velibor Bojkovic, Hilal AlQuabeh, Kentaro Inui, <strong>Martin\
     \ Tak\xE1\u010D</strong>"
   journal: NeurIPS 2025
-  keywords: []
+  keywords:
+  - diagonal state space models
+  - spectral bias
+  - ssm initialization
+  - hippo framework
+  - discrete fourier domain
+  - pole placement
+  - s4d-dfout
+  - long range arena
+  - pathx-256
+  - kernel computation
   link: https://arxiv.org/abs/2508.20441
   pdf: https://arxiv.org/pdf/2508.20441
-  tags: []
+  tags:
+  - State Space Models
+  - Sequence Modeling
+  - Spectral Methods
+  - Deep Learning
+  - Long-Range Modeling
   title: Uncovering the Spectral Bias in Diagonal State Space Models
   type: cpaper
   year: '2025'
-- abstract: "\nRobust routing under uncertainty is central to real-world logistics,\
-    \ yet most benchmarks assume static, idealized settings. We present SVRPBench,\
-    \ the first open benchmark to capture high-fidelity stochastic dynamics in vehicle\
-    \ routing at urban scale. Spanning more than 500 instances with up to 1000 customers,\
-    \ it simulates realistic delivery conditions: time-dependent congestion, log-normal\
-    \ delays, probabilistic accidents, and empirically grounded time windows for residential\
-    \ and commercial clients. Our pipeline generates diverse, constraint-rich scenarios,\
-    \ including multi-depot and multi-vehicle setups. Benchmarking reveals that state-of-the-art\
-    \ RL solvers like POMO and AM degrade by over 20% under distributional shift,\
-    \ while classical and metaheuristic methods remain robust. To enable reproducible\
-    \ research, we release the dataset and evaluation suite. SVRPBench challenges\
-    \ the community to design solvers that generalize beyond synthetic assumptions\
-    \ and adapt to real-world uncertainty.\n\t\t"
+- abstract: 'Robust routing under uncertainty is central to real-world logistics,
+    yet most benchmarks assume static, idealized settings. We present SVRPBench, the
+    first open benchmark to capture high-fidelity stochastic dynamics in vehicle routing
+    at urban scale. Spanning more than 500 instances with up to 1000 customers, it
+    simulates realistic delivery conditions: time-dependent congestion, log-normal
+    delays, probabilistic accidents, and empirically grounded time windows for residential
+    and commercial clients. Our pipeline generates diverse, constraint-rich scenarios,
+    including multi-depot and multi-vehicle setups. Benchmarking reveals that state-of-the-art
+    RL solvers like POMO and AM degrade by over 20% under distributional shift, while
+    classical and metaheuristic methods remain robust. To enable reproducible research,
+    we release the dataset and evaluation suite. SVRPBench challenges the community
+    to design solvers that generalize beyond synthetic assumptions and adapt to real-world
+    uncertainty.'
   authors: "Ahmed Heakl, Yahia Salaheldin Shaaban, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Salem Lahlou, Zangir Iklassov"
   journal: NeurIPS 2025
-  keywords: []
+  keywords:
+  - stochastic vehicle routing problem
+  - urban-scale logistics benchmark
+  - time-dependent congestion
+  - log-normal delivery delays
+  - probabilistic accidents
+  - empirical time windows
+  - multi-depot routing
+  - multi-vehicle routing
+  - distributional shift
+  - rl routing solvers
+  - classical and metaheuristic solvers
   link: https://arxiv.org/abs/2505.21887
   pdf: https://arxiv.org/pdf/2505.21887
-  tags: []
+  tags:
+  - Optimization
+  - Vehicle Routing
+  - Reinforcement Learning
+  - Robustness
+  - Logistics
   title: 'SVRPBench: A Realistic Benchmark for Stochastic Vehicle Routing Problem'
   type: cpaper
   year: '2025'
-- abstract: "\nDeep learning (DL) has achieved remarkable progress in the field of\
-    \ medical imaging. However, adapting DL models to medical tasks remains a significant\
+- abstract: "Deep learning (DL) has achieved remarkable progress in the field of medical\
+    \ imaging. However, adapting DL models to medical tasks remains a significant\
     \ challenge, primarily due to two key factors: (1) architecture selection, as\
     \ different tasks necessitate specialized model designs, and (2) weight initialization,\
     \ which directly impacts the convergence speed and final performance of the models.\
@@ -1525,32 +1708,60 @@
     \ outperforms both ImageNet pre-trained DL models and SOTA Neural Architecture\
     \ Search (NAS) methods, achieving an average accuracy improvement of 1.7% across\
     \ datasets while converging substantially faster. The code and the processed meta-space\
-    \ is available at https://github.com/BioMedIA-MBZUAI/MedNNS.\n\t\t"
+    \ is available at https://github.com/BioMedIA-MBZUAI/MedNNS."
   authors: "Lotfi Abdelkrim Mecharbat, Ibrahim Almakky, <strong>Martin Tak\xE1\u010D\
     </strong>, Mohammad Yaqub"
   journal: MICCAI 2025
-  keywords: []
+  keywords:
+  - medical neural network search
+  - supernet-based model search
+  - task-adaptive architecture selection
+  - weight initialization
+  - medical imaging datasets
+  - meta-space construction
+  - rank loss
+  - "fr\xE9chet inception distance loss"
+  - transfer learning from imagenet
+  - model-dataset alignment
   link: https://arxiv.org/abs/2504.15865
   pdf: https://arxiv.org/pdf/2504.15865
-  tags: []
+  tags:
+  - Computer Vision
+  - Medical Imaging
+  - Neural Architecture Search
+  - Optimization
+  - Deep Learning
   title: 'MedNNS: Supernet-based Medical Task-Adaptive Neural Network Search'
   type: cpaper
   year: '2025'
-- abstract: "\n\t\t\tA multi-agent reinforcement learning framework for managing energy\
-    \ transactions in microgrids that includes three layers of agents, each pursuing\
-    \ different objectives. The first layer, including prosumers and consumers, minimizes\
-    \ the total energy cost. The other two layers control the energy price to decrease\
-    \ the carbon emission impact while balancing the consumption and production of\
-    \ both renewable and conventional energy. The framework takes into account fluctuations\
-    \ in energy demand and supply due to household supplied energy from renewable\
-    \ energy sources and energy storage levels in household energy storage devices.\n\
-    \t\t"
+- abstract: A multi-agent reinforcement learning framework for managing energy transactions
+    in microgrids that includes three layers of agents, each pursuing different objectives.
+    The first layer, including prosumers and consumers, minimizes the total energy
+    cost. The other two layers control the energy price to decrease the carbon emission
+    impact while balancing the consumption and production of both renewable and conventional
+    energy. The framework takes into account fluctuations in energy demand and supply
+    due to household supplied energy from renewable energy sources and energy storage
+    levels in household energy storage devices.
   authors: "<strong>Martin Tak\xE1\u010D</strong>, Nicolas Mauricio Cuadrado, Roberto\
     \ Alejandro Gutierrez Guillen, Samuel Horv\xE1th"
   journal: US 2025/0272621 A1
-  keywords: []
+  keywords:
+  - multi-agent reinforcement learning
+  - transactive microgrids
+  - energy transactions
+  - prosumer agents
+  - dynamic energy pricing
+  - carbon emissions reduction
+  - renewable energy integration
+  - household energy storage
+  - demand and supply fluctuations
+  - consumption production balancing
   link: https://patents.google.com/patent/US20250272621A1/en
-  tags: []
+  tags:
+  - Energy Systems
+  - Reinforcement Learning
+  - Multi-Agent Systems
+  - Smart Grids
   title: System And Method For A Hierarchical Multi-agent Framework For Transactive
     Microgrids
   type: patent
@@ -1636,18 +1847,31 @@
     E-Commerce Experiences
   type: patent
   year: '2025'
-- abstract: "\nFiling date: April 15, 2025. Assignee (Owner): MBZUAI.\n\t\t"
+- abstract: 'Filing date: April 15, 2025. Assignee (Owner): MBZUAI.'
   authors: "<strong>Martin Tak\xE1\u010D</strong>, Mohannad Takrouri, Nicolas Avila"
   journal: Submitted - USPTO Application 19179677 (Filed April 15, 2025, MBZUAI Ref.
     2024-005)
-  keywords: []
+  keywords:
+  - grid load balancing
+  - renewable energy utilization
+  - climate control applications
+  - smart grid energy management
+  - renewable energy integration
+  - grid demand balancing
+  - building climate control
+  - energy load management
   ltype: Submitted
-  tags: []
+  tags:
+  - Energy Systems
+  - Optimization
+  - Renewable Energy
+  - Smart Grid
+  - Control Systems
   title: Method for Grid Load Balancing and Enhanced Renewable Energy Use in Climate
     Control Applications
   type: patent
   year: '2025'
-- abstract: "\n\nQuasi-Newton methods are widely used for solving convex optimization\
+- abstract: "Quasi-Newton methods are widely used for solving convex optimization\
     \ problems due to their ease of implementation, practical efficiency, and strong\
     \ local convergence guarantees. However, their global convergence is typically\
     \ established only under specific line search strategies and the assumption of\
@@ -1661,60 +1885,98 @@
     \ our theoretical findings through empirical comparisons, demonstrating clear\
     \ improvements over standard Quasi-Newton baselines. To further enhance robustness,\
     \ we develop an adaptive variant that adjusts to the function's curvature while\
-    \ retaining the global convergence guarantees of the non-adaptive algorithm.\n\
-    \t\t"
+    \ retaining the global convergence guarantees of the non-adaptive algorithm."
   authors: "Artem Agafonov, Vladislav Ryspayev, Samuel Horv\xE1th, Alexander Gasnikov,\
     \ <strong>Martin Tak\xE1\u010D</strong>, Slavomir Hanzely"
-  keywords: []
+  keywords:
+  - quasi-newton methods
+  - simple stepsize schedule
+  - global convergence guarantees
+  - convex functions
+  - hessian approximation accuracy
+  - accelerated convergence rate
+  - o(1/k) rate
+  - o(1/k^2) rate
+  - adaptive variant
+  - curvature adaptation
   link: https://arxiv.org/abs/2508.19712
   pdf: https://arxiv.org/pdf/2508.19712
-  tags: []
+  tags:
+  - Optimization
+  - Second-Order Methods
+  - Convex Optimization
+  - Convergence Theory
   title: Simple Stepsize for Quasi-Newton Methods with Global Convergence Guarantees
   type: tpaper
   year: '2025'
-- abstract: "\nThe Polyak stepsize for Gradient Descent is known for its fast convergence\
-    \ but requires prior knowledge of the optimal functional value, which is often\
-    \ unavailable in practice. In this paper, we propose a parameter-free approach\
-    \ that estimates this unknown value during the algorithm's execution, enabling\
-    \ a parameter-free stepsize schedule. Our method maintains two sequences of iterates:\
-    \ one with a higher functional value is updated using the Polyak stepsize, and\
-    \ the other one with a lower functional value is used as an estimate of the optimal\
-    \ functional value. We provide a theoretical analysis of the approach and validate\
-    \ its performance through numerical experiments. The results demonstrate that\
-    \ our method achieves competitive performance without relying on prior function-dependent\
-    \ information.\n\t\t"
+- abstract: 'The Polyak stepsize for Gradient Descent is known for its fast convergence
+    but requires prior knowledge of the optimal functional value, which is often unavailable
+    in practice. In this paper, we propose a parameter-free approach that estimates
+    this unknown value during the algorithm''s execution, enabling a parameter-free
+    stepsize schedule. Our method maintains two sequences of iterates: one with a
+    higher functional value is updated using the Polyak stepsize, and the other one
+    with a lower functional value is used as an estimate of the optimal functional
+    value. We provide a theoretical analysis of the approach and validate its performance
+    through numerical experiments. The results demonstrate that our method achieves
+    competitive performance without relying on prior function-dependent information.'
   authors: "Farshed Abdukhakimov, Cuong Anh Pham, Samuel Horv\xE1th, <strong>Martin\
     \ Tak\xE1\u010D</strong>, Slavom\u0131r Hanzely"
-  keywords: []
+  keywords:
+  - polyak stepsize
+  - gradient descent
+  - parameter-free stepsize
+  - optimal functional value estimation
+  - adaptive stepsize schedule
+  - convergence analysis
+  - function-dependent information
+  - numerical experiments
   link: https://arxiv.org/abs/2508.17288
   pdf: https://arxiv.org/pdf/2508.17288
-  tags: []
+  tags:
+  - Optimization
+  - First-Order Methods
+  - Adaptive Methods
   title: 'Polyak Stepsize: Estimating Optimal Functional Values Without Parameters
     or Prior Knowledge'
   type: tpaper
   year: '2025'
-- abstract: "\nImagine decision-makers uploading data and, within minutes, receiving\
-    \ clear, actionable insights delivered straight to their fingertips. That is the\
-    \ promise of the AI Data Scientist, an autonomous Agent powered by large language\
-    \ models (LLMs) that closes the gap between evidence and action. Rather than simply\
-    \ writing code or responding to prompts, it reasons through questions, tests ideas,\
-    \ and delivers end-to-end insights at a pace far beyond traditional workflows.\
-    \ Guided by the scientific tenet of the hypothesis, this Agent uncovers explanatory\
-    \ patterns in data, evaluates their statistical significance, and uses them to\
-    \ inform predictive modeling. It then translates these results into recommendations\
-    \ that are both rigorous and accessible. At the core of the AI Data Scientist\
-    \ is a team of specialized LLM Subagents, each responsible for a distinct task\
-    \ such as data cleaning, statistical testing, validation, and plain-language communication.\
-    \ These Subagents write their own code, reason about causality, and identify when\
-    \ additional data is needed to support sound conclusions. Together, they achieve\
-    \ in minutes what might otherwise take days or weeks, enabling a new kind of interaction\
-    \ that makes deep data science both accessible and actionable.\n\t\t"
+- abstract: Imagine decision-makers uploading data and, within minutes, receiving
+    clear, actionable insights delivered straight to their fingertips. That is the
+    promise of the AI Data Scientist, an autonomous Agent powered by large language
+    models (LLMs) that closes the gap between evidence and action. Rather than simply
+    writing code or responding to prompts, it reasons through questions, tests ideas,
+    and delivers end-to-end insights at a pace far beyond traditional workflows. Guided
+    by the scientific tenet of the hypothesis, this Agent uncovers explanatory patterns
+    in data, evaluates their statistical significance, and uses them to inform predictive
+    modeling. It then translates these results into recommendations that are both
+    rigorous and accessible. At the core of the AI Data Scientist is a team of specialized
+    LLM Subagents, each responsible for a distinct task such as data cleaning, statistical
+    testing, validation, and plain-language communication. These Subagents write their
+    own code, reason about causality, and identify when additional data is needed
+    to support sound conclusions. Together, they achieve in minutes what might otherwise
+    take days or weeks, enabling a new kind of interaction that makes deep data science
+    both accessible and actionable.
   authors: "Farkhad Akimov, Munachiso Samuel Nwadike, Zangir Iklassov, <strong>Martin\
     \ Tak\xE1\u010D</strong>"
-  keywords: []
+  keywords:
+  - autonomous data scientist
+  - llm subagents
+  - hypothesis-driven analysis
+  - statistical significance testing
+  - data cleaning automation
+  - predictive modeling
+  - causal reasoning
+  - plain-language recommendations
+  - end-to-end data analysis
+  - actionable insights
   link: https://arxiv.org/abs/2508.18113
   pdf: https://arxiv.org/pdf/2508.18113
-  tags: []
+  tags:
+  - LLM
+  - AI Agents
+  - Data Science
+  - Machine Learning
+  - Statistics
   title: The AI Data Scientist
   type: tpaper
   year: '2025'
@@ -1762,7 +2024,7 @@
   title: 'AdaBatchGrad: Combining Adaptive Batch Size and Adaptive Step Size'
   type: jpaper
   year: '2025'
-- abstract: "\nThis work studies the challenge of optimal energy management in building-based\
+- abstract: "This work studies the challenge of optimal energy management in building-based\
     \ microgrids through a collaborative and privacy-preserving framework. \nWe evaluated\
     \ two common RL algorithms (PPO and TRPO) in different collaborative setups to\
     \ manage distributed energy resources\n (DERs) efficiently. Using a customized\
@@ -1774,15 +2036,29 @@
     \ \n  hyperparameter tuning. The proposed framework highlights the feasibility\
     \ of collaborative learning for achieving optimal control\n   policies in energy\
     \ systems, advancing the goals of sustainable and efficient smart grids. Our code\
-    \ is accessible\n    https://github.com/Optimization-and-Machine-Learning-Lab/energy_fed_trpo.git.\n\
-    \t\t"
+    \ is accessible\n    https://github.com/Optimization-and-Machine-Learning-Lab/energy_fed_trpo.git."
   authors: "Nicolas Mauricio Cuadrado, Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D\
     </strong>"
   journal: ICML 2025 CO-BUILD Workshop on Computational Optimization of Buildings
-  keywords: []
+  keywords:
+  - personalised federated reinforcement learning
+  - battery control
+  - net-zero buildings
+  - building microgrids
+  - distributed energy resources
+  - citylearn environment
+  - federated trpo
+  - ppo and trpo
+  - privacy-preserving energy management
+  - carbon emissions reduction
   link: https://openreview.net/forum?id=lJOFxEYW0I
   pdf: https://openreview.net/pdf?id=lJOFxEYW0I
-  tags: []
+  tags:
+  - Reinforcement Learning
+  - Federated Learning
+  - Energy Systems
+  - Smart Grids
+  - Optimization
   title: Generalising Battery Control in Net-Zero Buildings via Personalised Federated
     RL
   type: cpaper
@@ -1823,37 +2099,50 @@
     in vivo Transcription Factor-DNA Binding'
   type: cpaper
   year: '2025'
-- abstract: "\nAssessing the capacity of Large Language Models (LLMs) to plan and\
-    \ reason within the constraints of interactive environments is crucial for developing\
-    \ capable AI agents. We introduce $\\textbf{LLM-BabyBench}$, a new benchmark suite\
-    \ designed specifically for this purpose. Built upon a textual adaptation of the\
-    \ procedurally generated BabyAI grid world, this suite evaluates LLMs on three\
-    \ fundamental aspects of grounded intelligence: (1) predicting the consequences\
-    \ of actions on the environment state ($\\textbf{Predict}$ task), (2) generating\
-    \ sequences of low-level actions to achieve specified objectives ($\\textbf{Plan}$\
-    \ task), and (3) decomposing high-level instructions into coherent subgoal sequences\
-    \ ($\\textbf{Decompose}$ task). We detail the methodology for generating the three\
-    \ corresponding datasets ($\\texttt{LLM-BabyBench-Predict}$, $\\texttt{-Plan}$,\
-    \ $\\texttt{-Decompose}$) by extracting structured information from an expert\
-    \ agent operating within the text-based environment. Furthermore, we provide a\
-    \ standardized evaluation harness and metrics, including environment interaction\
-    \ for validating generated plans, to facilitate reproducible assessment of diverse\
-    \ LLMs. Initial baseline results highlight the challenges posed by these grounded\
-    \ reasoning tasks. The benchmark suite, datasets, data generation code, and evaluation\
-    \ code are made publicly available ($\\href{https://github.com/choukrani/llm-babybench}{\\\
-    text{GitHub}}$, $\\href{https://huggingface.co/datasets/salem-mbzuai/LLM-BabyBench}{\\\
-    text{HuggingFace}}$).\n\t\t"
+- abstract: 'Assessing the capacity of Large Language Models (LLMs) to plan and reason
+    within the constraints of interactive environments is crucial for developing capable
+    AI agents. We introduce $\textbf{LLM-BabyBench}$, a new benchmark suite designed
+    specifically for this purpose. Built upon a textual adaptation of the procedurally
+    generated BabyAI grid world, this suite evaluates LLMs on three fundamental aspects
+    of grounded intelligence: (1) predicting the consequences of actions on the environment
+    state ($\textbf{Predict}$ task), (2) generating sequences of low-level actions
+    to achieve specified objectives ($\textbf{Plan}$ task), and (3) decomposing high-level
+    instructions into coherent subgoal sequences ($\textbf{Decompose}$ task). We detail
+    the methodology for generating the three corresponding datasets ($\texttt{LLM-BabyBench-Predict}$,
+    $\texttt{-Plan}$, $\texttt{-Decompose}$) by extracting structured information
+    from an expert agent operating within the text-based environment. Furthermore,
+    we provide a standardized evaluation harness and metrics, including environment
+    interaction for validating generated plans, to facilitate reproducible assessment
+    of diverse LLMs. Initial baseline results highlight the challenges posed by these
+    grounded reasoning tasks. The benchmark suite, datasets, data generation code,
+    and evaluation code are made publicly available ($\href{https://github.com/choukrani/llm-babybench}{\text{GitHub}}$,
+    $\href{https://huggingface.co/datasets/salem-mbzuai/LLM-BabyBench}{\text{HuggingFace}}$).'
   authors: "Omar Choukrani, Idriss Malek, Daniil Orel, Zhuohan Xie, Zangir Iklassov,\
     \ <strong>Martin Tak\xE1\u010D</strong>, Salem Lahlou"
-  keywords: []
+  keywords:
+  - grounded planning
+  - grounded reasoning
+  - interactive environments
+  - text-based grid world
+  - babyai benchmark
+  - action consequence prediction
+  - low-level action planning
+  - instruction decomposition
+  - subgoal sequences
+  - evaluation harness
   link: https://arxiv.org/abs/2505.12135
   pdf: https://arxiv.org/pdf/2505.12135
-  tags: []
+  tags:
+  - LLM
+  - Planning
+  - Reasoning
+  - AI Agents
+  - Benchmarking
   title: 'LLM-BABYBENCH: Understanding and Evaluating Grounded Planning and Reasoning
     in LLMs'
   type: tpaper
   year: '2025'
-- abstract: "\nWith the increase in the number of parameters in large language models,\
+- abstract: "With the increase in the number of parameters in large language models,\
     \ the process of pre-training and fine-tuning increasingly demands larger volumes\
     \ of GPU memory. A significant portion of this memory is typically consumed by\
     \ the optimizer state. To overcome this challenge, recent approaches such as low-rank\
@@ -1874,71 +2163,117 @@
     \ SGD for state-free updates. Additionally, our method consistently outperforms\
     \ concurrent approaches across various fixed memory budgets, achieving state-of-the-art\
     \ results in pre-training and fine-tuning tasks while balancing memory efficiency\
-    \ and performance metrics.\n\t\t"
+    \ and performance metrics."
   authors: "Philip Zmushko, Aleksandr Beznosikov, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Samuel Horv\xE1th"
   journal: 'ICML 2025 (International Conference on Machine Learning) and Tiny Titans:
     The next wave of On-Device Learning for Foundational Models (TTODLer-FM) @ ICML
     2025'
-  keywords: []
+  keywords:
+  - memory-efficient optimization
+  - optimizer state reduction
+  - large language model training
+  - gradient splitting
+  - full-rank updates
+  - low-rank update selection
+  - galore integration
+  - badam integration
+  - state-free updates
+  - sgd and signsgd
+  - pre-training and fine-tuning
+  - convergence guarantees
   link: https://icml.cc/virtual/2025/poster/46134
   pdf: https://arxiv.org/pdf/2411.07837
-  tags: []
+  tags:
+  - LLM
+  - Optimization
+  - Efficient Training
+  - Memory Efficiency
   title: 'FRUGAL: Memory-Efficient Optimization by Reducing State Overhead for Scalable
     Training'
   type: cpaper
   year: '2025'
-- abstract: "\nMethods with adaptive stepsizes, such as AdaGrad and Adam, are essential\
-    \ for training modern Deep Learning models, especially Large Language Models.\
-    \ Typically, the noise in the stochastic gradients is heavy-tailed for the later\
-    \ ones. Gradient clipping provably helps to achieve good high-probability convergence\
-    \ for such noises. However, despite the similarity between AdaGrad/Adam and Clip-SGD,\
-    \ the high-probability convergence of AdaGrad/Adam has not been studied in this\
-    \ case. In this work, we prove that AdaGrad (and its delayed version) can have\
-    \ provably bad high-probability convergence if the noise is heavy-tailed. To fix\
-    \ this issue, we propose a new version of AdaGrad called Clip-RAdaGradD (Clipped\
-    \ Reweighted AdaGrad with Delay) and prove its high-probability convergence bounds\
-    \ with polylogarithmic dependence on the confidence level for smooth convex/non-convex\
-    \ stochastic optimization with heavy-tailed noise. Our empirical evaluations,\
-    \ including NLP model fine-tuning, highlight the superiority of clipped versions\
-    \ of AdaGrad/Adam in handling the heavy-tailed noise.\n\t\t"
+- abstract: Methods with adaptive stepsizes, such as AdaGrad and Adam, are essential
+    for training modern Deep Learning models, especially Large Language Models. Typically,
+    the noise in the stochastic gradients is heavy-tailed for the later ones. Gradient
+    clipping provably helps to achieve good high-probability convergence for such
+    noises. However, despite the similarity between AdaGrad/Adam and Clip-SGD, the
+    high-probability convergence of AdaGrad/Adam has not been studied in this case.
+    In this work, we prove that AdaGrad (and its delayed version) can have provably
+    bad high-probability convergence if the noise is heavy-tailed. To fix this issue,
+    we propose a new version of AdaGrad called Clip-RAdaGradD (Clipped Reweighted
+    AdaGrad with Delay) and prove its high-probability convergence bounds with polylogarithmic
+    dependence on the confidence level for smooth convex/non-convex stochastic optimization
+    with heavy-tailed noise. Our empirical evaluations, including NLP model fine-tuning,
+    highlight the superiority of clipped versions of AdaGrad/Adam in handling the
+    heavy-tailed noise.
   authors: "Savelii Chezhegov, Yaroslav Klyukin, Andrei Semenov, Aleksandr Beznosikov,\
     \ Alexander Gasnikov, Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Eduard Gorbunov"
   journal: ICML 2025 (International Conference on Machine Learning)
-  keywords: []
+  keywords:
+  - gradient clipping
+  - adagrad
+  - adam
+  - adaptive stepsizes
+  - heavy-tailed noise
+  - high-probability convergence
+  - stochastic gradients
+  - clip-radagradd
+  - smooth convex optimization
+  - non-convex stochastic optimization
+  - nlp model fine-tuning
   link: https://arxiv.org/abs/2406.04443
   pdf: https://arxiv.org/pdf/2406.04443
-  tags: []
+  tags:
+  - Optimization
+  - LLM
+  - Deep Learning
+  - Robustness
+  - Stochastic Optimization
   title: Gradient Clipping Improves AdaGrad when the Noise Is Heavy-Tailed
   type: cpaper
   year: '2025'
-- abstract: "\nWe introduce the concept of the self-referencing causal cycle (abbreviated\
-    \ RECALL) - a mechanism that enables large language models (LLMs) to bypass the\
-    \ limitations of unidirectional causality, which underlies a phenomenon known\
-    \ as the reversal curse. When an LLM is prompted with sequential data, it often\
-    \ fails to recall preceding context. For example, when we ask an LLM to recall\
-    \ the line preceding \"O say does that star-spangled banner yet wave\" in the\
-    \ U.S. National Anthem, it often fails to correctly return \"Gave proof through\
-    \ the night that our flag was still there\" - this is due to the reversal curse.\
-    \ It occurs because language models such as ChatGPT and Llama generate text based\
-    \ on preceding tokens, requiring facts to be learned and reproduced in a consistent\
-    \ token order. While the reversal curse is often viewed as a limitation, we offer\
-    \ evidence of an alternative view: it is not always an obstacle in practice. We\
-    \ find that RECALL is driven by what we designate as cycle tokens - sequences\
-    \ that connect different parts of the training data, enabling recall of preceding\
-    \ tokens from succeeding ones. Through rigorous probabilistic formalization and\
-    \ controlled experiments, we demonstrate how the cycles they induce influence\
-    \ a model's ability to reproduce information. To facilitate reproducibility, we\
-    \ provide our code and experimental details at this https URL.\n\t\t"
+- abstract: 'We introduce the concept of the self-referencing causal cycle (abbreviated
+    RECALL) - a mechanism that enables large language models (LLMs) to bypass the
+    limitations of unidirectional causality, which underlies a phenomenon known as
+    the reversal curse. When an LLM is prompted with sequential data, it often fails
+    to recall preceding context. For example, when we ask an LLM to recall the line
+    preceding "O say does that star-spangled banner yet wave" in the U.S. National
+    Anthem, it often fails to correctly return "Gave proof through the night that
+    our flag was still there" - this is due to the reversal curse. It occurs because
+    language models such as ChatGPT and Llama generate text based on preceding tokens,
+    requiring facts to be learned and reproduced in a consistent token order. While
+    the reversal curse is often viewed as a limitation, we offer evidence of an alternative
+    view: it is not always an obstacle in practice. We find that RECALL is driven
+    by what we designate as cycle tokens - sequences that connect different parts
+    of the training data, enabling recall of preceding tokens from succeeding ones.
+    Through rigorous probabilistic formalization and controlled experiments, we demonstrate
+    how the cycles they induce influence a model''s ability to reproduce information.
+    To facilitate reproducibility, we provide our code and experimental details at
+    this https URL.'
   authors: "Munachiso Nwadike, Zangir Iklassov, Toluwani Aremu, Tatsuya Hiraoka, Velibor\
     \ Bojkovic, Benjamin Heinzerling, Hilal Alqaubeh, <strong>Martin Tak\xE1\u010D\
     </strong>, Kentaro Inui"
   journal: ACL 2025
-  keywords: []
+  keywords:
+  - self-referencing causal cycles
+  - reversal curse
+  - cycle tokens
+  - preceding context recall
+  - sequential data recall
+  - token order dependence
+  - probabilistic formalization
+  - controlled language model experiments
+  - training data connectivity
+  - library-like behavior
   link: https://arxiv.org/abs/2501.13491
   pdf: https://arxiv.org/pdf/2501.13491
-  tags: []
+  tags:
+  - LLM
+  - Language Modeling
+  - Causal Analysis
+  - Model Behavior
   title: 'RECALL: Library-Like Behavior In Language Models is Enhanced by Self-Referencing
     Causal Cycles'
   type: cpaper
@@ -1968,81 +2303,122 @@
     Computation and Screening
   type: jpaper
   year: '2025'
-- abstract: "\nSecond-order methods for convex optimization outperform first-order\
-    \ methods in terms of theoretical iteration convergence, achieving rates up to\
-    \ O(k\u22125) for highly-smooth functions. However, their practical performance\
-    \ and applications are limited due to their multi-level structure and implementation\
-    \ complexity. In this paper, we present new results on high-order optimization\
-    \ methods, supported by their practical performance. First, we show that the basic\
-    \ high-order methods, such as the Cubic Regularized Newton Method, exhibit global\
-    \ superlinear convergence for \u03BC-strongly star-convex functions, a class that\
-    \ includes \u03BC-strongly convex functions and some non-convex functions. Theoretical\
-    \ convergence results are both inspired and supported by the practical performance\
-    \ of these methods. Secondly, we propose a practical version of the Nesterov Accelerated\
-    \ Tensor method, called NATA. It significantly outperforms the classical variant\
-    \ and other high-order acceleration techniques in practice. The convergence of\
-    \ NATA is also supported by theoretical results. Finally, we introduce an open-source\
+- abstract: "Second-order methods for convex optimization outperform first-order methods\
+    \ in terms of theoretical iteration convergence, achieving rates up to O(k\u2212\
+    5) for highly-smooth functions. However, their practical performance and applications\
+    \ are limited due to their multi-level structure and implementation complexity.\
+    \ In this paper, we present new results on high-order optimization methods, supported\
+    \ by their practical performance. First, we show that the basic high-order methods,\
+    \ such as the Cubic Regularized Newton Method, exhibit global superlinear convergence\
+    \ for \u03BC-strongly star-convex functions, a class that includes \u03BC-strongly\
+    \ convex functions and some non-convex functions. Theoretical convergence results\
+    \ are both inspired and supported by the practical performance of these methods.\
+    \ Secondly, we propose a practical version of the Nesterov Accelerated Tensor\
+    \ method, called NATA. It significantly outperforms the classical variant and\
+    \ other high-order acceleration techniques in practice. The convergence of NATA\
+    \ is also supported by theoretical results. Finally, we introduce an open-source\
     \ computational library for high-order methods, called OPTAMI. This library includes\
     \ various methods, acceleration techniques, and subproblem solvers, all implemented\
     \ as PyTorch optimizers, thereby facilitating the practical application of high-order\
     \ methods to a wide range of optimization problems. We hope this library will\
-    \ simplify research and practical comparison of methods beyond first-order.\n\t\
-    \t"
+    \ simplify research and practical comparison of methods beyond first-order."
   authors: "Dmitry Kamzolov, Dmitry Pasechnyuk, Artem Agafonov, Alexander Gasnikov,\
     \ <strong>Martin Tak\xE1\u010D</strong>"
   journal: ICLR 2025
-  keywords: []
+  keywords:
+  - high-order optimization methods
+  - global superlinear convergence
+  - cubic regularized newton method
+  - strongly star-convex functions
+  - nesterov accelerated tensor method
+  - nata acceleration
+  - optami library
+  - pytorch optimizers
+  - subproblem solvers
   link: https://arxiv.org/abs/2410.04083
   pdf: https://arxiv.org/pdf/2410.04083
-  tags: []
+  tags:
+  - Optimization
+  - Second-Order Methods
+  - Convex Optimization
+  - Numerical Methods
   title: 'OPTAMI: Global Superlinear Convergence of High-order Methods'
   type: cpaper
   year: '2025'
-- abstract: "\nDue to the non-smoothness of optimization problems in Machine Learning,\
-    \ generalized smoothness assumptions have been gaining a lot of attention in recent\
-    \ years. One of the most popular assumptions of this type is (L0,L1)-smoothness\
-    \ (Zhang et al., 2020). In this paper, we focus on the class of (strongly) convex\
-    \ (L0,L1)-smooth functions and derive new convergence guarantees for several existing\
-    \ methods. In particular, we derive improved convergence rates for Gradient Descent\
-    \ with (Smoothed) Gradient Clipping and for Gradient Descent with Polyak Stepsizes.\
-    \ In contrast to the existing results, our rates do not rely on the standard smoothness\
-    \ assumption and do not suffer from the exponential dependency from the initial\
-    \ distance to the solution. We also extend these results to the stochastic case\
-    \ under the over-parameterization assumption, propose a new accelerated method\
-    \ for convex (L0,L1)-smooth optimization, and derive new convergence rates for\
-    \ Adaptive Gradient Descent (Malitsky and Mishchenko, 2020).\n\t\t"
+- abstract: Due to the non-smoothness of optimization problems in Machine Learning,
+    generalized smoothness assumptions have been gaining a lot of attention in recent
+    years. One of the most popular assumptions of this type is (L0,L1)-smoothness
+    (Zhang et al., 2020). In this paper, we focus on the class of (strongly) convex
+    (L0,L1)-smooth functions and derive new convergence guarantees for several existing
+    methods. In particular, we derive improved convergence rates for Gradient Descent
+    with (Smoothed) Gradient Clipping and for Gradient Descent with Polyak Stepsizes.
+    In contrast to the existing results, our rates do not rely on the standard smoothness
+    assumption and do not suffer from the exponential dependency from the initial
+    distance to the solution. We also extend these results to the stochastic case
+    under the over-parameterization assumption, propose a new accelerated method for
+    convex (L0,L1)-smooth optimization, and derive new convergence rates for Adaptive
+    Gradient Descent (Malitsky and Mishchenko, 2020).
   authors: "Eduard Gorbunov, Nazarii Tupitsa, Sayantan Choudhury, Alen Aliev, Peter\
     \ Richt\xE1rik, Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D</strong>"
   journal: ICLR 2025
-  keywords: []
+  keywords:
+  - (l0,l1)-smooth optimization
+  - convex smoothness assumptions
+  - gradient clipping
+  - smoothed gradient clipping
+  - polyak stepsizes
+  - accelerated gradient methods
+  - adaptive gradient descent
+  - stochastic optimization
+  - over-parameterization
+  - convergence rates
   link: https://arxiv.org/abs/2409.14989
   pdf: https://arxiv.org/pdf/2409.14989
-  tags: []
+  tags:
+  - Optimization
+  - Convex Optimization
+  - First-Order Methods
+  - Stochastic Optimization
+  - Adaptive Methods
   title: 'Methods for Convex (L0,L1)-Smooth Optimization: Clipping, Acceleration,
     and Adaptivity'
   type: cpaper
   year: '2025'
-- abstract: "\nNon-convex Machine Learning problems typically do not adhere to the\
-    \ standard smoothness assumption. Based on empirical findings, Zhang et al. (2020b)\
-    \ proposed a more realistic generalized (L0,L1)-smoothness assumption, though\
-    \ it remains largely unexplored. Many existing algorithms designed for standard\
-    \ smooth problems need to be revised. However, in the context of Federated Learning,\
-    \ only a few works address this problem but rely on additional limiting assumptions.\
-    \ In this paper, we address this gap in the literature: we propose and analyze\
-    \ new methods with local steps, partial participation of clients, and Random Reshuffling\
-    \ without extra restrictive assumptions beyond generalized smoothness. The proposed\
-    \ methods are based on the proper interplay between clients' and server's stepsizes\
-    \ and gradient clipping. Furthermore, we perform the first analysis of these methods\
+- abstract: "Non-convex Machine Learning problems typically do not adhere to the standard\
+    \ smoothness assumption. Based on empirical findings, Zhang et al. (2020b) proposed\
+    \ a more realistic generalized (L0,L1)-smoothness assumption, though it remains\
+    \ largely unexplored. Many existing algorithms designed for standard smooth problems\
+    \ need to be revised. However, in the context of Federated Learning, only a few\
+    \ works address this problem but rely on additional limiting assumptions. In this\
+    \ paper, we address this gap in the literature: we propose and analyze new methods\
+    \ with local steps, partial participation of clients, and Random Reshuffling without\
+    \ extra restrictive assumptions beyond generalized smoothness. The proposed methods\
+    \ are based on the proper interplay between clients' and server's stepsizes and\
+    \ gradient clipping. Furthermore, we perform the first analysis of these methods\
     \ under the Polyak-\u0141 ojasiewicz condition. Our theory is consistent with\
     \ the known results for standard smooth problems, and our experimental results\
-    \ support the theoretical insights.\n\t\t"
+    \ support the theoretical insights."
   authors: "Yury Demidovich, Petr Ostroukhov, Grigory Malinovsky, Samuel Horv\xE1\
     th, <strong>Martin Tak\xE1\u010D</strong>, Peter Richt\xE1rik, Eduard Gorbunov"
   journal: ICLR 2025
-  keywords: []
+  keywords:
+  - generalized smoothness
+  - (l0,l1)-smoothness
+  - non-convex federated optimization
+  - local steps
+  - partial client participation
+  - random reshuffling
+  - gradient clipping
+  - client and server stepsizes
+  - polyak-lojasiewicz condition
   link: https://arxiv.org/abs/2412.02781
   pdf: https://arxiv.org/pdf/2412.02781
-  tags: []
+  tags:
+  - Federated Learning
+  - Optimization
+  - Distributed Optimization
+  - Non-Convex Optimization
+  - Stochastic Optimization
   title: Methods with Local Steps and Random Reshuffling for Generally Smooth Non-Convex
     Federated Optimization
   type: cpaper
@@ -2176,32 +2552,46 @@
   title: Collaborative and Efficient Personalization with Mixtures of Adaptors
   type: cpaper
   year: '2025'
-- abstract: "\nMachine learning (ML) is increasingly vital for smart-grid research,\
-    \ yet restricted access to realistic, diverse data - often due to privacy concerns\
-    \ - slows progress and fuels doubts within the energy sector about adopting ML-based\
-    \ strategies. We propose integrating Large Language Models (LLMs) in energy modeling\
-    \ to generate realistic, culturally sensitive, and behavior-specific data for\
-    \ household energy usage across diverse geographies. In this study, we employ\
-    \ and compare five different LLMs to systematically produce family structures,\
-    \ weather patterns, and daily consumption profiles for households in six distinct\
-    \ countries. A four-stage methodology synthesizes contextual daily data, including\
-    \ culturally nuanced activities, realistic weather ranges, HVAC operations, and\
-    \ distinct `energy signatures' that capture unique consumption footprints. Additionally,\
-    \ we explore an alternative strategy where external weather datasets can be directly\
-    \ integrated, bypassing intermediate weather modeling stages while ensuring physically\
-    \ consistent data inputs. The resulting dataset provides insights into how cultural,\
-    \ climatic, and behavioral factors converge to shape carbon emissions, offering\
-    \ a cost-effective avenue for scenario-based energy optimization. This approach\
-    \ underscores how prompt engineering, combined with knowledge distillation, can\
-    \ advance sustainable energy research and climate mitigation efforts. Source code\
-    \ is available at https://github.com/Singularity-AI-Lab/LLM-Energy-Knowledge-Distillation.\n\
-    \t\t"
+- abstract: Machine learning (ML) is increasingly vital for smart-grid research, yet
+    restricted access to realistic, diverse data - often due to privacy concerns -
+    slows progress and fuels doubts within the energy sector about adopting ML-based
+    strategies. We propose integrating Large Language Models (LLMs) in energy modeling
+    to generate realistic, culturally sensitive, and behavior-specific data for household
+    energy usage across diverse geographies. In this study, we employ and compare
+    five different LLMs to systematically produce family structures, weather patterns,
+    and daily consumption profiles for households in six distinct countries. A four-stage
+    methodology synthesizes contextual daily data, including culturally nuanced activities,
+    realistic weather ranges, HVAC operations, and distinct `energy signatures' that
+    capture unique consumption footprints. Additionally, we explore an alternative
+    strategy where external weather datasets can be directly integrated, bypassing
+    intermediate weather modeling stages while ensuring physically consistent data
+    inputs. The resulting dataset provides insights into how cultural, climatic, and
+    behavioral factors converge to shape carbon emissions, offering a cost-effective
+    avenue for scenario-based energy optimization. This approach underscores how prompt
+    engineering, combined with knowledge distillation, can advance sustainable energy
+    research and climate mitigation efforts. Source code is available at https://github.com/Singularity-AI-Lab/LLM-Energy-Knowledge-Distillation.
   authors: "Mohannad Takrouri, Nicolas M Cuadrado Avila, <strong>Martin Tak\xE1\u010D\
     </strong>"
-  keywords: []
+  keywords:
+  - household energy modeling
+  - large language models
+  - knowledge distillation
+  - synthetic energy data
+  - prompt engineering
+  - daily consumption profiles
+  - weather pattern generation
+  - hvac operation modeling
+  - culturally sensitive energy usage
+  - carbon emissions analysis
+  - smart grid research
   link: https://arxiv.org/abs/2502.03034
   pdf: https://arxiv.org/pdf/2502.03034
-  tags: []
+  tags:
+  - LLM
+  - Energy Systems
+  - Knowledge Distillation
+  - Synthetic Data
+  - Smart Grid
   title: Knowledge Distillation from Large Language Models for Household Energy Modeling
   type: tpaper
   year: '2025'
@@ -2242,56 +2632,86 @@
   title: 'FLECS: A Federated Learning Second-Order Framework via Compression and Sketching'
   type: jpaper
   year: '2025'
-- abstract: "\nLocalSGD and SCAFFOLD are widely used methods in distributed stochastic\
-    \ optimization, with numerous applications in machine learning, large-scale data\
-    \ processing, and federated learning. However, rigorously establishing their theoretical\
-    \ advantages over simpler methods, such as minibatch SGD (MbSGD), has proven challenging,\
-    \ as existing analyses often rely on strong assumptions, unrealistic premises,\
-    \ or overly restrictive scenarios.\nIn this work, we revisit the convergence properties\
-    \ of LocalSGD and SCAFFOLD under a variety of existing or weaker conditions, including\
-    \ gradient similarity, Hessian similarity, weak convexity, and Lipschitz continuity\
-    \ of the Hessian. Our analysis shows that (i) LocalSGD achieves faster convergence\
-    \ compared to MbSGD for weakly convex functions without requiring stronger gradient\
-    \ similarity assumptions; (ii) LocalSGD benefits significantly from higher-order\
-    \ similarity and smoothness; and (iii) SCAFFOLD demonstrates faster convergence\
-    \ than MbSGD for a broader class of non-quadratic functions. These theoretical\
-    \ insights provide a clearer understanding of the conditions under which LocalSGD\
-    \ and SCAFFOLD outperform MbSGD.\n\t\t"
+- abstract: 'LocalSGD and SCAFFOLD are widely used methods in distributed stochastic
+    optimization, with numerous applications in machine learning, large-scale data
+    processing, and federated learning. However, rigorously establishing their theoretical
+    advantages over simpler methods, such as minibatch SGD (MbSGD), has proven challenging,
+    as existing analyses often rely on strong assumptions, unrealistic premises, or
+    overly restrictive scenarios.
+
+    In this work, we revisit the convergence properties of LocalSGD and SCAFFOLD under
+    a variety of existing or weaker conditions, including gradient similarity, Hessian
+    similarity, weak convexity, and Lipschitz continuity of the Hessian. Our analysis
+    shows that (i) LocalSGD achieves faster convergence compared to MbSGD for weakly
+    convex functions without requiring stronger gradient similarity assumptions; (ii)
+    LocalSGD benefits significantly from higher-order similarity and smoothness; and
+    (iii) SCAFFOLD demonstrates faster convergence than MbSGD for a broader class
+    of non-quadratic functions. These theoretical insights provide a clearer understanding
+    of the conditions under which LocalSGD and SCAFFOLD outperform MbSGD.'
   authors: "Ruichen Luo, Sebastian U Stich, Samuel Horv\xE1th, <strong>Martin Tak\xE1\
     \u010D</strong>"
   journal: AISTATS 2025
-  keywords: []
+  keywords:
+  - localsgd
+  - scaffold
+  - minibatch sgd
+  - distributed stochastic optimization
+  - convergence rates
+  - gradient similarity
+  - hessian similarity
+  - weak convexity
+  - lipschitz hessian
+  - non-quadratic functions
+  - higher-order smoothness
   link: https://arxiv.org/abs/2501.04443
   pdf: https://arxiv.org/pdf/2501.04443
-  tags: []
+  tags:
+  - Optimization
+  - Distributed Optimization
+  - Federated Learning
+  - Machine Learning
+  - Second-Order Methods
   title: 'Revisiting LocalSGD and SCAFFOLD: Improved Rates and Missing Analysis'
   type: cpaper
   year: '2025'
-- abstract: "\nThe success of Deep Neural Network (DNN) models significantly depends\
-    \ on the quality of provided annotations. In medical image segmentation, for example,\
-    \ having multiple expert annotations for each data point is common to minimize\
-    \ subjective annotation bias. Then, the goal of estimation is to filter out the\
-    \ label noise and recover the ground-truth masks, which are not explicitly given.\
-    \ This paper proposes a probabilistic model for noisy observations that allows\
-    \ us to build a confident classification and segmentation models. To accomplish\
-    \ it, we explicitly model label noise and introduce a new information-based regularization\
-    \ that pushes the network to recover the ground-truth labels. In addition, for\
-    \ segmentation task we adjust the loss function by prioritizing learning in high-confidence\
-    \ regions where all the annotators agree on labeling. We evaluate the proposed\
-    \ method on a series of classification tasks such as noisy versions of MNIST,\
-    \ CIFAR-10, Fashion-MNIST datasets as well as CIFAR-10N, which is real-world dataset\
-    \ with noisy human annotations. Additionally, for segmentation task, we consider\
-    \ several medical imaging datasets, such as, LIDC and RIGA that reflect real-world\
-    \ inter-variability among multiple annotators. Our experiments show that our algorithm\
-    \ outperforms state-of-the-art solutions for the considered classification and\
-    \ segmentation problems.\n\t\t"
+- abstract: The success of Deep Neural Network (DNN) models significantly depends
+    on the quality of provided annotations. In medical image segmentation, for example,
+    having multiple expert annotations for each data point is common to minimize subjective
+    annotation bias. Then, the goal of estimation is to filter out the label noise
+    and recover the ground-truth masks, which are not explicitly given. This paper
+    proposes a probabilistic model for noisy observations that allows us to build
+    a confident classification and segmentation models. To accomplish it, we explicitly
+    model label noise and introduce a new information-based regularization that pushes
+    the network to recover the ground-truth labels. In addition, for segmentation
+    task we adjust the loss function by prioritizing learning in high-confidence regions
+    where all the annotators agree on labeling. We evaluate the proposed method on
+    a series of classification tasks such as noisy versions of MNIST, CIFAR-10, Fashion-MNIST
+    datasets as well as CIFAR-10N, which is real-world dataset with noisy human annotations.
+    Additionally, for segmentation task, we consider several medical imaging datasets,
+    such as, LIDC and RIGA that reflect real-world inter-variability among multiple
+    annotators. Our experiments show that our algorithm outperforms state-of-the-art
+    solutions for the considered classification and segmentation problems.
   authors: "Asma Ahmed Hashmi, Aigerim Zhumabayeva, Nikita Kotelevski, Artem Agafonov,\
     \ Mohammad Yaqub, Maxim Panov, <strong>Martin Tak\xE1\u010D</strong>"
   journal: SIAM International Conference on Data Mining (SDM25)
-  keywords: []
+  keywords:
+  - label noise
+  - noisy annotations
+  - confident classification
+  - medical image segmentation
+  - multiple annotators
+  - information-based regularization
+  - high-confidence regions
+  - ground-truth mask recovery
+  - noisy human labels
+  - deep neural networks
   link: https://arxiv.org/abs/2301.00524
   pdf: https://arxiv.org/pdf/2301.00524
-  tags: []
+  tags:
+  - Computer Vision
+  - Robustness
+  - Medical Imaging
+  - Deep Learning
   title: Learning Confident Classifiers in the Presence of Label Noise
   type: cpaper
   year: '2025'
@@ -2547,22 +2967,36 @@
   title: Stochastic Gradient Descent with Preconditioned Polyak Step-size
   type: jpaper
   year: '2024'
-- abstract: "\nWhile the literature has considered cytosine methylation agnostic to\
-    \ the DNA-binding activity for most transcription factors (TFs), recent experiments\
-    \ in vitro reveal a wider map of methylation effects on TFs binding sites. In\
-    \ this work, we learn the in vivo impact of cytosine methylation and use it to\
-    \ analyze its effect on TFs binding. We extract binding affinities de-novo of\
-    \ TF chromatin immunoprecipitation (ChIP-seq) and connect it to key factors affecting\
-    \ in vivo binding such as DNA accessibility and base-resolution cytosine methylation\
-    \ levels. The extensive experimental data available in the ENCODE project is used\
-    \ to build a cell-specific deep-learning model that enables this association.\
-    \ Our work offers a biophysical interpretation of in vivo binding and suggests\
-    \ that current deep learning models can benefit from in vivo methylation maps\
-    \ currently available.\n\t\t"
+- abstract: While the literature has considered cytosine methylation agnostic to the
+    DNA-binding activity for most transcription factors (TFs), recent experiments
+    in vitro reveal a wider map of methylation effects on TFs binding sites. In this
+    work, we learn the in vivo impact of cytosine methylation and use it to analyze
+    its effect on TFs binding. We extract binding affinities de-novo of TF chromatin
+    immunoprecipitation (ChIP-seq) and connect it to key factors affecting in vivo
+    binding such as DNA accessibility and base-resolution cytosine methylation levels.
+    The extensive experimental data available in the ENCODE project is used to build
+    a cell-specific deep-learning model that enables this association. Our work offers
+    a biophysical interpretation of in vivo binding and suggests that current deep
+    learning models can benefit from in vivo methylation maps currently available.
   authors: "Ruben Solozabal, Guy Ilan, <strong>Martin Tak\xE1\u010D</strong>, Ariel\
     \ Afek"
-  keywords: []
-  tags: []
+  keywords:
+  - cytosine methylation
+  - transcription factor binding
+  - tf-dna binding
+  - chip-seq
+  - dna accessibility
+  - encode project
+  - base-resolution methylation
+  - in vivo binding affinity
+  - cell-specific modeling
+  - epigenomic deep learning
+  tags:
+  - Biology
+  - Deep Learning
+  - Genomics
+  - Epigenomics
+  - Computational Biology
   title: Deep learning model at base-resolution to analyze In Vivo Cytosine Methylation
     on Transcription Factor-DNA Binding
   type: tpaper
@@ -2593,27 +3027,41 @@
   title: Distributed Learning with Compressed Gradient Differences
   type: jpaper
   year: '2024'
-- abstract: "\nIn modern federated learning, one of the main challenges is to account\
-    \ for inherent heterogeneity and the diverse nature of data distributions for\
-    \ different clients. This problem is often addressed by introducing personalization\
-    \ of the models towards the data distribution of the particular client. However,\
-    \ a personalized model might be unreliable when applied to the data that is not\
-    \ typical for this client. Eventually, it may perform worse for these data than\
-    \ the non-personalized global model trained in a federated way on the data from\
-    \ all the clients. This paper presents a new approach to federated learning that\
-    \ allows selecting a model from global and personalized ones that would perform\
-    \ better for a particular input point. It is achieved through a careful modeling\
-    \ of predictive uncertainties that helps to detect local and global in- and out-of-distribution\
-    \ data and use this information to select the model that is confident in a prediction.\
-    \ The comprehensive experimental evaluation on the popular real-world image datasets\
-    \ shows the superior performance of the model in the presence of out-of-distribution\
-    \ data while performing on par with state-of-the-art personalized federated learning\
-    \ algorithms in the standard scenarios.\n\t\t"
-  authors: "Nikita Kotelevskii , Samuel Horv\xE1th, Karthik Nandakumar, <strong>Martin\
+- abstract: In modern federated learning, one of the main challenges is to account
+    for inherent heterogeneity and the diverse nature of data distributions for different
+    clients. This problem is often addressed by introducing personalization of the
+    models towards the data distribution of the particular client. However, a personalized
+    model might be unreliable when applied to the data that is not typical for this
+    client. Eventually, it may perform worse for these data than the non-personalized
+    global model trained in a federated way on the data from all the clients. This
+    paper presents a new approach to federated learning that allows selecting a model
+    from global and personalized ones that would perform better for a particular input
+    point. It is achieved through a careful modeling of predictive uncertainties that
+    helps to detect local and global in- and out-of-distribution data and use this
+    information to select the model that is confident in a prediction. The comprehensive
+    experimental evaluation on the popular real-world image datasets shows the superior
+    performance of the model in the presence of out-of-distribution data while performing
+    on par with state-of-the-art personalized federated learning algorithms in the
+    standard scenarios.
+  authors: "Nikita Kotelevskii, Samuel Horv\xE1th, Karthik Nandakumar, <strong>Martin\
     \ Tak\xE1\u010D</strong>, Maxim Panov"
   journal: 33rd International Joint Conference on Artificial Intelligence (IJCAI 2024)
-  keywords: []
-  tags: []
+  keywords:
+  - personalized federated learning
+  - dirichlet uncertainty
+  - posterior networks
+  - predictive uncertainty
+  - out-of-distribution detection
+  - client heterogeneity
+  - global model selection
+  - personalized model selection
+  - local distribution shift
+  - real-world image datasets
+  tags:
+  - Federated Learning
+  - Robustness
+  - Computer Vision
+  - Uncertainty Quantification
   title: Dirichlet-based Uncertainty Quantification for Personalized Federated Learning
     with Improved Posterior Networks
   type: cpaper
@@ -2730,10 +3178,25 @@
   authors: "Ekaterina Borodich, Aleksandr Beznosikov, Abdurakhmon Sadiev, Vadim Sushko,\
     \ Nikolay Savelyev, <strong>Martin Tak\xE1\u010D</strong>, Alexander Gasnikov"
   journal: Computational Management Science
-  keywords: []
+  keywords:
+  - personalized federated learning
+  - decentralized federated learning
+  - min-max optimization
+  - saddle point problems
+  - convex-concave optimization
+  - stochastic algorithms
+  - deterministic algorithms
+  - mixing objective function
+  - adversarial noise
+  - bilinear problems
   link: https://arxiv.org/abs/2106.07289
   pdf: https://arxiv.org/pdf/2106.07289v2.pdf
-  tags: []
+  tags:
+  - Federated Learning
+  - Distributed Optimization
+  - Optimization
+  - Machine Learning
+  - Robustness
   title: Decentralized Personalized Federated Learning for Min-Max Problems
   type: jpaper
   year: '2024'
@@ -2782,22 +3245,36 @@
   title: Efficient Conformal Prediction under Data Heterogeneity
   type: cpaper
   year: '2024'
-- abstract: "\nWe present a new accelerated stochastic second-order method that is\
-    \ robust to both gradient and Hessian inexactness, which occurs typically in machine\
-    \ learning. We establish theoretical lower bounds and prove that our algorithm\
-    \ achieves optimal convergence in both gradient and Hessian inexactness in this\
-    \ key setting. We further introduce a tensor generalization for stochastic higher-order\
-    \ derivatives. When the oracles are non-stochastic, the proposed tensor algorithm\
-    \ matches the global convergence of Nesterov Accelerated Tensor method. Both algorithms\
-    \ allow for approximate solutions of their auxiliary subproblems with verifiable\
-    \ conditions on the accuracy of the solution.\n\t\t"
+- abstract: We present a new accelerated stochastic second-order method that is robust
+    to both gradient and Hessian inexactness, which occurs typically in machine learning.
+    We establish theoretical lower bounds and prove that our algorithm achieves optimal
+    convergence in both gradient and Hessian inexactness in this key setting. We further
+    introduce a tensor generalization for stochastic higher-order derivatives. When
+    the oracles are non-stochastic, the proposed tensor algorithm matches the global
+    convergence of Nesterov Accelerated Tensor method. Both algorithms allow for approximate
+    solutions of their auxiliary subproblems with verifiable conditions on the accuracy
+    of the solution.
   authors: "Artem Agafonov, Dmitry Kamzolov, Alexander Gasnikov, Kimon Antonakopoulos,\
     \ Volkan Cevher, <strong>Martin Tak\xE1\u010D</strong>"
   journal: ICLR 2024
-  keywords: []
+  keywords:
+  - accelerated stochastic optimization
+  - second-order methods
+  - gradient inexactness
+  - hessian inexactness
+  - optimization lower bounds
+  - optimal convergence rates
+  - higher-order tensor methods
+  - inexact oracle models
+  - auxiliary subproblem accuracy
   link: http://arxiv.org/abs/2309.01570
   pdf: https://arxiv.org/pdf/2309.01570.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Second-Order Methods
+  - Stochastic Optimization
+  - Machine Learning Theory
+  - Robustness
   title: 'Advancing the lower bounds: An accelerated, stochastic, second-order method
     with optimal adaptation to inexactness'
   type: cpaper

@@ -925,40 +925,6 @@ ul.timeline li .data .text {
 	display: none !important;
 }
 
-.pub-tag-stats {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 4px;
-	max-height: 84px;
-	overflow-y: auto;
-	padding-right: 4px;
-}
-
-.pub-tag-stats .pub-tag-chip {
-	display: inline-flex !important;
-	align-items: center;
-	border: 1px solid #d8e4df !important;
-	background: #f7fbf9 !important;
-	color: #276749 !important;
-	border-radius: 12px !important;
-	padding: 2px 7px !important;
-	font-size: 11px !important;
-	font-weight: 600 !important;
-	line-height: 1.35 !important;
-	cursor: pointer;
-	white-space: nowrap;
-	box-shadow: none !important;
-	margin: 0 3px 3px 0 !important;
-}
-
-.pub-tag-stats .pub-tag-chip:hover,
-.pub-tag-stats .pub-tag-chip:focus,
-.pub-tag-stats .pub-tag-chip.active {
-	background: #276749 !important;
-	border-color: #276749 !important;
-	color: #fff !important;
-}
-
 .pub-visible-count {
 	margin-top: 6px;
 	color: #777;

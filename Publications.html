@@ -60,20 +60,16 @@ title: Home
                         </div>
                     </div>
                     <div class="row publication-meta-filters">
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <h3>Search:</h3>
                             <input id="pub-keyword-search" class="form-control" type="text"
                                    placeholder="Search tags and keywords">
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <h3>Filter by tag:</h3>
                             <select id="pub-tag-filter" class="form-control">
                                 <option value="all" selected>All tags</option>
                             </select>
-                        </div>
-                        <div class="col-md-4">
-                            <h3>Tag statistics:</h3>
-                            <div id="pub-tag-stats" class="pub-tag-stats"></div>
                             <div id="pub-visible-count" class="pub-visible-count"></div>
                         </div>
                     </div>
@@ -243,42 +239,81 @@ title: Home
         var typeSelect = document.querySelector("[name=cd-dropdown]");
         var tagSelect = document.getElementById("pub-tag-filter");
         var searchInput = document.getElementById("pub-keyword-search");
-        var statsContainer = document.getElementById("pub-tag-stats");
         var countContainer = document.getElementById("pub-visible-count");
         if (!items.length || !tagSelect || !searchInput) {
             return;
         }
 
-        var counts = {};
-        items.forEach(function (item) {
-            splitValues(item.getAttribute("data-tags")).forEach(function (tag) {
-                counts[tag] = (counts[tag] || 0) + 1;
-            });
-        });
-
-        Object.keys(counts).sort(function (a, b) {
-            return counts[b] - counts[a] || a.localeCompare(b);
-        }).forEach(function (tag) {
-            var option = document.createElement("option");
-            option.value = tag;
-            option.textContent = tag + " (" + counts[tag] + ")";
-            tagSelect.appendChild(option);
-        });
-
-        Object.keys(counts).sort(function (a, b) {
-            return counts[b] - counts[a] || a.localeCompare(b);
-        }).slice(0, 14).forEach(function (tag) {
-            var chip = document.createElement("span");
-            chip.className = "pub-tag-chip";
-            chip.textContent = tag + " (" + counts[tag] + ")";
-            chip.setAttribute("data-tag", tag);
-            chip.setAttribute("role", "button");
-            chip.setAttribute("tabindex", "0");
-            statsContainer.appendChild(chip);
-        });
-
         function currentType() {
             return typeSelect ? typeSelect.value : "all";
+        }
+
+        function typeMatches(item, selectedType) {
+            return selectedType === "all" || item.classList.contains(selectedType);
+        }
+
+        function sortedTagsForType(selectedType) {
+            var counts = {};
+            items.forEach(function (item) {
+                if (!typeMatches(item, selectedType)) {
+                    return;
+                }
+                splitValues(item.getAttribute("data-tags")).forEach(function (tag) {
+                    counts[tag] = (counts[tag] || 0) + 1;
+                });
+            });
+            return Object.keys(counts).sort(function (a, b) {
+                return counts[b] - counts[a] || a.localeCompare(b);
+            }).map(function (tag) {
+                return { tag: tag, count: counts[tag] };
+            });
+        }
+
+        function rebuildTagControls(selectedType, selectedTag) {
+            var tags = sortedTagsForType(selectedType);
+            var selectedStillAvailable = selectedTag === "all";
+            tagSelect.innerHTML = '<option value="all">All tags</option>';
+
+            tags.forEach(function (entry) {
+                var option = document.createElement("option");
+                option.value = entry.tag;
+                option.textContent = entry.tag + " (" + entry.count + ")";
+                tagSelect.appendChild(option);
+                if (entry.tag === selectedTag) {
+                    selectedStillAvailable = true;
+                }
+            });
+
+            tagSelect.value = selectedStillAvailable ? selectedTag : "all";
+        }
+
+        function setTypeDropdown(value) {
+            if (!typeSelect) {
+                return;
+            }
+            typeSelect.value = value;
+            var dropdown = typeSelect.closest ? typeSelect.closest(".cd-dropdown") : null;
+            if (!dropdown) {
+                return;
+            }
+            var chosen = dropdown.querySelector('li[data-value="' + value + '"] span');
+            var label = null;
+            Array.prototype.slice.call(dropdown.children).some(function (child) {
+                if (child.tagName && child.tagName.toLowerCase() === "span") {
+                    label = child;
+                    return true;
+                }
+                return false;
+            });
+            if (chosen && label) {
+                label.innerHTML = chosen.innerHTML;
+            }
+        }
+
+        function syncMixItUpType(value) {
+            if (window.jQuery && window.jQuery.fn && window.jQuery.fn.mixitup) {
+                window.jQuery("div#pub-grid").mixitup("filter", value);
+            }
         }
 
         function applyFilters() {
@@ -296,7 +331,7 @@ title: Home
                 ].join(" ").toLowerCase();
                 var hasMetadata = tags.length > 0 || keywords.length > 0;
                 var metadataFilterActive = selectedTag !== "all" || query.length > 0;
-                var typeOk = selectedType === "all" || item.classList.contains(selectedType);
+                var typeOk = typeMatches(item, selectedType);
                 var tagOk = selectedTag === "all" || tags.indexOf(selectedTag) !== -1;
                 var queryOk = !query || (hasMetadata && keywordText.indexOf(query) !== -1);
                 var metadataOk = !metadataFilterActive || hasMetadata;
@@ -311,9 +346,6 @@ title: Home
             if (countContainer) {
                 countContainer.textContent = visible + " publications shown";
             }
-            Array.prototype.slice.call(statsContainer.querySelectorAll(".pub-tag-chip")).forEach(function (chip) {
-                chip.classList.toggle("active", chip.getAttribute("data-tag") === selectedTag);
-            });
         }
 
         function scheduleFilters() {
@@ -322,33 +354,26 @@ title: Home
             window.setTimeout(applyFilters, 750);
         }
 
-        tagSelect.addEventListener("change", scheduleFilters);
+        tagSelect.addEventListener("change", function () {
+            if (tagSelect.value !== "all" && currentType() !== "all") {
+                setTypeDropdown("all");
+                syncMixItUpType("all");
+                rebuildTagControls("all", tagSelect.value);
+            }
+            scheduleFilters();
+        });
         searchInput.addEventListener("input", scheduleFilters);
         if (typeSelect) {
-            typeSelect.addEventListener("change", scheduleFilters);
+            typeSelect.addEventListener("change", function () {
+                rebuildTagControls(currentType(), "all");
+                scheduleFilters();
+            });
         }
         Array.prototype.slice.call(document.querySelectorAll("#sort .sort")).forEach(function (button) {
             button.addEventListener("click", scheduleFilters);
         });
-        statsContainer.addEventListener("click", function (event) {
-            if (!event.target || !event.target.getAttribute("data-tag")) {
-                return;
-            }
-            tagSelect.value = event.target.getAttribute("data-tag");
-            scheduleFilters();
-        });
-        statsContainer.addEventListener("keydown", function (event) {
-            if (event.key !== "Enter" && event.key !== " ") {
-                return;
-            }
-            if (!event.target || !event.target.getAttribute("data-tag")) {
-                return;
-            }
-            event.preventDefault();
-            tagSelect.value = event.target.getAttribute("data-tag");
-            scheduleFilters();
-        });
 
+        rebuildTagControls(currentType(), "all");
         scheduleFilters();
     });
 }());
@@ -361,9 +386,6 @@ title: Home
 
   
    
-
-
-
 
 
 
