@@ -686,23 +686,23 @@
   journal: IEEE Access; the shorter version was accepted in AI4Science Workshop @
     NeurIPS 2025
   keywords:
-  - molecular representation
-  - smiles limitations
+  - molecular representation learning
   - substructure descriptors
-  - fragment embeddings
-  - bimodal architecture
-  - roberta language model
+  - smiles limitations
+  - roberta molecular modeling
   - graph neural networks
   - graph isomorphism networks
   - graph convolutional networks
   - graphormer
+  - bimodal architecture
   - qsar prediction
+  - physicochemical descriptors
   link: https://ieeexplore.ieee.org/document/11456953
   pdf: https://arxiv.org/pdf/2502.17986
   tags:
-  - Chemistry
-  - Graph Learning
   - LLM
+  - Graph Learning
+  - Chemistry
   - Representation Learning
   title: 'Thinking like a CHEMIST: Combined Heterogeneous Embedding Model Integrating
     Structure and Tokens'
@@ -2852,34 +2852,50 @@
     Lower Bounds, Optimal Algorithms and Quasi-Newton Approximations'
   type: cpaper
   year: '2024'
-- abstract: "\nLarge Language Models (LLMs) have become pivotal in addressing reasoning\
-    \ tasks across diverse domains, including arithmetic, commonsense, and symbolic\
-    \ reasoning. They utilize prompting techniques such as Exploration-of-Thought,\
-    \ Decomposition, and Refinement to effectively navigate and solve intricate tasks.\
-    \ Despite these advancements, the application of LLMs to Combinatorial Problems\
-    \ (CPs), known for their NP-hardness and critical roles in logistics and resource\
-    \ management remains underexplored. To address this gap, we introduce a novel\
-    \ prompting strategy: Self-Guiding Exploration (SGE), designed to enhance the\
-    \ performance of solving CPs. SGE operates autonomously, generating multiple thought\
-    \ trajectories for each CP task. It then breaks these trajectories down into actionable\
-    \ subtasks, executes them sequentially, and refines the results to ensure optimal\
-    \ outcomes. We present our research as the first to apply LLMs to a broad range\
-    \ of CPs and demonstrate that SGE outperforms existing prompting strategies by\
-    \ over 27.84% in CP optimization performance. Additionally, SGE achieves a 2.46%\
-    \ higher accuracy over the best existing results in other reasoning tasks (arithmetic,\
-    \ commonsense, and symbolic).\n\t\t"
+- abstract: 'Large Language Models (LLMs) have become pivotal in addressing reasoning
+    tasks across diverse domains, including arithmetic, commonsense, and symbolic
+    reasoning. They utilize prompting techniques such as Exploration-of-Thought, Decomposition,
+    and Refinement to effectively navigate and solve intricate tasks. Despite these
+    advancements, the application of LLMs to Combinatorial Problems (CPs), known for
+    their NP-hardness and critical roles in logistics and resource management remains
+    underexplored. To address this gap, we introduce a novel prompting strategy: Self-Guiding
+    Exploration (SGE), designed to enhance the performance of solving CPs. SGE operates
+    autonomously, generating multiple thought trajectories for each CP task. It then
+    breaks these trajectories down into actionable subtasks, executes them sequentially,
+    and refines the results to ensure optimal outcomes. We present our research as
+    the first to apply LLMs to a broad range of CPs and demonstrate that SGE outperforms
+    existing prompting strategies by over 27.84% in CP optimization performance. Additionally,
+    SGE achieves a 2.46% higher accuracy over the best existing results in other reasoning
+    tasks (arithmetic, commonsense, and symbolic).'
   authors: "Zangir Iklassov, Yali Du, Farkhad Akimov, <strong>Martin Tak\xE1\u010D\
     </strong>"
   journal: NeurIPS 2024
-  keywords: []
+  keywords:
+  - self-guiding exploration
+  - combinatorial problems
+  - large language models
+  - prompting strategy
+  - thought trajectories
+  - task decomposition
+  - sequential execution
+  - result refinement
+  - np-hard optimization
+  - arithmetic reasoning
+  - commonsense reasoning
+  - symbolic reasoning
   link: https://arxiv.org/abs/2405.17950
   pdf: https://arxiv.org/pdf/2405.17950
-  tags: []
+  tags:
+  - LLM
+  - Optimization
+  - Combinatorial Optimization
+  - Reasoning
+  - Prompting
   title: Self-Guiding Exploration for Combinatorial Problems
   type: cpaper
   year: '2024'
-- abstract: "\nAdaptive methods are extremely popular in machine learning as they\
-    \ make learning rate tuning less expensive. This paper introduces a novel optimization\
+- abstract: "Adaptive methods are extremely popular in machine learning as they make\
+    \ learning rate tuning less expensive. This paper introduces a novel optimization\
     \ algorithm named KATE, which presents a scale-invariant adaptation of the well-known\
     \ AdaGrad algorithm. We prove the scale-invariance of KATE for the case of Generalized\
     \ Linear Models. Moreover, for general smooth non-convex problems, we establish\
@@ -2888,15 +2904,27 @@
     \ Adam and AdaGrad in numerical experiments with different problems, including\
     \ complex machine learning tasks like image classification and text classification\
     \ on real data. The results indicate that KATE consistently outperforms AdaGrad\
-    \ and matches/surpasses the performance of Adam in all considered scenarios.\n\
-    \t\t"
+    \ and matches/surpasses the performance of Adam in all considered scenarios."
   authors: "Sayantan Choudhury, Nazarii Tupitsa, Nicolas Loizou, Samuel Horv\xE1th,\
     \ <strong>Martin Tak\xE1\u010D</strong>, Eduard Gorbunov"
   journal: NeurIPS 2024
-  keywords: []
+  keywords:
+  - scale-invariant adagrad
+  - kate optimizer
+  - adaptive learning rates
+  - generalized linear models
+  - smooth non-convex optimization
+  - convergence rate analysis
+  - adam comparison
+  - image classification
+  - text classification
   link: https://arxiv.org/abs/2403.02648
   pdf: https://arxiv.org/pdf/2403.02648.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Machine Learning
+  - Adaptive Methods
+  - Nonconvex Optimization
   title: 'Remove that Square Root: a New Efficient Scale-Invariant Version of AdaGrad'
   type: cpaper
   year: '2024'
@@ -2961,43 +2989,46 @@
     Answering Pipeline for Curie Temperature Extraction Task'
   type: jpaper
   year: '2024'
-- abstract: Vision-Language Models (VLMs) are becoming increasingly vulnerable to
-    adversarial attacks as various novel attack strategies are being proposed against
-    these models. While existing defenses excel in unimodal contexts, they currently
-    fall short in safeguarding VLMs against adversarial threats. To mitigate this
-    vulnerability, we propose a novel, yet elegantly simple approach for detecting
-    adversarial samples in VLMs. Our method leverages Text-to-Image (T2I) models to
-    generate images based on captions produced by target VLMs. Subsequently, we calculate
-    the similarities of the embeddings of both input and generated images in the feature
-    space to identify adversarial samples. Empirical evaluations conducted on different
-    datasets validate the efficacy of our approach, outperforming baseline methods
-    adapted from image classification domains. Furthermore, we extend our methodology
-    to classification tasks, showcasing its adaptability and model-agnostic nature.
-    Theoretical analyses and empirical findings also show the resilience of our approach
-    against adaptive attacks, positioning it as an excellent defense mechanism for
-    real-world deployment against adversarial threats.
-  authors: "Samar Fares, Klea Ziu, Toluwani Aremu, Nikita Durasov, <strong>Martin\
-    \ Tak\xE1\u010D</strong>, Pascal Fua, Karthik Nandakumar, Ivan Laptev"
+- abstract: "In this study, we develop and release two Bidirectional Encoder Representations\
+    \ (BERT) models that are trained primarily with roughly\n   ~144K peer-reviewed\
+    \ publications within the magnetic materials domain, which we refer to as MagBERT\
+    \ and MagMatBERT, respectively. \n   These transformer models are then used in\
+    \ chemical named entity recognition (CNER) and question answering (QA) tasks in\
+    \ a\n    data extraction workflow. We demonstrate this approach by developing\
+    \ a magnetics dataset of well known magnetic property, i.e., Curie temperature\
+    \ \n    TC. We evaluate the efficacy of these models along with the ones that\
+    \ were not trained with magnetics corpus in CNER and QA tasks. \n    Our results\
+    \ indicate that an initial training using the magnetics corpus brings about an\
+    \ enhancement in these tasks. \n    Additionally, the quality of each dataset\
+    \ is assessed by comparing them with a manually developed ground truth TC dataset\
+    \ as well as by employing \n    a random forest (RF) model in its predictive ability\
+    \ of TC  as the target quantity. Our analyses demonstrate that models pretrained\
+    \ \n    with magnetic corpus, i.e., MagBERT and MagMatBERT are more efficient\
+    \ than the ones without pretraining."
+  authors: "Aigerim Zhumabayeva, Nikhil Ranjan, <strong>Martin Tak\xE1\u010D</strong>,\
+    \ Stefano Sanvito, Huseyin Ucar"
+  journal: The Journal of Physical Chemistry C
   keywords:
-  - vision-language models
-  - adversarial defense
-  - adversarial sample detection
-  - text-to-image generation
-  - caption-based image synthesis
-  - embedding similarity
-  - feature space comparison
-  - adaptive attacks
-  - model-agnostic defense
-  - classification tasks
-  link: https://arxiv.org/abs/2406.09250
-  pdf: https://arxiv.org/pdf/2406.09250
+  - magnetic materials language model
+  - bert pretraining
+  - magnetics corpus
+  - curie temperature extraction
+  - chemical named entity recognition
+  - question answering pipeline
+  - materials text mining
+  - magbert
+  - magmatbert
+  - random forest validation
+  link: https://pubs.acs.org/doi/full/10.1021/acs.jpcc.4c01974
+  pdf: https://pubs.acs.org/doi/epdf/10.1021/acs.jpcc.4c01974
   tags:
-  - Computer Vision
-  - Robustness
   - LLM
-  - Multimodal Learning
-  title: 'MirrorCheck: Efficient Adversarial Defense for Vision-Language Models'
-  type: tpaper
+  - Materials Science
+  - Information Extraction
+  - Question Answering
+  title: 'MagBERT: Magnetics Knowledge Aware Language Model Coupled with a Question
+    Answering Pipeline for Curie Temperature Extraction Task'
+  type: jpaper
   year: '2024'
 - abstract: The rapid development of machine learning and deep learning has introduced
     increasingly complex optimization challenges that must be addressed. Indeed, training
@@ -3041,25 +3072,39 @@
   title: Local Methods with Adaptivity via Scaling
   type: jpaper
   year: '2024'
-- abstract: "\nStochastic Gradient Descent (SGD) is one of the many iterative optimization\
-    \ methods that are widely used in solving machine learning problems. These methods\
-    \ display valuable properties and attract researchers and industrial machine learning\
-    \ engineers with their simplicity. However, one of the weaknesses of this type\
-    \ of methods is the necessity to tune learning rate (step-size) for every loss\
-    \ function and dataset combination to solve an optimization problem and get an\
-    \ efficient performance in a given time budget. Stochastic Gradient Descent with\
-    \ Polyak Step-size (SPS) is a method that offers an update rule that alleviates\
-    \ the need of fine-tuning the learning rate of an optimizer. In this paper, we\
-    \ propose an extension of SPS that employs preconditioning techniques, such as\
-    \ Hutchinson's method, Adam, and AdaGrad, to improve its performance on badly\
-    \ scaled and/or ill-conditioned datasets.\n\t\t"
+- abstract: Stochastic Gradient Descent (SGD) is one of the many iterative optimization
+    methods that are widely used in solving machine learning problems. These methods
+    display valuable properties and attract researchers and industrial machine learning
+    engineers with their simplicity. However, one of the weaknesses of this type of
+    methods is the necessity to tune learning rate (step-size) for every loss function
+    and dataset combination to solve an optimization problem and get an efficient
+    performance in a given time budget. Stochastic Gradient Descent with Polyak Step-size
+    (SPS) is a method that offers an update rule that alleviates the need of fine-tuning
+    the learning rate of an optimizer. In this paper, we propose an extension of SPS
+    that employs preconditioning techniques, such as Hutchinson's method, Adam, and
+    AdaGrad, to improve its performance on badly scaled and/or ill-conditioned datasets.
   authors: "Farshed Abdukhakimov, Chulu Xiang, Dmitry Kamzolov, <strong>Martin Tak\xE1\
     \u010D</strong>"
   journal: Computational Mathematics and Mathematical Physics
-  keywords: []
+  keywords:
+  - stochastic gradient descent
+  - polyak step-size
+  - preconditioned optimization
+  - learning rate tuning
+  - hutchinson method
+  - adam optimizer
+  - adagrad optimizer
+  - ill-conditioned datasets
+  - badly scaled datasets
+  - adaptive stochastic optimization
   link: https://link.springer.com/article/10.1134/S0965542524700052
   pdf: https://arxiv.org/pdf/2310.02093.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Machine Learning
+  - Stochastic Optimization
+  - Adaptive Methods
+  - First-Order Methods
   title: Stochastic Gradient Descent with Preconditioned Polyak Step-size
   type: jpaper
   year: '2024'
@@ -3236,10 +3281,24 @@
   authors: "Abdurakhmon Sadiev, Aleksandr Beznosikov, Abdulla Jasem Almansoori, Dmitry\
     \ Kamzolov, Rachael Tappenden, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Journal of Optimization Theory and Applications
-  keywords: []
+  keywords:
+  - non-convex finite sum minimization
+  - preconditioned stochastic gradients
+  - hutchinson hessian diagonal approximation
+  - scaled sarah
+  - scaled l-svrg
+  - ill-conditioned optimization
+  - pl condition
+  - linear convergence
+  - smoothness assumptions
+  - partial second-order curvature
   link: https://link.springer.com/article/10.1007/s10957-023-02365-3
   pdf: https://arxiv.org/pdf/2206.00285.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Stochastic Optimization
+  - Second-Order Methods
+  - Variance Reduction
   title: Stochastic Gradient Methods with Preconditioned Updates
   type: jpaper
   year: '2024'
@@ -3354,23 +3413,38 @@
   title: Decentralized Personalized Federated Learning for Min-Max Problems
   type: jpaper
   year: '2024'
-- abstract: "\nThis paper introduces a reinforcement learning approach to optimize\
-    \ the Stochastic Vehicle Routing Problem with Time Windows (SVRP), focusing on\
-    \ reducing travel costs in goods delivery. We develop a novel SVRP formulation\
-    \ that accounts for uncertain travel costs and demands, alongside specific customer\
-    \ time windows. An attention-based neural network trained through reinforcement\
-    \ learning is employed to minimize routing costs. Our approach addresses a gap\
-    \ in SVRP research, which traditionally relies on heuristic methods, by leveraging\
-    \ machine learning. The model outperforms the Ant-Colony Optimization algorithm,\
-    \ achieving a 1.73% reduction in travel costs. It uniquely integrates external\
-    \ information, demonstrating robustness in diverse environments, making it a valuable\
-    \ benchmark for future SVRP studies and industry application.\n\t\t"
+- abstract: This paper introduces a reinforcement learning approach to optimize the
+    Stochastic Vehicle Routing Problem with Time Windows (SVRP), focusing on reducing
+    travel costs in goods delivery. We develop a novel SVRP formulation that accounts
+    for uncertain travel costs and demands, alongside specific customer time windows.
+    An attention-based neural network trained through reinforcement learning is employed
+    to minimize routing costs. Our approach addresses a gap in SVRP research, which
+    traditionally relies on heuristic methods, by leveraging machine learning. The
+    model outperforms the Ant-Colony Optimization algorithm, achieving a 1.73% reduction
+    in travel costs. It uniquely integrates external information, demonstrating robustness
+    in diverse environments, making it a valuable benchmark for future SVRP studies
+    and industry application.
   authors: "Zangir Iklassov, Ikboljon Sobirov, Ruben Solozabal, <strong>Martin Tak\xE1\
     \u010D</strong>"
-  keywords: []
+  keywords:
+  - stochastic vehicle routing problem
+  - time windows
+  - uncertain travel costs
+  - uncertain demands
+  - attention-based neural network
+  - routing cost minimization
+  - goods delivery
+  - ant-colony optimization baseline
+  - external information integration
+  - robustness in diverse environments
   link: https://arxiv.org/abs/2402.09765
   pdf: https://arxiv.org/pdf/2402.09765.pdf
-  tags: []
+  tags:
+  - Reinforcement Learning
+  - Optimization
+  - Vehicle Routing
+  - Stochastic Optimization
+  - Transportation
   title: Reinforcement Learning for Solving Stochastic Vehicle Routing Problem with
     Time Windows
   type: tpaper
@@ -3498,8 +3572,8 @@
   title: Preconditioning meets biased compression for efficient distributed optimization
   type: jpaper
   year: '2024'
-- abstract: "\n\t\t\tIn this paper, we find that the training of Normalizing Flows\
-    \ (NFs) are easily affected by the outliers and a small number (or high dimensionality)\
+- abstract: "In this paper, we find that the training of Normalizing Flows (NFs) are\
+    \ easily affected by the outliers and a small number (or high dimensionality)\
     \ of training samples. To solve this problem, we propose a Kullback\u2013Leibler\
     \ (KL) divergence regularization on the Jacobian matrix of NFs. We prove that\
     \ such regularization is equivalent to adding a set of samples whose covariance\
@@ -3510,118 +3584,199 @@
     \ (OoD) detection tasks. The excellent results obtained demonstrate the effectiveness\
     \ of the proposed regularization term. For example, with the help of the proposed\
     \ regularization, the OoD detection score increases at most 30\\% compared with\
-    \ the one without the regularization.\n\t\t\t"
+    \ the one without the regularization."
   authors: "Kun Song, Ruben Solozabal Ochoa de Retana, Hao Li, <strong>Martin Tak\xE1\
     \u010D</strong>, Lu Ren, Fakhri Karray"
   journal: 38th Annual AAAI Conference on Artificial Intelligence (AAAI 2024)
-  keywords: []
-  tags: []
+  keywords:
+  - normalizing flows
+  - kl divergence regularization
+  - jacobian matrix regularization
+  - robust training
+  - outlier robustness
+  - small sample regimes
+  - high-dimensional samples
+  - covariance estimation
+  - out-of-distribution detection
+  - generative density estimation
+  tags:
+  - Generative Models
+  - Robustness
+  - Optimization
+  - Out-of-Distribution Detection
   title: Robustly train Normalizing Flows via KL Divergence Regularization
   type: cpaper
   year: '2024'
-- abstract: "\n\t\t\tThe StochAstic Recursive grAdient algoritHm (SARAH) algorithm\
-    \ is a variance reduced variant of the Stochastic Gradient Descent algorithm that\
-    \ needs a gradient of the objective function from time to time. In this paper,\
-    \ we remove the necessity of a full gradient computation. This is achieved by\
-    \ using a randomized reshuffling strategy and aggregating stochastic gradients\
-    \ obtained in each epoch. The aggregated stochastic gradients serve as an estimate\
-    \ of a full gradient in the SARAH algorithm. We provide a theoretical analysis\
-    \ of the proposed approach and conclude the paper with numerical experiments that\
-    \ demonstrate the efficiency of this approach.\n\t\t\t"
+- abstract: The StochAstic Recursive grAdient algoritHm (SARAH) algorithm is a variance
+    reduced variant of the Stochastic Gradient Descent algorithm that needs a gradient
+    of the objective function from time to time. In this paper, we remove the necessity
+    of a full gradient computation. This is achieved by using a randomized reshuffling
+    strategy and aggregating stochastic gradients obtained in each epoch. The aggregated
+    stochastic gradients serve as an estimate of a full gradient in the SARAH algorithm.
+    We provide a theoretical analysis of the proposed approach and conclude the paper
+    with numerical experiments that demonstrate the efficiency of this approach.
   authors: "Aleksandr Beznosikov, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Optimization Letters
-  keywords: []
+  keywords:
+  - sarah algorithm
+  - random reshuffling
+  - variance reduced stochastic gradients
+  - stochastic gradient descent
+  - full gradient approximation
+  - aggregated stochastic gradients
+  - gradient computation reduction
+  - theoretical analysis
+  - numerical experiments
   link: https://link.springer.com/article/10.1007/s11590-023-02081-x
-  tags: []
+  tags:
+  - Optimization
+  - Stochastic Optimization
+  - First-Order Methods
+  - Variance Reduction
   title: Random-reshuffled SARAH does not need a full gradient computations
   type: jpaper
   year: '2023'
-- abstract: "\nTranscription Factors (TFs) bind to regulatory DNA regions, modulating\
-    \ gene expression. Although various high-throughput techniques have been used\
-    \ to characterize protein binding preferences, this work is the first to extend\
-    \ these studies to non-canonical mismatched bases. The mutagenesis study here\
-    \ presented allows us to determine the binding profile in the double-stranded\
-    \ DNA sequence. Additionally, we leverage deep learning to complete the pairwise\
-    \ interactions map. In this context, we introduce ShapPWM, a motif strategy that\
-    \ marginalizes individual nucleotide contribution by computing the Shapley values.\
-    \ Our model reveals that high synergistic interactions appear between nucleotides\
-    \ in the flanking regions of the contacts. This information offers valuable insights\
-    \ into the binding mechanism and reaction energy, without the necessity of solving\
-    \ intricate crystal structures.\n\n\t\t"
+- abstract: Transcription Factors (TFs) bind to regulatory DNA regions, modulating
+    gene expression. Although various high-throughput techniques have been used to
+    characterize protein binding preferences, this work is the first to extend these
+    studies to non-canonical mismatched bases. The mutagenesis study here presented
+    allows us to determine the binding profile in the double-stranded DNA sequence.
+    Additionally, we leverage deep learning to complete the pairwise interactions
+    map. In this context, we introduce ShapPWM, a motif strategy that marginalizes
+    individual nucleotide contribution by computing the Shapley values. Our model
+    reveals that high synergistic interactions appear between nucleotides in the flanking
+    regions of the contacts. This information offers valuable insights into the binding
+    mechanism and reaction energy, without the necessity of solving intricate crystal
+    structures.
   authors: "Ruben Solozabal, Tamir Avioz, Yunxiang Li, Le Song, <strong>Martin Tak\xE1\
     \u010D</strong>, Ariel Afek"
   journal: Machine Learning in Structural Biology Workshop @ NeurIPS 2023
-  keywords: []
+  keywords:
+  - protein-dna binding
+  - mismatched dna
+  - transcription factors
+  - regulatory dna regions
+  - binding energy
+  - mutagenesis study
+  - pairwise interactions
+  - shapley values
+  - shappwm motifs
+  - nucleotide synergy
   link: https://neurips.cc/virtual/2023/77424
-  tags: []
+  tags:
+  - Biology
+  - Machine Learning
+  - Deep Learning
+  - Structural Biology
+  - Interpretability
   title: Investigating Protein-DNA Binding Energetic of Mismatched DNA
   type: cpaper
   year: '2023'
-- abstract: "\nAdaptive optimization methods are widely recognized as among the most\
-    \ popular approaches for training Deep Neural Networks (DNNs). Techniques such\
-    \ as Adam, AdaGrad, and AdaHessian utilize a preconditioner that modifies the\
-    \ search direction by incorporating information about the curvature of the objective\
-    \ function. However, despite their adaptive characteristics, these methods still\
-    \ require manual fine-tuning of the step-size. This, in turn, impacts the time\
-    \ required to solve a particular problem. This paper presents an optimization\
-    \ framework named SANIA to tackle these challenges. Beyond eliminating the need\
-    \ for manual step-size hyperparameter settings, SANIA incorporates techniques\
-    \ to address poorly scaled or ill-conditioned problems. We also explore several\
-    \ preconditioning methods, including Hutchinson's method, which approximates the\
-    \ Hessian diagonal of the loss function. We conclude with an extensive empirical\
-    \ examination of the proposed techniques across classification and regression\
-    \ tasks, covering both convex and non-convex contexts.\n\t\t"
+- abstract: Adaptive optimization methods are widely recognized as among the most
+    popular approaches for training Deep Neural Networks (DNNs). Techniques such as
+    Adam, AdaGrad, and AdaHessian utilize a preconditioner that modifies the search
+    direction by incorporating information about the curvature of the objective function.
+    However, despite their adaptive characteristics, these methods still require manual
+    fine-tuning of the step-size. This, in turn, impacts the time required to solve
+    a particular problem. This paper presents an optimization framework named SANIA
+    to tackle these challenges. Beyond eliminating the need for manual step-size hyperparameter
+    settings, SANIA incorporates techniques to address poorly scaled or ill-conditioned
+    problems. We also explore several preconditioning methods, including Hutchinson's
+    method, which approximates the Hessian diagonal of the loss function. We conclude
+    with an extensive empirical examination of the proposed techniques across classification
+    and regression tasks, covering both convex and non-convex contexts.
   authors: "Farshed Abdukhakimov, Chulu Xiang, Dmitry Kamzolov, Robert Gower, <strong>Martin\
     \ Tak\xE1\u010D</strong>"
-  keywords: []
+  keywords:
+  - polyak step size
+  - adaptive optimization
+  - preconditioned stochastic algorithms
+  - scaling invariance
+  - affine invariance
+  - hessian diagonal approximation
+  - hutchinson method
+  - ill-conditioned optimization
+  - convex optimization
+  - non-convex optimization
   link: https://arxiv.org/abs/2312.17369
   pdf: https://arxiv.org/pdf/2312.17369.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Stochastic Optimization
+  - Second-Order Methods
+  - Deep Learning
   title: 'SANIA: Polyak-type Optimization Framework Leads to Scaling or Affine Invariant
     Stochastic Algorithms'
   type: tpaper
   year: '2023'
-- abstract: "\nScanning probe spectroscopy generates high-dimensional data that is\
-    \ difficult to analyze in real time, hindering researcher creativity. Machine\
-    \ learning techniques like PCA accelerate analysis but are inefficient, sensitive\
-    \ to noise, and lack interpretability. We developed an unsupervised deep neural\
-    \ network constrained by a known empirical equation to enable real-time, robust\
-    \ fitting. Demonstrated on band-excitation piezoresponse force microscopy, our\
-    \ model fits cantilever response to a simple harmonic oscillators more than 4\
-    \ orders of magnitude faster than least squares while enhancing robustness. It\
-    \ performs well on noisy data where conventional methods fail. Quantization-aware\
-    \ training enables sub-millisecond streaming inference on an FPGA, orders of magnitude\
-    \ faster than data acquisition. This methodology broadly applies to spectroscopic\
-    \ fitting and provides a pathway for real-time control and interpretation.\n\n\
-    \t\t"
+- abstract: Scanning probe spectroscopy generates high-dimensional data that is difficult
+    to analyze in real time, hindering researcher creativity. Machine learning techniques
+    like PCA accelerate analysis but are inefficient, sensitive to noise, and lack
+    interpretability. We developed an unsupervised deep neural network constrained
+    by a known empirical equation to enable real-time, robust fitting. Demonstrated
+    on band-excitation piezoresponse force microscopy, our model fits cantilever response
+    to a simple harmonic oscillators more than 4 orders of magnitude faster than least
+    squares while enhancing robustness. It performs well on noisy data where conventional
+    methods fail. Quantization-aware training enables sub-millisecond streaming inference
+    on an FPGA, orders of magnitude faster than data acquisition. This methodology
+    broadly applies to spectroscopic fitting and provides a pathway for real-time
+    control and interpretation.
   authors: "Alibek Kaliyev, Shuyu Qin, Yichen Guo, Seda Memik, Michael Mahoney, Amir\
     \ Gholami, Nhan Tran, <strong>Martin Tak\xE1\u010D</strong>, Joshua Agar"
   journal: AI for Accelerated Materials Design - NeurIPS 2023 Workshop
-  keywords: []
+  keywords:
+  - band-excitation piezoresponse force microscopy
+  - physics-constrained neural networks
+  - unsupervised spectroscopic fitting
+  - simple harmonic oscillator model
+  - noise-robust inference
+  - real-time materials characterization
+  - quantization-aware training
+  - fpga streaming inference
+  - least-squares fitting acceleration
   pdf: https://openreview.net/pdf?id=ITda7kqxSn
-  tags: []
+  tags:
+  - Materials Science
+  - Scientific Machine Learning
+  - Neural Networks
+  - Robustness
+  - Edge Computing
   title: Rapid Fitting of Band-Excitation Piezoresponse Force Microscopy Using Physics
     Constrained Unsupervised Neural Networks
   type: cpaper
   year: '2023'
-- abstract: "\nThe Moment/Sum-of-squares hierarchy provides a way to compute the global\
-    \ minimizers of polynomial optimization problems (POP), at the cost of solving\
-    \ a sequence of increasingly large semidefinite programs (SDPs). We consider large-scale\
-    \ POPs, for which interior-point methods are no longer able to solve the resulting\
-    \ SDPs. We propose an algorithm that combines a first-order method for solving\
-    \ the SDP relaxation, and a second-order method on a non-convex problem obtained\
-    \ from the POP. The switch from the first to the second-order method is based\
-    \ on a quantitative criterion, whose satisfaction ensures that Newton's method\
-    \ converges quadratically from its first iteration. This criterion leverages the\
-    \ point-estimation theory of Smale and the active-set identification. We illustrate\
-    \ the methodology to obtain global minimizers of large-scale optimal power flow\
-    \ problems.\n\t\t"
+- abstract: The Moment/Sum-of-squares hierarchy provides a way to compute the global
+    minimizers of polynomial optimization problems (POP), at the cost of solving a
+    sequence of increasingly large semidefinite programs (SDPs). We consider large-scale
+    POPs, for which interior-point methods are no longer able to solve the resulting
+    SDPs. We propose an algorithm that combines a first-order method for solving the
+    SDP relaxation, and a second-order method on a non-convex problem obtained from
+    the POP. The switch from the first to the second-order method is based on a quantitative
+    criterion, whose satisfaction ensures that Newton's method converges quadratically
+    from its first iteration. This criterion leverages the point-estimation theory
+    of Smale and the active-set identification. We illustrate the methodology to obtain
+    global minimizers of large-scale optimal power flow problems.
   authors: "Johannes Aspman, Gilles Bareilles, Vyacheslav Kungurtsev, Jakub Marecek,\
     \ <strong>Martin Tak\xE1\u010D</strong>"
-  keywords: []
+  keywords:
+  - polynomial optimization
+  - moment sum-of-squares hierarchy
+  - semidefinite programming relaxations
+  - first-order sdp methods
+  - newton method
+  - quadratic convergence
+  - smale point-estimation theory
+  - active-set identification
+  - nonconvex reformulation
+  - large-scale optimal power flow
+  - global minimizers
   link: http://arxiv.org/abs/2305.16122
   pdf: https://arxiv.org/pdf/2305.16122.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Second-Order Methods
+  - Semidefinite Programming
+  - Energy Systems
   title: Hybrid Methods in Polynomial Optimisation
   type: tpaper
   year: '2023'
@@ -3644,10 +3799,25 @@
   authors: "Aleksandr Beznosikov, <strong>Martin Tak\xE1\u010D</strong>, Alexander\
     \ Gasnikov"
   journal: NeurIPS 2023
-  keywords: []
+  keywords:
+  - distributed variational inequalities
+  - communication compression
+  - local steps
+  - local updates
+  - similarity of local functions
+  - saddle point problems
+  - communication complexity
+  - parallel distributed computing
+  - adversarial learning experiments
+  - theoretical guarantees
   link: https://arxiv.org/abs/2302.07615
   pdf: https://openreview.net/pdf?id=Rvk1wdwz1L
-  tags: []
+  tags:
+  - Optimization
+  - Distributed Optimization
+  - Communication Efficiency
+  - Machine Learning
+  - Adversarial Learning
   title: 'Similarity, Compression and Local Steps: Three Pillars of Efficient Communications
     for Distributed Variational Inequalities'
   type: cpaper
@@ -3667,8 +3837,21 @@
   authors: "Nazarii Tupitsa, Eduard Gorbunov, Abdulla Jasem Almansoori, Yanlin Wu,\
     \ <strong>Martin Tak\xE1\u010D</strong>, Karthik Nandakumar, Samuel Horv\xE1th"
   journal: NeurIPS 2023
-  keywords: []
-  tags: []
+  keywords:
+  - byzantine robustness
+  - distributed variational inequalities
+  - byzantine attacks
+  - robust distributed training
+  - min-max problems
+  - distributed learning
+  - theoretical convergence
+  - provably robust methods
+  - numerical comparisons
+  tags:
+  - Optimization
+  - Distributed Optimization
+  - Robustness
+  - Machine Learning
   title: Byzantine-Tolerant Methods for Distributed Variational Inequalities
   type: cpaper
   year: '2023'
@@ -3681,33 +3864,58 @@
   authors: "Artem Agafonov, Dmitry Kamzolov, Pavel Dvurechensky, Alexander Gasnikov,\
     \ <strong>Martin Tak\xE1\u010D</strong>"
   journal: Optimization Methods and Software (GOMS)
-  keywords: []
+  keywords:
+  - inexact tensor methods
+  - accelerated tensor methods
+  - non-accelerated tensor methods
+  - inexact derivatives
+  - convergence rates
+  - stochastic convex optimization
+  - mini-batch sizes
+  - higher-order derivatives
   link: https://doi.org/10.1080/10556788.2023.2261604
   pdf: https://arxiv.org/pdf/2012.15636.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Stochastic Optimization
+  - Convex Optimization
+  - Higher-Order Methods
   title: Inexact Tensor Methods and Their Application to Stochastic Convex Optimization
   type: jpaper
   year: '2023'
-- abstract: "\nThis study addresses a gap in the utilization of Reinforcement Learning\
-    \ (RL) and Machine Learning (ML) techniques in solving the Stochastic Vehicle\
-    \ Routing Problem (SVRP) that involves the challenging task of optimizing vehicle\
-    \ routes under uncertain conditions. We propose a novel end-to-end framework that\
-    \ comprehensively addresses the key sources of stochasticity in SVRP and utilizes\
-    \ an RL agent with a simple yet effective architecture and a tailored training\
-    \ method. Through comparative analysis, our proposed model demonstrates superior\
-    \ performance compared to a widely adopted state-of-the-art metaheuristic, achieving\
-    \ a significant 3.43% reduction in travel costs. Furthermore, the model exhibits\
-    \ robustness across diverse SVRP settings, highlighting its adaptability and ability\
-    \ to learn optimal routing strategies in varying environments. The publicly available\
-    \ implementation of our framework serves as a valuable resource for future research\
-    \ endeavors aimed at advancing RL-based solutions for SVRP.\n\t\t"
+- abstract: This study addresses a gap in the utilization of Reinforcement Learning
+    (RL) and Machine Learning (ML) techniques in solving the Stochastic Vehicle Routing
+    Problem (SVRP) that involves the challenging task of optimizing vehicle routes
+    under uncertain conditions. We propose a novel end-to-end framework that comprehensively
+    addresses the key sources of stochasticity in SVRP and utilizes an RL agent with
+    a simple yet effective architecture and a tailored training method. Through comparative
+    analysis, our proposed model demonstrates superior performance compared to a widely
+    adopted state-of-the-art metaheuristic, achieving a significant 3.43% reduction
+    in travel costs. Furthermore, the model exhibits robustness across diverse SVRP
+    settings, highlighting its adaptability and ability to learn optimal routing strategies
+    in varying environments. The publicly available implementation of our framework
+    serves as a valuable resource for future research endeavors aimed at advancing
+    RL-based solutions for SVRP.
   authors: "Zangir Iklassov, Ikboljon Sobirov, Ruben Solozabal, <strong>Martin Tak\xE1\
     \u010D</strong>"
-  journal: 'Asian Conference on Machine Learning (ACML 2023) '
-  keywords: []
+  journal: Asian Conference on Machine Learning (ACML 2023)
+  keywords:
+  - stochastic vehicle routing problem
+  - reinforcement learning
+  - vehicle route optimization
+  - end-to-end framework
+  - stochasticity in routing
+  - tailored training method
+  - metaheuristic comparison
+  - travel cost reduction
+  - robust routing strategies
   link: https://arxiv.org/abs/2311.07708
   pdf: https://arxiv.org/pdf/2311.07708.pdf
-  tags: []
+  tags:
+  - Reinforcement Learning
+  - Optimization
+  - Transportation
+  - Robustness
   title: Reinforcement Learning for Solving Stochastic Vehicle Routing Problem
   type: cpaper
   year: '2023'
@@ -3730,9 +3938,24 @@
   authors: "Zangir Iklassov, Ikboljon Sobirov, Ruben Solozabal, <strong>Martin Tak\xE1\
     \u010D</strong>"
   journal: IEEE Access
-  keywords: []
+  keywords:
+  - stochastic vehicle routing
+  - correlated demands
+  - vehicle routing problem with stochastic demands
+  - policy gradient
+  - stochastic policy
+  - non-iid stochastic demands
+  - routing under uncertainty
+  - metaheuristic comparison
+  - vehicle capacity constraints
+  - demand noise robustness
   link: https://ieeexplore.ieee.org/document/10223206
-  tags: []
+  tags:
+  - Reinforcement Learning
+  - Optimization
+  - Operations Research
+  - Transportation
+  - Robustness
   title: Reinforcement Learning Approach to Stochastic Vehicle Routing Problem with
     Correlated Demands
   type: jpaper
@@ -3753,13 +3976,28 @@
   authors: "Dmitry Kamzolov, Alexander Gasnikov, Pavel Dvurechensky, Artem Agafonov,\
     \ <strong>Martin Tak\xE1\u010D</strong>"
   journal: Encyclopedia of Optimization (Panos M. Pardalos, Oleg A. Prokopyev)
-  keywords: []
+  keywords:
+  - higher-order derivatives
+  - convex optimization
+  - tensor methods
+  - regularized taylor expansion
+  - lipschitz derivatives
+  - iteration complexity bounds
+  - convergence rates
+  - optimal convergence rate
+  - second-order methods
+  - third derivative
   link: https://link.springer.com/referenceworkentry/10.1007/978-3-030-54621-2_858-1
   ltype: Springer Nature
   pdf: https://arxiv.org/pdf/2208.13190.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Convex Optimization
+  - Second-Order Methods
+  - Higher-Order Methods
+  - Complexity Theory
   title: Exploiting higher order derivatives in convex optimization methods
-  type: opaper
+  type: tpaper
   year: '2023'
 - abstract: "The problem of constrained Markov decision process is considered. An\
     \ agent aims to maximize the expected accumulated discounted reward subject to\
@@ -3775,58 +4013,98 @@
   authors: "Egor Gladin, Maksim Lavrik-Karmazin, Karina Eduardovna Zainullina, Varvara\
     \ Rudenko, Alexander Gasnikov, <strong>Martin Tak\xE1\u010D</strong>"
   journal: AISTATS
-  keywords: []
+  keywords:
+  - constrained markov decision processes
+  - linear convergence
+  - dual optimization
+  - entropy regularized policy optimization
+  - vayda dual optimizer
+  - discounted reward maximization
+  - finite-time error bounds
+  - constraint violation
+  - global optimality
   link: https://proceedings.mlr.press/v206/gladin23a
   pdf: https://proceedings.mlr.press/v206/gladin23a/gladin23a.pdf
-  tags: []
+  tags:
+  - Reinforcement Learning
+  - Optimization
+  - Markov Decision Processes
+  - Policy Optimization
   title: Algorithm for Constrained Markov Decision Process with Linear Convergence
   type: cpaper
   year: '2023'
-- abstract: "\n\t\t\tThe rise in renewable energy is creating new dynamics in the\
-    \ energy grid that promise to create a cleaner and more participative energy grid,\
-    \ where technology plays a crucial part in creating the required flexibility to\
-    \ achieve the vision of the next-generation grid. This work presents FRESCO, a\
-    \ framework that aims to ease the implementation of energy markets using a hierarchical\
-    \ control architecture of reinforcement learning agents trained using federated\
-    \ learning. The core concept we are proving is that having greedy agents subject\
-    \ to changing conditions from a higher level agent creates a cooperative setup\
-    \ that will allow for fulfilling all the individual objectives. This paper presents\
-    \ a general overview of the framework, the current progress, and some insights\
-    \ we obtained from the recent results.\n\t\t"
+- abstract: The rise in renewable energy is creating new dynamics in the energy grid
+    that promise to create a cleaner and more participative energy grid, where technology
+    plays a crucial part in creating the required flexibility to achieve the vision
+    of the next-generation grid. This work presents FRESCO, a framework that aims
+    to ease the implementation of energy markets using a hierarchical control architecture
+    of reinforcement learning agents trained using federated learning. The core concept
+    we are proving is that having greedy agents subject to changing conditions from
+    a higher level agent creates a cooperative setup that will allow for fulfilling
+    all the individual objectives. This paper presents a general overview of the framework,
+    the current progress, and some insights we obtained from the recent results.
   authors: "Nicolas Mauricio Cuadrado, Roberto Alejandro Gutierrez Guillen, <strong>Martin\
     \ Tak\xE1\u010D</strong>"
   journal: Tiny Papers @ ICLR 2023
-  keywords: []
+  keywords:
+  - federated reinforcement learning
+  - energy markets
+  - renewable energy grids
+  - hierarchical control
+  - cooperative agents
+  - multi-agent reinforcement learning
+  - smart grids
+  - grid flexibility
+  - distributed energy optimization
   link: https://openreview.net/forum?id=75mWq5j4iso
   pdf: https://openreview.net/pdf?id=75mWq5j4iso
-  tags: []
+  tags:
+  - Federated Learning
+  - Reinforcement Learning
+  - Energy Systems
+  - Optimization
+  - Distributed Optimization
   title: 'FRESCO: Federated Reinforcement Energy System for Cooperative Optimization'
   type: cpaper
   year: '2023'
-- abstract: "\nFederated learning has become a popular machine learning paradigm with\
-    \ many potential real-life applications, including recommendation systems, the\
-    \ Internet of Things (IoT), healthcare, and self-driving cars. Though most current\
-    \ applications focus on classification-based tasks, learning personalized generative\
-    \ models remains largely unexplored, and their benefits in the heterogeneous setting\
-    \ still need to be better understood. This work proposes a novel architecture\
-    \ combining global client-agnostic and local client-specific generative models.\
-    \ We show that using standard techniques for training federated models, our proposed\
-    \ model achieves privacy and personalization that is achieved by implicitly disentangling\
-    \ the globally-consistent representation (i.e. content) from the client-dependent\
-    \ variations (i.e. style). Using such decomposition, personalized models can generate\
-    \ locally unseen labels while preserving the given style of the client and can\
-    \ predict the labels for all clients with high accuracy by training a simple linear\
-    \ classifier on the global content features. Furthermore, disentanglement enables\
-    \ other essential applications, such as data anonymization, by sharing only content.\
-    \ Extensive experimental evaluation corroborates our findings, and we also provide\
-    \ partial theoretical justifications for the proposed approach.\n\t\t"
+- abstract: Federated learning has become a popular machine learning paradigm with
+    many potential real-life applications, including recommendation systems, the Internet
+    of Things (IoT), healthcare, and self-driving cars. Though most current applications
+    focus on classification-based tasks, learning personalized generative models remains
+    largely unexplored, and their benefits in the heterogeneous setting still need
+    to be better understood. This work proposes a novel architecture combining global
+    client-agnostic and local client-specific generative models. We show that using
+    standard techniques for training federated models, our proposed model achieves
+    privacy and personalization that is achieved by implicitly disentangling the globally-consistent
+    representation (i.e. content) from the client-dependent variations (i.e. style).
+    Using such decomposition, personalized models can generate locally unseen labels
+    while preserving the given style of the client and can predict the labels for
+    all clients with high accuracy by training a simple linear classifier on the global
+    content features. Furthermore, disentanglement enables other essential applications,
+    such as data anonymization, by sharing only content. Extensive experimental evaluation
+    corroborates our findings, and we also provide partial theoretical justifications
+    for the proposed approach.
   authors: "Abdulla Jasem Almansoori, Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D\
     </strong>"
   journal: Federated Learning Systems (FLSys) Workshop @ MLSys 2023 (oral)
-  keywords: []
+  keywords:
+  - partially federated gans
+  - personalized generative models
+  - partial disentanglement
+  - client-specific style
+  - global content representations
+  - heterogeneous clients
+  - locally unseen labels
+  - data anonymization
+  - linear classification on content features
   link: https://arxiv.org/abs/2212.03836
   pdf: https://arxiv.org/pdf/2212.03836
-  tags: []
+  tags:
+  - Federated Learning
+  - Generative Models
+  - Representation Learning
+  - Privacy
+  - Personalization
   title: Partial Disentanglement with Partially-Federated GANs (PaDPaF)
   type: cpaper
   year: '2023'
@@ -3849,10 +4127,27 @@
   authors: "Zangir Iklassov, Dmitrii Medvedev, Ruben Solozabal, <strong>Martin Tak\xE1\
     \u010D</strong>"
   journal: IJCAI 2023
-  keywords: []
+  keywords:
+  - job shop scheduling
+  - dispatching policies
+  - heuristic dispatching rules
+  - curriculum learning
+  - adversarial curriculum learning
+  - catastrophic forgetting
+  - generalization across problem sizes
+  - size-agnostic neural model
+  - equivariant job representations
+  - taillard instances
+  - demirkol instances
+  - optimality gap reduction
   link: https://arxiv.org/abs/2206.04423
   pdf: https://arxiv.org/pdf/2206.04423
-  tags: []
+  tags:
+  - Reinforcement Learning
+  - Optimization
+  - Scheduling
+  - Combinatorial Optimization
+  - Machine Learning
   title: On the study of Curriculum Learning for inferring dispatching policies on
     the Job Shop Scheduling
   type: cpaper
@@ -3872,10 +4167,23 @@
   authors: "Nicolas Cuadrado, Roberto Alejandro Gutierrez Guillen, Yongli Zhu, <strong>Martin\
     \ Tak\xE1\u010D</strong>"
   journal: 'ICLR 2023 Workshop: Tackling Climate Change with Machine Learning'
-  keywords: []
+  keywords:
+  - multi-agent reinforcement learning
+  - hierarchical transactive microgrids
+  - energy transaction management
+  - renewable energy integration
+  - carbon footprint minimization
+  - dynamic energy pricing
+  - prosumer consumer coordination
+  - energy demand and supply fluctuations
   link: https://arxiv.org/abs/2303.08447
   pdf: https://arxiv.org/pdf/2303.08447
-  tags: []
+  tags:
+  - Reinforcement Learning
+  - Energy Systems
+  - Optimization
+  - Multi-Agent Systems
+  - Climate ML
   title: 'MAHTM: A Multi-Agent Framework for Hierarchical Transactive Microgrids'
   type: cpaper
   year: '2023'
@@ -3893,34 +4201,78 @@
   authors: "Zheng Shi, Abdurakhmon Sadiev, Nicolas Loizou, Peter Richt\xE1rik, <strong>Martin\
     \ Tak\xE1\u010D</strong>"
   journal: Transactions on Machine Learning Research (TMLR)
-  keywords: []
+  keywords:
+  - adaptive stochastic variance reduction
+  - implicit step-size computation
+  - stochastic recursive gradient
+  - sarah algorithm
+  - finite-sum minimization
+  - local geometry adaptation
+  - local lipschitz smoothness estimation
+  - convergence guarantees
+  - hyperparameter-free optimization
+  - first-order methods
   link: https://openreview.net/forum?id=WoXJFsJ6Zw
   pdf: https://openreview.net/pdf?id=WoXJFsJ6Zw
-  tags: []
+  tags:
+  - Optimization
+  - Stochastic Optimization
+  - Variance Reduction
+  - First-Order Methods
   title: 'AI-SARAH: Adaptive and Implicit Stochastic Recursive Gradient Methods'
   type: jpaper
   year: '2023'
-- abstract: "\n\t\tThis work studies non-cooperative Multi-Agent Reinforce-\nment\
-    \ Learning (MARL) where multiple agents interact in the same\nenvironment and\
-    \ whose goal is to maximize the individual returns. Chal-\nlenges arise when scaling\
-    \ up the number of agents due to the resultant\nnon-stationary that the many agents\
-    \ introduce. In order to address this\nissue, Mean Field Games (MFG) rely on the\
-    \ symmetry and homogeneity\nassumptions to approximate games with very large populations.\
-    \ Recently,\ndeep Reinforcement Learning has been used to scale MFG to games\n\
-    with larger number of states. Current methods rely on smoothing tech-\nniques\
-    \ such as averaging the q-values or the updates on the mean-field\ndistribution.\
-    \ This work presents a different approach to stabilize the\nlearning based on\
-    \ proximal updates on the mean-field policy. We name\nour algorithm Mean Field\
-    \ Proximal Policy Optimization (MF-PPO), and\nwe empirically show the effectiveness\
-    \ of our method in the OpenSpiel\nframework.\n"
+- abstract: 'This work studies non-cooperative Multi-Agent Reinforce-
+
+    ment Learning (MARL) where multiple agents interact in the same
+
+    environment and whose goal is to maximize the individual returns. Chal-
+
+    lenges arise when scaling up the number of agents due to the resultant
+
+    non-stationary that the many agents introduce. In order to address this
+
+    issue, Mean Field Games (MFG) rely on the symmetry and homogeneity
+
+    assumptions to approximate games with very large populations. Recently,
+
+    deep Reinforcement Learning has been used to scale MFG to games
+
+    with larger number of states. Current methods rely on smoothing tech-
+
+    niques such as averaging the q-values or the updates on the mean-field
+
+    distribution. This work presents a different approach to stabilize the
+
+    learning based on proximal updates on the mean-field policy. We name
+
+    our algorithm Mean Field Proximal Policy Optimization (MF-PPO), and
+
+    we empirically show the effectiveness of our method in the OpenSpiel
+
+    framework.'
   authors: "Talal Algumaei, Ruben Solozabal Ochoa de Retana, Reda Alami, Hakim Hacid,\
     \ Merouane Debbah, <strong>Martin Tak\xE1\u010D</strong>"
   journal: 26th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD
     2023)
-  keywords: []
+  keywords:
+  - mean field games
+  - multi-agent reinforcement learning
+  - non-cooperative agents
+  - policy regularization
+  - proximal policy optimization
+  - mean-field policy updates
+  - learning stabilization
+  - deep reinforcement learning
+  - non-stationarity
+  - openspiel experiments
   link: https://arxiv.org/abs/2304.01547
   pdf: https://arxiv.org/pdf/2304.01547.pdf
-  tags: []
+  tags:
+  - Reinforcement Learning
+  - Multi-Agent Learning
+  - Mean Field Games
+  - Optimization
   title: Regularization of the policy updates for stabilizing Mean Field Games
   type: cpaper
   year: '2023'
@@ -3939,10 +4291,24 @@
   authors: "Shuang Li, William Joseph Swartworth, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Deanna Needell, Robert M. Gower"
   journal: ICLR
-  keywords: []
+  keywords:
+  - stochastic polyak step size
+  - second-order stochastic method
+  - hessian-vector products
+  - interpolation equations
+  - stochastic gradient descent
+  - adaptive step sizes
+  - nonconvex optimization
+  - matrix completion
+  - logistic regression
+  - sums of quadratics
   link: http://arxiv.org/abs/2207.08171
   pdf: https://arxiv.org/pdf/2207.08171.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Second-Order Methods
+  - Stochastic Optimization
+  - Machine Learning
   title: 'SP2: A Second Order Stochastic Polyak Method'
   type: cpaper
   year: '2023'
@@ -3978,47 +4344,81 @@
     experimental data
   type: jpaper
   year: '2022'
-- abstract: "We propose a classification-aware path planning architecture for a\n\
-    team of robots in order to traverse along the most informative paths with the\n\
-    objective of completing map classification tasks using localized (partial) observations\
-    \ from the environment. In this method, the neural network layers with parallel\
-    \ structure utilize each agent\u2019s memorized history and solve the path planning\n\
-    problem to achieve classification. The objective is to avoid visiting less informative\
-    \ regions and significantly reduce the total energy cost (e.g., battery life)\
-    \ when\nsolving the classification problem. Moreover, the parallel design of the\
-    \ path planning structure reduces the training complexity drastically. The efficacy\
-    \ of our\napproach has been validated by a map classification problem in the simulation\n\
-    environment of satellite campus maps using quadcopters with onboard cameras."
-  authors: "Guangyi Liu, Arash Amini, <strong>Martin Tak\xE1\u010D</strong>, Nader\
-    \ Motee"
-  journal: 'Distributed Autonomous Robotic Systems,
-
-    15th International Symposium'
-  keywords: []
-  link: https://link.springer.com/book/10.1007/978-3-030-92790-5?page=2#toc
-  ltype: 'DARS 2021 '
-  pdf: https://link.springer.com/content/pdf/10.1007/978-3-030-92790-5_23?pdf=chapter%20toc
-  tags: []
-  title: Classification-Aware Path Planning of Network of Robots
-  type: cpaper
+- abstract: "In this work, we develop a deep neural network model for the reaction\
+    \ rate of oxidative coupling of methane from \n\t\tpublished high-throughput experimental\
+    \ \n\t\tcatalysis data. A neural network is formulated so that the rate model\
+    \ satisfies the plug flow reactor design equation. \n\t\tThe model is then employed\
+    \ to understand the variation of reactant and product composition within the reactor\
+    \ for the reference \n\t\tcatalyst Mn\u2013Na2WO4/SiO2 at different temperatures\
+    \ and to identify new catalysts and combinations of\n\t\t known catalysts that\
+    \ would increase yield and selectivity relative to the reference catalyst.\n\t\
+    \t  The model revealed that methane is converted in the first half of the catalyst\
+    \ bed, while the second part largely \n\t\t  consolidates the products (i.e. increases\
+    \ ethylene to ethane ratio). A screening study of >=3400 combinations of pairs\
+    \ of previously studied catalysts of the form M1(M2)$_{1-2}$M3Ox/support (where\
+    \ M1, M2 and M3 are metals) revealed that a reactor configuration comprising two\
+    \ sequential catalyst beds leads to synergistic effects resulting in increased\
+    \ yield of C2 compared to the reference catalyst at identical conditions and contact\
+    \ time. Finally, an expanded screening study of 7400 combinations (comprising\
+    \ previously studied metals but with several new permutations) revealed multiple\
+    \ catalyst choices with enhanced yields of C2 products. This study demonstrates\
+    \ the value of learning a deep neural network model for the instantaneous reaction\
+    \ rate directly from high-throughput data and represents a first step in constraining\
+    \ a data-driven reaction model to satisfy domain information."
+  authors: "Klea Ziu, Ruben Solozabal, Srinivas Rangarajan, <strong>Martin Tak\xE1\
+    \u010D</strong>"
+  journal: 'Journal of Physics: Energy'
+  keywords:
+  - oxidative coupling of methane
+  - deep neural network rate model
+  - high-throughput catalysis data
+  - plug flow reactor design equation
+  - catalyst bed composition profiles
+  - mn-na2wo4/sio2 reference catalyst
+  - sequential catalyst beds
+  - c2 yield and selectivity
+  - catalyst combination screening
+  link: https://iopscience.iop.org/article/10.1088/2515-7655/aca797
+  pdf: https://iopscience.iop.org/article/10.1088/2515-7655/aca797/pdf
+  tags:
+  - Machine Learning
+  - Energy Systems
+  - Materials Science
+  - Chemical Engineering
+  - Catalysis
+  title: A deep neural network for oxidative coupling of methane trained on high throughput
+    experimental data
+  type: jpaper
   year: '2022'
-- abstract: "\n\t\tTransmission-constrained problems in power systems can be cast\
-    \ as polynomial optimization problems whose coefficients vary over time. We consider\
-    \ the complications therein and suggest several approaches. On the example of\
-    \ the alternating-current optimal power flows (ACOPFs), we illustrate one of the\
-    \ approaches in detail. For the time-varying ACOPF, we provide an upper bound\
-    \ for the difference between the optimal cost for a relaxation using the most\
-    \ recent data and the current approximate optimal cost generated by our algorithm.\
-    \ This bound is a function of the properties of the instance and the rate of change\
-    \ of the coefficients over time. Moreover, we also bound the number of floating-point\
-    \ operations to perform between two subsequent updates to ensure a bounded error.\n\
-    \t\t"
+- abstract: Transmission-constrained problems in power systems can be cast as polynomial
+    optimization problems whose coefficients vary over time. We consider the complications
+    therein and suggest several approaches. On the example of the alternating-current
+    optimal power flows (ACOPFs), we illustrate one of the approaches in detail. For
+    the time-varying ACOPF, we provide an upper bound for the difference between the
+    optimal cost for a relaxation using the most recent data and the current approximate
+    optimal cost generated by our algorithm. This bound is a function of the properties
+    of the instance and the rate of change of the coefficients over time. Moreover,
+    we also bound the number of floating-point operations to perform between two subsequent
+    updates to ensure a bounded error.
   authors: "Jie Liu, Antonio Bellon, Andrea Simonetto, <strong>Martin Tak\xE1\u010D\
     </strong>, Jakub Marecek"
-  keywords: []
+  keywords:
+  - ac optimal power flow
+  - alternating-current model
+  - time-varying optimization
+  - polynomial optimization
+  - transmission-constrained power systems
+  - coefficient drift
+  - relaxation error bounds
+  - approximate optimal cost
+  - floating-point operation bounds
   link: https://arxiv.org/abs/2211.02939
   pdf: https://arxiv.org/pdf/2211.02939
-  tags: []
+  tags:
+  - Optimization
+  - Energy Systems
+  - Power Systems
+  - Polynomial Optimization
   title: Optimal Power Flow Pursuit in the Alternating Current Model
   type: tpaper
   year: '2022'
@@ -4047,10 +4447,25 @@
     are proposed to improve the practical performance of GD. Several numerical examples
     are presented, which demonstrate the advantages of exploiting the GD--PM connection.'
   authors: "Rachael Tappenden, <strong>Martin Tak\xE1\u010D</strong>"
-  keywords: []
+  keywords:
+  - gradient descent
+  - power method
+  - fixed step size
+  - leftmost eigen-pair
+  - saddle point escape
+  - nonconvex quadratic functions
+  - gradient dynamics
+  - fixed momentum
+  - adaptive step size strategies
+  - eigenvalue information
   link: https://arxiv.org/abs/2211.00866
   pdf: https://arxiv.org/pdf/2211.00866
-  tags: []
+  tags:
+  - Optimization
+  - Nonconvex Optimization
+  - Numerical Linear Algebra
+  - Gradient Methods
+  - Saddle Points
   title: 'Gradient Descent and the Power Method: Exploiting their connection to find
     the leftmost eigen-pair and escape saddle points'
   type: tpaper
@@ -4068,8 +4483,21 @@
     \ Tak\xE1\u010D</strong>"
   journal: Order up! The Benefits of Higher-Order Optimization in Machine Learning
     Workshop @ NeurIPS 2022
-  keywords: []
-  tags: []
+  keywords:
+  - polyak step-size
+  - stochastic gradient methods
+  - preconditioned optimization
+  - slack variable
+  - ill-conditioned data
+  - badly scaled data
+  - hessian estimation
+  - hutchinson's method
+  - adaptive learning rates
+  tags:
+  - Optimization
+  - Second-Order Methods
+  - Machine Learning
+  - Stochastic Methods
   title: 'PSPS: Preconditioned Stochastic Polyak Step-size method for badly scaled
     data'
   type: cpaper
@@ -4085,8 +4513,19 @@
     </strong>"
   journal: Order up! The Benefits of Higher-Order Optimization in Machine Learning
     Workshop @ NeurIPS 2022
-  keywords: []
-  tags: []
+  keywords:
+  - cubic regularization
+  - quasi-newton methods
+  - l-bfgs approximation
+  - inexact cubic regularized newton
+  - hessian approximation
+  - newton method
+  - convergence rates
+  - global performance
+  tags:
+  - Optimization
+  - Second-Order Methods
+  - Machine Learning
   title: Cubic Regularized Quasi-Newton Methods
   type: cpaper
   year: '2022'
@@ -4102,10 +4541,24 @@
   authors: "Artem Agafonov, Brahim Erraji, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Order up! The Benefits of Higher-Order Optimization in Machine Learning
     Workshop @ NeurIPS 2022
-  keywords: []
+  keywords:
+  - federated learning
+  - second-order optimization
+  - compressed gradient differences
+  - hessian sketching
+  - communication compression
+  - sketched hessian compression
+  - stochastic optimization
+  - strongly convex convergence
+  - nonconvex convergence
+  - communication-efficient optimization
   link: https://arxiv.org/abs/2210.09626
   pdf: https://arxiv.org/pdf/2210.09626
-  tags: []
+  tags:
+  - Federated Learning
+  - Optimization
+  - Distributed Optimization
+  - Second-Order Methods
   title: 'FLECS-CGD: A Federated Learning Second-Order Framework via Compression and
     Sketching with Compressed Gradient Differences'
   type: cpaper
@@ -4121,10 +4574,23 @@
   authors: "Dmitry Pasechnyuk, Alexander Gasnikov, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Order up! The Benefits of Higher-Order Optimization in Machine Learning
     Workshop @ NeurIPS 2022
-  keywords: []
+  keywords:
+  - stochastic gradient descent
+  - momentum scaling
+  - preconditioned stochastic gradients
+  - momentum updated preconditioners
+  - adaptive momentum coefficient
+  - adaptive step size
+  - convergence analysis
+  - preconditioner norm
+  - gradient lipschitz constant
   link: https://arxiv.org/abs/2210.11869
   pdf: https://arxiv.org/pdf/2210.11869
-  tags: []
+  tags:
+  - Optimization
+  - Stochastic Optimization
+  - Adaptive Methods
+  - Machine Learning
   title: Effects of momentum scaling for SGD
   type: cpaper
   year: '2022'
@@ -4144,8 +4610,22 @@
     \ Deanna Needell, Robert M. Gower"
   journal: Order up! The Benefits of Higher-Order Optimization in Machine Learning
     Workshop @ NeurIPS 2022
-  keywords: []
-  tags: []
+  keywords:
+  - stochastic polyak step size
+  - overparameterized models
+  - interpolation equations
+  - second-order approximation
+  - hessian-vector products
+  - stochastic gradient descent
+  - nonconvex optimization
+  - sums of quadratics
+  - matrix completion
+  - logistic regression
+  tags:
+  - Optimization
+  - Second-Order Methods
+  - Machine Learning
+  - Stochastic Optimization
   title: Using quadratic equations for overparametrized models
   type: cpaper
   year: '2022'
@@ -4160,13 +4640,27 @@
     proofs hold under affine-invariant assumptions closely related to the notion of
     self-concordance. Finally, our method has competitive performance when compared
     to existing baselines which share the same fast global convergence guarantees.
-  authors: "Slavomir Hanzely, Dmitry Kamzolov, Dmitry Pasechnyuk, Alexander Gasnikov,,\
+  authors: "Slavomir Hanzely, Dmitry Kamzolov, Dmitry Pasechnyuk, Alexander Gasnikov,\
     \ Peter Richt\xE1rik, <strong>Martin Tak\xE1\u010D</strong>"
   journal: NeurIPS
-  keywords: []
+  keywords:
+  - damped newton method
+  - stepsize schedule
+  - global o(1/k^2) convergence
+  - local quadratic convergence
+  - affine-invariant assumptions
+  - self-concordance
+  - second-order optimization
+  - explicit stepsize formula
+  - subproblem-free newton step
+  - cubically regularized newton comparison
   link: https://arxiv.org/abs/2211.00140
   pdf: https://arxiv.org/pdf/2211.00140
-  tags: []
+  tags:
+  - Optimization
+  - Second-Order Methods
+  - Newton Methods
+  - Convergence Theory
   title: A Damped Newton Method Achieves Global $\mathcal O \left(\frac{1}{k^2}\right)$
     and Local Quadratic Convergence Rate
   type: cpaper
@@ -4174,9 +4668,21 @@
 - authors: "Zhengqing Gao, Huimin Wu, <strong>Martin Tak\xE1\u010D</strong>, Bin Gu"
   journal: 31st ACM International Conference on Information and Knowledge Management,
     CIKM2022
-  keywords: []
+  keywords:
+  - nonlinear semi-supervised learning
+  - balanced constraints
+  - large-scale learning
+  - constrained learning
+  - semi-supervised classification
+  - nonlinear models
+  - practical scalability
+  - learning with limited labels
   link: https://dl.acm.org/doi/10.1145/3511808.3557150
-  tags: []
+  tags:
+  - Semi-Supervised Learning
+  - Optimization
+  - Scalable Machine Learning
+  - Constrained Learning
   title: Towards Practical Large Scale Non-Linear Semi-Supervised Learning with Balanced
     Constraints
   type: cpaper
@@ -4195,10 +4701,24 @@
     \ Saveliy Chezhegov, Rachael Tappenden, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Alexander Gasnikov"
   journal: EURO Journal on Computational Optimization
-  keywords: []
+  keywords:
+  - decentralized personalized federated learning
+  - personalization modes
+  - lower bounds
+  - optimal algorithms
+  - communication costs
+  - local computation costs
+  - network-aware penalty
+  - computational network structure
+  - local model deviation
+  - decentralized optimization
   link: https://www.sciencedirect.com/science/article/pii/S219244062200017X?via%3Dihub
   pdf: https://arxiv.org/pdf/2107.07190
-  tags: []
+  tags:
+  - Federated Learning
+  - Distributed Optimization
+  - Optimization
+  - Machine Learning
   title: 'Decentralized Personalized Federated Learning: Lower Bounds and Optimal
     Algorithm for All Personalization Modes'
   type: jpaper
@@ -4224,8 +4744,23 @@
     theoretical findings.'
   authors: "Alexander Rogozin, Farshed Abdukhakimov, Dmitry Kamzolov, <strong>Martin\
     \ Tak\xE1\u010D</strong>, Francesco Orabona"
-  keywords: []
-  tags: []
+  keywords:
+  - deep linear networks
+  - sharpness
+  - bounded smoothness
+  - hessian eigenvalues
+  - global minima
+  - l2 regularization
+  - balanced weights
+  - gradient descent convergence
+  - learning rate dependence
+  - nonconvex objectives
+  tags:
+  - Optimization
+  - Deep Learning
+  - Neural Networks
+  - Nonconvex Optimization
+  - Regularization
   title: On Sharpness in Deep Linear Networks
   type: tpaper
   year: '2022'
@@ -4250,8 +4785,22 @@
     model-based online algorithm with regret guarantees under LTV dynamical systems.'
   authors: "Yuzhen Han, Ruben Solozabal, Jing Dong, Xingyu Zhou, <strong>Martin Tak\xE1\
     \u010D</strong>, Bin Gu"
-  keywords: []
-  tags: []
+  keywords:
+  - linear time-varying dynamical systems
+  - online control
+  - regret minimization
+  - optimism in the face of uncertainty
+  - non-stationary systems
+  - state feedback policies
+  - restarting strategy
+  - sliding window strategy
+  - model-based control
+  - sublinear regret
+  tags:
+  - Control
+  - Online Learning
+  - Optimization
+  - Dynamical Systems
   title: Learning to Control under Time-Varying Environment
   type: tpaper
   year: '2022'
@@ -4278,10 +4827,26 @@
   authors: "Naif Alkhunaizi, Dmitry Kamzolov, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Karthik Nandakumar"
   journal: MICCAI2022
-  keywords: []
+  keywords:
+  - poisoning attacks
+  - robust aggregation
+  - distance-based outlier suppression
+  - byzantine failures
+  - copula-based outlier detection
+  - malicious clients
+  - heterogeneous data distributions
+  - federated parameter updates
+  - medical imaging datasets
+  - chexpert
+  - ham10000
   link: https://link.springer.com/chapter/10.1007/978-3-031-16452-1_64
   pdf: https://link.springer.com/content/pdf/10.1007/978-3-031-16452-1.pdf?pdf=button
-  tags: []
+  tags:
+  - Federated Learning
+  - Robustness
+  - Computer Vision
+  - Medical Imaging
+  - Security
   title: Suppressing Poisoning Attacks on Federated Learning for Medical Imaging
   type: cpaper
   year: '2022'
@@ -4310,10 +4875,25 @@
   authors: "Yicheng Chen, Rick S. Blum, <strong>Martin Tak\xE1\u010D</strong>, Brian\
     \ M. Sadler"
   journal: Journal of Selected Topics in Signal Processing
-  keywords: []
+  keywords:
+  - distributed learning
+  - gradient sparsification
+  - gradient differences
+  - error correction
+  - communication efficiency
+  - worker-server architecture
+  - strongly convex optimization
+  - nonconvex optimization
+  - linear convergence
+  - communication bit savings
   link: https://arxiv.org/abs/2202.02491
   pdf: https://arxiv.org/pdf/2202.02491.pdf
-  tags: []
+  tags:
+  - Distributed Optimization
+  - Optimization
+  - Machine Learning
+  - Wireless Communications
+  - Signal Processing
   title: Distributed Learning With Sparsified Gradient Differences
   type: jpaper
   year: '2022'
@@ -4331,10 +4911,26 @@
     \ Dmitry Kamzolov, Aleksandr Beznosikov, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Pavel Dvurechensky, Bin Gu"
   journal: ICML
-  keywords: []
+  keywords:
+  - gradient-free optimization
+  - zeroth-order methods
+  - black-box convex optimization
+  - non-smooth convex optimization
+  - oracle complexity
+  - iteration complexity
+  - optimal first-order methods
+  - parallel computations
+  - stochastic optimization
+  - saddle-point problems
+  - distributed optimization
   link: https://arxiv.org/abs/2201.12289
   pdf: https://proceedings.mlr.press/v162/gasnikov22a/gasnikov22a.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Convex Optimization
+  - Zeroth-Order Methods
+  - Distributed Optimization
+  - Stochastic Optimization
   title: The Power of First-Order Smooth Optimization for Black-Box Non-Smooth Problems
   type: cpaper
   year: '2022'
@@ -4354,10 +4950,25 @@
     thus, requiring less tuning compared to Stochastic Gradient Descent (SGD) method.
   authors: "Joshua Griffin, Majid Jahani, <strong>Martin Tak\xE1\u010D</strong>, Seyedalireza\
     \ Yektamaram, Wenwen Zhou"
-  keywords: []
+  keywords:
+  - minibatch stochastic quasi-newton methods
+  - limited memory quasi-newton
+  - nonconvex optimization
+  - deep learning optimization
+  - progressive trust-region updates
+  - stochastic model evaluation
+  - gradient batch-size selection
+  - quasi-newton restart strategy
+  - convergence analysis
+  - hyperparameter robustness
   link: http://www.optimization-online.org/DB_HTML/2022/01/8760.html
   pdf: http://www.optimization-online.org/DB_FILE/2022/01/8760.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Deep Learning
+  - Second-Order Methods
+  - Stochastic Optimization
+  - Robustness
   title: A minibatch stochastic Quasi-Newton method adapted for nonconvex deep learning
     problems
   type: tpaper
@@ -4378,10 +4989,24 @@
   authors: "Majid Jahani, Sergey Rusakov, Zheng Shi, Peter Richt\xE1rik, Michael W.\
     \ Mahoney, <strong>Martin Tak\xE1\u010D</strong>"
   journal: International Conference on Learning Representations (ICLR)
-  keywords: []
+  keywords:
+  - adaptive optimization
+  - second-order information
+  - diagonal preconditioning
+  - local curvature estimation
+  - lipschitz smoothness
+  - automatic step-size selection
+  - learning rate tuning
+  - stochastic regimes
+  - nonconvex optimization
+  - convergence guarantees
   link: https://arxiv.org/abs/2109.05198
   pdf: https://arxiv.org/pdf/2109.05198.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Second-Order Methods
+  - Machine Learning
+  - Stochastic Optimization
   title: Doubly Adaptive Scaled Algorithm for Machine Learning Using Second-Order
     Information
   type: cpaper
@@ -4397,11 +5022,25 @@
     of this approach.
   authors: "Aleksandr Beznosikov, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Optimization for Machine Learning Workshop @ NeurIPS 2021
-  keywords: []
+  keywords:
+  - random reshuffling
+  - sarah algorithm
+  - stochastic recursive gradients
+  - variance reduction
+  - stochastic gradient descent
+  - full gradient estimation
+  - finite-sum optimization
+  - epoch gradient aggregation
+  - theoretical convergence analysis
+  - numerical experiments
   link: https://arxiv.org/abs/2111.13322
   ltype: Optimization for Machine Learning Workshop @ NeurIPS 2021
   pdf: https://arxiv.org/pdf/2111.13322.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Stochastic Optimization
+  - Machine Learning
+  - Variance Reduction
   title: Random-reshuffled SARAH does not need a full gradient computations
   type: cpaper
   year: '2021'
@@ -4431,38 +5070,69 @@
   authors: "Albert S. Berahas, Majid Jahani, Peter Richt\xE1rik, <strong>Martin Tak\xE1\
     \u010D</strong>"
   journal: Optimization Methods and Software (OMS)
-  keywords: []
+  keywords:
+  - sampled quasi-newton methods
+  - sampled lbfgs
+  - sampled lsr1
+  - hessian approximation
+  - inverse hessian approximation
+  - local curvature information
+  - neural network training
+  - convergence guarantees
+  - parallel computing
+  - classification benchmarks
   link: https://www.tandfonline.com/doi/full/10.1080/10556788.2021.1977806
   pdf: https://arxiv.org/pdf/1901.09997.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Second-Order Methods
+  - Machine Learning
+  - Deep Learning
+  - Distributed Optimization
   title: 'Quasi-Newton Methods for Machine Learning: Forget the Past, Just Sample'
   type: jpaper
   year: '2021'
-- abstract: "The goal of text-to-image synthesis is to generate a visually realistic\
-    \ image that matches a given text description. In practice, the captions annotated\
-    \ by humans for the same image have large variance in terms of contents and the\
-    \ choice of words. The linguistic discrepancy between the captions of the identical\
-    \ image leads to the synthetic images deviating from the ground truth. To address\
-    \ this issue, we propose a contrastive learning approach to improve the quality\
-    \ and enhance the semantic consistency of synthetic images. In the pre-training\
-    \ stage, we utilize the contrastive learning approach to learn the consistent\
-    \ textual representations for the captions corresponding to the same image. Furthermore,\
-    \ in the following stage of GAN training, we employ the contrastive learning method\
-    \ to enhance the consistency between the generated images from the captions related\
-    \ to the same image. We evaluate our approach over two popular text-to-image synthesis\
-    \ models, AttnGAN and DM-GAN, on datasets CUB and COCO, respectively. Experimental\
-    \ results have shown that our approach can effectively improve the quality of\
-    \ synthetic images in terms of three metrics: IS, FID and R-precision. Especially,\
-    \ on the challenging COCO dataset, our approach boosts the FID significantly by\
-    \ 29.60% over AttnGAn and by 21.96% over DM-GAN.\n\t\t"
+- abstract: 'The goal of text-to-image synthesis is to generate a visually realistic
+    image that matches a given text description. In practice, the captions annotated
+    by humans for the same image have large variance in terms of contents and the
+    choice of words. The linguistic discrepancy between the captions of the identical
+    image leads to the synthetic images deviating from the ground truth. To address
+    this issue, we propose a contrastive learning approach to improve the quality
+    and enhance the semantic consistency of synthetic images. In the pre-training
+    stage, we utilize the contrastive learning approach to learn the consistent textual
+    representations for the captions corresponding to the same image. Furthermore,
+    in the following stage of GAN training, we employ the contrastive learning method
+    to enhance the consistency between the generated images from the captions related
+    to the same image. We evaluate our approach over two popular text-to-image synthesis
+    models, AttnGAN and DM-GAN, on datasets CUB and COCO, respectively. Experimental
+    results have shown that our approach can effectively improve the quality of synthetic
+    images in terms of three metrics: IS, FID and R-precision. Especially, on the
+    challenging COCO dataset, our approach boosts the FID significantly by 29.60%
+    over AttnGAn and by 21.96% over DM-GAN.'
   authors: "Hui Ye, Xiulong Yang, <strong>Martin Tak\xE1\u010D</strong>, Rajshekhar\
     \ Sunderraman, Shihao Ji"
   journal: The British Machine Vision Conference (BMVC 2021)
-  keywords: []
+  keywords:
+  - text-to-image synthesis
+  - contrastive learning
+  - gan training
+  - caption representation learning
+  - semantic consistency
+  - synthetic image quality
+  - attngan
+  - dm-gan
+  - cub dataset
+  - coco dataset
+  - fid evaluation
+  - r-precision
   link: https://arxiv.org/abs/2107.02423
   ltype: arxiv
   pdf: https://arxiv.org/pdf/2107.02423.pdf
-  tags: []
+  tags:
+  - Computer Vision
+  - Generative Models
+  - Contrastive Learning
+  - Multimodal Learning
   title: Improving Text-to-Image Synthesis Using Contrastive Learning
   type: cpaper
   year: '2021'
@@ -4482,11 +5152,25 @@
   authors: "Majid Jahani, Naga Venkata C. Gudapati, Chenxin Ma, Rachael Tappenden,\
     \ <strong>Martin Tak\xE1\u010D</strong>"
   journal: Computational Optimization and Applications
-  keywords: []
+  keywords:
+  - underestimate sequences
+  - estimate sequences
+  - accelerated gradient methods
+  - optimality certificates
+  - strongly convex functions
+  - composite optimization
+  - lower bounds
+  - linear convergence
+  - optimal linear rate
+  - stopping conditions
   link: https://link.springer.com/article/10.1007/s10589-021-00269-4
   ltype: Computational Optimization and Applications
   pdf: https://arxiv.org/pdf/1710.03695.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Convex Optimization
+  - First-Order Methods
+  - Accelerated Methods
   title: 'Fast and Safe: Accelerated gradient methods with optimality certificates
     and underestimate sequences'
   type: jpaper
@@ -4517,11 +5201,25 @@
   authors: "Majid Jahani, Mohammadreza Nazari, Rachael Tappenden, Albert S. Berahas,\
     \ <strong>Martin Tak\xE1\u010D</strong>"
   journal: AISTATS '21
-  keywords: []
+  keywords:
+  - empirical risk minimization
+  - symmetric blockwise truncated optimization
+  - partial curvature information
+  - scaled steepest descent
+  - ill-conditioned problems
+  - stationary point convergence
+  - strongly convex objectives
+  - nonconvex optimization
+  - stochastic variant
+  - machine learning benchmarks
   link: http://proceedings.mlr.press/v130/jahani21a.html
   ltype: AISTATS '21
   pdf: http://proceedings.mlr.press/v130/jahani21a/jahani21a.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Second-Order Methods
+  - Machine Learning
+  - Stochastic Optimization
   title: 'SONIA: A Symmetric Blockwise Truncated Optimization Algorithm'
   type: cpaper
   year: '2021'
@@ -4557,10 +5255,25 @@
   authors: "Krishnan Kumaran, Dimitri Papageorgiou, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Laurens Lueg, Nicolas Sahinidis"
   journal: Computers and Chemical Engineering
-  keywords: []
+  keywords:
+  - mahalanobis metric learning
+  - supervised classification
+  - mixed-integer optimization
+  - agglomerative clustering
+  - generalized distance metrics
+  - local class clusters
+  - active sampling regions
+  - boundary and outlier points
+  - high-dimensional data
+  - targeted data acquisition
   link: https://authors.elsevier.com/sd/article/S0098-1354(19)31322-5
   ltype: Computers and Chemical Engineering
-  tags: []
+  tags:
+  - Machine Learning
+  - Metric Learning
+  - Optimization
+  - Active Learning
+  - Classification
   title: Active Metric Learning for Supervised Classification
   type: jpaper
   year: '2021'
@@ -4577,10 +5290,25 @@
     \ <strong>Martin Tak\xE1\u010D</strong>"
   journal: 6th Annual Conference on Machine Learning, Optimization and Data Science
     (LOD), 2020
-  keywords: []
+  keywords:
+  - distributed sr1
+  - ds-lsr1
+  - sampled lsr1
+  - quasi-newton methods
+  - communication-efficient optimization
+  - limited-memory sr1
+  - matrix-free algorithms
+  - inverse-free algorithms
+  - sketching techniques
+  - neural network training
+  - empirical risk minimization
   link: http://arxiv.org/abs/1905.13096
   pdf: http://arxiv.org/pdf/1905.13096.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Distributed Optimization
+  - Second-Order Methods
+  - Machine Learning
   title: 'Scaling Up Quasi-Newton Algorithms: Communication Efficient Distributed
     SR1'
   type: cpaper
@@ -4600,10 +5328,25 @@
     methodology through extensive simulations.
   authors: "Guangyi Liu, Arash Amini, <strong>Martin Tak\xE1\u010D</strong>, H\xE9\
     ctor Mu\xF1oz-Avila, Nader Motee"
-  keywords: []
+  keywords:
+  - distributed map classification
+  - multi-robot systems
+  - local visual observations
+  - neighbor communication
+  - information fusion
+  - graph decomposition
+  - directed star graphs
+  - scalable offline training
+  - informative path planning
+  - large-scale environments
   link: https://arxiv.org/abs/2012.10480
   pdf: https://arxiv.org/pdf/2012.10480.pdf
-  tags: []
+  tags:
+  - Robotics
+  - Distributed Systems
+  - Computer Vision
+  - Graph Learning
+  - Machine Learning
   title: Distributed Map Classification using Local Observations
   type: tpaper
   year: '2020'
@@ -4628,11 +5371,27 @@
   authors: "Soheil Sadeghi Eshkevari, <strong>Martin Tak\xE1\u010D</strong>, Shamim\
     \ Pakzad, Majid Jahani"
   journal: Engineering Structures
-  keywords: []
+  keywords:
+  - physics-based recurrent neural network
+  - structural response prediction
+  - nonlinear dynamic systems
+  - multiple degree of freedom systems
+  - ground motion excitation
+  - displacement velocity acceleration prediction
+  - internal force estimation
+  - differential equation solver architecture
+  - trajectory loss function
+  - trust-region training
+  - hardsampling
+  - system identification
   link: https://www.sciencedirect.com/science/article/abs/pii/S0141029620341833?via%3Dihub
   ltype: Engineering Structures
   pdf: https://arxiv.org/pdf/2007.01814.pdf
-  tags: []
+  tags:
+  - Physics-Informed Learning
+  - Neural Networks
+  - Structural Dynamics
+  - Optimization
   title: 'DynNet: Physics-based neural architecture design for linear and nonlinear
     structural response modeling and prediction'
   type: jpaper
@@ -4642,23 +5401,43 @@
     the variance in the data as much as possible, while controlling the number of
     nonzero loadings in these combinations. In this paper we consider 8 different
     optimization formulations for computing a single sparse loading vector; these
-    are obtained by combining the following factors: we employ  norms for measuring
-    variance (L2, L1) and  sparsity-inducing norms (L0, L1), which are used in  different
-    ways (constraint, penalty). Three of our formulations, notably the one with L0
-    constraint and L1 variance, have not been considered in the literature. We give
-    a unifying reformulation which we propose to solve via a natural alternating maximization
-    (AM) method. We show the the AM method is nontrivially equivalent to GPower (Journee
-    et al; JMLR :517--553, 2010) for all our formulations. Besides this, we provide
-    24 efficient parallel SPCA implementations: 3 codes (multi-core, GPU and cluster)
-    for each of the 8 problems. Parallelism in the methods is aimed at '
+    are obtained by combining the following factors: we employ two norms for measuring
+    variance (L2, L1) and two sparsity-inducing norms (L0, L1), which are used in
+    two different ways (constraint, penalty). Three of our formulations, notably the
+    one with L0 constraint and L1 variance, have not been considered in the literature.
+    We give a unifying reformulation which we propose to solve via a natural alternating
+    maximization (AM) method. We show the the AM method is nontrivially equivalent
+    to GPower (Journee et al; JMLR 11:517--553, 2010) for all our formulations. Besides
+    this, we provide 24 efficient parallel SPCA implementations: 3 codes (multi-core,
+    GPU and cluster) for each of the 8 problems. Parallelism in the methods is aimed
+    at  speeding up computations (our GPU code can be 100 times faster than an efficient
+    serial code written in C++), obtaining solutions explaining more variance and
+    dealing with big data problems (our cluster code is able to solve a 357 GB problem
+    in about a minute).'
   authors: "Peter Richt\xE1rik, Majid Jahani, Selin Damla Ahipasaoglu, <strong>Martin\
     \ Tak\xE1\u010D</strong>"
   journal: Optimization and Engineering (OPTE)
-  keywords: []
+  keywords:
+  - sparse principal component analysis
+  - alternating maximization
+  - sparse loading vectors
+  - l0 sparsity constraints
+  - l1 sparsity penalties
+  - l1 variance maximization
+  - l2 variance maximization
+  - gpower equivalence
+  - parallel spca implementations
+  - gpu acceleration
+  - cluster computing
+  - big data optimization
   link: https://link.springer.com/article/10.1007%2Fs11081-020-09562-3
   ltype: Optimization and Engineering (OPTE)
   pdf: http://arxiv.org/pdf/1212.4137v1.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Machine Learning
+  - Parallel Computing
+  - Dimensionality Reduction
   title: 'Alternating Maximization: Unifying Framework for 8 Sparse PCA Formulations
     and Efficient Parallel Codes'
   type: jpaper
@@ -4678,10 +5457,25 @@
     convex case stochastic value functions.
   authors: "Lam Minh Nguyen, Katya Scheinberg, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Optimization Methods and Software (GOMS)
-  keywords: []
+  keywords:
+  - inexact sarah
+  - stochastic gradient algorithms
+  - variance reduction
+  - mini-batch gradients
+  - expectation minimization
+  - convergence rates
+  - strongly convex optimization
+  - convex optimization
+  - nonconvex optimization
+  - sample complexity
+  - smooth stochastic functions
   link: https://www.tandfonline.com/doi/full/10.1080/10556788.2020.1818081
   pdf: https://arxiv.org/pdf/1811.10105.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Stochastic Optimization
+  - Variance Reduction
+  - Convex Optimization
   title: Inexact SARAH Algorithm for Stochastic Optimization
   type: jpaper
   year: '2020'
@@ -4736,18 +5530,45 @@
   authors: "Aryan Mokhtari, Alec Koppel, <strong>Martin Tak\xE1\u010D</strong>, Alejandro\
     \ Ribeiro"
   journal: Journal of Machine Learning Research
-  keywords: []
+  keywords:
+  - parallel stochastic algorithms
+  - doubly stochastic optimization
+  - randomized block coordinate updates
+  - stochastic gradients
+  - strongly convex objectives
+  - hessian approximation
+  - asynchronous updates
+  - large-scale learning
+  - random parallel stochastic algorithm
+  - mnist classification
   link: http://jmlr.org/papers/v21/16-311.html
   pdf: http://jmlr.org/papers/volume21/16-311/16-311.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Distributed Optimization
+  - Stochastic Optimization
+  - Second-Order Methods
+  - Machine Learning
   title: A Class of Parallel Doubly Stochastic Algorithms for Large-Scale Learning
   type: jpaper
   year: '2020'
 - authors: "Nur Sila Gulgec, <strong>Martin Tak\xE1\u010D</strong>, Shamim N. Pakzad"
   journal: Structure and Infrastructure Engineering
-  keywords: []
+  keywords:
+  - uncertainty quantification
+  - digital image correlation
+  - deep learning damage diagnosis
+  - structural damage diagnostics
+  - experimental evaluation
+  - image-based measurement
+  - infrastructure monitoring
+  - diagnostic uncertainty
   link: https://www.tandfonline.com/doi/full/10.1080/15732479.2020.1815224
-  tags: []
+  tags:
+  - Computer Vision
+  - Robustness
+  - Deep Learning
+  - Structural Health Monitoring
   title: Uncertainty quantification in digital image correlation for experimental
     evaluation of deep learning based damage diagnostic
   type: jpaper
@@ -4783,10 +5604,24 @@
 
     Constraint Programming (CP) solvers.'
   authors: "Ruben Solozabal, Josu Ceberio, <strong>Martin Tak\xE1\u010D</strong>"
-  keywords: []
+  keywords:
+  - constrained combinatorial optimization
+  - deep reinforcement learning
+  - neural combinatorial optimization
+  - constrained markov decision processes
+  - penalty signals
+  - memory-less architectures
+  - job shop scheduling
+  - resource allocation
+  - constraint programming solvers
+  - heuristic algorithms
   link: https://arxiv.org/abs/2006.11984
   pdf: https://arxiv.org/pdf/2006.11984.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Reinforcement Learning
+  - Combinatorial Optimization
+  - Constrained Optimization
   title: Constrained Combinatorial Optimization with Reinforcement Learning
   type: tpaper
   year: '2020'
@@ -4804,10 +5639,25 @@
   authors: "Zheng Shi, Nur Sila Gulgec, Albert S. Berahas, Shamim N. Pakzad, <strong>Martin\
     \ Tak\xE1\u010D</strong>"
   journal: 19th IEEE International Conference on Machine Learning and Applications
-  keywords: []
+  keywords:
+  - finite difference neural networks
+  - partial differential equations
+  - trajectory data
+  - dynamical systems prediction
+  - heat equation
+  - forward euler method
+  - hessian-free trust region
+  - noisy data
+  - forcing terms
+  - few trainable parameters
   link: https://arxiv.org/abs/2006.01892
   pdf: https://arxiv.org/pdf/2006.01892.pdf
-  tags: []
+  tags:
+  - Scientific Machine Learning
+  - Neural Networks
+  - Optimization
+  - Partial Differential Equations
+  - Second-Order Methods
   title: 'Finite Difference Neural Networks: Fast Prediction of Partial Differential
     Equations'
   type: cpaper
@@ -4833,11 +5683,27 @@
     method, with fixed stepsize (relaxation parameter), applied to the reformulations.'
   authors: "Peter Richt\xE1rik, <strong>Martin Tak\xE1\u010D</strong>"
   journal: SIAM Journal on Matrix Analysis and Applications (SIMAX)
-  keywords: []
+  keywords:
+  - stochastic reformulations
+  - consistent linear systems
+  - stochastic optimization
+  - random matrix distributions
+  - global linear convergence
+  - stochastic preconditioning
+  - condition numbers
+  - stochastic gradient descent
+  - stochastic newton method
+  - stochastic proximal point method
+  - stochastic fixed point problems
+  - stochastic projection method
   link: https://epubs.siam.org/doi/pdf/10.1137/18M1179249
   ltype: SIAM Journal on Matrix Analysis and Applications
   pdf: https://epubs.siam.org/doi/pdf/10.1137/18M1179249
-  tags: []
+  tags:
+  - Optimization
+  - Numerical Linear Algebra
+  - Randomized Algorithms
+  - Stochastic Methods
   title: 'Stochastic Reformulations of Linear Systems: Algorithms and Convergence
     Theory'
   type: jpaper
@@ -4886,45 +5752,84 @@
     data for fatigue assessment'
   type: jpaper
   year: '2020'
-- abstract: In this paper we consider large-scale smooth optimization problems with
-    multiple linear coupled constraints. Due to the non-separability of the constraints,
-    arbitrary random sketching would not be guaranteed to work. Thus, we first investigate
-    necessary and sufficient conditions for the sketch sampling to have well-defined
-    algorithms. Based on these sampling conditions we developed new sketch descent
-    methods for solving general smooth linearly constrained problems, in particular,
-    random sketch descent and accelerated random sketch descent methods. From our
-    knowledge, this is the first convergence analysis of random sketch descent algorithms
-    for optimization problems with multiple non-separable linear constraints. For
-    the general case, when the objective function is smooth and non-convex, we prove
-    for the non-accelerated variant sublinear rate in expectation for an appropriate
-    optimality measure. In the smooth convex case, we derive for both algorithms,
-    non-accelerated and accelerated random sketch descent, sublinear convergence rates
-    in the expected values of the objective function. Additionally, if the objective
-    function satisfies a strong convexity type condition, both algorithms converge
-    linearly in expectation. In special cases, where complexity bounds are known for
-    some particular sketching algorithms, such as coordinate descent methods for optimization
-    problems with a single linear coupled constraint, our theory recovers the best-known
-    bounds. We also show that when random sketch is sketching the coordinate directions
-    randomly produces better results than the fixed selection rule. Finally, we present
-    some numerical examples to illustrate the performances of our new algorithms.
-  authors: "Ion Necoara, <strong>Martin Tak\xE1\u010D</strong>"
-  journal: IMA Journal of Numerical Analysis
-  keywords: []
-  link: https://academic.oup.com/imajna/advance-article-abstract/doi/10.1093/imanum/draa018/5834388
-  ltype: IMA Journal of Numerical Analysis
-  pdf: https://arxiv.org/pdf/1808.02530.pdf
-  tags: []
-  title: Randomized sketch descent methods for non-separable linearly constrained
-    optimization
+- abstract: 'Many of the civil structures experience significant vibrations and repeated
+    stress
+
+    cycles during their life span. These conditions are the bases for fatigue analysis
+    to
+
+    accurately establish the remaining fatigue life of the structures that ideally
+    requires
+
+    a full-field strain assessment of the structures over years of data collection.
+    Traditional inspection methods collect strain measurements by using strain gauges
+    for a
+
+    short time span and extrapolate the measurements in time; nevertheless, large-scale
+
+    deployment of strain gauges is expensive and laborious as more spatial information
+
+    is desired. This paper introduces a deep learning-based approach to replace this
+    high
+
+    cost by employing inexpensive data coming from acceleration sensors. The proposed
+
+    approach utilizes collected acceleration responses as inputs to a multistage deep
+    neural network based on long short-term memory and fully connected layers to estimate
+
+    the strain responses. The memory requirement of training long acceleration sequences
+
+    is reduced by proposing a novel training strategy. In the evaluation of the method,
+    a
+
+    laboratory-scale horizontally curved girder subjected to various loading scenarios
+    is
+
+    tested.'
+  authors: "Nur Sila Gulgec, <strong>Martin Tak\xE1\u010D</strong>, Shamim N. Pakzad"
+  journal: Computer-Aided Civil and Infrastructure Engineering
+  keywords:
+  - strain estimation
+  - acceleration data
+  - fatigue assessment
+  - structural sensing
+  - long short-term memory
+  - multistage neural network
+  - civil structures
+  - vibration response
+  - curved girder testing
+  - sensor-based monitoring
+  link: https://onlinelibrary.wiley.com/doi/full/10.1111/mice.12565
+  ltype: Computer-Aided Civil and Infrastructure Engineering
+  tags:
+  - Deep Learning
+  - Structural Health Monitoring
+  - Civil Engineering
+  - Time Series
+  - Fatigue Assessment
+  title: 'Structural sensing with deep learning: Strain estimation from acceleration
+    data for fatigue assessment'
   type: jpaper
   year: '2020'
 - authors: "Soheil Sadeghi Eshkevari, Shamim N. Pakzad, <strong>Martin Tak\xE1\u010D\
     </strong>, Thomas J. Matarazzo"
   journal: ASCE's Journal of Engineering Mechanics
-  keywords: []
+  keywords:
+  - bridge modal identification
+  - mobile sensors
+  - sparse vibration data
+  - bridge vibration monitoring
+  - structural dynamics
+  - modal analysis
+  - civil infrastructure monitoring
+  - mobile sensing
   link: https://ascelibrary.org/doi/abs/10.1061/%28ASCE%29EM.1943-7889.0001733
   ltype: ASCE's Journal of Engineering Mechanics
-  tags: []
+  tags:
+  - Civil Engineering
+  - Structural Health Monitoring
+  - Signal Processing
+  - Sensor Networks
   title: Modal Identification of Bridges using Mobile Sensors with Sparse Vibration
     Data
   type: jpaper
@@ -4945,11 +5850,25 @@
   authors: "Majid Jahani, Xi He, Chenxin Ma, Aryan Mokhtari, Dheevatsa Mudigere, Alejandro\
     \ Ribeiro, <strong>Martin Tak\xE1\u010D</strong>"
   journal: AISTATS 2020
-  keywords: []
+  keywords:
+  - distributed accumulated newton conjugate gradient
+  - hessian-free optimization
+  - large-scale empirical risk minimization
+  - accumulating sample strategy
+  - multistage warm starts
+  - statistical accuracy
+  - data pass reduction
+  - strong scaling
+  - communication efficiency
+  - convex convergence analysis
   link: http://proceedings.mlr.press/v108/jahani20a.html
   ltype: AISTATS 2020 (accepted)
   pdf: http://proceedings.mlr.press/v108/jahani20a/jahani20a.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Distributed Optimization
+  - Second-Order Methods
+  - Machine Learning
   title: Efficient Distributed Hessian Free Algorithm for Large-scale Empirical Risk
     Minimization via Accumulating Sample Strategy
   type: cpaper
@@ -4971,10 +5890,24 @@
     of damage detection and localization approach.
   authors: "Nur Sila Gulgec, <strong>Martin Tak\xE1\u010D</strong>, Shamim N. Pakzad"
   journal: Dynamics of Civil Structures, Volume 2 pp. 205-210
-  keywords: []
+  keywords:
+  - digital image correlation
+  - structural health monitoring
+  - damage detection
+  - damage localization
+  - deep neural networks
+  - civil infrastructure
+  - dense sensing data
+  - laboratory testing
+  - induced damage
+  - measurement noise
   link: https://link.springer.com/chapter/10.1007/978-3-030-12115-0_28
   ltype: Dynamics of Civil Structures, Volume 2 pp. 205-210
-  tags: []
+  tags:
+  - Computer Vision
+  - Deep Learning
+  - Structural Health Monitoring
+  - Civil Engineering
   title: Experimental Study on Digital Image Correlation for Deep Learning-Based Damage
     Diagnostic
   type: cpaper
@@ -4997,10 +5930,25 @@
     iterates, and the first fixed point methods with compressed iterates.'
   authors: "Selim Chraibi, Ahmed Khaled, Dmitry Kovalev, Peter Richt\xE1rik, Adil\
     \ Salim, <strong>Martin Tak\xE1\u010D</strong>"
-  keywords: []
+  keywords:
+  - compressed iterates
+  - distributed fixed point methods
+  - iterate compression
+  - variance reduction
+  - communication complexity
+  - stochastic fixed point iterations
+  - non asymptotic convergence rates
+  - gradient descent
+  - federated learning
+  - compression operators
   link: https://arxiv.org/abs/1912.09925
   pdf: https://arxiv.org/pdf/1912.09925
-  tags: []
+  tags:
+  - Optimization
+  - Distributed Optimization
+  - Federated Learning
+  - Communication Efficiency
+  - Fixed Point Methods
   title: Distributed Fixed Point Methods with Compressed Iterates
   type: tpaper
   year: '2019'
@@ -5024,18 +5972,44 @@
   authors: "Soheil Sadeghi Eshkevari, <strong>Martin Tak\xE1\u010D</strong>, Shamim\
     \ N. Pakzad, Soheila Sadeghi Eshkevari"
   journal: Structural Health Monitoring 2019
-  keywords: []
+  keywords:
+  - bridge mode shape identification
+  - matrix completion
+  - mobile sensor data
+  - response matrix reconstruction
+  - convex optimization
+  - output-only system identification
+  - modal properties estimation
+  - natural frequencies
+  - damping ratios
+  - fixed sensor networks
   link: http://www.dpi-proceedings.com/index.php/shm2019/article/view/32499
   ltype: Structural Health Monitoring 2019
-  tags: []
+  tags:
+  - Structural Health Monitoring
+  - Optimization
+  - Signal Processing
+  - Civil Engineering
   title: High Resolution Bridge Mode Shape Identification Via Matrix Completion Approach
   type: cpaper
   year: '2019'
 - authors: "Jie Liu, Yu Rong, <strong>Martin Tak\xE1\u010D</strong>, Junzhou Huang"
   journal: Beyond First Order Methods in ML Workshop @ NeurIPS 2019
-  keywords: []
+  keywords:
+  - distributed stochastic l-bfgs
+  - sampled second-order information
+  - limited-memory bfgs
+  - quasi-newton methods
+  - stochastic optimization
+  - distributed optimization
+  - second-order acceleration
+  - machine learning optimization
   ltype: Beyond First Order Methods in ML Workshop @ NeurIPS 2019
-  tags: []
+  tags:
+  - Optimization
+  - Distributed Optimization
+  - Second-Order Methods
+  - Machine Learning
   title: Accelerating Distributed Stochastic L-BFGS by sampled 2nd-Order Information
   type: cpaper
   year: '2019'
@@ -5052,11 +6026,26 @@
   authors: "Nur Sila Gulgec, Zheng Shi, Neil Deshmukh, Shamim Pakzad, <strong>Martin\
     \ Tak\xE1\u010D</strong>"
   journal: Beyond First Order Methods in ML Workshop @ NeurIPS 2019
-  keywords: []
+  keywords:
+  - partial differential equations
+  - finite difference neural networks
+  - convolutional neural networks
+  - hessian-free optimization
+  - trust-region conjugate gradient
+  - pde prediction
+  - auxiliary time steps
+  - dynamical behavior prediction
+  - adam comparison
+  - heat equation
   link: https://arxiv.org/abs/1910.12680
   ltype: Beyond First Order Methods in ML Workshop @ NeurIPS 2019
   pdf: https://arxiv.org/pdf/1910.12680.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Second-Order Methods
+  - Scientific Machine Learning
+  - Deep Learning
+  - Dynamical Systems
   title: 'FD-Net with Auxiliary Time Steps: Fast Prediction of PDEs using Hessian-Free
     Trust-Region Methods'
   type: cpaper
@@ -5079,20 +6068,45 @@
     for our proposed methods, and illustrate their performance in practice.'
   authors: "Albert S. Berahas, Majid Jahani, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Optimization and Machine Learning @ NeurIPS 2019
-  keywords: []
+  keywords:
+  - sampled quasi-newton methods
+  - sampled lbfgs
+  - sampled lsr1
+  - hessian approximations
+  - curvature pairs
+  - local curvature information
+  - deep neural network training
+  - empirical risk minimization
+  - convergence guarantees
+  - batch optimization
   link: https://opt-ml.org/oldopt/opt19/papers.html#
   ltype: arXiv Paper
   pdf: https://opt-ml.org/papers/2019/paper_4.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Second-Order Methods
+  - Deep Learning
+  - Machine Learning
   title: Sampled Quasi-Newton Methods for Deep Learning
   type: cpaper
   year: '2019'
 - authors: "Majid Jahani, Xi He, Chenxin Ma, Aryan Mokhtari, Dheevatsa Mudigere, Alejandro\
     \ Ribeiro, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Beyond First Order Methods in ML Workshop @ NeurIPS 2019
-  keywords: []
+  keywords:
+  - distributed newton cg
+  - newton conjugate gradient
+  - accumulating strategy
+  - sample growth
+  - second-order optimization
+  - machine learning optimization
+  - beyond first-order methods
   ltype: Beyond First Order Methods in ML Workshop @ NeurIPS 2019
-  tags: []
+  tags:
+  - Optimization
+  - Distributed Optimization
+  - Second-Order Methods
+  - Machine Learning
   title: Grow Your Samples and Optimize Better via Distributed Newton CG and Accumulating
     Strategy
   type: cpaper
@@ -5110,11 +6124,26 @@
     intermediate goals and course of action.
   authors: "Hossein K. Mousavi, Guangyi Liu, Weihang Yuan, <strong>Martin Tak\xE1\u010D\
     </strong>, H\xE9ctor Mu\xF1oz-Avila, Nader Motee"
-  keywords: []
+  keywords:
+  - active perception
+  - image classification
+  - deep reinforcement learning
+  - hierarchical planning
+  - partial observability
+  - policy gradient
+  - goal reasoning
+  - robot navigation
+  - mnist handwritten digits
+  - intermediate goal selection
   link: https://arxiv.org/abs/1909.09705
   ltype: 2020 International Conference on Robotics and Automation (ICRA) - submitted
   pdf: https://arxiv.org/pdf/1909.09705.pdf
-  tags: []
+  tags:
+  - Reinforcement Learning
+  - Computer Vision
+  - Robotics
+  - Deep Learning
+  - Active Perception
   title: 'A Layered Architecture for Active Perception: Image Classification using
     Deep Reinforcement Learning'
   type: tpaper
@@ -5135,13 +6164,28 @@
     learning.
   authors: "Albert S. Berahas, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Optimization Methods and Software
-  keywords: []
+  keywords:
+  - l-bfgs
+  - multi-batch optimization
+  - quasi-newton updating
+  - fault-tolerant optimization
+  - distributed machine learning
+  - hessian approximation
+  - gradient differences
+  - convex convergence
+  - nonconvex convergence
+  - logistic regression
+  - neural network training
+  - overlap sampling
   link: https://www.tandfonline.com/doi/full/10.1080/10556788.2019.1658107
-  ltype: '
-
-    Optimization Methods and Software'
+  ltype: Optimization Methods and Software
   pdf: https://arxiv.org/pdf/1707.08552.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Second-Order Methods
+  - Distributed Optimization
+  - Robustness
+  - Machine Learning
   title: A Robust Multi-Batch L-BFGS Method for Machine Learning
   type: jpaper
   year: '2019'
@@ -5159,12 +6203,26 @@
     \ that acceleration can lead to significant performance gains."
   authors: "Chenxin Ma, Martin Jaggi, Frank E. Curtis, Nathan Srebro, <strong>Martin\
     \ Tak\xE1\u010D</strong>"
-  journal: 'Optimization Methods and Software '
-  keywords: []
+  journal: Optimization Methods and Software
+  keywords:
+  - accelerated cocoa+
+  - communication-efficient optimization
+  - primal-dual coordinate ascent
+  - distributed empirical risk minimization
+  - large-scale machine learning
+  - 1/t^2 convergence rate
+  - suboptimality reduction
+  - lipschitz continuous losses
+  - arbitrary local solvers
+  - lasso and logistic regression
   link: https://www.tandfonline.com/doi/abs/10.1080/10556788.2019.1650361?journalCode=goms20
   ltype: arXiv Paper
   pdf: https://arxiv.org/pdf/1711.05305.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Distributed Optimization
+  - Machine Learning
+  - First-Order Methods
   title: An Accelerated Communication-Efficient Primal-Dual Optimization Framework
     for Structured Machine Learning
   type: jpaper
@@ -5190,11 +6248,25 @@
   authors: "Lam Minh Nguyen, Phuong Ha Nguyen, Peter Richt\xE1rik, Katya Scheinberg,\
     \ <strong>Martin Tak\xE1\u010D</strong>, Marten van Dijk"
   journal: minor revision in Journal of Machine Learning Research (JMLR)
-  keywords: []
+  keywords:
+  - stochastic gradient descent
+  - sgd convergence
+  - bounded gradient assumption
+  - strongly convex objectives
+  - diminishing learning rates
+  - hogwild algorithm
+  - asynchronous stochastic optimization
+  - empirical risk minimization
+  - lipschitz continuous gradients
+  - learning rate conditions
   link: http://arxiv.org/abs/1811.12403
   ltype: arXiv Paper
   pdf: https://arxiv.org/pdf/1811.12403.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Stochastic Optimization
+  - Distributed Optimization
+  - Machine Learning Theory
   title: New Convergence Aspects of Stochastic Gradient Algorithms
   type: jpaper
   year: '2019'
@@ -5213,11 +6285,26 @@
     </strong>, Nader Motee"
   journal: Proceedings of the 2019 IEEE/RSJ International Conference on Intelligent
     Robots and Systems (IROS 2019)
-  keywords: []
+  keywords:
+  - multi-agent image classification
+  - decentralized consensus
+  - mobile agents
+  - partial observations
+  - pose-dependent sensing
+  - local belief updates
+  - agent communication
+  - policy gradient
+  - differentiable rewards
+  - mnist classification
   link: http://arxiv.org/abs/1905.04835
   ltype: arXiv Paper
   pdf: https://arxiv.org/pdf/1905.04835.pdf
-  tags: []
+  tags:
+  - Reinforcement Learning
+  - Computer Vision
+  - Multi-Agent Systems
+  - Robotics
+  - Distributed Learning
   title: Multi-Agent Image Classification via Reinforcement Learning
   type: cpaper
   year: '2019'
@@ -5237,11 +6324,26 @@
     and SVM approaches, especially for demands with high volatility.
   authors: "Afshin OroojlooyJadid, Lawrence Snyder, <strong>Martin Tak\xE1\u010D</strong>"
   journal: IISE Transactions
-  keywords: []
+  keywords:
+  - newsvendor problem
+  - multi-item inventory optimization
+  - order quantity optimization
+  - demand forecasting
+  - correlated demand
+  - distribution-free demand modeling
+  - integrated forecasting and optimization
+  - data-driven inventory control
+  - support vector machine baselines
+  - high-volatility demand
   link: https://www.tandfonline.com/doi/full/10.1080/24725854.2019.1632502
   ltype: IISE Transactions
   pdf: http://arxiv.org/pdf/1607.02177v1.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Deep Learning
+  - Operations Research
+  - Supply Chain
+  - Machine Learning
   title: Applying Deep Learning to the Newsvendor Problem
   type: jpaper
   year: '2019'
@@ -5264,11 +6366,26 @@
   authors: "MohammadReza Nazari, Majid Jahani, Lawrence V. Snyder, <strong>Martin\
     \ Tak\xE1\u010D</strong>"
   journal: arXiv
-  keywords: []
+  keywords:
+  - corrective reinforcement learning
+  - student-teacher policy learning
+  - teacher policy constraints
+  - status quo policy adaptation
+  - constrained policy optimization
+  - stochastic optimization model
+  - primal-dual policy gradient
+  - policy deviation bounds
+  - asymptotic optimality
+  - gridworld experiments
   link: http://arxiv.org/abs/1905.13562
   ltype: to be submitted to ICML 2020
   pdf: http://arxiv.org/pdf/1905.13562.pdf
-  tags: []
+  tags:
+  - Reinforcement Learning
+  - Optimization
+  - Constrained Optimization
+  - Policy Gradient
+  - Robustness
   title: "Don\u2019t Forget Your Teacher: A Corrective Reinforcement Learning Framework"
   type: tpaper
   year: '2019'
@@ -5284,11 +6401,26 @@
   authors: "Jakub Marecek, Mikhail Krechetov, Yury Maximov, <strong>Martin Tak\xE1\
     \u010D</strong>"
   journal: IJCA2019
-  keywords: []
+  keywords:
+  - entropy-penalized semidefinite programming
+  - low-rank sdp methods
+  - burer-monteiro factorization
+  - determinant-based regularization
+  - schatten-norm penalties
+  - linear-time gradient computation
+  - max-cut sdp relaxation
+  - markov random fields
+  - map inference
+  - first-order optimization methods
   link: http://arxiv.org/abs/1802.04332
   ltype: IJCA2019
   pdf: https://arxiv.org/pdf/1802.04332.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Semidefinite Programming
+  - Combinatorial Optimization
+  - Machine Learning
+  - Graphical Models
   title: Entropy-Penalized Semidefinite Programming
   type: cpaper
   year: '2019'
@@ -5309,11 +6441,26 @@
   authors: "<strong>Martin Tak\xE1\u010D</strong>, Selin Damla Ahipasaoglu, Ngai-Man\
     \ Cheung, Peter Richt\xE1rik"
   journal: Springer Proceedings in Mathematics & Statistics (MOPTA)
-  keywords: []
+  keywords:
+  - sparse pca
+  - topic discovery
+  - unlabeled images
+  - bag of visual words
+  - visual word histograms
+  - alternating maximization
+  - deflation scheme
+  - principal component interference
+  - unsupervised image categorization
+  - category prediction
   link: https://www.springerprofessional.de/en/topspin-topic-discovery-via-sparse-principal-component-interfere/16481910
   ltype: Springer Proceedings in Mathematics & Statistics
   pdf: http://arxiv.org/pdf/1311.1406v1.pdf
-  tags: []
+  tags:
+  - Computer Vision
+  - Optimization
+  - Unsupervised Learning
+  - Sparse Methods
+  - Dimensionality Reduction
   title: 'TOP-SPIN: TOPic discovery via Sparse Principal component INterference'
   type: cpaper
   year: '2019'
@@ -5338,10 +6485,25 @@
     efficiency.
   authors: "Nur Sila Gulgec, <strong>Martin Tak\xE1\u010D</strong>, Shamim N. Pakzad"
   journal: Journal of Computing in Civil Engineering (Volume 33 Issue 3 - May 2019)
-  keywords: []
+  keywords:
+  - convolutional neural networks
+  - structural damage detection
+  - damage localization
+  - damage diagnosis
+  - structural health monitoring
+  - finite element simulations
+  - strain distributions
+  - crack scenarios
+  - damaged structural connections
+  - robust classification
   link: https://ascelibrary.org/doi/abs/10.1061/%28ASCE%29CP.1943-5487.0000820
   ltype: Journal of Computing in Civil Engineering
-  tags: []
+  tags:
+  - Deep Learning
+  - Computer Vision
+  - Robustness
+  - Structural Health Monitoring
+  - Civil Engineering
   title: Convolutional Neural Network Approach for Robust Structural Damage Detection
     and Localization
   type: jpaper
@@ -5356,11 +6518,28 @@
     the algorithm admits a simple implementation in the distributed environment. Numerical
     experiments support the efficiency of our algorithms.
   authors: "Jie Liu, Yu Rong, <strong>Martin Tak\xE1\u010D</strong>, Junzhou Huang"
-  keywords: []
+  keywords:
+  - l-bfgs
+  - stochastic batches
+  - finite-sum minimization
+  - second-order information
+  - quasi-newton methods
+  - hessian approximation
+  - fisher information matrix
+  - gradient difference smoothing
+  - convex optimization
+  - nonconvex optimization
+  - distributed implementation
+  - cross-entropy loss
   link: http://arxiv.org/abs/1807.05328
   ltype: to be submitted to ICML 2020
   pdf: https://arxiv.org/pdf/1807.05328.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Second-Order Methods
+  - Stochastic Optimization
+  - Distributed Optimization
+  - Machine Learning
   title: On the Acceleration of L-BFGS with Second-Order Information and Stochastic
     Batches
   type: tpaper
@@ -5380,20 +6559,50 @@
   authors: "Virginia Smith, Simone Forte, Chenxin Ma, <strong>Martin Tak\xE1\u010D\
     </strong>, Michael I. Jordan, Martin Jaggi"
   journal: Journal of Machine Learning Research (JMLR)
-  keywords: []
+  keywords:
+  - communication-efficient optimization
+  - distributed convex optimization
+  - convex regularized loss minimization
+  - non-strongly convex regularizers
+  - non-smooth loss functions
+  - l1 regularization
+  - lasso
+  - sparse logistic regression
+  - elastic net regularization
+  - parallel local solvers
   link: http://www.jmlr.org/papers/v18/
   ltype: arXiv Paper
   pdf: http://www.jmlr.org/papers/volume18/16-512/16-512.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Distributed Optimization
+  - Machine Learning
+  - Distributed Systems
   title: 'CoCoA: A General Framework for Communication-Efficient Distributed Optimization'
   type: jpaper
   year: '2018'
 - authors: "Jakub Marecek, Peter Richt\xE1rik, <strong>Martin Tak\xE1\u010D</strong>"
   journal: The European Conference on Machine Learning and Principles and Practice
     of Knowledge Discovery in Databases
-  keywords: []
+  keywords:
+  - matrix completion
+  - interval uncertainty
+  - low-rank matrix factorization
+  - rank minimization
+  - nonconvex optimization
+  - alternating coordinate descent
+  - parallel coordinate descent
+  - inequality constraints
+  - sparse residual updates
+  - openmp implementation
+  - recommender systems
   pdf: http://mtakac.com/data/papers/MACO-highlights.pdf
-  tags: []
+  tags:
+  - Matrix Completion
+  - Optimization
+  - Machine Learning
+  - Robustness
+  - Parallel Computing
   title: 'Matrix Completion under Interval Uncertainty: Highlights'
   type: cpaper
   year: '2018'
@@ -5414,11 +6623,25 @@
     \ benefits of the proposed approach."
   authors: "Xi He, Rachael Tappenden, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Frontiers in Applied Mathematics and Statistics, section Optimization
-  keywords: []
+  keywords:
+  - adaptive minibatch sdca
+  - dual free stochastic dual coordinate ascent
+  - empirical risk minimization
+  - regularized loss minimization
+  - non-uniform coordinate sampling
+  - adaptive probability distributions
+  - sub-optimality reduction
+  - mini-batch optimization
+  - multi-core parallelism
+  - convergence complexity
   link: https://www.frontiersin.org/articles/10.3389/fams.2018.00033/full
   ltype: arXiv Paper
   pdf: https://www.frontiersin.org/articles/10.3389/fams.2018.00033/pdf
-  tags: []
+  tags:
+  - Optimization
+  - Machine Learning
+  - Stochastic Optimization
+  - Coordinate Methods
   title: Dual Free Adaptive Minibatch SDCA for Empirical Risk Minimization
   type: jpaper
   year: '2018'
@@ -5439,10 +6662,24 @@
   authors: "Jie Liu, Jianlin Guo, Philip Orlik, Masahiko Shibata, Daiki Nakahara,\
     \ Satoshi Mii, <strong>Martin Tak\xE1\u010D</strong>"
   journal: The 13th World Congress on Intelligent Control and Automation (WCICA 2018)
-  keywords: []
+  keywords:
+  - structured neural networks
+  - manufacturing anomaly detection
+  - event ordering relationships
+  - time delay neural networks
+  - structured autoencoders
+  - supervised anomaly detection
+  - unsupervised anomaly detection
+  - predictive maintenance
+  - discrete manufacturing
+  - one-class svm comparison
   ltype: The 13th World Congress on Intelligent Control and Automation (WCICA 2018)
   pdf: http://www.merl.com/publications/docs/TR2018-097.pdf
-  tags: []
+  tags:
+  - Anomaly Detection
+  - Manufacturing Systems
+  - Deep Learning
+  - Predictive Maintenance
   title: Anomaly Detection in Manufacturing Systems Using Structured Neural Networks
   type: cpaper
   year: '2018'
@@ -5468,10 +6705,25 @@
     structure has never experienced.
   authors: "Nur Sila Gulgec, <strong>Martin Tak\xE1\u010D</strong>, Shamim N. Pakzad"
   journal: In Dynamics of Civil Structures
-  keywords: []
+  keywords:
+  - wireless sensor networks
+  - structural sensing
+  - stress estimation
+  - strain estimation
+  - acceleration time series
+  - long short-term memory
+  - multi-layer neural networks
+  - dynamic wind loading
+  - earthquake loading
+  - three-story steel building
   link: https://link.springer.com/chapter/10.1007/978-3-319-74421-6_39
   ltype: In Dynamics of Civil Structures
-  tags: []
+  tags:
+  - Deep Learning
+  - Structural Health Monitoring
+  - Civil Engineering
+  - Sensor Networks
+  - Time Series
   title: Innovative Sensing by Using Deep Learning Framework
   type: cpaper
   year: '2018'
@@ -5482,11 +6734,26 @@
     the data spread (measured through the spectral norm).
   authors: "<strong>Martin Tak\xE1\u010D</strong>, Peter Richt\xE1rik, Nathan Srebro"
   journal: Journal of Machine Learning Research (JMLR) (to appear)
-  keywords: []
+  keywords:
+  - mini-batch sdca
+  - stochastic dual coordinate ascent
+  - regularized empirical loss minimization
+  - support vector machines
+  - distributed sampling schemes
+  - parallel speedups
+  - smooth loss functions
+  - spectral norm data spread
+  - dual coordinate updates
+  - cocoa+ comparison
   link: http://arxiv.org/abs/1507.08322
   ltype: arXiv Paper
   pdf: http://arxiv.org/pdf/1507.08322.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Distributed Optimization
+  - Machine Learning
+  - Stochastic Optimization
+  - Support Vector Machines
   title: Distributed Mini-Batch SDCA
   type: jpaper
   year: '2019'
@@ -5507,11 +6774,27 @@
   authors: "MohammadReza Nazari, Afshin Oroojlooy, Lawrence V. Snyder, <strong>Martin\
     \ Tak\xE1\u010D</strong>"
   journal: Neural Information Processing Systems (NeurIPS) 2018
-  keywords: []
+  keywords:
+  - vehicle routing problem
+  - combinatorial optimization
+  - deep reinforcement learning
+  - policy gradient
+  - stochastic policy
+  - capacitated vrp
+  - attention mechanism
+  - rnn decoder
+  - feasibility constraints
+  - split delivery
+  - near-optimal routing
+  - real-time inference
   link: http://arxiv.org/abs/1802.04240
   ltype: arXiv Paper
   pdf: https://papers.nips.cc/paper/8190-reinforcement-learning-for-solving-the-vehicle-routing-problem.pdf
-  tags: []
+  tags:
+  - Reinforcement Learning
+  - Optimization
+  - Graph Learning
+  - Energy Systems
   title: Reinforcement Learning for Solving the Vehicle Routing Problem
   type: cpaper
   year: '2018'
@@ -5533,11 +6816,25 @@
   authors: "Lam Minh Nguyen, Phuong Ha Nguyen, Marten van Dijk, Peter Richt\xE1rik,\
     \ Katya Scheinberg, <strong>Martin Tak\xE1\u010D</strong>"
   journal: ICML 2018 (35th International Conference on Machine Learning)
-  keywords: []
+  keywords:
+  - stochastic gradient descent
+  - hogwild algorithm
+  - asynchronous parallel optimization
+  - bounded gradients assumption
+  - diminishing learning rate
+  - strongly convex objectives
+  - expected risk minimization
+  - empirical risk minimization
+  - convergence analysis
+  - lipschitz continuous gradients
   link: http://proceedings.mlr.press/v80/nguyen18c
   ltype: Conference Paper
   pdf: http://proceedings.mlr.press/v80/nguyen18c/nguyen18c.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Machine Learning
+  - Distributed Optimization
+  - Stochastic Optimization
   title: SGD and Hogwild! Convergence Without the Bounded Gradients Assumption
   type: cpaper
   year: '2018'
@@ -5555,11 +6852,24 @@
     \ Tak\xE1\u010D</strong>"
   journal: Deep Reinforcement Learning Symposium @ Neural Information Processing Systems
     (NeurIPS) 2017
-  keywords: []
+  keywords:
+  - deep q-network
+  - beer game
+  - inventory optimization
+  - serial supply chain
+  - decentralized multi-agent control
+  - cooperative agents
+  - partially observed information
+  - local observations
+  - supply chain problems
   link: https://sites.google.com/view/deeprl-symposium-nips2017/home
   ltype: Conference Paper
   pdf: https://drive.google.com/file/d/1ckDatgYV3oOElkYyfU82GjFAeNY0ubA4/view
-  tags: []
+  tags:
+  - Reinforcement Learning
+  - Optimization
+  - Supply Chain
+  - Multi-Agent Systems
   title: A Deep Q-Network for the Beer Game, an Approach to Solve Inventory Optimization
     Problems
   type: cpaper
@@ -5629,13 +6939,28 @@
     the broad diversity of ideas discussed at the meeting.'
   authors: "<strong>Martin Tak\xE1\u010D</strong>, Tam\xE1s Terlaky"
   journal: Springer Proceedings in Mathematics & Statistics
-  keywords: []
+  keywords:
+  - modeling and optimization
+  - convex optimization
+  - network optimization
+  - mixed-integer optimization
+  - nonlinear optimization
+  - global optimization
+  - deterministic optimization
+  - stochastic optimization
+  - optimization applications
+  - energy finance logistics health
   link: http://www.springer.com/us/book/9783319666150
   ltype: Springer Proceedings in Mathematics & Statistics
-  tags: []
+  tags:
+  - Optimization
+  - Operations Research
+  - Stochastic Optimization
+  - Integer Programming
+  - Nonlinear Optimization
   title: 'Modeling and Optimization: Theory and Applications MOPTA, Bethlehem, PA,
     USA, August 2016 Selected Contributions'
-  type: opaper
+  type: tpaper
   year: '2017'
 - abstract: Training deep neural network is a high dimensional and a highly non-convex
     optimization problem. Stochastic gradient descent (SGD) algorithm and it's variations
@@ -5676,10 +7001,24 @@
     empirical loss minimization instance described by a 273GB dataset.
   authors: "Chenxin Ma, <strong>Martin Tak\xE1\u010D</strong>"
   journal: AAAI Workshop on Distributed Machine Learning
-  keywords: []
+  keywords:
+  - distributed inexact damped newton method
+  - data partitioning
+  - load balancing
+  - disco algorithm
+  - communication-efficient optimization
+  - empirical risk minimization
+  - regularized empirical loss
+  - preconditioning
+  - large-scale machine learning
+  - distributed computing
   link: https://aaai.org/ocs/index.php/WS/AAAIW17/paper/view/15136
   pdf: http://arxiv.org/pdf/1603.05191v1.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Distributed Optimization
+  - Second-Order Methods
+  - Machine Learning
   title: 'Distributed Inexact Damped Newton Method: Data Partitioning and Load-Balancing'
   type: cpaper
   year: '2017'
@@ -5714,11 +7053,25 @@
   authors: "Jie Liu, Jakub Marecek, Andrea Simonetto, <strong>Martin Tak\xE1\u010D\
     </strong>"
   journal: 20th Power Systems Computation Conference
-  keywords: []
+  keywords:
+  - coordinate descent
+  - time-varying optimization
+  - optimal power flow
+  - alternating-current optimal power flow
+  - polynomial optimization
+  - transmission-constrained relaxations
+  - solution tracking
+  - error bounds
+  - floating-point operation bounds
+  - polyak-lojasiewicz condition
   link: http://www.proceedings.com/40084.html
   ltype: arXiv Paper
   pdf: https://arxiv.org/pdf/1710.07119.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Energy Systems
+  - Power Systems
+  - Online Optimization
   title: A Coordinate-Descent Algorithm for Tracking Solutions in Time-Varying Optimal
     Power Flows
   type: cpaper
@@ -5733,11 +7086,23 @@
   authors: "Rachael Tappenden, <strong>Martin Tak\xE1\u010D</strong>, Peter Richt\xE1\
     rik"
   journal: Optimization Methods and Software
-  keywords: []
+  keywords:
+  - parallel coordinate descent
+  - regularized convex minimization
+  - iteration complexity
+  - expected monotonicity
+  - high probability complexity
+  - unbounded initial levelset
+  - randomized coordinate methods
+  - convex optimization algorithms
   link: http://www.tandfonline.com/doi/full/10.1080/10556788.2017.1392517
   ltype: Optimization Methods and Software
   pdf: http://www.tandfonline.com/doi/pdf/10.1080/10556788.2017.1392517?needAccess=true
-  tags: []
+  tags:
+  - Optimization
+  - Convex Optimization
+  - First-Order Methods
+  - Parallel Computing
   title: On the Complexity of Parallel Coordinate Descent
   type: jpaper
   year: '2017'
@@ -5750,11 +7115,25 @@
   authors: "Alan C. Liddell, Jie Liu, Jakub Marecek, <strong>Martin Tak\xE1\u010D\
     </strong>"
   journal: IEEE Transactions on Smart Grid
-  keywords: []
+  keywords:
+  - alternating-current optimal power flow
+  - polynomial optimization
+  - semidefinite relaxation
+  - convex relaxation hierarchy
+  - newton method
+  - non-convex augmented lagrangian
+  - alpha-beta theory
+  - local convergence guarantees
+  - first-order methods
+  - rectangular power-voltage formulation
   link: http://ieeexplore.ieee.org/document/7947223/
   ltype: aJournal Paper
   pdf: https://arxiv.org/pdf/1510.02171v2.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Energy Systems
+  - Semidefinite Programming
+  - Second-Order Methods
   title: Hybrid Methods in Solving Alternating-Current Optimal Power Flows
   type: jpaper
   year: '2017'
@@ -5776,11 +7155,23 @@
   authors: "Chenxin Ma, Jakub Kone\u010Dn\xFD, Martin Jaggi, Virginia Smith, Michael\
     \ I. Jordan, Peter Richt\xE1rik, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Optimization Methods and Software
-  keywords: []
+  keywords:
+  - distributed optimization framework
+  - arbitrary local solvers
+  - single-machine solvers
+  - local solver selection
+  - primal-dual convergence rates
+  - distributed computation
+  - state-of-the-art distributed methods
+  - implementation details
+  - practical performance gains
   link: http://www.tandfonline.com/doi/full/10.1080/10556788.2016.1278445
   ltype: Journal Paper
   pdf: http://www.tandfonline.com/doi/pdf/10.1080/10556788.2016.1278445?needAccess=true
-  tags: []
+  tags:
+  - Distributed Optimization
+  - Optimization
+  - Machine Learning
   title: Distributed Optimization with Arbitrary Local Solvers
   type: jpaper
   year: '2017'
@@ -5790,11 +7181,26 @@
     interior point method, within the same accuracy.
   authors: "Jakub Mare\u010Dek, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Optimization Methods and Software
-  keywords: []
+  keywords:
+  - optimal power flow
+  - alternating-current optimal power flow
+  - semidefinite programming relaxations
+  - rank-constrained reformulation
+  - low-rank coordinate descent
+  - parallel coordinate descent
+  - coordinate-wise constraints
+  - closed-form cubic steps
+  - convex relaxations
+  - matpower comparison
   link: http://www.tandfonline.com/doi/full/10.1080/10556788.2017.1288729
   ltype: Optimization Methods and Software
   pdf: http://arxiv.org/pdf/1506.08568.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Energy Systems
+  - Semidefinite Programming
+  - First-Order Methods
+  - Low-Rank Methods
   title: A low-rank coordinate-descent algorithm for semidefinite programming relaxations
     of optimal power flow
   type: jpaper
@@ -5829,11 +7235,26 @@
   authors: "Lam Minh Nguyen, Jie Liu, Katya Scheinberg, <strong>Martin Tak\xE1\u010D\
     </strong>"
   journal: ICML 2017 (34th International Conference on Machine Learning)
-  keywords: []
+  keywords:
+  - sarah algorithm
+  - stochastic recursive gradient
+  - finite-sum minimization
+  - variance reduction
+  - strongly convex optimization
+  - linear convergence
+  - stochastic gradient methods
+  - low storage gradient estimation
+  - svrg comparison
+  - empirical risk minimization
   link: http://arxiv.org/abs/1703.00102
   ltype: Conference Paper
   pdf: https://arxiv.org/pdf/1703.00102.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Machine Learning
+  - Stochastic Optimization
+  - Convex Optimization
+  - Variance Reduction
   title: 'SARAH: A Novel Method for Machine Learning Problems Using Stochastic Recursive
     Gradient'
   type: cpaper
@@ -5850,11 +7271,26 @@
     hinge loss.
   authors: "Jie Liu, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Proceedings of MOPTA 2016
-  keywords: []
+  keywords:
+  - projected semi-stochastic gradient descent
+  - mini-batch stochastic gradients
+  - variance reduction
+  - weak strong convexity
+  - linear convergence
+  - compact polyhedral constraints
+  - smooth convex finite sums
+  - support vector machine dual
+  - hinge loss svm
+  - parallel implementation
   link: http://arxiv.org/abs/1612.05356
   ltype: Conference Proceedings
   pdf: https://arxiv.org/pdf/1612.05356.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Machine Learning
+  - Stochastic Optimization
+  - Convex Optimization
+  - Parallel Computing
   title: Projected Semi-Stochastic Gradient Descent Method with Mini-Batch Scheme
     under Weak Strong Convexity Assumption
   type: cpaper
