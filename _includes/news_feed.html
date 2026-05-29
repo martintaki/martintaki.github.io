@@ -1,0 +1,84 @@
+<div class="page news-page" id="news">
+    <div class="pageheader">
+        <div class="headercontent">
+            <div class="section-container">
+                <div class="research-kicker">News and updates</div>
+                <h1 class="title">Research news, talks, papers, and group milestones</h1>
+                <p class="lead">
+                    Recent updates from my research group, collaborations, publications, invited talks,
+                    and media coverage.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    {% assign news_items = site.data.news %}
+    {% assign latest_news = news_items | first %}
+
+    <div class="pagecontents">
+        <div class="section color-1 news-overview-section">
+            <div class="section-container">
+                <div class="news-hero-grid">
+                    <article class="news-feature-card">
+                        <div class="news-card-meta">
+                            <span class="news-date-pill">{{ latest_news.date | date: "%b %d, %Y" }}</span>
+                            <span>Latest update</span>
+                        </div>
+                        <h2>{{ latest_news.title }}</h2>
+                        <div class="news-body">
+                            {{ latest_news.body | replace: "--- ", "" }}
+                        </div>
+                    </article>
+
+                    <aside class="news-side-panel">
+                        <div class="news-stat-row">
+                            <strong>{{ news_items | size }}</strong>
+                            <span>updates in the archive</span>
+                        </div>
+                        <div class="news-stat-row">
+                            <strong>{{ latest_news.date | date: "%Y" }}</strong>
+                            <span>latest posted year</span>
+                        </div>
+                        <div class="news-direction-links">
+                            <a href="/Research_Optimization"><i class="icon-cogs"></i> Optimization</a>
+                            <a href="/Research_AI_Science"><i class="icon-beaker"></i> AI for Science</a>
+                            <a href="/Research_AI_Energy"><i class="icon-bolt"></i> AI for Energy</a>
+                            <a href="/Research_LLM"><i class="icon-comments-alt"></i> LLM Work</a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+
+        <div class="section color-2 news-timeline-section">
+            <div class="section-container">
+                <div class="news-section-header">
+                    <div>
+                        <div class="research-kicker">Archive</div>
+                        <h2>Earlier updates</h2>
+                    </div>
+                    <a class="research-link-button secondary" href="/Publications">
+                        <i class="icon-edit"></i> Publications
+                    </a>
+                </div>
+
+                <div class="news-timeline">
+                    {% for item in news_items offset:1 %}
+                    <article class="news-card">
+                        <time class="news-card-date" datetime="{{ item.date }}">
+                            <span>{{ item.date | date: "%b" }}</span>
+                            <strong>{{ item.date | date: "%Y" }}</strong>
+                        </time>
+                        <div class="news-card-content">
+                            <h2>{{ item.title }}</h2>
+                            <div class="news-body">
+                                {{ item.body | replace: "--- ", "" }}
+                            </div>
+                        </div>
+                    </article>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

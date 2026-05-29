@@ -32,6 +32,9 @@ $(document).ready(function(){
 	if (currentPath.indexOf("/Research_") === 0) {
 		$("#navigation li.research-menu").addClass("currentmenu submenu-open");
 	}
+	if (currentPath === "/" || currentPath === "/News") {
+		$("#navigation li.news-menu").addClass("currentmenu");
+	}
 
 
 	/*++++++++++++++++++++++++++++++++++++
