@@ -905,6 +905,57 @@ ul.timeline li .data .text {
 	margin-right: 10px;
 }
 
+.publication-meta-filters {
+	margin-top: 20px;
+}
+
+.publication-hidden-by-metadata {
+	display: none !important;
+}
+
+.pub-tag-stats {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+}
+
+.pub-tag-button {
+	border: 1px solid #ddd;
+	background: #fafafa;
+	color: #777;
+	border-radius: 3px;
+	padding: 4px 8px;
+	font-size: 12px;
+	line-height: 1.2;
+}
+
+.pub-tag-button:hover,
+.pub-tag-button:focus {
+	background: #03cc85;
+	color: #fff;
+}
+
+.pub-visible-count {
+	margin-top: 8px;
+	color: #777;
+	font-size: 12px;
+}
+
+.pitems .pubtags {
+	margin-top: 10px;
+}
+
+.pitems .pubkeywords {
+	margin-top: 8px;
+	color: #777;
+	font-size: 12px;
+}
+
+.label-tag {
+	background-color: #e5f3ef;
+	color: #276749;
+}
+
 .label-patent {
 	background-color: #f8bbd0;
 	color: #7a1b4b;

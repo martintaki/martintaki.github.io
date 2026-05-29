@@ -1,76 +1,124 @@
-- abstract: "\nLearning the structure of Directed Acyclic Graphs (DAGs) presents a\
-    \ significant challenge due to the vast combinatorial search space of possible\
-    \ graphs, which scales exponentially with the number of nodes. Recent advancements\
-    \ have redefined this problem as a continuous optimization task by incorporating\
-    \ differentiable acyclicity constraints. These methods commonly rely on algebraic\
-    \ characterizations of DAGs, such as matrix exponentials, to enable the use of\
-    \ gradient-based optimization techniques. Despite these innovations, existing\
-    \ methods often face optimization difficulties due to the highly non-convex nature\
-    \ of DAG constraints and the per-iteration computational complexity. In this work,\
-    \ we present a novel framework for learning DAGs, employing a Stochastic Approximation\
-    \ approach integrated with Stochastic Gradient Descent (SGD)-based optimization\
-    \ techniques. Our framework introduces new projection methods tailored to efficiently\
-    \ enforce DAG constraints, ensuring that the algorithm converges to a feasible\
-    \ local minimum. With its low iteration complexity, the proposed method is well-suited\
-    \ for handling large-scale problems with improved computational efficiency. We\
-    \ demonstrate the effectiveness and scalability of our framework through comprehensive\
-    \ experimental evaluations, which confirm its superior performance across various\
-    \ settings.\n\t\t"
+- abstract: Learning the structure of Directed Acyclic Graphs (DAGs) presents a significant
+    challenge due to the vast combinatorial search space of possible graphs, which
+    scales exponentially with the number of nodes. Recent advancements have redefined
+    this problem as a continuous optimization task by incorporating differentiable
+    acyclicity constraints. These methods commonly rely on algebraic characterizations
+    of DAGs, such as matrix exponentials, to enable the use of gradient-based optimization
+    techniques. Despite these innovations, existing methods often face optimization
+    difficulties due to the highly non-convex nature of DAG constraints and the per-iteration
+    computational complexity. In this work, we present a novel framework for learning
+    DAGs, employing a Stochastic Approximation approach integrated with Stochastic
+    Gradient Descent (SGD)-based optimization techniques. Our framework introduces
+    new projection methods tailored to efficiently enforce DAG constraints, ensuring
+    that the algorithm converges to a feasible local minimum. With its low iteration
+    complexity, the proposed method is well-suited for handling large-scale problems
+    with improved computational efficiency. We demonstrate the effectiveness and scalability
+    of our framework through comprehensive experimental evaluations, which confirm
+    its superior performance across various settings.
   authors: "Klea Ziu, Slavom\xEDr Hanzely, Loka Li, Kun Zhang, <strong>Martin Tak\xE1\
     \u010D</strong>, Dmitry Kamzolov"
   journal: ICML 2026 Workshop on Structured Probabilistic Inference and Generative
     Modeling
+  keywords:
+  - dag structure learning
+  - projected stochastic approximation
+  - stochastic gradient descent
+  - acyclicity constraints
+  - continuous structure learning
+  - projection methods
+  - non-convex optimization
+  - graphical models
+  - large-scale scalability
   link: https://arxiv.org/abs/2410.23862
   pdf: https://arxiv.org/pdf/2410.23862
+  tags:
+  - Optimization
+  - Graph Learning
+  - Causal Inference
+  - Probabilistic Modeling
   title: '$\psi$DAG: Projected Stochastic Approximation Iteration for DAG Structure
     Learning'
   type: cpaper
   year: '2026'
-- abstract: "\nMulti-Agent Debate(MAD) has emerged as a promising paradigm for enhancing\
-    \ large language model reasoning. However, recent work reveals a limitation: standard\
-    \ MAD cannot improve belief correctness beyond majority voting; we refer to this\
-    \ as the Martingale Curse. This curse arises because correlated errors cause agents\
-    \ to converge toward erroneous consensus, where debate merely reinforces collective\
-    \ mistakes rather than filtering noise. We propose AceMAD, a framework that breaks\
-    \ the Martingale Curse by harnessing asymmetric cognitive potential energy to\
-    \ transform MAD from a random walk into a directed convergence process with positive\
-    \ drift. Through a peer-prediction mechanism, agents forecast their peers' belief\
-    \ distributions, revealing asymmetric cognitive potential: truth-holders not only\
-    \ know the correct answer but also anticipate the crowd's misconceptions, while\
-    \ the hallucinating majority remains blind to their collective error. This asymmetry\
-    \ creates a potential energy gap that we quantify via strictly proper scoring\
-    \ rules. We prove this cognitive potential manifests as information-theoretic\
-    \ superiority and, under nonlinear aggregation, converts into submartingale drift\
-    \ toward truth, directly breaking the Martingale Curse. Experiments on challenging\
-    \ subsets across six benchmarks show AceMAD recovers sparse truth signals even\
-    \ when initial majorities are incorrect, substantially outperforming baseline\
-    \ methods.\n\t\t"
+- abstract: 'Multi-Agent Debate(MAD) has emerged as a promising paradigm for enhancing
+    large language model reasoning. However, recent work reveals a limitation: standard
+    MAD cannot improve belief correctness beyond majority voting; we refer to this
+    as the Martingale Curse. This curse arises because correlated errors cause agents
+    to converge toward erroneous consensus, where debate merely reinforces collective
+    mistakes rather than filtering noise. We propose AceMAD, a framework that breaks
+    the Martingale Curse by harnessing asymmetric cognitive potential energy to transform
+    MAD from a random walk into a directed convergence process with positive drift.
+    Through a peer-prediction mechanism, agents forecast their peers'' belief distributions,
+    revealing asymmetric cognitive potential: truth-holders not only know the correct
+    answer but also anticipate the crowd''s misconceptions, while the hallucinating
+    majority remains blind to their collective error. This asymmetry creates a potential
+    energy gap that we quantify via strictly proper scoring rules. We prove this cognitive
+    potential manifests as information-theoretic superiority and, under nonlinear
+    aggregation, converts into submartingale drift toward truth, directly breaking
+    the Martingale Curse. Experiments on challenging subsets across six benchmarks
+    show AceMAD recovers sparse truth signals even when initial majorities are incorrect,
+    substantially outperforming baseline methods.'
   authors: "Yuhan Liu, Juntian Zhang, Yichen Wu, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Salem Lahlou, Xiuying Chen, Nils Lukas"
   journal: 'ICML 2026 Workshop: Statistical Frameworks for Uncertainty in Agentic
     Systems'
+  keywords:
+  - multi-agent debate
+  - asymmetric cognitive potential energy
+  - martingale curse
+  - peer prediction
+  - belief distributions
+  - strictly proper scoring rules
+  - correlated errors
+  - nonlinear aggregation
+  - submartingale drift
+  - sparse truth signals
+  - hallucinating majority
+  - information-theoretic superiority
+  tags:
+  - LLM
+  - Multi-Agent Systems
+  - Uncertainty
+  - Robustness
   title: 'Breaking the Martingale Curse: Multi-Agent Debate via Asymmetric Cognitive
     Potential Energy'
   type: cpaper
   year: '2026'
-- abstract: "\nOffline goal-conditioned reinforcement learning requires both long-horizon\
-    \ reachability estimates and local action comparisons. Dual goal representations\
-    \ provide value fields that capture global goal reachability, but they do not\
-    \ directly specify which action should be preferred at a given state. We propose\
-    \ Dual Advantage Fields, a policy-extraction method that turns a bilinear dual\
-    \ value model into a local advantage signal. Under bilinear dual parameterization,\
-    \ the goal embedding is the gradient of the value field with respect to the state\
-    \ representation. DAF learns an action-effect model that predicts the discounted\
-    \ feature displacement induced by an action and scores actions by the alignment\
-    \ between this displacement and the goal direction. In the realizable case, this\
-    \ score equals the goal-conditioned Bellman advantage, yielding a standard local\
-    \ policy-improvement guarantee. On OGBench locomotion, manipulation, and puzzle\
-    \ tasks, DAF improves aggregate RLiable metrics and performs strongly in settings\
-    \ where locally correct actions differ from direct movement toward the final goal.\n\
-    \t\t"
+- abstract: Offline goal-conditioned reinforcement learning requires both long-horizon
+    reachability estimates and local action comparisons. Dual goal representations
+    provide value fields that capture global goal reachability, but they do not directly
+    specify which action should be preferred at a given state. We propose Dual Advantage
+    Fields, a policy-extraction method that turns a bilinear dual value model into
+    a local advantage signal. Under bilinear dual parameterization, the goal embedding
+    is the gradient of the value field with respect to the state representation. DAF
+    learns an action-effect model that predicts the discounted feature displacement
+    induced by an action and scores actions by the alignment between this displacement
+    and the goal direction. In the realizable case, this score equals the goal-conditioned
+    Bellman advantage, yielding a standard local policy-improvement guarantee. On
+    OGBench locomotion, manipulation, and puzzle tasks, DAF improves aggregate RLiable
+    metrics and performs strongly in settings where locally correct actions differ
+    from direct movement toward the final goal.
   authors: "Alexey Zemtsov, Maksim Bobrin, Alexander Nikulin, Dmitry V. Dylov, Fakhri\
     \ Karray, Vladislav Kurenkov, <strong>Martin Tak\xE1\u010D</strong>, Arip Asadulaev"
   journal: 'ICML 2026 Workshop: DEMO'
+  keywords:
+  - offline goal-conditioned reinforcement learning
+  - dual advantage fields
+  - dual goal representations
+  - bilinear dual value models
+  - policy extraction
+  - action-effect model
+  - discounted feature displacement
+  - goal-conditioned bellman advantage
+  - local policy improvement
+  - ogbench locomotion tasks
+  - manipulation and puzzle tasks
+  - rliable metrics
+  tags:
+  - Reinforcement Learning
+  - Optimization
+  - Representation Learning
+  - Decision Making
   title: 'Decision-Making from Offline Datasets to Online Adaptation: Black-Box Optimization
     to Reinforcement Learning'
   type: cpaper
@@ -94,10 +142,12 @@
   authors: "Yusei Ito, Aidar Alimbayev, Klea Ziu, Deepak Kumar, Kanta Ono, <strong>Martin\
     \ Tak\xE1\u010D</strong>"
   journal: ICML 2026 Workshop AI4Physics
+  keywords: []
+  tags: []
   title: Revisiting the Form of Attention with Positional Encoding for Molecular Structures
   type: cpaper
   year: '2026'
-- abstract: "\nGradient clipping is a standard safeguard for training neural networks\
+- abstract: "Gradient clipping is a standard safeguard for training neural networks\
     \ under noisy, heavy-tailed stochastic gradients; yet, most clipping rules \n\
     treat all parameters as vectors and ignore the matrix structure of modern architectures.\
     \ We show empirically that data outliers often amplify only a small number of\
@@ -114,11 +164,28 @@
     \ efficient implementations that clip only the top r singular values via randomized\
     \ truncated SVD, avoiding full decompositions for large layers. We demonstrate\
     \ competitive performance across synthetic heavy-tailed settings and neural network\
-    \ training tasks.\n\t\t"
+    \ training tasks."
   authors: "Alexander Yukhimchuk, Mladen Kolar, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Sayantan Choudhury"
+  keywords:
+  - gradient clipping
+  - spectral clipping
+  - matrix-valued parameters
+  - heavy-tailed stochastic gradients
+  - non-convex optimization
+  - clipped sgd
+  - singular value thresholding
+  - randomized truncated svd
+  - adaptive clipping thresholds
+  - layer-wise gradient matrices
   link: https://arxiv.org/abs/2605.11838
   pdf: https://arxiv.org/pdf/2605.11838
+  tags:
+  - Optimization
+  - Deep Learning
+  - Robustness
+  - Spectral Methods
+  - Stochastic Optimization
   title: 'Gradient Clipping Beyond Vector Norms: A Spectral Approach for Matrix-Valued
     Parameters'
   type: tpaper
@@ -148,35 +215,52 @@
     </strong>"
   journal: 'The 13th ACM International Conference on Systems for Energy-Efficient
     Buildings, Cities, and Transportation (Buildsys 2026) '
+  keywords: []
+  tags: []
   title: 'WattCouncil: Context-Aware Household Energy Scenario Generation With Governed
     LLMs'
   type: cpaper
   year: '2026'
-- abstract: "\nDistributed optimization is widely used in large-scale and privacy-preserving\
-    \ machine learning, where each agent stores a local objective and communicates\
-    \ only with its neighbors in a connected network. We study decentralized second-order\
-    \ optimization and focus on consensus procedures that approximately average local\
-    \ iterates, gradients, and Hessians through neighbor-to-neighbor communications.\
-    \ We propose a general Decentralized Cubic Newton method for convex optimization\
-    \ under $L_1$-smoothness of gradients and $L_2$-Lipschitz continuity of Hessians,\
-    \ and develop a theory that accurately tracks the inaccuracies caused by consensus\
-    \ and by disagreement between local iterates. Under these assumptions, the method\
-    \ matches the iteration complexity of the exact Cubic Newton method and requires\
-    \ only additional polylogarithmic communication-round overhead to reach the necessary\
-    \ consensus accuracy. We further propose an Accelerated Decentralized Cubic Newton\
-    \ method for strongly convex objectives and show that it matches the iteration\
-    \ complexity of the exact Accelerated Cubic Newton method, again with only additional\
-    \ polylogarithmic communication-round overhead. Finally, although the general\
-    \ method requires exchanging full $\\dimd \\times \\dimd$ Hessian matrices, we\
-    \ show how it can be implemented for generalized linear models by transmitting\
-    \ only vectors, making the approach substantially more practical in high dimensions.\n\
-    \t\t"
+- abstract: Distributed optimization is widely used in large-scale and privacy-preserving
+    machine learning, where each agent stores a local objective and communicates only
+    with its neighbors in a connected network. We study decentralized second-order
+    optimization and focus on consensus procedures that approximately average local
+    iterates, gradients, and Hessians through neighbor-to-neighbor communications.
+    We propose a general Decentralized Cubic Newton method for convex optimization
+    under $L_1$-smoothness of gradients and $L_2$-Lipschitz continuity of Hessians,
+    and develop a theory that accurately tracks the inaccuracies caused by consensus
+    and by disagreement between local iterates. Under these assumptions, the method
+    matches the iteration complexity of the exact Cubic Newton method and requires
+    only additional polylogarithmic communication-round overhead to reach the necessary
+    consensus accuracy. We further propose an Accelerated Decentralized Cubic Newton
+    method for strongly convex objectives and show that it matches the iteration complexity
+    of the exact Accelerated Cubic Newton method, again with only additional polylogarithmic
+    communication-round overhead. Finally, although the general method requires exchanging
+    full $\dimd \times \dimd$ Hessian matrices, we show how it can be implemented
+    for generalized linear models by transmitting only vectors, making the approach
+    substantially more practical in high dimensions.
   authors: "Artem Agafonov, Anton Novitskii, Alexander Rogozin, Yury Sokolov, Dmitry\
     \ Kamzolov, Alexander G. Dyakonov, <strong>Martin Tak\xE1\u010D</strong>, Alexander\
     \ Gasnikov"
   journal: IEEE Access
+  keywords:
+  - decentralized cubic newton
+  - inexact consensus procedures
+  - decentralized second-order optimization
+  - convex optimization
+  - accelerated cubic newton
+  - strongly convex objectives
+  - lipschitz continuous hessians
+  - polylogarithmic communication overhead
+  - neighbor-to-neighbor communication
+  - generalized linear models
   link: https://arxiv.org/abs/2605.21169
   pdf: https://arxiv.org/pdf/2605.21169
+  tags:
+  - Distributed Optimization
+  - Optimization
+  - Second-Order Methods
+  - Federated Learning
   title: Decentralized Inexact Cubic Newton Method with Consensus Procedure
   type: jpaper
   year: '2026'
@@ -203,8 +287,10 @@
     \ inexact and randomized variants.\n\t\t"
   authors: "Sayantan Choudhury, Xiaoran Cheng, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Sen Na, Mladen Kolar"
+  keywords: []
   link: https://arxiv.org/abs/2605.06884
   pdf: https://arxiv.org/pdf/2605.06884
+  tags: []
   title: 'Muon with Nesterov Momentum: Heavy-Tailed Noise and (Randomized) Inexact
     Polar Decomposition'
   type: tpaper
@@ -228,8 +314,10 @@
   authors: "Arip Asadulaev, Maksim Bobrin, Salem Lahlou, Dmitry Dylov, Fakhri Karray,\
     \ <strong>Martin Tak\xE1\u010D</strong>"
   journal: Forty-third International Conference on Machine Learning (ICML 2026)
+  keywords: []
   link: https://arxiv.org/abs/2602.01962
   pdf: https://arxiv.org/pdf/2602.01962
+  tags: []
   title: Zero-Shot Off-Policy Learning
   type: cpaper
   year: '2026'
@@ -249,14 +337,29 @@
   authors: "Ruben Solozabal, Velibor Bojkovic, Hilal Alquabeh, Klea Ziu, Kentaro Inui,\
     \ <strong>Martin Tak\xE1\u010D</strong>"
   journal: Forty-third International Conference on Machine Learning (ICML 2026)
+  keywords: []
   link: https://arxiv.org/abs/2602.22266
   pdf: https://arxiv.org/pdf/2602.22266
+  tags: []
   title: 'WaveSSM: Multiscale State-Space Models for Non-stationary Signal Attention'
   type: cpaper
   year: '2026'
-- abstract: "\n\n\t\t"
-  authors: "Aleksandr Shestakov, <strong>Martin Tak\xE1\u010D</strong>, Eduard Gorbunov"
+- authors: "Aleksandr Shestakov, <strong>Martin Tak\xE1\u010D</strong>, Eduard Gorbunov"
   journal: Forty-third International Conference on Machine Learning (ICML 2026)
+  keywords:
+  - gradient clipping
+  - heavy-tailed data
+  - optimization-to-generalization analysis
+  - generalization under heavy tails
+  - robust learning
+  - clipped gradients
+  - heavy-tailed stochastic gradients
+  - stochastic optimization
+  tags:
+  - Optimization
+  - Robustness
+  - Machine Learning
+  - Learning Theory
   title: 'From Optimization to Generalization under Heavy-Tailed Data: The Role of
     Gradient Clipping'
   type: cpaper
@@ -282,35 +385,53 @@
   authors: "Arip Asadulaev, Rayan Banerjee, Fakhri Karray, <strong>Martin Tak\xE1\u010D\
     </strong>"
   journal: Forty-third International Conference on Machine Learning (ICML 2026)
+  keywords: []
+  tags: []
   title: Your Latent Reasoning is Secretly Policy Improvement Operator
   type: cpaper
   year: '2026'
-- abstract: "\nLarge language models exhibit complementary reasoning errors: on the\
-    \ same instance, one model may succeed with a particular decomposition while another\
-    \ fails. We propose Collaborative Reasoning (CORE), a training-time collaboration\
-    \ framework that converts peer success into a learning signal via a cross-teaching\
-    \ protocol. Each problem is solved in two stages: a cold round of independent\
-    \ sampling, followed by a contexted rescue round in which models that failed receive\
-    \ hint extracted from a successful peer. CORE optimizes a combined reward that\
-    \ balances (i) correctness, (ii) a lightweight DPP-inspired diversity term to\
-    \ reduce error overlap, and (iii) an explicit rescue bonus for successful recovery.\
-    \ We evaluate CORE across four standard reasoning datasets GSM8K, MATH, AIME,\
-    \ and GPQA. With only 1,000 training examples, a pair of small open source models\
-    \ (3B+4B) reaches Pass@2 of 99.54% on GSM8K and 92.08% on MATH, compared to 82.50%\
-    \ and 74.82% for single-model training. On harder datasets, the 3B+4B pair reaches\
-    \ Pass@2 of 77.34% on GPQA (trained on 348 examples) and 79.65% on AIME (trained\
-    \ on 792 examples), using a training-time budget of at most 1536 context tokens\
-    \ and 3072 generated tokens. Overall, these results show that training-time collaboration\
-    \ can reliably convert model complementarity into large gains without scaling\
-    \ model size.\n\t\t"
+- abstract: 'Large language models exhibit complementary reasoning errors: on the
+    same instance, one model may succeed with a particular decomposition while another
+    fails. We propose Collaborative Reasoning (CORE), a training-time collaboration
+    framework that converts peer success into a learning signal via a cross-teaching
+    protocol. Each problem is solved in two stages: a cold round of independent sampling,
+    followed by a contexted rescue round in which models that failed receive hint
+    extracted from a successful peer. CORE optimizes a combined reward that balances
+    (i) correctness, (ii) a lightweight DPP-inspired diversity term to reduce error
+    overlap, and (iii) an explicit rescue bonus for successful recovery. We evaluate
+    CORE across four standard reasoning datasets GSM8K, MATH, AIME, and GPQA. With
+    only 1,000 training examples, a pair of small open source models (3B+4B) reaches
+    Pass@2 of 99.54% on GSM8K and 92.08% on MATH, compared to 82.50% and 74.82% for
+    single-model training. On harder datasets, the 3B+4B pair reaches Pass@2 of 77.34%
+    on GPQA (trained on 348 examples) and 79.65% on AIME (trained on 792 examples),
+    using a training-time budget of at most 1536 context tokens and 3072 generated
+    tokens. Overall, these results show that training-time collaboration can reliably
+    convert model complementarity into large gains without scaling model size.'
   authors: "Kshitij Mishra, Mirat Aubakirov, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Nils Lukas, Salem Lahlou"
   journal: Forty-third International Conference on Machine Learning (ICML 2026)
+  keywords:
+  - collaborative reasoning
+  - cross teaching
+  - training-time collaboration
+  - peer success hints
+  - contexted rescue round
+  - complementary reasoning errors
+  - dpp diversity reward
+  - rescue bonus
+  - llm reasoning benchmarks
+  - gsm8k math aime gpqa
   pdf: https://arxiv.org/pdf/2601.21600
+  tags:
+  - LLM
+  - Reinforcement Learning
+  - Multi-Agent Learning
+  - Optimization
+  - Robustness
   title: 'CoRe: Collaborative Reasoning via Cross Teaching'
   type: cpaper
   year: '2026'
-- abstract: "\nMulti-agent LLM systems increasingly rely on communication protocols\
+- abstract: "Multi-agent LLM systems increasingly rely on communication protocols\
     \ for coordination, yet their robustness under adversarial and structural constraints\
     \ remains poorly understood. Building on prior work showing that cheap-talk channels\
     \ enable cooperation in LLM coordination games, we investigate two distinct vulnerability\
@@ -326,10 +447,26 @@
     \ families: models that defect rationally upon detecting betrayal vastly outperform\
     \ models that persistently attempt cooperation under adversarial conditions, a\
     \ gap that compresses under probabilistic deception. Together, these findings\
-    \ have direct implications for the design of robust networked multi-agent AI systems.\n\
-    \t\t"
+    \ have direct implications for the design of robust networked multi-agent AI systems."
   authors: "Aya El Mir, <strong>Martin Tak\xE1\u010D</strong>, Salem Lahlou"
   journal: NETYS 2026 (Networked Systems)
+  keywords:
+  - multi-agent llm systems
+  - cheap-talk communication
+  - llm coordination games
+  - byzantine agents
+  - stag hunt
+  - adversarial resilience
+  - communication topology
+  - probabilistic deception
+  - hidden information reasoning
+  - cooperation collapse
+  tags:
+  - LLM
+  - Multi-Agent Systems
+  - Game Theory
+  - Robustness
+  - Networked Systems
   title: 'Byzantine Cheap Talk: Adversarial Resilience and Topology Effects in LLM
     Coordination Games'
   type: cpaper
@@ -354,31 +491,49 @@
   authors: "Yanda Li, Yuhan Liu, Zirui Song, Yunchao Wei, <strong>Martin Tak\xE1\u010D\
     </strong>, Salem Lahlou "
   journal: ACL'2026 Findings
+  keywords: []
+  tags: []
   title: 'Temporal Contrastive Decoding: A Training-Free Method for Large Audio-Language
     Models'
   type: cpaper
   year: '2026'
-- abstract: "\nDistributed learning problems have gained significant popularity due\
-    \ to the increasing need for cluster training and the emergence of novel paradigms\
-    \ like Federated Learning (FL). One variant of FL, called Vertical Federated Learning\
-    \ (VFL), partitions data based on features across devices. The objective is to\
-    \ collectively train a model using the information available on each user's device.\
-    \ This paper focuses on solving the VFL problem using deterministic methods and\
-    \ the classical Lagrangian function without augmentation. It also explores various\
-    \ modifications to adapt to practical scenarios, such as employing compression\
-    \ techniques for efficient information transmission, enabling partial participation\
-    \ for asynchronous communication, introducing additive noise or homomorphic encryption\
-    \ for privacy-preserving purposes, and utilizing coordinate selection for faster\
-    \ local computation. Convergence estimates are provided for each algorithm, demonstrating\
-    \ their effectiveness in addressing the VFL problem. Additionally, alternative\
-    \ reformulations of the VFL problem are investigated, and numerical experiments\
-    \ are conducted to validate the proposed methods' performance and effectiveness.\n\
-    \t\t"
+- abstract: Distributed learning problems have gained significant popularity due to
+    the increasing need for cluster training and the emergence of novel paradigms
+    like Federated Learning (FL). One variant of FL, called Vertical Federated Learning
+    (VFL), partitions data based on features across devices. The objective is to collectively
+    train a model using the information available on each user's device. This paper
+    focuses on solving the VFL problem using deterministic methods and the classical
+    Lagrangian function without augmentation. It also explores various modifications
+    to adapt to practical scenarios, such as employing compression techniques for
+    efficient information transmission, enabling partial participation for asynchronous
+    communication, introducing additive noise or homomorphic encryption for privacy-preserving
+    purposes, and utilizing coordinate selection for faster local computation. Convergence
+    estimates are provided for each algorithm, demonstrating their effectiveness in
+    addressing the VFL problem. Additionally, alternative reformulations of the VFL
+    problem are investigated, and numerical experiments are conducted to validate
+    the proposed methods' performance and effectiveness.
   authors: "Aleksandr Beznosikov, Georgiy Kormakov, Alexander Grigorievskiy, Mikhail\
     \ Rudakov, Ruslan Nazykov, Alexander Rogozin, Anton Vakhrushev, Andrey Savchenko,\
     \ <strong>Martin Tak\xE1\u010D</strong>, Alexander Gasnikov"
+  keywords:
+  - vertical federated learning
+  - saddle point reformulation
+  - classical lagrangian
+  - convex-concave saddle point problem
+  - extragradient method
+  - deterministic methods
+  - communication compression
+  - partial participation
+  - coordinate selection
+  - homomorphic encryption
+  - convergence estimates
   link: https://arxiv.org/abs/2602.15996
   pdf: https://arxiv.org/pdf/2602.15996
+  tags:
+  - Federated Learning
+  - Optimization
+  - Distributed Optimization
+  - Privacy
   title: 'Exploring New Frontiers in Vertical Federated Learning: the Role of Saddle
     Point Reformulation'
   type: tpaper
@@ -402,33 +557,52 @@
     \ Tak\xE1\u010D</strong>, Aleksandr Beznosikov"
   journal: IEEE Access; the shorter version was accepted in AI4Science Workshop @
     NeurIPS 2025
+  keywords: []
   link: https://ieeexplore.ieee.org/document/11456953
   pdf: https://arxiv.org/pdf/2502.17986
+  tags: []
   title: 'Thinking like a CHEMIST: Combined Heterogeneous Embedding Model Integrating
     Structure and Tokens'
   type: jpaper
   year: '2026'
-- abstract: "\nLow-Rank Adaptation (LoRA) fine-tunes large models by learning low-rank\
-    \ updates on top of frozen weights, dramatically reducing trainable parameters\
-    \ and memory. In this work, we address the gap between training with full steps\
-    \ with low-rank projections (SVDLoRA) and LoRA fine-tuning. We propose LoRSum,\
-    \ a memory-efficient subroutine that closes this gap for gradient descent by casting\
-    \ LoRA optimization as a proximal sub-problem and solving it efficiently with\
-    \ alternating least squares updates, which we prove to be an implicit block power\
-    \ method. We recover several recently proposed preconditioning methods for LoRA\
-    \ as special cases, and show that LoRSum can also be used for updating a low-rank\
-    \ momentum. In order to address full steps with preconditioned gradient descent,\
-    \ we propose a scaled variant of LoRSum that uses structured metrics such as K-FAC\
-    \ and Shampoo, and we show that storing the diagonal of these metrics still allows\
-    \ them to perform well while remaining memory-efficient. Experiments on a synthetic\
-    \ task, CIFAR-100, and language-model fine-tuning on GLUE, SQuAD v2, and WikiText-103,\
-    \ show that our method can match or improve LoRA baselines given modest compute\
-    \ overhead, while avoiding full-matrix SVD projections and retaining LoRA-style\
-    \ parameter efficiency.\n\t\t"
+- abstract: Low-Rank Adaptation (LoRA) fine-tunes large models by learning low-rank
+    updates on top of frozen weights, dramatically reducing trainable parameters and
+    memory. In this work, we address the gap between training with full steps with
+    low-rank projections (SVDLoRA) and LoRA fine-tuning. We propose LoRSum, a memory-efficient
+    subroutine that closes this gap for gradient descent by casting LoRA optimization
+    as a proximal sub-problem and solving it efficiently with alternating least squares
+    updates, which we prove to be an implicit block power method. We recover several
+    recently proposed preconditioning methods for LoRA as special cases, and show
+    that LoRSum can also be used for updating a low-rank momentum. In order to address
+    full steps with preconditioned gradient descent, we propose a scaled variant of
+    LoRSum that uses structured metrics such as K-FAC and Shampoo, and we show that
+    storing the diagonal of these metrics still allows them to perform well while
+    remaining memory-efficient. Experiments on a synthetic task, CIFAR-100, and language-model
+    fine-tuning on GLUE, SQuAD v2, and WikiText-103, show that our method can match
+    or improve LoRA baselines given modest compute overhead, while avoiding full-matrix
+    SVD projections and retaining LoRA-style parameter efficiency.
   authors: "Abdulla Jasem Almansoori, Maria Ivanova, Andrey Veprikov, Aleksandr Beznosikov,\
     \ Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D</strong>"
+  keywords:
+  - low-rank adaptation
+  - lora fine-tuning
+  - proximal subspace iteration
+  - alternating least squares
+  - implicit block power method
+  - svd-free rank projection
+  - diagonal fractional k-fac
+  - kronecker-factored metrics
+  - shampoo preconditioning
+  - low-rank momentum
+  - language model fine-tuning
   link: https://arxiv.org/abs/2602.16456
   pdf: https://arxiv.org/pdf/2602.16456
+  tags:
+  - LLM
+  - Optimization
+  - Parameter-Efficient Fine-Tuning
+  - Low-Rank Methods
+  - Second-Order Methods
   title: 'Beyond SGD, Without SVD: Proximal Subspace Iteration LoRA with Diagonal
     Fractional K-FAC'
   type: tpaper
@@ -450,28 +624,45 @@
   authors: "Nazarii Tupitsa, Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Eduard Gorbunov"
   journal: Third Conference on Parsimony and Learning (CPAL'26)
+  keywords: []
   link: https://arxiv.org/abs/2402.05050
   pdf: https://arxiv.org/pdf/2402.05050.pdf
+  tags: []
   title: Selective Collaboration for Robust Federated Learning
   type: cpaper
   year: '2026'
-- abstract: "\n We consider distributed optimization under Byzantine attacks in the\
-    \ presence of $(L_0,L_1)$-smoothness, a generalization of standard $L$-smoothness\
-    \ that captures functions with state-dependent gradient Lipschitz constants. We\
-    \ propose $\\texttt{Byz-NSGDM}$, a normalized stochastic gradient descent method\
-    \ with momentum that achieves robustness against Byzantine workers while maintaining\
-    \ convergence guarantees. Our algorithm combines momentum normalization with Byzantine-robust\
-    \ aggregation enhanced by Nearest Neighbor Mixing (NNM) to handle both the challenges\
-    \ posed by $(L_0,L_1)$-smoothness and Byzantine adversaries. We prove that $\\\
-    texttt{Byz-NSGDM}$ achieves a convergence rate of $O(K^{-1/4})$ up to a Byzantine\
-    \ bias floor proportional to the robustness coefficient and gradient heterogeneity.\
-    \ Experimental validation on heterogeneous MNIST classification and synthetic\
-    \ $(L_0,L_1)$-smooth optimization problems demonstrates the effectiveness of our\
-    \ approach against various Byzantine attack strategies.\n\t\t"
+- abstract: We consider distributed optimization under Byzantine attacks in the presence
+    of $(L_0,L_1)$-smoothness, a generalization of standard $L$-smoothness that captures
+    functions with state-dependent gradient Lipschitz constants. We propose $\texttt{Byz-NSGDM}$,
+    a normalized stochastic gradient descent method with momentum that achieves robustness
+    against Byzantine workers while maintaining convergence guarantees. Our algorithm
+    combines momentum normalization with Byzantine-robust aggregation enhanced by
+    Nearest Neighbor Mixing (NNM) to handle both the challenges posed by $(L_0,L_1)$-smoothness
+    and Byzantine adversaries. We prove that $\texttt{Byz-NSGDM}$ achieves a convergence
+    rate of $O(K^{-1/4})$ up to a Byzantine bias floor proportional to the robustness
+    coefficient and gradient heterogeneity. Experimental validation on heterogeneous
+    MNIST classification and synthetic $(L_0,L_1)$-smooth optimization problems demonstrates
+    the effectiveness of our approach against various Byzantine attack strategies.
   authors: "Arman Bolatov, Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Eduard Gorbunov"
   journal: Third Conference on Parsimony and Learning (CPAL'26)
+  keywords:
+  - byzantine-robust optimization
+  - distributed optimization
+  - l0 l1 smoothness
+  - normalized stochastic gradient descent
+  - momentum normalization
+  - byzantine-robust aggregation
+  - nearest neighbor mixing
+  - gradient heterogeneity
+  - convergence guarantees
+  - heterogeneous mnist classification
   pdf: https://openreview.net/attachment?id=IhErR5K3EL
+  tags:
+  - Optimization
+  - Distributed Optimization
+  - Robustness
+  - Stochastic Optimization
   title: Byzantine-Robust Optimization under $(L_0, L_1)$-Smoothness
   type: cpaper
   year: '2026'
@@ -500,8 +691,10 @@
   authors: "Ivo Gollini Navarrete, Nicolas Mauricio Cuadrado, <strong>Martin Tak\xE1\
     \u010D</strong>, Samuel Horv\xE1th"
   journal: Third Conference on Parsimony and Learning (CPAL'26)
+  keywords: []
   link: https://arxiv.org/abs/2502.11450
   pdf: https://arxiv.org/pdf/2502.11450
+  tags: []
   title: What Scalable Second-Order Information Knows for Pruning at Initialization
   type: cpaper
   year: '2026'
@@ -516,13 +709,15 @@
     \t\t"
   authors: "Slavomir Hanzely, Farshed Abdukhakimov, <strong>Martin Tak\xE1\u010D</strong>"
   journal: International Conference on Learning Representations, ICLR 2026
+  keywords: []
   link: https://openreview.net/forum?id=0eM74HjPQA
   pdf: https://openreview.net/pdf?id=0eM74HjPQA
+  tags: []
   title: 'Newton Method Revisited: Global Convergence Rates up to $O(1/k^3)$ for Stepsize
     Schedules and Linesearch Procedures'
   type: cpaper
   year: '2026'
-- abstract: "\nLarge pre-trained models are commonly adapted to downstream tasks using\
+- abstract: "Large pre-trained models are commonly adapted to downstream tasks using\
     \ parameter-efficient fine-tuning methods such as Low-Rank Adaptation (LoRA),\
     \ which injects small trainable low-rank matrices instead of updating all weights.\
     \ While LoRA dramatically reduces trainable parameters with little overhead, it\
@@ -536,14 +731,32 @@
     \ the need for tuning extra hyperparameters, e.g., LoRA scaling factor \u03B1\
     . Empirically, this approach substantially narrows the performance gap between\
     \ adapter-based tuning and full fine-tuning and consistently outperforms standard\
-    \ LoRA-style methods, all without increasing inference cost.\n\t\t"
+    \ LoRA-style methods, all without increasing inference cost."
   authors: "Nurbek Tastan, Stefanos Laskaridis, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Karthik Nandakumar, Samuel Horv\xE1th"
   journal: 'Tiny Titans: The next wave of On-Device Learning for Foundational Models
     (TTODLer-FM) @ ICML 2025; International Conference on Learning Representations,
     ICLR 2026'
+  keywords:
+  - low-rank adaptation
+  - lora
+  - loft optimizer
+  - parameter-efficient fine-tuning
+  - full fine-tuning approximation
+  - optimizer state alignment
+  - adamw moments
+  - projected gradients
+  - momentum projection
+  - second moment projection
+  - scaling hyperparameter
   link: https://openreview.net/forum?id=86P3sb1dpr
   pdf: https://openreview.net/pdf?id=86P3sb1dpr
+  tags:
+  - LLM
+  - Optimization
+  - Parameter-Efficient Fine-Tuning
+  - Low-Rank Methods
+  - Efficient Training
   title: 'LoFT: Low-Rank Adaptation That Behaves Like Full Fine-Tuning'
   type: cpaper
   year: '2026'
@@ -573,8 +786,10 @@
   authors: "Irina Miodownik, Ruben Solozabal, Michael P. O\u2019Hagan, Shira Albeck,\
     \ Yoav Peleg, <strong>Martin Tak\xE1\u010D</strong>, Ariel Afek"
   journal: Proceedings of the National Academy of Sciences (PNAS)
+  keywords: []
   link: https://www.pnas.org/doi/10.1073/pnas.2520814122
   pdf: https://www.pnas.org/doi/epdf/10.1073/pnas.2520814122
+  tags: []
   title: DNA methylation shapes transcription factor binding beyond canonical CpG
     contexts
   type: jpaper
@@ -590,15 +805,19 @@
   authors: "Maxim Panov, Nikita Kotelevskii, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Samuel Horv\xE1th"
   journal: US20250378350A1
+  keywords: []
   link: https://patents.google.com/patent/US20250378350A1/en
+  tags: []
   title: Method and system for determining uncertainty in personalized federated learning
   type: patent
   year: '2025'
 - abstract: "\n\n\t\t"
   authors: "Dmitry Pasechnyuk-Vilensky, Dmitry Kamzolov, <strong>Martin Tak\xE1\u010D\
     </strong>"
+  keywords: []
   link: https://arxiv.org/abs/2510.08714
   pdf: https://arxiv.org/pdf/2510.08714
+  tags: []
   title: 'Re3MCN: Cubic Newton + Variance Reduction + Momentum + Quadratic Regularization
     for Finite-sum Non-convex Problems'
   type: tpaper
@@ -626,8 +845,10 @@
     \ signals such as BWD are practical tools for triaging offline RL datasets and\
     \ policy optimization.\n\t\t"
   authors: "Arip Asadulaev, Fakhri Karray, <strong>Martin Tak\xE1\u010D</strong>"
+  keywords: []
   link: https://arxiv.org/abs/2510.12638
   pdf: https://arxiv.org/pdf/2510.12638
+  tags: []
   title: Expert or not? assessing data quality in offline reinforcement learning
   type: tpaper
   year: '2025'
@@ -645,8 +866,10 @@
     \ accuracy on ARC-1 with only 0.8M parameters, outperforming most LLMs.\n\t\t"
   authors: "Arip Asadulaev, Rayan Banerjee, Fakhri Karray, <strong>Martin Tak\xE1\u010D\
     </strong>"
+  keywords: []
   link: https://arxiv.org/abs/2511.16886
   pdf: https://arxiv.org/pdf/2511.16886
+  tags: []
   title: Deep Improvement Supervision
   type: tpaper
   year: '2025'
@@ -676,7 +899,9 @@
     </strong>, Salem Lahlou, Zangir Iklassov, M. Schaffrath, N. Reddicharla, R. Mohan,\
     \ M. Yaslam, M. Lee"
   journal: Abu Dhabi International Petroleum Exhibition and Conference
+  keywords: []
   link: https://onepetro.org/SPEADIP/proceedings-abstract/25ADIP/25ADIP/793038
+  tags: []
   title: Assessing the Capabilities of Large Language Models for Oil and Gas Industry
     Applications
   type: jpaper
@@ -696,6 +921,8 @@
     \ inference costs \u2014 making it the fastest method among competitors.\n\t\t"
   authors: "Abduragim Shtanchaev, Albina Ilina, Yazid Janati, Badr Mofad, <strong>Martin\
     \ Tak\xE1\u010D</strong>, Eric Moulines"
+  keywords: []
+  tags: []
   title: Guess and Guide Zero-Shot Diffusion Guidance
   type: tpaper
   year: '2025'
@@ -722,32 +949,51 @@
     \ medical, satellite), demonstrating robust generalization.\n\t\t"
   authors: "Lotfi Abdelkrim Mecharbat, Ibrahim Almakky, Abdelrahman Elsayed, Hazem\
     \ Lashen, Alya Almsouti, <strong>Martin Tak\xE1\u010D</strong>, Mohammad Yaqub"
+  keywords: []
+  tags: []
   title: 'Adapt to All Needs (ATAN): Meta-learned Efficient Adaptation of Vision Foundation
     Models'
   type: tpaper
   year: '2025'
-- abstract: "\nRecent advancements in machine learning have improved performance while\
-    \ also increasing computational demands. While federated and distributed setups\
-    \ address these issues, their structure is vulnerable to malicious influences.\
-    \ In this paper, we address a specific threat, Byzantine attacks, where compromised\
-    \ clients inject adversarial updates to derail global convergence. We combine\
-    \ the trust scores concept with trial function methodology to dynamically filter\
-    \ outliers. Our methods address the critical limitations of previous approaches,\
-    \ allowing functionality even when Byzantine nodes are in the majority. Moreover,\
-    \ our algorithms adapt to widely used scaled methods like Adam and RMSProp, as\
-    \ well as practical scenarios, including local training and partial participation.\
-    \ We validate the robustness of our methods by conducting extensive experiments\
-    \ on both synthetic and real ECG data collected from medical institutions. Furthermore,\
-    \ we provide a broad theoretical analysis of our algorithms and their extensions\
-    \ to aforementioned practical setups. The convergence guarantees of our methods\
-    \ are comparable to those of classical algorithms developed without Byzantine\
-    \ interference.\n\t\t"
+- abstract: Recent advancements in machine learning have improved performance while
+    also increasing computational demands. While federated and distributed setups
+    address these issues, their structure is vulnerable to malicious influences. In
+    this paper, we address a specific threat, Byzantine attacks, where compromised
+    clients inject adversarial updates to derail global convergence. We combine the
+    trust scores concept with trial function methodology to dynamically filter outliers.
+    Our methods address the critical limitations of previous approaches, allowing
+    functionality even when Byzantine nodes are in the majority. Moreover, our algorithms
+    adapt to widely used scaled methods like Adam and RMSProp, as well as practical
+    scenarios, including local training and partial participation. We validate the
+    robustness of our methods by conducting extensive experiments on both synthetic
+    and real ECG data collected from medical institutions. Furthermore, we provide
+    a broad theoretical analysis of our algorithms and their extensions to aforementioned
+    practical setups. The convergence guarantees of our methods are comparable to
+    those of classical algorithms developed without Byzantine interference.
   authors: "Gleb Molodtsov, Daniil Medyakov, Sergey Skorik, Nikolas Khachaturov, Shahane\
     \ Tigranyan, Vladimir Aletov, Aram Avetisyan, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Aleksandr Beznosikov"
   journal: AAAI'26 (oral)
+  keywords:
+  - byzantine attacks
+  - trust scores
+  - trial functions
+  - byzantine-robust optimization
+  - outlier filtering
+  - distributed machine learning
+  - scaled adaptive methods
+  - adam and rmsprop
+  - local training
+  - partial participation
+  - convergence guarantees
+  - ecg data
   link: https://arxiv.org/abs/2505.07614?
   pdf: https://arxiv.org/pdf/2505.07614?
+  tags:
+  - Federated Learning
+  - Distributed Optimization
+  - Optimization
+  - Robustness
   title: 'Bant: Byzantine Antidote via Trial Function and Trust Scores'
   type: cpaper
   year: '2026'
@@ -772,6 +1018,8 @@
     \ athttps://anonymous.4open.science/r/LIB-2D05\n\t\t"
   authors: "Andrey Veprikov, Arman Bolatov, Samuel Horv\xE1th, Aleksandr Beznosikov,\
     \ <strong>Martin Tak\xE1\u010D</strong>, Slavomir Hanzely"
+  keywords: []
+  tags: []
   title: 'Preconditioned Norms: A Unified Framework for Steepest Descent, Quasi-Newton
     and Adaptive Methods'
   type: tpaper
@@ -789,8 +1037,10 @@
     \t\t"
   authors: "Arip Asadulaev, Semyon Semenov, Abduragim Shtanchaev, Eric Moulines, Fakhri\
     \ Karray, <strong>Martin Tak\xE1\u010D</strong>"
+  keywords: []
   link: https://arxiv.org/abs/2510.11955
   pdf: https://arxiv.org/pdf/2510.11955
+  tags: []
   title: Y-shaped Generative Flows
   type: tpaper
   year: '2025'
@@ -812,8 +1062,10 @@
     \ traditional scenario-based models.\n\t\t"
   authors: "Nicolas Mauricio Cuadrado, Mohannad Takrouri, Ji\u0159\xED N\u011Bme\u010D\
     ek, <strong>Martin Tak\xE1\u010D</strong>, Jakub Mare\u010Dek"
+  keywords: []
   link: https://arxiv.org/abs/2511.13888
   pdf: https://arxiv.org/pdf/2511.13888
+  tags: []
   title: Tractable Probabilistic Models for Investment Planning
   type: tpaper
   year: '2025'
@@ -829,29 +1081,47 @@
     \ method, including values greater than one and even negative steps.\n\t\t"
   authors: "Alexander Shestakov, Sushil Bohara, Samuel Horv\xE1th, <strong>Martin\
     \ Tak\xE1\u010D</strong>, Slavom\xEDr Hanzely"
+  keywords: []
   link: https://arxiv.org/abs/2509.25782
   pdf: https://arxiv.org/pdf/2509.25782
+  tags: []
   title: Loss-Transformation Invariance in the Damped Newton Method
   type: tpaper
   year: '2025'
-- abstract: "\n\t\tIn this paper, we propose Cubic Regularized Quasi-Newton Methods\
-    \ for (strongly) star-convex and Accelerated Cubic Regularized Quasi-Newton for\
-    \ convex optimization. The proposed class of algorithms combines the global convergence\
-    \ of the Cubic Newton with the affordability of constructing the Hessian approximation\
-    \ via a Quasi-Newton update. To construct these methods we introduce two novel\
-    \ concepts of Hessian inexactness and propose the Adaptive Inexact Cubic Regularized\
-    \ Newton algorithm and its accelerated version, which adjust to the approximation\
-    \ error. We show that different Quasi-Newton updates satisfy these approximation\
-    \ conditions and provide a complexity-efficient way to solve the cubic subproblem.\
-    \ We provide global convergence rates with explicit dependence on Hessian approximation\
-    \ error. By combining cubic regularization, acceleration technique, and adaptivity,\
-    \ our algorithms show good practical performance, especially from the points where\
-    \ classical Newton diverges.\n\t\t"
+- abstract: In this paper, we propose Cubic Regularized Quasi-Newton Methods for (strongly)
+    star-convex and Accelerated Cubic Regularized Quasi-Newton for convex optimization.
+    The proposed class of algorithms combines the global convergence of the Cubic
+    Newton with the affordability of constructing the Hessian approximation via a
+    Quasi-Newton update. To construct these methods we introduce two novel concepts
+    of Hessian inexactness and propose the Adaptive Inexact Cubic Regularized Newton
+    algorithm and its accelerated version, which adjust to the approximation error.
+    We show that different Quasi-Newton updates satisfy these approximation conditions
+    and provide a complexity-efficient way to solve the cubic subproblem. We provide
+    global convergence rates with explicit dependence on Hessian approximation error.
+    By combining cubic regularization, acceleration technique, and adaptivity, our
+    algorithms show good practical performance, especially from the points where classical
+    Newton diverges.
   authors: "Dmitry Kamzolov, Klea Ziu, Artem Agafonov, <strong>Martin Tak\xE1\u010D\
     </strong>"
   journal: Journal of Optimization Theory and Applications
+  keywords:
+  - accelerated quasi-newton methods
+  - cubic regularization
+  - adaptive inexact newton method
+  - hessian approximation error
+  - global convergence rates
+  - convex optimization
+  - star-convex functions
+  - cubic subproblem
+  - bfgs updates
+  - sr1 updates
   link: https://link.springer.com/article/10.1007/s10957-025-02804-3
   pdf: https://arxiv.org/pdf/2302.04987.pdf
+  tags:
+  - Optimization
+  - Second-Order Methods
+  - Convex Optimization
+  - Quasi-Newton Methods
   title: Accelerated Adaptive Cubic Regularized Quasi-Newton Methods
   type: jpaper
   year: '2026'
@@ -874,8 +1144,10 @@
   authors: "Abdulla Jasem Almansoori, Maria Ivanova, Andrey Veprikov, Aleksandr Beznosikov,\
     \ Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D</strong>"
   journal: 'OPT 2025: Optimization for Machine Learning @ NeurIPS 2025'
+  keywords: []
   link: https://arxiv.org/abs/2509.19977
   pdf: https://arxiv.org/pdf/2509.19977
+  tags: []
   title: 'Faster Than SVD, Smarter Than SGD: The OPLoRA Alternating Update'
   type: cpaper
   year: '2025'
@@ -890,8 +1162,10 @@
   authors: "Viktor Kovalchuk, Nikita Kotelevskii, Maxim Panov, Samuel Horv\xE1th,\
     \ <strong>Martin Tak\xE1\u010D</strong>, , "
   journal: 'OPT 2025: Optimization for Machine Learning @ NeurIPS 2025'
+  keywords: []
   link: https://arxiv.org/abs/2509.15147
   pdf: https://arxiv.org/pdf/2509.15147
+  tags: []
   title: Who to Trust? Aggregating Client Knowledge in Logit-Based Federated Learning
   type: cpaper
   year: '2025'
@@ -916,6 +1190,8 @@
     \ Tak\xE1\u010D</strong>"
   journal: 2nd Workshop on Multi-modal Foundation Models and Large Language Models
     for Life Sciences @ NeurIPS 2025
+  keywords: []
+  tags: []
   title: Learning In-Silico Maps of Transcription Factor Binding and Cooperativity
     interactions
   type: cpaper
@@ -935,6 +1211,8 @@
     \ \n\t\t"
   authors: "Yanlin Wu, Dmitry Kamzolov, <strong>Martin Tak\xE1\u010D</strong>"
   journal: 'OPT 2025: Optimization for Machine Learning @ NeurIPS 2025'
+  keywords: []
+  tags: []
   title: Quasi-Newton Methods for Federated Learning with Error Feedback
   type: cpaper
   year: '2025'
@@ -955,8 +1233,10 @@
   authors: "Ruben Solozabal, Velibor Bojkovic, Hilal AlQuabeh, Kentaro Inui, <strong>Martin\
     \ Tak\xE1\u010D</strong>"
   journal: NeurIPS 2025
+  keywords: []
   link: https://arxiv.org/abs/2508.20441
   pdf: https://arxiv.org/pdf/2508.20441
+  tags: []
   title: Uncovering the Spectral Bias in Diagonal State Space Models
   type: cpaper
   year: '2025'
@@ -976,8 +1256,10 @@
   authors: "Ahmed Heakl, Yahia Salaheldin Shaaban, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Salem Lahlou, Zangir Iklassov"
   journal: NeurIPS 2025
+  keywords: []
   link: https://arxiv.org/abs/2505.21887
   pdf: https://arxiv.org/pdf/2505.21887
+  tags: []
   title: 'SVRPBench: A Realistic Benchmark for Stochastic Vehicle Routing Problem'
   type: cpaper
   year: '2025'
@@ -1005,8 +1287,10 @@
   authors: "Lotfi Abdelkrim Mecharbat, Ibrahim Almakky, <strong>Martin Tak\xE1\u010D\
     </strong>, Mohammad Yaqub"
   journal: MICCAI 2025
+  keywords: []
   link: https://arxiv.org/abs/2504.15865
   pdf: https://arxiv.org/pdf/2504.15865
+  tags: []
   title: 'MedNNS: Supernet-based Medical Task-Adaptive Neural Network Search'
   type: cpaper
   year: '2025'
@@ -1022,7 +1306,9 @@
   authors: "<strong>Martin Tak\xE1\u010D</strong>, Nicolas Mauricio Cuadrado, Roberto\
     \ Alejandro Gutierrez Guillen, Samuel Horv\xE1th"
   journal: US 2025/0272621 A1
+  keywords: []
   link: https://patents.google.com/patent/US20250272621A1/en
+  tags: []
   title: System And Method For A Hierarchical Multi-agent Framework For Transactive
     Microgrids
   type: patent
@@ -1043,7 +1329,9 @@
   authors: "<strong>Martin Tak\xE1\u010D</strong>, Nicolas Mauricio Cuadrado, Roberto\
     \ Alejandro Gutierrez Guillen, Samuel Horv\xE1th"
   journal: US 2025/0272723 A1
+  keywords: []
   link: https://patents.google.com/patent/US20250272723A1/en
+  tags: []
   title: Federated Reinforcement Learning-based System And Method For Cooperative
     Energy Optimization
   type: patent
@@ -1051,7 +1339,9 @@
 - abstract: "\nFiling date: 06 Feb 2025. Assignee (Owner): Pending.\n\t\t"
   authors: "Zangir Iklassov, Farkhad Akimov, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Provisional - USPTO Application 63/754,814 (Filed 06 Feb 2025)
+  keywords: []
   ltype: Provisional
+  tags: []
   title: Automated Machine Learning Pipeline Utilizing Large Language Model Agents
     for Data Scientist Workflow
   type: patent
@@ -1060,7 +1350,9 @@
   authors: "Artem Agafonov, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Provisional - USPTO Application 63/776,665 (Filed Mar 24, 2025, MBZUAI
     Ref. 2025-007)
+  keywords: []
   ltype: Provisional
+  tags: []
   title: AI Driven Conversational Shopping Assistant for Seamless and Personalized
     E-Commerce Experiences
   type: patent
@@ -1069,7 +1361,9 @@
   authors: "<strong>Martin Tak\xE1\u010D</strong>, Mohannad Takrouri, Nicolas Avila"
   journal: Submitted - USPTO Application 19179677 (Filed April 15, 2025, MBZUAI Ref.
     2024-005)
+  keywords: []
   ltype: Submitted
+  tags: []
   title: Method for Grid Load Balancing and Enhanced Renewable Energy Use in Climate
     Control Applications
   type: patent
@@ -1092,8 +1386,10 @@
     \t\t"
   authors: "Artem Agafonov, Vladislav Ryspayev, Samuel Horv\xE1th, Alexander Gasnikov,\
     \ <strong>Martin Tak\xE1\u010D</strong>, Slavomir Hanzely"
+  keywords: []
   link: https://arxiv.org/abs/2508.19712
   pdf: https://arxiv.org/pdf/2508.19712
+  tags: []
   title: Simple Stepsize for Quasi-Newton Methods with Global Convergence Guarantees
   type: tpaper
   year: '2025'
@@ -1110,8 +1406,10 @@
     \ information.\n\t\t"
   authors: "Farshed Abdukhakimov, Cuong Anh Pham, Samuel Horv\xE1th, <strong>Martin\
     \ Tak\xE1\u010D</strong>, Slavom\u0131r Hanzely"
+  keywords: []
   link: https://arxiv.org/abs/2508.17288
   pdf: https://arxiv.org/pdf/2508.17288
+  tags: []
   title: 'Polyak Stepsize: Estimating Optimal Functional Values Without Parameters
     or Prior Knowledge'
   type: tpaper
@@ -1134,8 +1432,10 @@
     \ that makes deep data science both accessible and actionable.\n\t\t"
   authors: "Farkhad Akimov, Munachiso Samuel Nwadike, Zangir Iklassov, <strong>Martin\
     \ Tak\xE1\u010D</strong>"
+  keywords: []
   link: https://arxiv.org/abs/2508.18113
   pdf: https://arxiv.org/pdf/2508.18113
+  tags: []
   title: The AI Data Scientist
   type: tpaper
   year: '2025'
@@ -1161,8 +1461,10 @@
   authors: "Petr Ostroukhov, Aigerim Zhumabayeva, Chulu Xiang, Alexander Gasnikov,\
     \ <strong>Martin Tak\xE1\u010D</strong>, Dmitry Kamzolov"
   journal: IMA Journal of Numerical Analysis
+  keywords: []
   link: https://arxiv.org/abs/2402.05264
   pdf: https://arxiv.org/pdf/2402.05264.pdf
+  tags: []
   title: 'AdaBatchGrad: Combining Adaptive Batch Size and Adaptive Step Size'
   type: jpaper
   year: '2025'
@@ -1183,8 +1485,10 @@
   authors: "Nicolas Mauricio Cuadrado, Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D\
     </strong>"
   journal: ICML 2025 CO-BUILD Workshop on Computational Optimization of Buildings
+  keywords: []
   link: https://openreview.net/forum?id=lJOFxEYW0I
   pdf: https://openreview.net/pdf?id=lJOFxEYW0I
+  tags: []
   title: Generalising Battery Control in Net-Zero Buildings via Personalised Federated
     RL
   type: cpaper
@@ -1204,7 +1508,9 @@
   authors: "Ruben Solozabal, Albert Baichorov, Tamir Avioz, Le Song, <strong>Martin\
     \ Tak\xE1\u010D</strong>, Ariel Afek"
   journal: ICML 2025 Generative AI and Biology (GenBio) Workshop
+  keywords: []
   link: https://genbio-workshop.github.io/2025/
+  tags: []
   title: 'EpiBinder: a multimodal deep learning model at base-resolution to analyze
     in vivo Transcription Factor-DNA Binding'
   type: cpaper
@@ -1231,8 +1537,10 @@
     text{HuggingFace}}$).\n\t\t"
   authors: "Omar Choukrani, Idriss Malek, Daniil Orel, Zhuohan Xie, Zangir Iklassov,\
     \ <strong>Martin Tak\xE1\u010D</strong>, Salem Lahlou"
+  keywords: []
   link: https://arxiv.org/abs/2505.12135
   pdf: https://arxiv.org/pdf/2505.12135
+  tags: []
   title: 'LLM-BABYBENCH: Understanding and Evaluating Grounded Planning and Reasoning
     in LLMs'
   type: tpaper
@@ -1264,8 +1572,10 @@
   journal: 'ICML 2025 (International Conference on Machine Learning) and Tiny Titans:
     The next wave of On-Device Learning for Foundational Models (TTODLer-FM) @ ICML
     2025'
+  keywords: []
   link: https://icml.cc/virtual/2025/poster/46134
   pdf: https://arxiv.org/pdf/2411.07837
+  tags: []
   title: 'FRUGAL: Memory-Efficient Optimization by Reducing State Overhead for Scalable
     Training'
   type: cpaper
@@ -1288,8 +1598,10 @@
     \ Alexander Gasnikov, Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Eduard Gorbunov"
   journal: ICML 2025 (International Conference on Machine Learning)
+  keywords: []
   link: https://arxiv.org/abs/2406.04443
   pdf: https://arxiv.org/pdf/2406.04443
+  tags: []
   title: Gradient Clipping Improves AdaGrad when the Noise Is Heavy-Tailed
   type: cpaper
   year: '2025'
@@ -1315,8 +1627,10 @@
     \ Bojkovic, Benjamin Heinzerling, Hilal Alqaubeh, <strong>Martin Tak\xE1\u010D\
     </strong>, Kentaro Inui"
   journal: ACL 2025
+  keywords: []
   link: https://arxiv.org/abs/2501.13491
   pdf: https://arxiv.org/pdf/2501.13491
+  tags: []
   title: 'RECALL: Library-Like Behavior In Language Models is Enhanced by Self-Referencing
     Causal Cycles'
   type: cpaper
@@ -1339,7 +1653,9 @@
   authors: "Anita Halder, Durga Paudyal, Stefano Sanvito, <strong>Martin Tak\xE1\u010D\
     </strong>, Huseyin Ucar"
   journal: 'AMI: Acta Materialia'
+  keywords: []
   link: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5165130
+  tags: []
   title: Machine Learning-Driven Discovery of Hard Magnetic Materials Using High-Throughput
     Computation and Screening
   type: jpaper
@@ -1367,8 +1683,10 @@
   authors: "Dmitry Kamzolov, Dmitry Pasechnyuk, Artem Agafonov, Alexander Gasnikov,\
     \ <strong>Martin Tak\xE1\u010D</strong>"
   journal: ICLR 2025
+  keywords: []
   link: https://arxiv.org/abs/2410.04083
   pdf: https://arxiv.org/pdf/2410.04083
+  tags: []
   title: 'OPTAMI: Global Superlinear Convergence of High-order Methods'
   type: cpaper
   year: '2025'
@@ -1388,8 +1706,10 @@
   authors: "Eduard Gorbunov, Nazarii Tupitsa, Sayantan Choudhury, Alen Aliev, Peter\
     \ Richt\xE1rik, Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D</strong>"
   journal: ICLR 2025
+  keywords: []
   link: https://arxiv.org/abs/2409.14989
   pdf: https://arxiv.org/pdf/2409.14989
+  tags: []
   title: 'Methods for Convex (L0,L1)-Smooth Optimization: Clipping, Acceleration,
     and Adaptivity'
   type: cpaper
@@ -1411,8 +1731,10 @@
   authors: "Yury Demidovich, Petr Ostroukhov, Grigory Malinovsky, Samuel Horv\xE1\
     th, <strong>Martin Tak\xE1\u010D</strong>, Peter Richt\xE1rik, Eduard Gorbunov"
   journal: ICLR 2025
+  keywords: []
   link: https://arxiv.org/abs/2412.02781
   pdf: https://arxiv.org/pdf/2412.02781
+  tags: []
   title: Methods with Local Steps and Random Reshuffling for Generally Smooth Non-Convex
     Federated Optimization
   type: cpaper
@@ -1431,7 +1753,9 @@
   authors: "Nikita Kotelevskii, Vladimir Kondratyev, <strong>Martin Tak\xE1\u010D\
     </strong>, Eric Moulines, Maxim Panov"
   journal: ICLR 2025
+  keywords: []
   pdf: https://openreview.net/pdf?id=cWfpt2t37q
+  tags: []
   title: 'From Risk to Uncertainty: Generating Predictive Uncertainty Measures via
     Bayesian Estimation'
   type: cpaper
@@ -1453,8 +1777,10 @@
   authors: "Nurbek Tastan, Samuel Horvath, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Karthik Nandakumar"
   journal: Conference on Parsimony and Learning (CPAL)
+  keywords: []
   link: https://arxiv.org/abs/2410.03042
   pdf: https://arxiv.org/pdf/2410.03042
+  tags: []
   title: 'FedPeWS: Personalized Warmup via Subnetworks for Enhanced Heterogeneous
     Federated Learning'
   type: cpaper
@@ -1485,8 +1811,10 @@
   authors: "Abdulla Jasem Almansoori, Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D\
     </strong>"
   journal: Conference on Parsimony and Learning (CPAL)
+  keywords: []
   link: https://arxiv.org/abs/2410.03497
   pdf: https://arxiv.org/pdf/2410.03497
+  tags: []
   title: Collaborative and Efficient Personalization with Mixtures of Adaptors
   type: cpaper
   year: '2025'
@@ -1512,8 +1840,10 @@
     \t\t"
   authors: "Mohannad Takrouri, Nicolas M Cuadrado Avila, <strong>Martin Tak\xE1\u010D\
     </strong>"
+  keywords: []
   link: https://arxiv.org/abs/2502.03034
   pdf: https://arxiv.org/pdf/2502.03034
+  tags: []
   title: Knowledge Distillation from Large Language Models for Household Energy Modeling
   type: tpaper
   year: '2025'
@@ -1532,8 +1862,10 @@
   authors: "Artem Agafonov, Dmitry Kamzolov, Rachael Tappenden, Alexander Gasnikov,\
     \ <strong>Martin Tak\xE1\u010D</strong>"
   journal: Optimization Methods and Software (GOMS)
+  keywords: []
   link: https://arxiv.org/abs/2206.02009
   pdf: https://arxiv.org/pdf/2206.02009.pdf
+  tags: []
   title: 'FLECS: A Federated Learning Second-Order Framework via Compression and Sketching'
   type: jpaper
   year: '2025'
@@ -1555,8 +1887,10 @@
   authors: "Ruichen Luo, Sebastian U Stich, Samuel Horv\xE1th, <strong>Martin Tak\xE1\
     \u010D</strong>"
   journal: AISTATS 2025
+  keywords: []
   link: https://arxiv.org/abs/2501.04443
   pdf: https://arxiv.org/pdf/2501.04443
+  tags: []
   title: 'Revisiting LocalSGD and SCAFFOLD: Improved Rates and Missing Analysis'
   type: cpaper
   year: '2025'
@@ -1581,8 +1915,10 @@
   authors: "Asma Ahmed Hashmi, Aigerim Zhumabayeva, Nikita Kotelevski, Artem Agafonov,\
     \ Mohammad Yaqub, Maxim Panov, <strong>Martin Tak\xE1\u010D</strong>"
   journal: SIAM International Conference on Data Mining (SDM25)
+  keywords: []
   link: https://arxiv.org/abs/2301.00524
   pdf: https://arxiv.org/pdf/2301.00524
+  tags: []
   title: Learning Confident Classifiers in the Presence of Label Noise
   type: cpaper
   year: '2025'
@@ -1600,15 +1936,19 @@
     \ the goals of sustainable and efficient smart grids.\n\t\t"
   authors: "Nicolas M Cuadrado Avila, Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D\
     </strong>"
+  keywords: []
   link: https://arxiv.org/abs/2412.20946
   pdf: https://arxiv.org/pdf/2412.20946
+  tags: []
   title: 'Generalizing in Net-Zero Microgrids: A Study with Federated PPO and TRPO'
   type: tpaper
   year: '2024'
 - authors: "Aleksandr Lobanov, Alexander Gasnikov, Eduard Gorbunov, <strong>Martin\
     \ Tak\xE1\u010D</strong>"
+  keywords: []
   link: https://arxiv.org/abs/2412.17050
   pdf: https://arxiv.org/pdf/2412.17050
+  tags: []
   title: Linear Convergence Rate in Convex Setup is Possible! Gradient Descent Method
     Variants under (L0,L1)-Smoothness
   type: tpaper
@@ -1632,8 +1972,10 @@
     \ the proposed method.\n\n\t\t"
   authors: "Kun Song, Ruben Solozabal, Lu Ren, Moloud Abdar, Qing Li, Fakhri Karray,\
     \ <strong>Martin Tak\xE1\u010D</strong>"
+  keywords: []
   link: https://arxiv.org/abs/2410.22026
   pdf: https://arxiv.org/pdf/2410.22026
+  tags: []
   title: Enhance Hyperbolic Representation Learning via Second-order Pooling
   type: tpaper
   year: '2024'
@@ -1654,8 +1996,10 @@
   authors: "Artem Agafonov, Petr Ostroukhov, Konstantin Yakovlev, Eduard Gorbunov,\
     \ <strong>Martin Tak\xE1\u010D</strong>, Alexander Gasnikov, Dmitry Kamzolov"
   journal: NeurIPS 2024
+  keywords: []
   link: https://arxiv.org/abs/2405.15990
   pdf: https://arxiv.org/pdf/2405.15990
+  tags: []
   title: 'Exploring Jacobian Inexactness in Second-Order Methods for Variational Inequalities:
     Lower Bounds, Optimal Algorithms and Quasi-Newton Approximations'
   type: cpaper
@@ -1679,8 +2023,10 @@
   authors: "Zangir Iklassov, Yali Du, Farkhad Akimov, <strong>Martin Tak\xE1\u010D\
     </strong>"
   journal: NeurIPS 2024
+  keywords: []
   link: https://arxiv.org/abs/2405.17950
   pdf: https://arxiv.org/pdf/2405.17950
+  tags: []
   title: Self-Guiding Exploration for Combinatorial Problems
   type: cpaper
   year: '2024'
@@ -1699,8 +2045,10 @@
   authors: "Sayantan Choudhury, Nazarii Tupitsa, Nicolas Loizou, Samuel Horv\xE1th,\
     \ <strong>Martin Tak\xE1\u010D</strong>, Eduard Gorbunov"
   journal: NeurIPS 2024
+  keywords: []
   link: https://arxiv.org/abs/2403.02648
   pdf: https://arxiv.org/pdf/2403.02648.pdf
+  tags: []
   title: 'Remove that Square Root: a New Efficient Scale-Invariant Version of AdaGrad'
   type: cpaper
   year: '2024'
@@ -1717,8 +2065,10 @@
   authors: "Aleksandr Beznosikov, Aibek Alanov, Dmitry Kovalev, <strong>Martin Tak\xE1\
     \u010D</strong>, Alexander Gasnikov"
   journal: ICOMP 2024
+  keywords: []
   link: https://arxiv.org/abs/2206.08303
   pdf: https://arxiv.org/pdf/2206.08303
+  tags: []
   title: On Scaled Methods for Saddle Point Problems
   type: cpaper
   year: '2024'
@@ -1741,8 +2091,10 @@
   authors: "Aigerim Zhumabayeva, Nikhil Ranjan, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Stefano Sanvito, Huseyin Ucar"
   journal: The Journal of Physical Chemistry C
+  keywords: []
   link: https://pubs.acs.org/doi/full/10.1021/acs.jpcc.4c01974
   pdf: https://pubs.acs.org/doi/epdf/10.1021/acs.jpcc.4c01974
+  tags: []
   title: 'MagBERT: Magnetics Knowledge Aware Language Model Coupled with a Question
     Answering Pipeline for Curie Temperature Extraction Task'
   type: jpaper
@@ -1765,8 +2117,10 @@
     \ threats.\n\t\t"
   authors: "Samar Fares, Klea Ziu, Toluwani Aremu, Nikita Durasov, <strong>Martin\
     \ Tak\xE1\u010D</strong>, Pascal Fua, Karthik Nandakumar, Ivan Laptev"
+  keywords: []
   link: https://arxiv.org/abs/2406.09250
   pdf: https://arxiv.org/pdf/2406.09250
+  tags: []
   title: 'MirrorCheck: Efficient Adversarial Defense for Vision-Language Models'
   type: tpaper
   year: '2024'
@@ -1791,8 +2145,10 @@
     \ Aram Avetisyan, Aleksandr Beznosikov, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Yaroslav Kholodov, Alexander Gasnikov"
   journal: Russian Mathematical Surveys
+  keywords: []
   link: https://arxiv.org/abs/2406.00846
   pdf: https://arxiv.org/pdf/2406.00846
+  tags: []
   title: Local Methods with Adaptivity via Scaling
   type: jpaper
   year: '2024'
@@ -1811,8 +2167,10 @@
   authors: "Farshed Abdukhakimov, Chulu Xiang, Dmitry Kamzolov, <strong>Martin Tak\xE1\
     \u010D</strong>"
   journal: Computational Mathematics and Mathematical Physics
+  keywords: []
   link: https://link.springer.com/article/10.1134/S0965542524700052
   pdf: https://arxiv.org/pdf/2310.02093.pdf
+  tags: []
   title: Stochastic Gradient Descent with Preconditioned Polyak Step-size
   type: jpaper
   year: '2024'
@@ -1830,6 +2188,8 @@
     \ currently available.\n\t\t"
   authors: "Ruben Solozabal, Guy Ilan, <strong>Martin Tak\xE1\u010D</strong>, Ariel\
     \ Afek"
+  keywords: []
+  tags: []
   title: Deep learning model at base-resolution to analyze In Vivo Cytosine Methylation
     on Transcription Factor-DNA Binding
   type: tpaper
@@ -1853,8 +2213,10 @@
   authors: "Konstantin Mishchenko, Eduard Gorbunov, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Peter Richt\xE1rik"
   journal: Optimization Methods and Software (GOMS)
+  keywords: []
   link: http://arxiv.org/abs/1901.09269
   pdf: https://arxiv.org/pdf/1901.09269.pdf
+  tags: []
   title: Distributed Learning with Compressed Gradient Differences
   type: jpaper
   year: '2024'
@@ -1877,6 +2239,8 @@
   authors: "Nikita Kotelevskii , Samuel Horv\xE1th, Karthik Nandakumar, <strong>Martin\
     \ Tak\xE1\u010D</strong>, Maxim Panov"
   journal: 33rd International Joint Conference on Artificial Intelligence (IJCAI 2024)
+  keywords: []
+  tags: []
   title: Dirichlet-based Uncertainty Quantification for Personalized Federated Learning
     with Improved Posterior Networks
   type: cpaper
@@ -1901,8 +2265,10 @@
   authors: "Abdulla Jasem Almansoori, Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D\
     </strong>"
   journal: Transactions on Machine Learning Research
+  keywords: []
   link: https://openreview.net/forum?id=vsez76EAV8
   pdf: https://openreview.net/pdf?id=vsez76EAV8
+  tags: []
   title: 'PaDPaF: Partial Disentanglement with Partially-Federated GANs'
   type: jpaper
   year: '2024'
@@ -1922,8 +2288,10 @@
   authors: "Abdurakhmon Sadiev, Aleksandr Beznosikov, Abdulla Jasem Almansoori, Dmitry\
     \ Kamzolov, Rachael Tappenden, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Journal of Optimization Theory and Applications
+  keywords: []
   link: https://link.springer.com/article/10.1007/s10957-023-02365-3
   pdf: https://arxiv.org/pdf/2206.00285.pdf
+  tags: []
   title: Stochastic Gradient Methods with Preconditioned Updates
   type: jpaper
   year: '2024'
@@ -1939,8 +2307,10 @@
     \ of more stable policies.\n\t\t"
   authors: "Yunxiang LI, Rui Yuan, Chen Fan, Mark Schmidt, Samuel Horv\xE1th, Robert\
     \ M. Gower, <strong>Martin Tak\xE1\u010D</strong>"
+  keywords: []
   link: https://arxiv.org/abs/2404.07525
   pdf: https://arxiv.org/pdf/2404.07525.pdf
+  tags: []
   title: Enhancing Policy Gradient with the Polyak Step-Size Adaption
   type: tpaper
   year: '2024'
@@ -1960,9 +2330,11 @@
   authors: "Nicolas Cuadrado, Yunxiang Li, Samuel Horv\xE1th, <strong>Martin Tak\xE1\
     \u010D</strong>"
   journal: Tackling Climate Change with Machine Learning at ICLR 2024
+  keywords: []
   link: https://arxiv.org/abs/2403.18439
   ltype: Tackling Climate Change with Machine Learning at ICLR 2024
   pdf: https://arxiv.org/pdf/2403.18439.pdf
+  tags: []
   title: 'Generalized Policy Learning for Smart Grids: FL TRPO Approach'
   type: cpaper
   year: '2024'
@@ -1985,8 +2357,10 @@
   authors: "Ekaterina Borodich, Aleksandr Beznosikov, Abdurakhmon Sadiev, Vadim Sushko,\
     \ Nikolay Savelyev, <strong>Martin Tak\xE1\u010D</strong>, Alexander Gasnikov"
   journal: Computational Management Science
+  keywords: []
   link: https://arxiv.org/abs/2106.07289
   pdf: https://arxiv.org/pdf/2106.07289v2.pdf
+  tags: []
   title: Decentralized Personalized Federated Learning for Min-Max Problems
   type: jpaper
   year: '2024'
@@ -2003,8 +2377,10 @@
     \ benchmark for future SVRP studies and industry application.\n\t\t"
   authors: "Zangir Iklassov, Ikboljon Sobirov, Ruben Solozabal, <strong>Martin Tak\xE1\
     \u010D</strong>"
+  keywords: []
   link: https://arxiv.org/abs/2402.09765
   pdf: https://arxiv.org/pdf/2402.09765.pdf
+  tags: []
   title: Reinforcement Learning for Solving Stochastic Vehicle Routing Problem with
     Time Windows
   type: tpaper
@@ -2026,8 +2402,10 @@
     \ Maksim Velikanov, Alexander Fishkov, Samuel Horvath, <strong>Martin Tak\xE1\u010D\
     </strong>, Eric Moulines, Maxim Panov"
   journal: AISTATS 2024
+  keywords: []
   link: https://arxiv.org/abs/2312.15799
   pdf: https://arxiv.org/pdf/2312.15799
+  tags: []
   title: Efficient Conformal Prediction under Data Heterogeneity
   type: cpaper
   year: '2024'
@@ -2043,8 +2421,10 @@
   authors: "Artem Agafonov, Dmitry Kamzolov, Alexander Gasnikov, Kimon Antonakopoulos,\
     \ Volkan Cevher, <strong>Martin Tak\xE1\u010D</strong>"
   journal: ICLR 2024
+  keywords: []
   link: http://arxiv.org/abs/2309.01570
   pdf: https://arxiv.org/pdf/2309.01570.pdf
+  tags: []
   title: 'Advancing the lower bounds: An accelerated, stochastic, second-order method
     with optimal adaptation to inexactness'
   type: cpaper
@@ -2053,7 +2433,9 @@
   authors: "Fatima A. AlKhoori, Latif U. Khan, Mohsen Guizani, <strong>Martin Tak\xE1\
     \u010D</strong>"
   journal: Simulation Modelling Practice and Theory
+  keywords: []
   link: https://www.sciencedirect.com/science/article/pii/S1569190X24000133
+  tags: []
   title: Latency-Aware Placement of Vehicular Metaverses using Virtual Network Functions
   type: jpaper
   year: '2024'
@@ -2068,7 +2450,9 @@
   authors: "Vitali Pirau, Aleksandr Beznosikov, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Vladislav Matyukhin, Alexander Gasnikov"
   journal: Computational Management Science
+  keywords: []
   link: https://link.springer.com/article/10.1007/s10287-023-00496-6
+  tags: []
   title: Preconditioning meets biased compression for efficient distributed optimization
   type: jpaper
   year: '2024'
@@ -2088,6 +2472,8 @@
   authors: "Kun Song, Ruben Solozabal Ochoa de Retana, Hao Li, <strong>Martin Tak\xE1\
     \u010D</strong>, Lu Ren, Fakhri Karray"
   journal: 38th Annual AAAI Conference on Artificial Intelligence (AAAI 2024)
+  keywords: []
+  tags: []
   title: Robustly train Normalizing Flows via KL Divergence Regularization
   type: cpaper
   year: '2024'
@@ -2102,7 +2488,9 @@
     \ demonstrate the efficiency of this approach.\n\t\t\t"
   authors: "Aleksandr Beznosikov, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Optimization Letters
+  keywords: []
   link: https://link.springer.com/article/10.1007/s11590-023-02081-x
+  tags: []
   title: Random-reshuffled SARAH does not need a full gradient computations
   type: jpaper
   year: '2023'
@@ -2121,7 +2509,9 @@
   authors: "Ruben Solozabal, Tamir Avioz, Yunxiang Li, Le Song, <strong>Martin Tak\xE1\
     \u010D</strong>, Ariel Afek"
   journal: Machine Learning in Structural Biology Workshop @ NeurIPS 2023
+  keywords: []
   link: https://neurips.cc/virtual/2023/77424
+  tags: []
   title: Investigating Protein-DNA Binding Energetic of Mismatched DNA
   type: cpaper
   year: '2023'
@@ -2141,8 +2531,10 @@
     \ tasks, covering both convex and non-convex contexts.\n\t\t"
   authors: "Farshed Abdukhakimov, Chulu Xiang, Dmitry Kamzolov, Robert Gower, <strong>Martin\
     \ Tak\xE1\u010D</strong>"
+  keywords: []
   link: https://arxiv.org/abs/2312.17369
   pdf: https://arxiv.org/pdf/2312.17369.pdf
+  tags: []
   title: 'SANIA: Polyak-type Optimization Framework Leads to Scaling or Affine Invariant
     Stochastic Algorithms'
   type: tpaper
@@ -2163,7 +2555,9 @@
   authors: "Alibek Kaliyev, Shuyu Qin, Yichen Guo, Seda Memik, Michael Mahoney, Amir\
     \ Gholami, Nhan Tran, <strong>Martin Tak\xE1\u010D</strong>, Joshua Agar"
   journal: AI for Accelerated Materials Design - NeurIPS 2023 Workshop
+  keywords: []
   pdf: https://openreview.net/pdf?id=ITda7kqxSn
+  tags: []
   title: Rapid Fitting of Band-Excitation Piezoresponse Force Microscopy Using Physics
     Constrained Unsupervised Neural Networks
   type: cpaper
@@ -2182,8 +2576,10 @@
     \ problems.\n\t\t"
   authors: "Johannes Aspman, Gilles Bareilles, Vyacheslav Kungurtsev, Jakub Marecek,\
     \ <strong>Martin Tak\xE1\u010D</strong>"
+  keywords: []
   link: http://arxiv.org/abs/2305.16122
   pdf: https://arxiv.org/pdf/2305.16122.pdf
+  tags: []
   title: Hybrid Methods in Polynomial Optimisation
   type: tpaper
   year: '2023'
@@ -2206,8 +2602,10 @@
   authors: "Aleksandr Beznosikov, <strong>Martin Tak\xE1\u010D</strong>, Alexander\
     \ Gasnikov"
   journal: NeurIPS 2023
+  keywords: []
   link: https://arxiv.org/abs/2302.07615
   pdf: https://openreview.net/pdf?id=Rvk1wdwz1L
+  tags: []
   title: 'Similarity, Compression and Local Steps: Three Pillars of Efficient Communications
     for Distributed Variational Inequalities'
   type: cpaper
@@ -2227,6 +2625,8 @@
   authors: "Nazarii Tupitsa, Eduard Gorbunov, Abdulla Jasem Almansoori, Yanlin Wu,\
     \ <strong>Martin Tak\xE1\u010D</strong>, Karthik Nandakumar, Samuel Horv\xE1th"
   journal: NeurIPS 2023
+  keywords: []
+  tags: []
   title: Byzantine-Tolerant Methods for Distributed Variational Inequalities
   type: cpaper
   year: '2023'
@@ -2239,8 +2639,10 @@
   authors: "Artem Agafonov, Dmitry Kamzolov, Pavel Dvurechensky, Alexander Gasnikov,\
     \ <strong>Martin Tak\xE1\u010D</strong>"
   journal: Optimization Methods and Software (GOMS)
+  keywords: []
   link: https://doi.org/10.1080/10556788.2023.2261604
   pdf: https://arxiv.org/pdf/2012.15636.pdf
+  tags: []
   title: Inexact Tensor Methods and Their Application to Stochastic Convex Optimization
   type: jpaper
   year: '2023'
@@ -2260,8 +2662,10 @@
   authors: "Zangir Iklassov, Ikboljon Sobirov, Ruben Solozabal, <strong>Martin Tak\xE1\
     \u010D</strong>"
   journal: 'Asian Conference on Machine Learning (ACML 2023) '
+  keywords: []
   link: https://arxiv.org/abs/2311.07708
   pdf: https://arxiv.org/pdf/2311.07708.pdf
+  tags: []
   title: Reinforcement Learning for Solving Stochastic Vehicle Routing Problem
   type: cpaper
   year: '2023'
@@ -2284,7 +2688,9 @@
   authors: "Zangir Iklassov, Ikboljon Sobirov, Ruben Solozabal, <strong>Martin Tak\xE1\
     \u010D</strong>"
   journal: IEEE Access
+  keywords: []
   link: https://ieeexplore.ieee.org/document/10223206
+  tags: []
   title: Reinforcement Learning Approach to Stochastic Vehicle Routing Problem with
     Correlated Demands
   type: jpaper
@@ -2305,9 +2711,11 @@
   authors: "Dmitry Kamzolov, Alexander Gasnikov, Pavel Dvurechensky, Artem Agafonov,\
     \ <strong>Martin Tak\xE1\u010D</strong>"
   journal: Encyclopedia of Optimization (Panos M. Pardalos, Oleg A. Prokopyev)
+  keywords: []
   link: https://link.springer.com/referenceworkentry/10.1007/978-3-030-54621-2_858-1
   ltype: Springer Nature
   pdf: https://arxiv.org/pdf/2208.13190.pdf
+  tags: []
   title: Exploiting higher order derivatives in convex optimization methods
   type: opaper
   year: '2023'
@@ -2325,8 +2733,10 @@
   authors: "Egor Gladin, Maksim Lavrik-Karmazin, Karina Eduardovna Zainullina, Varvara\
     \ Rudenko, Alexander Gasnikov, <strong>Martin Tak\xE1\u010D</strong>"
   journal: AISTATS
+  keywords: []
   link: https://proceedings.mlr.press/v206/gladin23a
   pdf: https://proceedings.mlr.press/v206/gladin23a/gladin23a.pdf
+  tags: []
   title: Algorithm for Constrained Markov Decision Process with Linear Convergence
   type: cpaper
   year: '2023'
@@ -2344,8 +2754,10 @@
   authors: "Nicolas Mauricio Cuadrado, Roberto Alejandro Gutierrez Guillen, <strong>Martin\
     \ Tak\xE1\u010D</strong>"
   journal: Tiny Papers @ ICLR 2023
+  keywords: []
   link: https://openreview.net/forum?id=75mWq5j4iso
   pdf: https://openreview.net/pdf?id=75mWq5j4iso
+  tags: []
   title: 'FRESCO: Federated Reinforcement Energy System for Cooperative Optimization'
   type: cpaper
   year: '2023'
@@ -2369,8 +2781,10 @@
   authors: "Abdulla Jasem Almansoori, Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D\
     </strong>"
   journal: Federated Learning Systems (FLSys) Workshop @ MLSys 2023 (oral)
+  keywords: []
   link: https://arxiv.org/abs/2212.03836
   pdf: https://arxiv.org/pdf/2212.03836
+  tags: []
   title: Partial Disentanglement with Partially-Federated GANs (PaDPaF)
   type: cpaper
   year: '2023'
@@ -2393,8 +2807,10 @@
   authors: "Zangir Iklassov, Dmitrii Medvedev, Ruben Solozabal, <strong>Martin Tak\xE1\
     \u010D</strong>"
   journal: IJCAI 2023
+  keywords: []
   link: https://arxiv.org/abs/2206.04423
   pdf: https://arxiv.org/pdf/2206.04423
+  tags: []
   title: On the study of Curriculum Learning for inferring dispatching policies on
     the Job Shop Scheduling
   type: cpaper
@@ -2414,8 +2830,10 @@
   authors: "Nicolas Cuadrado, Roberto Alejandro Gutierrez Guillen, Yongli Zhu, <strong>Martin\
     \ Tak\xE1\u010D</strong>"
   journal: 'ICLR 2023 Workshop: Tackling Climate Change with Machine Learning'
+  keywords: []
   link: https://arxiv.org/abs/2303.08447
   pdf: https://arxiv.org/pdf/2303.08447
+  tags: []
   title: 'MAHTM: A Multi-Agent Framework for Hierarchical Transactive Microgrids'
   type: cpaper
   year: '2023'
@@ -2433,8 +2851,10 @@
   authors: "Zheng Shi, Abdurakhmon Sadiev, Nicolas Loizou, Peter Richt\xE1rik, <strong>Martin\
     \ Tak\xE1\u010D</strong>"
   journal: Transactions on Machine Learning Research (TMLR)
+  keywords: []
   link: https://openreview.net/forum?id=WoXJFsJ6Zw
   pdf: https://openreview.net/pdf?id=WoXJFsJ6Zw
+  tags: []
   title: 'AI-SARAH: Adaptive and Implicit Stochastic Recursive Gradient Methods'
   type: jpaper
   year: '2023'
@@ -2455,8 +2875,10 @@
     \ Merouane Debbah, <strong>Martin Tak\xE1\u010D</strong>"
   journal: 26th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD
     2023)
+  keywords: []
   link: https://arxiv.org/abs/2304.01547
   pdf: https://arxiv.org/pdf/2304.01547.pdf
+  tags: []
   title: Regularization of the policy updates for stabilizing Mean Field Games
   type: cpaper
   year: '2023'
@@ -2475,8 +2897,10 @@
   authors: "Shuang Li, William Joseph Swartworth, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Deanna Needell, Robert M. Gower"
   journal: ICLR
+  keywords: []
   link: http://arxiv.org/abs/2207.08171
   pdf: https://arxiv.org/pdf/2207.08171.pdf
+  tags: []
   title: 'SP2: A Second Order Stochastic Polyak Method'
   type: cpaper
   year: '2023'
@@ -2504,8 +2928,10 @@
   authors: "Klea Ziu, Ruben Solozabal, Srinivas Rangarajan, <strong>Martin Tak\xE1\
     \u010D</strong>"
   journal: 'Journal of Physics: Energy'
+  keywords: []
   link: https://iopscience.iop.org/article/10.1088/2515-7655/aca797
   pdf: https://iopscience.iop.org/article/10.1088/2515-7655/aca797/pdf
+  tags: []
   title: A deep neural network for oxidative coupling of methane trained on high throughput
     experimental data
   type: jpaper
@@ -2526,9 +2952,11 @@
   journal: 'Distributed Autonomous Robotic Systems,
 
     15th International Symposium'
+  keywords: []
   link: https://link.springer.com/book/10.1007/978-3-030-92790-5?page=2#toc
   ltype: 'DARS 2021 '
   pdf: https://link.springer.com/content/pdf/10.1007/978-3-030-92790-5_23?pdf=chapter%20toc
+  tags: []
   title: Classification-Aware Path Planning of Network of Robots
   type: cpaper
   year: '2022'
@@ -2545,8 +2973,10 @@
     \t\t"
   authors: "Jie Liu, Antonio Bellon, Andrea Simonetto, <strong>Martin Tak\xE1\u010D\
     </strong>, Jakub Marecek"
+  keywords: []
   link: https://arxiv.org/abs/2211.02939
   pdf: https://arxiv.org/pdf/2211.02939
+  tags: []
   title: Optimal Power Flow Pursuit in the Alternating Current Model
   type: tpaper
   year: '2022'
@@ -2575,8 +3005,10 @@
     are proposed to improve the practical performance of GD. Several numerical examples
     are presented, which demonstrate the advantages of exploiting the GD--PM connection.'
   authors: "Rachael Tappenden, <strong>Martin Tak\xE1\u010D</strong>"
+  keywords: []
   link: https://arxiv.org/abs/2211.00866
   pdf: https://arxiv.org/pdf/2211.00866
+  tags: []
   title: 'Gradient Descent and the Power Method: Exploiting their connection to find
     the leftmost eigen-pair and escape saddle points'
   type: tpaper
@@ -2594,6 +3026,8 @@
     \ Tak\xE1\u010D</strong>"
   journal: Order up! The Benefits of Higher-Order Optimization in Machine Learning
     Workshop @ NeurIPS 2022
+  keywords: []
+  tags: []
   title: 'PSPS: Preconditioned Stochastic Polyak Step-size method for badly scaled
     data'
   type: cpaper
@@ -2609,6 +3043,8 @@
     </strong>"
   journal: Order up! The Benefits of Higher-Order Optimization in Machine Learning
     Workshop @ NeurIPS 2022
+  keywords: []
+  tags: []
   title: Cubic Regularized Quasi-Newton Methods
   type: cpaper
   year: '2022'
@@ -2624,8 +3060,10 @@
   authors: "Artem Agafonov, Brahim Erraji, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Order up! The Benefits of Higher-Order Optimization in Machine Learning
     Workshop @ NeurIPS 2022
+  keywords: []
   link: https://arxiv.org/abs/2210.09626
   pdf: https://arxiv.org/pdf/2210.09626
+  tags: []
   title: 'FLECS-CGD: A Federated Learning Second-Order Framework via Compression and
     Sketching with Compressed Gradient Differences'
   type: cpaper
@@ -2641,8 +3079,10 @@
   authors: "Dmitry Pasechnyuk, Alexander Gasnikov, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Order up! The Benefits of Higher-Order Optimization in Machine Learning
     Workshop @ NeurIPS 2022
+  keywords: []
   link: https://arxiv.org/abs/2210.11869
   pdf: https://arxiv.org/pdf/2210.11869
+  tags: []
   title: Effects of momentum scaling for SGD
   type: cpaper
   year: '2022'
@@ -2662,6 +3102,8 @@
     \ Deanna Needell, Robert M. Gower"
   journal: Order up! The Benefits of Higher-Order Optimization in Machine Learning
     Workshop @ NeurIPS 2022
+  keywords: []
+  tags: []
   title: Using quadratic equations for overparametrized models
   type: cpaper
   year: '2022'
@@ -2679,8 +3121,10 @@
   authors: "Slavomir Hanzely, Dmitry Kamzolov, Dmitry Pasechnyuk, Alexander Gasnikov,,\
     \ Peter Richt\xE1rik, <strong>Martin Tak\xE1\u010D</strong>"
   journal: NeurIPS
+  keywords: []
   link: https://arxiv.org/abs/2211.00140
   pdf: https://arxiv.org/pdf/2211.00140
+  tags: []
   title: A Damped Newton Method Achieves Global $\mathcal O \left(\frac{1}{k^2}\right)$
     and Local Quadratic Convergence Rate
   type: cpaper
@@ -2688,7 +3132,9 @@
 - authors: "Zhengqing Gao, Huimin Wu, <strong>Martin Tak\xE1\u010D</strong>, Bin Gu"
   journal: 31st ACM International Conference on Information and Knowledge Management,
     CIKM2022
+  keywords: []
   link: https://dl.acm.org/doi/10.1145/3511808.3557150
+  tags: []
   title: Towards Practical Large Scale Non-Linear Semi-Supervised Learning with Balanced
     Constraints
   type: cpaper
@@ -2707,8 +3153,10 @@
     \ Saveliy Chezhegov, Rachael Tappenden, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Alexander Gasnikov"
   journal: EURO Journal on Computational Optimization
+  keywords: []
   link: https://www.sciencedirect.com/science/article/pii/S219244062200017X?via%3Dihub
   pdf: https://arxiv.org/pdf/2107.07190
+  tags: []
   title: 'Decentralized Personalized Federated Learning: Lower Bounds and Optimal
     Algorithm for All Personalization Modes'
   type: jpaper
@@ -2734,6 +3182,8 @@
     theoretical findings.'
   authors: "Alexander Rogozin, Farshed Abdukhakimov, Dmitry Kamzolov, <strong>Martin\
     \ Tak\xE1\u010D</strong>, Francesco Orabona"
+  keywords: []
+  tags: []
   title: On Sharpness in Deep Linear Networks
   type: tpaper
   year: '2022'
@@ -2758,6 +3208,8 @@
     model-based online algorithm with regret guarantees under LTV dynamical systems.'
   authors: "Yuzhen Han, Ruben Solozabal, Jing Dong, Xingyu Zhou, <strong>Martin Tak\xE1\
     \u010D</strong>, Bin Gu"
+  keywords: []
+  tags: []
   title: Learning to Control under Time-Varying Environment
   type: tpaper
   year: '2022'
@@ -2784,8 +3236,10 @@
   authors: "Naif Alkhunaizi, Dmitry Kamzolov, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Karthik Nandakumar"
   journal: MICCAI2022
+  keywords: []
   link: https://link.springer.com/chapter/10.1007/978-3-031-16452-1_64
   pdf: https://link.springer.com/content/pdf/10.1007/978-3-031-16452-1.pdf?pdf=button
+  tags: []
   title: Suppressing Poisoning Attacks on Federated Learning for Medical Imaging
   type: cpaper
   year: '2022'
@@ -2814,8 +3268,10 @@
   authors: "Yicheng Chen, Rick S. Blum, <strong>Martin Tak\xE1\u010D</strong>, Brian\
     \ M. Sadler"
   journal: Journal of Selected Topics in Signal Processing
+  keywords: []
   link: https://arxiv.org/abs/2202.02491
   pdf: https://arxiv.org/pdf/2202.02491.pdf
+  tags: []
   title: Distributed Learning With Sparsified Gradient Differences
   type: jpaper
   year: '2022'
@@ -2833,8 +3289,10 @@
     \ Dmitry Kamzolov, Aleksandr Beznosikov, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Pavel Dvurechensky, Bin Gu"
   journal: ICML
+  keywords: []
   link: https://arxiv.org/abs/2201.12289
   pdf: https://proceedings.mlr.press/v162/gasnikov22a/gasnikov22a.pdf
+  tags: []
   title: The Power of First-Order Smooth Optimization for Black-Box Non-Smooth Problems
   type: cpaper
   year: '2022'
@@ -2854,8 +3312,10 @@
     thus, requiring less tuning compared to Stochastic Gradient Descent (SGD) method.
   authors: "Joshua Griffin, Majid Jahani, <strong>Martin Tak\xE1\u010D</strong>, Seyedalireza\
     \ Yektamaram, Wenwen Zhou"
+  keywords: []
   link: http://www.optimization-online.org/DB_HTML/2022/01/8760.html
   pdf: http://www.optimization-online.org/DB_FILE/2022/01/8760.pdf
+  tags: []
   title: A minibatch stochastic Quasi-Newton method adapted for nonconvex deep learning
     problems
   type: tpaper
@@ -2876,8 +3336,10 @@
   authors: "Majid Jahani, Sergey Rusakov, Zheng Shi, Peter Richt\xE1rik, Michael W.\
     \ Mahoney, <strong>Martin Tak\xE1\u010D</strong>"
   journal: International Conference on Learning Representations (ICLR)
+  keywords: []
   link: https://arxiv.org/abs/2109.05198
   pdf: https://arxiv.org/pdf/2109.05198.pdf
+  tags: []
   title: Doubly Adaptive Scaled Algorithm for Machine Learning Using Second-Order
     Information
   type: cpaper
@@ -2893,9 +3355,11 @@
     of this approach.
   authors: "Aleksandr Beznosikov, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Optimization for Machine Learning Workshop @ NeurIPS 2021
+  keywords: []
   link: https://arxiv.org/abs/2111.13322
   ltype: Optimization for Machine Learning Workshop @ NeurIPS 2021
   pdf: https://arxiv.org/pdf/2111.13322.pdf
+  tags: []
   title: Random-reshuffled SARAH does not need a full gradient computations
   type: cpaper
   year: '2021'
@@ -2925,8 +3389,10 @@
   authors: "Albert S. Berahas, Majid Jahani, Peter Richt\xE1rik, <strong>Martin Tak\xE1\
     \u010D</strong>"
   journal: Optimization Methods and Software (OMS)
+  keywords: []
   link: https://www.tandfonline.com/doi/full/10.1080/10556788.2021.1977806
   pdf: https://arxiv.org/pdf/1901.09997.pdf
+  tags: []
   title: 'Quasi-Newton Methods for Machine Learning: Forget the Past, Just Sample'
   type: jpaper
   year: '2021'
@@ -2950,9 +3416,11 @@
   authors: "Hui Ye, Xiulong Yang, <strong>Martin Tak\xE1\u010D</strong>, Rajshekhar\
     \ Sunderraman, Shihao Ji"
   journal: The British Machine Vision Conference (BMVC 2021)
+  keywords: []
   link: https://arxiv.org/abs/2107.02423
   ltype: arxiv
   pdf: https://arxiv.org/pdf/2107.02423.pdf
+  tags: []
   title: Improving Text-to-Image Synthesis Using Contrastive Learning
   type: cpaper
   year: '2021'
@@ -2972,9 +3440,11 @@
   authors: "Majid Jahani, Naga Venkata C. Gudapati, Chenxin Ma, Rachael Tappenden,\
     \ <strong>Martin Tak\xE1\u010D</strong>"
   journal: Computational Optimization and Applications
+  keywords: []
   link: https://link.springer.com/article/10.1007/s10589-021-00269-4
   ltype: Computational Optimization and Applications
   pdf: https://arxiv.org/pdf/1710.03695.pdf
+  tags: []
   title: 'Fast and Safe: Accelerated gradient methods with optimality certificates
     and underestimate sequences'
   type: jpaper
@@ -3005,9 +3475,11 @@
   authors: "Majid Jahani, Mohammadreza Nazari, Rachael Tappenden, Albert S. Berahas,\
     \ <strong>Martin Tak\xE1\u010D</strong>"
   journal: AISTATS '21
+  keywords: []
   link: http://proceedings.mlr.press/v130/jahani21a.html
   ltype: AISTATS '21
   pdf: http://proceedings.mlr.press/v130/jahani21a/jahani21a.pdf
+  tags: []
   title: 'SONIA: A Symmetric Blockwise Truncated Optimization Algorithm'
   type: cpaper
   year: '2021'
@@ -3043,8 +3515,10 @@
   authors: "Krishnan Kumaran, Dimitri Papageorgiou, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Laurens Lueg, Nicolas Sahinidis"
   journal: Computers and Chemical Engineering
+  keywords: []
   link: https://authors.elsevier.com/sd/article/S0098-1354(19)31322-5
   ltype: Computers and Chemical Engineering
+  tags: []
   title: Active Metric Learning for Supervised Classification
   type: jpaper
   year: '2021'
@@ -3061,8 +3535,10 @@
     \ <strong>Martin Tak\xE1\u010D</strong>"
   journal: 6th Annual Conference on Machine Learning, Optimization and Data Science
     (LOD), 2020
+  keywords: []
   link: http://arxiv.org/abs/1905.13096
   pdf: http://arxiv.org/pdf/1905.13096.pdf
+  tags: []
   title: 'Scaling Up Quasi-Newton Algorithms: Communication Efficient Distributed
     SR1'
   type: cpaper
@@ -3082,8 +3558,10 @@
     methodology through extensive simulations.
   authors: "Guangyi Liu, Arash Amini, <strong>Martin Tak\xE1\u010D</strong>, H\xE9\
     ctor Mu\xF1oz-Avila, Nader Motee"
+  keywords: []
   link: https://arxiv.org/abs/2012.10480
   pdf: https://arxiv.org/pdf/2012.10480.pdf
+  tags: []
   title: Distributed Map Classification using Local Observations
   type: tpaper
   year: '2020'
@@ -3108,9 +3586,11 @@
   authors: "Soheil Sadeghi Eshkevari, <strong>Martin Tak\xE1\u010D</strong>, Shamim\
     \ Pakzad, Majid Jahani"
   journal: Engineering Structures
+  keywords: []
   link: https://www.sciencedirect.com/science/article/abs/pii/S0141029620341833?via%3Dihub
   ltype: Engineering Structures
   pdf: https://arxiv.org/pdf/2007.01814.pdf
+  tags: []
   title: 'DynNet: Physics-based neural architecture design for linear and nonlinear
     structural response modeling and prediction'
   type: jpaper
@@ -3132,9 +3612,11 @@
   authors: "Peter Richt\xE1rik, Majid Jahani, Selin Damla Ahipasaoglu, <strong>Martin\
     \ Tak\xE1\u010D</strong>"
   journal: Optimization and Engineering (OPTE)
+  keywords: []
   link: https://link.springer.com/article/10.1007%2Fs11081-020-09562-3
   ltype: Optimization and Engineering (OPTE)
   pdf: http://arxiv.org/pdf/1212.4137v1.pdf
+  tags: []
   title: 'Alternating Maximization: Unifying Framework for 8 Sparse PCA Formulations
     and Efficient Parallel Codes'
   type: jpaper
@@ -3154,8 +3636,10 @@
     convex case stochastic value functions.
   authors: "Lam Minh Nguyen, Katya Scheinberg, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Optimization Methods and Software (GOMS)
+  keywords: []
   link: https://www.tandfonline.com/doi/full/10.1080/10556788.2020.1818081
   pdf: https://arxiv.org/pdf/1811.10105.pdf
+  tags: []
   title: Inexact SARAH Algorithm for Stochastic Optimization
   type: jpaper
   year: '2020'
@@ -3210,14 +3694,18 @@
   authors: "Aryan Mokhtari, Alec Koppel, <strong>Martin Tak\xE1\u010D</strong>, Alejandro\
     \ Ribeiro"
   journal: Journal of Machine Learning Research
+  keywords: []
   link: http://jmlr.org/papers/v21/16-311.html
   pdf: http://jmlr.org/papers/volume21/16-311/16-311.pdf
+  tags: []
   title: A Class of Parallel Doubly Stochastic Algorithms for Large-Scale Learning
   type: jpaper
   year: '2020'
 - authors: "Nur Sila Gulgec, <strong>Martin Tak\xE1\u010D</strong>, Shamim N. Pakzad"
   journal: Structure and Infrastructure Engineering
+  keywords: []
   link: https://www.tandfonline.com/doi/full/10.1080/15732479.2020.1815224
+  tags: []
   title: Uncertainty quantification in digital image correlation for experimental
     evaluation of deep learning based damage diagnostic
   type: jpaper
@@ -3253,8 +3741,10 @@
 
     Constraint Programming (CP) solvers.'
   authors: "Ruben Solozabal, Josu Ceberio, <strong>Martin Tak\xE1\u010D</strong>"
+  keywords: []
   link: https://arxiv.org/abs/2006.11984
   pdf: https://arxiv.org/pdf/2006.11984.pdf
+  tags: []
   title: Constrained Combinatorial Optimization with Reinforcement Learning
   type: tpaper
   year: '2020'
@@ -3272,8 +3762,10 @@
   authors: "Zheng Shi, Nur Sila Gulgec, Albert S. Berahas, Shamim N. Pakzad, <strong>Martin\
     \ Tak\xE1\u010D</strong>"
   journal: 19th IEEE International Conference on Machine Learning and Applications
+  keywords: []
   link: https://arxiv.org/abs/2006.01892
   pdf: https://arxiv.org/pdf/2006.01892.pdf
+  tags: []
   title: 'Finite Difference Neural Networks: Fast Prediction of Partial Differential
     Equations'
   type: cpaper
@@ -3299,9 +3791,11 @@
     method, with fixed stepsize (relaxation parameter), applied to the reformulations.'
   authors: "Peter Richt\xE1rik, <strong>Martin Tak\xE1\u010D</strong>"
   journal: SIAM Journal on Matrix Analysis and Applications (SIMAX)
+  keywords: []
   link: https://epubs.siam.org/doi/pdf/10.1137/18M1179249
   ltype: SIAM Journal on Matrix Analysis and Applications
   pdf: https://epubs.siam.org/doi/pdf/10.1137/18M1179249
+  tags: []
   title: 'Stochastic Reformulations of Linear Systems: Algorithms and Convergence
     Theory'
   type: jpaper
@@ -3342,8 +3836,10 @@
     tested.'
   authors: "Nur Sila Gulgec, <strong>Martin Tak\xE1\u010D</strong>, Shamim N. Pakzad"
   journal: Computer-Aided Civil and Infrastructure Engineering
+  keywords: []
   link: https://onlinelibrary.wiley.com/doi/full/10.1111/mice.12565
   ltype: Computer-Aided Civil and Infrastructure Engineering
+  tags: []
   title: 'Structural sensing with deep learning: Strain estimation from acceleration
     data for fatigue assessment'
   type: jpaper
@@ -3371,9 +3867,11 @@
     some numerical examples to illustrate the performances of our new algorithms.
   authors: "Ion Necoara, <strong>Martin Tak\xE1\u010D</strong>"
   journal: IMA Journal of Numerical Analysis
+  keywords: []
   link: https://academic.oup.com/imajna/advance-article-abstract/doi/10.1093/imanum/draa018/5834388
   ltype: IMA Journal of Numerical Analysis
   pdf: https://arxiv.org/pdf/1808.02530.pdf
+  tags: []
   title: Randomized sketch descent methods for non-separable linearly constrained
     optimization
   type: jpaper
@@ -3381,8 +3879,10 @@
 - authors: "Soheil Sadeghi Eshkevari, Shamim N. Pakzad, <strong>Martin Tak\xE1\u010D\
     </strong>, Thomas J. Matarazzo"
   journal: ASCE's Journal of Engineering Mechanics
+  keywords: []
   link: https://ascelibrary.org/doi/abs/10.1061/%28ASCE%29EM.1943-7889.0001733
   ltype: ASCE's Journal of Engineering Mechanics
+  tags: []
   title: Modal Identification of Bridges using Mobile Sensors with Sparse Vibration
     Data
   type: jpaper
@@ -3403,9 +3903,11 @@
   authors: "Majid Jahani, Xi He, Chenxin Ma, Aryan Mokhtari, Dheevatsa Mudigere, Alejandro\
     \ Ribeiro, <strong>Martin Tak\xE1\u010D</strong>"
   journal: AISTATS 2020
+  keywords: []
   link: http://proceedings.mlr.press/v108/jahani20a.html
   ltype: AISTATS 2020 (accepted)
   pdf: http://proceedings.mlr.press/v108/jahani20a/jahani20a.pdf
+  tags: []
   title: Efficient Distributed Hessian Free Algorithm for Large-scale Empirical Risk
     Minimization via Accumulating Sample Strategy
   type: cpaper
@@ -3427,8 +3929,10 @@
     of damage detection and localization approach.
   authors: "Nur Sila Gulgec, <strong>Martin Tak\xE1\u010D</strong>, Shamim N. Pakzad"
   journal: Dynamics of Civil Structures, Volume 2 pp. 205-210
+  keywords: []
   link: https://link.springer.com/chapter/10.1007/978-3-030-12115-0_28
   ltype: Dynamics of Civil Structures, Volume 2 pp. 205-210
+  tags: []
   title: Experimental Study on Digital Image Correlation for Deep Learning-Based Damage
     Diagnostic
   type: cpaper
@@ -3451,8 +3955,10 @@
     iterates, and the first fixed point methods with compressed iterates.'
   authors: "Selim Chraibi, Ahmed Khaled, Dmitry Kovalev, Peter Richt\xE1rik, Adil\
     \ Salim, <strong>Martin Tak\xE1\u010D</strong>"
+  keywords: []
   link: https://arxiv.org/abs/1912.09925
   pdf: https://arxiv.org/pdf/1912.09925
+  tags: []
   title: Distributed Fixed Point Methods with Compressed Iterates
   type: tpaper
   year: '2019'
@@ -3476,14 +3982,18 @@
   authors: "Soheil Sadeghi Eshkevari, <strong>Martin Tak\xE1\u010D</strong>, Shamim\
     \ N. Pakzad, Soheila Sadeghi Eshkevari"
   journal: Structural Health Monitoring 2019
+  keywords: []
   link: http://www.dpi-proceedings.com/index.php/shm2019/article/view/32499
   ltype: Structural Health Monitoring 2019
+  tags: []
   title: High Resolution Bridge Mode Shape Identification Via Matrix Completion Approach
   type: cpaper
   year: '2019'
 - authors: "Jie Liu, Yu Rong, <strong>Martin Tak\xE1\u010D</strong>, Junzhou Huang"
   journal: Beyond First Order Methods in ML Workshop @ NeurIPS 2019
+  keywords: []
   ltype: Beyond First Order Methods in ML Workshop @ NeurIPS 2019
+  tags: []
   title: Accelerating Distributed Stochastic L-BFGS by sampled 2nd-Order Information
   type: cpaper
   year: '2019'
@@ -3500,9 +4010,11 @@
   authors: "Nur Sila Gulgec, Zheng Shi, Neil Deshmukh, Shamim Pakzad, <strong>Martin\
     \ Tak\xE1\u010D</strong>"
   journal: Beyond First Order Methods in ML Workshop @ NeurIPS 2019
+  keywords: []
   link: https://arxiv.org/abs/1910.12680
   ltype: Beyond First Order Methods in ML Workshop @ NeurIPS 2019
   pdf: https://arxiv.org/pdf/1910.12680.pdf
+  tags: []
   title: 'FD-Net with Auxiliary Time Steps: Fast Prediction of PDEs using Hessian-Free
     Trust-Region Methods'
   type: cpaper
@@ -3525,16 +4037,20 @@
     for our proposed methods, and illustrate their performance in practice.'
   authors: "Albert S. Berahas, Majid Jahani, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Optimization and Machine Learning @ NeurIPS 2019
+  keywords: []
   link: https://opt-ml.org/oldopt/opt19/papers.html#
   ltype: arXiv Paper
   pdf: https://opt-ml.org/papers/2019/paper_4.pdf
+  tags: []
   title: Sampled Quasi-Newton Methods for Deep Learning
   type: cpaper
   year: '2019'
 - authors: "Majid Jahani, Xi He, Chenxin Ma, Aryan Mokhtari, Dheevatsa Mudigere, Alejandro\
     \ Ribeiro, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Beyond First Order Methods in ML Workshop @ NeurIPS 2019
+  keywords: []
   ltype: Beyond First Order Methods in ML Workshop @ NeurIPS 2019
+  tags: []
   title: Grow Your Samples and Optimize Better via Distributed Newton CG and Accumulating
     Strategy
   type: cpaper
@@ -3552,9 +4068,11 @@
     intermediate goals and course of action.
   authors: "Hossein K. Mousavi, Guangyi Liu, Weihang Yuan, <strong>Martin Tak\xE1\u010D\
     </strong>, H\xE9ctor Mu\xF1oz-Avila, Nader Motee"
+  keywords: []
   link: https://arxiv.org/abs/1909.09705
   ltype: 2020 International Conference on Robotics and Automation (ICRA) - submitted
   pdf: https://arxiv.org/pdf/1909.09705.pdf
+  tags: []
   title: 'A Layered Architecture for Active Perception: Image Classification using
     Deep Reinforcement Learning'
   type: tpaper
@@ -3575,11 +4093,13 @@
     learning.
   authors: "Albert S. Berahas, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Optimization Methods and Software
+  keywords: []
   link: https://www.tandfonline.com/doi/full/10.1080/10556788.2019.1658107
   ltype: '
 
     Optimization Methods and Software'
   pdf: https://arxiv.org/pdf/1707.08552.pdf
+  tags: []
   title: A Robust Multi-Batch L-BFGS Method for Machine Learning
   type: jpaper
   year: '2019'
@@ -3598,9 +4118,11 @@
   authors: "Chenxin Ma, Martin Jaggi, Frank E. Curtis, Nathan Srebro, <strong>Martin\
     \ Tak\xE1\u010D</strong>"
   journal: 'Optimization Methods and Software '
+  keywords: []
   link: https://www.tandfonline.com/doi/abs/10.1080/10556788.2019.1650361?journalCode=goms20
   ltype: arXiv Paper
   pdf: https://arxiv.org/pdf/1711.05305.pdf
+  tags: []
   title: An Accelerated Communication-Efficient Primal-Dual Optimization Framework
     for Structured Machine Learning
   type: jpaper
@@ -3626,9 +4148,11 @@
   authors: "Lam Minh Nguyen, Phuong Ha Nguyen, Peter Richt\xE1rik, Katya Scheinberg,\
     \ <strong>Martin Tak\xE1\u010D</strong>, Marten van Dijk"
   journal: minor revision in Journal of Machine Learning Research (JMLR)
+  keywords: []
   link: http://arxiv.org/abs/1811.12403
   ltype: arXiv Paper
   pdf: https://arxiv.org/pdf/1811.12403.pdf
+  tags: []
   title: New Convergence Aspects of Stochastic Gradient Algorithms
   type: jpaper
   year: '2019'
@@ -3647,9 +4171,11 @@
     </strong>, Nader Motee"
   journal: Proceedings of the 2019 IEEE/RSJ International Conference on Intelligent
     Robots and Systems (IROS 2019)
+  keywords: []
   link: http://arxiv.org/abs/1905.04835
   ltype: arXiv Paper
   pdf: https://arxiv.org/pdf/1905.04835.pdf
+  tags: []
   title: Multi-Agent Image Classification via Reinforcement Learning
   type: cpaper
   year: '2019'
@@ -3669,9 +4195,11 @@
     and SVM approaches, especially for demands with high volatility.
   authors: "Afshin OroojlooyJadid, Lawrence Snyder, <strong>Martin Tak\xE1\u010D</strong>"
   journal: IISE Transactions
+  keywords: []
   link: https://www.tandfonline.com/doi/full/10.1080/24725854.2019.1632502
   ltype: IISE Transactions
   pdf: http://arxiv.org/pdf/1607.02177v1.pdf
+  tags: []
   title: Applying Deep Learning to the Newsvendor Problem
   type: jpaper
   year: '2019'
@@ -3694,9 +4222,11 @@
   authors: "MohammadReza Nazari, Majid Jahani, Lawrence V. Snyder, <strong>Martin\
     \ Tak\xE1\u010D</strong>"
   journal: arXiv
+  keywords: []
   link: http://arxiv.org/abs/1905.13562
   ltype: to be submitted to ICML 2020
   pdf: http://arxiv.org/pdf/1905.13562.pdf
+  tags: []
   title: "Don\u2019t Forget Your Teacher: A Corrective Reinforcement Learning Framework"
   type: tpaper
   year: '2019'
@@ -3712,9 +4242,11 @@
   authors: "Jakub Marecek, Mikhail Krechetov, Yury Maximov, <strong>Martin Tak\xE1\
     \u010D</strong>"
   journal: IJCA2019
+  keywords: []
   link: http://arxiv.org/abs/1802.04332
   ltype: IJCA2019
   pdf: https://arxiv.org/pdf/1802.04332.pdf
+  tags: []
   title: Entropy-Penalized Semidefinite Programming
   type: cpaper
   year: '2019'
@@ -3735,9 +4267,11 @@
   authors: "<strong>Martin Tak\xE1\u010D</strong>, Selin Damla Ahipasaoglu, Ngai-Man\
     \ Cheung, Peter Richt\xE1rik"
   journal: Springer Proceedings in Mathematics & Statistics (MOPTA)
+  keywords: []
   link: https://www.springerprofessional.de/en/topspin-topic-discovery-via-sparse-principal-component-interfere/16481910
   ltype: Springer Proceedings in Mathematics & Statistics
   pdf: http://arxiv.org/pdf/1311.1406v1.pdf
+  tags: []
   title: 'TOP-SPIN: TOPic discovery via Sparse Principal component INterference'
   type: cpaper
   year: '2019'
@@ -3762,8 +4296,10 @@
     efficiency.
   authors: "Nur Sila Gulgec, <strong>Martin Tak\xE1\u010D</strong>, Shamim N. Pakzad"
   journal: Journal of Computing in Civil Engineering (Volume 33 Issue 3 - May 2019)
+  keywords: []
   link: https://ascelibrary.org/doi/abs/10.1061/%28ASCE%29CP.1943-5487.0000820
   ltype: Journal of Computing in Civil Engineering
+  tags: []
   title: Convolutional Neural Network Approach for Robust Structural Damage Detection
     and Localization
   type: jpaper
@@ -3778,9 +4314,11 @@
     the algorithm admits a simple implementation in the distributed environment. Numerical
     experiments support the efficiency of our algorithms.
   authors: "Jie Liu, Yu Rong, <strong>Martin Tak\xE1\u010D</strong>, Junzhou Huang"
+  keywords: []
   link: http://arxiv.org/abs/1807.05328
   ltype: to be submitted to ICML 2020
   pdf: https://arxiv.org/pdf/1807.05328.pdf
+  tags: []
   title: On the Acceleration of L-BFGS with Second-Order Information and Stochastic
     Batches
   type: tpaper
@@ -3800,16 +4338,20 @@
   authors: "Virginia Smith, Simone Forte, Chenxin Ma, <strong>Martin Tak\xE1\u010D\
     </strong>, Michael I. Jordan, Martin Jaggi"
   journal: Journal of Machine Learning Research (JMLR)
+  keywords: []
   link: http://www.jmlr.org/papers/v18/
   ltype: arXiv Paper
   pdf: http://www.jmlr.org/papers/volume18/16-512/16-512.pdf
+  tags: []
   title: 'CoCoA: A General Framework for Communication-Efficient Distributed Optimization'
   type: jpaper
   year: '2018'
 - authors: "Jakub Marecek, Peter Richt\xE1rik, <strong>Martin Tak\xE1\u010D</strong>"
   journal: The European Conference on Machine Learning and Principles and Practice
     of Knowledge Discovery in Databases
+  keywords: []
   pdf: http://mtakac.com/data/papers/MACO-highlights.pdf
+  tags: []
   title: 'Matrix Completion under Interval Uncertainty: Highlights'
   type: cpaper
   year: '2018'
@@ -3830,9 +4372,11 @@
     \ benefits of the proposed approach."
   authors: "Xi He, Rachael Tappenden, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Frontiers in Applied Mathematics and Statistics, section Optimization
+  keywords: []
   link: https://www.frontiersin.org/articles/10.3389/fams.2018.00033/full
   ltype: arXiv Paper
   pdf: https://www.frontiersin.org/articles/10.3389/fams.2018.00033/pdf
+  tags: []
   title: Dual Free Adaptive Minibatch SDCA for Empirical Risk Minimization
   type: jpaper
   year: '2018'
@@ -3853,8 +4397,10 @@
   authors: "Jie Liu, Jianlin Guo, Philip Orlik, Masahiko Shibata, Daiki Nakahara,\
     \ Satoshi Mii, <strong>Martin Tak\xE1\u010D</strong>"
   journal: The 13th World Congress on Intelligent Control and Automation (WCICA 2018)
+  keywords: []
   ltype: The 13th World Congress on Intelligent Control and Automation (WCICA 2018)
   pdf: http://www.merl.com/publications/docs/TR2018-097.pdf
+  tags: []
   title: Anomaly Detection in Manufacturing Systems Using Structured Neural Networks
   type: cpaper
   year: '2018'
@@ -3880,8 +4426,10 @@
     structure has never experienced.
   authors: "Nur Sila Gulgec, <strong>Martin Tak\xE1\u010D</strong>, Shamim N. Pakzad"
   journal: In Dynamics of Civil Structures
+  keywords: []
   link: https://link.springer.com/chapter/10.1007/978-3-319-74421-6_39
   ltype: In Dynamics of Civil Structures
+  tags: []
   title: Innovative Sensing by Using Deep Learning Framework
   type: cpaper
   year: '2018'
@@ -3892,9 +4440,11 @@
     the data spread (measured through the spectral norm).
   authors: "<strong>Martin Tak\xE1\u010D</strong>, Peter Richt\xE1rik, Nathan Srebro"
   journal: Journal of Machine Learning Research (JMLR) (to appear)
+  keywords: []
   link: http://arxiv.org/abs/1507.08322
   ltype: arXiv Paper
   pdf: http://arxiv.org/pdf/1507.08322.pdf
+  tags: []
   title: Distributed Mini-Batch SDCA
   type: jpaper
   year: '2019'
@@ -3915,9 +4465,11 @@
   authors: "MohammadReza Nazari, Afshin Oroojlooy, Lawrence V. Snyder, <strong>Martin\
     \ Tak\xE1\u010D</strong>"
   journal: Neural Information Processing Systems (NeurIPS) 2018
+  keywords: []
   link: http://arxiv.org/abs/1802.04240
   ltype: arXiv Paper
   pdf: https://papers.nips.cc/paper/8190-reinforcement-learning-for-solving-the-vehicle-routing-problem.pdf
+  tags: []
   title: Reinforcement Learning for Solving the Vehicle Routing Problem
   type: cpaper
   year: '2018'
@@ -3939,9 +4491,11 @@
   authors: "Lam Minh Nguyen, Phuong Ha Nguyen, Marten van Dijk, Peter Richt\xE1rik,\
     \ Katya Scheinberg, <strong>Martin Tak\xE1\u010D</strong>"
   journal: ICML 2018 (35th International Conference on Machine Learning)
+  keywords: []
   link: http://proceedings.mlr.press/v80/nguyen18c
   ltype: Conference Paper
   pdf: http://proceedings.mlr.press/v80/nguyen18c/nguyen18c.pdf
+  tags: []
   title: SGD and Hogwild! Convergence Without the Bounded Gradients Assumption
   type: cpaper
   year: '2018'
@@ -3959,9 +4513,11 @@
     \ Tak\xE1\u010D</strong>"
   journal: Deep Reinforcement Learning Symposium @ Neural Information Processing Systems
     (NeurIPS) 2017
+  keywords: []
   link: https://sites.google.com/view/deeprl-symposium-nips2017/home
   ltype: Conference Paper
   pdf: https://drive.google.com/file/d/1ckDatgYV3oOElkYyfU82GjFAeNY0ubA4/view
+  tags: []
   title: A Deep Q-Network for the Beer Game, an Approach to Solve Inventory Optimization
     Problems
   type: cpaper
@@ -3986,6 +4542,8 @@
   authors: "Nur Sila Gulgec, <strong>Martin Tak\xE1\u010D</strong>, Shamim N. Pakzad"
   journal: In Model Validation and Uncertainty Quantification, Volume 3 (pp. 331-337).
     Springer, Cham.
+  keywords: []
+  tags: []
   title: Structural Damage Detection Using Convolutional Neural Networks
   type: cpaper
   year: '2017'
@@ -4008,8 +4566,10 @@
   authors: "Nur Sila Gulgec, <strong>Martin Tak\xE1\u010D</strong>, Shamim N. Pakzad"
   journal: SMAR 2017 (the fourth International Conference on Smart Monitoring, Assessment
     and Rehabilitation of Civil Structures)
+  keywords: []
   ltype: Conference Paper
   pdf: https://www.empa.ch/smar/SMAR_2017_Proceedings/papers/211.pdf
+  tags: []
   title: Structural damage diagnosis with time-varying loads using convolutional neural
     networks
   type: cpaper
@@ -4027,8 +4587,10 @@
     the broad diversity of ideas discussed at the meeting.'
   authors: "<strong>Martin Tak\xE1\u010D</strong>, Tam\xE1s Terlaky"
   journal: Springer Proceedings in Mathematics & Statistics
+  keywords: []
   link: http://www.springer.com/us/book/9783319666150
   ltype: Springer Proceedings in Mathematics & Statistics
+  tags: []
   title: 'Modeling and Optimization: Theory and Applications MOPTA, Bethlehem, PA,
     USA, August 2016 Selected Contributions'
   type: opaper
@@ -4055,9 +4617,11 @@
   authors: "Xi He, Dheevatsa Mudigere, Mikhail Smelyanskiy, <strong>Martin Tak\xE1\
     \u010D</strong>"
   journal: AAAI Workshop on Distributed Machine Learning
+  keywords: []
   link: http://arxiv.org/abs/1606.00511
   ltype: arXiv Paper
   pdf: https://www.aaai.org/ocs/index.php/WS/AAAIW17/paper/download/15124/14704
+  tags: []
   title: Large Scale Distributed Hessian-Free Optimization for Deep Neural Network
   type: cpaper
   year: '2016'
@@ -4070,8 +4634,10 @@
     empirical loss minimization instance described by a 273GB dataset.
   authors: "Chenxin Ma, <strong>Martin Tak\xE1\u010D</strong>"
   journal: AAAI Workshop on Distributed Machine Learning
+  keywords: []
   link: https://aaai.org/ocs/index.php/WS/AAAIW17/paper/view/15136
   pdf: http://arxiv.org/pdf/1603.05191v1.pdf
+  tags: []
   title: 'Distributed Inexact Damped Newton Method: Data Partitioning and Load-Balancing'
   type: cpaper
   year: '2017'
@@ -4085,9 +4651,11 @@
     this sort of stock-out prediction. Therefore, our research aims to fill this gap
     by using DNN to predict stock-outs in multi-echelon supply chains.
   authors: "Afshin OroojlooyJadid, Lawrence Snyder, <strong>Martin Tak\xE1\u010D</strong>"
+  keywords: []
   link: http://arxiv.org/abs/1709.06922
   ltype: under review in The International Journal of Management Science
   pdf: https://arxiv.org/pdf/1709.06922.pdf
+  tags: []
   title: Stock-out Prediction in Multi-echelon Networks
   type: tpaper
   year: '2017'
@@ -4104,9 +4672,11 @@
   authors: "Jie Liu, Jakub Marecek, Andrea Simonetto, <strong>Martin Tak\xE1\u010D\
     </strong>"
   journal: 20th Power Systems Computation Conference
+  keywords: []
   link: http://www.proceedings.com/40084.html
   ltype: arXiv Paper
   pdf: https://arxiv.org/pdf/1710.07119.pdf
+  tags: []
   title: A Coordinate-Descent Algorithm for Tracking Solutions in Time-Varying Optimal
     Power Flows
   type: cpaper
@@ -4121,9 +4691,11 @@
   authors: "Rachael Tappenden, <strong>Martin Tak\xE1\u010D</strong>, Peter Richt\xE1\
     rik"
   journal: Optimization Methods and Software
+  keywords: []
   link: http://www.tandfonline.com/doi/full/10.1080/10556788.2017.1392517
   ltype: Optimization Methods and Software
   pdf: http://www.tandfonline.com/doi/pdf/10.1080/10556788.2017.1392517?needAccess=true
+  tags: []
   title: On the Complexity of Parallel Coordinate Descent
   type: jpaper
   year: '2017'
@@ -4136,9 +4708,11 @@
   authors: "Alan C. Liddell, Jie Liu, Jakub Marecek, <strong>Martin Tak\xE1\u010D\
     </strong>"
   journal: IEEE Transactions on Smart Grid
+  keywords: []
   link: http://ieeexplore.ieee.org/document/7947223/
   ltype: aJournal Paper
   pdf: https://arxiv.org/pdf/1510.02171v2.pdf
+  tags: []
   title: Hybrid Methods in Solving Alternating-Current Optimal Power Flows
   type: jpaper
   year: '2017'
@@ -4160,9 +4734,11 @@
   authors: "Chenxin Ma, Jakub Kone\u010Dn\xFD, Martin Jaggi, Virginia Smith, Michael\
     \ I. Jordan, Peter Richt\xE1rik, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Optimization Methods and Software
+  keywords: []
   link: http://www.tandfonline.com/doi/full/10.1080/10556788.2016.1278445
   ltype: Journal Paper
   pdf: http://www.tandfonline.com/doi/pdf/10.1080/10556788.2016.1278445?needAccess=true
+  tags: []
   title: Distributed Optimization with Arbitrary Local Solvers
   type: jpaper
   year: '2017'
@@ -4172,9 +4748,11 @@
     interior point method, within the same accuracy.
   authors: "Jakub Mare\u010Dek, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Optimization Methods and Software
+  keywords: []
   link: http://www.tandfonline.com/doi/full/10.1080/10556788.2017.1288729
   ltype: Optimization Methods and Software
   pdf: http://arxiv.org/pdf/1506.08568.pdf
+  tags: []
   title: A low-rank coordinate-descent algorithm for semidefinite programming relaxations
     of optimal power flow
   type: jpaper
@@ -4188,9 +4766,11 @@
     for nonconvex losses.
   authors: "Lam Minh Nguyen, Jie Liu, Katya Scheinberg, <strong>Martin Tak\xE1\u010D\
     </strong>"
+  keywords: []
   link: http://arxiv.org/abs/1705.07261
   ltype: under revision to resubmit
   pdf: https://arxiv.org/pdf/1705.07261.pdf
+  tags: []
   title: Stochastic Recursive Gradient Algorithm for Nonconvex Optimization
   type: tpaper
   year: '2017'
@@ -4207,9 +4787,11 @@
   authors: "Lam Minh Nguyen, Jie Liu, Katya Scheinberg, <strong>Martin Tak\xE1\u010D\
     </strong>"
   journal: ICML 2017 (34th International Conference on Machine Learning)
+  keywords: []
   link: http://arxiv.org/abs/1703.00102
   ltype: Conference Paper
   pdf: https://arxiv.org/pdf/1703.00102.pdf
+  tags: []
   title: 'SARAH: A Novel Method for Machine Learning Problems Using Stochastic Recursive
     Gradient'
   type: cpaper
@@ -4226,9 +4808,11 @@
     hinge loss.
   authors: "Jie Liu, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Proceedings of MOPTA 2016
+  keywords: []
   link: http://arxiv.org/abs/1612.05356
   ltype: Conference Proceedings
   pdf: https://arxiv.org/pdf/1612.05356.pdf
+  tags: []
   title: Projected Semi-Stochastic Gradient Descent Method with Mini-Batch Scheme
     under Weak Strong Convexity Assumption
   type: cpaper
@@ -4243,9 +4827,11 @@
     gap also converges linearly for SDCA applied to the SVM dual problem.
   authors: "Chenxin Ma, Rachael Tappenden, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Journal of Machine Learning Research
+  keywords: []
   link: http://jmlr.org/papers/v17/15-541.html
   ltype: arXiv Paper
   pdf: http://jmlr.org/papers/volume17/15-541/15-541.pdf
+  tags: []
   title: Linear Convergence of the Randomized Feasible Descent Method Under the Weak
     Strong Convexity Assumption
   type: jpaper
@@ -4265,9 +4851,11 @@
     its convergence properties for both the convex and nonconvex cases.
   authors: "Albert S. Berahas, Jorge Nocedal, <strong>Martin Tak\xE1\u010D</strong>"
   journal: NeurIPS
+  keywords: []
   link: https://papers.nips.cc/paper/6145-a-multi-batch-l-bfgs-method-for-machine-learning
   ltype: Conference Paper
   pdf: https://papers.nips.cc/paper/6145-a-multi-batch-l-bfgs-method-for-machine-learning.pdf
+  tags: []
   title: A Multi-Batch L-BFGS Method for Machine Learning
   type: cpaper
   year: '2016'
@@ -4283,9 +4871,11 @@
     \ practice, than the strategy of updating all coordinates at every iteration."
   authors: "Peter Richt\xE1rik, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Optimization Letters, 10(6), 1233-1243
+  keywords: []
   link: http://link.springer.com/article/10.1007/s11590-015-0916-1
   ltype: Journal Paper
   pdf: http://link.springer.com/content/pdf/10.1007%2Fs11590-015-0916-1.pdf
+  tags: []
   title: 'On optimal probabilities in stochastic coordinate descent methods (code:
     `NSync)'
   type: jpaper
@@ -4299,8 +4889,10 @@
     computer.
   authors: "Jakub Mare\u010Dek, Peter Richt\xE1rik, <strong>Martin Tak\xE1\u010D</strong>"
   journal: European Journal of Operational Research
+  keywords: []
   link: http://www.sciencedirect.com/science/article/pii/S0377221716305513
   ltype: European Journal of Operational Research
+  tags: []
   title: Matrix Completion under Interval Uncertainty
   type: jpaper
   year: '2016'
@@ -4319,9 +4911,11 @@
   authors: "Zheng Qu, Peter Richt\xE1rik, <strong>Martin Tak\xE1\u010D</strong>, Olivier\
     \ Fercoq"
   journal: ICML 2016 (33rd International Conference on Machine Learning)
+  keywords: []
   link: http://arxiv.org/abs/1502.02268
   ltype: Conference Paper
   pdf: http://arxiv.org/pdf/1502.02268v1.pdf
+  tags: []
   title: 'SDNA: Stochastic Dual Newton Ascent for Empirical Risk Minimization'
   type: cpaper
   year: '2016'
@@ -4336,9 +4930,11 @@
   authors: "Celestine Dunner, Simone Forte, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Martin Jaggi"
   journal: ICML 2016 (33rd International Conference on Machine Learning)
+  keywords: []
   link: http://arxiv.org/abs/1602.05205
   ltype: Conference Paper
   pdf: http://arxiv.org/pdf/1602.05205v1.pdf
+  tags: []
   title: Primal-Dual Rates and Certificates
   type: cpaper
   year: '2016'
@@ -4354,8 +4950,10 @@
     by a 3TB matrix.'
   authors: "Peter Richt\xE1rik, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Journal of Machine Learning Research
+  keywords: []
   link: http://www.jmlr.org/papers/v17/15-001.html
   pdf: http://www.jmlr.org/papers/volume17/15-001/15-001.pdf
+  tags: []
   title: 'Distributed coordinate descent method for learning with big data (code:
     Hydra)'
   type: jpaper
@@ -4379,9 +4977,11 @@
   authors: "Jakub Kone\u010Dn\xFD, Jie Liu, Peter Richt\xE1rik, <strong>Martin Tak\xE1\
     \u010D</strong>"
   journal: IEEE Journal of Selected Topics in Signal Processing
+  keywords: []
   link: http://arxiv.org/abs/1504.04407
   ltype: journal Paper
   pdf: http://arxiv.org/pdf/1504.04407.pdf
+  tags: []
   title: Mini-Batch Semi-Stochastic Gradient Descent in the Proximal Setting
   type: jpaper
   year: '2016'
@@ -4393,9 +4993,11 @@
     both in theory and also in practice.
   authors: "Chenxin Ma, <strong>Martin Tak\xE1\u010D</strong>"
   journal: OptML@NeurIPS 2015
+  keywords: []
   link: http://arxiv.org/abs/1510.06688
   ltype: Workshop Paper
   pdf: http://arxiv.org/pdf/1510.06688.pdf
+  tags: []
   title: Partitioning Data on Features or Samples in Communication-Efficient Distributed
     Optimization?
   type: cpaper
@@ -4409,7 +5011,9 @@
   authors: "Ngai-Man Cheungselin, Damla Ahipasaoglu, Peter Richtarik, <strong>Martin\
     \ Tak\xE1\u010D</strong>"
   journal: WO2015011470A1
+  keywords: []
   link: https://patents.google.com/patent/WO2015011470A1
+  tags: []
   title: Method and system for classifying images
   type: patent
   year: '2015'
@@ -4424,9 +5028,11 @@
     experiments which shows efficiency of proposed algorithms.
   authors: "Xi He, <strong>Martin Tak\xE1\u010D</strong>"
   journal: OptML@NeurIPS 2015
+  keywords: []
   link: http://arxiv.org/abs/1510.06684
   ltype: Workshop Paper
   pdf: http://arxiv.org/pdf/1510.06684.pdf
+  tags: []
   title: Dual Free SDCA for Empirical Risk Minimization with Adaptive Probabilities
   type: cpaper
   year: '2015'
@@ -4445,9 +5051,11 @@
   authors: "Chenxin Ma, Virginia Smith, Martin Jaggi, Michael I. Jordan, Peter Richt\xE1\
     rik, <strong>Martin Tak\xE1\u010D</strong>"
   journal: ICML 2015 (32nd International Conference on Machine Learning)
+  keywords: []
   link: http://arxiv.org/abs/1502.03508
   ltype: Conference Paper
   pdf: http://arxiv.org/pdf/1502.03508v1.pdf
+  tags: []
   title: Adding vs. Averaging in Distributed Primal-Dual Optimization
   type: cpaper
   year: '2015'
@@ -4467,9 +5075,11 @@
     2 hours on a large memory node with 24 cores.
   authors: "Peter Richt\xE1rik, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Mathematical Programming
+  keywords: []
   link: http://link.springer.com/article/10.1007/s10107-015-0901-6
   ltype: Journal Paper
   pdf: http://arxiv.org/pdf/1212.0873v2.pdf
+  tags: []
   title: Parallel Coordinate Descent Methods for Big Data Optimization
   type: jpaper
   year: '2015'
@@ -4491,9 +5101,11 @@
   authors: "Jakub Kone\u010Dn\xFD, Jie Liu, Peter Richt\xE1rik, <strong>Martin Tak\xE1\
     \u010D</strong>"
   journal: 'OPT 2014: Optimization for Machine Learning @NeurIPS 2014'
+  keywords: []
   link: http://arxiv.org/abs/1410.4744
   ltype: Conference Paper
   pdf: http://arxiv.org/pdf/1410.4744v1.pdf
+  tags: []
   title: 'mS2GD: Mini-batch semi-stochastic gradient descent in the proximal setting
     (code: mS2GD)'
   type: cpaper
@@ -4510,16 +5122,20 @@
   authors: "Martin Jaggi, Virginia Smith, <strong>Martin Tak\xE1\u010D</strong>, Jonathan\
     \ Terhorst, Thomas Hofmann, Michael I. Jordan"
   journal: NeurIPS
+  keywords: []
   link: http://arxiv.org/abs/1409.1458
   ltype: Conference Paper
   pdf: http://arxiv.org/pdf/1409.1458v1.pdf
+  tags: []
   title: Communication-Efficient Distributed Dual Coordinate Ascent
   type: cpaper
   year: '2014'
 - authors: "<strong>Martin Tak\xE1\u010D</strong>"
   journal: (PhD thesis), University of Edinburgh
+  keywords: []
   ltype: PhD thesis
   pdf: http://mtakac.com/data/_uploaded/file/papers/2014/takac_phd_thesis_final.pdf
+  tags: []
   title: Randomized Coordinate Descent Methods for Big Data Optimization
   type: opaper
   year: '2014'
@@ -4537,9 +5153,11 @@
   authors: "Jakub Mare\u010Dek, Peter Richt\xE1rik, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Numerical Analysis and Optimization 2014, Springer Proceedings in Mathematics
     and Statistics
+  keywords: []
   link: http://arxiv.org/abs/1406.0238
   ltype: Conference Proceedings
   pdf: http://arxiv.org/pdf/1406.0238v1.pdf
+  tags: []
   title: Distributed Block Coordinate Descent for Minimizing Partially Separable Functions
   type: jpaper
   year: '2014'
@@ -4553,9 +5171,11 @@
   authors: "Olivier Fercoq, Zheng Qu, Peter Richt\xE1rik, <strong>Martin Tak\xE1\u010D\
     </strong>"
   journal: 'MLSP2014: IEEE International Workshop on Machine Learning for Signal Processing'
+  keywords: []
   link: http://arxiv.org/abs/1405.5300
   ltype: Conference Paper
   pdf: http://arxiv.org/pdf/1405.5300v2.pdf
+  tags: []
   title: Fast Distributed Coordinate Descent for Non-Strongly Convex Losses
   type: cpaper
   year: '2014'
@@ -4568,9 +5188,11 @@
   authors: "<strong>Martin Tak\xE1\u010D</strong>, Avleen Bijral, Peter Richt\xE1\
     rik, Nathan Srebro"
   journal: ICML 2013 (30th International Conference on Machine Learning)
+  keywords: []
   link: http://arxiv.org/abs/1303.2314
   ltype: arXiv Preprint
   pdf: http://arxiv.org/pdf/1303.2314v1.pdf
+  tags: []
   title: Mini-Batch Primal and Dual Methods for SVMs
   type: cpaper
   year: '2013'
@@ -4585,9 +5207,11 @@
     experiments were performed on instances with up to 30 million potential bars.'
   authors: "Peter Richt\xE1rik, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Operations Research Proceedings 2011, pp. 27-32, Springer-Verlag 2012
+  keywords: []
   link: http://link.springer.com/chapter/10.1007%2F978-3-642-29210-1_5
   ltype: Conference Paper
   pdf: http://www.optimization-online.org/DB_FILE/2011/08/3118.pdf
+  tags: []
   title: Efficient serial and parallel coordinate descent methods for huge-scale truss
     topology design
   type: cpaper
@@ -4609,9 +5233,11 @@
     and support vector machine problems with a billion variables.
   authors: "Peter Richt\xE1rik, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Mathematical Programming, Series A, 38 pages, 2012
+  keywords: []
   link: http://link.springer.com/article/10.1007/s10107-012-0614-z#
   ltype: Journal Paper
   pdf: http://www.optimization-online.org/DB_FILE/2011/07/3089.pdf
+  tags: []
   title: Iteration complexity of randomized block-coordinate descent methods for minimizing
     a composite function
   type: jpaper
@@ -4619,8 +5245,10 @@
 - authors: "Peter Richt\xE1rik, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Proceedings of SPARS11 (4th Workshop on Signal Processing with Adaptive
     Sparse Structured Representations), June 27-30, 2011
+  keywords: []
   ltype: Conference Paper
   pdf: http://ecos.maths.ed.ac.uk/SPARS11/spars11.pdf
+  tags: []
   title: Efficiency of randomized coordinate descent methods on minimization problems
     with a composite objective function
   type: cpaper
@@ -4638,9 +5266,11 @@
   authors: "Daniel \u0160evcovi\u010D, <strong>Martin Tak\xE1\u010D</strong>"
   journal: International Journal of Numerical Analysis and Modeling, Ser. B, 2(2-3),
     2011 231-247
+  keywords: []
   link: http://arxiv.org/abs/1101.3071
   ltype: Journal Paper
   pdf: http://arxiv.org/pdf/1101.3071v1.pdf
+  tags: []
   title: Sensitivity analysis of the early exercise boundary for American style of
     Asian options
   type: jpaper

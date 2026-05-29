@@ -59,6 +59,24 @@ title: Home
                             </div>
                         </div>
                     </div>
+                    <div class="row publication-meta-filters">
+                        <div class="col-md-4">
+                            <h3>Search:</h3>
+                            <input id="pub-keyword-search" class="form-control" type="text"
+                                   placeholder="Search title, authors, venue, tags, keywords">
+                        </div>
+                        <div class="col-md-4">
+                            <h3>Filter by tag:</h3>
+                            <select id="pub-tag-filter" class="form-control">
+                                <option value="all" selected>All tags</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <h3>Tag statistics:</h3>
+                            <div id="pub-tag-stats" class="pub-tag-stats"></div>
+                            <div id="pub-visible-count" class="pub-visible-count"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -84,7 +102,10 @@ title: Home
 
 
                                     <!--   PAPER DELIMITER -->
-                                    <div data-year="{{paper.year}}" 
+                                    <div data-year="{{paper.year}}"
+                                         data-tags="{{paper.tags | join: '|' | escape}}"
+                                         data-keywords="{{paper.keywords | join: '|' | escape}}"
+                                         data-search="{{paper.title | append: ' ' | append: paper.authors | append: ' ' | append: paper.journal | append: ' ' | append: paper.abstract | strip_html | escape}}"
                                     class="item mix {{paper.type}} mix_all" 
                                          style="display: block;  opacity: 1;">
                                         <div class="pubmain">
@@ -137,6 +158,21 @@ title: Home
 
 
                                             </div>
+                                            {% if paper.tags.size > 0 %}
+                                                <div class="pubtags">
+                                                    {% for tag in paper.tags %}
+                                                        <span class="label label-tag">{{tag}}</span>
+                                                    {% endfor %}
+                                                </div>
+                                            {% endif %}
+                                            {% if paper.keywords.size > 0 %}
+                                                <div class="pubkeywords">
+                                                    Keywords:
+                                                    {% for keyword in paper.keywords %}
+                                                        <span>{{keyword}}</span>{% unless forloop.last %}, {% endunless %}
+                                                    {% endfor %}
+                                                </div>
+                                            {% endif %}
 
                                         </div>
                                         <div class="pubdetails">
@@ -183,6 +219,115 @@ title: Home
         </div>
     </div>
 </div>
+
+<script>
+(function () {
+    function ready(fn) {
+        if (document.readyState !== "loading") {
+            fn();
+        } else {
+            document.addEventListener("DOMContentLoaded", fn);
+        }
+    }
+
+    function splitValues(value) {
+        if (!value) {
+            return [];
+        }
+        return value.split("|").map(function (item) {
+            return item.trim();
+        }).filter(Boolean);
+    }
+
+    ready(function () {
+        var items = Array.prototype.slice.call(document.querySelectorAll("#pub-grid .item"));
+        var typeSelect = document.querySelector("[name=cd-dropdown]");
+        var tagSelect = document.getElementById("pub-tag-filter");
+        var searchInput = document.getElementById("pub-keyword-search");
+        var statsContainer = document.getElementById("pub-tag-stats");
+        var countContainer = document.getElementById("pub-visible-count");
+        if (!items.length || !tagSelect || !searchInput) {
+            return;
+        }
+
+        var counts = {};
+        items.forEach(function (item) {
+            splitValues(item.getAttribute("data-tags")).forEach(function (tag) {
+                counts[tag] = (counts[tag] || 0) + 1;
+            });
+        });
+
+        Object.keys(counts).sort(function (a, b) {
+            return counts[b] - counts[a] || a.localeCompare(b);
+        }).forEach(function (tag) {
+            var option = document.createElement("option");
+            option.value = tag;
+            option.textContent = tag + " (" + counts[tag] + ")";
+            tagSelect.appendChild(option);
+        });
+
+        Object.keys(counts).sort(function (a, b) {
+            return counts[b] - counts[a] || a.localeCompare(b);
+        }).slice(0, 14).forEach(function (tag) {
+            var button = document.createElement("button");
+            button.type = "button";
+            button.className = "pub-tag-button";
+            button.textContent = tag + " (" + counts[tag] + ")";
+            button.setAttribute("data-tag", tag);
+            statsContainer.appendChild(button);
+        });
+
+        function currentType() {
+            return typeSelect ? typeSelect.value : "all";
+        }
+
+        function applyFilters() {
+            var selectedType = currentType();
+            var selectedTag = tagSelect.value;
+            var query = searchInput.value.trim().toLowerCase();
+            var visible = 0;
+
+            items.forEach(function (item) {
+                var tags = splitValues(item.getAttribute("data-tags"));
+                var keywordText = [
+                    item.getAttribute("data-search") || "",
+                    item.getAttribute("data-keywords") || "",
+                    tags.join(" ")
+                ].join(" ").toLowerCase();
+                var typeOk = selectedType === "all" || item.classList.contains(selectedType);
+                var tagOk = selectedTag === "all" || tags.indexOf(selectedTag) !== -1;
+                var queryOk = !query || keywordText.indexOf(query) !== -1;
+                var show = typeOk && tagOk && queryOk;
+                item.classList.toggle("publication-hidden-by-metadata", !show);
+                if (show) {
+                    visible += 1;
+                }
+            });
+
+            if (countContainer) {
+                countContainer.textContent = visible + " publications shown";
+            }
+        }
+
+        tagSelect.addEventListener("change", applyFilters);
+        searchInput.addEventListener("input", applyFilters);
+        if (typeSelect) {
+            typeSelect.addEventListener("change", function () {
+                window.setTimeout(applyFilters, 80);
+            });
+        }
+        statsContainer.addEventListener("click", function (event) {
+            if (!event.target || !event.target.getAttribute("data-tag")) {
+                return;
+            }
+            tagSelect.value = event.target.getAttribute("data-tag");
+            applyFilters();
+        });
+
+        applyFilters();
+    });
+}());
+</script>
  
 
 
@@ -191,7 +336,6 @@ title: Home
 
   
    
-
 
 
 
