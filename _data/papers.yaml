@@ -1148,51 +1148,6 @@
   title: Accelerated Adaptive Cubic Regularized Quasi-Newton Methods
   type: jpaper
   year: '2026'
-- abstract: "We develop a homological duality framework based on a contravariant functor\
-    \ $D=\\operatorname{Hom}_E(-,R)$ with dualizing object $R$. A morphism is called\
-    \ ethic when it satisfies the canonical double-dual compatibility $D^2(f)\u03B7\
-    =\u03B7f$. In the derived setting, the functor $\\mathrm{RHom}_E(-,R)$ produces\
-    \ a graded family of Ext-groups that measure all failures of this compatibility.\
-    \ The first layer $\\operatorname{Ext}^1$ identifies primal-dual gaps, while higher\
-    \ $\\operatorname{Ext}^k$ provide a systematic hierarchy of derived obstructions\
-    \ to exactness. This formulation specializes uniformly across several classical\
-    \ domains. In linear and conic optimization, Farkas- and Slater-type exactness\
-    \ criteria correspond to the vanishing of $\\operatorname{Ext}^1$, and integer\
-    \ duality gaps coincide with torsion Ext-classes. In graph theory, Kirchhoff-\
-    \ and Baker-Norine-type dualities arise as instances of ethic exactness. In dynamical\
-    \ systems, the higher derived layers encode nonvanishing persistence phenomena.\
-    \ Additional examples include social-choice configurations, categorical factorization\
-    \ in scattering formalisms, coding-theoretic duality, and Bellman-type recurrences,\
-    \ all appearing as concrete instances of Ext-controlled exactness. All resulting\
-    \ invariants are stable under derived Morita equivalence and depend only on the\
-    \ dualizing pair $(E,R)$. The framework therefore provides a substrate-independent\
-    \ criterion for primal-dual exactness and a uniform homological description of\
-    \ its obstructions."
-  authors: "Dmitry Pasechnyuk-Vilensky, <strong>Martin Tak\xE1\u010D</strong>"
-  journal: arXiv
-  keywords:
-  - homological duality
-  - primal-dual exactness
-  - ext groups
-  - derived obstructions
-  - double-dual compatibility
-  - dualizing object
-  - farkas and slater exactness
-  - conic optimization
-  - integer duality gaps
-  - derived morita equivalence
-  link: https://arxiv.org/abs/2512.17170
-  ltype: arXiv
-  pdf: https://arxiv.org/pdf/2512.17170v1
-  tags:
-  - Optimization
-  - Homological Algebra
-  - Duality Theory
-  - Graph Theory
-  - Dynamical Systems
-  title: 'Ethic Duality: A Homological Framework for Primal-Dual Problems'
-  type: tpaper
-  year: '2025'
 - abstract: "Cytosine methylation is a key epigenetic modification that regulates\
     \ transcription factor (TF) binding and gene expression. While most current understanding\
     \ of methylation-sensitive TF binding derives from studies focused exclusively\
@@ -1270,6 +1225,51 @@
   - Distributed Learning
   title: Method and system for determining uncertainty in personalized federated learning
   type: patent
+  year: '2025'
+- abstract: "We develop a homological duality framework based on a contravariant functor\
+    \ $D=\\operatorname{Hom}_E(-,R)$ with dualizing object $R$. A morphism is called\
+    \ ethic when it satisfies the canonical double-dual compatibility $D^2(f)\u03B7\
+    =\u03B7f$. In the derived setting, the functor $\\mathrm{RHom}_E(-,R)$ produces\
+    \ a graded family of Ext-groups that measure all failures of this compatibility.\
+    \ The first layer $\\operatorname{Ext}^1$ identifies primal-dual gaps, while higher\
+    \ $\\operatorname{Ext}^k$ provide a systematic hierarchy of derived obstructions\
+    \ to exactness. This formulation specializes uniformly across several classical\
+    \ domains. In linear and conic optimization, Farkas- and Slater-type exactness\
+    \ criteria correspond to the vanishing of $\\operatorname{Ext}^1$, and integer\
+    \ duality gaps coincide with torsion Ext-classes. In graph theory, Kirchhoff-\
+    \ and Baker-Norine-type dualities arise as instances of ethic exactness. In dynamical\
+    \ systems, the higher derived layers encode nonvanishing persistence phenomena.\
+    \ Additional examples include social-choice configurations, categorical factorization\
+    \ in scattering formalisms, coding-theoretic duality, and Bellman-type recurrences,\
+    \ all appearing as concrete instances of Ext-controlled exactness. All resulting\
+    \ invariants are stable under derived Morita equivalence and depend only on the\
+    \ dualizing pair $(E,R)$. The framework therefore provides a substrate-independent\
+    \ criterion for primal-dual exactness and a uniform homological description of\
+    \ its obstructions."
+  authors: "Dmitry Pasechnyuk-Vilensky, <strong>Martin Tak\xE1\u010D</strong>"
+  journal: arXiv
+  keywords:
+  - homological duality
+  - primal-dual exactness
+  - ext groups
+  - derived obstructions
+  - double-dual compatibility
+  - dualizing object
+  - farkas and slater exactness
+  - conic optimization
+  - integer duality gaps
+  - derived morita equivalence
+  link: https://arxiv.org/abs/2512.17170
+  ltype: arXiv
+  pdf: https://arxiv.org/pdf/2512.17170v1
+  tags:
+  - Optimization
+  - Homological Algebra
+  - Duality Theory
+  - Graph Theory
+  - Dynamical Systems
+  title: 'Ethic Duality: A Homological Framework for Primal-Dual Problems'
+  type: tpaper
   year: '2025'
 - authors: "Dmitry Pasechnyuk-Vilensky, Dmitry Kamzolov, <strong>Martin Tak\xE1\u010D\
     </strong>"
