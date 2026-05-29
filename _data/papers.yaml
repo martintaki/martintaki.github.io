@@ -849,14 +849,16 @@
   keywords:
   - molecular representation learning
   - substructure descriptors
-  - smiles limitations
-  - roberta chemical language model
+  - chemical language models
   - graph neural networks
-  - bimodal molecular architecture
+  - roberta
   - graph isomorphism networks
   - graph convolutional networks
   - graphormer
+  - smiles limitations
+  - bimodal architecture
   - qsar prediction
+  - molecular property prediction
   link: https://ieeexplore.ieee.org/document/11456953
   pdf: https://arxiv.org/pdf/2502.17986
   tags:
@@ -864,7 +866,6 @@
   - Graph Learning
   - Chemistry
   - Representation Learning
-  - Self-Supervised Learning
   title: 'Thinking like a CHEMIST: Combined Heterogeneous Embedding Model Integrating
     Structure and Tokens'
   type: jpaper
@@ -3170,23 +3171,23 @@
     \ Stefano Sanvito, Huseyin Ucar"
   journal: The Journal of Physical Chemistry C
   keywords:
-  - magnetic materials
-  - domain pretrained bert
   - magbert
   - magmatbert
+  - magnetic materials
   - curie temperature extraction
+  - bert pretraining
   - chemical named entity recognition
   - question answering pipeline
-  - materials literature mining
-  - magnetics corpus pretraining
-  - random forest evaluation
+  - materials text mining
+  - magnetics corpus
+  - random forest validation
   link: https://pubs.acs.org/doi/full/10.1021/acs.jpcc.4c01974
   pdf: https://pubs.acs.org/doi/epdf/10.1021/acs.jpcc.4c01974
   tags:
   - LLM
   - Materials Science
   - Information Extraction
-  - Question Answering
+  - Natural Language Processing
   - Machine Learning
   title: 'MagBERT: Magnetics Knowledge Aware Language Model Coupled with a Question
     Answering Pipeline for Curie Temperature Extraction Task'
@@ -4532,22 +4533,24 @@
   journal: 'Journal of Physics: Energy'
   keywords:
   - oxidative coupling of methane
-  - deep neural network rate model
+  - deep neural network
   - high-throughput catalysis data
+  - reaction rate modeling
   - plug flow reactor design equation
-  - mn-na2wo4/sio2 catalyst
+  - catalyst screening
   - sequential catalyst beds
   - c2 product yield
+  - methane conversion
   - ethylene to ethane ratio
-  - catalyst screening
-  - domain-constrained reaction modeling
+  - mn-na2wo4/sio2 catalyst
   link: https://iopscience.iop.org/article/10.1088/2515-7655/aca797
   pdf: https://iopscience.iop.org/article/10.1088/2515-7655/aca797/pdf
   tags:
   - Machine Learning
-  - Energy Systems
-  - Materials Science
   - Catalysis
+  - Materials Science
+  - Energy Systems
+  - Chemical Engineering
   title: A deep neural network for oxidative coupling of methane trained on high throughput
     experimental data
   type: jpaper
@@ -5952,15 +5955,15 @@
   journal: Computer-Aided Civil and Infrastructure Engineering
   keywords:
   - strain estimation
-  - acceleration sensor data
+  - acceleration data
   - fatigue assessment
   - structural sensing
-  - long short-term memory networks
-  - multistage neural networks
-  - strain response prediction
-  - civil structures
+  - long short-term memory
+  - deep neural networks
+  - acceleration sensors
+  - strain responses
   - horizontally curved girder
-  - long acceleration sequences
+  - memory-efficient training
   link: https://onlinelibrary.wiley.com/doi/full/10.1111/mice.12565
   ltype: Computer-Aided Civil and Infrastructure Engineering
   tags:
@@ -5968,7 +5971,7 @@
   - Structural Health Monitoring
   - Civil Infrastructure
   - Time Series
-  - Fatigue Analysis
+  - Fatigue Assessment
   title: 'Structural sensing with deep learning: Strain estimation from acceleration
     data for fatigue assessment'
   type: jpaper
