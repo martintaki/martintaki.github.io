@@ -10,6 +10,18 @@
     and Sebastian Stich.
   date: '2025-12-17'
   title: Artem Agafonov Defended His PhD Thesis
+- body: <img src="/img/news/2025-09-29-mednns-for-medical-imaging-model-selection.jpg"
+    align="middle" width="500"><br/> An MBZUAI news article describes MedNNS, a framework
+    for selecting both neural network architectures and pretrained weights for new
+    medical imaging datasets. The approach reframes model selection as a retrieval
+    problem, using dataset and model embeddings to recommend candidates before expensive
+    training begins.<br/><br/>The article notes that MedNNS is planned for presentation
+    at MICCAI 2025 in South Korea and reports gains in speed, accuracy, and stability
+    across MedMNIST tasks, while also discussing limitations for out-of-distribution
+    datasets and future directions beyond classification. --- <a href="https://mbzuai.ac.ae/news/how-mednns-picks-the-right-ai-model-for-each-type-of-hospital-scan/">check
+    the full article here</a>.
+  date: '2025-09-29'
+  title: MedNNS for Medical Imaging Model Selection
 - body: '--- <a href="https://mbzuai.ac.ae/news/how-mednns-picks-the-right-ai-model-for-each-type-of-hospital-scan/">check
     the full article here</a>.'
   date: '2025-09-29'
