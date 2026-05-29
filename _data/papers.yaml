@@ -3013,20 +3013,21 @@
   - magbert
   - magmatbert
   - magnetic materials
-  - domain-specific bert pretraining
+  - curie temperature extraction
   - chemical named entity recognition
   - question answering pipeline
-  - curie temperature extraction
+  - domain-specific bert pretraining
   - magnetics corpus
-  - materials data extraction
-  - random forest evaluation
+  - materials informatics
+  - random forest validation
   link: https://pubs.acs.org/doi/full/10.1021/acs.jpcc.4c01974
   pdf: https://pubs.acs.org/doi/epdf/10.1021/acs.jpcc.4c01974
   tags:
   - LLM
   - Materials Science
   - Information Extraction
-  - Natural Language Processing
+  - Question Answering
+  - Machine Learning
   title: 'MagBERT: Magnetics Knowledge Aware Language Model Coupled with a Question
     Answering Pipeline for Curie Temperature Extraction Task'
   type: jpaper
@@ -4370,23 +4371,24 @@
     \u010D</strong>"
   journal: 'Journal of Physics: Energy'
   keywords:
-  - deep neural network rate model
   - oxidative coupling of methane
+  - deep neural network rate model
   - high-throughput catalysis data
   - plug flow reactor equation
-  - catalyst bed composition profiles
-  - methane conversion
-  - c2 yield and selectivity
+  - data-driven reaction modeling
+  - mn-na2wo4/sio2 catalyst
+  - catalyst screening
   - sequential catalyst beds
-  - catalyst combination screening
-  - mn-na2wo4/sio2 reference catalyst
+  - c2 product yield
+  - ethylene to ethane ratio
   link: https://iopscience.iop.org/article/10.1088/2515-7655/aca797
   pdf: https://iopscience.iop.org/article/10.1088/2515-7655/aca797/pdf
   tags:
   - Machine Learning
+  - Neural Networks
+  - Catalysis
   - Materials Science
   - Energy Systems
-  - Catalysis
   title: A deep neural network for oxidative coupling of methane trained on high throughput
     experimental data
   type: jpaper
@@ -5792,14 +5794,14 @@
   keywords:
   - strain estimation
   - acceleration data
-  - structural sensing
   - fatigue assessment
+  - structural sensing
   - long short-term memory
   - deep neural networks
-  - acceleration sensors
-  - strain response estimation
-  - memory-efficient sequence training
-  - horizontally curved girder
+  - civil structures
+  - vibration response
+  - full-field strain assessment
+  - curved girder testing
   link: https://onlinelibrary.wiley.com/doi/full/10.1111/mice.12565
   ltype: Computer-Aided Civil and Infrastructure Engineering
   tags:
@@ -7662,27 +7664,51 @@
     both in theory and also in practice.
   authors: "Chenxin Ma, <strong>Martin Tak\xE1\u010D</strong>"
   journal: OptML@NeurIPS 2015
-  keywords: []
+  keywords:
+  - feature partitioning
+  - sample partitioning
+  - communication-efficient optimization
+  - disco algorithm
+  - distributed empirical risk minimization
+  - self-concordant loss
+  - inexact newton method
+  - preconditioned conjugate gradient
   link: http://arxiv.org/abs/1510.06688
   ltype: Workshop Paper
   pdf: http://arxiv.org/pdf/1510.06688.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Distributed Optimization
+  - Second-Order Methods
+  - Machine Learning
   title: Partitioning Data on Features or Samples in Communication-Efficient Distributed
     Optimization?
   type: cpaper
   year: '2015'
-- abstract: "\nAn unsupervised method of discovering image categories in a set of\
-    \ images comprises generating, for each image, a histogram vector containing counts\
-    \ of visual words from a dictionary of visual words. An occurrence matrix is generated\
-    \ in which respective rows are histogram vectors for respective images. Sparse\
-    \ principal components of the occurrence matrix are determined, each sparse principal\
-    \ component associated with an image category.\n\t\t"
+- abstract: An unsupervised method of discovering image categories in a set of images
+    comprises generating, for each image, a histogram vector containing counts of
+    visual words from a dictionary of visual words. An occurrence matrix is generated
+    in which respective rows are histogram vectors for respective images. Sparse principal
+    components of the occurrence matrix are determined, each sparse principal component
+    associated with an image category.
   authors: "Ngai-Man Cheungselin, Damla Ahipasaoglu, Peter Richtarik, <strong>Martin\
     \ Tak\xE1\u010D</strong>"
   journal: WO2015011470A1
-  keywords: []
+  keywords:
+  - unsupervised image classification
+  - image category discovery
+  - visual word histograms
+  - bag of visual words
+  - dictionary of visual words
+  - occurrence matrix
+  - sparse principal component analysis
+  - image categorization
   link: https://patents.google.com/patent/WO2015011470A1
-  tags: []
+  tags:
+  - Computer Vision
+  - Machine Learning
+  - Unsupervised Learning
+  - Dimensionality Reduction
   title: Method and system for classifying images
   type: patent
   year: '2015'
@@ -7758,25 +7784,39 @@
   year: '2015'
 - abstract: In this work we show that randomized (block) coordinate descent methods
     can be accelerated by parallelization when applied to the problem of minimizing
-    the sum of a  smooth convex function and a simple separable convex function. The
-    theoretical speedup, as compared to the serial method, and referring to the number
-    of iterations needed to approximately solve the problem with high probability,
-    is a simple expression depending on the number of parallel processors and a natural
-    and easily computable measure of separability of the smooth component of the objective
-    function. In the worst case, when no degree of separability is present, there
-    may be no speedup; in the best case, when the problem is separable, the speedup
-    is equal to the number of processors. Our analysis also works in the mode when
-    the number of blocks being updated at each iteration is random, which allows for
-    modeling situations with busy or unreliable processors. We show that our algorithm
-    is able to solve a LASSO problem involving a matrix with 20 billion nonzeros in
-    2 hours on a large memory node with 24 cores.
+    the sum of a partially separable smooth convex function and a simple separable
+    convex function. The theoretical speedup, as compared to the serial method, and
+    referring to the number of iterations needed to approximately solve the problem
+    with high probability, is a simple expression depending on the number of parallel
+    processors and a natural and easily computable measure of separability of the
+    smooth component of the objective function. In the worst case, when no degree
+    of separability is present, there may be no speedup; in the best case, when the
+    problem is separable, the speedup is equal to the number of processors. Our analysis
+    also works in the mode when the number of blocks being updated at each iteration
+    is random, which allows for modeling situations with busy or unreliable processors.
+    We show that our algorithm is able to solve a LASSO problem involving a matrix
+    with 20 billion nonzeros in 2 hours on a large memory node with 24 cores.
   authors: "Peter Richt\xE1rik, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Mathematical Programming
-  keywords: []
+  keywords:
+  - parallel coordinate descent
+  - randomized block coordinate descent
+  - big data optimization
+  - partial separability
+  - convex composite optimization
+  - iteration complexity
+  - expected separable over-approximation
+  - theoretical speedup
+  - lasso
+  - unreliable processors
   link: http://link.springer.com/article/10.1007/s10107-015-0901-6
   ltype: Journal Paper
   pdf: http://arxiv.org/pdf/1212.0873v2.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Parallel Computing
+  - Convex Optimization
+  - Machine Learning
   title: Parallel Coordinate Descent Methods for Big Data Optimization
   type: jpaper
   year: '2015'
@@ -7798,11 +7838,25 @@
   authors: "Jakub Kone\u010Dn\xFD, Jie Liu, Peter Richt\xE1rik, <strong>Martin Tak\xE1\
     \u010D</strong>"
   journal: 'OPT 2014: Optimization for Machine Learning @NeurIPS 2014'
-  keywords: []
+  keywords:
+  - mini-batch stochastic gradient descent
+  - semi-stochastic gradient descent
+  - proximal methods
+  - variance reduction
+  - strongly convex composite optimization
+  - smooth convex finite sums
+  - nonsmooth regularization
+  - complexity analysis
+  - parallel implementation
+  - gradient evaluations
   link: http://arxiv.org/abs/1410.4744
   ltype: Conference Paper
   pdf: http://arxiv.org/pdf/1410.4744v1.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Stochastic Optimization
+  - First-Order Methods
+  - Parallel Computing
   title: 'mS2GD: Mini-batch semi-stochastic gradient descent in the proximal setting
     (code: mS2GD)'
   type: cpaper
@@ -7819,22 +7873,46 @@
   authors: "Martin Jaggi, Virginia Smith, <strong>Martin Tak\xE1\u010D</strong>, Jonathan\
     \ Terhorst, Thomas Hofmann, Michael I. Jordan"
   journal: NeurIPS
-  keywords: []
+  keywords:
+  - communication-efficient optimization
+  - distributed dual coordinate ascent
+  - cocoa framework
+  - primal-dual optimization
+  - local computation tradeoff
+  - large-scale machine learning
+  - linear regularized loss minimization
+  - spark implementation
+  - stochastic dual coordinate ascent
+  - convergence rate analysis
   link: http://arxiv.org/abs/1409.1458
   ltype: Conference Paper
   pdf: http://arxiv.org/pdf/1409.1458v1.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Distributed Optimization
+  - Machine Learning
   title: Communication-Efficient Distributed Dual Coordinate Ascent
   type: cpaper
   year: '2014'
 - authors: "<strong>Martin Tak\xE1\u010D</strong>"
   journal: (PhD thesis), University of Edinburgh
-  keywords: []
+  keywords:
+  - randomized coordinate descent
+  - coordinate descent methods
+  - big data optimization
+  - large-scale optimization
+  - randomized optimization algorithms
+  - optimization for big data
+  - iterative optimization methods
   ltype: PhD thesis
   pdf: http://mtakac.com/data/_uploaded/file/papers/2014/takac_phd_thesis_final.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Randomized Methods
+  - Coordinate Descent
+  - Big Data
   title: Randomized Coordinate Descent Methods for Big Data Optimization
-  type: opaper
+  type: tpaper
   year: '2014'
 - abstract: In this work we propose a distributed randomized block coordinate descent
     method for minimizing a convex function with a huge number of variables/coordinates.
@@ -7850,46 +7928,90 @@
   authors: "Jakub Mare\u010Dek, Peter Richt\xE1rik, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Numerical Analysis and Optimization 2014, Springer Proceedings in Mathematics
     and Statistics
-  keywords: []
+  keywords:
+  - distributed block coordinate descent
+  - randomized coordinate descent
+  - partially block separable functions
+  - expected separable overapproximation
+  - convex composite optimization
+  - iteration complexity
+  - distributed sampling
+  - asynchronous communication
+  - numa architecture
+  - multi-core clusters
   link: http://arxiv.org/abs/1406.0238
   ltype: Conference Proceedings
   pdf: http://arxiv.org/pdf/1406.0238v1.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Distributed Optimization
+  - Coordinate Descent
+  - Parallel Computing
   title: Distributed Block Coordinate Descent for Minimizing Partially Separable Functions
   type: jpaper
   year: '2014'
 - abstract: We propose an efficient distributed randomized coordinate descent method
     for minimizing regularized non-strongly convex loss functions. The method attains
-    the optimal  convergence rate, where  is the iteration counter. The core of the
-    work is the theoretical study of stepsize parameters. We have implemented the
-    method on Archer - the largest supercomputer in the UK - and show that the method
-    is capable of solving a (synthetic) LASSO optimization problem with 50 billion
-    variables.
+    the optimal O(1/k^2) convergence rate, where k is the iteration counter. The core
+    of the work is the theoretical study of stepsize parameters. We have implemented
+    the method on Archer - the largest supercomputer in the UK - and show that the
+    method is capable of solving a (synthetic) LASSO optimization problem with 50
+    billion variables.
   authors: "Olivier Fercoq, Zheng Qu, Peter Richt\xE1rik, <strong>Martin Tak\xE1\u010D\
     </strong>"
   journal: 'MLSP2014: IEEE International Workshop on Machine Learning for Signal Processing'
-  keywords: []
+  keywords:
+  - distributed randomized coordinate descent
+  - non-strongly convex losses
+  - regularized convex optimization
+  - accelerated convergence
+  - optimal 1/k^2 convergence rate
+  - stepsize parameters
+  - proximal coordinate updates
+  - hydra2 algorithm
+  - lasso optimization
+  - large-scale distributed computing
   link: http://arxiv.org/abs/1405.5300
   ltype: Conference Paper
   pdf: http://arxiv.org/pdf/1405.5300v2.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Distributed Optimization
+  - Convex Optimization
+  - Machine Learning
+  - Coordinate Descent
   title: Fast Distributed Coordinate Descent for Non-Strongly Convex Losses
   type: cpaper
   year: '2014'
 - abstract: We address the issue of using mini-batches in stochastic optimization
-    of SVMs. We show that the same quantity, the , controls the parallelization speedup
-    obtained for both primal stochastic subgradient descent (SGD) and stochastic dual
-    coordinate ascent (SCDA) methods and use it to derive novel variants of mini-batched
-    SDCA. Our guarantees for both methods are expressed in terms of the original nonsmooth
-    primal problem based on the hinge-loss.
+    of SVMs. We show that the same quantity, the spectral norm of the data, controls
+    the parallelization speedup obtained for both primal stochastic subgradient descent
+    (SGD) and stochastic dual coordinate ascent (SCDA) methods and use it to derive
+    novel variants of mini-batched SDCA. Our guarantees for both methods are expressed
+    in terms of the original nonsmooth primal problem based on the hinge-loss.
   authors: "<strong>Martin Tak\xE1\u010D</strong>, Avleen Bijral, Peter Richt\xE1\
     rik, Nathan Srebro"
   journal: ICML 2013 (30th International Conference on Machine Learning)
-  keywords: []
+  keywords:
+  - mini-batch stochastic optimization
+  - support vector machines
+  - hinge loss
+  - primal stochastic subgradient descent
+  - stochastic dual coordinate ascent
+  - mini-batched sdca
+  - pegasos
+  - spectral norm of data
+  - parallelization speedups
+  - nonsmooth svm objective
+  - duality gap guarantees
   link: http://arxiv.org/abs/1303.2314
   ltype: arXiv Preprint
   pdf: http://arxiv.org/pdf/1303.2314v1.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Machine Learning
+  - Distributed Optimization
+  - Support Vector Machines
   title: Mini-Batch Primal and Dual Methods for SVMs
   type: cpaper
   year: '2013'

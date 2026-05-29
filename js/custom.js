@@ -25,8 +25,13 @@ $(document).ready(function(){
 		var linkPath = normalizeNavPath(this.pathname);
 		if (linkPath === currentPath) {
 			$(this).closest("li").addClass("currentmenu");
+			$(this).closest("li.has-submenu").addClass("currentmenu submenu-open");
+			$(this).closest("ul.nav-submenu").closest("li.has-submenu").addClass("currentmenu submenu-open");
 		}
 	});
+	if (currentPath.indexOf("/Research_") === 0) {
+		$("#navigation li.research-menu").addClass("currentmenu submenu-open");
+	}
 
 
 	/*++++++++++++++++++++++++++++++++++++
