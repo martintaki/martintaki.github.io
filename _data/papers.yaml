@@ -851,20 +851,18 @@
   - smiles limitations
   - substructure decomposition
   - descriptor-based fragments
-  - bimodal molecular architecture
-  - roberta molecular encoder
+  - roberta chemical language model
+  - bimodal graph language architecture
   - graph isomorphism networks
   - graph convolutional networks
   - graphormer
   - qsar prediction
-  - chemical compound embeddings
   link: https://ieeexplore.ieee.org/document/11456953
   pdf: https://arxiv.org/pdf/2502.17986
   tags:
   - LLM
   - Graph Learning
   - Chemistry
-  - Representation Learning
   - Molecular Modeling
   title: 'Thinking like a CHEMIST: Combined Heterogeneous Embedding Model Integrating
     Structure and Tokens'
@@ -1150,6 +1148,51 @@
   title: Accelerated Adaptive Cubic Regularized Quasi-Newton Methods
   type: jpaper
   year: '2026'
+- abstract: "We develop a homological duality framework based on a contravariant functor\
+    \ $D=\\operatorname{Hom}_E(-,R)$ with dualizing object $R$. A morphism is called\
+    \ ethic when it satisfies the canonical double-dual compatibility $D^2(f)\u03B7\
+    =\u03B7f$. In the derived setting, the functor $\\mathrm{RHom}_E(-,R)$ produces\
+    \ a graded family of Ext-groups that measure all failures of this compatibility.\
+    \ The first layer $\\operatorname{Ext}^1$ identifies primal-dual gaps, while higher\
+    \ $\\operatorname{Ext}^k$ provide a systematic hierarchy of derived obstructions\
+    \ to exactness. This formulation specializes uniformly across several classical\
+    \ domains. In linear and conic optimization, Farkas- and Slater-type exactness\
+    \ criteria correspond to the vanishing of $\\operatorname{Ext}^1$, and integer\
+    \ duality gaps coincide with torsion Ext-classes. In graph theory, Kirchhoff-\
+    \ and Baker-Norine-type dualities arise as instances of ethic exactness. In dynamical\
+    \ systems, the higher derived layers encode nonvanishing persistence phenomena.\
+    \ Additional examples include social-choice configurations, categorical factorization\
+    \ in scattering formalisms, coding-theoretic duality, and Bellman-type recurrences,\
+    \ all appearing as concrete instances of Ext-controlled exactness. All resulting\
+    \ invariants are stable under derived Morita equivalence and depend only on the\
+    \ dualizing pair $(E,R)$. The framework therefore provides a substrate-independent\
+    \ criterion for primal-dual exactness and a uniform homological description of\
+    \ its obstructions."
+  authors: "Dmitry Pasechnyuk-Vilensky, <strong>Martin Tak\xE1\u010D</strong>"
+  journal: arXiv
+  keywords:
+  - homological duality
+  - primal-dual exactness
+  - ext groups
+  - derived obstructions
+  - double-dual compatibility
+  - dualizing object
+  - farkas and slater exactness
+  - conic optimization
+  - integer duality gaps
+  - derived morita equivalence
+  link: https://arxiv.org/abs/2512.17170
+  ltype: arXiv
+  pdf: https://arxiv.org/pdf/2512.17170v1
+  tags:
+  - Optimization
+  - Homological Algebra
+  - Duality Theory
+  - Graph Theory
+  - Dynamical Systems
+  title: 'Ethic Duality: A Homological Framework for Primal-Dual Problems'
+  type: tpaper
+  year: '2025'
 - abstract: "Cytosine methylation is a key epigenetic modification that regulates\
     \ transcription factor (TF) binding and gene expression. While most current understanding\
     \ of methylation-sensitive TF binding derives from studies focused exclusively\
@@ -3171,21 +3214,22 @@
     \ Stefano Sanvito, Huseyin Ucar"
   journal: The Journal of Physical Chemistry C
   keywords:
-  - magnetic materials
-  - domain-specific bert
-  - curie temperature extraction
-  - chemical named entity recognition
-  - question answering pipeline
-  - materials literature mining
   - magbert
   - magmatbert
-  - magnetics corpus pretraining
+  - magnetic materials corpus
+  - bert pretraining
+  - chemical named entity recognition
+  - question answering pipeline
+  - curie temperature extraction
+  - materials literature mining
+  - magnetics dataset
   - random forest validation
   link: https://pubs.acs.org/doi/full/10.1021/acs.jpcc.4c01974
   pdf: https://pubs.acs.org/doi/epdf/10.1021/acs.jpcc.4c01974
   tags:
   - LLM
   - Materials Science
+  - Natural Language Processing
   - Information Extraction
   - Question Answering
   title: 'MagBERT: Magnetics Knowledge Aware Language Model Coupled with a Question
@@ -4531,23 +4575,23 @@
     \u010D</strong>"
   journal: 'Journal of Physics: Energy'
   keywords:
+  - deep neural network
   - oxidative coupling of methane
-  - deep neural network rate model
   - high-throughput catalysis data
-  - plug flow reactor design equation
-  - mn-na2wo4/sio2 catalyst
-  - c2 yield and selectivity
+  - reaction rate modeling
+  - plug flow reactor
+  - catalyst screening
   - sequential catalyst beds
-  - catalyst combination screening
-  - methane conversion profiles
-  - ethylene to ethane ratio
+  - c2 product yield
+  - methane conversion
+  - data-driven reaction model
   link: https://iopscience.iop.org/article/10.1088/2515-7655/aca797
   pdf: https://iopscience.iop.org/article/10.1088/2515-7655/aca797/pdf
   tags:
+  - Machine Learning
   - Materials Science
   - Energy Systems
   - Catalysis
-  - Machine Learning
   - Chemical Engineering
   title: A deep neural network for oxidative coupling of methane trained on high throughput
     experimental data
@@ -5952,16 +5996,15 @@
   authors: "Nur Sila Gulgec, <strong>Martin Tak\xE1\u010D</strong>, Shamim N. Pakzad"
   journal: Computer-Aided Civil and Infrastructure Engineering
   keywords:
-  - structural sensing
   - strain estimation
-  - acceleration data
-  - fatigue assessment
-  - long short-term memory
-  - deep neural networks
-  - acceleration sensors
-  - civil structures
+  - acceleration sensor data
+  - fatigue life assessment
+  - structural vibrations
+  - long short-term memory networks
+  - multistage neural networks
   - full-field strain assessment
   - horizontally curved girder
+  - loading scenarios
   link: https://onlinelibrary.wiley.com/doi/full/10.1111/mice.12565
   ltype: Computer-Aided Civil and Infrastructure Engineering
   tags:
