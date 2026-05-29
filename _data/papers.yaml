@@ -93,7 +93,7 @@
     \ properties, and offers practical guidelines for future research.\n\t\t"
   authors: "Yusei Ito, Aidar Alimbayev, Klea Ziu, Deepak Kumar, Kanta Ono, <strong>Martin\
     \ Tak\xE1\u010D</strong>"
-  journal: ICML 2026 Workshop AI4Physics Submission
+  journal: ICML 2026 Workshop AI4Physics
   title: Revisiting the Form of Attention with Positional Encoding for Molecular Structures
   type: cpaper
   year: '2026'
