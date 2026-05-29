@@ -1507,7 +1507,7 @@ ul.timeline li .data .text {
 .featured-paper-grid {
 	display: grid;
 	gap: 18px;
-	grid-template-columns: repeat(3, minmax(0, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
 }
 
 .featured-paper-card {
@@ -1630,7 +1630,8 @@ ul.timeline li .data .text {
 
 .figure-network span,
 .figure-agents span,
-.figure-debate span {
+.figure-debate span,
+.figure-molecule span {
 	background: #fff;
 	border: 3px solid var(--mbz-blue);
 	border-radius: 50%;
@@ -1642,7 +1643,8 @@ ul.timeline li .data .text {
 
 .figure-network:after,
 .figure-agents:after,
-.figure-debate:after {
+.figure-debate:after,
+.figure-molecule:after {
 	background: linear-gradient(90deg, var(--mbz-blue), var(--mbz-teal));
 	content: "";
 	height: 3px;
@@ -1655,19 +1657,24 @@ ul.timeline li .data .text {
 
 .figure-network span:nth-child(1),
 .figure-agents span:nth-child(1),
-.figure-debate span:nth-child(1) { left: 34px; top: 28px; }
+.figure-debate span:nth-child(1),
+.figure-molecule span:nth-child(1) { left: 34px; top: 28px; }
 .figure-network span:nth-child(2),
 .figure-agents span:nth-child(2),
-.figure-debate span:nth-child(2) { right: 40px; top: 26px; border-color: var(--mbz-teal); }
+.figure-debate span:nth-child(2),
+.figure-molecule span:nth-child(2) { right: 40px; top: 26px; border-color: var(--mbz-teal); }
 .figure-network span:nth-child(3),
 .figure-agents span:nth-child(3),
-.figure-debate span:nth-child(3) { left: 60px; bottom: 24px; border-color: var(--mbz-gold); }
+.figure-debate span:nth-child(3),
+.figure-molecule span:nth-child(3) { left: 60px; bottom: 24px; border-color: var(--mbz-gold); }
 .figure-network span:nth-child(4),
 .figure-agents span:nth-child(4),
-.figure-debate span:nth-child(4) { right: 68px; bottom: 22px; }
+.figure-debate span:nth-child(4),
+.figure-molecule span:nth-child(4) { right: 68px; bottom: 22px; }
 .figure-network i,
 .figure-agents i,
-.figure-debate i {
+.figure-debate i,
+.figure-molecule i {
 	background: var(--mbz-gold);
 	border-radius: 999px;
 	height: 7px;
@@ -1677,6 +1684,10 @@ ul.timeline li .data .text {
 	transform: translateX(-50%);
 	width: 44px;
 	z-index: 1;
+}
+
+.figure-molecule:after {
+	transform: rotate(24deg);
 }
 
 .figure-dna span {
@@ -1759,6 +1770,32 @@ ul.timeline li .data .text {
 .figure-lowrank span:nth-child(2) { height: 68px; left: 72px; top: 24px; width: 16px; background: var(--mbz-teal); }
 .figure-lowrank span:nth-child(3) { height: 16px; left: 108px; top: 38px; width: 58px; background: var(--mbz-gold); }
 .figure-lowrank span:nth-child(4) { height: 16px; left: 108px; top: 64px; width: 58px; }
+
+.figure-catalyst span {
+	background: var(--mbz-blue);
+	border-radius: 50%;
+	height: 18px;
+	position: absolute;
+	width: 18px;
+}
+
+.figure-catalyst span:nth-child(1) { left: 38px; top: 48px; }
+.figure-catalyst span:nth-child(2) { left: 72px; top: 30px; background: var(--mbz-teal); }
+.figure-catalyst span:nth-child(3) { left: 108px; top: 62px; background: var(--mbz-gold); }
+.figure-catalyst span:nth-child(4) { left: 144px; top: 38px; }
+.figure-catalyst span:nth-child(5) { left: 84px; top: 78px; background: var(--mbz-teal); }
+
+.figure-catalyst:after {
+	background:
+		linear-gradient(25deg, transparent 47%, rgba(6,26,51,0.25) 48%, rgba(6,26,51,0.25) 52%, transparent 53%),
+		linear-gradient(-25deg, transparent 47%, rgba(6,26,51,0.25) 48%, rgba(6,26,51,0.25) 52%, transparent 53%);
+	content: "";
+	height: 80px;
+	left: 38px;
+	position: absolute;
+	top: 24px;
+	width: 124px;
+}
 
 .research-crosscut-section h2,
 .program-note h2,
@@ -2231,6 +2268,9 @@ ul.timeline li .data .text {
 		justify-content: flex-start;
 	}
 	.research-detail-layout {
+		grid-template-columns: 1fr;
+	}
+	.featured-paper-grid {
 		grid-template-columns: 1fr;
 	}
 }
