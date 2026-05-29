@@ -1,3 +1,51 @@
+- abstract: "\nMolecular property prediction is a core task in machine learning for\
+    \ physics, with applications to interatomic potential learning and materials discovery.\
+    \ Recent transformer-based models achieve strong performance, but their gains\
+    \ often conflate two coupled choices: the design of SE(3)-aware positional encodings\
+    \ and how these encodings are incorporated into attention. Consequently, it remains\
+    \ unclear whether the empirical improvements stem from the positional encoding\
+    \ itself or from the attention formulation used to exploit it. Here, we present\
+    \ a controlled study of attention design in molecular transformers that fixes\
+    \ the positional encoding and only varies the attention formulation. Our results\
+    \ show that attention design alone has a significant effect on performance. Under\
+    \ a shared positional encoding, vector-valued positional encodings are most effective\
+    \ when used to modulate attention logits, while the best overall results are obtained\
+    \ when geometric information is introduced through a separate pathway that is\
+    \ adaptively gated by the main attention message. Our study isolates the effect\
+    \ of attention design, identifies key ingredients for accurate prediction of molecular\
+    \ properties, and offers practical guidelines for future research.\n\t\t"
+  authors: "Yusei Ito, Aidar Alimbayev, Klea Ziu, Deepak Kumar, Kanta Ono, <strong>Martin\
+    \ Tak\xE1\u010D</strong>"
+  journal: ICML 2026 Workshop AI4Physics Submission
+  title: Revisiting the Form of Attention with Positional Encoding for Molecular Structures
+  type: cpaper
+  year: '2026'
+- abstract: "\nGradient clipping is a standard safeguard for training neural networks\
+    \ under noisy, heavy-tailed stochastic gradients; yet, most clipping rules \n\
+    treat all parameters as vectors and ignore the matrix structure of modern architectures.\
+    \ We show empirically that data outliers often amplify only a small number of\
+    \ \nleading singular values in layer-wise gradient matrices, while the rest of\
+    \ the spectrum remains largely unchanged. Motivated by this phenomenon, we propose\
+    \ spectral clipping, \nwhich stabilizes training by clamping singular values that\
+    \ exceed a threshold while preserving the singular directions. \nThis framework\
+    \ generalizes classical gradient norm clipping and can be easily integrated into\
+    \ existing optimizers. \nWe provide a convergence analysis for non-convex optimization\
+    \ with spectrally clipped SGD, yielding the optimal $O(K^{\\frac{2\u22122\u03B1\
+    }{3\u03B1\u22122}})$ rate for heavy-tailed noise. \nTo minimize hyperparameter\
+    \ tuning, we introduce layer-wise adaptive thresholds based on moving averages\
+    \ or sliding-window quantiles of the top singular values. Finally, we develop\
+    \ efficient implementations that clip only the top r singular values via randomized\
+    \ truncated SVD, avoiding full decompositions for large layers. We demonstrate\
+    \ competitive performance across synthetic heavy-tailed settings and neural network\
+    \ training tasks.\n\t\t"
+  authors: "Alexander Yukhimchuk, Mladen Kolar, <strong>Martin Tak\xE1\u010D</strong>,\
+    \ Sayantan Choudhury"
+  link: https://arxiv.org/abs/2605.11838
+  pdf: https://arxiv.org/pdf/2605.11838
+  title: 'Gradient Clipping Beyond Vector Norms: A Spectral Approach for Matrix-Valued
+    Parameters'
+  type: tpaper
+  year: '2026'
 - abstract: "\nThe accelerating shift toward low-carbon power systems, together with\
     \ the widespread adoption of behind-the-meter technologies such as rooftop solar\
     \ and electric vehicles, \nis placing new operational and analytical demands on\
