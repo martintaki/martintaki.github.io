@@ -1,3 +1,164 @@
+- abstract: 'Reinforcement learning substantially improves pretrained language models,
+    but it remains understudied why critic-free methods such as PPO and GRPO work
+    as well as they do, and when they should provide the largest gains. We develop
+    a value-gradient perspective of critic-free RL for LLM post-training. First, under
+    a differentiable rollout and additive-noise parameterization, we show that the
+    actor update is value-gradient-like in expectation: the backward pass propagates
+    costates whose conditional expectation equals the value gradient. Second, for
+    discrete transformer policies, we show that autodifferentiation through attention
+    produces empirical costates that approximate this value signal, with an error
+    controlled by the sampling gap and policy entropy. These results motivate a decomposition
+    of RL impact into value gradient signal and reachable reward headroom, yielding
+    a criterion for when RL should be most effective along a pretraining trajectory.'
+  authors: "Arip Asadulaev, Daniil Ognev, Karim Salta, <strong>Martin Tak\xE1\u010D\
+    </strong>"
+  journal: arXiv
+  keywords:
+  - critic-free reinforcement learning
+  - llm post-training
+  - value gradients
+  - ppo
+  - grpo
+  - costate propagation
+  - backpropagation through time
+  - attention credit transport
+  - sampling gap
+  - policy entropy
+  - reward headroom
+  - pretraining checkpoint selection
+  link: https://arxiv.org/abs/2605.21654
+  ltype: arXiv
+  pdf: https://arxiv.org/pdf/2605.21654v1
+  tags:
+  - LLM
+  - Reinforcement Learning
+  - Optimization
+  - Machine Learning Theory
+  title: Value-Gradient Hypothesis of RL for LLMs
+  type: tpaper
+  year: '2026'
+- abstract: 'Compositional energy-based models can generalize to larger combinatorial
+    reasoning problems by reusing a learned factor energy across many local constraints.
+    In our paper, we show that a key bottleneck in compositional reasoning is not
+    composition itself, but the non-convex geometry of the learned energy landscape.
+    To solve this problem, we introduce Convex Compositional Energy Minimization (CCEM),
+    a framework that parameterizes each factor with an input-convex neural network
+    and optimizes the composed energy over a tight convex relaxation of the feasible
+    set. Because convexity is preserved under summation, the global relaxed objective
+    remains convex, enabling deterministic projected first-order optimization. CCEM
+    is trained in two stages: factor-level contrastive learning to shape local energy
+    basins, followed by end-to-end refinement through an unrolled projected solver.
+    Our experiments show that our models trained on small subproblems or a single
+    problem size transfer to larger instances without retraining.'
+  authors: "Meir Roketlishvili, Semyon Semenov, Maksim Bobrin, Viktor Kovalchuk, Albert\
+    \ Baichorov, Abduragim Shtanchaev, Fakhri Karray, Dmitry V. Dylov, <strong>Martin\
+    \ Tak\xE1\u010D</strong>, Arip Asadulaev"
+  journal: arXiv
+  keywords:
+  - convex compositional energy minimization
+  - compositional energy-based models
+  - input-convex neural networks
+  - convex relaxation
+  - projected first-order optimization
+  - factor-level contrastive learning
+  - unrolled projected solver
+  - spurious local minima
+  - combinatorial reasoning
+  - transfer to larger instances
+  link: https://arxiv.org/abs/2605.23395
+  ltype: arXiv
+  pdf: https://arxiv.org/pdf/2605.23395v2
+  tags:
+  - Optimization
+  - Energy-Based Models
+  - Neural Networks
+  - Combinatorial Reasoning
+  title: Convex Compositional Reasoning Models
+  type: tpaper
+  year: '2026'
+- abstract: 'Pretrained diffusion models are effective priors for Bayesian inverse
+    problems, but posterior sampling with these priors is often costly because data-consistency
+    guidance is applied throughout the full reverse trajectory. Existing methods have
+    shown that vector-Jacobian products through the denoiser can sometimes be avoided,
+    yet they typically still rely on dense guidance through the full trajectory or
+    expensive inner solves. We introduce Sparse Scheduled Diffusion Guidance for Inverse
+    Problems (Spin), a solver that avoids starting posterior sampling from pure noise.
+    Spin first samples from a posterior time-marginal at an intermediate timestep
+    $t_*$, and then uses that state as a warm start for a guided reverse diffusion
+    process. At guidance time, instead of enforcing the measurement constraint at
+    every denoising step, Spin applies lightweight corrections only at scheduled timesteps
+    where the denoiser can still clean up artifacts. The resulting procedure decouples
+    prior refinement from data consistency: the prior supplies denoising, while lightweight
+    pixel-space optimization enforces the measurement constraint without backpropagation
+    through the denoiser or decoder. Across linear and nonlinear inverse problems
+    on FFHQ and ImageNet, Spin achieves competitive reconstruction quality with a
+    substantially better runtime--memory profile, running 2x faster on pixel-space
+    models and up to 50x faster on latent diffusion models, with lower memory costs.'
+  authors: "Abduragim Shtanchaev, Albina Ilina, Yazid Janati, Arip Asadulaev, <strong>Martin\
+    \ Tak\xE1\u010D</strong>, Eric Moulines"
+  journal: arXiv
+  keywords:
+  - sparse diffusion guidance
+  - posterior sampling
+  - bayesian inverse problems
+  - guided reverse diffusion
+  - scheduled timesteps
+  - data consistency
+  - pixel-space optimization
+  - warm start sampling
+  - latent diffusion models
+  - linear inverse problems
+  - nonlinear inverse problems
+  - runtime memory efficiency
+  link: https://arxiv.org/abs/2603.07860
+  ltype: arXiv
+  pdf: https://arxiv.org/pdf/2603.07860v3
+  tags:
+  - Diffusion Models
+  - Inverse Problems
+  - Optimization
+  - Computer Vision
+  - Bayesian Inference
+  title: Sparse Scheduled Diffusion Guidance for Inverse Problems
+  type: tpaper
+  year: '2026'
+- abstract: 'We study adaptive aggregation for heterogeneous local SGD in convex finite-sum
+    optimization, allowing heterogeneous local horizons, minibatch sizes, gradient
+    noise, and participation. We introduce HEW-Local SGD, a corrected local-SGD method
+    that chooses nodewise server weights by minimizing an explicit one-round upper
+    bound on the next objective value. This yields an exact local-control formulation
+    with a threshold simplex update, separable amplitude updates, and a one-step guarantee
+    under arbitrary predictable participation. We also introduce two post-local variants:
+    a corrected heterogeneous method and a simpler homogeneous specialization. We
+    establish one-step guarantees and global benchmark-style convergence results.
+    In the regimes where comparison is appropriate, the theory matches the qualitative
+    communication-efficient picture of recent LocalSGD/SCAFFOLD analyses, while also
+    giving explicit guarantees for unequal local horizons.'
+  authors: "Dmitry Pasechnyuk-Vilensky, <strong>Martin Tak\xE1\u010D</strong>"
+  journal: arXiv
+  keywords:
+  - heterogeneous local sgd
+  - adaptive aggregation
+  - exact server weights
+  - unequal local horizons
+  - convex finite-sum optimization
+  - minibatch stochastic gradients
+  - threshold simplex update
+  - separable amplitude updates
+  - one-step convergence guarantees
+  - predictable participation
+  link: https://arxiv.org/abs/2604.24463
+  ltype: arXiv
+  pdf: https://arxiv.org/pdf/2604.24463v2
+  tags:
+  - Optimization
+  - Federated Learning
+  - Distributed Optimization
+  - Stochastic Optimization
+  - Convex Optimization
+  title: Heterogeneous-Horizon Exact-Weight Local SGD
+  type: tpaper
+  year: '2026'
 - abstract: Learning the structure of Directed Acyclic Graphs (DAGs) presents a significant
     challenge due to the vast combinatorial search space of possible graphs, which
     scales exponentially with the number of nodes. Recent advancements have redefined
@@ -689,20 +850,21 @@
   - molecular representation learning
   - substructure descriptors
   - smiles limitations
-  - language models for chemistry
+  - roberta chemical language model
   - graph neural networks
   - bimodal molecular architecture
-  - roberta embeddings
   - graph isomorphism networks
+  - graph convolutional networks
   - graphormer
   - qsar prediction
   link: https://ieeexplore.ieee.org/document/11456953
   pdf: https://arxiv.org/pdf/2502.17986
   tags:
+  - LLM
   - Graph Learning
-  - Representation Learning
   - Chemistry
-  - Molecular Modeling
+  - Representation Learning
+  - Self-Supervised Learning
   title: 'Thinking like a CHEMIST: Combined Heterogeneous Embedding Model Integrating
     Structure and Tokens'
   type: jpaper
@@ -907,6 +1069,85 @@
   - Efficient Training
   title: 'LoFT: Low-Rank Adaptation That Behaves Like Full Fine-Tuning'
   type: cpaper
+  year: '2026'
+- abstract: Recent advancements in machine learning have improved performance while
+    also increasing computational demands. While federated and distributed setups
+    address these issues, their structure is vulnerable to malicious influences. In
+    this paper, we address a specific threat, Byzantine attacks, where compromised
+    clients inject adversarial updates to derail global convergence. We combine the
+    trust scores concept with trial function methodology to dynamically filter outliers.
+    Our methods address the critical limitations of previous approaches, allowing
+    functionality even when Byzantine nodes are in the majority. Moreover, our algorithms
+    adapt to widely used scaled methods like Adam and RMSProp, as well as practical
+    scenarios, including local training and partial participation. We validate the
+    robustness of our methods by conducting extensive experiments on both synthetic
+    and real ECG data collected from medical institutions. Furthermore, we provide
+    a broad theoretical analysis of our algorithms and their extensions to aforementioned
+    practical setups. The convergence guarantees of our methods are comparable to
+    those of classical algorithms developed without Byzantine interference.
+  authors: "Gleb Molodtsov, Daniil Medyakov, Sergey Skorik, Nikolas Khachaturov, Shahane\
+    \ Tigranyan, Vladimir Aletov, Aram Avetisyan, <strong>Martin Tak\xE1\u010D</strong>,\
+    \ Aleksandr Beznosikov"
+  journal: AAAI'26 (oral)
+  keywords:
+  - byzantine attacks
+  - trust scores
+  - trial functions
+  - byzantine-robust optimization
+  - outlier filtering
+  - distributed machine learning
+  - scaled adaptive methods
+  - adam and rmsprop
+  - local training
+  - partial participation
+  - convergence guarantees
+  - ecg data
+  link: https://arxiv.org/abs/2505.07614?
+  pdf: https://arxiv.org/pdf/2505.07614?
+  tags:
+  - Federated Learning
+  - Distributed Optimization
+  - Optimization
+  - Robustness
+  title: 'Bant: Byzantine Antidote via Trial Function and Trust Scores'
+  type: cpaper
+  year: '2026'
+- abstract: In this paper, we propose Cubic Regularized Quasi-Newton Methods for (strongly)
+    star-convex and Accelerated Cubic Regularized Quasi-Newton for convex optimization.
+    The proposed class of algorithms combines the global convergence of the Cubic
+    Newton with the affordability of constructing the Hessian approximation via a
+    Quasi-Newton update. To construct these methods we introduce two novel concepts
+    of Hessian inexactness and propose the Adaptive Inexact Cubic Regularized Newton
+    algorithm and its accelerated version, which adjust to the approximation error.
+    We show that different Quasi-Newton updates satisfy these approximation conditions
+    and provide a complexity-efficient way to solve the cubic subproblem. We provide
+    global convergence rates with explicit dependence on Hessian approximation error.
+    By combining cubic regularization, acceleration technique, and adaptivity, our
+    algorithms show good practical performance, especially from the points where classical
+    Newton diverges.
+  authors: "Dmitry Kamzolov, Klea Ziu, Artem Agafonov, <strong>Martin Tak\xE1\u010D\
+    </strong>"
+  journal: Journal of Optimization Theory and Applications
+  keywords:
+  - accelerated quasi-newton methods
+  - cubic regularization
+  - adaptive inexact newton method
+  - hessian approximation error
+  - global convergence rates
+  - convex optimization
+  - star-convex functions
+  - cubic subproblem
+  - bfgs updates
+  - sr1 updates
+  link: https://link.springer.com/article/10.1007/s10957-025-02804-3
+  pdf: https://arxiv.org/pdf/2302.04987.pdf
+  tags:
+  - Optimization
+  - Second-Order Methods
+  - Convex Optimization
+  - Quasi-Newton Methods
+  title: Accelerated Adaptive Cubic Regularized Quasi-Newton Methods
+  type: jpaper
   year: '2026'
 - abstract: "Cytosine methylation is a key epigenetic modification that regulates\
     \ transcription factor (TF) binding and gene expression. While most current understanding\
@@ -1219,48 +1460,6 @@
     Models'
   type: tpaper
   year: '2025'
-- abstract: Recent advancements in machine learning have improved performance while
-    also increasing computational demands. While federated and distributed setups
-    address these issues, their structure is vulnerable to malicious influences. In
-    this paper, we address a specific threat, Byzantine attacks, where compromised
-    clients inject adversarial updates to derail global convergence. We combine the
-    trust scores concept with trial function methodology to dynamically filter outliers.
-    Our methods address the critical limitations of previous approaches, allowing
-    functionality even when Byzantine nodes are in the majority. Moreover, our algorithms
-    adapt to widely used scaled methods like Adam and RMSProp, as well as practical
-    scenarios, including local training and partial participation. We validate the
-    robustness of our methods by conducting extensive experiments on both synthetic
-    and real ECG data collected from medical institutions. Furthermore, we provide
-    a broad theoretical analysis of our algorithms and their extensions to aforementioned
-    practical setups. The convergence guarantees of our methods are comparable to
-    those of classical algorithms developed without Byzantine interference.
-  authors: "Gleb Molodtsov, Daniil Medyakov, Sergey Skorik, Nikolas Khachaturov, Shahane\
-    \ Tigranyan, Vladimir Aletov, Aram Avetisyan, <strong>Martin Tak\xE1\u010D</strong>,\
-    \ Aleksandr Beznosikov"
-  journal: AAAI'26 (oral)
-  keywords:
-  - byzantine attacks
-  - trust scores
-  - trial functions
-  - byzantine-robust optimization
-  - outlier filtering
-  - distributed machine learning
-  - scaled adaptive methods
-  - adam and rmsprop
-  - local training
-  - partial participation
-  - convergence guarantees
-  - ecg data
-  link: https://arxiv.org/abs/2505.07614?
-  pdf: https://arxiv.org/pdf/2505.07614?
-  tags:
-  - Federated Learning
-  - Distributed Optimization
-  - Optimization
-  - Robustness
-  title: 'Bant: Byzantine Antidote via Trial Function and Trust Scores'
-  type: cpaper
-  year: '2026'
 - abstract: 'Optimization lies at the core of modern deep learning, yet existing methods
     often
 
@@ -1424,43 +1623,6 @@
   title: Loss-Transformation Invariance in the Damped Newton Method
   type: tpaper
   year: '2025'
-- abstract: In this paper, we propose Cubic Regularized Quasi-Newton Methods for (strongly)
-    star-convex and Accelerated Cubic Regularized Quasi-Newton for convex optimization.
-    The proposed class of algorithms combines the global convergence of the Cubic
-    Newton with the affordability of constructing the Hessian approximation via a
-    Quasi-Newton update. To construct these methods we introduce two novel concepts
-    of Hessian inexactness and propose the Adaptive Inexact Cubic Regularized Newton
-    algorithm and its accelerated version, which adjust to the approximation error.
-    We show that different Quasi-Newton updates satisfy these approximation conditions
-    and provide a complexity-efficient way to solve the cubic subproblem. We provide
-    global convergence rates with explicit dependence on Hessian approximation error.
-    By combining cubic regularization, acceleration technique, and adaptivity, our
-    algorithms show good practical performance, especially from the points where classical
-    Newton diverges.
-  authors: "Dmitry Kamzolov, Klea Ziu, Artem Agafonov, <strong>Martin Tak\xE1\u010D\
-    </strong>"
-  journal: Journal of Optimization Theory and Applications
-  keywords:
-  - accelerated quasi-newton methods
-  - cubic regularization
-  - adaptive inexact newton method
-  - hessian approximation error
-  - global convergence rates
-  - convex optimization
-  - star-convex functions
-  - cubic subproblem
-  - bfgs updates
-  - sr1 updates
-  link: https://link.springer.com/article/10.1007/s10957-025-02804-3
-  pdf: https://arxiv.org/pdf/2302.04987.pdf
-  tags:
-  - Optimization
-  - Second-Order Methods
-  - Convex Optimization
-  - Quasi-Newton Methods
-  title: Accelerated Adaptive Cubic Regularized Quasi-Newton Methods
-  type: jpaper
-  year: '2026'
 - abstract: Low-Rank Adaptation (LoRA) fine-tunes large models by learning low-rank
     updates on top of frozen weights, dramatically reducing trainable parameters and
     memory. However, there is still a gap between full training with low-rank projections
@@ -3008,23 +3170,23 @@
     \ Stefano Sanvito, Huseyin Ucar"
   journal: The Journal of Physical Chemistry C
   keywords:
-  - magnetic materials language model
-  - bert domain pretraining
+  - magnetic materials
+  - domain pretrained bert
   - magbert
   - magmatbert
   - curie temperature extraction
   - chemical named entity recognition
   - question answering pipeline
-  - magnetics literature mining
-  - materials property dataset
-  - random forest validation
+  - materials literature mining
+  - magnetics corpus pretraining
+  - random forest evaluation
   link: https://pubs.acs.org/doi/full/10.1021/acs.jpcc.4c01974
   pdf: https://pubs.acs.org/doi/epdf/10.1021/acs.jpcc.4c01974
   tags:
   - LLM
   - Materials Science
-  - Natural Language Processing
   - Information Extraction
+  - Question Answering
   - Machine Learning
   title: 'MagBERT: Magnetics Knowledge Aware Language Model Coupled with a Question
     Answering Pipeline for Curie Temperature Extraction Task'
@@ -4372,20 +4534,20 @@
   - oxidative coupling of methane
   - deep neural network rate model
   - high-throughput catalysis data
-  - plug flow reactor equation
-  - catalyst bed sequencing
-  - methane conversion
-  - c2 yield and selectivity
-  - mn-na2wo4/sio2 reference catalyst
+  - plug flow reactor design equation
+  - mn-na2wo4/sio2 catalyst
+  - sequential catalyst beds
+  - c2 product yield
+  - ethylene to ethane ratio
   - catalyst screening
-  - data-driven reaction kinetics
+  - domain-constrained reaction modeling
   link: https://iopscience.iop.org/article/10.1088/2515-7655/aca797
   pdf: https://iopscience.iop.org/article/10.1088/2515-7655/aca797/pdf
   tags:
-  - Deep Learning
-  - Catalysis
+  - Machine Learning
   - Energy Systems
   - Materials Science
+  - Catalysis
   title: A deep neural network for oxidative coupling of methane trained on high throughput
     experimental data
   type: jpaper
@@ -5790,15 +5952,15 @@
   journal: Computer-Aided Civil and Infrastructure Engineering
   keywords:
   - strain estimation
-  - acceleration sensors
+  - acceleration sensor data
   - fatigue assessment
   - structural sensing
   - long short-term memory networks
   - multistage neural networks
-  - vibration response
+  - strain response prediction
   - civil structures
-  - curved girder testing
-  - sequence training strategy
+  - horizontally curved girder
+  - long acceleration sequences
   link: https://onlinelibrary.wiley.com/doi/full/10.1111/mice.12565
   ltype: Computer-Aided Civil and Infrastructure Engineering
   tags:
@@ -5806,7 +5968,7 @@
   - Structural Health Monitoring
   - Civil Infrastructure
   - Time Series
-  - Fatigue Assessment
+  - Fatigue Analysis
   title: 'Structural sensing with deep learning: Strain estimation from acceleration
     data for fatigue assessment'
   type: jpaper
@@ -6508,6 +6670,36 @@
     and Localization
   type: jpaper
   year: '2019'
+- abstract: We present an improved analysis of mini-batched stochastic dual coordinate
+    ascent for regularized empirical loss minimization (i.e. SVM and SVM-type objectives).
+    Our analysis allows for flexible sampling schemes, including where data is distribute
+    across machines, and combines a dependence on the smoothness of the loss and/or
+    the data spread (measured through the spectral norm).
+  authors: "<strong>Martin Tak\xE1\u010D</strong>, Peter Richt\xE1rik, Nathan Srebro"
+  journal: Journal of Machine Learning Research (JMLR) (to appear)
+  keywords:
+  - mini-batch sdca
+  - stochastic dual coordinate ascent
+  - regularized empirical loss minimization
+  - support vector machines
+  - distributed sampling schemes
+  - parallel speedups
+  - smooth loss functions
+  - spectral norm data spread
+  - dual coordinate updates
+  - cocoa+ comparison
+  link: http://arxiv.org/abs/1507.08322
+  ltype: arXiv Paper
+  pdf: http://arxiv.org/pdf/1507.08322.pdf
+  tags:
+  - Optimization
+  - Distributed Optimization
+  - Machine Learning
+  - Stochastic Optimization
+  - Support Vector Machines
+  title: Distributed Mini-Batch SDCA
+  type: jpaper
+  year: '2019'
 - abstract: This paper proposes a framework of L-BFGS based on the (approximate) second-order
     information with stochastic batches, as a novel approach to the finite-sum minimization
     problems. Different from the classical L-BFGS where stochastic batches lead to
@@ -6727,36 +6919,6 @@
   title: Innovative Sensing by Using Deep Learning Framework
   type: cpaper
   year: '2018'
-- abstract: We present an improved analysis of mini-batched stochastic dual coordinate
-    ascent for regularized empirical loss minimization (i.e. SVM and SVM-type objectives).
-    Our analysis allows for flexible sampling schemes, including where data is distribute
-    across machines, and combines a dependence on the smoothness of the loss and/or
-    the data spread (measured through the spectral norm).
-  authors: "<strong>Martin Tak\xE1\u010D</strong>, Peter Richt\xE1rik, Nathan Srebro"
-  journal: Journal of Machine Learning Research (JMLR) (to appear)
-  keywords:
-  - mini-batch sdca
-  - stochastic dual coordinate ascent
-  - regularized empirical loss minimization
-  - support vector machines
-  - distributed sampling schemes
-  - parallel speedups
-  - smooth loss functions
-  - spectral norm data spread
-  - dual coordinate updates
-  - cocoa+ comparison
-  link: http://arxiv.org/abs/1507.08322
-  ltype: arXiv Paper
-  pdf: http://arxiv.org/pdf/1507.08322.pdf
-  tags:
-  - Optimization
-  - Distributed Optimization
-  - Machine Learning
-  - Stochastic Optimization
-  - Support Vector Machines
-  title: Distributed Mini-Batch SDCA
-  type: jpaper
-  year: '2019'
 - abstract: We present an end-to-end framework for solving Vehicle Routing Problem
     (VRP) using deep reinforcement learning. In this approach, we train a single model
     that finds near-optimal solutions for problem instances sampled from a given distribution,
@@ -6836,6 +6998,42 @@
   - Distributed Optimization
   - Stochastic Optimization
   title: SGD and Hogwild! Convergence Without the Bounded Gradients Assumption
+  type: cpaper
+  year: '2018'
+- abstract: Consider a polynomial optimisation problem, whose instances vary continuously
+    over time. We propose to use a coordinate-descent algorithm for solving such time-varying
+    optimisation problems. In particular, we focus on relaxations of transmission-constrained
+    problems in power systems. On the example of the alternating-current optimal power
+    flows (ACOPF), we bound the difference between the current approximate optimal
+    cost generated by our algorithm and the optimal cost for a relaxation using the
+    most recent data from above by a function of the properties of the instance and
+    the rate of change to the instance over time. We also bound the number of floating-point
+    operations that need to be performed between two updates in order to guarantee
+    the error is bounded from above by a given constant.
+  authors: "Jie Liu, Jakub Marecek, Andrea Simonetto, <strong>Martin Tak\xE1\u010D\
+    </strong>"
+  journal: 20th Power Systems Computation Conference
+  keywords:
+  - coordinate descent
+  - time-varying optimization
+  - optimal power flow
+  - alternating-current optimal power flow
+  - polynomial optimization
+  - transmission-constrained relaxations
+  - solution tracking
+  - error bounds
+  - floating-point operation bounds
+  - polyak-lojasiewicz condition
+  link: http://www.proceedings.com/40084.html
+  ltype: arXiv Paper
+  pdf: https://arxiv.org/pdf/1710.07119.pdf
+  tags:
+  - Optimization
+  - Energy Systems
+  - Power Systems
+  - Online Optimization
+  title: A Coordinate-Descent Algorithm for Tracking Solutions in Time-Varying Optimal
+    Power Flows
   type: cpaper
   year: '2018'
 - abstract: The beer game is a decentralized, multi-agent, cooperative problem that
@@ -6989,50 +7187,6 @@
     USA, August 2016 Selected Contributions'
   type: tpaper
   year: '2017'
-- abstract: Training deep neural network is a high dimensional and a highly non-convex
-    optimization problem. Stochastic gradient descent (SGD) algorithm and it's variations
-    are the current state-of-the-art solvers for this task. However, due to non-covexity
-    nature of the problem, it was observed that SGD slows down near saddle point.
-    Recent empirical work claim that by detecting and escaping saddle point efficiently,
-    it's more likely to improve training performance. With this objective, we revisit
-    Hessian-free optimization method for deep networks. We also develop its distributed
-    variant and demonstrate superior scaling potential to SGD, which allows more efficiently
-    utilizing larger computing resources thus enabling large models and faster time
-    to obtain desired solution. Furthermore, unlike truncated Newton method (Marten's
-    HF) that ignores negative curvature information by using naive conjugate gradient
-    method and Gauss-Newton Hessian approximation information - we propose a novel
-    algorithm to explore negative curvature direction by solving the sub-problem with
-    stabilized bi-conjugate method involving possible indefinite stochastic Hessian
-    information. We show that these techniques accelerate the training process for
-    both the standard MNIST dataset and also the TIMIT speech recognition problem,
-    demonstrating robust performance with upto an order of magnitude larger batch
-    sizes. This increased scaling potential is illustrated with near linear speed-up
-    on upto 16 CPU nodes for a simple 4-layer network.
-  authors: "Xi He, Dheevatsa Mudigere, Mikhail Smelyanskiy, <strong>Martin Tak\xE1\
-    \u010D</strong>"
-  journal: AAAI Workshop on Distributed Machine Learning
-  keywords:
-  - hessian-free optimization
-  - distributed neural network training
-  - deep neural networks
-  - nonconvex optimization
-  - saddle point escape
-  - negative curvature directions
-  - stochastic hessian information
-  - stabilized bi-conjugate method
-  - large-batch training
-  - near-linear speedup
-  link: http://arxiv.org/abs/1606.00511
-  ltype: arXiv Paper
-  pdf: https://www.aaai.org/ocs/index.php/WS/AAAIW17/paper/download/15124/14704
-  tags:
-  - Optimization
-  - Distributed Optimization
-  - Second-Order Methods
-  - Deep Learning
-  title: Large Scale Distributed Hessian-Free Optimization for Deep Neural Network
-  type: cpaper
-  year: '2016'
 - abstract: In this paper we study inexact dumped Newton method implemented in a distributed
     environment. We start with an original DiSCO algorithm [Communication-Efficient
     Distributed Optimization of Self-Concordant Empirical Loss, Yuchen Zhang and Lin
@@ -7096,42 +7250,6 @@
   title: Stock-out Prediction in Multi-echelon Networks
   type: tpaper
   year: '2017'
-- abstract: Consider a polynomial optimisation problem, whose instances vary continuously
-    over time. We propose to use a coordinate-descent algorithm for solving such time-varying
-    optimisation problems. In particular, we focus on relaxations of transmission-constrained
-    problems in power systems. On the example of the alternating-current optimal power
-    flows (ACOPF), we bound the difference between the current approximate optimal
-    cost generated by our algorithm and the optimal cost for a relaxation using the
-    most recent data from above by a function of the properties of the instance and
-    the rate of change to the instance over time. We also bound the number of floating-point
-    operations that need to be performed between two updates in order to guarantee
-    the error is bounded from above by a given constant.
-  authors: "Jie Liu, Jakub Marecek, Andrea Simonetto, <strong>Martin Tak\xE1\u010D\
-    </strong>"
-  journal: 20th Power Systems Computation Conference
-  keywords:
-  - coordinate descent
-  - time-varying optimization
-  - optimal power flow
-  - alternating-current optimal power flow
-  - polynomial optimization
-  - transmission-constrained relaxations
-  - solution tracking
-  - error bounds
-  - floating-point operation bounds
-  - polyak-lojasiewicz condition
-  link: http://www.proceedings.com/40084.html
-  ltype: arXiv Paper
-  pdf: https://arxiv.org/pdf/1710.07119.pdf
-  tags:
-  - Optimization
-  - Energy Systems
-  - Power Systems
-  - Online Optimization
-  title: A Coordinate-Descent Algorithm for Tracking Solutions in Time-Varying Optimal
-    Power Flows
-  type: cpaper
-  year: '2018'
 - abstract: "In this work we study the parallel coordinate descent method (PCDM) proposed\
     \ by Richt\xE1rik and Takac [26] for minimizing a regularized convex function.\
     \ We adopt elements from the work of Xiao and Lu [39], and combine them with several\
@@ -7365,6 +7483,50 @@
     under Weak Strong Convexity Assumption
   type: cpaper
   year: '2017'
+- abstract: Training deep neural network is a high dimensional and a highly non-convex
+    optimization problem. Stochastic gradient descent (SGD) algorithm and it's variations
+    are the current state-of-the-art solvers for this task. However, due to non-covexity
+    nature of the problem, it was observed that SGD slows down near saddle point.
+    Recent empirical work claim that by detecting and escaping saddle point efficiently,
+    it's more likely to improve training performance. With this objective, we revisit
+    Hessian-free optimization method for deep networks. We also develop its distributed
+    variant and demonstrate superior scaling potential to SGD, which allows more efficiently
+    utilizing larger computing resources thus enabling large models and faster time
+    to obtain desired solution. Furthermore, unlike truncated Newton method (Marten's
+    HF) that ignores negative curvature information by using naive conjugate gradient
+    method and Gauss-Newton Hessian approximation information - we propose a novel
+    algorithm to explore negative curvature direction by solving the sub-problem with
+    stabilized bi-conjugate method involving possible indefinite stochastic Hessian
+    information. We show that these techniques accelerate the training process for
+    both the standard MNIST dataset and also the TIMIT speech recognition problem,
+    demonstrating robust performance with upto an order of magnitude larger batch
+    sizes. This increased scaling potential is illustrated with near linear speed-up
+    on upto 16 CPU nodes for a simple 4-layer network.
+  authors: "Xi He, Dheevatsa Mudigere, Mikhail Smelyanskiy, <strong>Martin Tak\xE1\
+    \u010D</strong>"
+  journal: AAAI Workshop on Distributed Machine Learning
+  keywords:
+  - hessian-free optimization
+  - distributed neural network training
+  - deep neural networks
+  - nonconvex optimization
+  - saddle point escape
+  - negative curvature directions
+  - stochastic hessian information
+  - stabilized bi-conjugate method
+  - large-batch training
+  - near-linear speedup
+  link: http://arxiv.org/abs/1606.00511
+  ltype: arXiv Paper
+  pdf: https://www.aaai.org/ocs/index.php/WS/AAAIW17/paper/download/15124/14704
+  tags:
+  - Optimization
+  - Distributed Optimization
+  - Second-Order Methods
+  - Deep Learning
+  title: Large Scale Distributed Hessian-Free Optimization for Deep Neural Network
+  type: cpaper
+  year: '2016'
 - abstract: In this paper we generalize the framework of the feasible descent method
     (FDM) to a randomized (R-FDM) and a coordinate-wise random feasible descent method
     (RC-FDM) framework. We show that the famous SDCA algorithm for optimizing the
@@ -8150,102 +8312,3 @@
     Asian options
   type: jpaper
   year: '2011'
-- abstract: 'Reinforcement learning substantially improves pretrained language models,
-    but it remains understudied why critic-free methods such as PPO and GRPO work
-    as well as they do, and when they should provide the largest gains. We develop
-    a value-gradient perspective of critic-free RL for LLM post-training. First, under
-    a differentiable rollout and additive-noise parameterization, we show that the
-    actor update is value-gradient-like in expectation: the backward pass propagates
-    costates whose conditional expectation equals the value gradient. Second, for
-    discrete transformer policies, we show that autodifferentiation through attention
-    produces empirical costates that approximate this value signal, with an error
-    controlled by the sampling gap and policy entropy. These results motivate a decomposition
-    of RL impact into value gradient signal and reachable reward headroom, yielding
-    a criterion for when RL should be most effective along a pretraining trajectory.'
-  authors: "Arip Asadulaev, Daniil Ognev, Karim Salta, <strong>Martin Tak\xE1\u010D\
-    </strong>"
-  journal: arXiv
-  keywords: []
-  link: https://arxiv.org/abs/2605.21654
-  ltype: arXiv
-  pdf: https://arxiv.org/pdf/2605.21654v1
-  tags: []
-  title: Value-Gradient Hypothesis of RL for LLMs
-  type: tpaper
-  year: '2026'
-- abstract: 'Compositional energy-based models can generalize to larger combinatorial
-    reasoning problems by reusing a learned factor energy across many local constraints.
-    In our paper, we show that a key bottleneck in compositional reasoning is not
-    composition itself, but the non-convex geometry of the learned energy landscape.
-    To solve this problem, we introduce Convex Compositional Energy Minimization (CCEM),
-    a framework that parameterizes each factor with an input-convex neural network
-    and optimizes the composed energy over a tight convex relaxation of the feasible
-    set. Because convexity is preserved under summation, the global relaxed objective
-    remains convex, enabling deterministic projected first-order optimization. CCEM
-    is trained in two stages: factor-level contrastive learning to shape local energy
-    basins, followed by end-to-end refinement through an unrolled projected solver.
-    Our experiments show that our models trained on small subproblems or a single
-    problem size transfer to larger instances without retraining.'
-  authors: "Meir Roketlishvili, Semyon Semenov, Maksim Bobrin, Viktor Kovalchuk, Albert\
-    \ Baichorov, Abduragim Shtanchaev, Fakhri Karray, Dmitry V. Dylov, <strong>Martin\
-    \ Tak\xE1\u010D</strong>, Arip Asadulaev"
-  journal: arXiv
-  keywords: []
-  link: https://arxiv.org/abs/2605.23395
-  ltype: arXiv
-  pdf: https://arxiv.org/pdf/2605.23395v2
-  tags: []
-  title: Convex Compositional Reasoning Models
-  type: tpaper
-  year: '2026'
-- abstract: 'Pretrained diffusion models are effective priors for Bayesian inverse
-    problems, but posterior sampling with these priors is often costly because data-consistency
-    guidance is applied throughout the full reverse trajectory. Existing methods have
-    shown that vector-Jacobian products through the denoiser can sometimes be avoided,
-    yet they typically still rely on dense guidance through the full trajectory or
-    expensive inner solves. We introduce Sparse Scheduled Diffusion Guidance for Inverse
-    Problems (Spin), a solver that avoids starting posterior sampling from pure noise.
-    Spin first samples from a posterior time-marginal at an intermediate timestep
-    $t_*$, and then uses that state as a warm start for a guided reverse diffusion
-    process. At guidance time, instead of enforcing the measurement constraint at
-    every denoising step, Spin applies lightweight corrections only at scheduled timesteps
-    where the denoiser can still clean up artifacts. The resulting procedure decouples
-    prior refinement from data consistency: the prior supplies denoising, while lightweight
-    pixel-space optimization enforces the measurement constraint without backpropagation
-    through the denoiser or decoder. Across linear and nonlinear inverse problems
-    on FFHQ and ImageNet, Spin achieves competitive reconstruction quality with a
-    substantially better runtime--memory profile, running 2x faster on pixel-space
-    models and up to 50x faster on latent diffusion models, with lower memory costs.'
-  authors: "Abduragim Shtanchaev, Albina Ilina, Yazid Janati, Arip Asadulaev, <strong>Martin\
-    \ Tak\xE1\u010D</strong>, Eric Moulines"
-  journal: arXiv
-  keywords: []
-  link: https://arxiv.org/abs/2603.07860
-  ltype: arXiv
-  pdf: https://arxiv.org/pdf/2603.07860v3
-  tags: []
-  title: Sparse Scheduled Diffusion Guidance for Inverse Problems
-  type: tpaper
-  year: '2026'
-- abstract: 'We study adaptive aggregation for heterogeneous local SGD in convex finite-sum
-    optimization, allowing heterogeneous local horizons, minibatch sizes, gradient
-    noise, and participation. We introduce HEW-Local SGD, a corrected local-SGD method
-    that chooses nodewise server weights by minimizing an explicit one-round upper
-    bound on the next objective value. This yields an exact local-control formulation
-    with a threshold simplex update, separable amplitude updates, and a one-step guarantee
-    under arbitrary predictable participation. We also introduce two post-local variants:
-    a corrected heterogeneous method and a simpler homogeneous specialization. We
-    establish one-step guarantees and global benchmark-style convergence results.
-    In the regimes where comparison is appropriate, the theory matches the qualitative
-    communication-efficient picture of recent LocalSGD/SCAFFOLD analyses, while also
-    giving explicit guarantees for unequal local horizons.'
-  authors: "Dmitry Pasechnyuk-Vilensky, <strong>Martin Tak\xE1\u010D</strong>"
-  journal: arXiv
-  keywords: []
-  link: https://arxiv.org/abs/2604.24463
-  ltype: arXiv
-  pdf: https://arxiv.org/pdf/2604.24463v2
-  tags: []
-  title: Heterogeneous-Horizon Exact-Weight Local SGD
-  type: tpaper
-  year: '2026'
