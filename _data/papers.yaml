@@ -689,21 +689,23 @@
   - molecular representation learning
   - substructure descriptors
   - smiles limitations
-  - roberta molecular modeling
+  - roberta molecular language model
   - graph neural networks
   - graph isomorphism networks
   - graph convolutional networks
   - graphormer
   - bimodal architecture
   - qsar prediction
-  - physicochemical descriptors
+  - molecular property prediction
+  - descriptor-based fragment representations
   link: https://ieeexplore.ieee.org/document/11456953
   pdf: https://arxiv.org/pdf/2502.17986
   tags:
   - LLM
   - Graph Learning
   - Chemistry
-  - Representation Learning
+  - Molecular Modeling
+  - Multimodal Learning
   title: 'Thinking like a CHEMIST: Combined Heterogeneous Embedding Model Integrating
     Structure and Tokens'
   type: jpaper
@@ -3009,23 +3011,24 @@
     \ Stefano Sanvito, Huseyin Ucar"
   journal: The Journal of Physical Chemistry C
   keywords:
-  - magnetic materials language model
-  - bert pretraining
-  - magnetics corpus
-  - curie temperature extraction
-  - chemical named entity recognition
-  - question answering pipeline
-  - materials text mining
+  - magnetic materials
+  - domain-adapted bert
   - magbert
   - magmatbert
+  - chemical named entity recognition
+  - question answering
+  - curie temperature extraction
+  - materials literature mining
+  - magnetics corpus pretraining
   - random forest validation
   link: https://pubs.acs.org/doi/full/10.1021/acs.jpcc.4c01974
   pdf: https://pubs.acs.org/doi/epdf/10.1021/acs.jpcc.4c01974
   tags:
   - LLM
   - Materials Science
+  - Natural Language Processing
   - Information Extraction
-  - Question Answering
+  - Machine Learning
   title: 'MagBERT: Magnetics Knowledge Aware Language Model Coupled with a Question
     Answering Pipeline for Curie Temperature Extraction Task'
   type: jpaper
@@ -4370,22 +4373,23 @@
   journal: 'Journal of Physics: Energy'
   keywords:
   - oxidative coupling of methane
-  - deep neural network rate model
   - high-throughput catalysis data
-  - plug flow reactor design equation
-  - catalyst bed composition profiles
-  - mn-na2wo4/sio2 reference catalyst
+  - deep neural network rate model
+  - plug flow reactor equation
+  - catalyst screening
+  - c2 product yield
   - sequential catalyst beds
-  - c2 yield and selectivity
-  - catalyst combination screening
+  - methane conversion
+  - ethylene to ethane ratio
+  - mn-na2wo4/sio2 catalyst
   link: https://iopscience.iop.org/article/10.1088/2515-7655/aca797
   pdf: https://iopscience.iop.org/article/10.1088/2515-7655/aca797/pdf
   tags:
   - Machine Learning
+  - Catalysis
   - Energy Systems
   - Materials Science
   - Chemical Engineering
-  - Catalysis
   title: A deep neural network for oxidative coupling of methane trained on high throughput
     experimental data
   type: jpaper
@@ -5792,21 +5796,21 @@
   - strain estimation
   - acceleration data
   - fatigue assessment
-  - structural sensing
-  - long short-term memory
-  - multistage neural network
-  - civil structures
-  - vibration response
+  - structural vibrations
+  - long short-term memory networks
+  - multistage neural networks
+  - full-field strain assessment
+  - acceleration sensors
   - curved girder testing
-  - sensor-based monitoring
+  - civil structure monitoring
   link: https://onlinelibrary.wiley.com/doi/full/10.1111/mice.12565
   ltype: Computer-Aided Civil and Infrastructure Engineering
   tags:
   - Deep Learning
   - Structural Health Monitoring
-  - Civil Engineering
+  - Civil Infrastructure
   - Time Series
-  - Fatigue Assessment
+  - Sensing
   title: 'Structural sensing with deep learning: Strain estimation from acceleration
     data for fatigue assessment'
   type: jpaper
@@ -6894,8 +6898,23 @@
   authors: "Nur Sila Gulgec, <strong>Martin Tak\xE1\u010D</strong>, Shamim N. Pakzad"
   journal: In Model Validation and Uncertainty Quantification, Volume 3 (pp. 331-337).
     Springer, Cham.
-  keywords: []
-  tags: []
+  keywords:
+  - convolutional neural networks
+  - structural damage detection
+  - structural health monitoring
+  - finite element simulations
+  - strain distribution classification
+  - cracked steel gusset connection
+  - multiplicative noise
+  - gpu-accelerated training
+  - theano
+  - unseen damage scenarios
+  tags:
+  - Deep Learning
+  - Computer Vision
+  - Structural Health Monitoring
+  - Robustness
+  - Civil Engineering
   title: Structural Damage Detection Using Convolutional Neural Networks
   type: cpaper
   year: '2017'
@@ -6918,10 +6937,22 @@
   authors: "Nur Sila Gulgec, <strong>Martin Tak\xE1\u010D</strong>, Shamim N. Pakzad"
   journal: SMAR 2017 (the fourth International Conference on Smart Monitoring, Assessment
     and Rehabilitation of Civil Structures)
-  keywords: []
+  keywords:
+  - convolutional neural networks
+  - structural damage diagnosis
+  - time-varying loads
+  - environmental and operational conditions
+  - strain field inputs
+  - crack scenario classification
+  - multidimensional input samples
+  - loading condition variations
   ltype: Conference Paper
   pdf: https://www.empa.ch/smar/SMAR_2017_Proceedings/papers/211.pdf
-  tags: []
+  tags:
+  - Deep Learning
+  - Computer Vision
+  - Structural Health Monitoring
+  - Civil Engineering
   title: Structural damage diagnosis with time-varying loads using convolutional neural
     networks
   type: cpaper
@@ -6984,11 +7015,25 @@
   authors: "Xi He, Dheevatsa Mudigere, Mikhail Smelyanskiy, <strong>Martin Tak\xE1\
     \u010D</strong>"
   journal: AAAI Workshop on Distributed Machine Learning
-  keywords: []
+  keywords:
+  - hessian-free optimization
+  - distributed neural network training
+  - deep neural networks
+  - nonconvex optimization
+  - saddle point escape
+  - negative curvature directions
+  - stochastic hessian information
+  - stabilized bi-conjugate method
+  - large-batch training
+  - near-linear speedup
   link: http://arxiv.org/abs/1606.00511
   ltype: arXiv Paper
   pdf: https://www.aaai.org/ocs/index.php/WS/AAAIW17/paper/download/15124/14704
-  tags: []
+  tags:
+  - Optimization
+  - Distributed Optimization
+  - Second-Order Methods
+  - Deep Learning
   title: Large Scale Distributed Hessian-Free Optimization for Deep Neural Network
   type: cpaper
   year: '2016'
@@ -7032,11 +7077,26 @@
     this sort of stock-out prediction. Therefore, our research aims to fill this gap
     by using DNN to predict stock-outs in multi-echelon supply chains.
   authors: "Afshin OroojlooyJadid, Lawrence Snyder, <strong>Martin Tak\xE1\u010D</strong>"
-  keywords: []
+  keywords:
+  - stock-out prediction
+  - multi-echelon inventory systems
+  - multi-echelon supply chains
+  - deep neural networks
+  - stochastic demand
+  - supply disruptions
+  - downstream cascade effects
+  - service level management
+  - inventory policy
+  - base-stock levels
   link: http://arxiv.org/abs/1709.06922
   ltype: under review in The International Journal of Management Science
   pdf: https://arxiv.org/pdf/1709.06922.pdf
-  tags: []
+  tags:
+  - Machine Learning
+  - Deep Learning
+  - Supply Chain
+  - Inventory Management
+  - Operations Research
   title: Stock-out Prediction in Multi-echelon Networks
   type: tpaper
   year: '2017'
@@ -7214,11 +7274,25 @@
     for nonconvex losses.
   authors: "Lam Minh Nguyen, Jie Liu, Katya Scheinberg, <strong>Martin Tak\xE1\u010D\
     </strong>"
-  keywords: []
+  keywords:
+  - sarah algorithm
+  - stochastic recursive gradient
+  - mini-batch stochastic optimization
+  - nonconvex finite-sum minimization
+  - empirical loss minimization
+  - stationary point convergence
+  - gradient dominated functions
+  - linear convergence rate
+  - incremental first order oracle
+  - stochastic gradient methods
   link: http://arxiv.org/abs/1705.07261
   ltype: under revision to resubmit
   pdf: https://arxiv.org/pdf/1705.07261.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Stochastic Optimization
+  - Nonconvex Optimization
+  - Machine Learning
   title: Stochastic Recursive Gradient Algorithm for Nonconvex Optimization
   type: tpaper
   year: '2017'
@@ -7305,11 +7379,27 @@
     gap also converges linearly for SDCA applied to the SVM dual problem.
   authors: "Chenxin Ma, Rachael Tappenden, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Journal of Machine Learning Research
-  keywords: []
+  keywords:
+  - randomized feasible descent method
+  - coordinate-wise random feasible descent
+  - weak strong convexity
+  - linear convergence
+  - stochastic coordinate descent
+  - sdca
+  - svm dual problem
+  - lasso
+  - duality gap
+  - iteration complexity
+  - lipschitz continuous gradient
   link: http://jmlr.org/papers/v17/15-541.html
   ltype: arXiv Paper
   pdf: http://jmlr.org/papers/volume17/15-541/15-541.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Convex Optimization
+  - Stochastic Methods
+  - Coordinate Descent
+  - Machine Learning
   title: Linear Convergence of the Randomized Feasible Descent Method Under the Weak
     Strong Convexity Assumption
   type: jpaper
@@ -7329,11 +7419,24 @@
     its convergence properties for both the convex and nonconvex cases.
   authors: "Albert S. Berahas, Jorge Nocedal, <strong>Martin Tak\xE1\u010D</strong>"
   journal: NeurIPS
-  keywords: []
+  keywords:
+  - multi-batch l-bfgs
+  - quasi-newton methods
+  - batch optimization
+  - hessian approximation
+  - sample consistency
+  - distributed training
+  - empirical risk minimization
+  - convex convergence
+  - nonconvex convergence
   link: https://papers.nips.cc/paper/6145-a-multi-batch-l-bfgs-method-for-machine-learning
   ltype: Conference Paper
   pdf: https://papers.nips.cc/paper/6145-a-multi-batch-l-bfgs-method-for-machine-learning.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Second-Order Methods
+  - Distributed Optimization
+  - Machine Learning
   title: A Multi-Batch L-BFGS Method for Machine Learning
   type: cpaper
   year: '2016'
@@ -7367,10 +7470,23 @@
     computer.
   authors: "Jakub Mare\u010Dek, Peter Richt\xE1rik, <strong>Martin Tak\xE1\u010D</strong>"
   journal: European Journal of Operational Research
-  keywords: []
+  keywords:
+  - matrix completion
+  - interval uncertainty
+  - element-wise box constraints
+  - alternating direction method
+  - parallel coordinate descent
+  - image in-painting
+  - signal-to-noise ratio
+  - collaborative filtering
+  - large-scale recommendations
   link: http://www.sciencedirect.com/science/article/pii/S0377221716305513
   ltype: European Journal of Operational Research
-  tags: []
+  tags:
+  - Optimization
+  - Matrix Completion
+  - Recommender Systems
+  - Computer Vision
   title: Matrix Completion under Interval Uncertainty
   type: jpaper
   year: '2016'
@@ -7428,10 +7544,25 @@
     by a 3TB matrix.'
   authors: "Peter Richt\xE1rik, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Journal of Machine Learning Research
-  keywords: []
+  keywords:
+  - distributed coordinate descent
+  - parallel coordinate descent
+  - randomized coordinate updates
+  - loss minimization
+  - feature partitioning
+  - memory-distributed data
+  - iteration complexity bounds
+  - lasso optimization
+  - spectral norm speedup
+  - partition-induced norm
   link: http://www.jmlr.org/papers/v17/15-001.html
   pdf: http://www.jmlr.org/papers/volume17/15-001/15-001.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Distributed Optimization
+  - Machine Learning
+  - Parallel Computing
+  - Big Data
   title: 'Distributed coordinate descent method for learning with big data (code:
     Hydra)'
   type: jpaper
@@ -7455,11 +7586,28 @@
   authors: "Jakub Kone\u010Dn\xFD, Jie Liu, Peter Richt\xE1rik, <strong>Martin Tak\xE1\
     \u010D</strong>"
   journal: IEEE Journal of Selected Topics in Signal Processing
-  keywords: []
+  keywords:
+  - mini-batch s2gd
+  - semi-stochastic gradient descent
+  - proximal methods
+  - variance reduction
+  - strongly convex optimization
+  - finite-sum minimization
+  - nonsmooth regularization
+  - empirical risk minimization
+  - parallel stochastic gradients
+  - complexity analysis
+  - sparse data
   link: http://arxiv.org/abs/1504.04407
   ltype: journal Paper
   pdf: http://arxiv.org/pdf/1504.04407.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Stochastic Optimization
+  - Proximal Methods
+  - Machine Learning
+  - Signal Processing
+  - Parallel Computing
   title: Mini-Batch Semi-Stochastic Gradient Descent in the Proximal Setting
   type: jpaper
   year: '2016'

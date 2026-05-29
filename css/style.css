@@ -905,20 +905,147 @@ ul.timeline li .data .text {
 	margin-right: 10px;
 }
 
-.publication-meta-filters {
-	margin-top: 20px;
+#publications .pageheader {
+	padding: 24px 0 18px 0;
 }
 
-.publication-meta-filters h3 {
-	font-size: 22px;
-	line-height: 1.2;
-	margin: 0 0 8px 0;
+#publications .pageheader:after {
+	display: none;
 }
 
-.publication-meta-filters .form-control {
-	height: 34px;
+#publications .headercontent .title {
+	font-size: 34px;
+	line-height: 1.15;
+	margin: 0;
+	padding: 0;
+	border-bottom: 0;
+}
+
+#publications .page .section,
+#publications .section {
+	padding: 24px 0;
+}
+
+#publications #pub-grid.section {
+	padding-top: 28px;
+}
+
+#publications .section-container {
+	padding: 0 6%;
+}
+
+.publications-header-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 18px;
+}
+
+.pub-compact-switch {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	margin: 0;
+	color: #666;
+	font-size: 13px;
+	font-weight: 600;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.pub-compact-switch input {
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.pub-switch-track {
+	width: 34px;
+	height: 18px;
+	border-radius: 999px;
+	background: #d7d7d7;
+	position: relative;
+	transition: background 0.2s ease;
+}
+
+.pub-switch-thumb {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background: #fff;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+	transition: left 0.2s ease;
+}
+
+.pub-compact-switch input:checked + .pub-switch-track {
+	background: #276749;
+}
+
+.pub-compact-switch input:checked + .pub-switch-track .pub-switch-thumb {
+	left: 18px;
+}
+
+.publication-filter-bar {
+	display: flex;
+	align-items: flex-end;
+	flex-wrap: wrap;
+	row-gap: 10px;
+}
+
+.publication-filter-field h3,
+.publication-sort-field h3 {
 	font-size: 14px;
+	line-height: 1.2;
+	margin: 0 0 5px 0;
+	font-weight: 600;
+	color: #555;
+}
+
+.publication-filter-field .form-control {
+	height: 34px;
+	font-size: 13px;
 	padding: 6px 10px;
+}
+
+#publications .cd-dropdown,
+#publications .cd-select {
+	margin: 0;
+	width: 100%;
+}
+
+#publications .cd-dropdown > span {
+	height: 34px;
+	line-height: 34px;
+	font-size: 13px;
+	padding: 0 30px 0 10px;
+}
+
+#publications .cd-dropdown ul li span {
+	line-height: 34px;
+	font-size: 13px;
+	padding: 0 10px;
+}
+
+#publications .cd-dropdown > span:after {
+	width: 30px;
+	padding: 5px;
+	line-height: 22px;
+}
+
+.publication-sort-field .btn-group {
+	display: flex;
+}
+
+.publication-sort-field .btn {
+	height: 34px;
+	padding: 6px 10px;
+}
+
+#publications #filters.section {
+	padding: 18px 0;
 }
 
 .publication-hidden-by-metadata {
@@ -929,16 +1056,18 @@ ul.timeline li .data .text {
 	margin-top: 6px;
 	color: #777;
 	font-size: 12px;
+	line-height: 1.2;
 }
 
 .pitems .pubtags {
-	margin-top: 10px;
+	margin-top: 8px;
 }
 
 .pitems .pubkeywords {
-	margin-top: 8px;
+	margin-top: 6px;
 	color: #777;
 	font-size: 12px;
+	line-height: 1.35;
 }
 
 .label-tag {
@@ -949,6 +1078,90 @@ ul.timeline li .data .text {
 .label-patent {
 	background-color: #f8bbd0;
 	color: #7a1b4b;
+}
+
+#publications .pitems .item {
+	margin-bottom: 12px;
+}
+
+#publications .pitems .pubmain {
+	padding: 18px 18px 28px 18px;
+	min-height: 0;
+}
+
+#publications .pitems .pubtitle {
+	font-size: 18px;
+	line-height: 1.25;
+	padding-bottom: 10px;
+}
+
+#publications .pitems .pubmain .label {
+	margin-right: 6px;
+	margin-bottom: 4px;
+	display: inline-block;
+}
+
+#publications.publication-compact-view .pitems .item {
+	margin-bottom: 7px;
+}
+
+#publications.publication-compact-view .pitems .pubmain {
+	padding: 11px 14px 16px 14px;
+}
+
+#publications.publication-compact-view .pitems .pubtitle {
+	font-size: 15px;
+	line-height: 1.2;
+	padding-bottom: 5px;
+	font-weight: 400;
+}
+
+#publications.publication-compact-view .pubauthor,
+#publications.publication-compact-view .pubcite {
+	font-size: 12px;
+	line-height: 1.35;
+}
+
+#publications.publication-compact-view .pubkeywords {
+	display: none;
+}
+
+#publications.publication-compact-view .pubtags {
+	margin-top: 5px;
+}
+
+#publications.publication-compact-view .label-tag {
+	font-size: 10px;
+	padding: 2px 5px;
+}
+
+#publications.publication-compact-view .pubassets a {
+	padding: 3px 9px;
+	font-size: 14px;
+}
+
+@media (max-width: 991px) {
+	.publication-filter-bar {
+		display: block;
+	}
+	.publication-filter-field,
+	.publication-sort-field {
+		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: 640px) {
+	.publications-header-row {
+		align-items: flex-start;
+		flex-direction: column;
+		gap: 10px;
+	}
+	#publications .headercontent .title {
+		font-size: 28px;
+	}
+	#publications .section-container {
+		padding: 0 18px;
+	}
 }
 
 .pitems .pubmain .pubassets {

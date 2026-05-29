@@ -11,7 +11,14 @@ title: Home
             <div class="headercontent">
                 <div class="section-container">
 
-                    <h2 class="title">Selected Publications</h2>
+                    <div class="publications-header-row">
+                        <h2 class="title">Selected Publications</h2>
+                        <label class="pub-compact-switch">
+                            <input id="pub-compact-toggle" type="checkbox">
+                            <span class="pub-switch-track"><span class="pub-switch-thumb"></span></span>
+                            <span>Compact view</span>
+                        </label>
+                    </div>
 
 
                 </div>
@@ -22,7 +29,7 @@ title: Home
 
             <div class="section color-1" id="filters">
                 <div class="section-container">
-                    <div class="row">
+                    <div class="row publication-filter-bar">
 
                         {% assign total_publications = site.data.papers | size %}
                         {% assign count_journal = site.data.papers | where: "type", "jpaper" | size %}
@@ -31,46 +38,43 @@ title: Home
                         {% assign count_patent = site.data.papers | where: "type", "patent" | size %}
                         {% assign count_other = site.data.papers | where: "type", "opaper" | size %}
 
-                        <div class="col-md-3">
-                            <h3>Filter by type:</h3>
+                        <div class="col-md-3 publication-filter-field">
+                            <h3>Type</h3>
+                            <select id="cd-dropdown" name="cd-dropdown" class="cd-select">
+                                    <option class="filter" value="all" selected>All types ({{total_publications}})</option>
+                                    <option class="filter" value="jpaper">Journal Papers ({{count_journal}})</option>
+                                    <option class="filter" value="cpaper">Conference/Workshop Papers ({{count_conference}})</option>
+                                    <option class="filter" value="tpaper">arXiv Preprints ({{count_preprint}})</option>
+                                    <option class="filter" value="patent">Patents ({{count_patent}})</option>
+                                    <option class="filter" value="opaper">Other ({{count_other}})</option>
+                                    <!-- <option class="filter" value="bookchapter">Book Chapters</option>
+                                     <option class="filter" value="book">Books</option>
+                                    -->
+                                    <!-- <option class="filter" value="report">Reports</option>
+                                    -->
+                            </select>
                         </div>
-                        <div class="col-md-6"><select id="cd-dropdown" name="cd-dropdown"
-                                                      class="cd-select">
-                                <option class="filter" value="all" selected>All types ({{total_publications}})</option>
-                                <option class="filter" value="jpaper">Journal Papers ({{count_journal}})</option>
-                                <option class="filter" value="cpaper">Conference/Workshop Papers ({{count_conference}})</option>
-                                <option class="filter" value="tpaper">arXiv Preprints ({{count_preprint}})</option>
-                                <option class="filter" value="patent">Patents ({{count_patent}})</option>
-                                <option class="filter" value="opaper">Other ({{count_other}})</option>
-                                <!-- <option class="filter" value="bookchapter">Book Chapters</option>
-                                 <option class="filter" value="book">Books</option>
-                                -->
-                                <!-- <option class="filter" value="report">Reports</option>
-                                -->
-                            </select></div>
 
-                        <div class="col-md-3" id="sort"><span>Sort by year:</span>
-                            <div class="btn-group pull-right">
-
+                        <div class="col-md-3 publication-filter-field">
+                            <h3>Search</h3>
+                            <input id="pub-keyword-search" class="form-control" type="text"
+                                   placeholder="Search tags and keywords">
+                        </div>
+                        <div class="col-md-4 publication-filter-field">
+                            <h3>Tag</h3>
+                            <select id="pub-tag-filter" class="form-control">
+                                <option value="all" selected>All tags</option>
+                            </select>
+                            <div id="pub-visible-count" class="pub-visible-count"></div>
+                        </div>
+                        <div class="col-md-2 publication-sort-field" id="sort">
+                            <h3>Sort</h3>
+                            <div class="btn-group">
                                 <button type="button" data-sort="data-year" data-order="desc"
                                         class="sort btn btn-default"><i class="icon-sort-by-order"></i></button>
                                 <button type="button" data-sort="data-year" data-order="asc"
                                         class="sort btn btn-default"><i class="icon-sort-by-order-alt"></i></button>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row publication-meta-filters">
-                        <div class="col-md-6">
-                            <h3>Search:</h3>
-                            <input id="pub-keyword-search" class="form-control" type="text"
-                                   placeholder="Search tags and keywords">
-                        </div>
-                        <div class="col-md-6">
-                            <h3>Filter by tag:</h3>
-                            <select id="pub-tag-filter" class="form-control">
-                                <option value="all" selected>All tags</option>
-                            </select>
-                            <div id="pub-visible-count" class="pub-visible-count"></div>
                         </div>
                     </div>
                 </div>
@@ -240,8 +244,36 @@ title: Home
         var tagSelect = document.getElementById("pub-tag-filter");
         var searchInput = document.getElementById("pub-keyword-search");
         var countContainer = document.getElementById("pub-visible-count");
+        var compactToggle = document.getElementById("pub-compact-toggle");
+        var publicationsPage = document.getElementById("publications");
         if (!items.length || !tagSelect || !searchInput) {
             return;
+        }
+
+        function setCompactView(enabled) {
+            if (!publicationsPage) {
+                return;
+            }
+            publicationsPage.classList.toggle("publication-compact-view", enabled);
+            if (compactToggle) {
+                compactToggle.checked = enabled;
+            }
+            try {
+                window.localStorage.setItem("publicationCompactView", enabled ? "1" : "0");
+            } catch (e) {
+            }
+        }
+
+        if (compactToggle) {
+            var compactSaved = false;
+            try {
+                compactSaved = window.localStorage.getItem("publicationCompactView") === "1";
+            } catch (e) {
+            }
+            setCompactView(compactSaved);
+            compactToggle.addEventListener("change", function () {
+                setCompactView(compactToggle.checked);
+            });
         }
 
         function currentType() {
@@ -386,8 +418,6 @@ title: Home
 
   
    
-
-
 
 
 
