@@ -63,7 +63,7 @@ title: Home
                         <div class="col-md-4">
                             <h3>Search:</h3>
                             <input id="pub-keyword-search" class="form-control" type="text"
-                                   placeholder="Search title, authors, venue, tags, keywords">
+                                   placeholder="Search tags and keywords">
                         </div>
                         <div class="col-md-4">
                             <h3>Filter by tag:</h3>
@@ -105,7 +105,6 @@ title: Home
                                     <div data-year="{{paper.year}}"
                                          data-tags="{{paper.tags | join: '|' | escape}}"
                                          data-keywords="{{paper.keywords | join: '|' | escape}}"
-                                         data-search="{{paper.title | append: ' ' | append: paper.authors | append: ' ' | append: paper.journal | append: ' ' | append: paper.abstract | strip_html | escape}}"
                                     class="item mix {{paper.type}} mix_all" 
                                          style="display: block;  opacity: 1;">
                                         <div class="pubmain">
@@ -269,12 +268,13 @@ title: Home
         Object.keys(counts).sort(function (a, b) {
             return counts[b] - counts[a] || a.localeCompare(b);
         }).slice(0, 14).forEach(function (tag) {
-            var button = document.createElement("button");
-            button.type = "button";
-            button.className = "pub-tag-button";
-            button.textContent = tag + " (" + counts[tag] + ")";
-            button.setAttribute("data-tag", tag);
-            statsContainer.appendChild(button);
+            var chip = document.createElement("span");
+            chip.className = "pub-tag-chip";
+            chip.textContent = tag + " (" + counts[tag] + ")";
+            chip.setAttribute("data-tag", tag);
+            chip.setAttribute("role", "button");
+            chip.setAttribute("tabindex", "0");
+            statsContainer.appendChild(chip);
         });
 
         function currentType() {
@@ -289,16 +289,20 @@ title: Home
 
             items.forEach(function (item) {
                 var tags = splitValues(item.getAttribute("data-tags"));
+                var keywords = splitValues(item.getAttribute("data-keywords"));
                 var keywordText = [
-                    item.getAttribute("data-search") || "",
-                    item.getAttribute("data-keywords") || "",
+                    keywords.join(" "),
                     tags.join(" ")
                 ].join(" ").toLowerCase();
+                var hasMetadata = tags.length > 0 || keywords.length > 0;
+                var metadataFilterActive = selectedTag !== "all" || query.length > 0;
                 var typeOk = selectedType === "all" || item.classList.contains(selectedType);
                 var tagOk = selectedTag === "all" || tags.indexOf(selectedTag) !== -1;
-                var queryOk = !query || keywordText.indexOf(query) !== -1;
-                var show = typeOk && tagOk && queryOk;
+                var queryOk = !query || (hasMetadata && keywordText.indexOf(query) !== -1);
+                var metadataOk = !metadataFilterActive || hasMetadata;
+                var show = typeOk && tagOk && queryOk && metadataOk;
                 item.classList.toggle("publication-hidden-by-metadata", !show);
+                item.style.display = show ? "block" : "none";
                 if (show) {
                     visible += 1;
                 }
@@ -307,24 +311,45 @@ title: Home
             if (countContainer) {
                 countContainer.textContent = visible + " publications shown";
             }
-        }
-
-        tagSelect.addEventListener("change", applyFilters);
-        searchInput.addEventListener("input", applyFilters);
-        if (typeSelect) {
-            typeSelect.addEventListener("change", function () {
-                window.setTimeout(applyFilters, 80);
+            Array.prototype.slice.call(statsContainer.querySelectorAll(".pub-tag-chip")).forEach(function (chip) {
+                chip.classList.toggle("active", chip.getAttribute("data-tag") === selectedTag);
             });
         }
+
+        function scheduleFilters() {
+            applyFilters();
+            window.setTimeout(applyFilters, 120);
+            window.setTimeout(applyFilters, 750);
+        }
+
+        tagSelect.addEventListener("change", scheduleFilters);
+        searchInput.addEventListener("input", scheduleFilters);
+        if (typeSelect) {
+            typeSelect.addEventListener("change", scheduleFilters);
+        }
+        Array.prototype.slice.call(document.querySelectorAll("#sort .sort")).forEach(function (button) {
+            button.addEventListener("click", scheduleFilters);
+        });
         statsContainer.addEventListener("click", function (event) {
             if (!event.target || !event.target.getAttribute("data-tag")) {
                 return;
             }
             tagSelect.value = event.target.getAttribute("data-tag");
-            applyFilters();
+            scheduleFilters();
+        });
+        statsContainer.addEventListener("keydown", function (event) {
+            if (event.key !== "Enter" && event.key !== " ") {
+                return;
+            }
+            if (!event.target || !event.target.getAttribute("data-tag")) {
+                return;
+            }
+            event.preventDefault();
+            tagSelect.value = event.target.getAttribute("data-tag");
+            scheduleFilters();
         });
 
-        applyFilters();
+        scheduleFilters();
     });
 }());
 </script>
@@ -336,7 +361,6 @@ title: Home
 
   
    
-
 
 
 

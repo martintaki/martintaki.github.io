@@ -123,27 +123,42 @@
     to Reinforcement Learning'
   type: cpaper
   year: '2026'
-- abstract: "\nMolecular property prediction is a core task in machine learning for\
-    \ physics, with applications to interatomic potential learning and materials discovery.\
-    \ Recent transformer-based models achieve strong performance, but their gains\
-    \ often conflate two coupled choices: the design of SE(3)-aware positional encodings\
-    \ and how these encodings are incorporated into attention. Consequently, it remains\
-    \ unclear whether the empirical improvements stem from the positional encoding\
-    \ itself or from the attention formulation used to exploit it. Here, we present\
-    \ a controlled study of attention design in molecular transformers that fixes\
-    \ the positional encoding and only varies the attention formulation. Our results\
-    \ show that attention design alone has a significant effect on performance. Under\
-    \ a shared positional encoding, vector-valued positional encodings are most effective\
-    \ when used to modulate attention logits, while the best overall results are obtained\
-    \ when geometric information is introduced through a separate pathway that is\
-    \ adaptively gated by the main attention message. Our study isolates the effect\
-    \ of attention design, identifies key ingredients for accurate prediction of molecular\
-    \ properties, and offers practical guidelines for future research.\n\t\t"
+- abstract: 'Molecular property prediction is a core task in machine learning for
+    physics, with applications to interatomic potential learning and materials discovery.
+    Recent transformer-based models achieve strong performance, but their gains often
+    conflate two coupled choices: the design of SE(3)-aware positional encodings and
+    how these encodings are incorporated into attention. Consequently, it remains
+    unclear whether the empirical improvements stem from the positional encoding itself
+    or from the attention formulation used to exploit it. Here, we present a controlled
+    study of attention design in molecular transformers that fixes the positional
+    encoding and only varies the attention formulation. Our results show that attention
+    design alone has a significant effect on performance. Under a shared positional
+    encoding, vector-valued positional encodings are most effective when used to modulate
+    attention logits, while the best overall results are obtained when geometric information
+    is introduced through a separate pathway that is adaptively gated by the main
+    attention message. Our study isolates the effect of attention design, identifies
+    key ingredients for accurate prediction of molecular properties, and offers practical
+    guidelines for future research.'
   authors: "Yusei Ito, Aidar Alimbayev, Klea Ziu, Deepak Kumar, Kanta Ono, <strong>Martin\
     \ Tak\xE1\u010D</strong>"
   journal: ICML 2026 Workshop AI4Physics
-  keywords: []
-  tags: []
+  keywords:
+  - molecular property prediction
+  - molecular transformers
+  - se(3)-aware positional encodings
+  - attention formulation
+  - vector-valued positional encodings
+  - attention logits modulation
+  - geometric information pathway
+  - adaptive gating
+  - interatomic potential learning
+  - materials discovery
+  tags:
+  - Materials Science
+  - Molecular Modeling
+  - Geometric Deep Learning
+  - Transformers
+  - Attention
   title: Revisiting the Form of Attention with Positional Encoding for Molecular Structures
   type: cpaper
   year: '2026'
@@ -190,7 +205,7 @@
     Parameters'
   type: tpaper
   year: '2026'
-- abstract: "\nThe accelerating shift toward low-carbon power systems, together with\
+- abstract: "The accelerating shift toward low-carbon power systems, together with\
     \ the widespread adoption of behind-the-meter technologies such as rooftop solar\
     \ and electric vehicles, \nis placing new operational and analytical demands on\
     \ electricity grids. At the same time, smart-grid research increasingly relies\
@@ -210,13 +225,28 @@
     \  dataset, which contains over a year of load measurements \nfor 4232 households\
     \ together with survey-based socio-economic information. We further assess the\
     \ consistency of the framework through ablation studies. \nSource code is available\
-    \ at https://github.com/Singularity-AI-Lab/wattcouncil.\n\t\t"
+    \ at https://github.com/Singularity-AI-Lab/wattcouncil."
   authors: "Mohannad Takrouri, Nicolas Mauricio Cuadrado, <strong>Martin Tak\xE1\u010D\
     </strong>"
-  journal: 'The 13th ACM International Conference on Systems for Energy-Efficient
-    Buildings, Cities, and Transportation (Buildsys 2026) '
-  keywords: []
-  tags: []
+  journal: The 13th ACM International Conference on Systems for Energy-Efficient Buildings,
+    Cities, and Transportation (Buildsys 2026)
+  keywords:
+  - household energy scenario generation
+  - governed llm agents
+  - context-aware demand profiles
+  - household electricity demand
+  - smart-grid synthetic data
+  - energy load profile validation
+  - cultural temporal physical constraints
+  - multi-agent generation pipeline
+  - daily routine modeling
+  - privacy-limited energy data
+  tags:
+  - LLM
+  - Energy Systems
+  - Smart Grids
+  - Synthetic Data
+  - Multi-Agent Systems
   title: 'WattCouncil: Context-Aware Household Energy Scenario Generation With Governed
     LLMs'
   type: cpaper
@@ -264,7 +294,7 @@
   title: Decentralized Inexact Cubic Newton Method with Consensus Procedure
   type: jpaper
   year: '2026'
-- abstract: "\nMost first-order optimizers treat matrix-valued parameters as vectors,\
+- abstract: "Most first-order optimizers treat matrix-valued parameters as vectors,\
     \ ignoring the intrinsic geometry of hidden-layer weights in neural networks.\
     \ Muon addresses this mismatch by updating along the polar factor of a momentum\
     \ matrix, but its theoretical understanding has lagged behind practice. In particular,\
@@ -284,63 +314,105 @@
     \ We analyze a randomized low-rank polar decomposition that is substantially more\
     \ efficient than full-space methods while remaining compatible with our theory.\
     \ Numerical experiments further demonstrate the effectiveness of the proposed\
-    \ inexact and randomized variants.\n\t\t"
+    \ inexact and randomized variants."
   authors: "Sayantan Choudhury, Xiaoran Cheng, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Sen Na, Mladen Kolar"
-  keywords: []
+  keywords:
+  - muon optimizer
+  - nesterov momentum
+  - heavy-tailed noise
+  - inexact polar decomposition
+  - non-convex matrix optimization
+  - stochastic gradients
+  - newton-schulz approximation
+  - randomized low-rank polar decomposition
+  - iteration complexity
+  - sample complexity
   link: https://arxiv.org/abs/2605.06884
   pdf: https://arxiv.org/pdf/2605.06884
-  tags: []
+  tags:
+  - Optimization
+  - Deep Learning
+  - Randomized Algorithms
+  - Robustness
   title: 'Muon with Nesterov Momentum: Heavy-Tailed Noise and (Randomized) Inexact
     Polar Decomposition'
   type: tpaper
   year: '2026'
-- abstract: "\nOff-policy learning methods seek to derive an optimal policy directly\
-    \ from a fixed dataset of prior interactions. This objective presents significant\
-    \ challenges, primarily due to the inherent distributional shift and value function\
-    \ overestimation bias. These issues become even more noticeable in zero-shot reinforcement\
-    \ learning, where an agent trained on reward-free data must adapt to new tasks\
-    \ at test time without additional training. In this work, we address the off-policy\
-    \ problem in a zero-shot setting by discovering a theoretical connection of successor\
-    \ measures to stationary density ratios. Using this insight, our algorithm can\
-    \ infer optimal importance sampling ratios, effectively performing a stationary\
-    \ distribution correction with an optimal policy for any task on the fly. We benchmark\
-    \ our method in motion tracking tasks on SMPL Humanoid, continuous control on\
-    \ ExoRL, and for the long-horizon OGBench tasks. Our technique seamlessly integrates\
-    \ into forward-backward representation frameworks and enables fast-adaptation\
-    \ to new tasks in a training-free regime. More broadly, this work bridges off-policy\
-    \ learning and zero-shot adaptation, offering benefits to both research areas.\n\
-    \t\t"
+- abstract: Off-policy learning methods seek to derive an optimal policy directly
+    from a fixed dataset of prior interactions. This objective presents significant
+    challenges, primarily due to the inherent distributional shift and value function
+    overestimation bias. These issues become even more noticeable in zero-shot reinforcement
+    learning, where an agent trained on reward-free data must adapt to new tasks at
+    test time without additional training. In this work, we address the off-policy
+    problem in a zero-shot setting by discovering a theoretical connection of successor
+    measures to stationary density ratios. Using this insight, our algorithm can infer
+    optimal importance sampling ratios, effectively performing a stationary distribution
+    correction with an optimal policy for any task on the fly. We benchmark our method
+    in motion tracking tasks on SMPL Humanoid, continuous control on ExoRL, and for
+    the long-horizon OGBench tasks. Our technique seamlessly integrates into forward-backward
+    representation frameworks and enables fast-adaptation to new tasks in a training-free
+    regime. More broadly, this work bridges off-policy learning and zero-shot adaptation,
+    offering benefits to both research areas.
   authors: "Arip Asadulaev, Maksim Bobrin, Salem Lahlou, Dmitry Dylov, Fakhri Karray,\
     \ <strong>Martin Tak\xE1\u010D</strong>"
   journal: Forty-third International Conference on Machine Learning (ICML 2026)
-  keywords: []
+  keywords:
+  - zero-shot reinforcement learning
+  - off-policy learning
+  - offline reinforcement learning
+  - successor measures
+  - stationary density ratios
+  - importance sampling ratios
+  - stationary distribution correction
+  - forward-backward representations
+  - reward-free pretraining
+  - test-time adaptation
   link: https://arxiv.org/abs/2602.01962
   pdf: https://arxiv.org/pdf/2602.01962
-  tags: []
+  tags:
+  - Reinforcement Learning
+  - Offline Learning
+  - Zero-Shot Learning
+  - Optimization
   title: Zero-Shot Off-Policy Learning
   type: cpaper
   year: '2026'
-- abstract: "\nState-space models (SSMs) have emerged as a powerful foundation for\
-    \ long-range sequence modeling, with the HiPPO framework showing that continuous-time\
-    \ projection operators can be used to derive stable, memory-efficient dynamical\
-    \ systems that encode the past history of the input signal. However, existing\
-    \ projection-based SSMs often rely on polynomial bases with global temporal support,\
-    \ whose inductive biases are poorly matched to signals exhibiting localized or\
-    \ transient structure. In this work, we introduce \\emph{WaveSSM}, a collection\
-    \ of SSMs constructed over wavelet frames. Our key observation is that wavelet\
-    \ frames yield a localized support on the temporal dimension, useful for tasks\
-    \ requiring precise localization. Empirically, we show that on equal conditions,\
-    \ \\textit{WaveSSM} outperforms orthogonal counterparts as S4 on real-world datasets\
-    \ with transient dynamics, including physiological signals on the PTB-XL dataset\
-    \ and raw audio on Speech Commands.\n\t\t"
+- abstract: State-space models (SSMs) have emerged as a powerful foundation for long-range
+    sequence modeling, with the HiPPO framework showing that continuous-time projection
+    operators can be used to derive stable, memory-efficient dynamical systems that
+    encode the past history of the input signal. However, existing projection-based
+    SSMs often rely on polynomial bases with global temporal support, whose inductive
+    biases are poorly matched to signals exhibiting localized or transient structure.
+    In this work, we introduce \emph{WaveSSM}, a collection of SSMs constructed over
+    wavelet frames. Our key observation is that wavelet frames yield a localized support
+    on the temporal dimension, useful for tasks requiring precise localization. Empirically,
+    we show that on equal conditions, \textit{WaveSSM} outperforms orthogonal counterparts
+    as S4 on real-world datasets with transient dynamics, including physiological
+    signals on the PTB-XL dataset and raw audio on Speech Commands.
   authors: "Ruben Solozabal, Velibor Bojkovic, Hilal Alquabeh, Klea Ziu, Kentaro Inui,\
     \ <strong>Martin Tak\xE1\u010D</strong>"
   journal: Forty-third International Conference on Machine Learning (ICML 2026)
-  keywords: []
+  keywords:
+  - wavelet frames
+  - multiscale state-space models
+  - non-stationary signals
+  - transient dynamics
+  - localized temporal support
+  - hippo framework
+  - projection-based ssms
+  - long-range sequence modeling
+  - physiological signals
+  - speech commands audio
+  - numerical stability
   link: https://arxiv.org/abs/2602.22266
   pdf: https://arxiv.org/pdf/2602.22266
-  tags: []
+  tags:
+  - State-Space Models
+  - Sequence Modeling
+  - Signal Processing
+  - Time Series
+  - Audio
   title: 'WaveSSM: Multiscale State-Space Models for Non-stationary Signal Attention'
   type: cpaper
   year: '2026'
@@ -364,7 +436,7 @@
     Gradient Clipping'
   type: cpaper
   year: '2026'
-- abstract: "\nRecently, small models with latent recursion have obtained promising\
+- abstract: "Recently, small models with latent recursion have obtained promising\
     \ results on complex reasoning tasks. These results are typically explained by\
     \ the theory that such recursion increases a network\u2019s depth, allowing it\
     \ to compactly emulate the capacity of larger models. However, the performance\
@@ -380,13 +452,27 @@
     \ we show that with our modifications we can avoid dead compute steps and reduce\
     \ the total number of forward passes by 18\xD7 while maintaining performance.\
     \ Broadly speaking, we show how a policy improvement perspective on recursive\
-    \ steps can explain model behavior and provide insights for further improvements.\n\
-    \t\t"
+    \ steps can explain model behavior and provide insights for further improvements."
   authors: "Arip Asadulaev, Rayan Banerjee, Fakhri Karray, <strong>Martin Tak\xE1\u010D\
     </strong>"
   journal: Forty-third International Conference on Machine Learning (ICML 2026)
-  keywords: []
-  tags: []
+  keywords:
+  - latent reasoning
+  - latent recursion
+  - policy improvement
+  - classifier-free guidance
+  - recursive neural networks
+  - tiny recursive model
+  - dead compute
+  - forward pass reduction
+  - reinforcement learning training schemes
+  - diffusion training methods
+  tags:
+  - LLM
+  - Reinforcement Learning
+  - Optimization
+  - Diffusion Models
+  - Reasoning
   title: Your Latent Reasoning is Secretly Policy Improvement Operator
   type: cpaper
   year: '2026'
@@ -471,28 +557,44 @@
     Coordination Games'
   type: cpaper
   year: '2026'
-- abstract: "\nLarge audio-language models (LALMs) generalize across speech, sound,\
-    \ and music, but unified decoders can exhibit a temporal smoothing bias: transient\
-    \ acoustic cues may be underutilized in favor of temporally smooth context that\
-    \ is better supported by language priors, leading to less specific audio-grounded\
-    \ outputs. We propose Temporal Contrastive Decoding (TCD), a training-free decoding\
-    \ method for unified LALMs that mitigates this effect at inference time. TCD constructs\
-    \ a temporally blurred slow-path view by smoothing the input waveform and re-encoding\
-    \ it, then contrasts next-token logits from the original and slow-path views.\
-    \ The contrastive signal is applied as a token-level logit update restricted to\
-    \ a small candidate set. A self-normalized stability score sets the blur window\
-    \ and update scale, and a step-wise gate based on uncertainty and audio reliance\
-    \ activates the update only when needed. Experiments on MMAU and AIR-Bench show\
-    \ consistent improvements on strong unified LALMs. We further conduct ablations\
-    \ and an architectural applicability study to analyze the contributions of key\
-    \ components and how TCD behaves across large audio-language model designs. The\
-    \ anonymized link to the open-source implementation is provided in the appendix.\n\
-    \t\t"
+- abstract: 'Large audio-language models (LALMs) generalize across speech, sound,
+    and music, but unified decoders can exhibit a temporal smoothing bias: transient
+    acoustic cues may be underutilized in favor of temporally smooth context that
+    is better supported by language priors, leading to less specific audio-grounded
+    outputs. We propose Temporal Contrastive Decoding (TCD), a training-free decoding
+    method for unified LALMs that mitigates this effect at inference time. TCD constructs
+    a temporally blurred slow-path view by smoothing the input waveform and re-encoding
+    it, then contrasts next-token logits from the original and slow-path views. The
+    contrastive signal is applied as a token-level logit update restricted to a small
+    candidate set. A self-normalized stability score sets the blur window and update
+    scale, and a step-wise gate based on uncertainty and audio reliance activates
+    the update only when needed. Experiments on MMAU and AIR-Bench show consistent
+    improvements on strong unified LALMs. We further conduct ablations and an architectural
+    applicability study to analyze the contributions of key components and how TCD
+    behaves across large audio-language model designs. The anonymized link to the
+    open-source implementation is provided in the appendix.'
   authors: "Yanda Li, Yuhan Liu, Zirui Song, Yunchao Wei, <strong>Martin Tak\xE1\u010D\
-    </strong>, Salem Lahlou "
+    </strong>, Salem Lahlou"
   journal: ACL'2026 Findings
-  keywords: []
-  tags: []
+  keywords:
+  - large audio-language models
+  - temporal contrastive decoding
+  - training-free decoding
+  - temporal smoothing bias
+  - waveform smoothing
+  - contrastive logits
+  - token-level logit updates
+  - uncertainty gating
+  - audio reliance
+  - unified decoders
+  - mmau benchmark
+  - air-bench
+  tags:
+  - LLM
+  - Multimodal Learning
+  - Audio Processing
+  - Natural Language Processing
+  - Robustness
   title: 'Temporal Contrastive Decoding: A Training-Free Method for Large Audio-Language
     Models'
   type: cpaper
@@ -565,69 +667,84 @@
     Structure and Tokens'
   type: jpaper
   year: '2026'
-- abstract: Low-Rank Adaptation (LoRA) fine-tunes large models by learning low-rank
-    updates on top of frozen weights, dramatically reducing trainable parameters and
-    memory. In this work, we address the gap between training with full steps with
-    low-rank projections (SVDLoRA) and LoRA fine-tuning. We propose LoRSum, a memory-efficient
-    subroutine that closes this gap for gradient descent by casting LoRA optimization
-    as a proximal sub-problem and solving it efficiently with alternating least squares
-    updates, which we prove to be an implicit block power method. We recover several
-    recently proposed preconditioning methods for LoRA as special cases, and show
-    that LoRSum can also be used for updating a low-rank momentum. In order to address
-    full steps with preconditioned gradient descent, we propose a scaled variant of
-    LoRSum that uses structured metrics such as K-FAC and Shampoo, and we show that
-    storing the diagonal of these metrics still allows them to perform well while
-    remaining memory-efficient. Experiments on a synthetic task, CIFAR-100, and language-model
-    fine-tuning on GLUE, SQuAD v2, and WikiText-103, show that our method can match
-    or improve LoRA baselines given modest compute overhead, while avoiding full-matrix
-    SVD projections and retaining LoRA-style parameter efficiency.
-  authors: "Abdulla Jasem Almansoori, Maria Ivanova, Andrey Veprikov, Aleksandr Beznosikov,\
-    \ Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D</strong>"
+- abstract: Representing molecular structures effectively in chemistry remains a challenging
+    task. Language models and graph-based models are extensively utilized within this
+    domain, consistently achieving state-of-the-art results across an array of tasks.
+    However, the prevailing practice of representing chemical compounds in the SMILES
+    format - used by most data sets and many language models - presents notable limitations
+    as a training data format. In this study, we present a novel approach that decomposes
+    molecules into substructures and computes descriptor-based representations for
+    these fragments, providing more detailed and chemically relevant input for model
+    training. We use this substructure and descriptor data as input for language model
+    and also propose a bimodal architecture that integrates this language model with
+    graph-based models. As LM we use RoBERTa, Graph Isomorphism Networks (GIN), Graph
+    Convolutional Networks (GCN) and Graphormer as graph ones. Our framework shows
+    notable improvements over traditional methods in various tasks such as Quantitative
+    Structure-Activity Relationship (QSAR) prediction.
+  authors: "Nikolai Rekut, Alexey Orlov, Klea Ziu, Elizaveta Starykh, <strong>Martin\
+    \ Tak\xE1\u010D</strong>, Aleksandr Beznosikov"
+  journal: IEEE Access; the shorter version was accepted in AI4Science Workshop @
+    NeurIPS 2025
   keywords:
-  - low-rank adaptation
-  - lora fine-tuning
-  - proximal subspace iteration
-  - alternating least squares
-  - implicit block power method
-  - svd-free rank projection
-  - diagonal fractional k-fac
-  - kronecker-factored metrics
-  - shampoo preconditioning
-  - low-rank momentum
-  - language model fine-tuning
-  link: https://arxiv.org/abs/2602.16456
-  pdf: https://arxiv.org/pdf/2602.16456
+  - molecular representation learning
+  - substructure descriptors
+  - descriptor-based molecular fragments
+  - smiles limitations
+  - roberta molecular language model
+  - graph neural networks
+  - graph isomorphism networks
+  - graph convolutional networks
+  - graphormer
+  - bimodal architecture
+  - qsar prediction
+  - molecular property prediction
+  link: https://ieeexplore.ieee.org/document/11456953
+  pdf: https://arxiv.org/pdf/2502.17986
   tags:
+  - Chemistry
+  - Graph Learning
+  - Representation Learning
   - LLM
-  - Optimization
-  - Parameter-Efficient Fine-Tuning
-  - Low-Rank Methods
-  - Second-Order Methods
-  title: 'Beyond SGD, Without SVD: Proximal Subspace Iteration LoRA with Diagonal
-    Fractional K-FAC'
-  type: tpaper
+  title: 'Thinking like a CHEMIST: Combined Heterogeneous Embedding Model Integrating
+    Structure and Tokens'
+  type: jpaper
   year: '2026'
-- abstract: "\nFederated Learning (FL) revolutionizes machine learning by enabling\
-    \ model training across decentralized data sources without aggregating sensitive\
-    \ client data. However, the inherent heterogeneity of client data presents unique\
-    \ challenges, as not all client contributions positively impact model performance.\
-    \ In this work, we propose a novel algorithm, Merit-Based Federated Averaging\
-    \ (\\Algn), which dynamically assigns aggregation weights to clients based on\
-    \ their data distribution's relevance to a target objective. By leveraging stochastic\
-    \ gradients and solving an auxiliary optimization problem, our method adaptively\
-    \ identifies beneficial collaborators, ensuring efficient and robust learning.\
-    \ We establish theoretical convergence guarantees under mild assumptions and demonstrate\
-    \ that \\Algn achieves superior convergence by harnessing the advantages of diverse\
-    \ yet complementary datasets. Empirical evaluations highlight its ability to mitigate\
-    \ the adverse effects of outlier and adversarial clients, paving the way for more\
-    \ effective and resilient FL in heterogeneous environments.\t\t"
+- abstract: Federated Learning (FL) revolutionizes machine learning by enabling model
+    training across decentralized data sources without aggregating sensitive client
+    data. However, the inherent heterogeneity of client data presents unique challenges,
+    as not all client contributions positively impact model performance. In this work,
+    we propose a novel algorithm, Merit-Based Federated Averaging (\Algn), which dynamically
+    assigns aggregation weights to clients based on their data distribution's relevance
+    to a target objective. By leveraging stochastic gradients and solving an auxiliary
+    optimization problem, our method adaptively identifies beneficial collaborators,
+    ensuring efficient and robust learning. We establish theoretical convergence guarantees
+    under mild assumptions and demonstrate that \Algn achieves superior convergence
+    by harnessing the advantages of diverse yet complementary datasets. Empirical
+    evaluations highlight its ability to mitigate the adverse effects of outlier and
+    adversarial clients, paving the way for more effective and resilient FL in heterogeneous
+    environments.
   authors: "Nazarii Tupitsa, Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Eduard Gorbunov"
   journal: Third Conference on Parsimony and Learning (CPAL'26)
-  keywords: []
+  keywords:
+  - merit-based federated averaging
+  - adaptive aggregation weights
+  - client selection
+  - heterogeneous data distributions
+  - non-iid federated learning
+  - stochastic gradients
+  - auxiliary validation loss optimization
+  - outlier client mitigation
+  - adversarial clients
+  - convergence guarantees
+  - smooth non-convex objectives
   link: https://arxiv.org/abs/2402.05050
   pdf: https://arxiv.org/pdf/2402.05050.pdf
-  tags: []
+  tags:
+  - Federated Learning
+  - Optimization
+  - Distributed Optimization
+  - Robustness
   title: Selective Collaboration for Robust Federated Learning
   type: cpaper
   year: '2026'
@@ -666,53 +783,86 @@
   title: Byzantine-Robust Optimization under $(L_0, L_1)$-Smoothness
   type: cpaper
   year: '2026'
-- abstract: "\nPruning remains an effective strategy for reducing both the costs and\
-    \ environmental impact associated with deploying large neural networks (NNs) while\
-    \ maintaining performance. Classical methods, such as OBD \\cite{lecun1989optimal}\
-    \ and OBS \\cite{hassibi1992second}, demonstrate that utilizing curvature information\
-    \ can significantly enhance the balance between network complexity and performance.\
-    \ However, the computation and storage of the Hessian matrix make it impractical\
-    \ for modern NNs, motivating the use of approximations.\nRecent research \\cite{gur2018gradient,\
-    \ karakida2019universal} suggests that the top eigenvalues guide optimization\
-    \ in a small subspace, are identifiable early, and remain consistent during training.\
-    \ Motivated by these findings, we revisit pruning at initialization (PaI) to evaluate\
-    \ scalable, unbiased second-order approximations, such as the Empirical Fisher\
-    \ and Hutchinson diagonals. Our experiments show that these methods effectively\
-    \ capture important curvature information, enhancing the identification of critical\
-    \ parameters compared to first-order baselines, while maintaining linear computational\
-    \ complexity.\nAdditionally, we empirically demonstrate that updating batch normalization\
-    \ statistics as a warmup phase improves the performance of data-dependent criteria\
-    \ and mitigates the issue of layer collapse. Notably, Hutchinson-based criteria\
-    \ consistently outperformed or matched existing PaI algorithms across various\
-    \ models (including VGG, ResNet, and ViT) and datasets (such as CIFAR-10/100,\
-    \ TinyImageNet, and ImageNet).\nOur findings suggest that scalable second-order\
-    \ approximations strike an effective balance between computational efficiency\
-    \ and accuracy, making them a valuable addition to the pruning toolkit.\n\t\t"
+- abstract: 'Pruning remains an effective strategy for reducing both the costs and
+    environmental impact associated with deploying large neural networks (NNs) while
+    maintaining performance. Classical methods, such as OBD \cite{lecun1989optimal}
+    and OBS \cite{hassibi1992second}, demonstrate that utilizing curvature information
+    can significantly enhance the balance between network complexity and performance.
+    However, the computation and storage of the Hessian matrix make it impractical
+    for modern NNs, motivating the use of approximations.
+
+    Recent research \cite{gur2018gradient, karakida2019universal} suggests that the
+    top eigenvalues guide optimization in a small subspace, are identifiable early,
+    and remain consistent during training. Motivated by these findings, we revisit
+    pruning at initialization (PaI) to evaluate scalable, unbiased second-order approximations,
+    such as the Empirical Fisher and Hutchinson diagonals. Our experiments show that
+    these methods effectively capture important curvature information, enhancing the
+    identification of critical parameters compared to first-order baselines, while
+    maintaining linear computational complexity.
+
+    Additionally, we empirically demonstrate that updating batch normalization statistics
+    as a warmup phase improves the performance of data-dependent criteria and mitigates
+    the issue of layer collapse. Notably, Hutchinson-based criteria consistently outperformed
+    or matched existing PaI algorithms across various models (including VGG, ResNet,
+    and ViT) and datasets (such as CIFAR-10/100, TinyImageNet, and ImageNet).
+
+    Our findings suggest that scalable second-order approximations strike an effective
+    balance between computational efficiency and accuracy, making them a valuable
+    addition to the pruning toolkit.'
   authors: "Ivo Gollini Navarrete, Nicolas Mauricio Cuadrado, <strong>Martin Tak\xE1\
     \u010D</strong>, Samuel Horv\xE1th"
   journal: Third Conference on Parsimony and Learning (CPAL'26)
-  keywords: []
+  keywords:
+  - pruning at initialization
+  - second-order approximations
+  - empirical fisher
+  - hutchinson diagonal
+  - hessian curvature
+  - neural network pruning
+  - batch normalization warmup
+  - layer collapse
+  - linear computational complexity
+  - vgg resnet vit
+  - cifar imagenet
   link: https://arxiv.org/abs/2502.11450
   pdf: https://arxiv.org/pdf/2502.11450
-  tags: []
+  tags:
+  - Optimization
+  - Second-Order Methods
+  - Model Compression
+  - Computer Vision
+  - Deep Learning
   title: What Scalable Second-Order Information Knows for Pruning at Initialization
   type: cpaper
   year: '2026'
-- abstract: "\nThis paper investigates the global convergence of stepsized Newton\
-    \ methods for convex functions with H\xF6lder continuous Hessians or third derivatives.\
+- abstract: "This paper investigates the global convergence of stepsized Newton methods\
+    \ for convex functions with H\xF6lder continuous Hessians or third derivatives.\
     \ \nWe propose several simple stepsize schedules with fast global convergence\
     \ guarantees, up to $O(1/k^3)$. For cases with multiple plausible smoothness parameterizations\
     \ or an unknown smoothness constant, we introduce a stepsize linesearch and a\
     \ backtracking procedure with provable convergence as if the optimal smoothness\
     \ parameters were known in advance. Additionally, we present strong convergence\
-    \ guarantees for the practically popular Newton method with exact linesearch.\n\
-    \t\t"
+    \ guarantees for the practically popular Newton method with exact linesearch."
   authors: "Slavomir Hanzely, Farshed Abdukhakimov, <strong>Martin Tak\xE1\u010D</strong>"
   journal: International Conference on Learning Representations, ICLR 2026
-  keywords: []
+  keywords:
+  - newton method
+  - global convergence rates
+  - stepsize schedules
+  - line search procedures
+  - backtracking line search
+  - convex functions
+  - holder-continuous hessians
+  - third derivative smoothness
+  - exact linesearch
+  - 1/k^3 convergence
   link: https://openreview.net/forum?id=0eM74HjPQA
   pdf: https://openreview.net/pdf?id=0eM74HjPQA
-  tags: []
+  tags:
+  - Optimization
+  - Second-Order Methods
+  - Convex Optimization
+  - Machine Learning Theory
   title: 'Newton Method Revisited: Global Convergence Rates up to $O(1/k^3)$ for Stepsize
     Schedules and Linesearch Procedures'
   type: cpaper
@@ -760,7 +910,7 @@
   title: 'LoFT: Low-Rank Adaptation That Behaves Like Full Fine-Tuning'
   type: cpaper
   year: '2026'
-- abstract: "\nCytosine methylation is a key epigenetic modification that regulates\
+- abstract: "Cytosine methylation is a key epigenetic modification that regulates\
     \ transcription factor (TF) binding and gene expression. While most current understanding\
     \ of methylation-sensitive TF binding derives from studies focused exclusively\
     \ on fully methylated CpG sites, alternative forms\u2014such as non-CpG and hemimethylation\u2014\
@@ -782,14 +932,28 @@
     \ elements, exhibiting distinct methylation patterns across cell types. Together,\
     \ our findings uncover a previously hidden layer of methylation-dependent TF\u2013\
     DNA recognition, broadening the understanding of epigenetics in transcriptional\
-    \ regulation.\n\t\t"
+    \ regulation."
   authors: "Irina Miodownik, Ruben Solozabal, Michael P. O\u2019Hagan, Shira Albeck,\
     \ Yoav Peleg, <strong>Martin Tak\xE1\u010D</strong>, Ariel Afek"
   journal: Proceedings of the National Academy of Sciences (PNAS)
-  keywords: []
+  keywords:
+  - dna methylation
+  - transcription factor binding
+  - tf-dna interactions
+  - non-cpg methylation
+  - hemimethylation
+  - 5-methylcytosine
+  - protein-binding microarrays
+  - methylation-sensitive motifs
+  - enhancers and regulatory elements
+  - strand-specific methylation
   link: https://www.pnas.org/doi/10.1073/pnas.2520814122
   pdf: https://www.pnas.org/doi/epdf/10.1073/pnas.2520814122
-  tags: []
+  tags:
+  - Biology
+  - Genomics
+  - Epigenetics
+  - Gene Regulation
   title: DNA methylation shapes transcription factor binding beyond canonical CpG
     contexts
   type: jpaper
@@ -822,86 +986,134 @@
     for Finite-sum Non-convex Problems'
   type: tpaper
   year: '2025'
-- abstract: "\nOffline reinforcement learning (RL) learns exclusively from static\
-    \ datasets, without further interaction with the environment. In practice, such\
-    \ datasets vary widely in quality, often mixing expert, suboptimal, and even random\
-    \ trajectories. The choice of algorithm therefore depends on dataset fidelity.\
-    \ Behavior cloning can suffice on high-quality data, whereas mixed- or low-quality\
-    \ data typically benefits from offline RL methods that stitch useful behavior\
-    \ across trajectories. Yet in the wild it is difficult to assess dataset quality\
-    \ a priori because the data's provenance and skill composition are unknown. We\
-    \ address the problem of estimating offline dataset quality without training an\
-    \ agent. We study a spectrum of proxies from simple cumulative rewards to learned\
-    \ value based estimators, and introduce the Bellman Wasserstein distance (BWD),\
-    \ a value aware optimal transport score that measures how dissimilar a dataset's\
-    \ behavioral policy is from a random reference policy. BWD is computed from a\
-    \ behavioral critic and a state conditional OT formulation, requiring no environment\
-    \ interaction or full policy optimization. Across D4RL MuJoCo tasks, BWD strongly\
-    \ correlates with an oracle performance score that aggregates multiple offline\
-    \ RL algorithms, enabling efficient prediction of how well standard agents will\
-    \ perform on a given dataset. Beyond prediction, integrating BWD as a regularizer\
-    \ during policy optimization explicitly pushes the learned policy away from random\
-    \ behavior and improves returns. These results indicate that value aware, distributional\
-    \ signals such as BWD are practical tools for triaging offline RL datasets and\
-    \ policy optimization.\n\t\t"
+- abstract: Offline reinforcement learning (RL) learns exclusively from static datasets,
+    without further interaction with the environment. In practice, such datasets vary
+    widely in quality, often mixing expert, suboptimal, and even random trajectories.
+    The choice of algorithm therefore depends on dataset fidelity. Behavior cloning
+    can suffice on high-quality data, whereas mixed- or low-quality data typically
+    benefits from offline RL methods that stitch useful behavior across trajectories.
+    Yet in the wild it is difficult to assess dataset quality a priori because the
+    data's provenance and skill composition are unknown. We address the problem of
+    estimating offline dataset quality without training an agent. We study a spectrum
+    of proxies from simple cumulative rewards to learned value based estimators, and
+    introduce the Bellman Wasserstein distance (BWD), a value aware optimal transport
+    score that measures how dissimilar a dataset's behavioral policy is from a random
+    reference policy. BWD is computed from a behavioral critic and a state conditional
+    OT formulation, requiring no environment interaction or full policy optimization.
+    Across D4RL MuJoCo tasks, BWD strongly correlates with an oracle performance score
+    that aggregates multiple offline RL algorithms, enabling efficient prediction
+    of how well standard agents will perform on a given dataset. Beyond prediction,
+    integrating BWD as a regularizer during policy optimization explicitly pushes
+    the learned policy away from random behavior and improves returns. These results
+    indicate that value aware, distributional signals such as BWD are practical tools
+    for triaging offline RL datasets and policy optimization.
   authors: "Arip Asadulaev, Fakhri Karray, <strong>Martin Tak\xE1\u010D</strong>"
-  keywords: []
+  keywords:
+  - offline reinforcement learning
+  - dataset quality estimation
+  - bellman wasserstein distance
+  - value-aware optimal transport
+  - behavioral policy assessment
+  - random policy baseline
+  - d4rl mujoco benchmarks
+  - behavior cloning
+  - policy regularization
+  - oracle performance prediction
   link: https://arxiv.org/abs/2510.12638
   pdf: https://arxiv.org/pdf/2510.12638
-  tags: []
+  tags:
+  - Reinforcement Learning
+  - Optimization
+  - Optimal Transport
+  - Data Quality
   title: Expert or not? assessing data quality in offline reinforcement learning
   type: tpaper
   year: '2025'
-- abstract: "\nRecently, it was shown that small, looped architectures, such as Tiny\
-    \ Recursive Models (TRMs), can outperform Large Language Models (LLMs) on complex\
-    \ reasoning tasks, including the Abstraction and Reasoning Corpus (ARC). In this\
-    \ work, we investigate a core question: how can we further improve the efficiency\
-    \ of these methods with minimal changes? To address this, we frame the latent\
-    \ reasoning of TRMs as a form of classifier-free guidance and implicit policy\
-    \ improvement algorithm. Building on these insights, we propose a novel training\
-    \ scheme that provides a target for each loop during training. We demonstrate\
-    \ that our approach significantly enhances training efficiency. Our method reduces\
-    \ the total number of forward passes by 18x and eliminates halting mechanisms,\
-    \ while maintaining quality comparable to standard TRMs. Notably, we achieve 24%\
-    \ accuracy on ARC-1 with only 0.8M parameters, outperforming most LLMs.\n\t\t"
+- abstract: 'Recently, it was shown that small, looped architectures, such as Tiny
+    Recursive Models (TRMs), can outperform Large Language Models (LLMs) on complex
+    reasoning tasks, including the Abstraction and Reasoning Corpus (ARC). In this
+    work, we investigate a core question: how can we further improve the efficiency
+    of these methods with minimal changes? To address this, we frame the latent reasoning
+    of TRMs as a form of classifier-free guidance and implicit policy improvement
+    algorithm. Building on these insights, we propose a novel training scheme that
+    provides a target for each loop during training. We demonstrate that our approach
+    significantly enhances training efficiency. Our method reduces the total number
+    of forward passes by 18x and eliminates halting mechanisms, while maintaining
+    quality comparable to standard TRMs. Notably, we achieve 24% accuracy on ARC-1
+    with only 0.8M parameters, outperforming most LLMs.'
   authors: "Arip Asadulaev, Rayan Banerjee, Fakhri Karray, <strong>Martin Tak\xE1\u010D\
     </strong>"
-  keywords: []
+  keywords:
+  - latent reasoning
+  - tiny recursive models
+  - deep improvement supervision
+  - policy improvement
+  - classifier-free guidance
+  - recursive refinement
+  - step-wise supervision
+  - arc-agi reasoning
+  - training efficiency
+  - halting mechanism removal
   link: https://arxiv.org/abs/2511.16886
   pdf: https://arxiv.org/pdf/2511.16886
-  tags: []
+  tags:
+  - LLM
+  - Reinforcement Learning
+  - Deep Learning
+  - Model Efficiency
+  - Reasoning
   title: Deep Improvement Supervision
   type: tpaper
   year: '2025'
-- abstract: "\nLarge Language Models (LLMs) are commonly evaluated on general-domain\
-    \ datasets such as MMLU or GSM8K. However, assessing their performance in specific\
-    \ domains requires creating a test set with domain-specific context. This work\
-    \ provides a comprehensive analysis of state-of-the-art LLM's capabilities with\
-    \ respect to oil and gas knowledge that has been conducted in the context of the\
-    \ EnergyAI project within ADNOC.\n\nOur assessment is performed using two custom\
-    \ domain evaluation datasets. First, we measure the ability of the model to handle\
-    \ Multiple-Choice Questions (MCQ), which consists of questions that require a\
-    \ solid understanding and reasoning across upstream, midstream and downstream\
-    \ oil and gas operations. Second, we assess their ability to answer open-ended\
-    \ questions in the same domain, analyzing and quantifying the quality of the responses\
-    \ in relevance, accuracy and completeness. In addition to these evaluations, we\
-    \ examine other factors such as model size, throughput, response latency, and\
-    \ overall capabilities.\n\nWe have observed that the Llama3.1 405B model delivers\
-    \ a domain-specific performance comparable to proprietary models like GPT4o. Furthermore,\
-    \ models at a smaller scale - such as Llama 3.1 70B and Llama 3.2 90B - deliver\
-    \ excellent results relative to their size and offer an attractive performance-to-cost\
-    \ tradeoff. Nevertheless, all current LLM, including the most advanced open-source\
-    \ and proprietary models, exhibit notable limitations in their knowledge and reasoning\
-    \ capabilities within the oil and gas domain. These shortcomings highlight the\
-    \ need for targeted domain adaptation, deeper integration of technical knowledge,\
-    \ and rigorous evaluation tailored to the complexities of the industry.\n\t\t"
+- abstract: 'Large Language Models (LLMs) are commonly evaluated on general-domain
+    datasets such as MMLU or GSM8K. However, assessing their performance in specific
+    domains requires creating a test set with domain-specific context. This work provides
+    a comprehensive analysis of state-of-the-art LLM''s capabilities with respect
+    to oil and gas knowledge that has been conducted in the context of the EnergyAI
+    project within ADNOC.
+
+
+    Our assessment is performed using two custom domain evaluation datasets. First,
+    we measure the ability of the model to handle Multiple-Choice Questions (MCQ),
+    which consists of questions that require a solid understanding and reasoning across
+    upstream, midstream and downstream oil and gas operations. Second, we assess their
+    ability to answer open-ended questions in the same domain, analyzing and quantifying
+    the quality of the responses in relevance, accuracy and completeness. In addition
+    to these evaluations, we examine other factors such as model size, throughput,
+    response latency, and overall capabilities.
+
+
+    We have observed that the Llama3.1 405B model delivers a domain-specific performance
+    comparable to proprietary models like GPT4o. Furthermore, models at a smaller
+    scale - such as Llama 3.1 70B and Llama 3.2 90B - deliver excellent results relative
+    to their size and offer an attractive performance-to-cost tradeoff. Nevertheless,
+    all current LLM, including the most advanced open-source and proprietary models,
+    exhibit notable limitations in their knowledge and reasoning capabilities within
+    the oil and gas domain. These shortcomings highlight the need for targeted domain
+    adaptation, deeper integration of technical knowledge, and rigorous evaluation
+    tailored to the complexities of the industry.'
   authors: "F. Castanedo, W. Bhattacharya, S. Ghosh, <strong>Martin Tak\xE1\u010D\
     </strong>, Salem Lahlou, Zangir Iklassov, M. Schaffrath, N. Reddicharla, R. Mohan,\
     \ M. Yaslam, M. Lee"
   journal: Abu Dhabi International Petroleum Exhibition and Conference
-  keywords: []
+  keywords:
+  - oil and gas domain evaluation
+  - domain-specific llm benchmarks
+  - multiple-choice question answering
+  - open-ended question answering
+  - upstream midstream downstream operations
+  - llama 3.1 405b
+  - gpt-4o comparison
+  - model throughput and latency
+  - performance-to-cost tradeoff
+  - technical knowledge integration
   link: https://onepetro.org/SPEADIP/proceedings-abstract/25ADIP/25ADIP/793038
-  tags: []
+  tags:
+  - LLM
+  - Energy Systems
+  - Benchmarking
+  - Natural Language Processing
+  - Domain Adaptation
   title: Assessing the Capabilities of Large Language Models for Oil and Gas Industry
     Applications
   type: jpaper
@@ -926,7 +1138,7 @@
   title: Guess and Guide Zero-Shot Diffusion Guidance
   type: tpaper
   year: '2025'
-- abstract: "\nAdapting vision foundation models (VFMs) to downstream tasks requires\
+- abstract: "Adapting vision foundation models (VFMs) to downstream tasks requires\
     \ balancing three factors: (i) target accuracy, (ii) number of trainable parameters,\
     \ and (iii) the optimization steps needed to converge. While parameter-efficient\
     \ fine-tuning (PEFT) methods substantially reduce the number of trainable parameters,\
@@ -946,11 +1158,26 @@
     \ reflecting sensitivity to configuration and initialization. Under a fixed epoch\
     \ budget, and driven by its meta-learned initialization, ATAN converges 2\u2013\
     3\xD7 faster, with the largest gains on challenging cross-domain transfers (e.g.,\
-    \ medical, satellite), demonstrating robust generalization.\n\t\t"
+    \ medical, satellite), demonstrating robust generalization."
   authors: "Lotfi Abdelkrim Mecharbat, Ibrahim Almakky, Abdelrahman Elsayed, Hazem\
     \ Lashen, Alya Almsouti, <strong>Martin Tak\xE1\u010D</strong>, Mohammad Yaqub"
-  keywords: []
-  tags: []
+  keywords:
+  - vision foundation models
+  - parameter-efficient fine-tuning
+  - task-specific adapters
+  - adapter placement
+  - meta-learned initialization
+  - downstream adaptation
+  - supernet model zoo
+  - cross-domain transfer
+  - fixed epoch budget
+  - fast convergence
+  tags:
+  - Computer Vision
+  - Foundation Models
+  - Meta-Learning
+  - Optimization
+  - Transfer Learning
   title: 'Adapt to All Needs (ATAN): Meta-learned Efficient Adaptation of Vision Foundation
     Models'
   type: tpaper
@@ -1125,29 +1352,44 @@
   title: Accelerated Adaptive Cubic Regularized Quasi-Newton Methods
   type: jpaper
   year: '2026'
-- abstract: "\nLow-Rank Adaptation (LoRA) fine-tunes large models by learning low-rank\
-    \ updates on top of frozen weights, dramatically reducing trainable parameters\
-    \ and memory. However, there is still a gap between full training with low-rank\
-    \ projections (\\svdlora) and LoRA fine-tuning, indicating that LoRA steps can\
-    \ be further improved. In this study, we propose OPLoRA, a memory-efficient optimizer\
-    \ that closes this gap by casting LoRA optimization as an interpretable sub-problem\
-    \ and solving it efficiently with alternating least squares updates, where 1-2\
-    \ alternating steps are empirically found to be sufficient to closely match truncated\
-    \ SVD without ever forming the full matrix. We also retrieve the recently proposed\
-    \ preconditioning methods for LoRA as a special case. OPLoRA supports momentum\
-    \ by maintaining a low-rank estimate using the same subroutine (LoRSum) for computing\
-    \ the step, with a memory budget of 3 times the number of LoRA parameters (i.e.,\
-    \ same as Adam). We also propose an experimental scaled variant that uses the\
-    \ K-FAC metric, which could be of interest. Across a linear task, MNIST, CIFAR-100,\
-    \ and RoBERTa-base (MNLI), OPLoRA consistently approaches SVDLoRA's performance\
-    \ using significantly less memory.\n\t\t"
+- abstract: Low-Rank Adaptation (LoRA) fine-tunes large models by learning low-rank
+    updates on top of frozen weights, dramatically reducing trainable parameters and
+    memory. However, there is still a gap between full training with low-rank projections
+    (\svdlora) and LoRA fine-tuning, indicating that LoRA steps can be further improved.
+    In this study, we propose OPLoRA, a memory-efficient optimizer that closes this
+    gap by casting LoRA optimization as an interpretable sub-problem and solving it
+    efficiently with alternating least squares updates, where 1-2 alternating steps
+    are empirically found to be sufficient to closely match truncated SVD without
+    ever forming the full matrix. We also retrieve the recently proposed preconditioning
+    methods for LoRA as a special case. OPLoRA supports momentum by maintaining a
+    low-rank estimate using the same subroutine (LoRSum) for computing the step, with
+    a memory budget of 3 times the number of LoRA parameters (i.e., same as Adam).
+    We also propose an experimental scaled variant that uses the K-FAC metric, which
+    could be of interest. Across a linear task, MNIST, CIFAR-100, and RoBERTa-base
+    (MNLI), OPLoRA consistently approaches SVDLoRA's performance using significantly
+    less memory.
   authors: "Abdulla Jasem Almansoori, Maria Ivanova, Andrey Veprikov, Aleksandr Beznosikov,\
     \ Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D</strong>"
   journal: 'OPT 2025: Optimization for Machine Learning @ NeurIPS 2025'
-  keywords: []
+  keywords:
+  - low-rank adaptation
+  - lora optimization
+  - alternating least squares
+  - memory-efficient optimizer
+  - truncated svd approximation
+  - preconditioned lora
+  - low-rank momentum
+  - lorsum subroutine
+  - k-fac metric
+  - roberta fine-tuning
   link: https://arxiv.org/abs/2509.19977
   pdf: https://arxiv.org/pdf/2509.19977
-  tags: []
+  tags:
+  - LLM
+  - Optimization
+  - Low-Rank Methods
+  - Efficient Fine-Tuning
+  - Second-Order Methods
   title: 'Faster Than SVD, Smarter Than SGD: The OPLoRA Alternating Update'
   type: cpaper
   year: '2025'
@@ -1313,46 +1555,83 @@
     Microgrids
   type: patent
   year: '2025'
-- abstract: "\nA federated learning framework including household agents configured\
-    \ to continuously learn model parameters for managing charging periods and discharging\
-    \ periods of household batteries, and microgrid agents to maximize use of local\
-    \ energy based on a pricing policy, including accessing power from other microgrids\
-    \ when there is insufficient local energy to cover local demand. and selling surplus\
-    \ energy to the other microgrids when power generation by the microgrid surpasses\
-    \ the local demand. Each household machine learning agent is configured to control\
-    \ household energy demand from and supply to a microgrid which they are connected\
-    \ in order to minimize household energy cost while adapting to changes in the\
-    \ energy price that is determined based on the pricing policy of the microgrid\
-    \ agent that encourages reduction of carbon emission. A federated learning engine\
-    \ combines the model parameters from the household machine learning agents to\
-    \ update a global household machine learning agent.\n\t\t"
+- abstract: A federated learning framework including household agents configured to
+    continuously learn model parameters for managing charging periods and discharging
+    periods of household batteries, and microgrid agents to maximize use of local
+    energy based on a pricing policy, including accessing power from other microgrids
+    when there is insufficient local energy to cover local demand. and selling surplus
+    energy to the other microgrids when power generation by the microgrid surpasses
+    the local demand. Each household machine learning agent is configured to control
+    household energy demand from and supply to a microgrid which they are connected
+    in order to minimize household energy cost while adapting to changes in the energy
+    price that is determined based on the pricing policy of the microgrid agent that
+    encourages reduction of carbon emission. A federated learning engine combines
+    the model parameters from the household machine learning agents to update a global
+    household machine learning agent.
   authors: "<strong>Martin Tak\xE1\u010D</strong>, Nicolas Mauricio Cuadrado, Roberto\
     \ Alejandro Gutierrez Guillen, Samuel Horv\xE1th"
   journal: US 2025/0272723 A1
-  keywords: []
+  keywords:
+  - federated reinforcement learning
+  - household battery scheduling
+  - microgrid energy trading
+  - dynamic pricing policy
+  - local energy utilization
+  - carbon emission reduction
+  - household energy cost minimization
+  - charging and discharging control
+  - global household agent aggregation
   link: https://patents.google.com/patent/US20250272723A1/en
-  tags: []
+  tags:
+  - Federated Learning
+  - Reinforcement Learning
+  - Energy Systems
+  - Optimization
+  - Distributed Optimization
   title: Federated Reinforcement Learning-based System And Method For Cooperative
     Energy Optimization
   type: patent
   year: '2025'
-- abstract: "\nFiling date: 06 Feb 2025. Assignee (Owner): Pending.\n\t\t"
+- abstract: 'Filing date: 06 Feb 2025. Assignee (Owner): Pending.'
   authors: "Zangir Iklassov, Farkhad Akimov, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Provisional - USPTO Application 63/754,814 (Filed 06 Feb 2025)
-  keywords: []
+  keywords:
+  - automated machine learning pipeline
+  - large language model agents
+  - data scientist workflow
+  - ml pipeline automation
+  - agent-based workflow automation
+  - data science automation
+  - llm-assisted data science
   ltype: Provisional
-  tags: []
+  tags:
+  - LLM
+  - Automated Machine Learning
+  - Data Science
+  - Workflow Automation
   title: Automated Machine Learning Pipeline Utilizing Large Language Model Agents
     for Data Scientist Workflow
   type: patent
   year: '2025'
-- abstract: "\nFiling date: Mar 24, 2025. Assignee (Owner): MBZUAI.\n\t\t"
+- abstract: 'Filing date: Mar 24, 2025. Assignee (Owner): MBZUAI.'
   authors: "Artem Agafonov, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Provisional - USPTO Application 63/776,665 (Filed Mar 24, 2025, MBZUAI
     Ref. 2025-007)
-  keywords: []
+  keywords:
+  - conversational shopping assistant
+  - personalized e-commerce
+  - ai-driven retail support
+  - conversational commerce
+  - product discovery
+  - shopping recommendations
+  - customer interaction automation
+  - online retail assistance
   ltype: Provisional
-  tags: []
+  tags:
+  - Conversational AI
+  - E-Commerce
+  - Personalization
+  - Recommender Systems
   title: AI Driven Conversational Shopping Assistant for Seamless and Personalized
     E-Commerce Experiences
   type: patent
@@ -1439,7 +1718,7 @@
   title: The AI Data Scientist
   type: tpaper
   year: '2025'
-- abstract: "\nThis paper presents a novel adaptation of the Stochastic Gradient Descent\
+- abstract: "This paper presents a novel adaptation of the Stochastic Gradient Descent\
     \ (SGD), termed AdaBatchGrad. This modification seamlessly integrates an adaptive\
     \ step size with an adjustable batch size. An increase in batch size and a decrease\
     \ in step size are well-known techniques to tighten the area of convergence of\
@@ -1457,14 +1736,29 @@
     \ substantiate the efficacy of our method, we experimentally show, how the introduction\
     \ of adaptive step size and adaptive batch size gradually improves the performance\
     \ of regular SGD. The results imply that AdaBatchGrad surpasses alternative methods,\
-    \ especially when applied to inexact tests.\n\t\t"
+    \ especially when applied to inexact tests."
   authors: "Petr Ostroukhov, Aigerim Zhumabayeva, Chulu Xiang, Alexander Gasnikov,\
     \ <strong>Martin Tak\xE1\u010D</strong>, Dmitry Kamzolov"
   journal: IMA Journal of Numerical Analysis
-  keywords: []
+  keywords:
+  - adaptive batch size
+  - adaptive step size
+  - stochastic gradient descent
+  - mini-batch gradient approximation
+  - exact batch tests
+  - inexact batch tests
+  - convergence rates
+  - bounded variance
+  - stochastic approximation
+  - risk minimization
   link: https://arxiv.org/abs/2402.05264
   pdf: https://arxiv.org/pdf/2402.05264.pdf
-  tags: []
+  tags:
+  - Optimization
+  - Stochastic Optimization
+  - First-Order Methods
+  - Machine Learning
+  - Robustness
   title: 'AdaBatchGrad: Combining Adaptive Batch Size and Adaptive Step Size'
   type: jpaper
   year: '2025'
@@ -1493,7 +1787,7 @@
     RL
   type: cpaper
   year: '2025'
-- abstract: "\nPredicting in vivo transcription factor (TF) binding remains challenging\
+- abstract: "Predicting in vivo transcription factor (TF) binding remains challenging\
     \ due to interactions with cofactors and dynamic chromatin remodeling that modulate\
     \ site accessibility. In this regard, accurate characterization of TF binding\
     \ loci is essential for predictive performance. We introduce EpiBinder, a multimodal\
@@ -1503,14 +1797,28 @@
     \ Trained on human cell-lines, EpiBinder demonstrates that integrating epigenetic\
     \ information in a cell-type\u2013specific manner reduces the epistatic uncertainty\
     \ that current sequence-only DNA models suffer. Our model achieves up to a 15-point\
-    \ gain in area under the precision\u2013recall curve compared the state-of-the-art.\
-    \ \n\t\t"
+    \ gain in area under the precision\u2013recall curve compared the state-of-the-art."
   authors: "Ruben Solozabal, Albert Baichorov, Tamir Avioz, Le Song, <strong>Martin\
     \ Tak\xE1\u010D</strong>, Ariel Afek"
   journal: ICML 2025 Generative AI and Biology (GenBio) Workshop
-  keywords: []
+  keywords:
+  - transcription factor binding
+  - in vivo tf binding prediction
+  - base-resolution dna modeling
+  - dna sequence models
+  - single-nucleotide epigenetic information
+  - cytosine methylation levels
+  - whole-genome bisulfite sequencing
+  - dnase i hypersensitivity
+  - cell-type-specific modeling
+  - chromatin accessibility
   link: https://genbio-workshop.github.io/2025/
-  tags: []
+  tags:
+  - Biology
+  - Deep Learning
+  - Multimodal Learning
+  - Genomics
+  - Epigenomics
   title: 'EpiBinder: a multimodal deep learning model at base-resolution to analyze
     in vivo Transcription Factor-DNA Binding'
   type: cpaper
@@ -1739,82 +2047,132 @@
     Federated Optimization
   type: cpaper
   year: '2025'
-- abstract: "\nThere are various measures of predictive uncertainty in the literature,\
-    \ but their relationships to each other remain unclear. This paper uses a decomposition\
-    \ of statistical pointwise risk into components associated with different sources\
-    \ of predictive uncertainty: namely, aleatoric uncertainty (inherent data variability)\
-    \ and epistemic uncertainty (model-related uncertainty). Together with Bayesian\
-    \ methods applied as approximations, we build a framework that allows one to generate\
-    \ different predictive uncertainty measures.\n\nWe validate measures, derived\
-    \ from our framework on image datasets by evaluating its performance in detecting\
-    \ out-of-distribution and misclassified instances using the AUROC metric. The\
-    \ experimental results confirm that the measures derived from our framework are\
-    \ useful for the considered downstream tasks.\n\t\t"
+- abstract: 'There are various measures of predictive uncertainty in the literature,
+    but their relationships to each other remain unclear. This paper uses a decomposition
+    of statistical pointwise risk into components associated with different sources
+    of predictive uncertainty: namely, aleatoric uncertainty (inherent data variability)
+    and epistemic uncertainty (model-related uncertainty). Together with Bayesian
+    methods applied as approximations, we build a framework that allows one to generate
+    different predictive uncertainty measures.
+
+
+    We validate measures, derived from our framework on image datasets by evaluating
+    its performance in detecting out-of-distribution and misclassified instances using
+    the AUROC metric. The experimental results confirm that the measures derived from
+    our framework are useful for the considered downstream tasks.'
   authors: "Nikita Kotelevskii, Vladimir Kondratyev, <strong>Martin Tak\xE1\u010D\
     </strong>, Eric Moulines, Maxim Panov"
   journal: ICLR 2025
-  keywords: []
+  keywords:
+  - predictive uncertainty quantification
+  - bayesian estimation
+  - pointwise risk decomposition
+  - aleatoric uncertainty
+  - epistemic uncertainty
+  - proper scoring rules
+  - out-of-distribution detection
+  - misclassification detection
+  - mutual information
+  - expected pairwise kullback-leibler divergence
+  - auroc evaluation
+  - image classification
   pdf: https://openreview.net/pdf?id=cWfpt2t37q
-  tags: []
+  tags:
+  - Uncertainty Quantification
+  - Bayesian Methods
+  - Statistical Learning
+  - Robustness
+  - Computer Vision
   title: 'From Risk to Uncertainty: Generating Predictive Uncertainty Measures via
     Bayesian Estimation'
   type: cpaper
   year: '2025'
-- abstract: "\nStatistical data heterogeneity is a significant barrier to convergence\
-    \ in federated learning (FL). While prior work has advanced heterogeneous FL through\
-    \ better optimization objectives, these methods fall short when there is extreme\
-    \ data heterogeneity among collaborating participants. We hypothesize that convergence\
-    \ under extreme data heterogeneity is primarily hindered due to the aggregation\
-    \ of conflicting updates from the participants in the initial collaboration rounds.\
-    \ To overcome this problem, we propose a warmup phase where each participant learns\
-    \ a personalized mask and updates only a subnetwork of the full model. This personalized\
-    \ warmup allows the participants to focus initially on learning specific subnetworks\
-    \ tailored to the heterogeneity of their data. After the warmup phase, the participants\
-    \ revert to standard federated optimization, where all parameters are communicated.\
-    \ We empirically demonstrate that the proposed personalized warmup via subnetworks\
-    \ (FedPeWS) approach improves accuracy and convergence speed over standard federated\
-    \ optimization methods.\n\t\t"
+- abstract: Statistical data heterogeneity is a significant barrier to convergence
+    in federated learning (FL). While prior work has advanced heterogeneous FL through
+    better optimization objectives, these methods fall short when there is extreme
+    data heterogeneity among collaborating participants. We hypothesize that convergence
+    under extreme data heterogeneity is primarily hindered due to the aggregation
+    of conflicting updates from the participants in the initial collaboration rounds.
+    To overcome this problem, we propose a warmup phase where each participant learns
+    a personalized mask and updates only a subnetwork of the full model. This personalized
+    warmup allows the participants to focus initially on learning specific subnetworks
+    tailored to the heterogeneity of their data. After the warmup phase, the participants
+    revert to standard federated optimization, where all parameters are communicated.
+    We empirically demonstrate that the proposed personalized warmup via subnetworks
+    (FedPeWS) approach improves accuracy and convergence speed over standard federated
+    optimization methods.
   authors: "Nurbek Tastan, Samuel Horvath, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Karthik Nandakumar"
   journal: Conference on Parsimony and Learning (CPAL)
-  keywords: []
+  keywords:
+  - heterogeneous federated learning
+  - personalized warmup
+  - subnetwork training
+  - personalized masks
+  - extreme data heterogeneity
+  - conflicting client updates
+  - federated optimization
+  - neuron-level masking
+  - mask diversity loss
+  - non-iid data
   link: https://arxiv.org/abs/2410.03042
   pdf: https://arxiv.org/pdf/2410.03042
-  tags: []
+  tags:
+  - Federated Learning
+  - Optimization
+  - Distributed Optimization
+  - Personalized Learning
+  - Sparse Learning
   title: 'FedPeWS: Personalized Warmup via Subnetworks for Enhanced Heterogeneous
     Federated Learning'
   type: cpaper
   year: '2025'
-- abstract: "\nNon-iid data is prevalent in real-world federated learning problems.\
-    \ Data heterogeneity can come in different types in terms of distribution shifts.\
-    \ In this work, we are interested in the heterogeneity that comes from concept\
-    \ shifts, i.e., shifts in the prediction across clients. In particular, we consider\
-    \ multi-task learning, where we want the model to adapt to the task of the client.\
-    \ We propose a parameter-efficient framework to tackle this issue, where each\
-    \ client learns to mix between parameter-efficient adaptors according to its task.\
-    \ We use Low-Rank Adaptors (LoRAs) as the backbone and extend its concept to other\
-    \ types of layers. We call our framework Federated Low-Rank Adaptive Learning\
-    \ (FLoRAL). This framework is not an algorithm but rather a model parameterization\
-    \ for a multi-task learning objective, so it can work on top of any algorithm\
-    \ that optimizes this objective, which includes many algorithms from the literature.\
-    \ FLoRAL is memory-efficient, and clients are personalized with small states (e.g.,\
-    \ one number per adaptor) as the adaptors themselves are federated. Hence, personalization\
-    \ is--in this sense--federated as well. Even though clients can personalize more\
-    \ freely by training an adaptor locally, we show that collaborative and efficient\
-    \ training of adaptors is possible and performs better. We also show that FLoRAL\
-    \ can outperform an ensemble of full models with optimal cluster assignment, which\
-    \ demonstrates the benefits of federated personalization and the robustness of\
-    \ FLoRAL to overfitting. We show promising experimental results on synthetic datasets,\
-    \ real-world federated multi-task problems such as MNIST, CIFAR-10, and CIFAR-100.\
-    \ We also provide a theoretical analysis of local SGD on a relaxed objective and\
-    \ discuss the effects of aggregation mismatch on convergence.\n\t\t"
+- abstract: Non-iid data is prevalent in real-world federated learning problems. Data
+    heterogeneity can come in different types in terms of distribution shifts. In
+    this work, we are interested in the heterogeneity that comes from concept shifts,
+    i.e., shifts in the prediction across clients. In particular, we consider multi-task
+    learning, where we want the model to adapt to the task of the client. We propose
+    a parameter-efficient framework to tackle this issue, where each client learns
+    to mix between parameter-efficient adaptors according to its task. We use Low-Rank
+    Adaptors (LoRAs) as the backbone and extend its concept to other types of layers.
+    We call our framework Federated Low-Rank Adaptive Learning (FLoRAL). This framework
+    is not an algorithm but rather a model parameterization for a multi-task learning
+    objective, so it can work on top of any algorithm that optimizes this objective,
+    which includes many algorithms from the literature. FLoRAL is memory-efficient,
+    and clients are personalized with small states (e.g., one number per adaptor)
+    as the adaptors themselves are federated. Hence, personalization is--in this sense--federated
+    as well. Even though clients can personalize more freely by training an adaptor
+    locally, we show that collaborative and efficient training of adaptors is possible
+    and performs better. We also show that FLoRAL can outperform an ensemble of full
+    models with optimal cluster assignment, which demonstrates the benefits of federated
+    personalization and the robustness of FLoRAL to overfitting. We show promising
+    experimental results on synthetic datasets, real-world federated multi-task problems
+    such as MNIST, CIFAR-10, and CIFAR-100. We also provide a theoretical analysis
+    of local SGD on a relaxed objective and discuss the effects of aggregation mismatch
+    on convergence.
   authors: "Abdulla Jasem Almansoori, Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D\
     </strong>"
   journal: Conference on Parsimony and Learning (CPAL)
-  keywords: []
+  keywords:
+  - federated low-rank adaptive learning
+  - mixtures of adaptors
+  - low-rank adaptors
+  - personalized federated learning
+  - concept shift
+  - non-iid clients
+  - client-specific mixtures
+  - multi-task learning objective
+  - local sgd convergence
+  - aggregation mismatch
+  - memory-efficient personalization
   link: https://arxiv.org/abs/2410.03497
   pdf: https://arxiv.org/pdf/2410.03497
-  tags: []
+  tags:
+  - Federated Learning
+  - Personalization
+  - Multi-Task Learning
+  - Optimization
+  - Parameter-Efficient Learning
   title: Collaborative and Efficient Personalization with Mixtures of Adaptors
   type: cpaper
   year: '2025'
@@ -1862,10 +2220,25 @@
   authors: "Artem Agafonov, Dmitry Kamzolov, Rachael Tappenden, Alexander Gasnikov,\
     \ <strong>Martin Tak\xE1\u010D</strong>"
   journal: Optimization Methods and Software (GOMS)
-  keywords: []
+  keywords:
+  - federated learning
+  - second-order framework
+  - communication compression
+  - hessian sketching
+  - l-sr1 updates
+  - hessian approximation
+  - hessian-vector products
+  - strongly convex convergence
+  - nonconvex optimization
+  - local linear convergence
+  - fednl
   link: https://arxiv.org/abs/2206.02009
   pdf: https://arxiv.org/pdf/2206.02009.pdf
-  tags: []
+  tags:
+  - Federated Learning
+  - Optimization
+  - Second-Order Methods
+  - Distributed Optimization
   title: 'FLECS: A Federated Learning Second-Order Framework via Compression and Sketching'
   type: jpaper
   year: '2025'
