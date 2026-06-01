@@ -1,3 +1,31 @@
+- abstract: Federated Distillation enables distributed learning for clients with heterogeneous
+    model architectures. In this paradigm, the server and clients exchange predictions
+    on a shared unlabeled public dataset, rather than model parameters or gradients.
+    However, under data heterogeneity (e.g., \emph{class mismatch}), clients produce
+    unreliable predictions for instances from unfamiliar classes. An equally weighted
+    combination of such predictions corrupts the teacher signal used for distillation.
+    In this paper, we theoretically analyze Federated Distillation and show that aggregating
+    client predictions on a shared public dataset converges to a neighborhood of the
+    optimum, with the neighborhood size controlled by the aggregation quality. We
+    propose two uncertainty-aware aggregation methods, \textbf{UWA} and \textbf{sUWA},
+    that use density-based estimates to down-weight unreliable client predictions.
+    Experiments on image and text classification datasets confirm that our methods
+    are most effective under high data heterogeneity, while matching standard averaging
+    when heterogeneity is low.
+  authors: "Viktor Kovalchuk, Denis Son, Arman Bolatov, Mohsen Guizani, Samuel Horv\xE1\
+    th, Maxim Panov, <strong>Martin Tak\xE1\u010D</strong>, Eduard Gorbunov, Nikita\
+    \ Kotelevskii"
+  journal: UAI 2026
+  keywords:
+  - '['
+  - ']'
+  ltype: UAI 2026 Poster
+  tags:
+  - '['
+  - ']'
+  title: Who to Trust? Aggregating Client Predictions in Federated Distillation
+  type: cpaper
+  year: '2026'
 - abstract: 'Reinforcement learning substantially improves pretrained language models,
     but it remains understudied why critic-free methods such as PPO and GRPO work
     as well as they do, and when they should provide the largest gains. We develop
@@ -847,12 +875,13 @@
   journal: IEEE Access; the shorter version was accepted in AI4Science Workshop @
     NeurIPS 2025
   keywords:
-  - molecular representation learning
+  - molecular representation
+  - chemical language models
+  - graph neural networks
   - smiles limitations
-  - substructure decomposition
-  - descriptor-based fragments
-  - roberta chemical language model
-  - bimodal graph language architecture
+  - substructure descriptors
+  - bimodal architecture
+  - roberta
   - graph isomorphism networks
   - graph convolutional networks
   - graphormer
@@ -860,10 +889,10 @@
   link: https://ieeexplore.ieee.org/document/11456953
   pdf: https://arxiv.org/pdf/2502.17986
   tags:
-  - LLM
+  - Materials Science
   - Graph Learning
-  - Chemistry
-  - Molecular Modeling
+  - LLM
+  - Biology
   title: 'Thinking like a CHEMIST: Combined Heterogeneous Embedding Model Integrating
     Structure and Tokens'
   type: jpaper
