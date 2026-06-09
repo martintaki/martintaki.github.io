@@ -1,3 +1,126 @@
+- abstract: We study adaptive learning rate scheduling for norm-constrained optimizers
+    (e.g., Muon and Lion). We introduce a generalized smoothness assumption under
+    which local curvature decreases with the suboptimality gap and empirically verify
+    that this behavior holds along optimization trajectories. Under this assumption,
+    we establish convergence guarantees under an appropriate choice of learning rate,
+    for which warm-up followed by decay arises naturally from the proof rather than
+    being imposed heuristically. Building on this theory, we develop a practical learning
+    rate scheduler that relies only on standard hyperparameters and adapts the warm-up
+    duration automatically at the beginning of training. We evaluate this method on
+    large language model pretraining with LLaMA architectures and show that our adaptive
+    warm-up selection consistently outperforms or at least matches the best manually
+    tuned warm-up schedules across all considered setups, without additional hyperparameter
+    search. Our source code is available at https://github.com/brain-lab-research/llm-baselines/tree/warmup
+  authors: "Artem Riabinin, Andrey Veprikov, Arman Bolatov, <strong>Martin Tak\xE1\
+    \u010D</strong>, Aleksandr Beznosikov"
+  journal: arXiv
+  keywords:
+  - adaptive learning rate scheduling
+  - norm-constrained optimizers
+  - warm-up duration selection
+  - generalized smoothness
+  - local curvature
+  - suboptimality gap
+  - convergence guarantees
+  - lmo-based optimization
+  - muon optimizer
+  - lion optimizer
+  - llama pretraining
+  link: https://arxiv.org/abs/2602.05813
+  ltype: arXiv
+  pdf: https://arxiv.org/pdf/2602.05813v2
+  tags:
+  - LLM
+  - Optimization
+  - Deep Learning
+  - Optimization Theory
+  title: Where Does Warm-Up Come From? Adaptive Scheduling for Norm-Constrained Optimizers
+  type: tpaper
+  year: '2026'
+- abstract: 'In large-scale optimization, the cheapness and effectiveness of update
+    steps are the most crucial factors for a successful optimizer. Sign-based optimizers
+    like Lion or Signum produce cheap per-step updates, whereas Muon''s spectral matrix-sign
+    update gives a much stronger direction at a substantially higher per-step cost.
+    In this work, we propose LionMuon, which retains the effectiveness of Muon steps
+    while considerably cutting the averaged iteration cost, similar to sign-based
+    methods. It alternates between Lion''s and Muon''s updates on a fixed period P,
+    sharing a single dual-EMA momentum buffer between them. The optimizer state memory
+    therefore matches Lion and is exactly half of AdamW''s. A simpler single-EMA variant,
+    SignMuon, by itself already outperforms pure Muon. At P = 2, LionMuon Pareto-dominates
+    Muon, Lion, Signum, and AdamW on every dataset and architecture we tested at 124M
+    model size, reaching lower validation loss at lower compute, and the same advantage
+    persists at 355M and 720M scale. On the theory side, we prove sharp complexity
+    bounds under heavy-tailed noise which are governed by period-averaged smoothness
+    and noise that interpolate between Muon''s and Lion''s constants. These bounds
+    predict the compute-optimal period and the conditions under which LionMuon outruns
+    Muon and Lion. Code: https://github.com/brain-lab-research/lion-muon'
+  authors: "Arman Bolatov, Artem Riabinin, Nikita Kornilov, Andrey Veprikov, Samuel\
+    \ Horv\xE1th, <strong>Martin Tak\xE1\u010D</strong>, Aleksandr Beznosikov"
+  journal: arXiv
+  keywords:
+  - lionmuon optimizer
+  - alternating sign descent
+  - spectral matrix-sign updates
+  - muon optimizer
+  - lion optimizer
+  - dual-ema momentum
+  - sign-based optimization
+  - large language model training
+  - heavy-tailed noise complexity
+  - period-averaged smoothness
+  - compute-optimal update period
+  - optimizer state memory
+  link: https://arxiv.org/abs/2605.19811
+  ltype: arXiv
+  pdf: https://arxiv.org/pdf/2605.19811v1
+  tags:
+  - LLM
+  - Optimization
+  - Deep Learning
+  - Stochastic Optimization
+  - Training Efficiency
+  title: 'LionMuon: Alternating Spectral and Sign Descent for Efficient Training'
+  type: tpaper
+  year: '2026'
+- abstract: Offline goal-conditioned reinforcement learning requires both long-horizon
+    reachability estimates and local action comparisons. Dual goal representations
+    provide value fields that capture global goal reachability, but they do not directly
+    specify which action should be preferred at a given state. We propose Dual Advantage
+    Fields, a policy-extraction method that turns a bilinear dual value model into
+    a local advantage signal. Under bilinear dual parameterization, the goal embedding
+    is the gradient of the value field with respect to the state representation. DAF
+    learns an action-effect model that predicts the discounted feature displacement
+    induced by an action and scores actions by the alignment between this displacement
+    and the goal direction. In the realizable case, this score equals the goal-conditioned
+    Bellman advantage, yielding a standard local policy-improvement guarantee. On
+    OGBench locomotion, manipulation, and puzzle tasks, DAF improves aggregate RLiable
+    metrics and performs strongly in settings where locally correct actions differ
+    from direct movement toward the final goal.
+  authors: "Alexey Zemtsov, Maxim Bobrin, Alexander Nikulin, Dmitry V. Dylov, Fakhri\
+    \ Karray, Vladislav Kurenkov, <strong>Martin Tak\xE1\u010D</strong>, Arip Asadulaev"
+  journal: arXiv
+  keywords:
+  - offline goal-conditioned reinforcement learning
+  - dual advantage fields
+  - dual goal representations
+  - policy extraction
+  - bilinear value model
+  - local advantage signal
+  - action-effect model
+  - discounted feature displacement
+  - bellman advantage
+  - ogbench tasks
+  link: https://arxiv.org/abs/2606.04188
+  ltype: arXiv
+  pdf: https://arxiv.org/pdf/2606.04188v1
+  tags:
+  - Reinforcement Learning
+  - Optimization
+  - Offline Learning
+  - Representation Learning
+  title: Dual Advantage Fields
+  type: tpaper
+  year: '2026'
 - abstract: Federated Distillation enables distributed learning for clients with heterogeneous
     model architectures. In this paradigm, the server and clients exchange predictions
     on a shared unlabeled public dataset, rather than model parameters or gradients.
@@ -250,7 +373,7 @@
   authors: "Yuhan Liu, Juntian Zhang, Yichen Wu, <strong>Martin Tak\xE1\u010D</strong>,\
     \ Salem Lahlou, Xiuying Chen, Nils Lukas"
   journal: 'ICML 2026 Workshop: Statistical Frameworks for Uncertainty in Agentic
-    Systems'
+    Systems (AgenticUQ)'
   keywords:
   - multi-agent debate
   - asymmetric cognitive potential energy
@@ -736,6 +859,7 @@
   - probabilistic deception
   - hidden information reasoning
   - cooperation collapse
+  pdf: https://arxiv.org/pdf/2606.07790
   tags:
   - LLM
   - Multi-Agent Systems
@@ -778,6 +902,7 @@
   - unified decoders
   - mmau benchmark
   - air-bench
+  pdf: https://arxiv.org/pdf/2604.15383
   tags:
   - LLM
   - Multimodal Learning
@@ -848,51 +973,27 @@
     \ Tak\xE1\u010D</strong>, Aleksandr Beznosikov"
   journal: IEEE Access; the shorter version was accepted in AI4Science Workshop @
     NeurIPS 2025
-  keywords: []
-  link: https://ieeexplore.ieee.org/document/11456953
-  pdf: https://arxiv.org/pdf/2502.17986
-  tags: []
-  title: 'Thinking like a CHEMIST: Combined Heterogeneous Embedding Model Integrating
-    Structure and Tokens'
-  type: jpaper
-  year: '2026'
-- abstract: Representing molecular structures effectively in chemistry remains a challenging
-    task. Language models and graph-based models are extensively utilized within this
-    domain, consistently achieving state-of-the-art results across an array of tasks.
-    However, the prevailing practice of representing chemical compounds in the SMILES
-    format - used by most data sets and many language models - presents notable limitations
-    as a training data format. In this study, we present a novel approach that decomposes
-    molecules into substructures and computes descriptor-based representations for
-    these fragments, providing more detailed and chemically relevant input for model
-    training. We use this substructure and descriptor data as input for language model
-    and also propose a bimodal architecture that integrates this language model with
-    graph-based models. As LM we use RoBERTa, Graph Isomorphism Networks (GIN), Graph
-    Convolutional Networks (GCN) and Graphormer as graph ones. Our framework shows
-    notable improvements over traditional methods in various tasks such as Quantitative
-    Structure-Activity Relationship (QSAR) prediction.
-  authors: "Nikolai Rekut, Alexey Orlov, Klea Ziu, Elizaveta Starykh, <strong>Martin\
-    \ Tak\xE1\u010D</strong>, Aleksandr Beznosikov"
-  journal: IEEE Access; the shorter version was accepted in AI4Science Workshop @
-    NeurIPS 2025
   keywords:
-  - molecular representation
-  - chemical language models
-  - graph neural networks
-  - smiles limitations
+  - molecular representation learning
   - substructure descriptors
+  - descriptor-based representations
+  - smiles limitations
+  - roberta language model
+  - graph neural networks
   - bimodal architecture
-  - roberta
+  - quantitative structure-activity relationship prediction
   - graph isomorphism networks
   - graph convolutional networks
   - graphormer
-  - qsar prediction
+  - self-supervised pre-training
   link: https://ieeexplore.ieee.org/document/11456953
   pdf: https://arxiv.org/pdf/2502.17986
   tags:
-  - Materials Science
-  - Graph Learning
   - LLM
-  - Biology
+  - Graph Learning
+  - Chemistry
+  - Representation Learning
+  - Machine Learning
   title: 'Thinking like a CHEMIST: Combined Heterogeneous Embedding Model Integrating
     Structure and Tokens'
   type: jpaper
@@ -1177,6 +1278,51 @@
   title: Accelerated Adaptive Cubic Regularized Quasi-Newton Methods
   type: jpaper
   year: '2026'
+- abstract: "We study neural architectures in which each hidden layer is defined by\
+    \ the stationary state of a dissipative Schr\xF6dinger-type dynamics on a learned\
+    \ latent graph. On stable branches, the local stationary problem defines a differentiable\
+    \ implicit graph layer. To learn the graph itself, we optimize over the stratified\
+    \ moduli space of weighted graphs and equip each stratum with a non-degenerate\
+    \ K\xE4hler-Hessian metric that keeps natural-gradient descent and face crossing\
+    \ well posed. We then show that a multilayer stationary network is equivalent\
+    \ to an exact global stationary problem on a supra-graph, and that it admits a\
+    \ penalized global relaxation whose stationary states converge to the exact one\
+    \ as the penalty parameter tends to infinity. Reverse-mode differentiation is\
+    \ recovered as the adjoint of the exact global system, and the penalized adjoint\
+    \ converges to it in the same limit. Finally, under finite-dimensional strong-monotonicity\
+    \ and admissible-lift assumptions, the corresponding represented hypothesis classes\
+    \ coincide among resolvent feed-forward networks, graph-stationary networks, supra-graph\
+    \ stationary systems, and sheaf-based architectures with unitary connection. The\
+    \ resulting structural identifications yield complexity bounds controlled by sparse\
+    \ graph or supra-graph geometry rather than dense ambient connectivity."
+  authors: "Dmitry Pasechnyuk-Vilensky, <strong>Martin Tak\xE1\u010D</strong>"
+  journal: arXiv
+  keywords:
+  - latent graph geometry
+  - schrodinger-type dynamics
+  - fixed-point activation
+  - implicit graph layers
+  - stratified graph moduli space
+  - kahler-hessian metric
+  - natural-gradient descent
+  - supra-graph stationary systems
+  - penalized global relaxation
+  - reverse-mode adjoint
+  - sheaf-based architectures
+  - sparse graph complexity
+  link: https://arxiv.org/abs/2507.20088
+  ltype: arXiv
+  pdf: https://arxiv.org/pdf/2507.20088v3
+  tags:
+  - Graph Learning
+  - Optimization
+  - Deep Learning
+  - Implicit Models
+  - Geometric Deep Learning
+  title: "Learning Latent Graph Geometry via Fixed-Point Schr\xF6dinger-Type Activation:\
+    \ A Theoretical Study"
+  type: tpaper
+  year: '2025'
 - abstract: "Cytosine methylation is a key epigenetic modification that regulates\
     \ transcription factor (TF) binding and gene expression. While most current understanding\
     \ of methylation-sensitive TF binding derives from studies focused exclusively\
@@ -3245,22 +3391,20 @@
   keywords:
   - magbert
   - magmatbert
-  - magnetic materials corpus
+  - magnetic materials
   - bert pretraining
   - chemical named entity recognition
-  - question answering pipeline
+  - question answering
   - curie temperature extraction
-  - materials literature mining
-  - magnetics dataset
-  - random forest validation
+  - materials text mining
+  - magnetics corpus
+  - random forest evaluation
   link: https://pubs.acs.org/doi/full/10.1021/acs.jpcc.4c01974
   pdf: https://pubs.acs.org/doi/epdf/10.1021/acs.jpcc.4c01974
   tags:
   - LLM
   - Materials Science
-  - Natural Language Processing
-  - Information Extraction
-  - Question Answering
+  - Biology
   title: 'MagBERT: Magnetics Knowledge Aware Language Model Coupled with a Question
     Answering Pipeline for Curie Temperature Extraction Task'
   type: jpaper
@@ -4604,24 +4748,23 @@
     \u010D</strong>"
   journal: 'Journal of Physics: Energy'
   keywords:
-  - deep neural network
   - oxidative coupling of methane
-  - high-throughput catalysis data
-  - reaction rate modeling
-  - plug flow reactor
-  - catalyst screening
-  - sequential catalyst beds
-  - c2 product yield
+  - deep neural network reaction rate model
+  - high throughput catalysis data
+  - plug flow reactor design equation
   - methane conversion
-  - data-driven reaction model
+  - c2 yield and selectivity
+  - catalyst bed composition profiles
+  - sequential catalyst beds
+  - catalyst screening
+  - mn-na2wo4/sio2 reference catalyst
   link: https://iopscience.iop.org/article/10.1088/2515-7655/aca797
   pdf: https://iopscience.iop.org/article/10.1088/2515-7655/aca797/pdf
   tags:
   - Machine Learning
-  - Materials Science
   - Energy Systems
+  - Materials Science
   - Catalysis
-  - Chemical Engineering
   title: A deep neural network for oxidative coupling of methane trained on high throughput
     experimental data
   type: jpaper
@@ -6028,19 +6171,20 @@
   - strain estimation
   - acceleration sensor data
   - fatigue life assessment
-  - structural vibrations
+  - structural sensing
   - long short-term memory networks
-  - multistage neural networks
+  - multistage neural network
   - full-field strain assessment
+  - vibration response analysis
   - horizontally curved girder
-  - loading scenarios
+  - civil structures
   link: https://onlinelibrary.wiley.com/doi/full/10.1111/mice.12565
   ltype: Computer-Aided Civil and Infrastructure Engineering
   tags:
+  - Computer Vision
+  - Civil Infrastructure
   - Deep Learning
   - Structural Health Monitoring
-  - Civil Infrastructure
-  - Time Series
   - Fatigue Assessment
   title: 'Structural sensing with deep learning: Strain estimation from acceleration
     data for fatigue assessment'
