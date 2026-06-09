@@ -1,40 +1,3 @@
-- abstract: Modern machine learning models demonstrate substantial quality improvements
-    across a wide range of tasks. However, their deployment is accompanied by a significant
-    increase in computational complexity. Distributed and federated learning settings
-    address this issue by offloading training to multiple devices, yet their structure
-    can be vulnerable to malicious behaviour. In this work we study a classical threat
-    class, Byzantine attacks. Under such attacks, some participants in distributed
-    computation inject compromised updates to disrupt training. Existing defenses
-    typically require a majority of honest devices, which limits applicability in
-    realistic scenarios. The goal of this study is to develop an approach that does
-    not rely on the assumption that honest devices dominate. We propose an algorithm
-    based on weighted aggregation of devices. A special function is introduced, computed
-    on the server, which evaluates the contribution of different participants to the
-    final model training.
-  authors: "Gleb Molodtsov, Daniil Medyakov, Sergej Skorik, Nikolas Khachaturov, Shagane\
-    \ Tigranyan, Vladimir Aletov, Aram Avetisyan, <strong>Martin Tak\xE1\u010D</strong>,\
-    \ Aleksandr Beznosikov"
-  journal: Steklov Mathematical Institute
-  keywords:
-  - byzantine attacks
-  - trust-based weighting
-  - weighted aggregation
-  - distributed machine learning
-  - federated learning
-  - malicious workers
-  - trial loss function
-  - honest clients
-  - stochastic gradients
-  - dynamic byzantine workers
-  pdf: https://irep.mbzuai.ac.ae/server/api/core/bitstreams/050dd818-82cd-4304-aa7a-6da6d89526c5/content
-  tags:
-  - Federated Learning
-  - Robustness
-  - Distributed Optimization
-  - Optimization
-  title: Defending against Byzantine attacks by trust-based weighting of agents
-  type: jpaper
-  year: '2026'
 - abstract: We study adaptive learning rate scheduling for norm-constrained optimizers
     (e.g., Muon and Lion). We introduce a generalized smoothness assumption under
     which local curvature decreases with the suboptimality gap and empirically verify
@@ -1504,6 +1467,44 @@
   title: 'Re3MCN: Cubic Newton + Variance Reduction + Momentum + Quadratic Regularization
     for Finite-sum Non-convex Problems'
   type: tpaper
+  year: '2025'
+- abstract: Modern machine learning models demonstrate substantial quality improvements
+    across a wide range of tasks. However, their deployment is accompanied by a significant
+    increase in computational complexity. Distributed and federated learning settings
+    address this issue by offloading training to multiple devices, yet their structure
+    can be vulnerable to malicious behaviour. In this work we study a classical threat
+    class, Byzantine attacks. Under such attacks, some participants in distributed
+    computation inject compromised updates to disrupt training. Existing defenses
+    typically require a majority of honest devices, which limits applicability in
+    realistic scenarios. The goal of this study is to develop an approach that does
+    not rely on the assumption that honest devices dominate. We propose an algorithm
+    based on weighted aggregation of devices. A special function is introduced, computed
+    on the server, which evaluates the contribution of different participants to the
+    final model training.
+  authors: "Gleb Molodtsov, Daniil Medyakov, Sergej Skorik, Nikolas Khachaturov, Shagane\
+    \ Tigranyan, Vladimir Aletov, Aram Avetisyan, <strong>Martin Tak\xE1\u010D</strong>,\
+    \ Aleksandr Beznosikov"
+  journal: Russian Mathematical Surveys, Mathematical aspects of artificial intelligence,
+    Steklov Mathematical Institute
+  keywords:
+  - byzantine attacks
+  - trust-based weighting
+  - weighted aggregation
+  - distributed machine learning
+  - federated learning
+  - malicious workers
+  - trial loss function
+  - honest clients
+  - stochastic gradients
+  - dynamic byzantine workers
+  pdf: https://irep.mbzuai.ac.ae/server/api/core/bitstreams/050dd818-82cd-4304-aa7a-6da6d89526c5/content
+  tags:
+  - Federated Learning
+  - Robustness
+  - Distributed Optimization
+  - Optimization
+  title: Defending against Byzantine attacks by trust-based weighting of agents
+  type: jpaper
   year: '2025'
 - abstract: Offline reinforcement learning (RL) learns exclusively from static datasets,
     without further interaction with the environment. In practice, such datasets vary
