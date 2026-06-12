@@ -4054,6 +4054,50 @@
   title: Random-reshuffled SARAH does not need a full gradient computations
   type: jpaper
   year: '2023'
+- abstract: "We study deterministic adversarial noise in zeroth-order convex optimization\
+    \ on Euclidean balls. The maximum admissible level of noise is the largest uniform\
+    \ error in function-value queries for which polynomial-query optimization remains\
+    \ possible. We convert the Risteski-Li information-theoretic obstruction for approximately\
+    \ convex optimization into deterministic noisy-oracle upper bounds on this quantity.\
+    \ The conversion gives the Lipschitz convex MALN upper bound with the Risteski-Li\
+    \ dimension dependence. A localized conic-collar embedding gives the corresponding\
+    \ Lipschitz strongly convex bound. Compact randomized smoothing transfers these\
+    \ constructions to smooth convex objectives, producing the stated fourth-root\
+    \ dimension dependence, and to smooth strongly convex objectives on the associated\
+    \ compatibility window. At the endpoint where the smoothness and strong-convexity\
+    \ constants coincide, the class consists only of shifted quadratics. We prove\
+    \ that this endpoint class admits robust $2n$-query reconstruction at noise level\
+    \ of order $R\\sqrt{\u03BC\\varepsilon/n}$. Consequently, for query budgets at\
+    \ least $2n$, no uniform $R$-free smooth strongly convex upper bound of the usual\
+    \ form can extend to the endpoint. The results separate theorem validity ranges\
+    \ from the first-branch regimes in which the class-dependent MALN scale dominates\
+    \ the universal $\\varepsilon/n$ branch."
+  authors: "Dmitry Pasechnyuk-Vilensky, Igor Pavlov, <strong>Martin Tak\xE1\u010D\
+    </strong>, Alexander Gasnikov"
+  journal: arXiv
+  keywords:
+  - deterministic adversarial noise
+  - noisy zeroth-order oracle
+  - maximum admissible level of noise
+  - function-value queries
+  - lipschitz convex optimization
+  - strongly convex objectives
+  - information-theoretic upper bounds
+  - "r\u5C94isteski-li obstruction"
+  - compact randomized smoothing
+  - query complexity
+  link: https://arxiv.org/abs/2306.16371
+  ltype: arXiv
+  pdf: https://arxiv.org/pdf/2306.16371v4
+  tags:
+  - Optimization
+  - Zeroth-Order Optimization
+  - Convex Optimization
+  - Information Theory
+  title: Information-Theoretic Upper Bounds for Deterministic Noise in Zeroth-Order
+    Convex Optimization
+  type: tpaper
+  year: '2023'
 - abstract: Transcription Factors (TFs) bind to regulatory DNA regions, modulating
     gene expression. Although various high-throughput techniques have been used to
     characterize protein binding preferences, this work is the first to extend these
