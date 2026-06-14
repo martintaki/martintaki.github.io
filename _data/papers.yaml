@@ -1,3 +1,37 @@
+- abstract: Computed Tomography (CT) imaging is a cornerstone of abdominal oncology,
+    offering critical insights into tumor morphology and spread. While artificial
+    intelligence (AI) holds promise for automating lesion detection, segmentation,
+    and reporting, progress is hindered by the scarcity of multimodal datasets that
+    pair 3D anatomical annotations with expert-curated clinical descriptions. We present
+    MAGIC-CT, a contrast-enhanced CT dataset of 562 patients with abdominal tumors
+    (liver cysts/cancer, lung metastases, lung cancer, kidney cysts, renal cancer,
+    pancreatic cancer). All 562 patients have CT scans and 3D lesion/organ masks;
+    a subset of 492 patients also have organ-wise, radiologist-authored reports (RU/KZ/EN)
+    totaling 4,937 organ descriptions. The dataset spans 8 pathologies across 4 organs,
+    with about 1,250 annotated lesions and about 500 lesion-linked textual findings,
+    enabling training of multimodal systems that connect volumetric localization to
+    clinical language. MAGIC-CT uniquely integrates volumetric lesion localization,
+    quantitative metrics (eg, tumor volume, angular involvement of vasculature), and
+    rich semantic context (eg, "cuff-like encasement of the celiac trunk"), addressing
+    the lack of resources bridging radiological imaging, segmentation, and clinical
+    language. This dataset is expected to enable advancements in AI-driven tumor characterization,
+    automated report generation, and metastasis tracking, with implications for precision
+    oncology.
+  authors: "Maxim Popov, Zangir Iklassov, Zhanas Baimagambet, Murat Jakipov, Xeniya\
+    \ Andreyeva, Muhammad Akhtar, <strong>Martin Tak\xE1\u010D</strong>, Prashant\
+    \ Jamwal"
+  keywords:
+  - '['
+  - ']'
+  ltype: preprint
+  pdf: https://assets-eu.researchsquare.com/files/rs-8777425/v1_covered_a6a8464e-a590-4386-989d-5209e60dfc90.pdf?c=1778499301
+  tags:
+  - '['
+  - ']'
+  title: 'MAGIC-CT: Multiorgan Annotation and Grounded Image Captioning in CT for
+    Cancer'
+  type: tpaper
+  year: '2026'
 - abstract: We study adaptive learning rate scheduling for norm-constrained optimizers
     (e.g., Muon and Lion). We introduce a generalized smoothness assumption under
     which local curvature decreases with the suboptimality gap and empirically verify
