@@ -1,3 +1,45 @@
+- abstract: Running large language models locally is often impractical, pushing inference
+    on sensitive text to third-party providers. Split inference partially mitigates
+    this by keeping tokens on the client and sending only hidden representations,
+    but these representations can still be recovered via nearest-neighbor search against
+    the public embedding table. We propose an orthogonal obfuscation procedure in
+    which the client multiplies embeddings by a secret orthogonal matrix before transmission.
+    To enable correct inference under arbitrary rotations, we introduce ConjFormer,
+    a transformer variant that is exactly $\mathrm{O}(d)$-equivariant via a lightweight
+    normalization change (scalar RMSNorm) together with blockwise orthogonal conjugation
+    of all linear weights. As a result, the server performs the full forward pass
+    entirely in the rotated basis and never observes unrotated hidden states. Experiments
+    on GPT-2 and Llama 3.2 1B models fine-tuned on PubMed show that orthogonal obfuscation
+    eliminates direct cosine nearest-neighbor inversion and reduces token recovery
+    from over 35% top-10 to at most 1.3%, while increasing perplexity by only 0.4%
+    after fine-tuning. These results indicate that enforcing symmetry at the architectural
+    level can provide a practical defense for privacy-preserving LLM inference without
+    noise injection or heavy cryptographic machinery.
+  authors: "Alexander Yukhimchuk, Andrey Shulga, Mladen Kolar, <strong>Martin Tak\xE1\
+    \u010D</strong>"
+  journal: arXiv
+  keywords:
+  - privacy-preserving inference
+  - split inference
+  - orthogonal obfuscation
+  - orthogonal equivariance
+  - transformer architecture
+  - scalar rmsnorm
+  - blockwise orthogonal conjugation
+  - embedding inversion
+  - nearest-neighbor token recovery
+  - hidden representation privacy
+  link: https://arxiv.org/abs/2606.16461
+  ltype: arXiv
+  pdf: https://arxiv.org/pdf/2606.16461v1
+  tags:
+  - LLM
+  - Privacy
+  - Transformers
+  - Robustness
+  title: 'Privacy from Symmetry: Orthogonally Equivariant Transformers for LLM Inference'
+  type: tpaper
+  year: '2026'
 - abstract: Computed Tomography (CT) imaging is a cornerstone of abdominal oncology,
     offering critical insights into tumor morphology and spread. While artificial
     intelligence (AI) holds promise for automating lesion detection, segmentation,
