@@ -1,3 +1,43 @@
+- abstract: Vision-Language Models (VLMs) are increasingly susceptible to sophisticated
+    adversarial attacks, including adaptive strategies specifically designed to bypass
+    existing defenses. To address this vulnerability, we propose MirrorCheck, a robust
+    and model-agnostic detection framework that operates effectively in both unimodal
+    and multimodal settings. MirrorCheck leverages Text-to-Image (T2I) models to regenerate
+    visual content from captions produced by the target model and assesses semantic
+    consistency by comparing feature-space embeddings between the original and synthesized
+    images. To enhance robustness against adaptive attacks, MirrorCheck introduces
+    a stochastic defense strategy that randomly selects T2I generators and image encoders
+    from a diverse model zoo. Additionally, we incorporate a novel One-Time-Use (OTU)
+    perturbation applied to the selected encoder embeddings, regulated by a scaling
+    factor, which decreases the effectiveness of adaptive attacks. Extensive experiments
+    across multiple threat scenarios demonstrate that MirrorCheck consistently outperforms
+    baseline methods, and maintains its utility even under strong adaptive adversarial
+    conditions.
+  authors: "Samar Fares, Klea Ziu, Toluwani Aremu, Nikita Durasov, <strong>Martin\
+    \ Tak\xE1\u010D</strong>, Pascal Fua, Ivan Laptev, Karthik Nandakumar"
+  journal: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition
+    (CVPR) Workshops
+  keywords:
+  - vision-language models
+  - adversarial defense
+  - adaptive attacks
+  - model-agnostic detection
+  - text-to-image regeneration
+  - semantic consistency
+  - feature-space embeddings
+  - stochastic defense
+  - one-time-use perturbation
+  - multimodal threat scenarios
+  link: https://openaccess.thecvf.com/content/CVPR2026W/6thAdvML%40CV/html/Fares_MirrorCheck_Efficient_Adversarial_Defense_for_Vision-Language_Models_CVPRW_2026_paper.html
+  ltype: CVPR Workshops
+  tags:
+  - Computer Vision
+  - Robustness
+  - Multimodal Learning
+  - Generative Models
+  title: 'MirrorCheck: Efficient Adversarial Defense for Vision-Language Models'
+  type: cpaper
+  year: '2026'
 - abstract: Running large language models locally is often impractical, pushing inference
     on sensitive text to third-party providers. Split inference partially mitigates
     this by keeping tokens on the client and sending only hidden representations,
