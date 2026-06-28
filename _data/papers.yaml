@@ -1,3 +1,44 @@
+- abstract: "We study finite-horizon one-gradient realizations with the Chebyshev\
+    \ minimax terminal residual on $[\u03BC,L]$. Under time-dependent Hessian perturbations,\
+    \ the terminal first variation is governed by a time-ordered spectral kernel $K_s(\u03BB\
+    ,\u03BD)$; its sharp $\\ell_2$ gain is $A_N$. For the prefix-exact Chebyshev recurrence,\
+    \ $$ A_N^{\\rm pref} =\\frac{\u03B5_N^\\star}{L-\u03BC} \\left(4N^2+16\\sum_{m=1}^{N-1}m^2\\\
+    right)^{1/2} =\\frac4{\\sqrt3}\\frac{N^{3/2}}{L-\u03BC}\u03B5_N^\\star(1+o(1)),\
+    \ $$ and this is sharp in the causal two-term class with Chebyshev exactness at\
+    \ every prefix. For terminal-only exactness, Jacobi coordinates give $P_N=2^{1-N}T_N$:\
+    \ the spectrum is fixed at the midpoint Chebyshev nodes, while the spectral weights\
+    \ parametrize the realizations. The sine weights give a final-exact Jacobi method\
+    \ with the same terminal residual and $$ A_N(J_N^{\\sin}) =2\\sqrt{c_{\\sin}}\\\
+    frac{N^{3/2}}{L-\u03BC}\u03B5_N^\\star(1+o(1)), \\; 2\\sqrt{c_{\\sin}}\\approx2.137936<4/\\\
+    sqrt3. $$ Thus the Chebyshev terminal polynomial does not determine the first-order\
+    \ Hessian-drift gain. The experiments show the finite-horizon effect: lower stochastic\
+    \ curvature overhead, larger admissible-block frontiers, accurate time-varying\
+    \ quadratic predictions, and lower restart cost on an endpoint-coupled smooth\
+    \ strongly convex GLM."
+  authors: "Dmitry Pasechnyuk-Vilensky, <strong>Martin Tak\xE1\u010D</strong>"
+  journal: arXiv
+  keywords:
+  - chebyshev acceleration
+  - hessian variation
+  - sine-jacobi method
+  - first-order drift gain
+  - time-ordered spectral kernel
+  - jacobi coordinates
+  - chebyshev minimax residual
+  - finite-horizon methods
+  - strongly convex optimization
+  - time-varying quadratics
+  link: https://arxiv.org/abs/2606.16671
+  ltype: arXiv
+  pdf: https://arxiv.org/pdf/2606.16671v1
+  tags:
+  - Optimization
+  - First-Order Methods
+  - Robustness
+  - Numerical Analysis
+  title: 'Chebyshev-Exact Acceleration under Hessian Variation, I: Sine-Jacobi Method'
+  type: tpaper
+  year: '2026'
 - abstract: Vision-Language Models (VLMs) are increasingly susceptible to sophisticated
     adversarial attacks, including adaptive strategies specifically designed to bypass
     existing defenses. To address this vulnerability, we propose MirrorCheck, a robust
