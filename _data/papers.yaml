@@ -144,13 +144,23 @@
     \ Andreyeva, Muhammad Akhtar, <strong>Martin Tak\xE1\u010D</strong>, Prashant\
     \ Jamwal"
   keywords:
-  - '['
-  - ']'
+  - cancer
+  - clinical
+  - dataset
+  - lesion
+  - magic-ct
+  - patients
+  - tumor
+  - abdominal
+  - about
+  - cysts
   ltype: preprint
   pdf: https://assets-eu.researchsquare.com/files/rs-8777425/v1_covered_a6a8464e-a590-4386-989d-5209e60dfc90.pdf?c=1778499301
   tags:
-  - '['
-  - ']'
+  - Computer Vision
+  - Graph Learning
+  - Generative Models
+  - Control
   title: 'MAGIC-CT: Multiorgan Annotation and Grounded Image Captioning in CT for
     Cancer'
   type: tpaper
@@ -297,12 +307,24 @@
     \ Kotelevskii"
   journal: UAI 2026
   keywords:
-  - '['
-  - ']'
+  - predictions
+  - distillation
+  - client
+  - clients
+  - federated
+  - heterogeneity
+  - aggregating
+  - aggregation
+  - dataset
+  - neighborhood
   ltype: UAI 2026 Poster
   tags:
-  - '['
-  - ']'
+  - Optimization
+  - Federated Learning
+  - Distributed Optimization
+  - Computer Vision
+  - Uncertainty
+  - Control
   title: Who to Trust? Aggregating Client Predictions in Federated Distillation
   type: cpaper
   year: '2026'
