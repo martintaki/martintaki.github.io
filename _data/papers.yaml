@@ -1,3 +1,87 @@
+- abstract: 'Inference-time scaling has become the dominant lever for improving language-model
+    reasoning, but existing methods derive rollout diversity from a single source:
+    stochastic token-level sampling. We argue that this single-axis sampling space
+    is fundamentally limiting, and identify a second, fully deterministic and complementary
+    axis: the layer span $L$ at which a frozen model''s top decoder layers are recursively
+    re-applied at high-uncertainty tokens. Different choices of $L$ produce distinct
+    rollouts that solve different subsets of problems, with no stochasticity. We instantiate
+    this axis through Entropy-Gated Latent Recursion (EGLR), a training-free decoding
+    procedure that re-applies the top-$L$ layers for at most $K_{\max}$ iterations
+    until the next-token distribution converges. Combined with $T$ temperature samples,
+    EGLR turns a single-axis stochastic rollout pool into an $L\times T$ Cartesian
+    sampling space at almost the same per-rollout cost. We characterize this space
+    across $8$ instruction-tuned models and $6$ math reasoning benchmarks, and show
+    that the $L$-axis is genuinely complementary to temperature: on MATH-500 with
+    Qwen2.5-3B-Instruct, the joint $L\times T$ oracle reaches $91.6\%$, $+8.2$ percentage
+    points beyond the temperature-only oracle ($83.4\%$) and $+10.4$ points beyond
+    the layer-only oracle ($81.2\%$), confirming that the two axes capture genuinely
+    complementary problems. The expanded rollout pool provides richer per-prompt candidates
+    for any downstream procedure that consumes rollouts, including self-consistency,
+    best-of-$N$ with verifiers, and group-relative RL training (GRPO), opening a new
+    direction for inference-time scaling that does not rely on stochastic noise.'
+  authors: "Soham Bhattacharjee, Dushyant Singh Chauhan, Salem Lahlou, <strong>Martin\
+    \ Tak\xE1\u010D</strong>, Nils Lukas"
+  journal: arXiv
+  keywords:
+  - axis
+  - complementary
+  - oracle
+  - rollout
+  - sampling
+  - space
+  - stochastic
+  - arxiv
+  - beyond
+  - different
+  link: https://arxiv.org/abs/2606.16620
+  ltype: arXiv
+  pdf: https://arxiv.org/pdf/2606.16620v3
+  tags:
+  - Stochastic Methods
+  - Uncertainty
+  title: Entropy-Gated Latent Recursion
+  type: tpaper
+  year: '2026'
+- abstract: 'Muon is an optimizer that computes updates using the polar factor of
+    the momentum matrix and has shown strong empirical performance across a range
+    of training settings. A key component of Muon is the Newton-Schulz iteration used
+    to compute this polar factor. Although this avoids the cost of an exact singular
+    value decomposition, it remains expensive in practice because it is applied at
+    every optimization step. At the same time, the momentum matrix changes smoothly
+    over training, suggesting strong temporal correlation in the corresponding polar
+    factors. In this paper, we exploit this structure and propose CacheMuon, a temporal
+    preconditioning method that reuses information from previous optimization steps
+    to approximate the polar factor at the current step. This reduces redundant orthogonalization
+    computation across iterations. We analyze CacheMuon as an inexact Muon update,
+    with error controlled by fresh-solver error and cache staleness. Empirically,
+    CacheMuon provides a controllable quality-efficiency frontier: conservative thresholds
+    closely match fresh Muon on language-model and vision training while reducing
+    orthogonalization FLOPs, whereas more aggressive thresholds yield larger arithmetic
+    savings at the cost of modest validation-quality degradation.'
+  authors: "Bishnu Dev, Sushil Bohara, <strong>Martin Tak\xE1\u010D</strong>, Samuel\
+    \ Horv\xE1th"
+  journal: arXiv
+  keywords:
+  - polar
+  - cachemuon
+  - factor
+  - muon
+  - temporal
+  - training
+  - across
+  - approximate
+  - arxiv
+  - cost
+  link: https://arxiv.org/abs/2606.16371
+  ltype: arXiv
+  pdf: https://arxiv.org/pdf/2606.16371v1
+  tags:
+  - Optimization
+  - Computer Vision
+  - Control
+  title: 'CacheMuon: Using Temporal Preconditioning To Approximate Polar Factor'
+  type: tpaper
+  year: '2026'
 - abstract: "We study finite-horizon one-gradient realizations with the Chebyshev\
     \ minimax terminal residual on $[\u03BC,L]$. Under time-dependent Hessian perturbations,\
     \ the terminal first variation is governed by a time-ordered spectral kernel $K_s(\u03BB\
