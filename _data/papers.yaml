@@ -1,3 +1,37 @@
+- abstract: Large embedding models improve retrieval quality, but serving large encoders
+    online is expensive. We study whether a compact retriever can learn teacher ranking
+    behavior from score vectors without access to teacher hidden states. The student
+    trains on rows built from ground-truth positives and negative candidates produced
+    by our data generation pipeline; we evaluate student-teacher hard-negative mining
+    separately as an extension. We use a row-centered score-vector objective, a memory-efficient
+    implementation of uniform all-pairs PairMSE loss. On a fixed eight-task evaluation
+    panel, our distillation protocol recovers up to 50\% of the base-to-teacher gap.
+    The distilled 0.6B student is 4.7$\times$ faster for query encoding and 9.7$\times$
+    faster for document encoding than sequential online teacher fusion. External-transfer
+    performance after distillation remains mixed, so our evidence supports compression
+    of teacher rankings under matched retrieval protocols.
+  authors: "Kirill Dubovikov, <strong>Martin Tak\xE1\u010D</strong>, Salem Lahlou"
+  journal: arXiv
+  keywords:
+  - teacher
+  - distillation
+  - retrieval
+  - arxiv
+  - compact
+  - encoding
+  - faster
+  - large
+  - online
+  - student
+  link: https://arxiv.org/abs/2607.11465
+  ltype: arXiv
+  pdf: https://arxiv.org/pdf/2607.11465v1
+  tags:
+  - Distributed Optimization
+  - Reinforcement Learning
+  title: Score-Only Distillation for Compact Dense Retrieval
+  type: tpaper
+  year: '2026'
 - abstract: 'Inference-time scaling has become the dominant lever for improving language-model
     reasoning, but existing methods derive rollout diversity from a single source:
     stochastic token-level sampling. We argue that this single-axis sampling space
@@ -816,6 +850,8 @@
   - multi-agent generation pipeline
   - daily routine modeling
   - privacy-limited energy data
+  link: https://arxiv.org/abs/2607.10720
+  pdf: https://arxiv.org/pdf/2607.10720
   tags:
   - LLM
   - Energy Systems
