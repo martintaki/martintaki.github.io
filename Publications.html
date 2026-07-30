@@ -342,6 +342,65 @@ title: Home
             }
         }
 
+        function urlFilterValue(name) {
+            try {
+                return new URL(window.location.href).searchParams.get(name) || "";
+            } catch (e) {
+                return "";
+            }
+        }
+
+        function matchingSelectValue(select, requestedValue) {
+            var normalizedRequest = requestedValue.trim().toLowerCase();
+            var match = "";
+            if (!select || !normalizedRequest) {
+                return match;
+            }
+            Array.prototype.slice.call(select.options).some(function (option) {
+                if (option.value.toLowerCase() === normalizedRequest) {
+                    match = option.value;
+                    return true;
+                }
+                return false;
+            });
+            return match;
+        }
+
+        function syncFiltersToUrl() {
+            if (!window.history || !window.history.replaceState) {
+                return;
+            }
+            try {
+                var url = new URL(window.location.href);
+                var selectedType = currentType();
+                var selectedTag = tagSelect.value;
+                var query = searchInput.value.trim();
+
+                if (selectedType === "all") {
+                    url.searchParams.delete("type");
+                } else {
+                    url.searchParams.set("type", selectedType);
+                }
+                if (selectedTag === "all") {
+                    url.searchParams.delete("tag");
+                } else {
+                    url.searchParams.set("tag", selectedTag);
+                }
+                if (query) {
+                    url.searchParams.set("q", query);
+                } else {
+                    url.searchParams.delete("q");
+                }
+
+                window.history.replaceState(
+                    null,
+                    "",
+                    url.pathname + url.search + url.hash
+                );
+            } catch (e) {
+            }
+        }
+
         function syncMixItUpType(value) {
             if (window.jQuery && window.jQuery.fn && window.jQuery.fn.mixitup) {
                 window.jQuery("div#pub-grid").mixitup("filter", value);
@@ -392,12 +451,17 @@ title: Home
                 syncMixItUpType("all");
                 rebuildTagControls("all", tagSelect.value);
             }
+            syncFiltersToUrl();
             scheduleFilters();
         });
-        searchInput.addEventListener("input", scheduleFilters);
+        searchInput.addEventListener("input", function () {
+            syncFiltersToUrl();
+            scheduleFilters();
+        });
         if (typeSelect) {
             typeSelect.addEventListener("change", function () {
                 rebuildTagControls(currentType(), "all");
+                syncFiltersToUrl();
                 scheduleFilters();
             });
         }
@@ -405,7 +469,22 @@ title: Home
             button.addEventListener("click", scheduleFilters);
         });
 
+        var initialType = matchingSelectValue(typeSelect, urlFilterValue("type"));
+        if (initialType) {
+            setTypeDropdown(initialType);
+        }
         rebuildTagControls(currentType(), "all");
+
+        var initialTag = matchingSelectValue(tagSelect, urlFilterValue("tag"));
+        if (initialTag) {
+            tagSelect.value = initialTag;
+        }
+
+        var initialQuery = urlFilterValue("q");
+        if (initialQuery) {
+            searchInput.value = initialQuery;
+        }
+
         scheduleFilters();
     });
 }());
@@ -418,7 +497,6 @@ title: Home
 
   
    
-
 
 
 
