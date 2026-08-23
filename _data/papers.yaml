@@ -1,3 +1,45 @@
+- abstract: 'Large language models can reproduce copyrighted text verbatim, but existing
+    defenses have been evaluated in isolation, leaving direct comparison open. We
+    introduce CopyShield, a controlled benchmark for copyright defense, and use it
+    to characterize three representative methods that intervene at distinct stages
+    of generation: contrastive decoding (output), Direct Preference Optimization (behavioral),
+    and activation intervention (representation). On LLaMA-3.1-8B fine-tuned over
+    five public-domain books, we evaluate each defense under identical conditions
+    on calibrated literal and non-literal leakage and on utility preservation. Our
+    central finding is that the level at which a defense intervenes shapes the type
+    of compliance and utility trade-off, not just its magnitude. Contrastive decoding
+    preserves fluency (0% degeneracy) but its plausibility constraint floors literal
+    suppression at NV-Recall 0.192 to 0.203. DPO drives near-complete literal suppression
+    (0.263 to 0.002) and retains 99.4% of QA utility, with its behavioral signal manifesting
+    as paraphrase-loop degeneracy in 66% of outputs. Activation intervention attains
+    the lowest non-literal leakage (1/200) by broadly blocking 84% of queries before
+    generation. These are not isolated failures but characteristic signatures of each
+    intervention level, providing calibrated reference baselines and defining the
+    open problem for future defenses. The code is available at https://anonymous.4open.science/r/CopyShield.'
+  authors: "Maryam Alshehyari, Dushyant Singh Chauhan, Samuele Poppi, <strong>Martin\
+    \ Tak\xE1\u010D</strong>, Salem Lahlou, Nils Lukas"
+  journal: EMNLP 2026 Main Conference
+  keywords:
+  - copyright defense
+  - verbatim text leakage
+  - contrastive decoding
+  - direct preference optimization
+  - activation intervention
+  - literal leakage
+  - non-literal leakage
+  - utility preservation
+  - paraphrase-loop degeneracy
+  - generation-time defenses
+  link: https://openreview.net/forum?id=QlRdgo2kvB
+  ltype: Conference paper
+  tags:
+  - LLM
+  - Robustness
+  - Responsible AI
+  - Benchmarking
+  title: 'CopyShield: A Cross-Level Benchmark of Copyright Defenses in LLMs'
+  type: cpaper
+  year: '2026'
 - abstract: Transcription factor (TF) occupancy in vivo depends not only on the underlying
     DNA sequence but also on the local epigenetic environment, which varies across
     cell types and strongly influences whether sequence-encoded binding potential
