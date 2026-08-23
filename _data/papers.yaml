@@ -1,3 +1,47 @@
+- abstract: Transcription factor (TF) occupancy in vivo depends not only on the underlying
+    DNA sequence but also on the local epigenetic environment, which varies across
+    cell types and strongly influences whether sequence-encoded binding potential
+    becomes functional. Here we present EpiBinder, a multimodal deep-learning framework
+    for cell-type-specific prediction of TF binding that jointly models DNA sequence
+    with base-resolution epigenetic information, including cytosine methylation from
+    whole-genome bisulfite sequencing and chromatin accessibility from DNase I hypersensitivity
+    data. Across multiple human cell lines, EpiBinder consistently outperforms strong
+    sequence-only baselines, improving TF-binding prediction by up to 10% in area
+    under the precision-recall curve. Beyond predictive performance, EpiBinder provides
+    base-level attribution maps that enable systematic interrogation of regulatory
+    context, including candidate methylation-sensitive loci, contextual motif dependencies,
+    and putative TF-TF interactions. These results position EpiBinder as a practical
+    framework for modeling and exploring the local regulatory grammar underlying cell-type-specific
+    TF occupancy.
+  authors: "R. Solozabal, A. Baichorov, I. Miodownik, T. Avioz, L. Song, M. Matabuena,\
+    \ <strong>Martin Tak\xE1\u010D</strong>, A. Afek"
+  journal: bioRxiv
+  keywords:
+  - transcription factor binding
+  - cell-type-specific prediction
+  - DNA sequence modeling
+  - cytosine methylation
+  - chromatin accessibility
+  - whole-genome bisulfite sequencing
+  - DNase I hypersensitivity
+  - base-level attribution maps
+  - regulatory grammar
+  - methylation-sensitive loci
+  - contextual motif dependencies
+  - transcription factor interactions
+  link: https://www.biorxiv.org/content/10.64898/2026.07.06.736502v2
+  ltype: bioRxiv
+  pdf: https://www.biorxiv.org/content/10.64898/2026.07.06.736502v2.full.pdf
+  tags:
+  - Biology
+  - Deep Learning
+  - Multimodal Learning
+  - Genomics
+  - Interpretability
+  title: 'EpiBinder: A Multimodal Framework for Cell-Type-Specific Prediction and
+    Interpretation of Transcription Factor Binding'
+  type: tpaper
+  year: '2026'
 - abstract: Large embedding models improve retrieval quality, but serving large encoders
     online is expensive. We study whether a compact retriever can learn teacher ranking
     behavior from score vectors without access to teacher hidden states. The student
