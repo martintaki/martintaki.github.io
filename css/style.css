@@ -1129,6 +1129,24 @@ ul.timeline li .data .text {
 	color: var(--mbz-ink);
 }
 
+.publication-author-legend {
+    margin-top: 14px;
+    color: #5f6772;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.publication-author-legend span,
+.pubauthor .author-role {
+    white-space: nowrap;
+}
+
+.publication-author-legend sup,
+.pubauthor .author-role {
+    color: #2f80c3;
+    font-weight: 700;
+}
+
 .publication-filter-field .form-control {
 	height: 34px;
 	font-size: 13px;
