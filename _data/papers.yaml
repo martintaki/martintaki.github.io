@@ -96,12 +96,7 @@
     faster for document encoding than sequential online teacher fusion. External-transfer
     performance after distillation remains mixed, so our evidence supports compression
     of teacher rankings under matched retrieval protocols.
-  author_roles:
-  - name: Kirill Dubovikov
-    role: staff
-  authors: "Kirill Dubovikov<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, <strong>Martin Tak\xE1\
-    \u010D</strong>, Salem Lahlou"
+  authors: "Kirill Dubovikov, <strong>Martin Tak\xE1\u010D</strong>, Salem Lahlou"
   journal: arXiv
   keywords:
   - teacher
@@ -224,11 +219,7 @@
     \ curvature overhead, larger admissible-block frontiers, accurate time-varying\
     \ quadratic predictions, and lower restart cost on an endpoint-coupled smooth\
     \ strongly convex GLM."
-  author_roles:
-  - name: Dmitry Pasechnyuk-Vilensky
-    role: student
-  authors: "Dmitry Pasechnyuk-Vilensky<sup class=\"author-role\" title=\"Supervised\
-    \ student or research mentee\">\u2020</sup>, <strong>Martin Tak\xE1\u010D</strong>"
+  authors: "Dmitry Pasechnyuk-Vilensky, <strong>Martin Tak\xE1\u010D</strong>"
   journal: arXiv
   keywords:
   - chebyshev acceleration
@@ -267,11 +258,7 @@
     across multiple threat scenarios demonstrate that MirrorCheck consistently outperforms
     baseline methods, and maintains its utility even under strong adaptive adversarial
     conditions.
-  author_roles:
-  - name: Klea Ziu
-    role: student
-  authors: "Samar Fares, Klea Ziu<sup class=\"author-role\" title=\"Supervised student\
-    \ or research mentee\">\u2020</sup>, Toluwani Aremu, Nikita Durasov, <strong>Martin\
+  authors: "Samar Fares, Klea Ziu, Toluwani Aremu, Nikita Durasov, <strong>Martin\
     \ Tak\xE1\u010D</strong>, Pascal Fua, Ivan Laptev, Karthik Nandakumar"
   journal: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition
     (CVPR) Workshops
@@ -313,12 +300,8 @@
     after fine-tuning. These results indicate that enforcing symmetry at the architectural
     level can provide a practical defense for privacy-preserving LLM inference without
     noise injection or heavy cryptographic machinery.
-  author_roles:
-  - name: Alexander Yukhimchuk
-    role: staff
-  authors: "Alexander Yukhimchuk<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Andrey Shulga, Mladen\
-    \ Kolar, <strong>Martin Tak\xE1\u010D</strong>"
+  authors: "Alexander Yukhimchuk, Andrey Shulga, Mladen Kolar, <strong>Martin Tak\xE1\
+    \u010D</strong>"
   journal: arXiv
   keywords:
   - privacy-preserving inference
@@ -361,13 +344,9 @@
     language. This dataset is expected to enable advancements in AI-driven tumor characterization,
     automated report generation, and metastasis tracking, with implications for precision
     oncology.
-  author_roles:
-  - name: Zangir Iklassov
-    role: staff
-  authors: "Maxim Popov, Zangir Iklassov<sup class=\"author-role\" title=\"Postdoctoral\
-    \ researcher, research scientist, or engineer in my group\">\u2021</sup>, Zhanas\
-    \ Baimagambet, Murat Jakipov, Xeniya Andreyeva, Muhammad Akhtar, <strong>Martin\
-    \ Tak\xE1\u010D</strong>, Prashant Jamwal"
+  authors: "Maxim Popov, Zangir Iklassov, Zhanas Baimagambet, Murat Jakipov, Xeniya\
+    \ Andreyeva, Muhammad Akhtar, <strong>Martin Tak\xE1\u010D</strong>, Prashant\
+    \ Jamwal"
   keywords:
   - cancer
   - clinical
@@ -403,12 +382,8 @@
     warm-up selection consistently outperforms or at least matches the best manually
     tuned warm-up schedules across all considered setups, without additional hyperparameter
     search. Our source code is available at https://github.com/brain-lab-research/llm-baselines/tree/warmup
-  author_roles:
-  - name: Arman Bolatov
-    role: student
-  authors: "Artem Riabinin, Andrey Veprikov, Arman Bolatov<sup class=\"author-role\"\
-    \ title=\"Supervised student or research mentee\">\u2020</sup>, <strong>Martin\
-    \ Tak\xE1\u010D</strong>, Aleksandr Beznosikov"
+  authors: "Artem Riabinin, Andrey Veprikov, Arman Bolatov, <strong>Martin Tak\xE1\
+    \u010D</strong>, Aleksandr Beznosikov"
   journal: arXiv
   keywords:
   - adaptive learning rate scheduling
@@ -450,12 +425,8 @@
     and noise that interpolate between Muon''s and Lion''s constants. These bounds
     predict the compute-optimal period and the conditions under which LionMuon outruns
     Muon and Lion. Code: https://github.com/brain-lab-research/lion-muon'
-  author_roles:
-  - name: Arman Bolatov
-    role: student
-  authors: "Arman Bolatov<sup class=\"author-role\" title=\"Supervised student or\
-    \ research mentee\">\u2020</sup>, Artem Riabinin, Nikita Kornilov, Andrey Veprikov,\
-    \ Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D</strong>, Aleksandr Beznosikov"
+  authors: "Arman Bolatov, Artem Riabinin, Nikita Kornilov, Andrey Veprikov, Samuel\
+    \ Horv\xE1th, <strong>Martin Tak\xE1\u010D</strong>, Aleksandr Beznosikov"
   journal: arXiv
   keywords:
   - lionmuon optimizer
@@ -496,13 +467,8 @@
     OGBench locomotion, manipulation, and puzzle tasks, DAF improves aggregate RLiable
     metrics and performs strongly in settings where locally correct actions differ
     from direct movement toward the final goal.
-  author_roles:
-  - name: Arip Asadulaev
-    role: staff
   authors: "Alexey Zemtsov, Maxim Bobrin, Alexander Nikulin, Dmitry V. Dylov, Fakhri\
-    \ Karray, Vladislav Kurenkov, <strong>Martin Tak\xE1\u010D</strong>, Arip Asadulaev<sup\
-    \ class=\"author-role\" title=\"Postdoctoral researcher, research scientist, or\
-    \ engineer in my group\">\u2021</sup>"
+    \ Karray, Vladislav Kurenkov, <strong>Martin Tak\xE1\u010D</strong>, Arip Asadulaev"
   journal: arXiv
   keywords:
   - offline goal-conditioned reinforcement learning
@@ -540,19 +506,9 @@
     Experiments on image and text classification datasets confirm that our methods
     are most effective under high data heterogeneity, while matching standard averaging
     when heterogeneity is low.
-  author_roles:
-  - name: Viktor Kovalchuk
-    role: student
-  - name: Arman Bolatov
-    role: student
-  - name: Eduard Gorbunov
-    role: staff
-  authors: "Viktor Kovalchuk<sup class=\"author-role\" title=\"Supervised student\
-    \ or research mentee\">\u2020</sup>, Denis Son, Arman Bolatov<sup class=\"author-role\"\
-    \ title=\"Supervised student or research mentee\">\u2020</sup>, Mohsen Guizani,\
-    \ Samuel Horv\xE1th, Maxim Panov, <strong>Martin Tak\xE1\u010D</strong>, Eduard\
-    \ Gorbunov<sup class=\"author-role\" title=\"Postdoctoral researcher, research\
-    \ scientist, or engineer in my group\">\u2021</sup>, Nikita Kotelevskii"
+  authors: "Viktor Kovalchuk, Denis Son, Arman Bolatov, Mohsen Guizani, Samuel Horv\xE1\
+    th, Maxim Panov, <strong>Martin Tak\xE1\u010D</strong>, Eduard Gorbunov, Nikita\
+    \ Kotelevskii"
   journal: UAI 2026
   keywords:
   - predictions
@@ -588,12 +544,8 @@
     controlled by the sampling gap and policy entropy. These results motivate a decomposition
     of RL impact into value gradient signal and reachable reward headroom, yielding
     a criterion for when RL should be most effective along a pretraining trajectory.'
-  author_roles:
-  - name: Arip Asadulaev
-    role: staff
-  authors: "Arip Asadulaev<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Daniil Ognev, Karim\
-    \ Salta, <strong>Martin Tak\xE1\u010D</strong>"
+  authors: "Arip Asadulaev, Daniil Ognev, Karim Salta, <strong>Martin Tak\xE1\u010D\
+    </strong>"
   journal: arXiv
   keywords:
   - critic-free reinforcement learning
@@ -632,29 +584,9 @@
     basins, followed by end-to-end refinement through an unrolled projected solver.
     Our experiments show that our models trained on small subproblems or a single
     problem size transfer to larger instances without retraining.'
-  author_roles:
-  - name: Meir Roketlishvili
-    role: student
-  - name: Semyon Semenov
-    role: student
-  - name: Viktor Kovalchuk
-    role: student
-  - name: Albert Baichorov
-    role: student
-  - name: Abduragim Shtanchaev
-    role: student
-  - name: Arip Asadulaev
-    role: staff
-  authors: "Meir Roketlishvili<sup class=\"author-role\" title=\"Supervised student\
-    \ or research mentee\">\u2020</sup>, Semyon Semenov<sup class=\"author-role\"\
-    \ title=\"Supervised student or research mentee\">\u2020</sup>, Maksim Bobrin,\
-    \ Viktor Kovalchuk<sup class=\"author-role\" title=\"Supervised student or research\
-    \ mentee\">\u2020</sup>, Albert Baichorov<sup class=\"author-role\" title=\"Supervised\
-    \ student or research mentee\">\u2020</sup>, Abduragim Shtanchaev<sup class=\"\
-    author-role\" title=\"Supervised student or research mentee\">\u2020</sup>, Fakhri\
-    \ Karray, Dmitry V. Dylov, <strong>Martin Tak\xE1\u010D</strong>, Arip Asadulaev<sup\
-    \ class=\"author-role\" title=\"Postdoctoral researcher, research scientist, or\
-    \ engineer in my group\">\u2021</sup>"
+  authors: "Meir Roketlishvili, Semyon Semenov, Maksim Bobrin, Viktor Kovalchuk, Albert\
+    \ Baichorov, Abduragim Shtanchaev, Fakhri Karray, Dmitry V. Dylov, <strong>Martin\
+    \ Tak\xE1\u010D</strong>, Arip Asadulaev"
   journal: arXiv
   keywords:
   - convex compositional energy minimization
@@ -696,16 +628,8 @@
     on FFHQ and ImageNet, Spin achieves competitive reconstruction quality with a
     substantially better runtime--memory profile, running 2x faster on pixel-space
     models and up to 50x faster on latent diffusion models, with lower memory costs.'
-  author_roles:
-  - name: Abduragim Shtanchaev
-    role: student
-  - name: Arip Asadulaev
-    role: staff
-  authors: "Abduragim Shtanchaev<sup class=\"author-role\" title=\"Supervised student\
-    \ or research mentee\">\u2020</sup>, Albina Ilina, Yazid Janati, Arip Asadulaev<sup\
-    \ class=\"author-role\" title=\"Postdoctoral researcher, research scientist, or\
-    \ engineer in my group\">\u2021</sup>, <strong>Martin Tak\xE1\u010D</strong>,\
-    \ Eric Moulines"
+  authors: "Abduragim Shtanchaev, Albina Ilina, Yazid Janati, Arip Asadulaev, <strong>Martin\
+    \ Tak\xE1\u010D</strong>, Eric Moulines"
   journal: arXiv
   keywords:
   - sparse diffusion guidance
@@ -744,11 +668,7 @@
     In the regimes where comparison is appropriate, the theory matches the qualitative
     communication-efficient picture of recent LocalSGD/SCAFFOLD analyses, while also
     giving explicit guarantees for unequal local horizons.'
-  author_roles:
-  - name: Dmitry Pasechnyuk-Vilensky
-    role: student
-  authors: "Dmitry Pasechnyuk-Vilensky<sup class=\"author-role\" title=\"Supervised\
-    \ student or research mentee\">\u2020</sup>, <strong>Martin Tak\xE1\u010D</strong>"
+  authors: "Dmitry Pasechnyuk-Vilensky, <strong>Martin Tak\xE1\u010D</strong>"
   journal: arXiv
   keywords:
   - heterogeneous local sgd
@@ -790,19 +710,8 @@
     with improved computational efficiency. We demonstrate the effectiveness and scalability
     of our framework through comprehensive experimental evaluations, which confirm
     its superior performance across various settings.
-  author_roles:
-  - name: Klea Ziu
-    role: student
-  - name: "Slavom\xEDr Hanzely"
-    role: staff
-  - name: Dmitry Kamzolov
-    role: staff
-  authors: "Klea Ziu<sup class=\"author-role\" title=\"Supervised student or research\
-    \ mentee\">\u2020</sup>, Slavom\xEDr Hanzely<sup class=\"author-role\" title=\"\
-    Postdoctoral researcher, research scientist, or engineer in my group\">\u2021\
-    </sup>, Loka Li, Kun Zhang, <strong>Martin Tak\xE1\u010D</strong>, Dmitry Kamzolov<sup\
-    \ class=\"author-role\" title=\"Postdoctoral researcher, research scientist, or\
-    \ engineer in my group\">\u2021</sup>"
+  authors: "Klea Ziu, Slavom\xEDr Hanzely, Loka Li, Kun Zhang, <strong>Martin Tak\xE1\
+    \u010D</strong>, Dmitry Kamzolov"
   journal: ICML 2026 Workshop on Structured Probabilistic Inference and Generative
     Modeling
   keywords:
@@ -884,13 +793,8 @@
     OGBench locomotion, manipulation, and puzzle tasks, DAF improves aggregate RLiable
     metrics and performs strongly in settings where locally correct actions differ
     from direct movement toward the final goal.
-  author_roles:
-  - name: Arip Asadulaev
-    role: staff
   authors: "Alexey Zemtsov, Maksim Bobrin, Alexander Nikulin, Dmitry V. Dylov, Fakhri\
-    \ Karray, Vladislav Kurenkov, <strong>Martin Tak\xE1\u010D</strong>, Arip Asadulaev<sup\
-    \ class=\"author-role\" title=\"Postdoctoral researcher, research scientist, or\
-    \ engineer in my group\">\u2021</sup>"
+    \ Karray, Vladislav Kurenkov, <strong>Martin Tak\xE1\u010D</strong>, Arip Asadulaev"
   journal: 'ICML 2026 Workshop: DEMO'
   keywords:
   - offline goal-conditioned reinforcement learning
@@ -930,19 +834,8 @@
     attention message. Our study isolates the effect of attention design, identifies
     key ingredients for accurate prediction of molecular properties, and offers practical
     guidelines for future research.'
-  author_roles:
-  - name: Aidar Alimbayev
-    role: student
-  - name: Klea Ziu
-    role: student
-  - name: Deepak Kumar
-    role: staff
-  authors: "Yusei Ito, Aidar Alimbayev<sup class=\"author-role\" title=\"Supervised\
-    \ student or research mentee\">\u2020</sup>, Klea Ziu<sup class=\"author-role\"\
-    \ title=\"Supervised student or research mentee\">\u2020</sup>, Deepak Kumar<sup\
-    \ class=\"author-role\" title=\"Postdoctoral researcher, research scientist, or\
-    \ engineer in my group\">\u2021</sup>, Kanta Ono, <strong>Martin Tak\xE1\u010D\
-    </strong>"
+  authors: "Yusei Ito, Aidar Alimbayev, Klea Ziu, Deepak Kumar, Kanta Ono, <strong>Martin\
+    \ Tak\xE1\u010D</strong>"
   journal: ICML 2026 Workshop AI4Physics
   keywords:
   - molecular property prediction
@@ -982,16 +875,8 @@
     \ truncated SVD, avoiding full decompositions for large layers. We demonstrate\
     \ competitive performance across synthetic heavy-tailed settings and neural network\
     \ training tasks."
-  author_roles:
-  - name: Alexander Yukhimchuk
-    role: staff
-  - name: Sayantan Choudhury
-    role: staff
-  authors: "Alexander Yukhimchuk<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Mladen Kolar, <strong>Martin\
-    \ Tak\xE1\u010D</strong>, Sayantan Choudhury<sup class=\"author-role\" title=\"\
-    Postdoctoral researcher, research scientist, or engineer in my group\">\u2021\
-    </sup>"
+  authors: "Alexander Yukhimchuk, Mladen Kolar, <strong>Martin Tak\xE1\u010D</strong>,\
+    \ Sayantan Choudhury"
   keywords:
   - gradient clipping
   - spectral clipping
@@ -1036,15 +921,8 @@
     \ together with survey-based socio-economic information. We further assess the\
     \ consistency of the framework through ablation studies. \nSource code is available\
     \ at https://github.com/Singularity-AI-Lab/wattcouncil."
-  author_roles:
-  - name: Mohannad Takrouri
-    role: student
-  - name: Nicolas Mauricio Cuadrado
-    role: student
-  authors: "Mohannad Takrouri<sup class=\"author-role\" title=\"Supervised student\
-    \ or research mentee\">\u2020</sup>, Nicolas Mauricio Cuadrado<sup class=\"author-role\"\
-    \ title=\"Supervised student or research mentee\">\u2020</sup>, <strong>Martin\
-    \ Tak\xE1\u010D</strong>"
+  authors: "Mohannad Takrouri, Nicolas Mauricio Cuadrado, <strong>Martin Tak\xE1\u010D\
+    </strong>"
   journal: The 13th ACM International Conference on Systems for Energy-Efficient Buildings,
     Cities, and Transportation (Buildsys 2026)
   keywords:
@@ -1088,16 +966,8 @@
     full $\dimd \times \dimd$ Hessian matrices, we show how it can be implemented
     for generalized linear models by transmitting only vectors, making the approach
     substantially more practical in high dimensions.
-  author_roles:
-  - name: Artem Agafonov
-    role: staff
-  - name: Dmitry Kamzolov
-    role: staff
-  authors: "Artem Agafonov<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Anton Novitskii,\
-    \ Alexander Rogozin, Yury Sokolov, Dmitry Kamzolov<sup class=\"author-role\" title=\"\
-    Postdoctoral researcher, research scientist, or engineer in my group\">\u2021\
-    </sup>, Alexander G. Dyakonov, <strong>Martin Tak\xE1\u010D</strong>, Alexander\
+  authors: "Artem Agafonov, Anton Novitskii, Alexander Rogozin, Yury Sokolov, Dmitry\
+    \ Kamzolov, Alexander G. Dyakonov, <strong>Martin Tak\xE1\u010D</strong>, Alexander\
     \ Gasnikov"
   journal: IEEE Access
   keywords:
@@ -1142,12 +1012,8 @@
     \ efficient than full-space methods while remaining compatible with our theory.\
     \ Numerical experiments further demonstrate the effectiveness of the proposed\
     \ inexact and randomized variants."
-  author_roles:
-  - name: Sayantan Choudhury
-    role: staff
-  authors: "Sayantan Choudhury<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Xiaoran Cheng, <strong>Martin\
-    \ Tak\xE1\u010D</strong>, Sen Na, Mladen Kolar"
+  authors: "Sayantan Choudhury, Xiaoran Cheng, <strong>Martin Tak\xE1\u010D</strong>,\
+    \ Sen Na, Mladen Kolar"
   keywords:
   - muon optimizer
   - nesterov momentum
@@ -1185,12 +1051,8 @@
     representation frameworks and enables fast-adaptation to new tasks in a training-free
     regime. More broadly, this work bridges off-policy learning and zero-shot adaptation,
     offering benefits to both research areas.
-  author_roles:
-  - name: Arip Asadulaev
-    role: staff
-  authors: "Arip Asadulaev<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Maksim Bobrin, Salem\
-    \ Lahlou, Dmitry Dylov, Fakhri Karray, <strong>Martin Tak\xE1\u010D</strong>"
+  authors: "Arip Asadulaev, Maksim Bobrin, Salem Lahlou, Dmitry Dylov, Fakhri Karray,\
+    \ <strong>Martin Tak\xE1\u010D</strong>"
   journal: Forty-third International Conference on Machine Learning (ICML 2026)
   keywords:
   - zero-shot reinforcement learning
@@ -1225,18 +1087,7 @@
     we show that on equal conditions, \textit{WaveSSM} outperforms orthogonal counterparts
     as S4 on real-world datasets with transient dynamics, including physiological
     signals on the PTB-XL dataset and raw audio on Speech Commands.
-  author_roles:
-  - name: Ruben Solozabal
-    role: staff
-  - name: Velibor Bojkovic
-    role: staff
-  - name: Klea Ziu
-    role: student
-  authors: "Ruben Solozabal<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Velibor Bojkovic<sup\
-    \ class=\"author-role\" title=\"Postdoctoral researcher, research scientist, or\
-    \ engineer in my group\">\u2021</sup>, Hilal Alquabeh, Klea Ziu<sup class=\"author-role\"\
-    \ title=\"Supervised student or research mentee\">\u2020</sup>, Kentaro Inui,\
+  authors: "Ruben Solozabal, Velibor Bojkovic, Hilal Alquabeh, Klea Ziu, Kentaro Inui,\
     \ <strong>Martin Tak\xE1\u010D</strong>"
   journal: Forty-third International Conference on Machine Learning (ICML 2026)
   keywords:
@@ -1262,12 +1113,7 @@
   title: 'WaveSSM: Multiscale State-Space Models for Non-stationary Signal Attention'
   type: cpaper
   year: '2026'
-- author_roles:
-  - name: Eduard Gorbunov
-    role: staff
-  authors: "Aleksandr Shestakov, <strong>Martin Tak\xE1\u010D</strong>, Eduard Gorbunov<sup\
-    \ class=\"author-role\" title=\"Postdoctoral researcher, research scientist, or\
-    \ engineer in my group\">\u2021</sup>"
+- authors: "Aleksandr Shestakov, <strong>Martin Tak\xE1\u010D</strong>, Eduard Gorbunov"
   journal: Forty-third International Conference on Machine Learning (ICML 2026)
   keywords:
   - gradient clipping
@@ -1304,12 +1150,8 @@
     \ the total number of forward passes by 18\xD7 while maintaining performance.\
     \ Broadly speaking, we show how a policy improvement perspective on recursive\
     \ steps can explain model behavior and provide insights for further improvements."
-  author_roles:
-  - name: Arip Asadulaev
-    role: staff
-  authors: "Arip Asadulaev<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Rayan Banerjee,\
-    \ Fakhri Karray, <strong>Martin Tak\xE1\u010D</strong>"
+  authors: "Arip Asadulaev, Rayan Banerjee, Fakhri Karray, <strong>Martin Tak\xE1\u010D\
+    </strong>"
   journal: Forty-third International Conference on Machine Learning (ICML 2026)
   keywords:
   - latent reasoning
@@ -1389,12 +1231,7 @@
     \ models that persistently attempt cooperation under adversarial conditions, a\
     \ gap that compresses under probabilistic deception. Together, these findings\
     \ have direct implications for the design of robust networked multi-agent AI systems."
-  author_roles:
-  - name: Aya El Mir
-    role: staff
-  authors: "Aya El Mir<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, <strong>Martin Tak\xE1\
-    \u010D</strong>, Salem Lahlou"
+  authors: "Aya El Mir, <strong>Martin Tak\xE1\u010D</strong>, Salem Lahlou"
   journal: NETYS 2026 (Networked Systems)
   keywords:
   - multi-agent llm systems
@@ -1435,12 +1272,8 @@
     applicability study to analyze the contributions of key components and how TCD
     behaves across large audio-language model designs. The anonymized link to the
     open-source implementation is provided in the appendix.'
-  author_roles:
-  - name: Yanda Li
-    role: staff
-  authors: "Yanda Li<sup class=\"author-role\" title=\"Postdoctoral researcher, research\
-    \ scientist, or engineer in my group\">\u2021</sup>, Yuhan Liu, Zirui Song, Yunchao\
-    \ Wei, <strong>Martin Tak\xE1\u010D</strong>, Salem Lahlou"
+  authors: "Yanda Li, Yuhan Liu, Zirui Song, Yunchao Wei, <strong>Martin Tak\xE1\u010D\
+    </strong>, Salem Lahlou"
   journal: ACL'2026 Findings
   keywords:
   - large audio-language models
@@ -1522,14 +1355,7 @@
     \ Our framework shows notable improvements over traditional methods in various\
     \ tasks such as Quantitative Structure-Activity Relationship (QSAR) prediction.\n\
     \t\t"
-  author_roles:
-  - name: Klea Ziu
-    role: student
-  - name: Elizaveta Starykh
-    role: student
-  authors: "Nikolai Rekut, Alexey Orlov, Klea Ziu<sup class=\"author-role\" title=\"\
-    Supervised student or research mentee\">\u2020</sup>, Elizaveta Starykh<sup class=\"\
-    author-role\" title=\"Supervised student or research mentee\">\u2020</sup>, <strong>Martin\
+  authors: "Nikolai Rekut, Alexey Orlov, Klea Ziu, Elizaveta Starykh, <strong>Martin\
     \ Tak\xE1\u010D</strong>, Aleksandr Beznosikov"
   journal: IEEE Access; the shorter version was accepted in AI4Science Workshop @
     NeurIPS 2025
@@ -1572,16 +1398,8 @@
     evaluations highlight its ability to mitigate the adverse effects of outlier and
     adversarial clients, paving the way for more effective and resilient FL in heterogeneous
     environments.
-  author_roles:
-  - name: Nazarii Tupitsa
-    role: staff
-  - name: Eduard Gorbunov
-    role: staff
-  authors: "Nazarii Tupitsa<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Samuel Horv\xE1\
-    th, <strong>Martin Tak\xE1\u010D</strong>, Eduard Gorbunov<sup class=\"author-role\"\
-    \ title=\"Postdoctoral researcher, research scientist, or engineer in my group\"\
-    >\u2021</sup>"
+  authors: "Nazarii Tupitsa, Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D</strong>,\
+    \ Eduard Gorbunov"
   journal: Third Conference on Parsimony and Learning (CPAL'26)
   keywords:
   - merit-based federated averaging
@@ -1617,15 +1435,8 @@
     coefficient and gradient heterogeneity. Experimental validation on heterogeneous
     MNIST classification and synthetic $(L_0,L_1)$-smooth optimization problems demonstrates
     the effectiveness of our approach against various Byzantine attack strategies.
-  author_roles:
-  - name: Arman Bolatov
-    role: student
-  - name: Eduard Gorbunov
-    role: staff
-  authors: "Arman Bolatov<sup class=\"author-role\" title=\"Supervised student or\
-    \ research mentee\">\u2020</sup>, Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D\
-    </strong>, Eduard Gorbunov<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>"
+  authors: "Arman Bolatov, Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D</strong>,\
+    \ Eduard Gorbunov"
   journal: Third Conference on Parsimony and Learning (CPAL'26)
   keywords:
   - byzantine-robust optimization
@@ -1673,12 +1484,8 @@
     Our findings suggest that scalable second-order approximations strike an effective
     balance between computational efficiency and accuracy, making them a valuable
     addition to the pruning toolkit.'
-  author_roles:
-  - name: Nicolas Mauricio Cuadrado
-    role: student
-  authors: "Ivo Gollini Navarrete, Nicolas Mauricio Cuadrado<sup class=\"author-role\"\
-    \ title=\"Supervised student or research mentee\">\u2020</sup>, <strong>Martin\
-    \ Tak\xE1\u010D</strong>, Samuel Horv\xE1th"
+  authors: "Ivo Gollini Navarrete, Nicolas Mauricio Cuadrado, <strong>Martin Tak\xE1\
+    \u010D</strong>, Samuel Horv\xE1th"
   journal: Third Conference on Parsimony and Learning (CPAL'26)
   keywords:
   - pruning at initialization
@@ -1711,15 +1518,7 @@
     \ backtracking procedure with provable convergence as if the optimal smoothness\
     \ parameters were known in advance. Additionally, we present strong convergence\
     \ guarantees for the practically popular Newton method with exact linesearch."
-  author_roles:
-  - name: Slavomir Hanzely
-    role: staff
-  - name: Farshed Abdukhakimov
-    role: student
-  authors: "Slavomir Hanzely<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Farshed Abdukhakimov<sup\
-    \ class=\"author-role\" title=\"Supervised student or research mentee\">\u2020\
-    </sup>, <strong>Martin Tak\xE1\u010D</strong>"
+  authors: "Slavomir Hanzely, Farshed Abdukhakimov, <strong>Martin Tak\xE1\u010D</strong>"
   journal: International Conference on Learning Representations, ICLR 2026
   keywords:
   - newton method
@@ -1841,18 +1640,7 @@
     By combining cubic regularization, acceleration technique, and adaptivity, our
     algorithms show good practical performance, especially from the points where classical
     Newton diverges.
-  author_roles:
-  - name: Dmitry Kamzolov
-    role: staff
-  - name: Klea Ziu
-    role: student
-  - name: Artem Agafonov
-    role: staff
-  authors: "Dmitry Kamzolov<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Klea Ziu<sup class=\"\
-    author-role\" title=\"Supervised student or research mentee\">\u2020</sup>, Artem\
-    \ Agafonov<sup class=\"author-role\" title=\"Postdoctoral researcher, research\
-    \ scientist, or engineer in my group\">\u2021</sup>, <strong>Martin Tak\xE1\u010D\
+  authors: "Dmitry Kamzolov, Klea Ziu, Artem Agafonov, <strong>Martin Tak\xE1\u010D\
     </strong>"
   journal: Journal of Optimization Theory and Applications
   keywords:
@@ -1893,11 +1681,7 @@
     \ stationary systems, and sheaf-based architectures with unitary connection. The\
     \ resulting structural identifications yield complexity bounds controlled by sparse\
     \ graph or supra-graph geometry rather than dense ambient connectivity."
-  author_roles:
-  - name: Dmitry Pasechnyuk-Vilensky
-    role: student
-  authors: "Dmitry Pasechnyuk-Vilensky<sup class=\"author-role\" title=\"Supervised\
-    \ student or research mentee\">\u2020</sup>, <strong>Martin Tak\xE1\u010D</strong>"
+  authors: "Dmitry Pasechnyuk-Vilensky, <strong>Martin Tak\xE1\u010D</strong>"
   journal: arXiv
   keywords:
   - latent graph geometry
@@ -1948,13 +1732,8 @@
     \ our findings uncover a previously hidden layer of methylation-dependent TF\u2013\
     DNA recognition, broadening the understanding of epigenetics in transcriptional\
     \ regulation."
-  author_roles:
-  - name: Ruben Solozabal
-    role: staff
-  authors: "Irina Miodownik, Ruben Solozabal<sup class=\"author-role\" title=\"Postdoctoral\
-    \ researcher, research scientist, or engineer in my group\">\u2021</sup>, Michael\
-    \ P. O\u2019Hagan, Shira Albeck, Yoav Peleg, <strong>Martin Tak\xE1\u010D</strong>,\
-    \ Ariel Afek"
+  authors: "Irina Miodownik, Ruben Solozabal, Michael P. O\u2019Hagan, Shira Albeck,\
+    \ Yoav Peleg, <strong>Martin Tak\xE1\u010D</strong>, Ariel Afek"
   journal: Proceedings of the National Academy of Sciences (PNAS)
   keywords:
   - dna methylation
@@ -2028,11 +1807,7 @@
     \ dualizing pair $(E,R)$. The framework therefore provides a substrate-independent\
     \ criterion for primal-dual exactness and a uniform homological description of\
     \ its obstructions."
-  author_roles:
-  - name: Dmitry Pasechnyuk-Vilensky
-    role: student
-  authors: "Dmitry Pasechnyuk-Vilensky<sup class=\"author-role\" title=\"Supervised\
-    \ student or research mentee\">\u2020</sup>, <strong>Martin Tak\xE1\u010D</strong>"
+  authors: "Dmitry Pasechnyuk-Vilensky, <strong>Martin Tak\xE1\u010D</strong>"
   journal: arXiv
   keywords:
   - homological duality
@@ -2057,15 +1832,8 @@
   title: 'Ethic Duality: A Homological Framework for Primal-Dual Problems'
   type: tpaper
   year: '2025'
-- author_roles:
-  - name: Dmitry Pasechnyuk-Vilensky
-    role: student
-  - name: Dmitry Kamzolov
-    role: staff
-  authors: "Dmitry Pasechnyuk-Vilensky<sup class=\"author-role\" title=\"Supervised\
-    \ student or research mentee\">\u2020</sup>, Dmitry Kamzolov<sup class=\"author-role\"\
-    \ title=\"Postdoctoral researcher, research scientist, or engineer in my group\"\
-    >\u2021</sup>, <strong>Martin Tak\xE1\u010D</strong>"
+- authors: "Dmitry Pasechnyuk-Vilensky, Dmitry Kamzolov, <strong>Martin Tak\xE1\u010D\
+    </strong>"
   keywords:
   - cubic newton method
   - variance reduction
@@ -2145,12 +1913,7 @@
     the learned policy away from random behavior and improves returns. These results
     indicate that value aware, distributional signals such as BWD are practical tools
     for triaging offline RL datasets and policy optimization.
-  author_roles:
-  - name: Arip Asadulaev
-    role: staff
-  authors: "Arip Asadulaev<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Fakhri Karray, <strong>Martin\
-    \ Tak\xE1\u010D</strong>"
+  authors: "Arip Asadulaev, Fakhri Karray, <strong>Martin Tak\xE1\u010D</strong>"
   keywords:
   - offline reinforcement learning
   - dataset quality estimation
@@ -2184,12 +1947,8 @@
     of forward passes by 18x and eliminates halting mechanisms, while maintaining
     quality comparable to standard TRMs. Notably, we achieve 24% accuracy on ARC-1
     with only 0.8M parameters, outperforming most LLMs.'
-  author_roles:
-  - name: Arip Asadulaev
-    role: staff
-  authors: "Arip Asadulaev<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Rayan Banerjee,\
-    \ Fakhri Karray, <strong>Martin Tak\xE1\u010D</strong>"
+  authors: "Arip Asadulaev, Rayan Banerjee, Fakhri Karray, <strong>Martin Tak\xE1\u010D\
+    </strong>"
   keywords:
   - latent reasoning
   - tiny recursive models
@@ -2239,13 +1998,9 @@
     the oil and gas domain. These shortcomings highlight the need for targeted domain
     adaptation, deeper integration of technical knowledge, and rigorous evaluation
     tailored to the complexities of the industry.'
-  author_roles:
-  - name: Zangir Iklassov
-    role: staff
   authors: "F. Castanedo, W. Bhattacharya, S. Ghosh, <strong>Martin Tak\xE1\u010D\
-    </strong>, Salem Lahlou, Zangir Iklassov<sup class=\"author-role\" title=\"Postdoctoral\
-    \ researcher, research scientist, or engineer in my group\">\u2021</sup>, M. Schaffrath,\
-    \ N. Reddicharla, R. Mohan, M. Yaslam, M. Lee"
+    </strong>, Salem Lahlou, Zangir Iklassov, M. Schaffrath, N. Reddicharla, R. Mohan,\
+    \ M. Yaslam, M. Lee"
   journal: Abu Dhabi International Petroleum Exhibition and Conference
   keywords:
   - oil and gas domain evaluation
@@ -2282,11 +2037,7 @@
     \ Experiments confirm that our approach delivers strong consistency with observations\
     \ and high-quality results across multiple tasks while significantly reducing\
     \ inference costs \u2014 making it the fastest method among competitors."
-  author_roles:
-  - name: Abduragim Shtanchaev
-    role: student
-  authors: "Abduragim Shtanchaev<sup class=\"author-role\" title=\"Supervised student\
-    \ or research mentee\">\u2020</sup>, Albina Ilina, Yazid Janati, Badr Mofad, <strong>Martin\
+  authors: "Abduragim Shtanchaev, Albina Ilina, Yazid Janati, Badr Mofad, <strong>Martin\
     \ Tak\xE1\u010D</strong>, Eric Moulines"
   keywords:
   - zero-shot diffusion guidance
@@ -2329,13 +2080,8 @@
     \ budget, and driven by its meta-learned initialization, ATAN converges 2\u2013\
     3\xD7 faster, with the largest gains on challenging cross-domain transfers (e.g.,\
     \ medical, satellite), demonstrating robust generalization."
-  author_roles:
-  - name: Hazem Lashen
-    role: student
   authors: "Lotfi Abdelkrim Mecharbat, Ibrahim Almakky, Abdelrahman Elsayed, Hazem\
-    \ Lashen<sup class=\"author-role\" title=\"Supervised student or research mentee\"\
-    >\u2020</sup>, Alya Almsouti, <strong>Martin Tak\xE1\u010D</strong>, Mohammad\
-    \ Yaqub"
+    \ Lashen, Alya Almsouti, <strong>Martin Tak\xE1\u010D</strong>, Mohammad Yaqub"
   keywords:
   - vision foundation models
   - parameter-efficient fine-tuning
@@ -2390,16 +2136,8 @@
 
     some cases outperform, existing state-of-the-art methods. Our code is available
     athttps://anonymous.4open.science/r/LIB-2D05'
-  author_roles:
-  - name: Arman Bolatov
-    role: student
-  - name: Slavomir Hanzely
-    role: staff
-  authors: "Andrey Veprikov, Arman Bolatov<sup class=\"author-role\" title=\"Supervised\
-    \ student or research mentee\">\u2020</sup>, Samuel Horv\xE1th, Aleksandr Beznosikov,\
-    \ <strong>Martin Tak\xE1\u010D</strong>, Slavomir Hanzely<sup class=\"author-role\"\
-    \ title=\"Postdoctoral researcher, research scientist, or engineer in my group\"\
-    >\u2021</sup>"
+  authors: "Andrey Veprikov, Arman Bolatov, Samuel Horv\xE1th, Aleksandr Beznosikov,\
+    \ <strong>Martin Tak\xE1\u010D</strong>, Slavomir Hanzely"
   keywords:
   - preconditioned matrix norms
   - steepest descent
@@ -2430,19 +2168,8 @@
     a scalable neural ODE training objective. On synthetic, image, and biology datasets,
     Y-flows recover hierarchy-aware structure, improve distributional metrics over
     strong flow-based baselines, and reach targets with fewer integration steps.'
-  author_roles:
-  - name: Arip Asadulaev
-    role: staff
-  - name: Semyon Semenov
-    role: student
-  - name: Abduragim Shtanchaev
-    role: student
-  authors: "Arip Asadulaev<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Semyon Semenov<sup\
-    \ class=\"author-role\" title=\"Supervised student or research mentee\">\u2020\
-    </sup>, Abduragim Shtanchaev<sup class=\"author-role\" title=\"Supervised student\
-    \ or research mentee\">\u2020</sup>, Eric Moulines, Fakhri Karray, <strong>Martin\
-    \ Tak\xE1\u010D</strong>"
+  authors: "Arip Asadulaev, Semyon Semenov, Abduragim Shtanchaev, Eric Moulines, Fakhri\
+    \ Karray, <strong>Martin Tak\xE1\u010D</strong>"
   keywords:
   - y-shaped generative flows
   - continuous-time generative models
@@ -2484,15 +2211,8 @@
     representing high-dimensional uncertainties. We demonstrate the approach''s effectiveness
     through a representative power system planning case study, illustrating computational
     and reliability advantages over traditional scenario-based models.'
-  author_roles:
-  - name: Nicolas Mauricio Cuadrado
-    role: student
-  - name: Mohannad Takrouri
-    role: student
-  authors: "Nicolas Mauricio Cuadrado<sup class=\"author-role\" title=\"Supervised\
-    \ student or research mentee\">\u2020</sup>, Mohannad Takrouri<sup class=\"author-role\"\
-    \ title=\"Supervised student or research mentee\">\u2020</sup>, Ji\u0159\xED N\u011B\
-    me\u010Dek, <strong>Martin Tak\xE1\u010D</strong>, Jakub Mare\u010Dek"
+  authors: "Nicolas Mauricio Cuadrado, Mohannad Takrouri, Ji\u0159\xED N\u011Bme\u010D\
+    ek, <strong>Martin Tak\xE1\u010D</strong>, Jakub Mare\u010Dek"
   keywords:
   - investment planning
   - power utilities
@@ -2526,13 +2246,8 @@
     of many nonconvex problems while preserving the same sequence of iterates. Our
     analysis also explains the effectiveness of unconventional stepsizes in Newton's
     method, including values greater than one and even negative steps.
-  author_roles:
-  - name: "Slavom\xEDr Hanzely"
-    role: staff
   authors: "Alexander Shestakov, Sushil Bohara, Samuel Horv\xE1th, <strong>Martin\
-    \ Tak\xE1\u010D</strong>, Slavom\xEDr Hanzely<sup class=\"author-role\" title=\"\
-    Postdoctoral researcher, research scientist, or engineer in my group\">\u2021\
-    </sup>"
+    \ Tak\xE1\u010D</strong>, Slavom\xEDr Hanzely"
   keywords:
   - damped newton method
   - loss-transformation invariance
@@ -2567,12 +2282,8 @@
     could be of interest. Across a linear task, MNIST, CIFAR-100, and RoBERTa-base
     (MNLI), OPLoRA consistently approaches SVDLoRA's performance using significantly
     less memory.
-  author_roles:
-  - name: Abdulla Jasem Almansoori
-    role: student
-  authors: "Abdulla Jasem Almansoori<sup class=\"author-role\" title=\"Supervised\
-    \ student or research mentee\">\u2020</sup>, Maria Ivanova, Andrey Veprikov, Aleksandr\
-    \ Beznosikov, Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D</strong>"
+  authors: "Abdulla Jasem Almansoori, Maria Ivanova, Andrey Veprikov, Aleksandr Beznosikov,\
+    \ Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D</strong>"
   journal: 'OPT 2025: Optimization for Machine Learning @ NeurIPS 2025'
   keywords:
   - low-rank adaptation
@@ -2604,12 +2315,8 @@
     averaging, and a learned meta-aggregator. Evaluated on MNIST and CIFAR-10, these
     methods reduce communication overhead, improve robustness under non-IID data,
     and achieve accuracy competitive with centralized training.'
-  author_roles:
-  - name: Viktor Kovalchuk
-    role: student
-  authors: "Viktor Kovalchuk<sup class=\"author-role\" title=\"Supervised student\
-    \ or research mentee\">\u2020</sup>, Nikita Kotelevskii, Maxim Panov, Samuel Horv\xE1\
-    th, <strong>Martin Tak\xE1\u010D</strong>"
+  authors: "Viktor Kovalchuk, Nikita Kotelevskii, Maxim Panov, Samuel Horv\xE1th,\
+    \ <strong>Martin Tak\xE1\u010D</strong>"
   journal: 'OPT 2025: Optimization for Machine Learning @ NeurIPS 2025'
   keywords:
   - logit-based federated learning
@@ -2650,15 +2357,8 @@
     their ability to capture biologically meaningful combinatorial regulation and
     their reliance on contextual sequence features. Our code is publicly available
     at \href{https://anonymous.4open.science/r/EpiBinder-C7CD/README.md}{\textit{Anonymous-GitHub}}
-  author_roles:
-  - name: Ruben Solozabal
-    role: staff
-  - name: Albert Baichorov
-    role: student
-  authors: "Ruben Solozabal<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Albert Baichorov<sup\
-    \ class=\"author-role\" title=\"Supervised student or research mentee\">\u2020\
-    </sup>, Tamir Avioz, Le Song, Ariel Afek, <strong>Martin Tak\xE1\u010D</strong>"
+  authors: "Ruben Solozabal, Albert Baichorov, Tamir Avioz, Le Song, Ariel Afek, <strong>Martin\
+    \ Tak\xE1\u010D</strong>"
   journal: 2nd Workshop on Multi-modal Foundation Models and Large Language Models
     for Life Sciences @ NeurIPS 2025
   keywords:
@@ -2694,15 +2394,7 @@
     \ \n  Polyak-Lojasiewicz  condition. Through theoretical analysis and empirical\
     \ evaluations, we showcase the effectiveness of\n   our approach, achieving fast\
     \ convergence rates and improved model performance compared with existing methods."
-  author_roles:
-  - name: Yanlin Wu
-    role: student
-  - name: Dmitry Kamzolov
-    role: staff
-  authors: "Yanlin Wu<sup class=\"author-role\" title=\"Supervised student or research\
-    \ mentee\">\u2020</sup>, Dmitry Kamzolov<sup class=\"author-role\" title=\"Postdoctoral\
-    \ researcher, research scientist, or engineer in my group\">\u2021</sup>, <strong>Martin\
-    \ Tak\xE1\u010D</strong>"
+  authors: "Yanlin Wu, Dmitry Kamzolov, <strong>Martin Tak\xE1\u010D</strong>"
   journal: 'OPT 2025: Optimization for Machine Learning @ NeurIPS 2025'
   keywords:
   - quasi-newton methods
@@ -2736,15 +2428,7 @@
     in the role of pole placing in the initialization enable us to further scale them
     and achieve state-of-the-art results on the Long Range Arena benchmark, allowing
     us to train from scratch on very large datasets as PathX-256.
-  author_roles:
-  - name: Ruben Solozabal
-    role: staff
-  - name: Velibor Bojkovic
-    role: staff
-  authors: "Ruben Solozabal<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Velibor Bojkovic<sup\
-    \ class=\"author-role\" title=\"Postdoctoral researcher, research scientist, or\
-    \ engineer in my group\">\u2021</sup>, Hilal AlQuabeh, Kentaro Inui, <strong>Martin\
+  authors: "Ruben Solozabal, Velibor Bojkovic, Hilal AlQuabeh, Kentaro Inui, <strong>Martin\
     \ Tak\xE1\u010D</strong>"
   journal: NeurIPS 2025
   keywords:
@@ -2782,12 +2466,8 @@
     we release the dataset and evaluation suite. SVRPBench challenges the community
     to design solvers that generalize beyond synthetic assumptions and adapt to real-world
     uncertainty.'
-  author_roles:
-  - name: Zangir Iklassov
-    role: staff
   authors: "Ahmed Heakl, Yahia Salaheldin Shaaban, <strong>Martin Tak\xE1\u010D</strong>,\
-    \ Salem Lahlou, Zangir Iklassov<sup class=\"author-role\" title=\"Postdoctoral\
-    \ researcher, research scientist, or engineer in my group\">\u2021</sup>"
+    \ Salem Lahlou, Zangir Iklassov"
   journal: NeurIPS 2025
   keywords:
   - stochastic vehicle routing problem
@@ -2866,15 +2546,8 @@
     energy. The framework takes into account fluctuations in energy demand and supply
     due to household supplied energy from renewable energy sources and energy storage
     levels in household energy storage devices.
-  author_roles:
-  - name: Nicolas Mauricio Cuadrado
-    role: student
-  - name: Roberto Alejandro Gutierrez Guillen
-    role: student
-  authors: "<strong>Martin Tak\xE1\u010D</strong>, Nicolas Mauricio Cuadrado<sup class=\"\
-    author-role\" title=\"Supervised student or research mentee\">\u2020</sup>, Roberto\
-    \ Alejandro Gutierrez Guillen<sup class=\"author-role\" title=\"Supervised student\
-    \ or research mentee\">\u2020</sup>, Samuel Horv\xE1th"
+  authors: "<strong>Martin Tak\xE1\u010D</strong>, Nicolas Mauricio Cuadrado, Roberto\
+    \ Alejandro Gutierrez Guillen, Samuel Horv\xE1th"
   journal: US 2025/0272621 A1
   keywords:
   - multi-agent reinforcement learning
@@ -2910,15 +2583,8 @@
     encourages reduction of carbon emission. A federated learning engine combines
     the model parameters from the household machine learning agents to update a global
     household machine learning agent.
-  author_roles:
-  - name: Nicolas Mauricio Cuadrado
-    role: student
-  - name: Roberto Alejandro Gutierrez Guillen
-    role: student
-  authors: "<strong>Martin Tak\xE1\u010D</strong>, Nicolas Mauricio Cuadrado<sup class=\"\
-    author-role\" title=\"Supervised student or research mentee\">\u2020</sup>, Roberto\
-    \ Alejandro Gutierrez Guillen<sup class=\"author-role\" title=\"Supervised student\
-    \ or research mentee\">\u2020</sup>, Samuel Horv\xE1th"
+  authors: "<strong>Martin Tak\xE1\u010D</strong>, Nicolas Mauricio Cuadrado, Roberto\
+    \ Alejandro Gutierrez Guillen, Samuel Horv\xE1th"
   journal: US 2025/0272723 A1
   keywords:
   - federated reinforcement learning
@@ -2942,15 +2608,7 @@
   type: patent
   year: '2025'
 - abstract: 'Filing date: 06 Feb 2025. Assignee (Owner): Pending.'
-  author_roles:
-  - name: Zangir Iklassov
-    role: staff
-  - name: Farkhad Akimov
-    role: student
-  authors: "Zangir Iklassov<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Farkhad Akimov<sup\
-    \ class=\"author-role\" title=\"Supervised student or research mentee\">\u2020\
-    </sup>, <strong>Martin Tak\xE1\u010D</strong>"
+  authors: "Zangir Iklassov, Farkhad Akimov, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Provisional - USPTO Application 63/754,814 (Filed 06 Feb 2025)
   keywords:
   - automated machine learning pipeline
@@ -2971,12 +2629,7 @@
   type: patent
   year: '2025'
 - abstract: 'Filing date: Mar 24, 2025. Assignee (Owner): MBZUAI.'
-  author_roles:
-  - name: Artem Agafonov
-    role: staff
-  authors: "Artem Agafonov<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, <strong>Martin Tak\xE1\
-    \u010D</strong>"
+  authors: "Artem Agafonov, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Provisional - USPTO Application 63/776,665 (Filed Mar 24, 2025, MBZUAI
     Ref. 2025-007)
   keywords:
@@ -2999,15 +2652,7 @@
   type: patent
   year: '2025'
 - abstract: 'Filing date: April 15, 2025. Assignee (Owner): MBZUAI.'
-  author_roles:
-  - name: Mohannad Takrouri
-    role: student
-  - name: Nicolas Avila
-    role: student
-  authors: "<strong>Martin Tak\xE1\u010D</strong>, Mohannad Takrouri<sup class=\"\
-    author-role\" title=\"Supervised student or research mentee\">\u2020</sup>, Nicolas\
-    \ Avila<sup class=\"author-role\" title=\"Supervised student or research mentee\"\
-    >\u2020</sup>"
+  authors: "<strong>Martin Tak\xE1\u010D</strong>, Mohannad Takrouri, Nicolas Avila"
   journal: Submitted - USPTO Application 19179677 (Filed April 15, 2025, MBZUAI Ref.
     2024-005)
   keywords:
@@ -3045,19 +2690,8 @@
     \ improvements over standard Quasi-Newton baselines. To further enhance robustness,\
     \ we develop an adaptive variant that adjusts to the function's curvature while\
     \ retaining the global convergence guarantees of the non-adaptive algorithm."
-  author_roles:
-  - name: Artem Agafonov
-    role: staff
-  - name: Vladislav Ryspayev
-    role: student
-  - name: Slavomir Hanzely
-    role: staff
-  authors: "Artem Agafonov<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Vladislav Ryspayev<sup\
-    \ class=\"author-role\" title=\"Supervised student or research mentee\">\u2020\
-    </sup>, Samuel Horv\xE1th, Alexander Gasnikov, <strong>Martin Tak\xE1\u010D</strong>,\
-    \ Slavomir Hanzely<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>"
+  authors: "Artem Agafonov, Vladislav Ryspayev, Samuel Horv\xE1th, Alexander Gasnikov,\
+    \ <strong>Martin Tak\xE1\u010D</strong>, Slavomir Hanzely"
   keywords:
   - quasi-newton methods
   - simple stepsize schedule
@@ -3089,11 +2723,7 @@
     value. We provide a theoretical analysis of the approach and validate its performance
     through numerical experiments. The results demonstrate that our method achieves
     competitive performance without relying on prior function-dependent information.'
-  author_roles:
-  - name: Farshed Abdukhakimov
-    role: student
-  authors: "Farshed Abdukhakimov<sup class=\"author-role\" title=\"Supervised student\
-    \ or research mentee\">\u2020</sup>, Cuong Anh Pham, Samuel Horv\xE1th, <strong>Martin\
+  authors: "Farshed Abdukhakimov, Cuong Anh Pham, Samuel Horv\xE1th, <strong>Martin\
     \ Tak\xE1\u010D</strong>, Slavom\u0131r Hanzely"
   keywords:
   - polyak stepsize
@@ -3130,15 +2760,8 @@
     to support sound conclusions. Together, they achieve in minutes what might otherwise
     take days or weeks, enabling a new kind of interaction that makes deep data science
     both accessible and actionable.
-  author_roles:
-  - name: Farkhad Akimov
-    role: student
-  - name: Zangir Iklassov
-    role: staff
-  authors: "Farkhad Akimov<sup class=\"author-role\" title=\"Supervised student or\
-    \ research mentee\">\u2020</sup>, Munachiso Samuel Nwadike, Zangir Iklassov<sup\
-    \ class=\"author-role\" title=\"Postdoctoral researcher, research scientist, or\
-    \ engineer in my group\">\u2021</sup>, <strong>Martin Tak\xE1\u010D</strong>"
+  authors: "Farkhad Akimov, Munachiso Samuel Nwadike, Zangir Iklassov, <strong>Martin\
+    \ Tak\xE1\u010D</strong>"
   keywords:
   - autonomous data scientist
   - llm subagents
@@ -3180,19 +2803,8 @@
     \ of adaptive step size and adaptive batch size gradually improves the performance\
     \ of regular SGD. The results imply that AdaBatchGrad surpasses alternative methods,\
     \ especially when applied to inexact tests."
-  author_roles:
-  - name: Aigerim Zhumabayeva
-    role: student
-  - name: Chulu Xiang
-    role: student
-  - name: Dmitry Kamzolov
-    role: staff
-  authors: "Petr Ostroukhov, Aigerim Zhumabayeva<sup class=\"author-role\" title=\"\
-    Supervised student or research mentee\">\u2020</sup>, Chulu Xiang<sup class=\"\
-    author-role\" title=\"Supervised student or research mentee\">\u2020</sup>, Alexander\
-    \ Gasnikov, <strong>Martin Tak\xE1\u010D</strong>, Dmitry Kamzolov<sup class=\"\
-    author-role\" title=\"Postdoctoral researcher, research scientist, or engineer\
-    \ in my group\">\u2021</sup>"
+  authors: "Petr Ostroukhov, Aigerim Zhumabayeva, Chulu Xiang, Alexander Gasnikov,\
+    \ <strong>Martin Tak\xE1\u010D</strong>, Dmitry Kamzolov"
   journal: IMA Journal of Numerical Analysis
   keywords:
   - adaptive batch size
@@ -3229,12 +2841,8 @@
     \ of collaborative learning for achieving optimal control\n   policies in energy\
     \ systems, advancing the goals of sustainable and efficient smart grids. Our code\
     \ is accessible\n    https://github.com/Optimization-and-Machine-Learning-Lab/energy_fed_trpo.git."
-  author_roles:
-  - name: Nicolas Mauricio Cuadrado
-    role: student
-  authors: "Nicolas Mauricio Cuadrado<sup class=\"author-role\" title=\"Supervised\
-    \ student or research mentee\">\u2020</sup>, Samuel Horv\xE1th, <strong>Martin\
-    \ Tak\xE1\u010D</strong>"
+  authors: "Nicolas Mauricio Cuadrado, Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D\
+    </strong>"
   journal: ICML 2025 CO-BUILD Workshop on Computational Optimization of Buildings
   keywords:
   - personalised federated reinforcement learning
@@ -3270,15 +2878,8 @@
     \ information in a cell-type\u2013specific manner reduces the epistatic uncertainty\
     \ that current sequence-only DNA models suffer. Our model achieves up to a 15-point\
     \ gain in area under the precision\u2013recall curve compared the state-of-the-art."
-  author_roles:
-  - name: Ruben Solozabal
-    role: staff
-  - name: Albert Baichorov
-    role: student
-  authors: "Ruben Solozabal<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Albert Baichorov<sup\
-    \ class=\"author-role\" title=\"Supervised student or research mentee\">\u2020\
-    </sup>, Tamir Avioz, Le Song, <strong>Martin Tak\xE1\u010D</strong>, Ariel Afek"
+  authors: "Ruben Solozabal, Albert Baichorov, Tamir Avioz, Le Song, <strong>Martin\
+    \ Tak\xE1\u010D</strong>, Ariel Afek"
   journal: ICML 2025 Generative AI and Biology (GenBio) Workshop
   keywords:
   - transcription factor binding
@@ -3320,13 +2921,8 @@
     grounded reasoning tasks. The benchmark suite, datasets, data generation code,
     and evaluation code are made publicly available ($\href{https://github.com/choukrani/llm-babybench}{\text{GitHub}}$,
     $\href{https://huggingface.co/datasets/salem-mbzuai/LLM-BabyBench}{\text{HuggingFace}}$).'
-  author_roles:
-  - name: Zangir Iklassov
-    role: staff
-  authors: "Omar Choukrani, Idriss Malek, Daniil Orel, Zhuohan Xie, Zangir Iklassov<sup\
-    \ class=\"author-role\" title=\"Postdoctoral researcher, research scientist, or\
-    \ engineer in my group\">\u2021</sup>, <strong>Martin Tak\xE1\u010D</strong>,\
-    \ Salem Lahlou"
+  authors: "Omar Choukrani, Idriss Malek, Daniil Orel, Zhuohan Xie, Zangir Iklassov,\
+    \ <strong>Martin Tak\xE1\u010D</strong>, Salem Lahlou"
   keywords:
   - grounded planning
   - grounded reasoning
@@ -3415,13 +3011,9 @@
     with heavy-tailed noise. Our empirical evaluations, including NLP model fine-tuning,
     highlight the superiority of clipped versions of AdaGrad/Adam in handling the
     heavy-tailed noise.
-  author_roles:
-  - name: Eduard Gorbunov
-    role: staff
   authors: "Savelii Chezhegov, Yaroslav Klyukin, Andrei Semenov, Aleksandr Beznosikov,\
     \ Alexander Gasnikov, Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D</strong>,\
-    \ Eduard Gorbunov<sup class=\"author-role\" title=\"Postdoctoral researcher, research\
-    \ scientist, or engineer in my group\">\u2021</sup>"
+    \ Eduard Gorbunov"
   journal: ICML 2025 (International Conference on Machine Learning)
   keywords:
   - gradient clipping
@@ -3464,16 +3056,8 @@
     how the cycles they induce influence a model''s ability to reproduce information.
     To facilitate reproducibility, we provide our code and experimental details at
     this https URL.'
-  author_roles:
-  - name: Zangir Iklassov
-    role: staff
-  - name: Velibor Bojkovic
-    role: staff
-  authors: "Munachiso Nwadike, Zangir Iklassov<sup class=\"author-role\" title=\"\
-    Postdoctoral researcher, research scientist, or engineer in my group\">\u2021\
-    </sup>, Toluwani Aremu, Tatsuya Hiraoka, Velibor Bojkovic<sup class=\"author-role\"\
-    \ title=\"Postdoctoral researcher, research scientist, or engineer in my group\"\
-    >\u2021</sup>, Benjamin Heinzerling, Hilal Alqaubeh, <strong>Martin Tak\xE1\u010D\
+  authors: "Munachiso Nwadike, Zangir Iklassov, Toluwani Aremu, Tatsuya Hiraoka, Velibor\
+    \ Bojkovic, Benjamin Heinzerling, Hilal Alqaubeh, <strong>Martin Tak\xE1\u010D\
     </strong>, Kentaro Inui"
   journal: ACL 2025
   keywords:
@@ -3542,18 +3126,7 @@
     \ as PyTorch optimizers, thereby facilitating the practical application of high-order\
     \ methods to a wide range of optimization problems. We hope this library will\
     \ simplify research and practical comparison of methods beyond first-order."
-  author_roles:
-  - name: Dmitry Kamzolov
-    role: staff
-  - name: Dmitry Pasechnyuk
-    role: student
-  - name: Artem Agafonov
-    role: staff
-  authors: "Dmitry Kamzolov<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Dmitry Pasechnyuk<sup\
-    \ class=\"author-role\" title=\"Supervised student or research mentee\">\u2020\
-    </sup>, Artem Agafonov<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Alexander Gasnikov,\
+  authors: "Dmitry Kamzolov, Dmitry Pasechnyuk, Artem Agafonov, Alexander Gasnikov,\
     \ <strong>Martin Tak\xE1\u010D</strong>"
   journal: ICLR 2025
   keywords:
@@ -3589,20 +3162,8 @@
     under the over-parameterization assumption, propose a new accelerated method for
     convex (L0,L1)-smooth optimization, and derive new convergence rates for Adaptive
     Gradient Descent (Malitsky and Mishchenko, 2020).
-  author_roles:
-  - name: Eduard Gorbunov
-    role: staff
-  - name: Nazarii Tupitsa
-    role: staff
-  - name: Sayantan Choudhury
-    role: staff
-  authors: "Eduard Gorbunov<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Nazarii Tupitsa<sup\
-    \ class=\"author-role\" title=\"Postdoctoral researcher, research scientist, or\
-    \ engineer in my group\">\u2021</sup>, Sayantan Choudhury<sup class=\"author-role\"\
-    \ title=\"Postdoctoral researcher, research scientist, or engineer in my group\"\
-    >\u2021</sup>, Alen Aliev, Peter Richt\xE1rik, Samuel Horv\xE1th, <strong>Martin\
-    \ Tak\xE1\u010D</strong>"
+  authors: "Eduard Gorbunov, Nazarii Tupitsa, Sayantan Choudhury, Alen Aliev, Peter\
+    \ Richt\xE1rik, Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D</strong>"
   journal: ICLR 2025
   keywords:
   - (l0,l1)-smooth optimization
@@ -3641,13 +3202,8 @@
     \ under the Polyak-\u0141 ojasiewicz condition. Our theory is consistent with\
     \ the known results for standard smooth problems, and our experimental results\
     \ support the theoretical insights."
-  author_roles:
-  - name: Eduard Gorbunov
-    role: staff
   authors: "Yury Demidovich, Petr Ostroukhov, Grigory Malinovsky, Samuel Horv\xE1\
-    th, <strong>Martin Tak\xE1\u010D</strong>, Peter Richt\xE1rik, Eduard Gorbunov<sup\
-    \ class=\"author-role\" title=\"Postdoctoral researcher, research scientist, or\
-    \ engineer in my group\">\u2021</sup>"
+    th, <strong>Martin Tak\xE1\u010D</strong>, Peter Richt\xE1rik, Eduard Gorbunov"
   journal: ICLR 2025
   keywords:
   - generalized smoothness
@@ -3774,12 +3330,8 @@
     such as MNIST, CIFAR-10, and CIFAR-100. We also provide a theoretical analysis
     of local SGD on a relaxed objective and discuss the effects of aggregation mismatch
     on convergence.
-  author_roles:
-  - name: Abdulla Jasem Almansoori
-    role: student
-  authors: "Abdulla Jasem Almansoori<sup class=\"author-role\" title=\"Supervised\
-    \ student or research mentee\">\u2020</sup>, Samuel Horv\xE1th, <strong>Martin\
-    \ Tak\xE1\u010D</strong>"
+  authors: "Abdulla Jasem Almansoori, Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D\
+    </strong>"
   journal: Conference on Parsimony and Learning (CPAL)
   keywords:
   - federated low-rank adaptive learning
@@ -3822,15 +3374,8 @@
     avenue for scenario-based energy optimization. This approach underscores how prompt
     engineering, combined with knowledge distillation, can advance sustainable energy
     research and climate mitigation efforts. Source code is available at https://github.com/Singularity-AI-Lab/LLM-Energy-Knowledge-Distillation.
-  author_roles:
-  - name: Mohannad Takrouri
-    role: student
-  - name: Nicolas M Cuadrado Avila
-    role: student
-  authors: "Mohannad Takrouri<sup class=\"author-role\" title=\"Supervised student\
-    \ or research mentee\">\u2020</sup>, Nicolas M Cuadrado Avila<sup class=\"author-role\"\
-    \ title=\"Supervised student or research mentee\">\u2020</sup>, <strong>Martin\
-    \ Tak\xE1\u010D</strong>"
+  authors: "Mohannad Takrouri, Nicolas M Cuadrado Avila, <strong>Martin Tak\xE1\u010D\
+    </strong>"
   keywords:
   - household energy modeling
   - large language models
@@ -3866,15 +3411,7 @@
     and nonconvex cases, and local linear convergence is also established under strong
     convexity. Numerical experiments confirm the practical benefits of this new FLECS
     algorithm.'
-  author_roles:
-  - name: Artem Agafonov
-    role: staff
-  - name: Dmitry Kamzolov
-    role: staff
-  authors: "Artem Agafonov<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Dmitry Kamzolov<sup\
-    \ class=\"author-role\" title=\"Postdoctoral researcher, research scientist, or\
-    \ engineer in my group\">\u2021</sup>, Rachael Tappenden, Alexander Gasnikov,\
+  authors: "Artem Agafonov, Dmitry Kamzolov, Rachael Tappenden, Alexander Gasnikov,\
     \ <strong>Martin Tak\xE1\u010D</strong>"
   journal: Optimization Methods and Software (GOMS)
   keywords:
@@ -3958,16 +3495,8 @@
     such as, LIDC and RIGA that reflect real-world inter-variability among multiple
     annotators. Our experiments show that our algorithm outperforms state-of-the-art
     solutions for the considered classification and segmentation problems.
-  author_roles:
-  - name: Aigerim Zhumabayeva
-    role: student
-  - name: Artem Agafonov
-    role: staff
-  authors: "Asma Ahmed Hashmi, Aigerim Zhumabayeva<sup class=\"author-role\" title=\"\
-    Supervised student or research mentee\">\u2020</sup>, Nikita Kotelevski, Artem\
-    \ Agafonov<sup class=\"author-role\" title=\"Postdoctoral researcher, research\
-    \ scientist, or engineer in my group\">\u2021</sup>, Mohammad Yaqub, Maxim Panov,\
-    \ <strong>Martin Tak\xE1\u010D</strong>"
+  authors: "Asma Ahmed Hashmi, Aigerim Zhumabayeva, Nikita Kotelevski, Artem Agafonov,\
+    \ Mohammad Yaqub, Maxim Panov, <strong>Martin Tak\xE1\u010D</strong>"
   journal: SIAM International Conference on Data Mining (SDM25)
   keywords:
   - label noise
@@ -4002,12 +3531,8 @@
     The proposed framework highlights the feasibility of collaborative learning for
     achieving optimal control policies in energy systems, advancing the goals of sustainable
     and efficient smart grids.
-  author_roles:
-  - name: Nicolas M Cuadrado Avila
-    role: student
-  authors: "Nicolas M Cuadrado Avila<sup class=\"author-role\" title=\"Supervised\
-    \ student or research mentee\">\u2020</sup>, Samuel Horv\xE1th, <strong>Martin\
-    \ Tak\xE1\u010D</strong>"
+  authors: "Nicolas M Cuadrado Avila, Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D\
+    </strong>"
   keywords:
   - net-zero microgrids
   - federated reinforcement learning
@@ -4030,12 +3555,8 @@
   title: 'Generalizing in Net-Zero Microgrids: A Study with Federated PPO and TRPO'
   type: tpaper
   year: '2024'
-- author_roles:
-  - name: Eduard Gorbunov
-    role: staff
-  authors: "Aleksandr Lobanov, Alexander Gasnikov, Eduard Gorbunov<sup class=\"author-role\"\
-    \ title=\"Postdoctoral researcher, research scientist, or engineer in my group\"\
-    >\u2021</sup>, <strong>Martin Tak\xE1\u010D</strong>"
+- authors: "Aleksandr Lobanov, Alexander Gasnikov, Eduard Gorbunov, <strong>Martin\
+    \ Tak\xE1\u010D</strong>"
   keywords:
   - gradient descent
   - linear convergence
@@ -4072,12 +3593,8 @@
     function well in low-dimensional space. Finally, we conduct extensive experiments
     on graph-structured datasets to demonstrate the effectiveness of the proposed
     method.
-  author_roles:
-  - name: Ruben Solozabal
-    role: staff
-  authors: "Kun Song, Ruben Solozabal<sup class=\"author-role\" title=\"Postdoctoral\
-    \ researcher, research scientist, or engineer in my group\">\u2021</sup>, Lu Ren,\
-    \ Moloud Abdar, Qing Li, Fakhri Karray, <strong>Martin Tak\xE1\u010D</strong>"
+  authors: "Kun Song, Ruben Solozabal, Lu Ren, Moloud Abdar, Qing Li, Fakhri Karray,\
+    \ <strong>Martin Tak\xE1\u010D</strong>"
   keywords:
   - hyperbolic representation learning
   - second-order pooling
@@ -4112,20 +3629,8 @@
     several Quasi-Newton approximations. Our method with Quasi-Newton updates achieves
     a global sublinear convergence rate. We extend our approach with a tensor generalization
     for inexact high-order derivatives and support the theory with experiments.
-  author_roles:
-  - name: Artem Agafonov
-    role: staff
-  - name: Eduard Gorbunov
-    role: staff
-  - name: Dmitry Kamzolov
-    role: staff
-  authors: "Artem Agafonov<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Petr Ostroukhov,\
-    \ Konstantin Yakovlev, Eduard Gorbunov<sup class=\"author-role\" title=\"Postdoctoral\
-    \ researcher, research scientist, or engineer in my group\">\u2021</sup>, <strong>Martin\
-    \ Tak\xE1\u010D</strong>, Alexander Gasnikov, Dmitry Kamzolov<sup class=\"author-role\"\
-    \ title=\"Postdoctoral researcher, research scientist, or engineer in my group\"\
-    >\u2021</sup>"
+  authors: "Artem Agafonov, Petr Ostroukhov, Konstantin Yakovlev, Eduard Gorbunov,\
+    \ <strong>Martin Tak\xE1\u010D</strong>, Alexander Gasnikov, Dmitry Kamzolov"
   journal: NeurIPS 2024
   keywords:
   - variational inequalities
@@ -4166,15 +3671,8 @@
     existing prompting strategies by over 27.84% in CP optimization performance. Additionally,
     SGE achieves a 2.46% higher accuracy over the best existing results in other reasoning
     tasks (arithmetic, commonsense, and symbolic).'
-  author_roles:
-  - name: Zangir Iklassov
-    role: staff
-  - name: Farkhad Akimov
-    role: student
-  authors: "Zangir Iklassov<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Yali Du, Farkhad\
-    \ Akimov<sup class=\"author-role\" title=\"Supervised student or research mentee\"\
-    >\u2020</sup>, <strong>Martin Tak\xE1\u010D</strong>"
+  authors: "Zangir Iklassov, Yali Du, Farkhad Akimov, <strong>Martin Tak\xE1\u010D\
+    </strong>"
   journal: NeurIPS 2024
   keywords:
   - self-guiding exploration
@@ -4211,19 +3709,8 @@
     \ complex machine learning tasks like image classification and text classification\
     \ on real data. The results indicate that KATE consistently outperforms AdaGrad\
     \ and matches/surpasses the performance of Adam in all considered scenarios."
-  author_roles:
-  - name: Sayantan Choudhury
-    role: staff
-  - name: Nazarii Tupitsa
-    role: staff
-  - name: Eduard Gorbunov
-    role: staff
-  authors: "Sayantan Choudhury<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Nazarii Tupitsa<sup\
-    \ class=\"author-role\" title=\"Postdoctoral researcher, research scientist, or\
-    \ engineer in my group\">\u2021</sup>, Nicolas Loizou, Samuel Horv\xE1th, <strong>Martin\
-    \ Tak\xE1\u010D</strong>, Eduard Gorbunov<sup class=\"author-role\" title=\"Postdoctoral\
-    \ researcher, research scientist, or engineer in my group\">\u2021</sup>"
+  authors: "Sayantan Choudhury, Nazarii Tupitsa, Nicolas Loizou, Samuel Horv\xE1th,\
+    \ <strong>Martin Tak\xE1\u010D</strong>, Eduard Gorbunov"
   journal: NeurIPS 2024
   keywords:
   - scale-invariant adagrad
@@ -4295,12 +3782,8 @@
     \ of TC  as the target quantity. Our analyses demonstrate that models pretrained\
     \ \n    with magnetic corpus, i.e., MagBERT and MagMatBERT are more efficient\
     \ than the ones without pretraining.\n\t\t"
-  author_roles:
-  - name: Aigerim Zhumabayeva
-    role: student
-  authors: "Aigerim Zhumabayeva<sup class=\"author-role\" title=\"Supervised student\
-    \ or research mentee\">\u2020</sup>, Nikhil Ranjan, <strong>Martin Tak\xE1\u010D\
-    </strong>, Stefano Sanvito, Huseyin Ucar"
+  authors: "Aigerim Zhumabayeva, Nikhil Ranjan, <strong>Martin Tak\xE1\u010D</strong>,\
+    \ Stefano Sanvito, Huseyin Ucar"
   journal: The Journal of Physical Chemistry C
   keywords: []
   link: https://pubs.acs.org/doi/full/10.1021/acs.jpcc.4c01974
@@ -4326,12 +3809,8 @@
     \ of TC  as the target quantity. Our analyses demonstrate that models pretrained\
     \ \n    with magnetic corpus, i.e., MagBERT and MagMatBERT are more efficient\
     \ than the ones without pretraining."
-  author_roles:
-  - name: Aigerim Zhumabayeva
-    role: student
-  authors: "Aigerim Zhumabayeva<sup class=\"author-role\" title=\"Supervised student\
-    \ or research mentee\">\u2020</sup>, Nikhil Ranjan, <strong>Martin Tak\xE1\u010D\
-    </strong>, Stefano Sanvito, Huseyin Ucar"
+  authors: "Aigerim Zhumabayeva, Nikhil Ranjan, <strong>Martin Tak\xE1\u010D</strong>,\
+    \ Stefano Sanvito, Huseyin Ucar"
   journal: The Journal of Physical Chemistry C
   keywords:
   - magbert
@@ -4407,18 +3886,8 @@
     the learning rate of an optimizer. In this paper, we propose an extension of SPS
     that employs preconditioning techniques, such as Hutchinson's method, Adam, and
     AdaGrad, to improve its performance on badly scaled and/or ill-conditioned datasets.
-  author_roles:
-  - name: Farshed Abdukhakimov
-    role: student
-  - name: Chulu Xiang
-    role: student
-  - name: Dmitry Kamzolov
-    role: staff
-  authors: "Farshed Abdukhakimov<sup class=\"author-role\" title=\"Supervised student\
-    \ or research mentee\">\u2020</sup>, Chulu Xiang<sup class=\"author-role\" title=\"\
-    Supervised student or research mentee\">\u2020</sup>, Dmitry Kamzolov<sup class=\"\
-    author-role\" title=\"Postdoctoral researcher, research scientist, or engineer\
-    \ in my group\">\u2021</sup>, <strong>Martin Tak\xE1\u010D</strong>"
+  authors: "Farshed Abdukhakimov, Chulu Xiang, Dmitry Kamzolov, <strong>Martin Tak\xE1\
+    \u010D</strong>"
   journal: Computational Mathematics and Mathematical Physics
   keywords:
   - stochastic gradient descent
@@ -4453,12 +3922,8 @@
     a cell-specific deep-learning model that enables this association. Our work offers
     a biophysical interpretation of in vivo binding and suggests that current deep
     learning models can benefit from in vivo methylation maps currently available.
-  author_roles:
-  - name: Ruben Solozabal
-    role: staff
-  authors: "Ruben Solozabal<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Guy Ilan, <strong>Martin\
-    \ Tak\xE1\u010D</strong>, Ariel Afek"
+  authors: "Ruben Solozabal, Guy Ilan, <strong>Martin Tak\xE1\u010D</strong>, Ariel\
+    \ Afek"
   keywords:
   - cytosine methylation
   - transcription factor binding
@@ -4496,12 +3961,8 @@
     \ between \u21132 and \u2113\u221E quantization closes the gaps in theory and\
     \ practice. Finally, by applying our analysis technique to TernGrad, we establish\
     \ the first convergence rate for this method."
-  author_roles:
-  - name: Eduard Gorbunov
-    role: staff
-  authors: "Konstantin Mishchenko, Eduard Gorbunov<sup class=\"author-role\" title=\"\
-    Postdoctoral researcher, research scientist, or engineer in my group\">\u2021\
-    </sup>, <strong>Martin Tak\xE1\u010D</strong>, Peter Richt\xE1rik"
+  authors: "Konstantin Mishchenko, Eduard Gorbunov, <strong>Martin Tak\xE1\u010D</strong>,\
+    \ Peter Richt\xE1rik"
   journal: Optimization Methods and Software (GOMS)
   keywords:
   - compressed gradient differences
@@ -4582,12 +4043,8 @@
     such as data anonymization, by sharing only the content. Extensive experimental
     evaluation corroborates our findings, and we also discuss a theoretical motivation
     for the proposed approach.
-  author_roles:
-  - name: Abdulla Jasem Almansoori
-    role: student
-  authors: "Abdulla Jasem Almansoori<sup class=\"author-role\" title=\"Supervised\
-    \ student or research mentee\">\u2020</sup>, Samuel Horv\xE1th, <strong>Martin\
-    \ Tak\xE1\u010D</strong>"
+  authors: "Abdulla Jasem Almansoori, Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D\
+    </strong>"
   journal: Transactions on Machine Learning Research
   keywords:
   - partially federated gans
@@ -4624,16 +4081,8 @@
     able to mitigate the impact of badly scaled problems, and this improved practical
     performance is demonstrated in the numerical experiments that are also presented
     in this work.'
-  author_roles:
-  - name: Abdulla Jasem Almansoori
-    role: student
-  - name: Dmitry Kamzolov
-    role: staff
-  authors: "Abdurakhmon Sadiev, Aleksandr Beznosikov, Abdulla Jasem Almansoori<sup\
-    \ class=\"author-role\" title=\"Supervised student or research mentee\">\u2020\
-    </sup>, Dmitry Kamzolov<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Rachael Tappenden,\
-    \ <strong>Martin Tak\xE1\u010D</strong>"
+  authors: "Abdurakhmon Sadiev, Aleksandr Beznosikov, Abdulla Jasem Almansoori, Dmitry\
+    \ Kamzolov, Rachael Tappenden, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Journal of Optimization Theory and Applications
   keywords:
   - non-convex finite sum minimization
@@ -4665,12 +4114,8 @@
     we address several issues, including unknown f* in the Polyak step-size. Additionally,
     we showcase the performance of the Polyak step-size in RL through experiments,
     demonstrating faster convergence and the attainment of more stable policies.
-  author_roles:
-  - name: Yunxiang LI
-    role: student
-  authors: "Yunxiang LI<sup class=\"author-role\" title=\"Supervised student or research\
-    \ mentee\">\u2020</sup>, Rui Yuan, Chen Fan, Mark Schmidt, Samuel Horv\xE1th,\
-    \ Robert M. Gower, <strong>Martin Tak\xE1\u010D</strong>"
+  authors: "Yunxiang LI, Rui Yuan, Chen Fan, Mark Schmidt, Samuel Horv\xE1th, Robert\
+    \ M. Gower, <strong>Martin Tak\xE1\u010D</strong>"
   keywords:
   - policy gradient
   - polyak step-size
@@ -4704,15 +4149,8 @@
     to generalize to previously unseen data. Experimental results validate the robustness
     of our approach, affirming its proficiency in effectively learning policy models
     for smart grid challenges.
-  author_roles:
-  - name: Nicolas Cuadrado
-    role: student
-  - name: Yunxiang Li
-    role: student
-  authors: "Nicolas Cuadrado<sup class=\"author-role\" title=\"Supervised student\
-    \ or research mentee\">\u2020</sup>, Yunxiang Li<sup class=\"author-role\" title=\"\
-    Supervised student or research mentee\">\u2020</sup>, Samuel Horv\xE1th, <strong>Martin\
-    \ Tak\xE1\u010D</strong>"
+  authors: "Nicolas Cuadrado, Yunxiang Li, Samuel Horv\xE1th, <strong>Martin Tak\xE1\
+    \u010D</strong>"
   journal: Tackling Climate Change with Machine Learning at ICLR 2024
   keywords:
   - smart grids
@@ -4789,16 +4227,8 @@
     in travel costs. It uniquely integrates external information, demonstrating robustness
     in diverse environments, making it a valuable benchmark for future SVRP studies
     and industry application.
-  author_roles:
-  - name: Zangir Iklassov
-    role: staff
-  - name: Ruben Solozabal
-    role: staff
-  authors: "Zangir Iklassov<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Ikboljon Sobirov,\
-    \ Ruben Solozabal<sup class=\"author-role\" title=\"Postdoctoral researcher, research\
-    \ scientist, or engineer in my group\">\u2021</sup>, <strong>Martin Tak\xE1\u010D\
-    </strong>"
+  authors: "Zangir Iklassov, Ikboljon Sobirov, Ruben Solozabal, <strong>Martin Tak\xE1\
+    \u010D</strong>"
   keywords:
   - stochastic vehicle routing problem
   - time windows
@@ -4871,15 +4301,7 @@
     convergence of Nesterov Accelerated Tensor method. Both algorithms allow for approximate
     solutions of their auxiliary subproblems with verifiable conditions on the accuracy
     of the solution.
-  author_roles:
-  - name: Artem Agafonov
-    role: staff
-  - name: Dmitry Kamzolov
-    role: staff
-  authors: "Artem Agafonov<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Dmitry Kamzolov<sup\
-    \ class=\"author-role\" title=\"Postdoctoral researcher, research scientist, or\
-    \ engineer in my group\">\u2021</sup>, Alexander Gasnikov, Kimon Antonakopoulos,\
+  authors: "Artem Agafonov, Dmitry Kamzolov, Alexander Gasnikov, Kimon Antonakopoulos,\
     \ Volkan Cevher, <strong>Martin Tak\xE1\u010D</strong>"
   journal: ICLR 2024
   keywords:
@@ -4966,12 +4388,8 @@
     \ of the proposed regularization term. For example, with the help of the proposed\
     \ regularization, the OoD detection score increases at most 30\\% compared with\
     \ the one without the regularization."
-  author_roles:
-  - name: Ruben Solozabal Ochoa de Retana
-    role: staff
-  authors: "Kun Song, Ruben Solozabal Ochoa de Retana<sup class=\"author-role\" title=\"\
-    Postdoctoral researcher, research scientist, or engineer in my group\">\u2021\
-    </sup>, Hao Li, <strong>Martin Tak\xE1\u010D</strong>, Lu Ren, Fakhri Karray"
+  authors: "Kun Song, Ruben Solozabal Ochoa de Retana, Hao Li, <strong>Martin Tak\xE1\
+    \u010D</strong>, Lu Ren, Fakhri Karray"
   journal: 38th Annual AAAI Conference on Artificial Intelligence (AAAI 2024)
   keywords:
   - normalizing flows
@@ -5039,12 +4457,8 @@
     \ form can extend to the endpoint. The results separate theorem validity ranges\
     \ from the first-branch regimes in which the class-dependent MALN scale dominates\
     \ the universal $\\varepsilon/n$ branch."
-  author_roles:
-  - name: Dmitry Pasechnyuk-Vilensky
-    role: student
-  authors: "Dmitry Pasechnyuk-Vilensky<sup class=\"author-role\" title=\"Supervised\
-    \ student or research mentee\">\u2020</sup>, Igor Pavlov, <strong>Martin Tak\xE1\
-    \u010D</strong>, Alexander Gasnikov"
+  authors: "Dmitry Pasechnyuk-Vilensky, Igor Pavlov, <strong>Martin Tak\xE1\u010D\
+    </strong>, Alexander Gasnikov"
   journal: arXiv
   keywords:
   - deterministic adversarial noise
@@ -5081,15 +4495,8 @@
     regions of the contacts. This information offers valuable insights into the binding
     mechanism and reaction energy, without the necessity of solving intricate crystal
     structures.
-  author_roles:
-  - name: Ruben Solozabal
-    role: staff
-  - name: Yunxiang Li
-    role: student
-  authors: "Ruben Solozabal<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Tamir Avioz, Yunxiang\
-    \ Li<sup class=\"author-role\" title=\"Supervised student or research mentee\"\
-    >\u2020</sup>, Le Song, <strong>Martin Tak\xE1\u010D</strong>, Ariel Afek"
+  authors: "Ruben Solozabal, Tamir Avioz, Yunxiang Li, Le Song, <strong>Martin Tak\xE1\
+    \u010D</strong>, Ariel Afek"
   journal: Machine Learning in Structural Biology Workshop @ NeurIPS 2023
   keywords:
   - protein-dna binding
@@ -5125,18 +4532,8 @@
     method, which approximates the Hessian diagonal of the loss function. We conclude
     with an extensive empirical examination of the proposed techniques across classification
     and regression tasks, covering both convex and non-convex contexts.
-  author_roles:
-  - name: Farshed Abdukhakimov
-    role: student
-  - name: Chulu Xiang
-    role: student
-  - name: Dmitry Kamzolov
-    role: staff
-  authors: "Farshed Abdukhakimov<sup class=\"author-role\" title=\"Supervised student\
-    \ or research mentee\">\u2020</sup>, Chulu Xiang<sup class=\"author-role\" title=\"\
-    Supervised student or research mentee\">\u2020</sup>, Dmitry Kamzolov<sup class=\"\
-    author-role\" title=\"Postdoctoral researcher, research scientist, or engineer\
-    \ in my group\">\u2021</sup>, Robert Gower, <strong>Martin Tak\xE1\u010D</strong>"
+  authors: "Farshed Abdukhakimov, Chulu Xiang, Dmitry Kamzolov, Robert Gower, <strong>Martin\
+    \ Tak\xE1\u010D</strong>"
   keywords:
   - polyak step size
   - adaptive optimization
@@ -5284,23 +4681,8 @@
     Byzantine-robust methods for distributed variational inequality, thoroughly studying
     their theoretical convergence, removing the limitations of the previous work,
     and providing numerical comparisons supporting the theoretical findings.
-  author_roles:
-  - name: Nazarii Tupitsa
-    role: staff
-  - name: Eduard Gorbunov
-    role: staff
-  - name: Abdulla Jasem Almansoori
-    role: student
-  - name: Yanlin Wu
-    role: student
-  authors: "Nazarii Tupitsa<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Eduard Gorbunov<sup\
-    \ class=\"author-role\" title=\"Postdoctoral researcher, research scientist, or\
-    \ engineer in my group\">\u2021</sup>, Abdulla Jasem Almansoori<sup class=\"author-role\"\
-    \ title=\"Supervised student or research mentee\">\u2020</sup>, Yanlin Wu<sup\
-    \ class=\"author-role\" title=\"Supervised student or research mentee\">\u2020\
-    </sup>, <strong>Martin Tak\xE1\u010D</strong>, Karthik Nandakumar, Samuel Horv\xE1\
-    th"
+  authors: "Nazarii Tupitsa, Eduard Gorbunov, Abdulla Jasem Almansoori, Yanlin Wu,\
+    \ <strong>Martin Tak\xE1\u010D</strong>, Karthik Nandakumar, Samuel Horv\xE1th"
   journal: NeurIPS 2023
   keywords:
   - byzantine robustness
@@ -5326,15 +4708,7 @@
     is sufficient for each algorithm to achieve the desired accuracy. As a corollary,
     we propose stochastic tensor methods for convex optimization and obtain sufficient
     mini-batch sizes for each derivative.
-  author_roles:
-  - name: Artem Agafonov
-    role: staff
-  - name: Dmitry Kamzolov
-    role: staff
-  authors: "Artem Agafonov<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Dmitry Kamzolov<sup\
-    \ class=\"author-role\" title=\"Postdoctoral researcher, research scientist, or\
-    \ engineer in my group\">\u2021</sup>, Pavel Dvurechensky, Alexander Gasnikov,\
+  authors: "Artem Agafonov, Dmitry Kamzolov, Pavel Dvurechensky, Alexander Gasnikov,\
     \ <strong>Martin Tak\xE1\u010D</strong>"
   journal: Optimization Methods and Software (GOMS)
   keywords:
@@ -5369,16 +4743,8 @@
     in varying environments. The publicly available implementation of our framework
     serves as a valuable resource for future research endeavors aimed at advancing
     RL-based solutions for SVRP.
-  author_roles:
-  - name: Zangir Iklassov
-    role: staff
-  - name: Ruben Solozabal
-    role: staff
-  authors: "Zangir Iklassov<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Ikboljon Sobirov,\
-    \ Ruben Solozabal<sup class=\"author-role\" title=\"Postdoctoral researcher, research\
-    \ scientist, or engineer in my group\">\u2021</sup>, <strong>Martin Tak\xE1\u010D\
-    </strong>"
+  authors: "Zangir Iklassov, Ikboljon Sobirov, Ruben Solozabal, <strong>Martin Tak\xE1\
+    \u010D</strong>"
   journal: Asian Conference on Machine Learning (ACML 2023)
   keywords:
   - stochastic vehicle routing problem
@@ -5416,16 +4782,8 @@
     the potential of RL to enhance the transportation efficiency and mitigate its
     environmental impact in stochastic routing problems. Our implementation is available
     online at https://github.com/Zangir/SVRP
-  author_roles:
-  - name: Zangir Iklassov
-    role: staff
-  - name: Ruben Solozabal
-    role: staff
-  authors: "Zangir Iklassov<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Ikboljon Sobirov,\
-    \ Ruben Solozabal<sup class=\"author-role\" title=\"Postdoctoral researcher, research\
-    \ scientist, or engineer in my group\">\u2021</sup>, <strong>Martin Tak\xE1\u010D\
-    </strong>"
+  authors: "Zangir Iklassov, Ikboljon Sobirov, Ruben Solozabal, <strong>Martin Tak\xE1\
+    \u010D</strong>"
   journal: IEEE Access
   keywords:
   - stochastic vehicle routing
@@ -5462,16 +4820,8 @@
     For convex functions with Lipschitz third derivative, these developments allowed
     to propose a second-order method with convergence rate 1/k5, which is faster than
     the rate 1/k3.5 of existing second-order methods.
-  author_roles:
-  - name: Dmitry Kamzolov
-    role: staff
-  - name: Artem Agafonov
-    role: staff
-  authors: "Dmitry Kamzolov<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Alexander Gasnikov,\
-    \ Pavel Dvurechensky, Artem Agafonov<sup class=\"author-role\" title=\"Postdoctoral\
-    \ researcher, research scientist, or engineer in my group\">\u2021</sup>, <strong>Martin\
-    \ Tak\xE1\u010D</strong>"
+  authors: "Dmitry Kamzolov, Alexander Gasnikov, Pavel Dvurechensky, Artem Agafonov,\
+    \ <strong>Martin Tak\xE1\u010D</strong>"
   journal: Encyclopedia of Optimization (Panos M. Pardalos, Oleg A. Prokopyev)
   keywords:
   - higher-order derivatives
@@ -5540,15 +4890,8 @@
     a higher level agent creates a cooperative setup that will allow for fulfilling
     all the individual objectives. This paper presents a general overview of the framework,
     the current progress, and some insights we obtained from the recent results.
-  author_roles:
-  - name: Nicolas Mauricio Cuadrado
-    role: student
-  - name: Roberto Alejandro Gutierrez Guillen
-    role: student
-  authors: "Nicolas Mauricio Cuadrado<sup class=\"author-role\" title=\"Supervised\
-    \ student or research mentee\">\u2020</sup>, Roberto Alejandro Gutierrez Guillen<sup\
-    \ class=\"author-role\" title=\"Supervised student or research mentee\">\u2020\
-    </sup>, <strong>Martin Tak\xE1\u010D</strong>"
+  authors: "Nicolas Mauricio Cuadrado, Roberto Alejandro Gutierrez Guillen, <strong>Martin\
+    \ Tak\xE1\u010D</strong>"
   journal: Tiny Papers @ ICLR 2023
   keywords:
   - federated reinforcement learning
@@ -5588,12 +4931,8 @@
     such as data anonymization, by sharing only content. Extensive experimental evaluation
     corroborates our findings, and we also provide partial theoretical justifications
     for the proposed approach.
-  author_roles:
-  - name: Abdulla Jasem Almansoori
-    role: student
-  authors: "Abdulla Jasem Almansoori<sup class=\"author-role\" title=\"Supervised\
-    \ student or research mentee\">\u2020</sup>, Samuel Horv\xE1th, <strong>Martin\
-    \ Tak\xE1\u010D</strong>"
+  authors: "Abdulla Jasem Almansoori, Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D\
+    </strong>"
   journal: Federated Learning Systems (FLSys) Workshop @ MLSys 2023 (oral)
   keywords:
   - partially federated gans
@@ -5632,18 +4971,7 @@
     improves the current state-of-the-art models on the JSP. It reduces the average
     optimality gap from 19.35% to 10.46% on Taillard's instances and from 38.43% to
     18.85% on Demirkol's instances. Our implementation is available online.
-  author_roles:
-  - name: Zangir Iklassov
-    role: staff
-  - name: Dmitrii Medvedev
-    role: student
-  - name: Ruben Solozabal
-    role: staff
-  authors: "Zangir Iklassov<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Dmitrii Medvedev<sup\
-    \ class=\"author-role\" title=\"Supervised student or research mentee\">\u2020\
-    </sup>, Ruben Solozabal<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, <strong>Martin Tak\xE1\
+  authors: "Zangir Iklassov, Dmitrii Medvedev, Ruben Solozabal, <strong>Martin Tak\xE1\
     \u010D</strong>"
   journal: IJCAI 2023
   keywords:
@@ -5683,15 +5011,8 @@
     carbon impact while balancing the consumption and production of both renewable
     and conventional energy. This framework also takes into account fluctuations in
     energy demand and supply.'
-  author_roles:
-  - name: Nicolas Cuadrado
-    role: student
-  - name: Roberto Alejandro Gutierrez Guillen
-    role: student
-  authors: "Nicolas Cuadrado<sup class=\"author-role\" title=\"Supervised student\
-    \ or research mentee\">\u2020</sup>, Roberto Alejandro Gutierrez Guillen<sup class=\"\
-    author-role\" title=\"Supervised student or research mentee\">\u2020</sup>, Yongli\
-    \ Zhu, <strong>Martin Tak\xE1\u010D</strong>"
+  authors: "Nicolas Cuadrado, Roberto Alejandro Gutierrez Guillen, Yongli Zhu, <strong>Martin\
+    \ Tak\xE1\u010D</strong>"
   journal: 'ICLR 2023 Workshop: Tackling Climate Change with Machine Learning'
   keywords:
   - multi-agent reinforcement learning
@@ -5781,13 +5102,8 @@
     we empirically show the effectiveness of our method in the OpenSpiel
 
     framework.'
-  author_roles:
-  - name: Ruben Solozabal Ochoa de Retana
-    role: staff
-  authors: "Talal Algumaei, Ruben Solozabal Ochoa de Retana<sup class=\"author-role\"\
-    \ title=\"Postdoctoral researcher, research scientist, or engineer in my group\"\
-    >\u2021</sup>, Reda Alami, Hakim Hacid, Merouane Debbah, <strong>Martin Tak\xE1\
-    \u010D</strong>"
+  authors: "Talal Algumaei, Ruben Solozabal Ochoa de Retana, Reda Alami, Hakim Hacid,\
+    \ Merouane Debbah, <strong>Martin Tak\xE1\u010D</strong>"
   journal: 26th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD
     2023)
   keywords:
@@ -5868,15 +5184,8 @@
     \ the value of learning a deep neural network model for the instantaneous reaction\
     \ rate directly from high-throughput data and represents a first step in constraining\
     \ a data-driven reaction model to satisfy domain information."
-  author_roles:
-  - name: Klea Ziu
-    role: student
-  - name: Ruben Solozabal
-    role: staff
-  authors: "Klea Ziu<sup class=\"author-role\" title=\"Supervised student or research\
-    \ mentee\">\u2020</sup>, Ruben Solozabal<sup class=\"author-role\" title=\"Postdoctoral\
-    \ researcher, research scientist, or engineer in my group\">\u2021</sup>, Srinivas\
-    \ Rangarajan, <strong>Martin Tak\xE1\u010D</strong>"
+  authors: "Klea Ziu, Ruben Solozabal, Srinivas Rangarajan, <strong>Martin Tak\xE1\
+    \u010D</strong>"
   journal: 'Journal of Physics: Energy'
   keywords: []
   link: https://iopscience.iop.org/article/10.1088/2515-7655/aca797
@@ -5907,15 +5216,8 @@
     \ the value of learning a deep neural network model for the instantaneous reaction\
     \ rate directly from high-throughput data and represents a first step in constraining\
     \ a data-driven reaction model to satisfy domain information."
-  author_roles:
-  - name: Klea Ziu
-    role: student
-  - name: Ruben Solozabal
-    role: staff
-  authors: "Klea Ziu<sup class=\"author-role\" title=\"Supervised student or research\
-    \ mentee\">\u2020</sup>, Ruben Solozabal<sup class=\"author-role\" title=\"Postdoctoral\
-    \ researcher, research scientist, or engineer in my group\">\u2021</sup>, Srinivas\
-    \ Rangarajan, <strong>Martin Tak\xE1\u010D</strong>"
+  authors: "Klea Ziu, Ruben Solozabal, Srinivas Rangarajan, <strong>Martin Tak\xE1\
+    \u010D</strong>"
   journal: 'Journal of Physics: Energy'
   keywords:
   - oxidative coupling of methane
@@ -6032,18 +5334,8 @@
     and slack in an updated optimization algorithm to show its performance on badly
     scaled and/or ill-conditioned datasets. We use Hutchinson''s method to obtain
     an estimate of a Hessian which is used as the preconditioner.'
-  author_roles:
-  - name: Farshed Abdukhakimov
-    role: student
-  - name: Chulu Xiang
-    role: student
-  - name: Dmitry Kamzolov
-    role: staff
-  authors: "Farshed Abdukhakimov<sup class=\"author-role\" title=\"Supervised student\
-    \ or research mentee\">\u2020</sup>, Chulu Xiang<sup class=\"author-role\" title=\"\
-    Supervised student or research mentee\">\u2020</sup>, Dmitry Kamzolov<sup class=\"\
-    author-role\" title=\"Postdoctoral researcher, research scientist, or engineer\
-    \ in my group\">\u2021</sup>, Robert Gower, <strong>Martin Tak\xE1\u010D</strong>"
+  authors: "Farshed Abdukhakimov, Chulu Xiang, Dmitry Kamzolov, Robert Gower, <strong>Martin\
+    \ Tak\xE1\u010D</strong>"
   journal: Order up! The Benefits of Higher-Order Optimization in Machine Learning
     Workshop @ NeurIPS 2022
   keywords:
@@ -6072,18 +5364,7 @@
     as an inexact Hessian for Cubic Regularized Newton. It allows us to get better
     theoretical convergence rates and good practical performance, especially from
     the points where classical Newton is diverging.
-  author_roles:
-  - name: Dmitry Kamzolov
-    role: staff
-  - name: Klea Ziu
-    role: student
-  - name: Artem Agafonov
-    role: staff
-  authors: "Dmitry Kamzolov<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Klea Ziu<sup class=\"\
-    author-role\" title=\"Supervised student or research mentee\">\u2020</sup>, Artem\
-    \ Agafonov<sup class=\"author-role\" title=\"Postdoctoral researcher, research\
-    \ scientist, or engineer in my group\">\u2021</sup>, <strong>Martin Tak\xE1\u010D\
+  authors: "Dmitry Kamzolov, Klea Ziu, Artem Agafonov, <strong>Martin Tak\xE1\u010D\
     </strong>"
   journal: Order up! The Benefits of Higher-Order Optimization in Machine Learning
     Workshop @ NeurIPS 2022
@@ -6112,15 +5393,7 @@
     FLECS-CGD (FLECS with Compressed Gradient Differences) and make it applicable
     for stochastic optimization. Convergence guarantees are provided in strongly convex
     and nonconvex cases. Experiments show the practical benefit of proposed approach.'
-  author_roles:
-  - name: Artem Agafonov
-    role: staff
-  - name: Brahim Erraji
-    role: student
-  authors: "Artem Agafonov<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Brahim Erraji<sup\
-    \ class=\"author-role\" title=\"Supervised student or research mentee\">\u2020\
-    </sup>, <strong>Martin Tak\xE1\u010D</strong>"
+  authors: "Artem Agafonov, Brahim Erraji, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Order up! The Benefits of Higher-Order Optimization in Machine Learning
     Workshop @ NeurIPS 2022
   keywords:
@@ -6153,12 +5426,7 @@
     the way, we emphasize important role of $\beta$, undeservedly set to constant
     $0.99...9$ at the arbitrariness of various authors. Finally, we propose the explicit
     constructive formulas for adaptive $\beta$ and step size values.
-  author_roles:
-  - name: Dmitry Pasechnyuk
-    role: student
-  authors: "Dmitry Pasechnyuk<sup class=\"author-role\" title=\"Supervised student\
-    \ or research mentee\">\u2020</sup>, Alexander Gasnikov, <strong>Martin Tak\xE1\
-    \u010D</strong>"
+  authors: "Dmitry Pasechnyuk, Alexander Gasnikov, <strong>Martin Tak\xE1\u010D</strong>"
   journal: Order up! The Benefits of Higher-Order Optimization in Machine Learning
     Workshop @ NeurIPS 2022
   keywords:
@@ -6227,18 +5495,7 @@
     proofs hold under affine-invariant assumptions closely related to the notion of
     self-concordance. Finally, our method has competitive performance when compared
     to existing baselines which share the same fast global convergence guarantees.
-  author_roles:
-  - name: Slavomir Hanzely
-    role: staff
-  - name: Dmitry Kamzolov
-    role: staff
-  - name: Dmitry Pasechnyuk
-    role: student
-  authors: "Slavomir Hanzely<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Dmitry Kamzolov<sup\
-    \ class=\"author-role\" title=\"Postdoctoral researcher, research scientist, or\
-    \ engineer in my group\">\u2021</sup>, Dmitry Pasechnyuk<sup class=\"author-role\"\
-    \ title=\"Supervised student or research mentee\">\u2020</sup>, Alexander Gasnikov,\
+  authors: "Slavomir Hanzely, Dmitry Kamzolov, Dmitry Pasechnyuk, Alexander Gasnikov,\
     \ Peter Richt\xE1rik, <strong>Martin Tak\xE1\u010D</strong>"
   journal: NeurIPS
   keywords:
@@ -6340,16 +5597,8 @@
     regularized deep linear network from any initialization, because it will only
     visit points in a set with bounded sharpness. We also empirically validate our
     theoretical findings.'
-  author_roles:
-  - name: Farshed Abdukhakimov
-    role: student
-  - name: Dmitry Kamzolov
-    role: staff
-  authors: "Alexander Rogozin, Farshed Abdukhakimov<sup class=\"author-role\" title=\"\
-    Supervised student or research mentee\">\u2020</sup>, Dmitry Kamzolov<sup class=\"\
-    author-role\" title=\"Postdoctoral researcher, research scientist, or engineer\
-    \ in my group\">\u2021</sup>, <strong>Martin Tak\xE1\u010D</strong>, Francesco\
-    \ Orabona"
+  authors: "Alexander Rogozin, Farshed Abdukhakimov, Dmitry Kamzolov, <strong>Martin\
+    \ Tak\xE1\u010D</strong>, Francesco Orabona"
   keywords:
   - deep linear networks
   - sharpness
@@ -6389,12 +5638,8 @@
     theoretical findings with numerical experiments, which highlight the effectiveness
     of our methods. To the best of our knowledge, our study establishes the first
     model-based online algorithm with regret guarantees under LTV dynamical systems.'
-  author_roles:
-  - name: Ruben Solozabal
-    role: staff
-  authors: "Yuzhen Han, Ruben Solozabal<sup class=\"author-role\" title=\"Postdoctoral\
-    \ researcher, research scientist, or engineer in my group\">\u2021</sup>, Jing\
-    \ Dong, Xingyu Zhou, <strong>Martin Tak\xE1\u010D</strong>, Bin Gu"
+  authors: "Yuzhen Han, Ruben Solozabal, Jing Dong, Xingyu Zhou, <strong>Martin Tak\xE1\
+    \u010D</strong>, Bin Gu"
   keywords:
   - linear time-varying dynamical systems
   - online control
@@ -6434,12 +5679,8 @@
     imaging datasets (CheXpert and HAM10000) demonstrates the higher robustness of
     DOS method against a variety of poisoning attacks in comparison to other state-of-the-art
     methods.
-  author_roles:
-  - name: Dmitry Kamzolov
-    role: staff
-  authors: "Naif Alkhunaizi, Dmitry Kamzolov<sup class=\"author-role\" title=\"Postdoctoral\
-    \ researcher, research scientist, or engineer in my group\">\u2021</sup>, <strong>Martin\
-    \ Tak\xE1\u010D</strong>, Karthik Nandakumar"
+  authors: "Naif Alkhunaizi, Dmitry Kamzolov, <strong>Martin Tak\xE1\u010D</strong>,\
+    \ Karthik Nandakumar"
   journal: MICCAI2022
   keywords:
   - poisoning attacks
@@ -6521,16 +5762,9 @@
     methods, which, in turn, allows to exploit parallel computations to accelerate
     the convergence of our algorithms. We also elaborate on extensions for stochastic
     optimization problems, saddle-point problems, and distributed optimization.
-  author_roles:
-  - name: Farshed Abdukhakimov
-    role: student
-  - name: Dmitry Kamzolov
-    role: staff
-  authors: "Alexander Gasnikov, Anton Novitskii, Vasilii Novitskii, Farshed Abdukhakimov<sup\
-    \ class=\"author-role\" title=\"Supervised student or research mentee\">\u2020\
-    </sup>, Dmitry Kamzolov<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Aleksandr Beznosikov,\
-    \ <strong>Martin Tak\xE1\u010D</strong>, Pavel Dvurechensky, Bin Gu"
+  authors: "Alexander Gasnikov, Anton Novitskii, Vasilii Novitskii, Farshed Abdukhakimov,\
+    \ Dmitry Kamzolov, Aleksandr Beznosikov, <strong>Martin Tak\xE1\u010D</strong>,\
+    \ Pavel Dvurechensky, Bin Gu"
   journal: ICML
   keywords:
   - gradient-free optimization
@@ -7302,12 +6536,7 @@
     and
 
     Constraint Programming (CP) solvers.'
-  author_roles:
-  - name: Ruben Solozabal
-    role: staff
-  authors: "Ruben Solozabal<sup class=\"author-role\" title=\"Postdoctoral researcher,\
-    \ research scientist, or engineer in my group\">\u2021</sup>, Josu Ceberio, <strong>Martin\
-    \ Tak\xE1\u010D</strong>"
+  authors: "Ruben Solozabal, Josu Ceberio, <strong>Martin Tak\xE1\u010D</strong>"
   keywords:
   - constrained combinatorial optimization
   - deep reinforcement learning
