@@ -21,14 +21,26 @@
     \ Makoto Yamada"
   journal: arXiv
   keywords:
-  - '['
-  - ']'
+  - adversarial robustness
+  - oscillatory predictive learning
+  - artificial kuramoto oscillatory neurons
+  - predictive self-supervised pretraining
+  - x-phinet
+  - oscillatory encoder dynamics
+  - randomized oscillator initialization
+  - non-contrastive learning
+  - autoattack-rand
+  - expectation over transformation
+  - gradient masking diagnostics
+  - corruption robustness
   link: https://arxiv.org/abs/2609.08683
   ltype: arXiv
   pdf: https://arxiv.org/pdf/2609.08683v1
   tags:
-  - '['
-  - ']'
+  - Computer Vision
+  - Robustness
+  - Self-Supervised Learning
+  - Representation Learning
   title: 'Neither Adversarial Training Nor Purification: Emergent Adversarial Robustness
     from Oscillatory Predictive Learning'
   type: tpaper
