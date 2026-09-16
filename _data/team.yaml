@@ -1,10 +1,5 @@
 - items:
   - col: {}
-    from: 2026/01
-    image: Yusei_Ito.jpeg
-    name: Yusei Ito
-    to: 2026/03
-  - col: {}
     from: 2025
     image: missing.jpg
     name: Vladmir Solodkin
@@ -48,7 +43,7 @@
     from: 2022/010
     image: PetrOstroukhov.jpeg
     name: Petr Ostroukhov
-    to: 2024
+    to: present
   - col: {}
     from: 2022/03
     image: Dmitry_Pasechnyuk.jpg
@@ -134,12 +129,12 @@
     from: 2026
     image: DeepakKumar.jpg
     name: Deepak Kumar
-    to: present
+    to: '---'
   - col: {}
     from: 2026
     image: Artem_Agafonov.jpg
     name: Artem Agafonov
-    to: present
+    to: '---'
   - col: {}
     from: 2025/09
     image: sayantan.png
@@ -164,12 +159,12 @@
     from: 2023
     image: Slavomir_Hanzely.jpg
     name: "Slavom\xEDr Hanzely"
-    to: 2026
+    to: present
   - col: {}
     from: 2021/09
     image: Ruben_Solozabal.jpg
     name: Ruben Solozabal
-    to: 2026/07
+    to: present
   - col: {}
     from: 2021/10
     image: DmitryKamzolov.jpeg
@@ -242,6 +237,11 @@
     to: present
   - col: {}
     from: 2024/08
+    image: AbdelmajidEssofi.jpeg
+    name: Abdelmajid Essofi
+    to: present
+  - col: {}
+    from: 2024/08
     image: Farshed_Abdukhakimov.png
     name: Farshed Abdukhakimov
     to: present
@@ -279,7 +279,7 @@
     from: 2021
     image: Abdulla_Almansoori.jpg
     name: Abdulla Almansoori
-    to: 2026/05
+    to: 2026 (expected)
   - col: {}
     from: 2022
     image: Artem_Agafonov.jpg
@@ -306,27 +306,27 @@
     from: 2024/09
     image: missing.jpg
     name: Albert Baichorov
-    to: 2026/05
+    to: present
   - col: {}
     from: 2024/09
     image: Semyon_Semenov.jpg
     name: Semyon Semenov
-    to: 2026/05
+    to: present
   - col: {}
     from: 2024/09
     image: VladislavRyspayev.JPG
     name: Vladislav Ryspayev
-    to: 2026/05
+    to: present
   - col: {}
     from: 2024/09
     image: Hazem_photo.jpg
     name: Hazem  Lashen
-    to: 2026/05
+    to: present
   - col: {}
     from: 2024/09
     image: ArmanBolatov.jpeg
     name: Arman Bolatov
-    to: 2026/05
+    to: present
   - col: {}
     from: 2023/09
     image: Farkhad_Akimov.jpeg
@@ -356,17 +356,17 @@
     from: 2022/07
     image: Yanlin_Wu.jpg
     name: Yanlin Wu
-    to: 2024/05
+    to: present
   - col: {}
     from: 2022/06
     image: Chulu_Xiang.jpeg
     name: Chulu Xiang
-    to: 2024/05
+    to: present
   - col: {}
     from: 2022/07
     image: Li_Yunxiang.jpg
     name: Li Yunxiang
-    to: 2024/05
+    to: present
   - col: {}
     from: 2021/01
     image: Dmitrii Medvedev.jpeg
