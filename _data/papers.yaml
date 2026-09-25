@@ -1,3 +1,149 @@
+- abstract: 'Inference-time scaling has become the dominant lever for improving language-model
+    reasoning, but existing methods derive rollout diversity from a single source:
+    stochastic token-level sampling. We argue that this single-axis sampling space
+    is fundamentally limiting, and identify a second, fully deterministic and complementary
+    axis: the layer span $L$ at which a frozen model''s top decoder layers are recursively
+    re-applied at high-uncertainty tokens. Different choices of $L$ produce distinct
+    rollouts that solve different subsets of problems, with no stochasticity. We instantiate
+    this axis through Entropy-Gated Latent Recursion (EGLR), a training-free decoding
+    procedure that re-applies the top-$L$ layers for at most $K_{\max}$ iterations
+    until the next-token distribution converges. Combined with $T$ temperature samples,
+    EGLR turns a single-axis stochastic rollout pool into an $L\times T$ Cartesian
+    sampling space at almost the same per-rollout cost. We characterize this space
+    across $8$ instruction-tuned models and $6$ math reasoning benchmarks, and show
+    that the $L$-axis is genuinely complementary to temperature: on MATH-500 with
+    Qwen2.5-3B-Instruct, the joint $L\times T$ oracle reaches $91.6\%$, $+8.2$ percentage
+    points beyond the temperature-only oracle ($83.4\%$) and $+10.4$ points beyond
+    the layer-only oracle ($81.2\%$), confirming that the two axes capture genuinely
+    complementary problems. The expanded rollout pool provides richer per-prompt candidates
+    for any downstream procedure that consumes rollouts, including self-consistency,
+    best-of-$N$ with verifiers, and group-relative RL training (GRPO), opening a new
+    direction for inference-time scaling that does not rely on stochastic noise.'
+  authors: "Soham Bhattacharjee, Dushyant Singh Chauhan, Salem Lahlou, <strong>Martin\
+    \ Tak\xE1\u010D</strong>, Nils Lukas"
+  journal: NeurIPS 2026
+  keywords:
+  - axis
+  - complementary
+  - oracle
+  - rollout
+  - sampling
+  - space
+  - stochastic
+  - arxiv
+  - beyond
+  - different
+  link: https://arxiv.org/abs/2606.16620
+  ltype: arXiv
+  pdf: https://arxiv.org/pdf/2606.16620v3
+  tags:
+  - Stochastic Methods
+  - Uncertainty
+  title: Entropy-Gated Latent Recursion
+  type: cpaper
+  year: '2026'
+- abstract: We study adaptive learning rate scheduling for norm-constrained optimizers
+    (e.g., Muon and Lion). We introduce a generalized smoothness assumption under
+    which local curvature decreases with the suboptimality gap and empirically verify
+    that this behavior holds along optimization trajectories. Under this assumption,
+    we establish convergence guarantees under an appropriate choice of learning rate,
+    for which warm-up followed by decay arises naturally from the proof rather than
+    being imposed heuristically. Building on this theory, we develop a practical learning
+    rate scheduler that relies only on standard hyperparameters and adapts the warm-up
+    duration automatically at the beginning of training. We evaluate this method on
+    large language model pretraining with LLaMA architectures and show that our adaptive
+    warm-up selection consistently outperforms or at least matches the best manually
+    tuned warm-up schedules across all considered setups, without additional hyperparameter
+    search. Our source code is available at https://github.com/brain-lab-research/llm-baselines/tree/warmup
+  author_roles:
+  - name: Arman Bolatov
+    role: student
+  authors: "Artem Riabinin, Andrey Veprikov, Arman Bolatov<sup class=\"author-role\"\
+    \ title=\"Supervised student or research mentee\">\u2020</sup>, <strong>Martin\
+    \ Tak\xE1\u010D</strong>, Aleksandr Beznosikov"
+  journal: NeurIPS 2026
+  keywords:
+  - adaptive learning rate scheduling
+  - norm-constrained optimizers
+  - warm-up duration selection
+  - generalized smoothness
+  - local curvature
+  - suboptimality gap
+  - convergence guarantees
+  - lmo-based optimization
+  - muon optimizer
+  - lion optimizer
+  - llama pretraining
+  link: https://arxiv.org/abs/2602.05813
+  ltype: arXiv
+  pdf: https://arxiv.org/pdf/2602.05813v2
+  tags:
+  - LLM
+  - Optimization
+  - Deep Learning
+  - Optimization Theory
+  title: Where Does Warm-Up Come From? Adaptive Scheduling for Norm-Constrained Optimizers
+  type: cpaper
+  year: '2026'
+- abstract: 'Compositional energy-based models can generalize to larger combinatorial
+    reasoning problems by reusing a learned factor energy across many local constraints.
+    In our paper, we show that a key bottleneck in compositional reasoning is not
+    composition itself, but the non-convex geometry of the learned energy landscape.
+    To solve this problem, we introduce Convex Compositional Energy Minimization (CCEM),
+    a framework that parameterizes each factor with an input-convex neural network
+    and optimizes the composed energy over a tight convex relaxation of the feasible
+    set. Because convexity is preserved under summation, the global relaxed objective
+    remains convex, enabling deterministic projected first-order optimization. CCEM
+    is trained in two stages: factor-level contrastive learning to shape local energy
+    basins, followed by end-to-end refinement through an unrolled projected solver.
+    Our experiments show that our models trained on small subproblems or a single
+    problem size transfer to larger instances without retraining.'
+  author_roles:
+  - name: Meir Roketlishvili
+    role: student
+  - name: Semyon Semenov
+    role: student
+  - name: Viktor Kovalchuk
+    role: student
+  - name: Albert Baichorov
+    role: student
+  - name: Abduragim Shtanchaev
+    role: student
+  - name: Arip Asadulaev
+    role: staff
+  authors: "Meir Roketlishvili<sup class=\"author-role\" title=\"Supervised student\
+    \ or research mentee\">\u2020</sup>, Semyon Semenov<sup class=\"author-role\"\
+    \ title=\"Supervised student or research mentee\">\u2020</sup>, Maksim Bobrin,\
+    \ Viktor Kovalchuk<sup class=\"author-role\" title=\"Supervised student or research\
+    \ mentee\">\u2020</sup>, Albert Baichorov<sup class=\"author-role\" title=\"Supervised\
+    \ student or research mentee\">\u2020</sup>, Abduragim Shtanchaev<sup class=\"\
+    author-role\" title=\"Supervised student or research mentee\">\u2020</sup>, Fakhri\
+    \ Karray, Dmitry V. Dylov, <strong>Martin Tak\xE1\u010D</strong>, Arip Asadulaev<sup\
+    \ class=\"author-role\" title=\"Postdoctoral researcher, research scientist, or\
+    \ engineer in my group\">\u2021</sup>"
+  journal: NeurIPS 2026
+  keywords:
+  - convex compositional energy minimization
+  - compositional energy-based models
+  - input-convex neural networks
+  - convex relaxation
+  - projected first-order optimization
+  - factor-level contrastive learning
+  - unrolled projected solver
+  - spurious local minima
+  - combinatorial reasoning
+  - transfer to larger instances
+  link: https://arxiv.org/abs/2605.23395
+  ltype: arXiv
+  pdf: https://arxiv.org/pdf/2605.23395v2
+  tags:
+  - Optimization
+  - Energy-Based Models
+  - Neural Networks
+  - Combinatorial Reasoning
+  title: Convex Compositional Reasoning Models
+  type: cpaper
+  year: '2026'
 - abstract: Methods of Branched Optimal Transport (BOT) mimic the economy and efficiency
     of natural tree-like structures, such as those found in rivers and biological
     systems. These methods are widely applicable for designing efficient networks
@@ -231,50 +377,6 @@
   title: Score-Only Distillation for Compact Dense Retrieval
   type: tpaper
   year: '2026'
-- abstract: 'Inference-time scaling has become the dominant lever for improving language-model
-    reasoning, but existing methods derive rollout diversity from a single source:
-    stochastic token-level sampling. We argue that this single-axis sampling space
-    is fundamentally limiting, and identify a second, fully deterministic and complementary
-    axis: the layer span $L$ at which a frozen model''s top decoder layers are recursively
-    re-applied at high-uncertainty tokens. Different choices of $L$ produce distinct
-    rollouts that solve different subsets of problems, with no stochasticity. We instantiate
-    this axis through Entropy-Gated Latent Recursion (EGLR), a training-free decoding
-    procedure that re-applies the top-$L$ layers for at most $K_{\max}$ iterations
-    until the next-token distribution converges. Combined with $T$ temperature samples,
-    EGLR turns a single-axis stochastic rollout pool into an $L\times T$ Cartesian
-    sampling space at almost the same per-rollout cost. We characterize this space
-    across $8$ instruction-tuned models and $6$ math reasoning benchmarks, and show
-    that the $L$-axis is genuinely complementary to temperature: on MATH-500 with
-    Qwen2.5-3B-Instruct, the joint $L\times T$ oracle reaches $91.6\%$, $+8.2$ percentage
-    points beyond the temperature-only oracle ($83.4\%$) and $+10.4$ points beyond
-    the layer-only oracle ($81.2\%$), confirming that the two axes capture genuinely
-    complementary problems. The expanded rollout pool provides richer per-prompt candidates
-    for any downstream procedure that consumes rollouts, including self-consistency,
-    best-of-$N$ with verifiers, and group-relative RL training (GRPO), opening a new
-    direction for inference-time scaling that does not rely on stochastic noise.'
-  authors: "Soham Bhattacharjee, Dushyant Singh Chauhan, Salem Lahlou, <strong>Martin\
-    \ Tak\xE1\u010D</strong>, Nils Lukas"
-  journal: NeurIPS 2026
-  keywords:
-  - axis
-  - complementary
-  - oracle
-  - rollout
-  - sampling
-  - space
-  - stochastic
-  - arxiv
-  - beyond
-  - different
-  link: https://arxiv.org/abs/2606.16620
-  ltype: arXiv
-  pdf: https://arxiv.org/pdf/2606.16620v3
-  tags:
-  - Stochastic Methods
-  - Uncertainty
-  title: Entropy-Gated Latent Recursion
-  type: cpaper
-  year: '2026'
 - abstract: 'Muon is an optimizer that computes updates using the polar factor of
     the momentum matrix and has shown strong empirical performance across a range
     of training settings. A key component of Muon is the Newton-Schulz iteration used
@@ -498,49 +600,6 @@
     Cancer'
   type: tpaper
   year: '2026'
-- abstract: We study adaptive learning rate scheduling for norm-constrained optimizers
-    (e.g., Muon and Lion). We introduce a generalized smoothness assumption under
-    which local curvature decreases with the suboptimality gap and empirically verify
-    that this behavior holds along optimization trajectories. Under this assumption,
-    we establish convergence guarantees under an appropriate choice of learning rate,
-    for which warm-up followed by decay arises naturally from the proof rather than
-    being imposed heuristically. Building on this theory, we develop a practical learning
-    rate scheduler that relies only on standard hyperparameters and adapts the warm-up
-    duration automatically at the beginning of training. We evaluate this method on
-    large language model pretraining with LLaMA architectures and show that our adaptive
-    warm-up selection consistently outperforms or at least matches the best manually
-    tuned warm-up schedules across all considered setups, without additional hyperparameter
-    search. Our source code is available at https://github.com/brain-lab-research/llm-baselines/tree/warmup
-  author_roles:
-  - name: Arman Bolatov
-    role: student
-  authors: "Artem Riabinin, Andrey Veprikov, Arman Bolatov<sup class=\"author-role\"\
-    \ title=\"Supervised student or research mentee\">\u2020</sup>, <strong>Martin\
-    \ Tak\xE1\u010D</strong>, Aleksandr Beznosikov"
-  journal: NeurIPS 2026
-  keywords:
-  - adaptive learning rate scheduling
-  - norm-constrained optimizers
-  - warm-up duration selection
-  - generalized smoothness
-  - local curvature
-  - suboptimality gap
-  - convergence guarantees
-  - lmo-based optimization
-  - muon optimizer
-  - lion optimizer
-  - llama pretraining
-  link: https://arxiv.org/abs/2602.05813
-  ltype: arXiv
-  pdf: https://arxiv.org/pdf/2602.05813v2
-  tags:
-  - LLM
-  - Optimization
-  - Deep Learning
-  - Optimization Theory
-  title: Where Does Warm-Up Come From? Adaptive Scheduling for Norm-Constrained Optimizers
-  type: cpaper
-  year: '2026'
 - abstract: 'In large-scale optimization, the cheapness and effectiveness of update
     steps are the most crucial factors for a successful optimizer. Sign-based optimizers
     like Lion or Signum produce cheap per-step updates, whereas Muon''s spectral matrix-sign
@@ -726,65 +785,6 @@
   - Machine Learning Theory
   title: Value-Gradient Hypothesis of RL for LLMs
   type: tpaper
-  year: '2026'
-- abstract: 'Compositional energy-based models can generalize to larger combinatorial
-    reasoning problems by reusing a learned factor energy across many local constraints.
-    In our paper, we show that a key bottleneck in compositional reasoning is not
-    composition itself, but the non-convex geometry of the learned energy landscape.
-    To solve this problem, we introduce Convex Compositional Energy Minimization (CCEM),
-    a framework that parameterizes each factor with an input-convex neural network
-    and optimizes the composed energy over a tight convex relaxation of the feasible
-    set. Because convexity is preserved under summation, the global relaxed objective
-    remains convex, enabling deterministic projected first-order optimization. CCEM
-    is trained in two stages: factor-level contrastive learning to shape local energy
-    basins, followed by end-to-end refinement through an unrolled projected solver.
-    Our experiments show that our models trained on small subproblems or a single
-    problem size transfer to larger instances without retraining.'
-  author_roles:
-  - name: Meir Roketlishvili
-    role: student
-  - name: Semyon Semenov
-    role: student
-  - name: Viktor Kovalchuk
-    role: student
-  - name: Albert Baichorov
-    role: student
-  - name: Abduragim Shtanchaev
-    role: student
-  - name: Arip Asadulaev
-    role: staff
-  authors: "Meir Roketlishvili<sup class=\"author-role\" title=\"Supervised student\
-    \ or research mentee\">\u2020</sup>, Semyon Semenov<sup class=\"author-role\"\
-    \ title=\"Supervised student or research mentee\">\u2020</sup>, Maksim Bobrin,\
-    \ Viktor Kovalchuk<sup class=\"author-role\" title=\"Supervised student or research\
-    \ mentee\">\u2020</sup>, Albert Baichorov<sup class=\"author-role\" title=\"Supervised\
-    \ student or research mentee\">\u2020</sup>, Abduragim Shtanchaev<sup class=\"\
-    author-role\" title=\"Supervised student or research mentee\">\u2020</sup>, Fakhri\
-    \ Karray, Dmitry V. Dylov, <strong>Martin Tak\xE1\u010D</strong>, Arip Asadulaev<sup\
-    \ class=\"author-role\" title=\"Postdoctoral researcher, research scientist, or\
-    \ engineer in my group\">\u2021</sup>"
-  journal: NeurIPS 2026
-  keywords:
-  - convex compositional energy minimization
-  - compositional energy-based models
-  - input-convex neural networks
-  - convex relaxation
-  - projected first-order optimization
-  - factor-level contrastive learning
-  - unrolled projected solver
-  - spurious local minima
-  - combinatorial reasoning
-  - transfer to larger instances
-  link: https://arxiv.org/abs/2605.23395
-  ltype: arXiv
-  pdf: https://arxiv.org/pdf/2605.23395v2
-  tags:
-  - Optimization
-  - Energy-Based Models
-  - Neural Networks
-  - Combinatorial Reasoning
-  title: Convex Compositional Reasoning Models
-  type: cpaper
   year: '2026'
 - abstract: 'Pretrained diffusion models are effective priors for Bayesian inverse
     problems, but posterior sampling with these priors is often costly because data-consistency
