@@ -1,3 +1,17 @@
+- body: "I\u2019m delighted to share that three of our papers have been accepted at\
+    \ NeurIPS 2026: \u201CWhere Does Warm-Up Come From? Adaptive Scheduling for Norm-Constrained\
+    \ Optimizers,\u201D with Artem Riabinin, Andrey Veprikov, Arman Bolatov, and Aleksandr\
+    \ Beznosikov; \u201CConvex Compositional Reasoning Models,\u201D with Meir Roketlishvili,\
+    \ Semyon Semenov, Maksim Bobrin, Viktor Kovalchuk, Albert Baichorov, Abduragim\
+    \ Shtanchaev, Fakhri Karray, Dmitry V. Dylov, and Arip Asadulaev; and \u201CEntropy-Gated\
+    \ Latent Recursion,\u201D with Soham Bhattacharjee, Dushyant Singh Chauhan, Salem\
+    \ Lahlou, and Nils Lukas.<br/><br/>The papers explore adaptive warm-up scheduling,\
+    \ convex approaches to compositional reasoning, and a deterministic axis for inference-time\
+    \ reasoning diversity. I am grateful to all my co-authors for their outstanding\
+    \ work and truly enjoyable collaboration. --- <a href=\"https://anonymous.4open.science/r/warmup\"\
+    >check the full article here</a>."
+  date: '2026-09-25'
+  title: Three Papers Accepted at NeurIPS 2026
 - body: "I am pleased to share that five papers have been accepted to ICML 2026 in\
     \ Seoul, together with four papers at ICML 2026 workshops. I am grateful to my\
     \ students and collaborators for their work on these projects.<br/><br/>Accepted\

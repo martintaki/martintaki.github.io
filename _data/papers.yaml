@@ -254,7 +254,7 @@
     direction for inference-time scaling that does not rely on stochastic noise.'
   authors: "Soham Bhattacharjee, Dushyant Singh Chauhan, Salem Lahlou, <strong>Martin\
     \ Tak\xE1\u010D</strong>, Nils Lukas"
-  journal: arXiv
+  journal: NeurIPS 2026
   keywords:
   - axis
   - complementary
@@ -273,7 +273,7 @@
   - Stochastic Methods
   - Uncertainty
   title: Entropy-Gated Latent Recursion
-  type: tpaper
+  type: cpaper
   year: '2026'
 - abstract: 'Muon is an optimizer that computes updates using the polar factor of
     the momentum matrix and has shown strong empirical performance across a range
@@ -517,7 +517,7 @@
   authors: "Artem Riabinin, Andrey Veprikov, Arman Bolatov<sup class=\"author-role\"\
     \ title=\"Supervised student or research mentee\">\u2020</sup>, <strong>Martin\
     \ Tak\xE1\u010D</strong>, Aleksandr Beznosikov"
-  journal: arXiv
+  journal: NeurIPS 2026
   keywords:
   - adaptive learning rate scheduling
   - norm-constrained optimizers
@@ -539,7 +539,7 @@
   - Deep Learning
   - Optimization Theory
   title: Where Does Warm-Up Come From? Adaptive Scheduling for Norm-Constrained Optimizers
-  type: tpaper
+  type: cpaper
   year: '2026'
 - abstract: 'In large-scale optimization, the cheapness and effectiveness of update
     steps are the most crucial factors for a successful optimizer. Sign-based optimizers
@@ -763,7 +763,7 @@
     \ Karray, Dmitry V. Dylov, <strong>Martin Tak\xE1\u010D</strong>, Arip Asadulaev<sup\
     \ class=\"author-role\" title=\"Postdoctoral researcher, research scientist, or\
     \ engineer in my group\">\u2021</sup>"
-  journal: arXiv
+  journal: NeurIPS 2026
   keywords:
   - convex compositional energy minimization
   - compositional energy-based models
@@ -784,7 +784,7 @@
   - Neural Networks
   - Combinatorial Reasoning
   title: Convex Compositional Reasoning Models
-  type: tpaper
+  type: cpaper
   year: '2026'
 - abstract: 'Pretrained diffusion models are effective priors for Bayesian inverse
     problems, but posterior sampling with these priors is often costly because data-consistency
