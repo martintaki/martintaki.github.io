@@ -1,3 +1,462 @@
+- abstract: 'Optimization under uncertainty is often made tractable by sampling: expectations
+    and chance constraints are replaced by sample-average counterparts via scenario
+    expansion, where meeting stronger statistical requirements may require larger
+    samples and more sophisticated optimization methods. We take a different route
+    and represent uncertainty using a tractable probabilistic model (TPM), specifically
+    a sum-product network learned from data. Its structural properties (smoothness,
+    decomposability) enable exact marginal inference under the fitted model, allowing
+    us to construct conditional probability queries for constraint violations that
+    depend on the decision variables. We represent these queries using refinable piecewise-linear
+    approximations that admit explicit mixed-integer linear formulations. A learned
+    chance constraint thus becomes part of the optimization problem itself, without
+    explicit scenario expansion: for a fixed circuit architecture and encoding policy,
+    additional training observations do not introduce individual optimization attachments.
+    We evaluate the approach on the well-known newsvendor problem and a stochastic
+    knapsack problem, examining how learning and encoding errors affect decision quality
+    and computational cost. The resulting decisions are evaluated for feasibility
+    under the compiled learned constraint and independently assessed against the uncertainty
+    distribution.'
+  author_roles:
+  - name: Nicolas Mauricio Cuadrado
+    role: student
+  authors: "Nicolas Mauricio Cuadrado<sup class=\"author-role\" title=\"Supervised\
+    \ student or research mentee\">\u2020</sup>, Ji\u0159\xED N\u011Bme\u010Dek, <strong>Martin\
+    \ Tak\xE1\u010D</strong>, Tom\xE1\u0161 Pevn\xFD, Jakub Mare\u010Dek"
+  keywords:
+  - stochastic programming
+  - chance constraints
+  - sum-product networks
+  - tractable probabilistic models
+  - mixed-integer linear programming
+  - piecewise-linear approximation
+  - scenario expansion
+  - newsvendor problem
+  - stochastic knapsack
+  - optimization under uncertainty
+  tags:
+  - Optimization
+  - Probabilistic Modeling
+  - Uncertainty Quantification
+  - Combinatorial Optimization
+  - Stochastic Optimization
+  title: Representing Uncertainty in Stochastic Programming Using SPNs
+  type: tpaper
+  year: '2026'
+- abstract: We study second-order convex optimization under generalized Hessian smoothness,
+    where the local Hessian Lipschitz constant may grow linearly with the gradient
+    norm. For inexact Hessians, we develop adaptive algorithms, including an accelerated
+    Monteiro-Svaiter-type method whose complexity matches the lower bound for second-order
+    methods with $\delta$-inexact Hessians in the classical Lipschitz-Hessian setting.
+    Our methods are parameter-free in the sense that they require no problem-specific
+    parameters as input, including the Hessian inexactness level $\delta$ and smoothness
+    constants. Instead, their backtracking adapts a single regularization parameter
+    that jointly captures Hessian inexactness and local Hessian smoothness. The resulting
+    rates split into two regimes. Far from the solution, the gradient-dependent smoothness
+    term yields geometric convergence. Near the solution, the rate is governed by
+    the ordinary Hessian smoothness and the inexactness level $\delta$, recovering
+    the classical Lipschitz-Hessian guarantees.
+  author_roles:
+  - name: Artem Agafonov
+    role: staff
+  - name: Dmitry Kamzolov
+    role: staff
+  authors: "Artem Agafonov<sup class=\"author-role\" title=\"Postdoctoral researcher,\
+    \ research scientist, or engineer in my group\">\u2021</sup>, Aslan Ashabokov,\
+    \ Alexander D&#x27;yakonov, <strong>Martin Tak\xE1\u010D</strong>, Alexander Gasnikov,\
+    \ Dmitry Kamzolov<sup class=\"author-role\" title=\"Postdoctoral researcher, research\
+    \ scientist, or engineer in my group\">\u2021</sup>"
+  keywords:
+  - second-order optimization
+  - generalized smoothness
+  - inexact hessians
+  - parameter-free methods
+  - monteiro-svaiter acceleration
+  - hessian approximation
+  - adaptive regularization
+  - optimal complexity
+  - backtracking
+  - convex optimization
+  tags:
+  - Optimization
+  - Second-Order Methods
+  - Convex Optimization
+  - Convergence Theory
+  - Adaptive Methods
+  title: Optimal Parameter-Free Second-order Acceleration with Inexact Hessians under
+    Generalized Smoothness
+  type: tpaper
+  year: '2026'
+- abstract: 'The Density Of States (DOS) is a fundamental spectral property of crystalline
+    materials that governs a wide range of chemical, electronic, and optical properties.
+    Despite its importance, fast but accurate DOS prediction based on machine learning
+    remains challenging because it involves a high-dimensional structured target,
+    the physically meaningful features of which depend on subtle relations between
+    crystal structure and energy-resolved electronic states. Existing machine-learning
+    approaches primarily focus on learning strong structural representations from
+    crystal graphs, but often rely on DOS supervision alone and do not fully exploit
+    the transferable information already learned by large pretrained atomistic models.
+    In this work, we present UMA-DOS, a transfer-learning framework for total DOS
+    prediction built on pretrained UMA backbones. UMA-DOS uses a pretrained atomistic
+    encoder to represent crystal structure, aggregates node-level features into a
+    graph-level representation, and maps this representation to an energy-resolved
+    DOS through a structured spectral decoder with explicit shape-amplitude factorization.
+    Under a unified Materials Project evaluation pipeline, UMA-DOS achieves the strongest
+    controlled performance among the reproduced baselines, with its clearest advantages
+    appearing in shape-sensitive measures of spectral fidelity. Transfer ablations
+    further show that the value of pretraining is realized only through downstream
+    adaptation: frozen transfer underperforms scratch training, whereas end-to-end
+    fine-tuning yields the best results. These findings show that pretrained atomistic
+    representations can transfer effectively to total DOS prediction when paired with
+    a shape-aware spectral decoder and adapted end-to-end.'
+  author_roles:
+  - name: Klea Ziu
+    role: student
+  - name: Aidar Alimbayev
+    role: student
+  authors: "Klea Ziu<sup class=\"author-role\" title=\"Supervised student or research\
+    \ mentee\">\u2020</sup>, Ayala V. Cohen, Yusei Ito, Aidar Alimbayev<sup class=\"\
+    author-role\" title=\"Supervised student or research mentee\">\u2020</sup>, Leeor\
+    \ Kronik, <strong>Martin Tak\xE1\u010D</strong>"
+  keywords:
+  - density of states
+  - transfer learning
+  - pretrained atomistic models
+  - crystalline materials
+  - spectral decoder
+  - graph neural networks
+  - materials project
+  - fine-tuning
+  - electronic structure
+  - foundation models for atoms
+  tags:
+  - Materials Science
+  - Transfer Learning
+  - Scientific Machine Learning
+  - Graph Learning
+  - Deep Learning
+  title: 'UMA-DOS: Transfer Learning from Pretrained Atomistic Models for Density
+    of States Prediction'
+  type: tpaper
+  year: '2026'
+- abstract: 'Reinforcement learning for large language models typically maximizes
+    expected return, adding up the probabilities of all successful trajectories. However,
+    the classical sum formulation can only report how often the model policy succeeds,
+    not which solution actually worked, and because probabilities sum to one, reinforcing
+    one solution can make the model forget another that was never shown to be wrong.
+    This makes expected return a poor fit for compositional reasoning, where a solution
+    must be assembled from reasoning steps that the model produces in separate, often
+    failed, attempts but rarely produces together. To address this, we propose Tropical
+    Reinforcement Learning, which rests on a simple change of algebra: instead of
+    adding the probabilities of alternative solutions, we take their maximum, which
+    yields the tropical semiring. The value of a state then becomes the log-probability
+    of its most likely verified solution, together with an explicit path that can
+    be replayed and reused. This enables true composition, since the best prefix and
+    the best suffix meeting at a shared state can be joined even when they come from
+    different rollouts. To put this into practice, we introduce Tropic, a training
+    algorithm for deterministic, resettable environments with verifiable outcomes.
+    On four agentic tasks (Sokoban, Countdown, FrozenLake, WebShop), Tropic outperforms
+    the strongest on-policy baselines by up to 16 percentage points. Changing the
+    algebra of reinforcement learning, not just its estimators, can thus substantially
+    improve compositional reasoning in language models.'
+  author_roles:
+  - name: Arip Asadulaev
+    role: staff
+  authors: "Arip Asadulaev<sup class=\"author-role\" title=\"Postdoctoral researcher,\
+    \ research scientist, or engineer in my group\">\u2021</sup>, Aladin Djuhera,\
+    \ Karim Salta, Holger Boche, Fakhri Karray, <strong>Martin Tak\xE1\u010D</strong>"
+  keywords:
+  - tropical semiring
+  - reinforcement learning
+  - large language models
+  - compositional reasoning
+  - verifiable rewards
+  - trajectory composition
+  - on-policy methods
+  - agentic tasks
+  - max-plus algebra
+  - policy optimization
+  tags:
+  - Reinforcement Learning
+  - LLM
+  - Reasoning
+  - Policy Optimization
+  - AI Agents
+  title: Tropical Reinforcement Learning
+  type: tpaper
+  year: '2026'
+- abstract: Vision foundation models (VFMs) provide transferable visual representations,
+    but their inference cost limits deployment in many settings. Fine-tuning specializes
+    a VFM without shrinking it; distillation shrinks it, but through expensive teacher-guided
+    training. Structured pruning offers a more direct route by extracting a compact
+    subnetwork from the VFM. However, as compression gets aggressive, existing methods
+    fail because they treat subnetwork selection and recovery as separate axes. Across
+    layers, capacity must follow task sensitivity rather than spread uniformly. Within
+    a layer, a removal cannot be judged by importance alone; its impact also depends
+    on how well the lost contribution can be recovered from what remains. Selection
+    and recovery must therefore be decided jointly. We introduce Carve VFM, which
+    resolves this interdependence. Given a VFM, a calibration set, and a parameter
+    budget, it (i) searches for task-specific capacity allocations across layers;
+    (ii) guides the search via an adaptive recovery-aware fitness criterion and (iii)
+    reconstructs removed behavior through iterative closed-form low-rank corrections
+    merged into the surviving weights. The result is a dense task model produced in
+    minutes on a single GPU, without training. Across twelve benchmarks and four models
+    from DINOv3 and MetaCLIP-2, Carve VFM ranks first among all evaluated structured-pruning
+    methods at every budget, averaging +9.2%; crucially, this margin widens from +3.0%
+    at 35% parameter removal to +16.3% at 70%. Further fine-tuning surpasses the strongest
+    evaluated edge model 88.1% vs. 83.4%, and carved models cut compute and memory
+    while delivering 1.3-2.0x higher GPU throughput than the uncompressed one. These
+    results show that the compact model you need is inside the VFM; it only has to
+    be carved out.
+  authors: "Lotfi Abdelkrim Mecharbat, Abdelrahman Elsayed, Ibrahim Almakky, <strong>Martin\
+    \ Tak\xE1\u010D</strong>, Mohammad Yaqub"
+  keywords:
+  - vision foundation models
+  - structured pruning
+  - training-free compression
+  - recovery-aware pruning
+  - task-specific compression
+  - low-rank correction
+  - capacity allocation
+  - dinov3
+  - metaclip
+  - inference efficiency
+  tags:
+  - Computer Vision
+  - Model Compression
+  - Foundation Models
+  - Model Efficiency
+  - Low-Rank Methods
+  title: 'Carve VFM: Carving Specialists out of Generalists, Automatic Task-Specific
+    Compression of Vision Foundation Models'
+  type: tpaper
+  year: '2026'
+- abstract: Large-scale pretraining endows vision foundation models (VFMs) with rich,
+    transferable visual knowledge, yet their compute and memory costs put much of
+    it out of reach in practice. Knowledge distillation compresses this knowledge
+    by transferring it to a compact student under the VFM's supervision. However,
+    while such supervision provides a strong training signal, it leaves the student's
+    parameter space unconstrained. Consequently, bridging the gap between teacher
+    representations and viable student weights typically demands substantial task
+    data and long training. We propose Channel-Remix, which uses the VFM not only
+    as a teacher but as a library of pretrained weight directions from which the student
+    is built. This recasts knowledge transfer as selecting and recombining channels
+    that pretraining has already learned, a problem that requires far less task data
+    than learning new weights. Given a parameter budget and a small calibration set,
+    Channel-Remix retains a core subset of channels and sparsely mixes pruned ones
+    into them to form new task-adapted channels with zero runtime cost. By grounding
+    both the learning signal and the student's parameter space in the VFM, Channel-Remix
+    achieves high data efficiency, matching LoRA-based distillation using 3-4x less
+    calibration data. Across 16 tasks, 7 pretraining families, and 5 model sizes,
+    it improves pruned models by 4.6% on average and closes the gap to the original
+    VFM to under 2% at 50% compression, outperforming distillation baselines under
+    full fine-tuning, PEFT, and post-pruning reconstruction while training fewer parameters.
+    Moreover, because every student is built from the same pool of VFM directions,
+    models for different tasks become directly comparable, opening a route to analyzing
+    which knowledge is shared across tasks and which is task-specific.
+  authors: "Lotfi Abdelkrim Mecharbat, Ali Abouzeid, Hu Wang, <strong>Martin Tak\xE1\
+    \u010D</strong>, Mohammad Yaqub"
+  keywords:
+  - vision foundation models
+  - channel remixing
+  - knowledge distillation
+  - data-efficient adaptation
+  - structured pruning
+  - compact models
+  - calibration data
+  - parameter-efficient learning
+  - weight reuse
+  - task-specific models
+  tags:
+  - Computer Vision
+  - Model Compression
+  - Knowledge Distillation
+  - Transfer Learning
+  - Parameter-Efficient Learning
+  title: 'Channel-Remix: Data efficient Synthesis of Task-Specific Compact Models
+    by Remixing Vision Foundation Model Channels'
+  type: tpaper
+  year: '2026'
+- abstract: 'De novo molecular structure prediction from spectral measurements is
+    a fundamental task in chemistry. Although existing models have primarily focused
+    on single modalities or predefined modality sets, the measurements available in
+    practice vary across molecules, calling for flexible use of complementary information
+    from arbitrary subsets of modalities. The heterogeneous formats of these spectra
+    motivate modality-specific processing, but the generation pipeline must transition
+    to joint processing to generate a single molecule. This raises a central architectural
+    question: to best exploit complementarity, how much processing should remain modality-specific
+    before joint processing begins? To address this question, we introduce OmniSpecGen,
+    a unified framework for comparing four fusion stages within a common diffusion
+    architecture. Our comparison identifies fusion of modality-specific representations
+    before pooling as the most effective strategy, with the resulting model outperforming
+    the current state-of-the-art model for flexible spectrum-to-structure generation
+    across the evaluated multimodal configurations. These findings clarify when to
+    begin joint processing and provide an effective framework for molecular structure
+    elucidation.'
+  author_roles:
+  - name: Klea Ziu
+    role: student
+  authors: "Yusei Ito, Klea Ziu<sup class=\"author-role\" title=\"Supervised student\
+    \ or research mentee\">\u2020</sup>, Kanta Ono, <strong>Martin Tak\xE1\u010D</strong>"
+  keywords:
+  - molecular structure elucidation
+  - spectroscopy
+  - diffusion models
+  - multimodal fusion
+  - de novo structure prediction
+  - modality-specific encoders
+  - spectrum-to-structure generation
+  - chemistry
+  - generative models
+  - flexible modality subsets
+  tags:
+  - Chemistry
+  - Molecular Modeling
+  - Diffusion Models
+  - Multimodal Learning
+  - Scientific Machine Learning
+  title: 'OmniSpecGen: Where to Fuse Multimodal Spectra for Molecular Structure Prediction'
+  type: tpaper
+  year: '2026'
+- abstract: 'Well-log interpretation requires reasoning over long, multivariate, depth-indexed
+    measurements. The oil and gas industry relies on it to identify hydrocarbon-bearing
+    zones, estimate reserves, and plan well completions. Although large language models
+    (LLMs) could accelerate this process, how well they handle it is largely unknown.
+    We introduce WellLogBench, the first expert-reviewed benchmark for this task,
+    built with over 1,000 hours of expert review: 1,075 validated QA pairs across
+    six petrophysical categories and three reasoning levels, from single-formation
+    interpretation to cross-formation and multi-well synthesis. To make raw LAS logs
+    usable by LLMs, we develop Petrophys, a Python petrophysics library that turns
+    million-token depth-indexed logs into compact, lithology-aware structured contexts
+    with reproducible calculations; Dynamic Feature Selection (DFS) then cuts the
+    context supplied to the model by 73.5%. We also present WellLog-LLM, a domain-specialized
+    model trained with direct preference optimization (DPO) and group relative policy
+    optimization (GRPO), then refined through inference-time Group Relative Context
+    Optimization (GRCO). Across 15 evaluated LLMs and VLMs, GPT-5.6 Luna (high) leads
+    the public and private splits at 70.4 and 69.3 Overall score. Our WellLog-LLM
+    reaches 66.0 and 66.4 Overall, outperforming the 1T-parameter open-weight Kimi-K2.6
+    (65.0 and 65.2) despite having approximately 37x fewer parameters. Under the same
+    DFS context, it raises the Overall score of its Qwen3.5-27B base model from 56.3
+    to 66.0. We will open-source the benchmark, code, and model weights, providing
+    a reproducible foundation for grounded petrophysical reasoning.'
+  authors: "Sambal Shikhar, Lee Ming Xiang, Zhaksylyk Kabashev, Jean Lahoud, Sandesh\
+    \ Bharadwaj, Sunil Kumar Sahu, Onkar Pandit, <strong>Martin Tak\xE1\u010D</strong>,\
+    \ Rao Muhammad Anwer, Federico Castanedo, Hisham Cholakkal"
+  keywords:
+  - well-log interpretation
+  - petrophysical reasoning
+  - domain-specialized llm
+  - benchmark
+  - scientific question answering
+  - context optimization
+  - direct preference optimization
+  - grpo
+  - oil and gas
+  - long-context reasoning
+  tags:
+  - LLM
+  - Benchmarking
+  - Reasoning
+  - Scientific Machine Learning
+  - Natural Language Processing
+  title: Expert-Reviewed Benchmark and Domain-Specialized LLM for Subsurface Well-Log
+    Interpretation
+  type: tpaper
+  year: '2026'
+- abstract: Conversational agents increasingly sell products and services, and to
+    be profitable, an agent must (i) find out what each customer wants, (ii) offer
+    what the customer will buy, and (iii) complete the purchase before the customer
+    loses patience. No benchmark measures profit in sales conversations that require
+    all three. We introduce AeroSell, a benchmark that scores the profit an airline
+    keeps when an agent sells flight add-ons to simulated customers. Each customer
+    has a hidden type that determines what they buy, so the agent must learn which
+    questions reveal the type and what each type buys as demand shifts. Each turn,
+    the agent makes one of three tool calls, to ask a question, offer an add-on, or
+    complete the purchase. Unlike language-model customers, which can be persuaded,
+    AeroSell customers react only to these calls, making results reproducible and
+    the best profit exactly computable. Neither prompting a language model nor fine-tuning
+    it with standard recipes makes it a profitable seller. A hand-written sales strategy
+    does better by asking for the facts each add-on requires and keeping a turn to
+    complete the purchase, but ranks offers by revenue rather than profit. We propose
+    SIRA (Self-Improving Recommendation Agent), which imitates this strategy, then
+    corrects its objective with reinforcement learning on the profit of its own conversations.
+    SIRA (i) earns 110.7% more profit than the prompted model, (ii) beats the strategy
+    it imitates in every demand phase and by 14.5% overall, with the same test-time
+    information, and (iii) learns which add-ons earn more, coming within 3.4% of the
+    same strategy given product costs. Yet an agent that knows how customers are generated
+    but not their price limits could capture at least 68% of the add-on profit of
+    an agent with this privileged information, and SIRA captures 37%.
+  authors: "Kshitij Mishra, Sarim Hashmi, Dushyant Singh Chauhan, <strong>Martin Tak\xE1\
+    \u010D</strong>, Salem Lahlou, Nils Lukas"
+  keywords:
+  - conversational recommendation
+  - llm agents
+  - demand shifts
+  - imitation learning
+  - reinforcement learning
+  - agent benchmarks
+  - economic decision-making
+  - planner distillation
+  - profit maximization
+  - self-improving agents
+  tags:
+  - LLM
+  - AI Agents
+  - Reinforcement Learning
+  - Recommender Systems
+  - Benchmarking
+  - E-Commerce
+  title: 'SIRA: Self-Improving Recommendation Agents under Demand Shifts'
+  type: tpaper
+  year: '2026'
+- abstract: Reinforcement learning with verifiable rewards (RLVR) improves the reasoning
+    of large language models, but its binary outcome rewards treat every correct chain
+    of thought (CoT) as equivalent, and training tends to concentrate the policy on
+    a few ways of solving each problem. Existing diversity bonuses score complete
+    responses, so all tokens of a correct response receive the same credit even when
+    only a few of its steps depart from the rest of the group. We propose STRIDE,
+    a post-training method that assigns diversity credit to individual reasoning steps
+    of correct responses. For each correct response, STRIDE scores every reasoning
+    step by its regularized reconstruction error in a frozen representation space
+    conditioned on the steps of all other eligible responses, whether correct or incorrect,
+    and on the preceding steps of its own chain. This construction discounts redundancy
+    both across responses and within each reasoning trajectory. Incorrect responses
+    therefore inform what the policy has already explored but receive no auxiliary
+    diversity credit. We prove that the log-transformed step scores exactly decompose
+    each credited response's marginal contribution to a regularized log-determinant
+    measure of group diversity. STRIDE converts these scores into bounded, nonnegative
+    bonuses and adds them to the advantages of the corresponding step tokens in group
+    relative policy optimization (GRPO). The bonuses can remain nonzero when every
+    response in a group is correct and the outcome advantages vanish, and they require
+    neither step-level correctness labels nor additional rollouts. Across five mathematical
+    reasoning benchmarks, STRIDE raises the Pass@32 of Qwen3-1.7B from 58.6% to 62.4%
+    and that of Qwen3-4B-Instruct-2507 from 77.8% to 79.9% over GRPO while preserving
+    Pass@1 at both model scales.
+  author_roles:
+  - name: Kirill Dubovikov
+    role: staff
+  authors: "Sandeep Kumar, Kirill Dubovikov<sup class=\"author-role\" title=\"Postdoctoral\
+    \ researcher, research scientist, or engineer in my group\">\u2021</sup>, <strong>Martin\
+    \ Tak\xE1\u010D</strong>, Salem Lahlou"
+  keywords:
+  - reinforcement learning with verifiable rewards
+  - step-level credit assignment
+  - diversity bonuses
+  - group relative policy optimization
+  - mathematical reasoning
+  - post-training
+  - exploration
+  - chain of thought
+  - log-determinant diversity
+  - large language models
+  tags:
+  - LLM
+  - Reinforcement Learning
+  - Reasoning
+  - Policy Optimization
+  - Post-Training
+  title: 'STRIDE: Step-Level Trajectory Reasoning Induced Diversity in Exploration'
+  type: tpaper
+  year: '2026'
 - abstract: 'Inference-time scaling has become the dominant lever for improving language-model
     reasoning, but existing methods derive rollout diversity from a single source:
     stochastic token-level sampling. We argue that this single-axis sampling space
