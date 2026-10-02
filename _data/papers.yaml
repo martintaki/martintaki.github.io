@@ -1,3 +1,399 @@
+- abstract: Latent diffusion models serve as powerful priors for solving inverse problems
+    in image restoration, such as deblurring, inpainting, and super-resolution. Current
+    methods have a trade-off between generality and efficiency. Solvers that are restricted
+    to a fixed set of degradation operators are fast and efficient. Methods that support
+    arbitrary degradation operators are slow and require gradients through the diffusion
+    network. To break this bottleneck, we introduce PASEO (Perturb-And-Solve for Efficient
+    Operator conditioning), a method that uses a small (~1M parameters) learned network
+    to degrade diffusion model predictions in latent space. PASEO supports learned
+    degradation operators without back-propagating through the diffusion network.
+    We efficiently sample reconstructions from an approximate posterior by combining
+    the diffusion model's prediction with the observed image. We do this by adding
+    noise and solving linear equations based on a local linear approximation of the
+    learned network, without building or inverting large covariance matrices. Across
+    super-resolution, deblurring, and inpainting on FFHQ and COCO, PASEO achieves
+    strong perceptual quality while running faster and using up to 34% less peak memory
+    than the tested baselines, with the same or fewer model evaluations.
+  author_roles:
+  - name: Abduragim Shtanchaev
+    role: student
+  - name: Arip Asadulaev
+    role: staff
+  - name: Aidar Alimbayev
+    role: student
+  authors: "Abduragim Shtanchaev<sup class=\"author-role\" title=\"Supervised student\
+    \ or research mentee\">\u2020</sup>, Arip Asadulaev<sup class=\"author-role\"\
+    \ title=\"Postdoctoral researcher, research scientist, or engineer in my group\"\
+    >\u2021</sup>, Luiza Labazanova, Aidar Alimbayev<sup class=\"author-role\" title=\"\
+    Supervised student or research mentee\">\u2020</sup>, Karim Salta, Eric Moulines,\
+    \ <strong>Martin Tak\xE1\u010D</strong>"
+  journal: 'AI for Stochastic Dynamics (STODY) Workshop @ NeurIPS 2026; Beyond Next
+    Token Prediction: Diffusion and Flow Models for Next-Generation Decoding (BeNTo)
+    Workshop @ NeurIPS 2026'
+  keywords:
+  - bayesian inverse problems
+  - latent diffusion models
+  - learned degradation operators
+  - jacobian-vector products
+  - matrix-free posterior sampling
+  - image restoration
+  - super-resolution
+  - deblurring
+  - inpainting
+  tags:
+  - Generative Modeling
+  - Diffusion Models
+  - Inverse Problems
+  - Computer Vision
+  - Bayesian Inference
+  title: 'Perturb-and-Solve: Efficient Learned-Operator Conditioning for Latent Diffusion
+    Inverse Problems'
+  type: cpaper
+  year: '2026'
+- abstract: The Hohenberg-Kohn (HK) theorem establishes a rigorous one-to-one mapping
+    between the ground-state electron density and the external potential. While Quantum
+    Deep Field (QDF) architectures successfully parameterize latent molecular fields
+    using a Linear Combination of Atomic Orbitals (LCAO) framework, they typically
+    approximate the density-to-potential mapping through a pointwise evaluation functional.
+    We propose LAMP-QDF that replaces the pointwise map with a distance-aware graph
+    attention operator. This local representation provides a more mathematically consistent
+    approximation of the HK inverse while preserving the unsupervised density-generation
+    capabilities of the underlying QDF framework. On the QM9 dataset of small organic
+    molecules, LAMP-QDF reduces the atomization energy prediction error by 26.1% in
+    the interpolation regime (test MAE of 1.06 kcal/mol) and by 28.5% in the size-extrapolation
+    regime (MAE of 2.14 kcal/mol).
+  author_roles:
+  - name: Deepak Kumar
+    role: staff
+  - name: Aidar Alimbayev
+    role: student
+  - name: Klea Ziu
+    role: student
+  authors: "Deepak Kumar<sup class=\"author-role\" title=\"Postdoctoral researcher,\
+    \ research scientist, or engineer in my group\">\u2021</sup>, Yusei Ito, Aidar\
+    \ Alimbayev<sup class=\"author-role\" title=\"Supervised student or research mentee\"\
+    >\u2020</sup>, Klea Ziu<sup class=\"author-role\" title=\"Supervised student or\
+    \ research mentee\">\u2020</sup>, <strong>Martin Tak\xE1\u010D</strong>"
+  journal: AI for Drug Discovery (AI4DD) Workshop @ NeurIPS 2026; 2nd Workshop on
+    Simulations for Biology and Chemistry (SimBioChem) @ NeurIPS 2026
+  keywords:
+  - quantum deep field
+  - machine learning interatomic potentials
+  - density functional theory
+  - hohenberg-kohn theorem
+  - graph attention
+  - electron density
+  - qm9
+  - atomization energy
+  tags:
+  - Scientific Machine Learning
+  - Quantum Chemistry
+  - Graph Learning
+  - Deep Learning
+  title: 'LAMP-QDF: Local Attention Map for Potential in Quantum Deep Field'
+  type: cpaper
+  year: '2026'
+- abstract: 'The Density Of States (DOS) is a fundamental spectral property of crystalline
+    materials that governs a wide range of chemical, electronic, and optical properties.
+    Despite its importance, fast but accurate DOS prediction based on machine learning
+    remains challenging because it involves a high-dimensional structured target,
+    the physically meaningful features of which depend on subtle relations between
+    crystal structure and energy-resolved electronic states. Existing machine-learning
+    approaches primarily focus on learning strong structural representations from
+    crystal graphs, but often rely on DOS supervision alone and do not fully exploit
+    the transferable information already learned by large pretrained atomistic models.
+    In this work, we present UMA-DOS, a transfer-learning framework for total DOS
+    prediction built on pretrained UMA backbones. UMA-DOS uses a pretrained atomistic
+    encoder to represent crystal structure, aggregates node-level features into a
+    graph-level representation, and maps this representation to an energy-resolved
+    DOS through a structured spectral decoder with explicit shape-amplitude factorization.
+    Under a unified Materials Project evaluation pipeline, UMA-DOS achieves the strongest
+    controlled performance among the reproduced baselines, with its clearest advantages
+    appearing in shape-sensitive measures of spectral fidelity. Transfer ablations
+    further show that the value of pretraining is realized only through downstream
+    adaptation: frozen transfer underperforms scratch training, whereas end-to-end
+    fine-tuning yields the best results. These findings show that pretrained atomistic
+    representations can transfer effectively to total DOS prediction when paired with
+    a shape-aware spectral decoder and adapted end-to-end.'
+  author_roles:
+  - name: Klea Ziu
+    role: student
+  - name: Aidar Alimbayev
+    role: student
+  authors: "Klea Ziu<sup class=\"author-role\" title=\"Supervised student or research\
+    \ mentee\">\u2020</sup>, Ayala V. Cohen, Yusei Ito, Aidar Alimbayev<sup class=\"\
+    author-role\" title=\"Supervised student or research mentee\">\u2020</sup>, Leeor\
+    \ Kronik, <strong>Martin Tak\xE1\u010D</strong>"
+  journal: AI for Accelerated Materials Design (AI4Mat) Workshop @ NeurIPS 2026; Women
+    in Machine Learning (WiML) Workshop @ NeurIPS 2026
+  keywords:
+  - density of states
+  - transfer learning
+  - pretrained atomistic models
+  - crystalline materials
+  - spectral decoder
+  - graph neural networks
+  - materials project
+  - fine-tuning
+  - electronic structure
+  - foundation models for atoms
+  tags:
+  - Materials Science
+  - Transfer Learning
+  - Scientific Machine Learning
+  - Graph Learning
+  - Deep Learning
+  title: 'UMA-DOS: Transfer Learning from Pretrained Atomistic Models for Density
+    of States Prediction'
+  type: cpaper
+  year: '2026'
+- abstract: 'Discrete diffusion models now match autoregressive language models on
+    several benchmarks, while the question of how best to train them has received
+    far less attention: the optimizer is inherited from one paper to the next and
+    never compared. New optimizers, meanwhile, are validated almost exclusively on
+    autoregressive pretraining, a different objective on a different loss surface.
+    We present, to our knowledge, the first controlled optimizer benchmark for discrete
+    diffusion models: seven optimizers (AdamW, Lion, Muon, SOAP, MARS, MARS-M, Schedule-Free)
+    on masked diffusion (text8) and uniform diffusion (QM9, and LM1B through the Gaussian
+    duality), each formulation on the task its own paper uses so that every setting
+    has published reference values, plus continuous image diffusion (CelebA-64) as
+    a control. Every optimizer receives the same search protocol, and every winner
+    is retrained at the full budget with three seeds. AdamW is a strong default but
+    not always the right choice: it is beaten by a resolved margin on two of the four
+    tasks, and the winner changes with the formulation, so the optimizer deserves
+    the same care as the rest of the training recipe. Notably, methods validated on
+    autoregressive language model pretraining transfer well: Muon, MARS-M and SOAP
+    each beat the tuned AdamW on at least one diffusion formulation. The benchmark,
+    all runs and every figure are reproducible end to end from the released code.'
+  author_roles:
+  - name: Arman Bolatov
+    role: student
+  - name: Abduragim Shtanchaev
+    role: student
+  authors: "Arman Bolatov<sup class=\"author-role\" title=\"Supervised student or\
+    \ research mentee\">\u2020</sup>, Egor Shulgin, David Li, Abduragim Shtanchaev<sup\
+    \ class=\"author-role\" title=\"Supervised student or research mentee\">\u2020\
+    </sup>, Sebastian U Stich, Peter Richt\xE1rik, <strong>Martin Tak\xE1\u010D</strong>"
+  journal: 'Beyond Next Token Prediction: Diffusion and Flow Models for Next-Generation
+    Decoding (BeNTo) Workshop @ NeurIPS 2026; Diffusion Language Models (DiffuLM)
+    Workshop @ NeurIPS 2026'
+  keywords:
+  - diffusion models
+  - optimizers
+  - benchmark
+  - language models
+  - discrete diffusion
+  - masked diffusion
+  - muon optimizer
+  - adamw
+  tags:
+  - Optimization
+  - Diffusion Models
+  - LLM
+  - Deep Learning
+  - Benchmarking
+  title: 'Optimizers for Discrete Diffusion Models: A Controlled Benchmark'
+  type: cpaper
+  year: '2026'
+- abstract: Methods of Branched Optimal Transport (BOT) mimic the economy and efficiency
+    of natural tree-like structures, such as those found in rivers and biological
+    systems. These methods are widely applicable for designing efficient networks
+    in society, from river basins and blood vessels to mail and gas distribution systems.
+    However, they remain understudied in the context of designing deep generative
+    models, particularly at a large scale. Standard continuous-time generative models,
+    such as the flow matching approach, fail to capture the inherent hierarchical
+    and branching patterns present in real-world data. Current models provide no mechanism
+    for flows to merge or share pathways to minimize total transport cost. Inspired
+    by the "economy of scale" principle in BOT, we introduce a novel, scalable branched
+    flow-matching algorithm designed to solve the branched optimal transport problem
+    in high dimensions. Our method adapts the Benamou-Brenier continuous-time optimal
+    transport formulation to learn branched generative flows. These flows allow probability
+    mass to aggregate along common pathways before branching out to diverse targets.
+    Parametrized by neural networks, our method effectively learns complex branched
+    generative processes. We demonstrate its effectiveness on challenging high-dimensional
+    tasks in biology and image generation.
+  author_roles:
+  - name: Semyon Semenov
+    role: student
+  - name: Viktor Kovalchuk
+    role: student
+  - name: Meir Roketlishvili
+    role: student
+  - name: Albert Baichorov
+    role: student
+  - name: Arip Asadulaev
+    role: staff
+  authors: "Semyon Semenov<sup class=\"author-role\" title=\"Supervised student or\
+    \ research mentee\">\u2020</sup>, Viktor Kovalchuk<sup class=\"author-role\" title=\"\
+    Supervised student or research mentee\">\u2020</sup>, Meir Roketlishvili<sup class=\"\
+    author-role\" title=\"Supervised student or research mentee\">\u2020</sup>, Albert\
+    \ Baichorov<sup class=\"author-role\" title=\"Supervised student or research mentee\"\
+    >\u2020</sup>, Fakhri Karray, <strong>Martin Tak\xE1\u010D</strong>, Arip Asadulaev<sup\
+    \ class=\"author-role\" title=\"Postdoctoral researcher, research scientist, or\
+    \ engineer in my group\">\u2021</sup>"
+  journal: Bridging Optimal Transport, Learning and Structured Data (GDDL) Workshop
+    @ NeurIPS 2026
+  keywords:
+  - branched optimal transport
+  - branched flow matching
+  - continuous-time generative models
+  - benamou-brenier formulation
+  - transport cost minimization
+  - probability mass aggregation
+  - shared transport pathways
+  - hierarchical branching flows
+  - neural network parameterization
+  - high-dimensional transport
+  - image generation
+  link: https://arxiv.org/abs/2609.15072
+  ltype: arXiv
+  pdf: https://arxiv.org/pdf/2609.15072v1
+  tags:
+  - Optimization
+  - Optimal Transport
+  - Generative Modeling
+  - Biology
+  - Computer Vision
+  title: Branched Optimal Transport Amortization
+  type: cpaper
+  year: '2026'
+- abstract: 'In large-scale optimization, the cheapness and effectiveness of update
+    steps are the most crucial factors for a successful optimizer. Sign-based optimizers
+    like Lion or Signum produce cheap per-step updates, whereas Muon''s spectral matrix-sign
+    update gives a much stronger direction at a substantially higher per-step cost.
+    In this work, we propose LionMuon, which retains the effectiveness of Muon steps
+    while considerably cutting the averaged iteration cost, similar to sign-based
+    methods. It alternates between Lion''s and Muon''s updates on a fixed period P,
+    sharing a single dual-EMA momentum buffer between them. The optimizer state memory
+    therefore matches Lion and is exactly half of AdamW''s. A simpler single-EMA variant,
+    SignMuon, by itself already outperforms pure Muon. At P = 2, LionMuon Pareto-dominates
+    Muon, Lion, Signum, and AdamW on every dataset and architecture we tested at 124M
+    model size, reaching lower validation loss at lower compute, and the same advantage
+    persists at 355M and 720M scale. On the theory side, we prove sharp complexity
+    bounds under heavy-tailed noise which are governed by period-averaged smoothness
+    and noise that interpolate between Muon''s and Lion''s constants. These bounds
+    predict the compute-optimal period and the conditions under which LionMuon outruns
+    Muon and Lion. Code: https://github.com/brain-lab-research/lion-muon'
+  author_roles:
+  - name: Arman Bolatov
+    role: student
+  authors: "Arman Bolatov<sup class=\"author-role\" title=\"Supervised student or\
+    \ research mentee\">\u2020</sup>, Artem Riabinin, Nikita Kornilov, Andrey Veprikov,\
+    \ Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D</strong>, Aleksandr Beznosikov"
+  journal: Optimization for Machine Learning (OPT) Workshop @ NeurIPS 2026
+  keywords:
+  - lionmuon optimizer
+  - alternating sign descent
+  - spectral matrix-sign updates
+  - muon optimizer
+  - lion optimizer
+  - dual-ema momentum
+  - sign-based optimization
+  - large language model training
+  - heavy-tailed noise complexity
+  - period-averaged smoothness
+  - compute-optimal update period
+  - optimizer state memory
+  link: https://arxiv.org/abs/2605.19811
+  ltype: arXiv
+  pdf: https://arxiv.org/pdf/2605.19811v1
+  tags:
+  - LLM
+  - Optimization
+  - Deep Learning
+  - Stochastic Optimization
+  - Training Efficiency
+  title: 'LionMuon: Alternating Spectral and Sign Descent for Efficient Training'
+  type: cpaper
+  year: '2026'
+- abstract: Pre-training modern deep learning models demands substantial computational
+    resources, so an improperly chosen peak learning rate can be as costly as a failed
+    run. Because the optimal learning rate varies with model size, batch size, and
+    task, identifying it through large-scale sweeps is prohibitively expensive, which
+    has motivated adaptive algorithms that set the learning rate from statistics such
+    as gradient norms and training losses. Prior work has focused primarily on Adam-type
+    methods, leaving geometry-aware optimizers such as Muon and Scion comparatively
+    underexplored. We adapt the NGN step-size rule to the Scion optimizer, improving
+    its robustness to the choice of Frank-Wolfe step size, and call the resulting
+    algorithm NGN-Scion. We analyze the stability of its step size relative to several
+    baselines and evaluate it empirically. In Chinchilla-optimal pre-training with
+    models from 70M to 410M parameters and in Qwen2.5 fine-tuning from 0.5B to 3B
+    parameters, NGN-Scion matches the best-tuned baseline at every scale while being
+    substantially less sensitive to the learning rate.
+  author_roles:
+  - name: Arman Bolatov
+    role: student
+  - name: Eduard Gorbunov
+    role: staff
+  authors: "Arman Bolatov<sup class=\"author-role\" title=\"Supervised student or\
+    \ research mentee\">\u2020</sup>, Rustem Islamov, Eduard Gorbunov<sup class=\"\
+    author-role\" title=\"Postdoctoral researcher, research scientist, or engineer\
+    \ in my group\">\u2021</sup>, Antonio Orvieto, Sebastian U Stich, <strong>Martin\
+    \ Tak\xE1\u010D</strong>"
+  journal: Optimization for Machine Learning (OPT) Workshop @ NeurIPS 2026
+  keywords:
+  - learning-rate robustness
+  - adaptive step size
+  - ngn
+  - polyak step size
+  - scion
+  - muon optimizer
+  - linear minimization oracle
+  - non-euclidean optimization
+  - language model pretraining
+  - fine-tuning
+  tags:
+  - LLM
+  - Optimization
+  - Deep Learning
+  - Adaptive Methods
+  title: 'NGN-Scion: Making Norm-Constrained LMO Optimizers Robust to the Learning
+    Rate'
+  type: cpaper
+  year: '2026'
+- abstract: Large language model (LLM) post-training typically samples training examples
+    uniformly or follows a predefined data schedule, despite the fact that the utility
+    of different examples may change substantially as the model learns. Curriculum
+    learning offers an alternative by controlling which data the learner encounters
+    over time. We investigate whether an LLM can learn more effectively when its curriculum
+    is learned online through reinforcement learning. Building on the classical Teacher-Student
+    Curriculum Learning (TSCL) framework, we extend this teacher-student paradigm
+    to LLM post-training. The student is an autoregressive language model trained
+    through supervised fine-tuning, while a lightweight neural teacher controls the
+    distribution from which each student minibatch is sampled. Training examples are
+    partitioned into difficulty buckets, and at each training step the teacher observes
+    a compact representation of the student's evolving learning state, including per-bucket
+    loss statistics and learning progress. The teacher outputs a probability distribution
+    over buckets, defining the mixture used to construct the student's next training
+    batch, and receives a reward based on improvement on held-out validation data,
+    learning its curriculum policy through policy-gradient optimization. Using mathematical
+    reasoning as a controlled setting with human-annotated difficulty levels, we compare
+    the learned curriculum against uniform sampling and non-learned curriculum strategies,
+    and examine whether model-based learning-progress signals provide a more informative
+    basis for curriculum decisions than human-defined difficulty.
+  author_roles:
+  - name: Aya El Mir
+    role: staff
+  authors: "Aya El Mir<sup class=\"author-role\" title=\"Postdoctoral researcher,\
+    \ research scientist, or engineer in my group\">\u2021</sup>, <strong>Martin Tak\xE1\
+    \u010D</strong>, Salem Lahlou"
+  journal: Women in Machine Learning (WiML) Workshop @ NeurIPS 2026
+  keywords:
+  - curriculum learning
+  - reinforcement learning
+  - large language models
+  - teacher-student learning
+  - llm post-training
+  - policy gradient
+  - mathematical reasoning
+  tags:
+  - LLM
+  - Reinforcement Learning
+  - Curriculum Learning
+  - Deep Learning
+  title: 'Learning to Teach: Reinforcement-Learned Curricula for LLM Post-Training'
+  type: cpaper
+  year: '2026'
 - abstract: 'Optimization under uncertainty is often made tractable by sampling: expectations
     and chance constraints are replaced by sample-average counterparts via scenario
     expansion, where meeting stronger statistical requirements may require larger
@@ -85,58 +481,6 @@
   - Adaptive Methods
   title: Optimal Parameter-Free Second-order Acceleration with Inexact Hessians under
     Generalized Smoothness
-  type: tpaper
-  year: '2026'
-- abstract: 'The Density Of States (DOS) is a fundamental spectral property of crystalline
-    materials that governs a wide range of chemical, electronic, and optical properties.
-    Despite its importance, fast but accurate DOS prediction based on machine learning
-    remains challenging because it involves a high-dimensional structured target,
-    the physically meaningful features of which depend on subtle relations between
-    crystal structure and energy-resolved electronic states. Existing machine-learning
-    approaches primarily focus on learning strong structural representations from
-    crystal graphs, but often rely on DOS supervision alone and do not fully exploit
-    the transferable information already learned by large pretrained atomistic models.
-    In this work, we present UMA-DOS, a transfer-learning framework for total DOS
-    prediction built on pretrained UMA backbones. UMA-DOS uses a pretrained atomistic
-    encoder to represent crystal structure, aggregates node-level features into a
-    graph-level representation, and maps this representation to an energy-resolved
-    DOS through a structured spectral decoder with explicit shape-amplitude factorization.
-    Under a unified Materials Project evaluation pipeline, UMA-DOS achieves the strongest
-    controlled performance among the reproduced baselines, with its clearest advantages
-    appearing in shape-sensitive measures of spectral fidelity. Transfer ablations
-    further show that the value of pretraining is realized only through downstream
-    adaptation: frozen transfer underperforms scratch training, whereas end-to-end
-    fine-tuning yields the best results. These findings show that pretrained atomistic
-    representations can transfer effectively to total DOS prediction when paired with
-    a shape-aware spectral decoder and adapted end-to-end.'
-  author_roles:
-  - name: Klea Ziu
-    role: student
-  - name: Aidar Alimbayev
-    role: student
-  authors: "Klea Ziu<sup class=\"author-role\" title=\"Supervised student or research\
-    \ mentee\">\u2020</sup>, Ayala V. Cohen, Yusei Ito, Aidar Alimbayev<sup class=\"\
-    author-role\" title=\"Supervised student or research mentee\">\u2020</sup>, Leeor\
-    \ Kronik, <strong>Martin Tak\xE1\u010D</strong>"
-  keywords:
-  - density of states
-  - transfer learning
-  - pretrained atomistic models
-  - crystalline materials
-  - spectral decoder
-  - graph neural networks
-  - materials project
-  - fine-tuning
-  - electronic structure
-  - foundation models for atoms
-  tags:
-  - Materials Science
-  - Transfer Learning
-  - Scientific Machine Learning
-  - Graph Learning
-  - Deep Learning
-  title: 'UMA-DOS: Transfer Learning from Pretrained Atomistic Models for Density
-    of States Prediction'
   type: tpaper
   year: '2026'
 - abstract: 'Reinforcement learning for large language models typically maximizes
@@ -604,67 +948,6 @@
   title: Convex Compositional Reasoning Models
   type: cpaper
   year: '2026'
-- abstract: Methods of Branched Optimal Transport (BOT) mimic the economy and efficiency
-    of natural tree-like structures, such as those found in rivers and biological
-    systems. These methods are widely applicable for designing efficient networks
-    in society, from river basins and blood vessels to mail and gas distribution systems.
-    However, they remain understudied in the context of designing deep generative
-    models, particularly at a large scale. Standard continuous-time generative models,
-    such as the flow matching approach, fail to capture the inherent hierarchical
-    and branching patterns present in real-world data. Current models provide no mechanism
-    for flows to merge or share pathways to minimize total transport cost. Inspired
-    by the "economy of scale" principle in BOT, we introduce a novel, scalable branched
-    flow-matching algorithm designed to solve the branched optimal transport problem
-    in high dimensions. Our method adapts the Benamou-Brenier continuous-time optimal
-    transport formulation to learn branched generative flows. These flows allow probability
-    mass to aggregate along common pathways before branching out to diverse targets.
-    Parametrized by neural networks, our method effectively learns complex branched
-    generative processes. We demonstrate its effectiveness on challenging high-dimensional
-    tasks in biology and image generation.
-  author_roles:
-  - name: Semyon Semenov
-    role: student
-  - name: Viktor Kovalchuk
-    role: student
-  - name: Meir Roketlishvili
-    role: student
-  - name: Albert Baichorov
-    role: student
-  - name: Arip Asadulaev
-    role: staff
-  authors: "Semyon Semenov<sup class=\"author-role\" title=\"Supervised student or\
-    \ research mentee\">\u2020</sup>, Viktor Kovalchuk<sup class=\"author-role\" title=\"\
-    Supervised student or research mentee\">\u2020</sup>, Meir Roketlishvili<sup class=\"\
-    author-role\" title=\"Supervised student or research mentee\">\u2020</sup>, Albert\
-    \ Baichorov<sup class=\"author-role\" title=\"Supervised student or research mentee\"\
-    >\u2020</sup>, Fakhri Karray, <strong>Martin Tak\xE1\u010D</strong>, Arip Asadulaev<sup\
-    \ class=\"author-role\" title=\"Postdoctoral researcher, research scientist, or\
-    \ engineer in my group\">\u2021</sup>"
-  journal: arXiv
-  keywords:
-  - branched optimal transport
-  - branched flow matching
-  - continuous-time generative models
-  - benamou-brenier formulation
-  - transport cost minimization
-  - probability mass aggregation
-  - shared transport pathways
-  - hierarchical branching flows
-  - neural network parameterization
-  - high-dimensional transport
-  - image generation
-  link: https://arxiv.org/abs/2609.15072
-  ltype: arXiv
-  pdf: https://arxiv.org/pdf/2609.15072v1
-  tags:
-  - Optimization
-  - Optimal Transport
-  - Generative Modeling
-  - Biology
-  - Computer Vision
-  title: Branched Optimal Transport Amortization
-  type: tpaper
-  year: '2026'
 - abstract: "Adversarial robustness in computer vision is still largely achieved through\
     \ adversarial training or test-time adversarial purification, both of which introduce\
     \ significant computational overhead by generating adversarial examples during\
@@ -1058,55 +1341,6 @@
   - Control
   title: 'MAGIC-CT: Multiorgan Annotation and Grounded Image Captioning in CT for
     Cancer'
-  type: tpaper
-  year: '2026'
-- abstract: 'In large-scale optimization, the cheapness and effectiveness of update
-    steps are the most crucial factors for a successful optimizer. Sign-based optimizers
-    like Lion or Signum produce cheap per-step updates, whereas Muon''s spectral matrix-sign
-    update gives a much stronger direction at a substantially higher per-step cost.
-    In this work, we propose LionMuon, which retains the effectiveness of Muon steps
-    while considerably cutting the averaged iteration cost, similar to sign-based
-    methods. It alternates between Lion''s and Muon''s updates on a fixed period P,
-    sharing a single dual-EMA momentum buffer between them. The optimizer state memory
-    therefore matches Lion and is exactly half of AdamW''s. A simpler single-EMA variant,
-    SignMuon, by itself already outperforms pure Muon. At P = 2, LionMuon Pareto-dominates
-    Muon, Lion, Signum, and AdamW on every dataset and architecture we tested at 124M
-    model size, reaching lower validation loss at lower compute, and the same advantage
-    persists at 355M and 720M scale. On the theory side, we prove sharp complexity
-    bounds under heavy-tailed noise which are governed by period-averaged smoothness
-    and noise that interpolate between Muon''s and Lion''s constants. These bounds
-    predict the compute-optimal period and the conditions under which LionMuon outruns
-    Muon and Lion. Code: https://github.com/brain-lab-research/lion-muon'
-  author_roles:
-  - name: Arman Bolatov
-    role: student
-  authors: "Arman Bolatov<sup class=\"author-role\" title=\"Supervised student or\
-    \ research mentee\">\u2020</sup>, Artem Riabinin, Nikita Kornilov, Andrey Veprikov,\
-    \ Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D</strong>, Aleksandr Beznosikov"
-  journal: arXiv
-  keywords:
-  - lionmuon optimizer
-  - alternating sign descent
-  - spectral matrix-sign updates
-  - muon optimizer
-  - lion optimizer
-  - dual-ema momentum
-  - sign-based optimization
-  - large language model training
-  - heavy-tailed noise complexity
-  - period-averaged smoothness
-  - compute-optimal update period
-  - optimizer state memory
-  link: https://arxiv.org/abs/2605.19811
-  ltype: arXiv
-  pdf: https://arxiv.org/pdf/2605.19811v1
-  tags:
-  - LLM
-  - Optimization
-  - Deep Learning
-  - Stochastic Optimization
-  - Training Efficiency
-  title: 'LionMuon: Alternating Spectral and Sign Descent for Efficient Training'
   type: tpaper
   year: '2026'
 - abstract: Offline goal-conditioned reinforcement learning requires both long-horizon
