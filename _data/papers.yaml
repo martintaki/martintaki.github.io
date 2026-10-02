@@ -27,9 +27,6 @@
     >\u2021</sup>, Luiza Labazanova, Aidar Alimbayev<sup class=\"author-role\" title=\"\
     Supervised student or research mentee\">\u2020</sup>, Karim Salta, Eric Moulines,\
     \ <strong>Martin Tak\xE1\u010D</strong>"
-  journal: 'AI for Stochastic Dynamics (STODY) Workshop @ NeurIPS 2026; Beyond Next
-    Token Prediction: Diffusion and Flow Models for Next-Generation Decoding (BeNTo)
-    Workshop @ NeurIPS 2026'
   keywords:
   - bayesian inverse problems
   - latent diffusion models
@@ -49,6 +46,10 @@
   title: 'Perturb-and-Solve: Efficient Learned-Operator Conditioning for Latent Diffusion
     Inverse Problems'
   type: cpaper
+  workshops:
+  - AI for Stochastic Dynamics (STODY) Workshop @ NeurIPS 2026
+  - 'Beyond Next Token Prediction: Diffusion and Flow Models for Next-Generation Decoding
+    (BeNTo) Workshop @ NeurIPS 2026'
   year: '2026'
 - abstract: The Hohenberg-Kohn (HK) theorem establishes a rigorous one-to-one mapping
     between the ground-state electron density and the external potential. While Quantum
@@ -74,8 +75,6 @@
     \ Alimbayev<sup class=\"author-role\" title=\"Supervised student or research mentee\"\
     >\u2020</sup>, Klea Ziu<sup class=\"author-role\" title=\"Supervised student or\
     \ research mentee\">\u2020</sup>, <strong>Martin Tak\xE1\u010D</strong>"
-  journal: AI for Drug Discovery (AI4DD) Workshop @ NeurIPS 2026; 2nd Workshop on
-    Simulations for Biology and Chemistry (SimBioChem) @ NeurIPS 2026
   keywords:
   - quantum deep field
   - machine learning interatomic potentials
@@ -92,6 +91,9 @@
   - Deep Learning
   title: 'LAMP-QDF: Local Attention Map for Potential in Quantum Deep Field'
   type: cpaper
+  workshops:
+  - AI for Drug Discovery (AI4DD) Workshop @ NeurIPS 2026
+  - 2nd Workshop on Simulations for Biology and Chemistry (SimBioChem) @ NeurIPS 2026
   year: '2026'
 - abstract: 'The Density Of States (DOS) is a fundamental spectral property of crystalline
     materials that governs a wide range of chemical, electronic, and optical properties.
@@ -124,8 +126,6 @@
     \ mentee\">\u2020</sup>, Ayala V. Cohen, Yusei Ito, Aidar Alimbayev<sup class=\"\
     author-role\" title=\"Supervised student or research mentee\">\u2020</sup>, Leeor\
     \ Kronik, <strong>Martin Tak\xE1\u010D</strong>"
-  journal: AI for Accelerated Materials Design (AI4Mat) Workshop @ NeurIPS 2026; Women
-    in Machine Learning (WiML) Workshop @ NeurIPS 2026
   keywords:
   - density of states
   - transfer learning
@@ -146,6 +146,9 @@
   title: 'UMA-DOS: Transfer Learning from Pretrained Atomistic Models for Density
     of States Prediction'
   type: cpaper
+  workshops:
+  - AI for Accelerated Materials Design (AI4Mat) Workshop @ NeurIPS 2026
+  - Women in Machine Learning (WiML) Workshop @ NeurIPS 2026
   year: '2026'
 - abstract: 'Discrete diffusion models now match autoregressive language models on
     several benchmarks, while the question of how best to train them has received
@@ -174,9 +177,6 @@
     \ research mentee\">\u2020</sup>, Egor Shulgin, David Li, Abduragim Shtanchaev<sup\
     \ class=\"author-role\" title=\"Supervised student or research mentee\">\u2020\
     </sup>, Sebastian U Stich, Peter Richt\xE1rik, <strong>Martin Tak\xE1\u010D</strong>"
-  journal: 'Beyond Next Token Prediction: Diffusion and Flow Models for Next-Generation
-    Decoding (BeNTo) Workshop @ NeurIPS 2026; Diffusion Language Models (DiffuLM)
-    Workshop @ NeurIPS 2026'
   keywords:
   - diffusion models
   - optimizers
@@ -194,6 +194,10 @@
   - Benchmarking
   title: 'Optimizers for Discrete Diffusion Models: A Controlled Benchmark'
   type: cpaper
+  workshops:
+  - 'Beyond Next Token Prediction: Diffusion and Flow Models for Next-Generation Decoding
+    (BeNTo) Workshop @ NeurIPS 2026'
+  - Diffusion Language Models (DiffuLM) Workshop @ NeurIPS 2026
   year: '2026'
 - abstract: Methods of Branched Optimal Transport (BOT) mimic the economy and efficiency
     of natural tree-like structures, such as those found in rivers and biological
@@ -231,8 +235,6 @@
     >\u2020</sup>, Fakhri Karray, <strong>Martin Tak\xE1\u010D</strong>, Arip Asadulaev<sup\
     \ class=\"author-role\" title=\"Postdoctoral researcher, research scientist, or\
     \ engineer in my group\">\u2021</sup>"
-  journal: Bridging Optimal Transport, Learning and Structured Data (GDDL) Workshop
-    @ NeurIPS 2026
   keywords:
   - branched optimal transport
   - branched flow matching
@@ -256,6 +258,9 @@
   - Computer Vision
   title: Branched Optimal Transport Amortization
   type: cpaper
+  workshops:
+  - Bridging Optimal Transport, Learning and Structured Data (GDDL) Workshop @ NeurIPS
+    2026
   year: '2026'
 - abstract: 'In large-scale optimization, the cheapness and effectiveness of update
     steps are the most crucial factors for a successful optimizer. Sign-based optimizers
@@ -280,7 +285,6 @@
   authors: "Arman Bolatov<sup class=\"author-role\" title=\"Supervised student or\
     \ research mentee\">\u2020</sup>, Artem Riabinin, Nikita Kornilov, Andrey Veprikov,\
     \ Samuel Horv\xE1th, <strong>Martin Tak\xE1\u010D</strong>, Aleksandr Beznosikov"
-  journal: Optimization for Machine Learning (OPT) Workshop @ NeurIPS 2026
   keywords:
   - lionmuon optimizer
   - alternating sign descent
@@ -305,6 +309,8 @@
   - Training Efficiency
   title: 'LionMuon: Alternating Spectral and Sign Descent for Efficient Training'
   type: cpaper
+  workshops:
+  - Optimization for Machine Learning (OPT) Workshop @ NeurIPS 2026
   year: '2026'
 - abstract: Pre-training modern deep learning models demands substantial computational
     resources, so an improperly chosen peak learning rate can be as costly as a failed
@@ -330,7 +336,6 @@
     author-role\" title=\"Postdoctoral researcher, research scientist, or engineer\
     \ in my group\">\u2021</sup>, Antonio Orvieto, Sebastian U Stich, <strong>Martin\
     \ Tak\xE1\u010D</strong>"
-  journal: Optimization for Machine Learning (OPT) Workshop @ NeurIPS 2026
   keywords:
   - learning-rate robustness
   - adaptive step size
@@ -350,6 +355,8 @@
   title: 'NGN-Scion: Making Norm-Constrained LMO Optimizers Robust to the Learning
     Rate'
   type: cpaper
+  workshops:
+  - Optimization for Machine Learning (OPT) Workshop @ NeurIPS 2026
   year: '2026'
 - abstract: Large language model (LLM) post-training typically samples training examples
     uniformly or follows a predefined data schedule, despite the fact that the utility
@@ -377,7 +384,6 @@
   authors: "Aya El Mir<sup class=\"author-role\" title=\"Postdoctoral researcher,\
     \ research scientist, or engineer in my group\">\u2021</sup>, <strong>Martin Tak\xE1\
     \u010D</strong>, Salem Lahlou"
-  journal: Women in Machine Learning (WiML) Workshop @ NeurIPS 2026
   keywords:
   - curriculum learning
   - reinforcement learning
@@ -393,6 +399,8 @@
   - Deep Learning
   title: 'Learning to Teach: Reinforcement-Learned Curricula for LLM Post-Training'
   type: cpaper
+  workshops:
+  - Women in Machine Learning (WiML) Workshop @ NeurIPS 2026
   year: '2026'
 - abstract: 'Optimization under uncertainty is often made tractable by sampling: expectations
     and chance constraints are replaced by sample-average counterparts via scenario
