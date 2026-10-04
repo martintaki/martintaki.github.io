@@ -158,7 +158,7 @@ title: Home
     {% endif %}
     
      
-                                                {{paper.journal}}
+                                                {{paper.journal}}{% if paper.journal and paper.workshops %}; {% endif %}{% if paper.workshops %}{{ paper.workshops | join: '; ' }}{% endif %}
 
 
                                             </div>
